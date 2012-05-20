@@ -1,0 +1,53 @@
+#opquast-desktop-panel {
+    display: none;
+    border-top: 1px solid hsla(210, 8%, 5%, .65);
+    min-height: 200px;
+}
+
+#opquast-desktop-panel[visible] {
+    display: -moz-box;
+}
+
+#opquast-desktop-panel-resizer {
+    -moz-appearance: none;
+    cursor: n-resize;
+    background: none;
+    height: 3px;
+}
+
+#opquast-desktop-panel-toolbar {
+    padding: 0px 16px 3px;
+    background: -moz-linear-gradient(hsl(209, 18%, 30%), hsl(210, 24%, 16%)) no-repeat padding-box;
+}
+#opquast-desktop-panel-closebutton {
+    list-style-image: url("toolbar-close.png");
+    -moz-image-region: rect(0, 16px, 16px, 0);
+    min-width: 16px;
+    width: 16px;
+    margin: 0;
+}
+#opquast-desktop-panel-closebutton:hover {
+  -moz-image-region: rect(0, 32px, 16px, 16px);
+}
+
+#opquast-desktop-panel-closebutton:active {
+  -moz-image-region: rect(0, 48px, 16px, 32px);
+}
+
+#opquast-desktop-panel-oqslink {
+    border: none;
+    color: #999;
+    padding: 0;
+    margin: 0 0 2px 0;
+    line-height: 1;
+    font-size: 0.9em;
+    text-shadow: none;
+}
+#opquast-desktop-panel-oqslink:hover, #opquast-desktop-panel-oqslink:focus {
+    color: #ccc;
+    text-shadow: 0 0 2px rgba(255,255,255, 0.5);
+}
+
+#opquast-desktop-panel-main {
+    min-width: 200px;
+}

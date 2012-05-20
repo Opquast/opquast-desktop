@@ -1,0 +1,11 @@
+html {
+  background-color: #fff;
+}
+
+body {
+  margin: 0;
+  overflow: auto;
+  font-family: Lucida Grande, sans-serif;
+  font-size: 11px;
+  border-top: 1px solid #BBB9BA;
+}
