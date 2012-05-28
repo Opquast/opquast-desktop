@@ -12,15 +12,26 @@
 
     window.showResults = function(tests) {
         var table = $('<table id="test_result"></table>');
+        var tbody = $('<tbody></tbody>');
         var tr;
+
+        table.append(
+            "<thead><tr>"
+                + "<th>Test ID</th>"
+                + "<th>Result</th>"
+                + "<th>Comment</th>"
+            + "</tr></thead>"
+        )
+        .append(tbody);
+
 
         for each(result in tests.oaa_results) {
             tr = $("<tr></tr>");
-            table.append(tr);
+            tbody.append(tr);
 
             tr
             .append("<td>" + result.id + "</td>")
-            .append("<td>" + result.result + "</td>")
+            .append('<td><img src="img/' + result.result + '.png" alt="' + result.result + '" /></td>')
             .append("<td>" + result.comment + "</td>");
         }
 
