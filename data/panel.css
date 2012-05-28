@@ -1,7 +1,7 @@
 #opquast-desktop-panel {
     display: none;
     border-top: 1px solid hsla(210, 8%, 5%, .65);
-    min-height: 200px;
+    min-height: 300px;
 }
 
 #opquast-desktop-panel[visible] {
