@@ -3,6 +3,11 @@
         $("body").empty();
     };
 
+    window.showLoader = function() {
+        window.clearContent();
+        $("body").append('<div id="loader">Results are loading. This may take a while…</div>');
+    };
+
     window.loadBody = function(aBody) {
         var nodes = aBody.childNodes;
         for (var i=0; i<nodes.length; i++) {

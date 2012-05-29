@@ -7,7 +7,14 @@ body {
   overflow: auto;
   font-family: Lucida Grande, sans-serif;
   font-size: 11px;
-  border-top: 1px solid #BBB9BA;
+}
+
+#loader {
+    font-size: 2em;
+    background: transparent url(img/loader.gif) no-repeat 50% 100%;
+    margin-top: 40px;
+    padding-bottom: 50px;
+    text-align: center;
 }
 
 #test_result {
