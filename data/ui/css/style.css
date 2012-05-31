@@ -1,17 +1,17 @@
 html {
-  background-color: #fff;
+    background-color: #fff;
 }
 
 body {
-  margin: 10px;
-  overflow: auto;
-  font-family: Lucida Grande, sans-serif;
-  font-size: 11px;
+    margin: 10px;
+    overflow: auto;
+    font-family: Lucida Grande, sans-serif;
+    font-size: 12px;
 }
 
 #loader {
     font-size: 2em;
-    background: transparent url(img/loader.gif) no-repeat 50% 100%;
+    background: transparent url(../img/loader.gif) no-repeat 50% 100%;
     margin-top: 40px;
     padding-bottom: 50px;
     text-align: center;
@@ -24,6 +24,7 @@ body {
 #test_result th {
     border: 1px solid #333;
 }
+
 #test_result td {
     border: 1px solid #ccc;
 }
