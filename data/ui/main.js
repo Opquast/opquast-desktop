@@ -17,11 +17,25 @@
 
 	window.showResults = function(tests) {
 		var table = $('<table id="test_result"></table>');
+		var thead = $('<thead></thead>');
 		var tbody = $('<tbody></tbody>');
 		var tr;
 		var criterion;
 
-		table.append("<thead><tr><th>Résultat</th><th>Checklist</th><th>Numéro</th><th>Libellé</th></tr></thead>").append(tbody);
+		tr = $("<tr></tr>");
+		thead.append(tr);
+
+		// @formatter:off
+		tr.append(
+			'<th>Résultat</th>',
+			'<th>Checklist</th>',
+			'<th>Numéro</th>',
+			'<th>Libellé</th>',
+			'<th>Détails</th>'
+		);
+		// @formatter:on
+
+		table.append(thead).append(tbody);
 
 		for each(result in tests.oaa_results) {
 			if(!(result.id in window.checklists)) {
@@ -33,67 +47,102 @@
 			tr = $("<tr></tr>");
 			tbody.append(tr);
 
-			tr.append('<td><img src="img/' + result.result + '.png" alt="' + result.result + '" /><span style="display:none">' + result.result + '</span></td>').append("<td>" + criterion.checklist.name + "</td>").append("<td>" + criterion.name + "</td>").append("<td>" + criterion.description + "</td>");
+			// @formatter:off
+			tr.append(
+				'<td><img src="img/' + result.result + '.png" alt="' + result.result + '" /><span style="display:none">' + result.result + '</span></td>',
+				'<td>' + criterion.checklist.name + '</td>',
+				'<td>' + criterion.name + '</td>',
+				'<td>' + criterion.description + '</td>',
+				'<td>' + result.comment + '</td>',
+				'<td><pre>' + JSON.stringify(result.details, null, 4) + '</pre></td>'
+			);
+			// @formatter:on
 		}
 
 		$("body").append(table);
 
-		try {
-			var values = [];
+		var values = [];
 
-			for each(checklist in checklists) {
-				var value = checklist.checklist.name;
-				if($.inArray(value, values) == -1) {
-					values.push(value);
-				}
+		for each(checklist in checklists) {
+			var value = checklist.checklist.name;
+			if($.inArray(value, values) == -1) {
+				values.push(value);
 			}
-
-			values.sort(function(a, b) {
-				var a = a.toLowerCase();
-				var b = b.toLowerCase();
-				return ((a < b) ? -1 : ((a > b) ? 1 : 0));
-			});
-
-			table.dataTable({
-				bPaginate : false,
-				oLanguage : {
-					sZeroRecords : "Aucun résultat",
-					sInfo : "Affichage des résultats _START_ à _END_ sur _TOTAL_",
-					sInfoEmpty : "Affichage de 0 résultat",
-					sInfoFiltered : "(filtré de _MAX_ résultats)",
-					sSearch : "Rechercher"
-				},
-				sDom : 'T<"clear">lfrtip',
-				oTableTools : {
-					aButtons : [{
-						sExtends : "copy",
-						sButtonText : "Copier"
-					}, {
-						sExtends : "xls",
-						sButtonText : "Excel"
-					}, {
-						sExtends : "print",
-						sButtonText : "Imprimer"
-					}],
-					sSwfPath : "swf/copy_cvs_xls_pdf.swf"
-				}
-			}).columnFilter({
-				sPlaceHolder : "head:before",
-				aoColumns : [{
-					type : "select",
-					values : ["c", "nc", "i", "na"]
-				}, {
-					type : "select",
-					values : values
-				}, null, null]
-			});
-		} catch(e) {
-			alert(e);
 		}
-		
-		$("select").click(function(event){
+
+		values.sort(function(a, b) {
+			var a = a.toLowerCase();
+			var b = b.toLowerCase();
+			return ((a < b) ? -1 : ((a > b) ? 1 : 0));
+		});
+
+		var oTable = table.dataTable({
+			bPaginate : false,
+			oLanguage : {
+				sZeroRecords : "Aucun résultat",
+				sInfo : "Affichage des résultats _START_ à _END_ sur _TOTAL_",
+				sInfoEmpty : "Affichage de 0 résultat",
+				sInfoFiltered : "(filtré de _MAX_ résultats)",
+				sSearch : "Rechercher"
+			},
+			aoColumns : [null, null, null, null, {
+				"bVisible" : false
+			}, {
+				"bVisible" : false
+			}]
+		})
+
+		oTable.columnFilter({
+			sPlaceHolder : "head:before",
+			aoColumns : [{
+				type : "select",
+				values : ["c", "nc", "i", "na"]
+			}, {
+				type : "select",
+				values : values
+			}, null, null, null, null, null]
+		});
+
+		// bug : filtering trigger sorting
+		$("select").click(function(event) {
 			event.stopPropagation();
 			return true;
+		});
+
+		//
+		function fnFormatDetails(oTable, nTr) {
+			var aData = oTable.fnGetData(nTr);
+			var sOut = '<table class="details"><tr><td>' + aData[4] + '</td><td>' + aData[5] + '</td></tr></table>';
+
+			return sOut;
+		}
+
+		//
+		var nCloneTh = document.createElement('th');
+		var nCloneTd = document.createElement('td');
+		nCloneTd.innerHTML = '<img src="img/details_open.png">';
+		nCloneTd.className = "center";
+
+		$('#test_result thead tr').each(function() {
+			$(this).append(nCloneTh);
+		});
+
+		$('#test_result tbody tr').each(function() {
+			$(this).append(nCloneTd.cloneNode(true));
+		});
+
+		//
+		$('#test_result tbody td img').live('click', function() {
+			var nTr = this.parentNode.parentNode;
+			if(this.src.match('details_close')) {
+				/* This row is already open - close it */
+				this.src = "img/details_open.png";
+				oTable.fnClose(nTr);
+			} else {
+				/* Open this row */
+				this.src = "img/details_close.png";
+				oTable.fnOpen(nTr, fnFormatDetails(oTable, nTr), 'details');
+			}
 		});
 	};
 })();

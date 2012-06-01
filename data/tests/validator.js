@@ -305,7 +305,14 @@ function _getXPath(node) {
 		//
 		if(node.hasAttribute("id")) {
 			idx = 'id="' + node.id + '"';
-		} else {
+			
+			//
+			xpath = "//" + xname + "[" + idx + "]" + xpath;
+			break;
+		} 
+		
+		//
+		else {
 			for(var sib = node.previousSibling; sib; sib = sib.previousSibling) {
 				if(sib.nodeType == Node.ELEMENT_NODE && sib.localName == xname) {
 					idx++;
@@ -316,10 +323,13 @@ function _getXPath(node) {
 		//
 		if(idx != 1) {
 			xname += "[" + idx + "]";
+			xpath = "/" + xname + xpath;
 		}
 
 		//
-		xpath = "/" + xname + xpath;
+		else {
+			xpath = "/" + xname + xpath;
+		}
 	}
 
 	//
