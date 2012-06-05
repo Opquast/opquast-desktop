@@ -21,40 +21,40 @@ var logger = {
 	log_ajax : false,
 	show_date : false,
 	log : function(tag, message) {
-		if(debug_validator) {
+		if (debug_validator) {
 			// Init date
 			var date = "";
-			if(this.show_date) {
+			if (this.show_date) {
 				date = (new Date()).toUTCString();
 			}
 
 			var log_message = date + '[' + tag + '] ' + message;
 
 			// Firebug logging, Firefox specific test
-			if(this.log_firebug && console.info) {
+			if (this.log_firebug && console.info) {
 				console.info(log_message);
 			}
 
 			// Throw an alert window
-			if(this.log_alert) {
+			if (this.log_alert) {
 				alert(log_message);
 			}
 
 			// Ajax logging
-			if(this.log_ajax) {
+			if (this.log_ajax) {
 				//jQueryMephisto.post(api_url + "js_log", JSON.stringify(log_message));
 			}
 		}
 	},
 	logObject : function(tag, object) {
-		if(debug_validator) {
+		if (debug_validator) {
 			// Firebug logging
-			if(this.log_firebug && window.console && window.console.log) {
+			if (this.log_firebug && window.console && window.console.log) {
 				window.console.log('[' + tag + '] ', object);
 			}
 
 			// Ajax logging
-			if(this.log_ajax) {
+			if (this.log_ajax) {
 				//jQueryMephisto.post(api_url + "js_log", JSON.stringify(object));
 			}
 		}
@@ -62,15 +62,15 @@ var logger = {
 	error : function(tag, error) {
 		var message = "============================\n";
 
-		if(error.name) {
+		if (error.name) {
 			message += error.name;
 		}
 
-		if(error.message) {
+		if (error.message) {
 			message += ",\nMessage:\n" + error.message;
 		}
 
-		if(error.stack) {
+		if (error.stack) {
 			message += ",\nStack:\n " + error.stack;
 		}
 		message += "\n============================\n";
@@ -91,7 +91,7 @@ var logger = {
  */
 var api_client = {
 	__call : function(service, method, data, callback) {
-		if(!callback) {
+		if (!callback) {
 			callback = function() {
 			};
 		}
@@ -125,7 +125,7 @@ var api_client = {
 
 			var server_response;
 
-			if(httrequest.responseText) {
+			if (httrequest.responseText) {
 				server_response = JSON.parse(httrequest.responseText);
 			}
 
@@ -202,12 +202,12 @@ Array.remove = function(array, from, to) {
 jQueryMephisto.expr[':'].internal = function(obj, index, meta, stack) {
 
 	// Dealing with <a>
-	if(obj.href) {
+	if (obj.href) {
 		return !obj.href.match(/^(javascript|mailto)\:/) && (obj.hostname == meta[3]);
 	}
 
 	// Dealing with <frame> and <iframe>
-	else if(obj.src) {
+	else if (obj.src) {
 		return !obj.src.match(/^(javascript|mailto)\:/) && (obj.hostname == meta[3]);
 	}
 
@@ -254,20 +254,20 @@ function initJson() {
 	//
 	try {
 		//
-		if(tests === null || criteria === null) {
+		if (tests === null || criteria === null) {
 			// load criteria and tests
 			jQueryMephisto.get(api_url + "checklists/" + json_checklist + "/criteria/", function(data) {
 				var _tmp = JSON.parse(data);
 
 				//
-				if(_tmp.test) {
+				if (_tmp.test) {
 					tests = _tmp.test;
 				} else {
 					logger.log('Init Error', 'tests not found');
 				}
 
 				//
-				if(_tmp.criteria) {
+				if (_tmp.criteria) {
 					criteria = _tmp.criteria;
 				} else {
 					logger.log('Init Error', 'criteria not found');
@@ -298,30 +298,30 @@ function _getXPath(node) {
 	var xpath = "";
 
 	//
-	for(; node && node.nodeType == Node.ELEMENT_NODE; node = node.parentNode) {
+	for (; node && node.nodeType == Node.ELEMENT_NODE; node = node.parentNode) {
 		//
 		var idx = 1, xname = node.localName;
 
 		//
-		if(node.hasAttribute("id")) {
+		if (node.hasAttribute("id")) {
 			idx = 'id="' + node.id + '"';
-			
+
 			//
 			xpath = "//" + xname + "[" + idx + "]" + xpath;
 			break;
-		} 
-		
+		}
+
 		//
 		else {
-			for(var sib = node.previousSibling; sib; sib = sib.previousSibling) {
-				if(sib.nodeType == Node.ELEMENT_NODE && sib.localName == xname) {
+			for (var sib = node.previousSibling; sib; sib = sib.previousSibling) {
+				if (sib.nodeType == Node.ELEMENT_NODE && sib.localName == xname) {
 					idx++;
 				}
 			}
 		}
 
 		//
-		if(idx != 1) {
+		if (idx != 1) {
 			xname += "[" + idx + "]";
 			xpath = "/" + xname + xpath;
 		}
@@ -341,116 +341,65 @@ function _getXPath(node) {
  * @param doc
  * @return
  */
+function _getSelector(node) {
+	//
+	var selector = "";
+
+	//
+	for (; node && node.nodeType == Node.ELEMENT_NODE; node = node.parentNode) {
+		//
+		var xname = node.localName;
+
+		//
+		if (node.hasAttribute("id")) {
+			//
+			var id = '#' + node.id;
+
+			//
+			selector = xname + id + " > " + selector;
+			break;
+		}
+
+		//
+		else {
+			//
+			var idx = 0;
+
+			//
+			for (var sib = node.previousSibling; sib; sib = sib.previousSibling) {
+				//
+				if (sib.nodeType == Node.ELEMENT_NODE && sib.localName == xname) {
+					idx++;
+				}
+			}
+
+			//
+			selector = xname + ":eq(" + idx + ") > " + selector;
+		}
+	}
+
+	//
+	return selector;
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
 function _getDetails(node) {
 	//
-	if(node == undefined) {
+	if (node == undefined) {
 		return {};
 	}
 
 	//
-	if(node == String(document)) {
-		node = jQueryMephisto("body").get(0);
+	if (node == String(document)) {
+		node = document.body;
 	}
 
 	//
-	var tmp;
-
-	// cached
-	if(jQueryMephisto(node).data("_details")) {
-		tmp = jQueryMephisto(node).data("_details");
-	}
-
-	// not cached
-	else {
-		//
-		var _item = node, _attributes = _item.attributes;
-
-		//
-		tmp = {
-			"tag" : "",
-			"namespace" : "",
-			"attributes" : [],
-			"parent" : {
-				"tag" : "",
-				"namespace" : "",
-				"attributes" : []
-			},
-			"xpath" : ""
-		};
-
-		// item
-		tmp.tag = _item.localName;
-
-		//
-		if(_item.namespaceURI) {
-			tmp.namespace = _item.namespaceURI;
-		}
-
-		//
-		for(var j = 0; j < _attributes.length; j++) {
-			//
-			var _attribute = _attributes[j];
-			var _tmp = {
-				"name" : _attribute.nodeName,
-				"namespace" : "",
-				"value" : _attribute.nodeValue
-			};
-
-			//
-			if(_attribute.namespaceURI) {
-				_tmp.namespace = _attribute.namespaceURI;
-			}
-
-			//
-			tmp.attributes.push(_tmp);
-		}
-
-		// parent
-		try {
-			//
-			var _parentItem = _item.parentNode;
-			tmp.parent.tag = _parentItem.localName;
-
-			//
-			if(_parentItem.namespaceURI) {
-				tmp.parent.namespace = _parentItem.namespaceURI;
-			}
-
-			//
-			for(var k = 0; k < _parentItem.attributes.length; k++) {
-				//
-				var _attribute = _parentItem.attributes[k];
-				var _tmp = {
-					"name" : _attribute.nodeName,
-					"namespace" : "",
-					"value" : _attribute.nodeValue
-				};
-
-				//
-				if(_attribute.namespaceURI) {
-					_tmp.namespace = _attribute.namespaceURI;
-				}
-
-				//
-				tmp.parent.attributes.push(_tmp);
-			}
-
-			// xpath
-			tmp.xpath = _getXPath(_item);
-		}
-
-		//
-		catch(e) {
-			//
-			tmp.parent = "";
-			tmp.xpath = "/" + _item.localName;
-		}
-		// caching
-		jQueryMephisto(node).data("_details", tmp);
-	}
-
-	//
-	return tmp;
+	return node.outerHTML;
 }
 
 /**
@@ -474,7 +423,7 @@ function _absolutizeURL(url) {
  */
 function _getAllText(node) {
 	//
-	if(node == undefined) {
+	if (node == undefined) {
 		return "";
 	}
 
@@ -493,12 +442,12 @@ function _getAllText(node) {
 	var treeWalker = document.createTreeWalker(node, NodeFilter.SHOW_ELEMENT | NodeFilter.SHOW_TEXT, {
 		acceptNode : function(_node) {
 			//
-			if(_node.tagName == "IMG") {
+			if (_node.tagName == "IMG") {
 				text += " " + jQueryMephisto(_node).attr("alt").trim();
 			}
 
 			//
-			else if(_node.nodeType == Node.TEXT_NODE) {
+			else if (_node.nodeType == Node.TEXT_NODE) {
 				text += " " + jQueryMephisto.trim(_node.nodeValue);
 			}
 
@@ -508,7 +457,7 @@ function _getAllText(node) {
 	}, false);
 
 	//
-	while(treeWalker.nextNode()) {
+	while (treeWalker.nextNode()) {
 	}
 
 	//
@@ -539,12 +488,12 @@ function get_page() {
 		var returnedPage = false;
 
 		// First, we try to get a page from the sample
-		for(i in pages) {
+		for (i in pages) {
 			var _page = pages[i];
 			var _url = _page.url;
 
 			// The page from stack should not have already tested
-			if(jQueryMephisto.inArray(_url, urls_tested) == -1) {
+			if (jQueryMephisto.inArray(_url, urls_tested) == -1) {
 				// The selected page will be tested and his URL is marked as
 				// "known"
 				urls_known.push(_url);
@@ -555,7 +504,7 @@ function get_page() {
 
 				// If the syntax of the URL is incorrect, we put the page in the
 				// "invalid" stack
-				if(!validity_check.is_valid) {
+				if (!validity_check.is_valid) {
 					unvalid_urls[_url] = _page;
 					logger.log("get_page", "invalid url: " + _url);
 
@@ -568,8 +517,8 @@ function get_page() {
 		}
 
 		// Then we try to get one in the explored URLs
-		if(!returnedPage) {
-			for(i in urls_to_add) {
+		if (!returnedPage) {
+			for (i in urls_to_add) {
 				var date = new Date();
 				var timestamp = date.getTime();
 				var page_id = "None_" + timestamp;
@@ -584,13 +533,13 @@ function get_page() {
 				// Check mimetype et http response code
 				var validity_check = check_url_validity(url);
 
-				if(!validity_check.is_valid) {
+				if (!validity_check.is_valid) {
 					Array.remove(urls_to_add, i);
 					logger.log("get_page", "URL not valid (rejected): " + JSON.stringify(validity_check));
 					continue;
 				}
 
-				if(jQueryMephisto.inArray(url, urls_tested) == -1 && jQueryMephisto.inArray(url, urls_known) == -1) {
+				if (jQueryMephisto.inArray(url, urls_tested) == -1 && jQueryMephisto.inArray(url, urls_known) == -1) {
 					urls_known.push(url);
 					Array.remove(urls_to_add, i);
 					returnedPage = page;
@@ -637,18 +586,18 @@ function saveAndRefresh2(criteria, token_id, mode, progression_div_id) {
 		logger.log("SaveAndRefresh", "Mode: " + mode);
 		logger.log("SaveAndRefresh", "Nombre d'iframe en queue: " + jQueryMephisto("body").data("queue").length);
 
-		if(!progression_div_id) {
+		if (!progression_div_id) {
 			progression_div_id = 'js_validator_status';
 		}
 
-		if(jQueryMephisto("body").data("queue").length !== 0) {
+		if (jQueryMephisto("body").data("queue").length !== 0) {
 			setTimeout(function() {
 				saveAndRefresh(criteria, token_id, mode, progression_div_id);
 			}, config_saveAndRefresh_delay);
 			return -1;
 		}
 
-		if(jQueryMephisto("#" + progression_div_id).size()) {
+		if (jQueryMephisto("#" + progression_div_id).size()) {
 			jQueryMephisto("#" + progression_div_id).text("Enregistrement des résultats");
 		}
 
@@ -662,7 +611,7 @@ function saveAndRefresh2(criteria, token_id, mode, progression_div_id) {
 
 		var service_url = "";
 
-		if(mode == 'page') {
+		if (mode == 'page') {
 			service_url = "projects/" + json_project + "/pages/" + page_id + "/evaluations/" + json_evaluation + "/update";
 		} else {
 			service_url = "projects/" + json_project + "/evaluations/" + json_evaluation + "/update";
@@ -676,7 +625,7 @@ function saveAndRefresh2(criteria, token_id, mode, progression_div_id) {
 			url : api_url + service_url,
 			data : JSON.stringify(_synthesized_results),
 			success : function(data, textStatus, XMLHttpRequest) {
-				for(var criterion_index in criteria) {
+				for (var criterion_index in criteria) {
 					// Get the criterion ID
 					var criterion_id = criteria[criterion_index];
 
@@ -691,7 +640,7 @@ function saveAndRefresh2(criteria, token_id, mode, progression_div_id) {
 					logger.log("SaveAndRefresh", "concerned row: " + jQueryMephisto(result_row).attr('id'));
 
 					// Reload the validation form
-					if(!jQueryMephisto("#jq_modal").is(':hidden')) {
+					if (!jQueryMephisto("#jq_modal").is(':hidden')) {
 						jQueryMephisto("#jq_modal").reload_evaluation_modal(result_row_model);
 					}
 
@@ -751,7 +700,7 @@ function synthesize_results(arg_results) {
 		logger.log("synthesize_results", arg_results.length);
 
 		//
-		for(var i = 0; i < arg_results.length; i++) {
+		for (var i = 0; i < arg_results.length; i++) {
 			//
 			var criterion_data = arg_results[i];
 			var statuses = criterion_data.result;
@@ -765,7 +714,7 @@ function synthesize_results(arg_results) {
 			};
 
 			// copy statuses before jQueryMephisto.unique which works by reference
-			for(var j in statuses) {
+			for (var j in statuses) {
 				_tmp["results_list"].push(statuses[j]);
 			}
 
@@ -774,15 +723,15 @@ function synthesize_results(arg_results) {
 
 			//
 			jQueryMephisto.unique(statuses);
-			if(statuses.length == 1) {
+			if (statuses.length == 1) {
 				status = statuses[0];
 			}
 
 			//
 			else {
-				if(jQueryMephisto.inArray('nc', statuses) != -1) {
+				if (jQueryMephisto.inArray('nc', statuses) != -1) {
 					status = 'nc';
-				} else if(jQueryMephisto.inArray('i', statuses) != -1 || jQueryMephisto.inArray('nt', statuses) != -1) {
+				} else if (jQueryMephisto.inArray('i', statuses) != -1 || jQueryMephisto.inArray('nt', statuses) != -1) {
 					status = 'i';
 				} else {
 					status = "c";
@@ -867,7 +816,7 @@ function loop_over_criteria(used_criteria) {
 		// Logging
 		logger.log("loop_over_criteria", "used_criteria: " + used_criteria);
 
-		for(var index in used_criteria) {
+		for (var index in used_criteria) {
 			//
 			//if (isNaN(parseInt(index))) {
 			//    throw "Test is not well formed";
@@ -944,11 +893,11 @@ function loop_over_tests(criterion, tests_list) {
 		logger.log(Object("loop_over_tests", tests_list));
 
 		//
-		if(timing_validator) {
+		if (timing_validator) {
 			_start = (new Date).getTime();
 		}
 
-		for(var test_id in tests_list) {
+		for (var test_id in tests_list) {
 			//
 			var _test = tests[test_id];
 			var _test_actions = tests_list[test_id];
@@ -966,11 +915,11 @@ function loop_over_tests(criterion, tests_list) {
 		}
 
 		//
-		if(timing_validator) {
+		if (timing_validator) {
 			_end = (new Date).getTime();
 			var _diff = _end - _start;
 
-			if(_diff >= 1000) {
+			if (_diff >= 1000) {
 				console.error("[" + _diff + "] " + document.location + " | " + _test);
 			}
 		}
@@ -1018,7 +967,7 @@ function apply_xpath_test(doc, test, language) {
 	//
 	try {
 		//
-		if(language == "html") {
+		if (language == "html") {
 			//
 			logger.log(Object('apply_xpath_test', doc));
 			logger.log(Object('apply_xpath_test', test));
@@ -1028,7 +977,7 @@ function apply_xpath_test(doc, test, language) {
 			var _result = [], nodesSnapshot, nsResolver = null;
 
 			//
-			if(document.contentType == "application/xhtml+xml") {
+			if (document.contentType == "application/xhtml+xml") {
 				//
 				function nsResolver(prefix) {
 					return 'http://www.w3.org/1999/xhtml';
@@ -1048,7 +997,7 @@ function apply_xpath_test(doc, test, language) {
 			logger.log(Object('apply_xpath_test', _result));
 
 			//
-			for(var i = 0; i < nodesSnapshot.snapshotLength; i++) {
+			for (var i = 0; i < nodesSnapshot.snapshotLength; i++) {
 				//
 				_result.push(_getDetails(nodesSnapshot.snapshotItem(i)));
 			}
@@ -1058,7 +1007,7 @@ function apply_xpath_test(doc, test, language) {
 		}
 
 		//
-		else if(language == "css") {
+		else if (language == "css") {
 			// Regexps
 			var reg = new RegExp().compile("^(.+)\\[(.+)\\]$", "i");
 			var reg_not = new RegExp().compile("^(.+)\\[not\\((.+)\\)\\]$", "i");
@@ -1082,7 +1031,7 @@ function apply_xpath_test(doc, test, language) {
 			var sheets = doc.styleSheets;
 
 			// inversion
-			if(reg_not.test(test)) {
+			if (reg_not.test(test)) {
 				//
 				inversion = true;
 				_selector = RegExp.$1;
@@ -1090,7 +1039,7 @@ function apply_xpath_test(doc, test, language) {
 			}
 
 			//
-			else if(reg.test(test)) {
+			else if (reg.test(test)) {
 				//
 				_selector = RegExp.$1;
 				_test = RegExp.$2;
@@ -1103,9 +1052,9 @@ function apply_xpath_test(doc, test, language) {
 			}
 
 			//
-			if(_test !== "") {
+			if (_test !== "") {
 				//
-				if(starts_with.test(_test)) {
+				if (starts_with.test(_test)) {
 					//
 					_property = RegExp.$1;
 					_value = RegExp.$2;
@@ -1113,7 +1062,7 @@ function apply_xpath_test(doc, test, language) {
 				}
 
 				//
-				else if(ends_with.test(_test)) {
+				else if (ends_with.test(_test)) {
 					//
 					_property = RegExp.$1;
 					_value = RegExp.$2;
@@ -1128,7 +1077,7 @@ function apply_xpath_test(doc, test, language) {
 				}*/
 
 				//
-				else if(contains.test(_test)) {
+				else if (contains.test(_test)) {
 					//
 					_property = RegExp.$1;
 					_value = RegExp.$2;
@@ -1136,7 +1085,7 @@ function apply_xpath_test(doc, test, language) {
 				}
 
 				//
-				else if(equals.test(_test)) {
+				else if (equals.test(_test)) {
 					//
 					_property = RegExp.$1;
 					_value = "^[\"']" + RegExp.$2 + "[\"']$";
@@ -1144,7 +1093,7 @@ function apply_xpath_test(doc, test, language) {
 				}
 
 				//
-				else if(presence.test(_test)) {
+				else if (presence.test(_test)) {
 					//
 					_property = RegExp.$1;
 					_value = ".*";
@@ -1153,21 +1102,21 @@ function apply_xpath_test(doc, test, language) {
 			}
 
 			//
-			for( i = 0; i < sheets.length; i++) {
+			for ( i = 0; i < sheets.length; i++) {
 				var sheet = sheets[i];
 				var rules;
 
 				// DOM
-				if(sheet.cssRules) {
+				if (sheet.cssRules) {
 					rules = sheet.cssRules;
 				}
 
 				//
-				for( j = 0; j < rules.length; j++) {
+				for ( j = 0; j < rules.length; j++) {
 					// CssStyleRule
-					if(rules[j].style) {
+					if (rules[j].style) {
 						// test for selector
-						if(_selector != "*") {
+						if (_selector != "*") {
 							//
 							_selectorText = rules[j].selectorText;
 							items = _selectorText.split("");
@@ -1178,14 +1127,14 @@ function apply_xpath_test(doc, test, language) {
 							_reseters = [" ", ">", "+"];
 
 							//
-							for( i = 0; i < items.length; i++) {
-								if(!(jQueryMephisto.inArray(items[i], _reseters))) {
-									if(items[i] == ",") {
+							for ( i = 0; i < items.length; i++) {
+								if (!(jQueryMephisto.inArray(items[i], _reseters))) {
+									if (items[i] == ",") {
 										_selectors.push(_tmp);
 										_tmp = "";
 										_reset = false;
 									} else {
-										if(_reset) {
+										if (_reset) {
 											_tmp = "";
 											_reset = false;
 										}
@@ -1197,27 +1146,27 @@ function apply_xpath_test(doc, test, language) {
 							}
 
 							//
-							if(_tmp !== "") {
+							if (_tmp !== "") {
 								_selectors.push(_tmp);
 							}
 
 							//
-							if(!(jQueryMephisto.inArray(_selector, _selectors))) {
+							if (!(jQueryMephisto.inArray(_selector, _selectors))) {
 								break;
 							}
 						}
 
 						//
-						for( k = 0; k < rules[j].style.length; k++) {
+						for ( k = 0; k < rules[j].style.length; k++) {
 							//
-							if(rules[j].style[k] == _property) {
+							if (rules[j].style[k] == _property) {
 								// DOM
-								if(rules[j].style.getPropertyValue) {
+								if (rules[j].style.getPropertyValue) {
 									//
 									var _test = _comparison.test(rules[j].style.getPropertyValue(rules[j].style[k]));
 
 									//
-									if(_test) {
+									if (_test) {
 										_result.push(RegExp.$1);
 									}
 								}
@@ -1225,26 +1174,26 @@ function apply_xpath_test(doc, test, language) {
 						}
 					}
 					// CssImportRule
-					else if(rules[j].type == CSSRule.IMPORT_RULE) {
+					else if (rules[j].type == CSSRule.IMPORT_RULE) {
 						var _sheet = rules[j].styleSheet;
 						var _rules;
 
 						// DOM
-						if(_sheet.cssRules) {
+						if (_sheet.cssRules) {
 							_rules = _sheet.cssRules;
 						}
 
 						//
-						for( k = 0; k < _rules[j].style.length; k++) {
+						for ( k = 0; k < _rules[j].style.length; k++) {
 							//
-							if(_rules[j].style[k] == _property) {
+							if (_rules[j].style[k] == _property) {
 								// DOM
-								if(_rules[j].style.getPropertyValue) {
+								if (_rules[j].style.getPropertyValue) {
 									//
 									var _test = _comparison.test(_rules[j].style.getPropertyValue(_rules[j].style[k]));
 
 									//
-									if(_test) {
+									if (_test) {
 										_result.push(RegExp.$1);
 									}
 								}
@@ -1255,9 +1204,9 @@ function apply_xpath_test(doc, test, language) {
 			}
 
 			//
-			if(inversion) {
+			if (inversion) {
 				//
-				if(_result.length) {
+				if (_result.length) {
 					return [];
 				} else {
 					return [true];
@@ -1308,19 +1257,19 @@ function apply_regexp_test(doc, test, language) {
 	//
 	try {
 		//
-		if(language == "html") {
+		if (language == "html") {
 			//
-			if(reg.test(sidecar.html_src)) {
+			if (reg.test(sidecar.html_src)) {
 				_result = [RegExp.$1];
 			}
 		}
 
 		//
-		else if(language == "http") {
+		else if (language == "http") {
 			var _headers = "";
 
 			//
-			for(var i in sidecar.resources[0]["headers"]) {
+			for (var i in sidecar.resources[0]["headers"]) {
 				_headers += i + ": " + sidecar.resources[0]["headers"][i] + "\n";
 			}
 
@@ -1328,24 +1277,24 @@ function apply_regexp_test(doc, test, language) {
 			logger.log("HTTP", _headers);
 
 			//
-			if(reg.test(_headers)) {
+			if (reg.test(_headers)) {
 				_result = [RegExp.$1];
 			}
 		}
 
 		//
-		else if(language == "css") {
+		else if (language == "css") {
 			//
-			for(var i = 0; i < sheets.length; i++) {
+			for (var i = 0; i < sheets.length; i++) {
 				//
 				var _sheet = sheets[i];
 				var _href = _sheet.href;
 				var _data = _sheet;
 
 				// external
-				if(_href && _href.length) {
+				if (_href && _href.length) {
 					//
-					if(!jQueryMephisto.data(doc.body, _href)) {
+					if (!jQueryMephisto.data(doc.body, _href)) {
 						//
 						jQueryMephisto.ajax(_href, {
 							async : false,
@@ -1358,23 +1307,23 @@ function apply_regexp_test(doc, test, language) {
 					}
 
 					//
-					if(reg.test(jQueryMephisto.data(doc.body, _href))) {
+					if (reg.test(jQueryMephisto.data(doc.body, _href))) {
 						_result.push(RegExp.$1);
 					}
 
 					// import
-					if(reg_import.test(jQueryMephisto.data(doc.body, _href))) {
+					if (reg_import.test(jQueryMephisto.data(doc.body, _href))) {
 						//
 						var _rel_src = RegExp.$2.replace(/['"()]/g, "");
 						var _src = "";
 
 						// absolute url
-						if(_src.match("^http://") == "http://" || _src.match("^https://") == "https://") {
+						if (_src.match("^http://") == "http://" || _src.match("^https://") == "https://") {
 							_src = _rel_src;
 						}
 
 						// absolute path
-						else if(_src.match("^/") == "/") {
+						else if (_src.match("^/") == "/") {
 							_src = doc.location.protocol + "//" + doc.location.hostname + _rel_src;
 						}
 
@@ -1385,7 +1334,7 @@ function apply_regexp_test(doc, test, language) {
 						}
 
 						//
-						if(!jQueryMephisto.data(doc.body, _src)) {
+						if (!jQueryMephisto.data(doc.body, _src)) {
 							//
 							jQueryMephisto.ajax(_src, {
 								async : false,
@@ -1397,7 +1346,7 @@ function apply_regexp_test(doc, test, language) {
 							});
 
 							//
-							if(reg.test(jQueryMephisto.data(doc.body, _src))) {
+							if (reg.test(jQueryMephisto.data(doc.body, _src))) {
 								_result.push(RegExp.$1);
 							}
 						}
@@ -1408,23 +1357,23 @@ function apply_regexp_test(doc, test, language) {
 				else {
 					jQueryMephisto("style").each(function() {
 						//
-						if(reg.test(jQueryMephisto(this).text())) {
+						if (reg.test(jQueryMephisto(this).text())) {
 							_result.push(RegExp.$1);
 						}
 
 						// import
-						if(reg_import.test(jQueryMephisto(this).text())) {
+						if (reg_import.test(jQueryMephisto(this).text())) {
 							//
 							var _rel_src = RegExp.$2.replace(/['"()]/g, "");
 							var _src = "";
 
 							// absolute url
-							if(_src.match("^http://") == "http://" || _src.match("^https://") == "https://") {
+							if (_src.match("^http://") == "http://" || _src.match("^https://") == "https://") {
 								_src = _rel_src;
 							}
 
 							// absolute path
-							else if(_src.match("^/") == "/") {
+							else if (_src.match("^/") == "/") {
 								_src = doc.location.protocol + "//" + doc.location.hostname + _rel_src;
 							}
 
@@ -1435,7 +1384,7 @@ function apply_regexp_test(doc, test, language) {
 							}
 
 							//
-							if(!jQueryMephisto.data(doc.body, _src)) {
+							if (!jQueryMephisto.data(doc.body, _src)) {
 								//
 								jQueryMephisto.ajax(_src, {
 									async : false,
@@ -1447,7 +1396,7 @@ function apply_regexp_test(doc, test, language) {
 								});
 
 								//
-								if(reg.test(jQueryMephisto.data(doc.body, _src))) {
+								if (reg.test(jQueryMephisto.data(doc.body, _src))) {
 									_result.push(RegExp.$1);
 								}
 							}
@@ -1458,7 +1407,7 @@ function apply_regexp_test(doc, test, language) {
 		}
 
 		//
-		else if(language == "js") {
+		else if (language == "js") {
 			//
 			jQueryMephisto("script").each(function() {
 				//
@@ -1466,9 +1415,9 @@ function apply_regexp_test(doc, test, language) {
 				var _data = jQueryMephisto(this).text();
 
 				// external
-				if(_src && _src.length) {
+				if (_src && _src.length) {
 					//
-					if(!jQueryMephisto.data(doc.body, _src)) {
+					if (!jQueryMephisto.data(doc.body, _src)) {
 						//
 						jQueryMephisto.ajax(_src, {
 							async : false,
@@ -1481,15 +1430,15 @@ function apply_regexp_test(doc, test, language) {
 					}
 
 					//
-					if(reg.test(jQueryMephisto.data(doc.body, _src))) {
+					if (reg.test(jQueryMephisto.data(doc.body, _src))) {
 						_result = [RegExp.$1];
 					}
 				}
 
 				// internal
-				else if(_data.length) {
+				else if (_data.length) {
 					//
-					if(reg.test(_data)) {
+					if (reg.test(_data)) {
 						_result = [RegExp.$1];
 					}
 				}
@@ -1497,7 +1446,7 @@ function apply_regexp_test(doc, test, language) {
 		}
 
 		//
-		else if(language == "robots") {
+		else if (language == "robots") {
 			//
 			_location = doc.URL.substring(0, doc.URL.indexOf("/", doc.URL.indexOf("proxy") + 15));
 
@@ -1508,7 +1457,7 @@ function apply_regexp_test(doc, test, language) {
 				type : "GET",
 				success : function(data, textStatus, XMLHttpRequest) {
 					//
-					if(reg.test(data)) {
+					if (reg.test(data)) {
 						_result = [RegExp.$1];
 					}
 				},
@@ -1549,11 +1498,11 @@ function apply_doctype_test(doc, test, language) {
 
 	//
 	try {
-		if(language == "html") {
+		if (language == "html") {
 			//
-			if(test == "present") {
+			if (test == "present") {
 				//
-				if(doc.doctype) {
+				if (doc.doctype) {
 					_dt = doc.doctype;
 					dt = '<!DOCTYPE ' + _dt.name.toLowerCase() + ' PUBLIC "' + _dt.publicId + '" "' + _dt.systemId + '">';
 
@@ -1563,14 +1512,14 @@ function apply_doctype_test(doc, test, language) {
 			}
 
 			//
-			else if(test == "valid") {
+			else if (test == "valid") {
 				//
-				if(doc.doctype) {
+				if (doc.doctype) {
 					_dt = doc.doctype;
 					dt = '<!DOCTYPE ' + _dt.name.toLowerCase() + ' PUBLIC "' + _dt.publicId + '" "' + _dt.systemId + '">';
 
 					//
-					if(jQueryMephisto.inArray(dt, doctypes) != -1) {
+					if (jQueryMephisto.inArray(dt, doctypes) != -1) {
 						//
 						_result.push(dt);
 					}
@@ -1612,7 +1561,7 @@ function apply_dom_test(doc, test, language) {
 	//
 	try {
 		//
-		if(language == "css") {
+		if (language == "css") {
 			// Regexps
 			var reg = new RegExp().compile("^(.+?)\\[(.+)\\]$", "i");
 			reg.test(test);
@@ -1623,26 +1572,26 @@ function apply_dom_test(doc, test, language) {
 			var sheets = doc.styleSheets;
 
 			//
-			for( i = 0; i < sheets.length; i++) {
+			for ( i = 0; i < sheets.length; i++) {
 				//
 				var sheet = sheets[i];
 				var rules = sheet.cssRules;
 
 				//
-				for( j = 0; j < rules.length; j++) {
+				for ( j = 0; j < rules.length; j++) {
 					// CssStyleRule
-					if(rules[j].style) {
+					if (rules[j].style) {
 						//
-						for( k = 0; k < rules[j].style.length; k++) {
+						for ( k = 0; k < rules[j].style.length; k++) {
 							//
-							if(rules[j].style[k] == _property) {
+							if (rules[j].style[k] == _property) {
 								// DOM
-								if(rules[j].style.getPropertyValue) {
+								if (rules[j].style.getPropertyValue) {
 									//
 									var _test = new RegExp(_value, "i").test(rules[j].style.getPropertyValue(rules[j].style[k]));
 
 									//
-									if(_test) {
+									if (_test) {
 										_result.push(rules[j].style.getPropertyValue(rules[j].style[k]));
 									}
 								}
@@ -1650,19 +1599,19 @@ function apply_dom_test(doc, test, language) {
 						}
 					}
 					// CssImportRule
-					else if(rules[j].type == CSSRule.IMPORT_RULE) {
+					else if (rules[j].type == CSSRule.IMPORT_RULE) {
 						var _sheet = rules[j].styleSheet;
 						var _rules = _sheet.cssRules;
 
 						//
-						for( k = 0; k < _rules[j].style.length; k++) {
+						for ( k = 0; k < _rules[j].style.length; k++) {
 							//
-							if(_rules[j].style[k] == _property) {
+							if (_rules[j].style[k] == _property) {
 								//
 								var _test = new RegExp(_value, "i").test(_rules[j].style.getPropertyValue(_rules[j].style[k]));
 
 								//
-								if(_test) {
+								if (_test) {
 									_result.push(_rules[j].style.getPropertyValue(_rules[j].style[k]));
 								}
 							}
@@ -1674,7 +1623,7 @@ function apply_dom_test(doc, test, language) {
 			//
 			jQueryMephisto("*[style]").each(function() {
 				//
-				if(new RegExp(_value, "i").test(jQueryMephisto(this).css(_property))) {
+				if (new RegExp(_value, "i").test(jQueryMephisto(this).css(_property))) {
 					_result.push(_getDetails(this));
 				}
 			});
@@ -1723,38 +1672,38 @@ function apply_test(doc, test, test_actions) {
 		logger.log("apply_test", "criterion: " + doc + ",\n test: " + _test + ",\n test_actions: " + JSON.stringify(test_actions));
 
 		// cached
-		if(jQueryMephisto(doc).data(test)) {
+		if (jQueryMephisto(doc).data(test)) {
 			result = jQueryMephisto(doc).data(test);
 
 			// not cached
 		} else {
 			// Apply the unit test
-			if(_scheme == "xpath") {
+			if (_scheme == "xpath") {
 				result = apply_xpath_test(doc, _test, _language);
 			}
 
 			//
-			else if(_scheme == "regexp") {
+			else if (_scheme == "regexp") {
 				result = apply_regexp_test(doc, _test, _language);
 			}
 
 			//
-			else if(_scheme == "doctype") {
+			else if (_scheme == "doctype") {
 				result = apply_doctype_test(doc, _test, _language);
 			}
 
 			//
-			else if(_scheme == "dom") {
+			else if (_scheme == "dom") {
 				result = apply_dom_test(doc, _test, _language);
 			}
 
 			//
-			else if(_scheme == "oqs") {
+			else if (_scheme == "oqs") {
 				result = eval(_test + "(doc)");
 			}
 
 			//
-			else if(_scheme == "defer") {
+			else if (_scheme == "defer") {
 				result = "DEFERED";
 			}
 
@@ -1771,7 +1720,7 @@ function apply_test(doc, test, test_actions) {
 		var _g_details = [];
 
 		// If the result is false, then, there has been an error
-		if(result === false) {
+		if (result === false) {
 			logger.error('apply_test', 'Le test a échoué');
 
 			_g_results.push('i');
@@ -1786,7 +1735,7 @@ function apply_test(doc, test, test_actions) {
 		}
 
 		// If the result is "DEFERED", then, the test is defered
-		else if(result === "DEFERED") {
+		else if (result === "DEFERED") {
 			logger.log('apply_test', 'Le test est reporté');
 
 			_g_results.push('i');
@@ -1801,11 +1750,11 @@ function apply_test(doc, test, test_actions) {
 		}
 
 		// If the test return something, then, the test is positive
-		if(result.length > 0) {
+		if (result.length > 0) {
 			// subtests
-			if(test_actions.ontrue.chain) {
+			if (test_actions.ontrue.chain) {
 				//
-				for(var subtest_id in test_actions.ontrue.chain) {
+				for (var subtest_id in test_actions.ontrue.chain) {
 					//
 					var subtest_actions = test_actions.ontrue.chain[subtest_id];
 					var subtest = tests[subtest_id];
@@ -1824,7 +1773,7 @@ function apply_test(doc, test, test_actions) {
 				_g_comments.push(test_actions.ontrue.comment);
 
 				//
-				if(test_actions.ontrue.result == "nc" || test_actions.ontrue.result == "i") {
+				if (test_actions.ontrue.result == "nc" || test_actions.ontrue.result == "i") {
 					_g_details = jQueryMephisto.extend(_g_details, result);
 				}
 			}
@@ -1833,9 +1782,9 @@ function apply_test(doc, test, test_actions) {
 		// Else, the test didn't find anything, so the test is negative
 		else {
 			// subtests
-			if(test_actions.onfalse.chain) {
+			if (test_actions.onfalse.chain) {
 				//
-				for(var subtest_id in test_actions.onfalse.chain) {
+				for (var subtest_id in test_actions.onfalse.chain) {
 					//
 					var subtest_actions = test_actions.onfalse.chain[subtest_id];
 					var subtest = tests[subtest_id];
@@ -1854,7 +1803,7 @@ function apply_test(doc, test, test_actions) {
 				_g_comments.push(test_actions.onfalse.comment);
 
 				//
-				if(test_actions.onfalse.result == "nc" || test_actions.ontrue.result == "i") {
+				if (test_actions.onfalse.result == "nc" || test_actions.ontrue.result == "i") {
 					_g_details = jQueryMephisto.extend(_g_details, result);
 				}
 			}

@@ -43,6 +43,7 @@
     var _results =  synthesize_results(results);
 	
     return {
-        'oaa_results': JSON.parse(unescape(encodeURIComponent(JSON.stringify(_results))))
+        'oaa_results': _results,
+        'datetime': new Date()
     };
 })();

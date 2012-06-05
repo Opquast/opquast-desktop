@@ -1,4 +1,6 @@
 (function() {
+	var oTable;
+	
 	window.clearContent = function() {
 		$("body").empty();
 	};
@@ -17,6 +19,7 @@
 
 	window.showResults = function(tests) {
 		var table = $('<table id="test_result"></table>');
+		var caption = ('<caption>' + tests.datetime.toLocaleDateString() + " " + tests.datetime.toLocaleTimeString() + '</caption>');
 		var thead = $('<thead></thead>');
 		var tbody = $('<tbody></tbody>');
 		var tr;
@@ -29,13 +32,13 @@
 		tr.append(
 			'<th>Résultat</th>',
 			'<th>Checklist</th>',
-			'<th>Numéro</th>',
-			'<th>Libellé</th>',
+			'<th>Référence</th>',
+			'<th>Libellé du test</th>',
 			'<th>Détails</th>'
 		);
 		// @formatter:on
 
-		table.append(thead).append(tbody);
+		table.append(caption).append(thead).append(tbody);
 
 		for each(result in tests.oaa_results) {
 			if(!(result.id in window.checklists)) {
@@ -43,20 +46,27 @@
 			}
 
 			criterion = window.checklists[result.id];
+			var results = {
+				"c" : "Conforme",
+				"nc" : "Non conforme",
+				"i" : "Indéterminé",
+				"na" : "Non applicable"
+			};
 
 			tr = $("<tr></tr>");
 			tbody.append(tr);
 
 			// @formatter:off
 			tr.append(
-				'<td><img src="img/' + result.result + '.png" alt="' + result.result + '" /><span style="display:none">' + result.result + '</span></td>',
+				'<td><img src="img/' + result.result + '.png" alt="' + results[result.result] + '" /><span style="display:none">' + results[result.result] + '</span></td>',
 				'<td>' + criterion.checklist.name + '</td>',
 				'<td>' + criterion.name + '</td>',
 				'<td>' + criterion.description + '</td>',
-				'<td>' + result.comment + '</td>',
-				'<td><pre>' + JSON.stringify(result.details, null, 4) + '</pre></td>'
+				'<td>' + result.comment + '</td>'
 			);
 			// @formatter:on
+
+			tr.data("details", result.details);
 		}
 
 		$("body").append(table);
@@ -76,8 +86,9 @@
 			return ((a < b) ? -1 : ((a > b) ? 1 : 0));
 		});
 
-		var oTable = table.dataTable({
+		oTable = table.dataTable({
 			bPaginate : false,
+			sDom: "lrtip",
 			oLanguage : {
 				sZeroRecords : "Aucun résultat",
 				sInfo : "Affichage des résultats _START_ à _END_ sur _TOTAL_",
@@ -87,8 +98,6 @@
 			},
 			aoColumns : [null, null, null, null, {
 				"bVisible" : false
-			}, {
-				"bVisible" : false
 			}]
 		})
 
@@ -96,11 +105,11 @@
 			sPlaceHolder : "head:before",
 			aoColumns : [{
 				type : "select",
-				values : ["c", "nc", "i", "na"]
+				values : ["Conforme", "Non conforme", "Indéterminé", "Non applicable"]
 			}, {
 				type : "select",
 				values : values
-			}, null, null, null, null, null]
+			}, null, null, null, null]
 		});
 
 		// bug : filtering trigger sorting
@@ -112,9 +121,28 @@
 		//
 		function fnFormatDetails(oTable, nTr) {
 			var aData = oTable.fnGetData(nTr);
-			var sOut = '<table class="details"><tr><td>' + aData[4] + '</td><td>' + aData[5] + '</td></tr></table>';
+			var aOut = $('<table class="details"><thead><tr><th>Commentaires</th><th>Éléments concernés</th></tr></thead><tbody><tr><td>' + aData[4] + '</td></tr></tbody></table>');
+			var aDetails = $('<td><ul></ul></td>');
 
-			return sOut;
+			var nodes = $(nTr).data("details");
+
+			for each(node in nodes) {
+				var a = $('<a>' + node.replace("<", "&lt;").replace(">", "&gt;") + '</a>');
+				/*a.click(function() {
+					with(window.__ffinspector) {
+						closeInspectorUI(true);
+						openInspectorUI();
+						inspectNode($(node.path).get(0));
+						//node.scrollIntoView();
+					}
+				});*/
+				
+				$('ul', aDetails).append($('<li></li>').append(a));
+			};
+
+			$("tbody tr td", aOut).after(aDetails);
+
+			return aOut;
 		}
 
 		//

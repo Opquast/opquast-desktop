@@ -17,12 +17,22 @@ body {
     text-align: center;
 }
 
-#test_result {
+#test_result, #test_result table {
     border-collapse: collapse;
+    width: 100%;
 }
 
-#test_result th {
+#test_result th, .dataTables_info {
+    background-color: #eee;
+    color: #000;
     border: 1px solid #333;
+}
+
+.dataTables_info {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    float: none;
 }
 
 #test_result td {
