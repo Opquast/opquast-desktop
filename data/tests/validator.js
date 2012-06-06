@@ -1,5 +1,5 @@
 var debug_validator = false;
-var timing_validator = true;
+var timing_validator = false;
 var config_saveAndRefresh_delay = 1000;
 // 1500
 var exit_validator = false;
