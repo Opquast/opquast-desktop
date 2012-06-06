@@ -1,5 +1,5 @@
 var debug_validator = false;
-var timing_validator = false;
+var timing_validator = true;
 var config_saveAndRefresh_delay = 1000;
 // 1500
 var exit_validator = false;
@@ -286,6 +286,289 @@ function initJson() {
 
 	//
 	return false;
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
+function _sendXHR(method, uri) {
+	//
+	try {
+		//
+		uri = resolveURI(uri, document.location.href);
+
+		// cached
+		if (jQueryMephisto(document).data(uri)) {
+			//
+			return jQueryMephisto(document).data(uri);
+		}
+
+		// not cached
+		else {
+			//
+			xhr.open(method, uri, false);
+
+			//
+			xhr.setRequestHeader("Referer", document.location.href);
+
+			//
+			if (request.hasHeader("Authorization")) {
+				xhr.setRequestHeader("Authorization", request.getHeader("Authorization"));
+			} else {
+				xhr.setRequestHeader("Authorization", false);
+			}
+
+			//
+			//var _start = (new Date).getTime();
+
+			//
+			xhr.send(null);
+
+			//
+			//var _end = (new Date).getTime();
+			//console.log("{" + (_end - _start) + "} " + uri);
+
+			//
+			var _tmp = {
+				"status" : xhr.status,
+				"responseText" : xhr.responseText,
+				"responseXML" : xhr.responseXML,
+				"contentType" : xhr.getResponseHeader("Content-Type").split(";")[0]
+			}
+
+			// caching
+			jQueryMephisto(document).data(uri, _tmp);
+
+			//
+			return _tmp;
+		}
+	}
+
+	//
+	catch(e) {
+		//
+		return {
+			"status" : 0,
+			"responseText" : "",
+			"responseXML" : "",
+			"contentType" : ""
+		}
+	}
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
+function _analyseStylesheets(doc, media, callback) {
+	//
+	var result = [], css, extSheets = doc.styleSheets, intSheets = jQueryMephisto("head > style");
+
+	//
+	for (var i = 0; i < extSheets.length; i++) {
+		//
+		var css = extSheets.item(i);
+
+		//
+		if (css.ownerNode.tagName.toUpperCase() != "STYLE") {
+			//
+			_xhr = _sendXHR("GET", css.href);
+
+			//
+			if (_xhr.status == 200 && jQueryMephisto.trim(_xhr.responseText) != "") {
+				//
+				var parser = new CSSParser(), sheet = parser.parse(_xhr.responseText, false, false);
+				sheet._extra = {
+					"media" : css.media,
+					"href" : css.href
+				};
+				sheet.resolveVariables(media);
+
+				//
+				if (jQueryMephisto.isArray(callback)) {
+					//
+					callback.push({
+						"href" : css.href,
+						"text" : _xhr.responseText
+					});
+				}
+
+				//
+				jQueryMephisto.merge(result, _analyseStylesheet(sheet, media, callback));
+			}
+		}
+	}
+
+	//
+	intSheets.each(function() {
+		//
+		if (jQueryMephisto(this).text().trim() != "") {
+			//
+			var parser = new CSSParser(), sheet = parser.parse(jQueryMephisto(this).text(), false, false);
+			_media = jQueryMephisto.trim(jQueryMephisto(this).attr("media")).split(" ");
+			_media.pop("");
+			sheet._extra = {
+				"media" : _media,
+				"href" : "interne"
+			};
+			sheet.resolveVariables(media);
+
+			//
+			if (jQueryMephisto.isArray(callback)) {
+				//
+				callback.push({
+					"href" : "interne",
+					"text" : jQueryMephisto(this).text()
+				});
+			}
+
+			//
+			jQueryMephisto.merge(result, _analyseStylesheet(sheet, media, callback));
+		}
+	});
+
+	//
+	if (jQueryMephisto.isArray(callback)) {
+		//
+		return callback;
+	} else {
+		//
+		return result;
+	}
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
+function _analyseStylesheet(sheet, media, callback) {
+	//
+	var result = [];
+
+	// no media
+	if (sheet._extra["media"].length == 0) {
+		//
+		var rules = sheet.cssRules;
+
+		// rules walk
+		for (var k = 0; k < rules.length; k++) {
+			//
+			if ( _rule = rules[k]) {
+				if ( _tmp = _analyseRule(_rule, media, callback)) {
+					jQueryMephisto.merge(result, _tmp);
+				}
+			}
+		}
+	}
+
+	//
+	else {
+		// media walk
+		for (var j = 0; j < sheet._extra["media"].length; j++) {
+			//
+			var _media = sheet._extra["media"].item && sheet._extra["media"].item(j) || sheet._extra["media"][j];
+			if (_media.startsWith(media) || _media.startsWith("only " + media) || _media == "all") {
+				//
+				var rules = sheet.cssRules;
+
+				// rules walk
+				for (var k = 0; k < rules.length; k++) {
+					//
+					if ( _rule = rules[k]) {
+						if ( _tmp = _analyseRule(_rule, media, callback)) {
+							jQueryMephisto.merge(result, _tmp);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	//
+	return result;
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
+function _analyseRule(rule, media, callback) {
+	// style rule
+	if (rule.type == CSSRule.STYLE_RULE) {
+		//
+		if (jQueryMephisto.isArray(callback) == false) {
+			//
+			return callback(rule);
+		}
+	}
+
+	// media rule
+	else if (rule.type == CSSRule.MEDIA_RULE) {
+		// media walk
+		for (var l = 0; l < rule.media.length; l++) {
+			//
+			var _media = rule.media.item && rule.media.item(l) || rule.media[l];
+			if (_media.startsWith(media) || _media.startsWith("only " + media) || _media == "all") {
+				//
+				var rules = rule.cssRules;
+
+				// rules walk
+				for (var k = 0; k < rules.length; k++) {
+					//
+					var rule = rules[k];
+
+					//
+					return _analyseRule(rule, media, callback);
+				}
+			}
+		}
+	}
+
+	// import rule
+	else if (rule.type == CSSRule.IMPORT_RULE) {
+		// media walk
+		for (var l = 0; l < rule.media.length; l++) {
+			//
+			var _media = rule.media.item && rule.media.item(l) || rule.media[l];
+			if (_media.startsWith(media) || _media.startsWith("only " + media) || _media == "all") {
+				//
+				var re = new RegExp().compile("(url\\()?'?\"?([^'\"\\)]*)", "i");
+				re.test(rule.href);
+				var href = jQueryMephisto.trim(RegExp.$2);
+
+				//
+				_xhr = _sendXHR("GET", href);
+
+				//
+				if (_xhr.status == 200 && jQueryMephisto.trim(_xhr.responseText) != "") {
+					//
+					var parser = new CSSParser(), sheet = parser.parse(_xhr.responseText, false, false);
+					sheet._extra = {
+						"media" : rule.media,
+						"href" : href
+					};
+					sheet.resolveVariables(media);
+
+					//
+					if (jQueryMephisto.isArray(callback)) {
+						//
+						callback.push({
+							"href" : href,
+							"text" : _xhr.responseText
+						});
+					}
+
+					//
+					return _analyseStylesheet(sheet, media, callback);
+				}
+			}
+		}
+	}
 }
 
 /**
@@ -1248,11 +1531,7 @@ function apply_xpath_test(doc, test, language) {
  */
 function apply_regexp_test(doc, test, language) {
 	//
-	var _result = [];
-	var reg = new RegExp().compile(test, "i");
-	var reg_import = new RegExp().compile("@import\\s*(url)?(.+)[\s;]", "i");
-	var sheets = doc.styleSheets;
-	var scripts = doc.scripts;
+	var _result = [], reg = new RegExp().compile(test, "i"), scripts = doc.scripts;
 
 	//
 	try {
@@ -1285,125 +1564,16 @@ function apply_regexp_test(doc, test, language) {
 		//
 		else if (language == "css") {
 			//
-			for (var i = 0; i < sheets.length; i++) {
+			var parse = _analyseStylesheets(doc, "screen", []);
+
+			//
+			parse.forEach(function(element, index, array) {
 				//
-				var _sheet = sheets[i];
-				var _href = _sheet.href;
-				var _data = _sheet;
-
-				// external
-				if (_href && _href.length) {
+				if (reg.test(element.text)) {
 					//
-					if (!jQueryMephisto.data(doc.body, _href)) {
-						//
-						jQueryMephisto.ajax(_href, {
-							async : false,
-							success : function(data, textStatus, XMLHttpRequest) {
-								//
-								jQueryMephisto.data(doc.body, _href, data);
-							},
-							dataType : "text"
-						});
-					}
-
-					//
-					if (reg.test(jQueryMephisto.data(doc.body, _href))) {
-						_result.push(RegExp.$1);
-					}
-
-					// import
-					if (reg_import.test(jQueryMephisto.data(doc.body, _href))) {
-						//
-						var _rel_src = RegExp.$2.replace(/['"()]/g, "");
-						var _src = "";
-
-						// absolute url
-						if (_src.match("^http://") == "http://" || _src.match("^https://") == "https://") {
-							_src = _rel_src;
-						}
-
-						// absolute path
-						else if (_src.match("^/") == "/") {
-							_src = doc.location.protocol + "//" + doc.location.hostname + _rel_src;
-						}
-
-						// relative path
-						else {
-							_src = doc.location.protocol + "//" + doc.location.hostname + "/" + doc.location.pathname;
-							_src = _src.substring(0, _src.lastIndexOf("/") + 1) + _rel_src;
-						}
-
-						//
-						if (!jQueryMephisto.data(doc.body, _src)) {
-							//
-							jQueryMephisto.ajax(_src, {
-								async : false,
-								success : function(data, textStatus, XMLHttpRequest) {
-									//
-									jQueryMephisto.data(doc.body, _src, data);
-								},
-								dataType : "text"
-							});
-
-							//
-							if (reg.test(jQueryMephisto.data(doc.body, _src))) {
-								_result.push(RegExp.$1);
-							}
-						}
-					}
+					_result.push(element.href);
 				}
-
-				// internal
-				else {
-					jQueryMephisto("style").each(function() {
-						//
-						if (reg.test(jQueryMephisto(this).text())) {
-							_result.push(RegExp.$1);
-						}
-
-						// import
-						if (reg_import.test(jQueryMephisto(this).text())) {
-							//
-							var _rel_src = RegExp.$2.replace(/['"()]/g, "");
-							var _src = "";
-
-							// absolute url
-							if (_src.match("^http://") == "http://" || _src.match("^https://") == "https://") {
-								_src = _rel_src;
-							}
-
-							// absolute path
-							else if (_src.match("^/") == "/") {
-								_src = doc.location.protocol + "//" + doc.location.hostname + _rel_src;
-							}
-
-							// relative path
-							else {
-								_src = doc.location.protocol + "//" + doc.location.hostname + "/" + doc.location.pathname;
-								_src = _src.substring(0, _src.lastIndexOf("/") + 1) + _rel_src;
-							}
-
-							//
-							if (!jQueryMephisto.data(doc.body, _src)) {
-								//
-								jQueryMephisto.ajax(_src, {
-									async : false,
-									success : function(data, textStatus, XMLHttpRequest) {
-										//
-										jQueryMephisto.data(doc.body, _src, data);
-									},
-									dataType : "text"
-								});
-
-								//
-								if (reg.test(jQueryMephisto.data(doc.body, _src))) {
-									_result.push(RegExp.$1);
-								}
-							}
-						}
-					});
-				}
-			}
+			});
 		}
 
 		//
