@@ -11,15 +11,20 @@
 		<script type="text/javascript" src="js/jquery.dataTables.js"></script>
 		<script type="text/javascript" src="js/jquery.dataTables.columnFilter.js"></script>
 		<script type="text/javascript" src="js/checklists.js"></script>
+		<script type="text/javascript" src="results.js"></script>
 	</head>
 	<body>
-		<p id="noresults"></p>
-		<script type="text/javascript">
-			//if ($.inArray(location.protocol, ["about:", "resource:"]) == -1) {
-				$("#noresults").append('Aucun résultat pour l\'instant.<br><a href="loading.html?run"><button>Lancer</button></a>');
-			/*} else {
-				$("#noresults").append('Il faut se rendre sur une page avant de lancer les tests, banane !');
-			}*/
-		</script>
+		<table id="test_result">
+			<caption></caption>
+			<thead>
+				<th>Résultat</th>
+				<th>Checklist</th>
+				<th>Référence</th>
+				<th>Libellé du test</th>
+				<th>Durée (ms)</th>
+				<th>Détails</th>
+			</thead>
+			<tbody></tbody>
+		</table>
 	</body>
 </html>

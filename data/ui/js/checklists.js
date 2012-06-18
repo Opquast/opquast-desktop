@@ -1,4 +1,4 @@
-checklists = {
+var checklists = {
   "10242": {
     "goal": "<ul><li><h5>2.2.1 : R\u00e9glage du d\u00e9lai : (A)</h5><br />Rendre les contenus accessibles quelles que soient les contraintes de temps de consultation ou d'interaction dues \u00e0 des situations de handicap.<br><br>Certaines personnes souffrant\r\nd'incapacit\u00e9s mentales ou visuelles peuvent avoir besoin de plus de temps pour lire un texte. Les limites de temps peuvent rendre impossible la lecture ou la manipulation de l'interface pour ces personne.</li><li><h5>2.2.2 : Mettre en pause, arr\u00eater, masquer : (A)</h5><br />Rendre les contenus accessibles sans interf\u00e9rences dues \u00e0 une animation susceptible de g\u00eaner l'utilisateur. <br><br>Certaines personnes souffrant d'incapacit\u00e9s mentales ou visuelles ne peuvent pas lire un texte lorsqu'il clignote ou lorsqu'il bouge. Les clignotements/mouvements peuvent causer une distraction telle que le reste de la page devient illisible pour des gens souffrant de handicap cognitif.</li></ul>", 
     "checklist": {

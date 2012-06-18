@@ -1,4 +1,4 @@
-/*global xhr, CSSParser*/
+/*global xhrMephisto, CSSParser*/
 var regFunction = RegExp().compile("([^\\s:{]*)\\(", "i")
 
 /**
@@ -2172,7 +2172,7 @@ function cssContent(doc) {
 	//
 	try {
 		//
-		jQueryMephisto("body, body *").each(function() {
+		jQueryMephisto("body").find("*").andSelf().each(function() {
 			var _before = getComputedStyle(this, ':before').getPropertyCSSValue('content').cssText;
 			var _after = getComputedStyle(this, ':after').getPropertyCSSValue('content').cssText;
 
@@ -2477,13 +2477,13 @@ function cssUppercase(doc) {
 	//
 	var result = [];
 	var exclusions = ["ABBR", "ACRONYM", "ADDRESS", "BLOCKQUOTE", "CITE", "CODE", "KBD", "PRE", "Q", "RP", "RT", "RUBY", "SAMP", "SUB", "SUP", "TIME", "VAR", "IFRAME", "SCRIPT"];
-	var reg = new RegExp().compile("^[^a-z]*[A-Z][^a-z]*[A-Z][^a-z]*[A-Z][^a-z]*$", "g");
+	//var reg = new RegExp().compile("^[^a-z]*[A-Z][^a-z]*[A-Z][^a-z]*[A-Z][^a-z]*$", "g");
 
 	//
 	try {
 		//
-		jQueryMephisto("body, body *").each(function() {
-			//
+		jQueryMephisto("body").find("*").andSelf().each(function() {
+			// 
 			if (jQueryMephisto.inArray(this.tagName.toUpperCase(), exclusions) == -1 && jQueryMephisto(this).css("text-decoration") != "uppercase" && jQueryMephisto(this).parents(exclusions.toString().toLowerCase()).size() == 0) {
 				//
 				var _text = jQueryMephisto(this).contents().filter(function() {
@@ -2497,7 +2497,7 @@ function cssUppercase(doc) {
 			}
 		});
 	}
-
+	
 	//
 	catch (err) {
 		// Error Logging
@@ -2606,7 +2606,7 @@ function cssTextIndentNegative(doc) {
 	//
 	try {
 		//
-		jQueryMephisto("body, body *").each(function() {
+		jQueryMephisto("body").find("*").andSelf().each(function() {
 			//
 			var _backgroundImage = jQueryMephisto(this).css("background-image");
 			var _textIndent = jQueryMephisto(this).css("text-indent");
@@ -4462,6 +4462,161 @@ function htmlH6WithTermsNotInContent(doc) {
  * @param doc
  * @return
  */
+function htmlH1(doc) {
+	//
+	var result = [];
+
+	//
+	try {
+		//
+		jQueryMephisto("body").filter(":header").each(function() {
+			//
+			if (this.tagName.toUpperCase() == "H1") {
+				result.push(_getDetails(this));
+			}
+		});
+	}
+
+	//
+	catch (err) {
+		// Error Logging
+		logger.error("htmlH1", err);
+		result = false;
+	}
+
+	//
+	return result;
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
+function htmlH2(doc) {
+	//
+	var result = [];
+
+	//
+	try {
+		//
+		jQueryMephisto("body").filter(":header").each(function() {
+			//
+			if (this.tagName.toUpperCase() == "H2") {
+				result.push(_getDetails(this));
+			}
+		});
+	}
+
+	//
+	catch (err) {
+		// Error Logging
+		logger.error("htmlH2", err);
+		result = false;
+	}
+
+	//
+	return result;
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
+function htmlH3(doc) {
+	//
+	var result = [];
+
+	//
+	try {
+		//
+		jQueryMephisto("body").filter(":header").each(function() {
+			//
+			if (this.tagName.toUpperCase() == "H3") {
+				result.push(_getDetails(this));
+			}
+		});
+	}
+
+	//
+	catch (err) {
+		// Error Logging
+		logger.error("htmlH3", err);
+		result = false;
+	}
+
+	//
+	return result;
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
+function htmlH4(doc) {
+	//
+	var result = [];
+
+	//
+	try {
+		//
+		jQueryMephisto("body").filter(":header").each(function() {
+			//
+			if (this.tagName.toUpperCase() == "H4") {
+				result.push(_getDetails(this));
+			}
+		});
+	}
+
+	//
+	catch (err) {
+		// Error Logging
+		logger.error("htmlH4", err);
+		result = false;
+	}
+
+	//
+	return result;
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
+function htmlH5(doc) {
+	//
+	var result = [];
+
+	//
+	try {
+		//
+		jQueryMephisto("body").filter(":header").each(function() {
+			//
+			if (this.tagName.toUpperCase() == "H5") {
+				result.push(_getDetails(this));
+			}
+		});
+	}
+
+	//
+	catch (err) {
+		// Error Logging
+		logger.error("htmlH5", err);
+		result = false;
+	}
+
+	//
+	return result;
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
 function htmlH6(doc) {
 	//
 	var result = [];
@@ -4469,9 +4624,11 @@ function htmlH6(doc) {
 	//
 	try {
 		//
-		jQueryMephisto("h6").each(function() {
+		jQueryMephisto("body").filter(":header").each(function() {
 			//
-			result.push(_getDetails(this));
+			if (this.tagName.toUpperCase() == "H6") {
+				result.push(_getDetails(this));
+			}
 		});
 	}
 
@@ -4791,6 +4948,36 @@ function htmlImageAnimatedNotInButtonOrA(doc) {
 				if (jQueryMephisto(this).parents("a:not([href^='#'])").size() == 0 && jQueryMephisto(this).parents("button:not([href^='#'])").size() == 0) {
 					result.push(_getDetails(this));
 				}
+			}
+		});
+	}
+
+	//
+	catch (err) {
+		// Error Logging
+		logger.error("htmlImageAnimatedNotInButtonOrA", err);
+		result = false;
+	}
+
+	//
+	return result;
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
+function htmlScript(doc) {
+	//
+	var result = []
+
+	//
+	try {
+		//
+		jQueryMephisto(document).filter("script").each(function() {
+			if (jQueryMephisto.trim(jQueryMephisto(this).attr("src")) != '' || jQueryMephisto.trim(jQueryMephisto(this).text()) != '') {
+				result.push(_getDetails(this));
 			}
 		});
 	}

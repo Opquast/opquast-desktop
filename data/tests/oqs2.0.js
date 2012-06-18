@@ -44,6 +44,7 @@
 	
     return {
         'oaa_results': _results,
-        'datetime': new Date()
+        'datetime': new Date(),
+        'timer' : timer/1000
     };
 })();

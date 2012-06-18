@@ -9,12 +9,16 @@ body {
     font-size: 12px;
 }
 
-#loader {
+#loader, #noresults {
     font-size: 2em;
     background: transparent url(../img/loader.gif) no-repeat 50% 100%;
     margin-top: 40px;
     padding-bottom: 50px;
     text-align: center;
+}
+
+#noresults {
+    background-image: none;
 }
 
 #test_result, #test_result table {

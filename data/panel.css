@@ -24,8 +24,12 @@
     text-shadow: none;
 }
 
-#opquast-desktop-panel-toolbar toolbarbutton:hover, #opquast-desktop-panel-toolbar toolbarbutton:focus {
-    text-shadow: 0 0 2px rgba(255,255,255, 0.5);
+#opquast-desktop-panel-toolbar toolbarbutton.none {
+    display: none;
+}
+
+#opquast-desktop-panel-toolbar toolbarbutton[disabled], #opquast-desktop-panel-toolbar textbox[disabled] {
+    display: none;
 }
 
 #opquast-desktop-panel-toolbar {

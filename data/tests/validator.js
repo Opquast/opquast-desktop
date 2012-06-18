@@ -1,11 +1,12 @@
 var debug_validator = false;
-var timing_validator = false;
+var timing_validator = true;
 var config_saveAndRefresh_delay = 1000;
 // 1500
 var exit_validator = false;
 var i, j, k;
 var tests, criteria;
 var results = [];
+var timer = 0;
 
 // ------------------------------------------
 // Logger
@@ -50,7 +51,7 @@ var logger = {
 		if (debug_validator) {
 			// Firebug logging
 			if (this.log_firebug && window.console && window.console.log) {
-				window.console.log('[' + tag + '] ', object);
+				console.log('[' + tag + '] ', object);
 			}
 
 			// Ajax logging
@@ -308,23 +309,23 @@ function _sendXHR(method, uri) {
 		// not cached
 		else {
 			//
-			xhr.open(method, uri, false);
+			xhrMephisto.open(method, uri, false);
 
 			//
-			xhr.setRequestHeader("Referer", document.location.href);
+			xhrMephisto.setRequestHeader("Referer", document.location.href);
 
 			//
 			if (request.hasHeader("Authorization")) {
-				xhr.setRequestHeader("Authorization", request.getHeader("Authorization"));
+				xhrMephisto.setRequestHeader("Authorization", request.getHeader("Authorization"));
 			} else {
-				xhr.setRequestHeader("Authorization", false);
+				xhrMephisto.setRequestHeader("Authorization", false);
 			}
 
 			//
 			//var _start = (new Date).getTime();
 
 			//
-			xhr.send(null);
+			xhrMephisto.send(null);
 
 			//
 			//var _end = (new Date).getTime();
@@ -332,10 +333,10 @@ function _sendXHR(method, uri) {
 
 			//
 			var _tmp = {
-				"status" : xhr.status,
-				"responseText" : xhr.responseText,
-				"responseXML" : xhr.responseXML,
-				"contentType" : xhr.getResponseHeader("Content-Type").split(";")[0]
+				"status" : xhrMephisto.status,
+				"responseText" : xhrMephisto.responseText,
+				"responseXML" : xhrMephisto.responseXML,
+				"contentType" : xhrMephisto.getResponseHeader("Content-Type").split(";")[0]
 			}
 
 			// caching
@@ -678,7 +679,7 @@ function _getDetails(node) {
 
 	//
 	if (node == String(document)) {
-		node = document.body;
+		node = jQueryMephisto(document.body).get(0);
 	}
 
 	//
@@ -993,7 +994,8 @@ function synthesize_results(arg_results) {
 				'result' : status,
 				'results_list' : [],
 				'comment' : criterion_data.comment.join(",\n"),
-				'details' : criterion_data.details
+				'details' : criterion_data.details,
+				'time' : criterion_data.time
 			};
 
 			// copy statuses before jQueryMephisto.unique which works by reference
@@ -1106,7 +1108,7 @@ function loop_over_criteria(used_criteria) {
 			//}
 
 			// Get the criterion ID
-			var _criterion = used_criteria[index];
+			//var _criterion = used_criteria[index];
 
 			// Initialize the results object for the current criterion
 			/*results['criteria']['criterion' + index] = {
@@ -1122,7 +1124,7 @@ function loop_over_criteria(used_criteria) {
 			var _tests = used_criteria[index];
 
 			// Test
-			var criterion_results = loop_over_tests(_criterion, _tests);
+			var criterion_results = loop_over_tests(index, _tests);
 
 			// Add the results
 			/*results['criteria']['criterion' + index] = {
@@ -1134,7 +1136,8 @@ function loop_over_criteria(used_criteria) {
 				"id" : index,
 				"result" : criterion_results.results,
 				"comment" : criterion_results.comments,
-				"details" : criterion_results.details
+				"details" : criterion_results.details,
+				"time" : criterion_results.time
 			});
 		}
 
@@ -1167,23 +1170,14 @@ function loop_over_criteria(used_criteria) {
 function loop_over_tests(criterion, tests_list) {
 	//
 	try {
-		var _g_results = [];
-		var _g_comments = [];
-		var _g_details = [];
-		var _start, _end;
+		var _g_results = [], _g_comments = [], _g_details = [], _time = 0;
 
 		//
 		logger.log(Object("loop_over_tests", tests_list));
 
-		//
-		if (timing_validator) {
-			_start = (new Date).getTime();
-		}
-
 		for (var test_id in tests_list) {
 			//
-			var _test = tests[test_id];
-			var _test_actions = tests_list[test_id];
+			var _test = tests[test_id], _test_actions = tests_list[test_id];
 
 			// Logging
 			logger.log("loop_over_tests", "test_id: " + test_id);
@@ -1191,19 +1185,21 @@ function loop_over_tests(criterion, tests_list) {
 			logger.log("loop_over_tests", "_test_actions: " + JSON.stringify(_test_actions));
 
 			//
+			var _start = (new Date).getTime();
 			var _results = apply_test(document, _test, _test_actions);
+			var _end = (new Date).getTime();
+			var _diff = _end - _start;
+
+			//
 			_g_results = jQueryMephisto.merge(_g_results, _results.results);
 			_g_comments = jQueryMephisto.merge(_g_comments, _results.comments);
 			_g_details = jQueryMephisto.merge(_g_details, _results.details);
-		}
+			_time += _diff;
+			timer += _diff;
 
-		//
-		if (timing_validator) {
-			_end = (new Date).getTime();
-			var _diff = _end - _start;
-
-			if (_diff >= 1000) {
-				console.error("[" + _diff + "] " + document.location + " | " + _test);
+			//
+			if (timing_validator && _diff >= 500) {
+				console.log("[" + _diff + "] " + document.location + " | " + criterion + " | " + _test);
 			}
 		}
 
@@ -1216,7 +1212,8 @@ function loop_over_tests(criterion, tests_list) {
 		return {
 			results : _g_results,
 			comments : _g_comments,
-			details : _g_details.filter(limit_details)
+			details : _g_details.filter(limit_details),
+			time : _time
 		};
 	}
 
