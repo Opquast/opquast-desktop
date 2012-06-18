@@ -200,7 +200,7 @@ const xhrMephisto = Components.classes["@mozilla.org/xmlextras/xmlhttprequest;1"
 		return false;
 	});
 	links = links.filter(function(element) {
-		if ($.inArray(links.href, known.images) == -1) {
+		if ($.inArray(links.href, known.links) == -1) {
 			known.links.push(links.href);
 			return true;
 		}

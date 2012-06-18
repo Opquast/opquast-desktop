@@ -1,4 +1,4 @@
-var checklists = {
+checklists = {
   "10242": {
     "goal": "<ul><li><h5>2.2.1 : R\u00e9glage du d\u00e9lai : (A)</h5><br />Rendre les contenus accessibles quelles que soient les contraintes de temps de consultation ou d'interaction dues \u00e0 des situations de handicap.<br><br>Certaines personnes souffrant\r\nd'incapacit\u00e9s mentales ou visuelles peuvent avoir besoin de plus de temps pour lire un texte. Les limites de temps peuvent rendre impossible la lecture ou la manipulation de l'interface pour ces personne.</li><li><h5>2.2.2 : Mettre en pause, arr\u00eater, masquer : (A)</h5><br />Rendre les contenus accessibles sans interf\u00e9rences dues \u00e0 une animation susceptible de g\u00eaner l'utilisateur. <br><br>Certaines personnes souffrant d'incapacit\u00e9s mentales ou visuelles ne peuvent pas lire un texte lorsqu'il clignote ou lorsqu'il bouge. Les clignotements/mouvements peuvent causer une distraction telle que le reste de la page devient illisible pour des gens souffrant de handicap cognitif.</li></ul>", 
     "checklist": {
@@ -10,27 +10,16 @@ var checklists = {
     "solution": "Tout \u00e9l\u00e9ment :\r\n<br>\r\n<br>\r\n<ul><li>script cot\u00e9 serveur (expiration de session, ent\u00eate http refresh)\r\n  </li><li>applet,\r\n  </li><li>object,\r\n  </li><li>embed.</li></ul>\r\n<br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si l'\u00e9l\u00e9ment provoque un rafra\u00eechissement automatique de la page, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si le rafra\u00eechissement automatique ne pourrait \u00eatre supprim\u00e9e sans changer fondamentalement l'information ou les fonctionnalit\u00e9s du contenu, poursuivre le test, sinon le test est non applicable. </li>", 
     "name": "[NAV]-09"
   }, 
-  "19128": {
-    "goal": "Permettre l'association des champs de formulaire avec les \u00e9tiquettes qui les d\u00e9crivent.", 
+  "696": {
+    "goal": "<ul>\r\n    <li>Fournir aux utilisateurs une continuit\u00e9 dans la navigation</li>\r\n    <li>\u00c9viter les changements de contexte</li>\r\n</ul>", 
     "checklist": {
-      "id": 567, 
-      "name": "Accessibility Second step : risk management"
+      "id": 11, 
+      "name": "Opquast V2"
     }, 
     "explanation": "", 
-    "description": "Utiliser les \u00e9l\u00e9ments input de type radio&nbsp; sans attribut id avec pr\u00e9caution", 
-    "solution": "Ajouter un attribut id sur l'\u00e9l\u00e9ment.", 
-    "name": "20"
-  }, 
-  "10099": {
-    "goal": "<ul><li><h5>1.3.1 : Information et relations : (A)</h5><br />Rendre l'information ind\u00e9pendante de sa mise en forme visuelle ou sonore.<br><br>Ce crit\u00e8re de succ\u00e8s est b\u00e9n\u00e9fique \u00e0 des personnes ayant diff\u00e9rents types de handicaps. Les personnes aveugles ou sourdes et aveugles utilisant un lecteur d'\u00e9cran ou un terminal braille auront acc\u00e8s \u00e0 l'information disponible par la couleur lorsque celle-ci est \u00e9galement mise \u00e0 disposition de fa\u00e7on textuelle.<br>Il vise notamment \u00e0 permettre \u00e0 ce que les agents utilisateurs restituent une information en fonction des besoins de l'utilisateur et cela ind\u00e9pendamment de sa mise en forme visuelle ou sonore. </li></ul>", 
-    "checklist": {
-      "id": 9, 
-      "name": "RGAA v2.2.1"
-    }, 
-    "explanation": "Certains contenus de type liste ordonn\u00e9e ne sont pas structur\u00e9s avec des \u00e9l\u00e9ments de liste appropri\u00e9s, et sont simul\u00e9s avec des signes typographiques (tirets).", 
-    "description": "Absence de simulation visuelle de liste non ordonn\u00e9e.", 
-    "solution": "<p> Tout segment de texte. </p><br /><br /><li>Si deux segments de texte diff\u00e9rents ou identiques sont pr\u00e9sents dans la page, poursuivre le test, sinon le test est non applicable. </li>\r\n<li>Si les segments de texte sont mis en forme visuellement par un marqueur de liste (-, &gt;, #, *, image ou image de fond repr\u00e9sentant un marqueur de liste, etc), poursuivre le test, sinon le test est non applicable. </li>", 
-    "name": "[STR]-05"
+    "description": "La navigation sur le site ne provoque pas d'ouvertures de nouvelles fen\u00eatres", 
+    "solution": "", 
+    "name": "197"
   }, 
   "715": {
     "goal": "<ul>\r\n    <li>Acc\u00e9l\u00e9rer la vitesse d'affichage des pages</li>\r\n    <li>Am\u00e9liorer les performances</li>\r\n    <li>Diminuer la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger</li>\r\n</ul>", 
@@ -42,39 +31,6 @@ var checklists = {
     "description": "Les scripts sont minifi\u00e9s", 
     "solution": "<ul>\r\n    <li>Supprimer les espaces non n\u00e9cessaires et les commentaires dans les fichiers Javascript, par exemple en recourant \u00e0 des outils tels que <a href=\"http://crockford.com/javascript/jsmin\">crockford.com/javascript/jsmin</a> ou <a href=\"http://developer.yahoo.com/yui/compressor/\">developer.yahoo.com/yui/compressor/</a></li>\r\n</ul>", 
     "name": "216"
-  }, 
-  "16657": {
-    "goal": "", 
-    "checklist": {
-      "id": 478, 
-      "name": "SEO"
-    }, 
-    "explanation": "", 
-    "description": "Chaque contenu audio et vid\u00e9o est accompagn\u00e9 de sa transcription textuelle", 
-    "solution": "", 
-    "name": ""
-  }, 
-  "14657": {
-    "goal": "Limited bandwidth and high latency can reduce the usability of Web sites on mobile devices. Using caching information effectively can reduce the need to reload data such as style sheets, images and pages, thus improving performance and reducing cost of use. It can also prevent the reuse of content where this is not appropriate, for example content that is adapted for one device should not be re-used by different devices. Devices and network caches are both affected by caching information.", 
-    "checklist": {
-      "id": 449, 
-      "name": "MobileOK"
-    }, 
-    "explanation": "", 
-    "description": "Fournir les informations de mise en cache dans les r\u00e9ponses HTTP.", 
-    "solution": "Set expiry times in a way that is appropriate to your application. Consider using Cache-Control: public to allow sharing of pages between devices, Cache-Control: private to allow re-use but only by the requesting device and Cache-Control: nocache to prevent caching.", 
-    "name": "[CACHING]"
-  }, 
-  "10107": {
-    "goal": "<ul><li><h5>3.1.4 : Abr\u00e9viations : (AAA)</h5><br />Permettre aux utilisateurs de comprendre l'information v\u00e9hicul\u00e9e par les sigles. Permettre aux synth\u00e8ses vocales d'\u00e9noncer correctement les abr\u00e9viations ou acronymes, en \u00e9pelant les abr\u00e9viations et en \u00e9non\u00e7ant comme un mot les acronymes, lorsque n\u00e9cessaire.</li></ul>", 
-    "checklist": {
-      "id": 9, 
-      "name": "RGAA v2.2.1"
-    }, 
-    "explanation": "Le contenu de la version non abr\u00e9g\u00e9 de l'abr\u00e9viation ne correspond pas \u00e0 la r\u00e9el signification de l'abr\u00e9viation.", 
-    "description": "Pertinence de la version non abr\u00e9g\u00e9e de l'abr\u00e9viation.", 
-    "solution": "Tout \u00e9l\u00e9ment abbr ayant un attribut title non vide<br /><br /><li>Si l'\u00e9l\u00e9ment est mentionn\u00e9 dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable. </li>", 
-    "name": "[STR]-11"
   }, 
   "500": {
     "goal": "<ul>\r\n    <li>Permettre la navigation et la consultation pour les utilisateurs plac\u00e9s dans des contextes o\u00f9 les images ne sont pas perceptibles (navigateurs texte, lecteur d'\u00e9cran, images d\u00e9sactiv\u00e9es)</li>\r\n    <li>Permettre aux robots d'exploiter l'information v\u00e9hicul\u00e9e par les images (r\u00e9f\u00e9rencement, traduction automatique)</li>\r\n    <li>Permettre l'affichage d'un texte pendant la chargement des images</li>\r\n</ul>", 
@@ -163,17 +119,6 @@ var checklists = {
     "description": "La dur\u00e9e des contenus vid\u00e9o ou audio est indiqu\u00e9e", 
     "solution": "", 
     "name": "30"
-  }, 
-  "532": {
-    "goal": "<ul>\r\n    <li>Permettre aux utilisateurs de savoir si leurs outils leur permettent de consulter les fichiers propos\u00e9s en t\u00e9l\u00e9chargement</li>\r\n    <li>R\u00e9duire la charge serveur en \u00e9vitant les t\u00e9l\u00e9chargements inutiles</li>\r\n</ul>", 
-    "checklist": {
-      "id": 11, 
-      "name": "Opquast V2"
-    }, 
-    "explanation": "", 
-    "description": "Le format des fichiers propos\u00e9s en t\u00e9l\u00e9chargement est indiqu\u00e9.", 
-    "solution": "<ul>\r\n    <li>Au minimum, pr\u00e9voir une page d'aide indiquant le format des fichiers propos\u00e9s s'il est unique.</li>\r\n    <li>Au mieux, indiquer le format pour chaque lien permettant de t\u00e9l\u00e9charger un fichier.</li>\r\n</ul>", 
-    "name": "33"
   }, 
   "533": {
     "goal": "", 
@@ -482,17 +427,6 @@ var checklists = {
     "description": "Le code source de chaque page contient une metadonn\u00e9e qui d\u00e9finit le jeu de caract\u00e8res", 
     "solution": "<p>L'\u00e9l\u00e9ment meta est renseign\u00e9 en fonction de l'encodage effectif du document et de son type MIME sous la forme&nbsp;:</p>\r\n<ul>\r\n    <li><code>&lt;meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\"&gt;</code> en HTML</li>\r\n    <li><code>&lt;meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\" /&gt;</code> ou <code>&lt;meta http-equiv=\"Content-Type\" content=\"application/xhtml+xml; charset=ISO-8859-1\" /&gt;</code> en XHTML.</li>\r\n</ul>", 
     "name": "100"
-  }, 
-  "612": {
-    "goal": "<ul>\r\n    <li>Informer les utilisateurs sur la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger</li>\r\n    <li>Permettre aux utilisateurs de diff\u00e9rer le t\u00e9l\u00e9chargement en connexion bas-d\u00e9bit ou mobile</li>\r\n</ul>", 
-    "checklist": {
-      "id": 11, 
-      "name": "Opquast V2"
-    }, 
-    "explanation": "", 
-    "description": "La taille des fichiers internes propos\u00e9s en t\u00e9l\u00e9chargement est indiqu\u00e9e.", 
-    "solution": "<ul>\r\n    <li>Au minimum, pr\u00e9voir une page d'aide indiquant le poids moyen ou une maximum de poids des fichiers propos\u00e9s.</li>\r\n    <li>Au mieux, indiquer le poids lors de chaque lien permettant de t\u00e9l\u00e9charger un fichier.</li>\r\n</ul>", 
-    "name": "113"
   }, 
   "613": {
     "goal": "<ul>\r\n    <li>\u00c9viter le t\u00e9l\u00e9chargement de donn\u00e9es inutiles</li>\r\n    <li>Am\u00e9liorer les performances</li>\r\n</ul>", 
@@ -824,17 +758,6 @@ var checklists = {
     "solution": "<p>Fournir un lien vers une information permettant d'identifier et par la suite de t\u00e9l\u00e9charger chaque plug-in n\u00e9cessaire \u00e0 la consultation ou l'utilisation des contenus&nbsp;:</p>\r\n<ul>\r\n    <li>directement dans le contexte de ces contenus</li>\r\n    <li>ou bien dans une page d'aide accessible directement depuis chaque page o\u00f9 ces contenus sont pr\u00e9sents</li>\r\n</ul>", 
     "name": "178"
   }, 
-  "678": {
-    "goal": "<ul>\r\n    <li>Permettre aux utilisateurs d'acc\u00e9der directement \u00e0 diff\u00e9rentes sections d'un document PDF</li>\r\n    <li>Fournir une structure de titres aux utilisateurs qui en ont besoin</li>\r\n</ul>", 
-    "checklist": {
-      "id": 11, 
-      "name": "Opquast V2"
-    }, 
-    "explanation": "", 
-    "description": "Les documents PDF internes sont balis\u00e9s.", 
-    "solution": "<p>Lorsque le document PDF est issu de suite bureautique type Word ou OpenOffice il faut utiliser les styles de mani\u00e8re \u00e0 permettre la g\u00e9n\u00e9ration d'un PDF structur\u00e9. Utilisez le balisage Titre 1, Titre 2, Titre 3, ainsi que les styles en-t\u00eates de tableaux, et les \u00e9num\u00e9rations structurelles (listes \u00e0 puces, listes num\u00e9rot\u00e9es). Ensuite, vous devez modifier ces styles pour les adapter \u00e0 votre pr\u00e9sentation, et finalement il faut cocher l'option exporter en PDF balis\u00e9 ou taggu\u00e9, au moment de l'export PDF. Voir <a href=\"http://www.adobe.com/fr/accessibility/\">www.adobe.com/fr/accessibility/</a></p>", 
-    "name": "179"
-  }, 
   "679": {
     "goal": "<ul>\n    <li>S'assurer qu'au moins un des deux processus de validation a bien lieu</li>\n</ul>", 
     "checklist": {
@@ -945,16 +868,16 @@ var checklists = {
     "solution": "Ajouter un attribut id sur l'\u00e9l\u00e9ment.", 
     "name": "19"
   }, 
-  "696": {
-    "goal": "<ul>\r\n    <li>Fournir aux utilisateurs une continuit\u00e9 dans la navigation</li>\r\n    <li>\u00c9viter les changements de contexte</li>\r\n</ul>", 
+  "19128": {
+    "goal": "Permettre l'association des champs de formulaire avec les \u00e9tiquettes qui les d\u00e9crivent.", 
     "checklist": {
-      "id": 11, 
-      "name": "Opquast V2"
+      "id": 567, 
+      "name": "Accessibility Second step : risk management"
     }, 
     "explanation": "", 
-    "description": "La navigation sur le site ne provoque pas d'ouvertures de nouvelles fen\u00eatres", 
-    "solution": "", 
-    "name": "197"
+    "description": "Utiliser les \u00e9l\u00e9ments input de type radio&nbsp; sans attribut id avec pr\u00e9caution", 
+    "solution": "Ajouter un attribut id sur l'\u00e9l\u00e9ment.", 
+    "name": "20"
   }, 
   "19130": {
     "goal": "Permettre l'association des champs de formulaire avec les \u00e9tiquettes qui les d\u00e9crivent.", 
@@ -1440,17 +1363,6 @@ var checklists = {
     "solution": "", 
     "name": "27"
   }, 
-  "19245": {
-    "goal": "Permettre la restitution d'un contenu d\u00e9crivant la fonction et/ou le contenu de l'\u00e9l\u00e9ment.", 
-    "checklist": {
-      "id": 568, 
-      "name": "Accessibility first step: error detection"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser un attribut title vide pour l'\u00e9l\u00e9ment frame", 
-    "solution": "Ajouter un contenu \u00e0 l'attribut title des \u00e9l\u00e9ments frame permettant de conna\u00eetre la fonction ou le contenu de la frame. Exemple&nbsp;: &lt;frame title='navigation src='...' principale'&gt;&lt;/frame&gt;", 
-    "name": "10"
-  }, 
   "19216": {
     "goal": "\u00c9viter \u00e0 l'utilisateur d'avoir des \u00e9l\u00e9ments interactifs dont il ne peut connaitre la destination ou l'action", 
     "checklist": {
@@ -1693,16 +1605,16 @@ var checklists = {
     "solution": "Ajouter un attribut title sur chaque \u00e9l\u00e9ment frame. Exemple&nbsp;: &lt;frame title='...' src='...'&gt;&lt;/frame&gt;", 
     "name": "9"
   }, 
-  "12082": {
-    "goal": "", 
+  "19245": {
+    "goal": "Permettre la restitution d'un contenu d\u00e9crivant la fonction et/ou le contenu de l'\u00e9l\u00e9ment.", 
     "checklist": {
-      "id": 425, 
-      "name": "Accessiweb 2.1 D\u00e9ploy\u00e9e"
+      "id": 568, 
+      "name": "Accessibility first step: error detection"
     }, 
     "explanation": "", 
-    "description": "Chaque \u00e9tiquette (balise label) associ\u00e9e \u00e0 un champ de formulaire (balise input de type text, password, checkbox, radio, file ou balises textarea et select) v\u00e9rifie-t-elle ces conditions ?", 
-    "solution": "", 
-    "name": "11.1.3"
+    "description": "Ne pas utiliser un attribut title vide pour l'\u00e9l\u00e9ment frame", 
+    "solution": "Ajouter un contenu \u00e0 l'attribut title des \u00e9l\u00e9ments frame permettant de conna\u00eetre la fonction ou le contenu de la frame. Exemple&nbsp;: &lt;frame title='navigation src='...' principale'&gt;&lt;/frame&gt;", 
+    "name": "10"
   }, 
   "19246": {
     "goal": "Eviter \u00e0 l'utilisateur d'avoir une hi\u00e9rarchie de titre incompl\u00e8te ou incoh\u00e9rente", 
@@ -2793,16 +2705,16 @@ var checklists = {
     "solution": "", 
     "name": "41"
   }, 
-  "10060": {
-    "goal": "<ul><li><h5>1.1.1 : Contenu non textuel : (A)</h5><br />Rendre le contenu non textuel accessible sous forme d'une alternative textuelle exploitable quel que soit le mode de perception de l'utilisateur (visuel, auditif, tactile).<br><br>Le contenu des \u00e9l\u00e9ments non textuels ne sera pas perceptible pour diff\u00e9rentes cat\u00e9gories d'utilisateurs tels que :<br><br><ul><li>Les personnes handicap\u00e9es visuelles acc\u00e9dant au site via la synth\u00e8se vocale d'un lecteur d'\u00e9cran,</li><li>Les utilisateurs ayant d\u00e9sactiv\u00e9 l'affichage des \u00e9l\u00e9ments graphiques ou multim\u00e9dias, pour r\u00e9duire notamment les temps de t\u00e9l\u00e9chargement des pages en bas d\u00e9bit.<br></li></ul><br>La pr\u00e9sence d'alternatives textuelles aux contenus non textuels permet \u00e9galement \u00e0 des robots d'indexation d'en exploiter l'information, ou \u00e0 des traducteurs automatiques d'en traduire le sens.</li></ul>", 
+  "19401": {
+    "goal": "", 
     "checklist": {
-      "id": 9, 
-      "name": "RGAA v2.2.1"
+      "id": 569, 
+      "name": "Qualite"
     }, 
-    "explanation": "Certaines alternatives de boutons graphiques ou de zones cliquables d'image MAP ont une alternative ALT qui ne permet pas de comprendre pr\u00e9cis\u00e9ment l'action ou d'identifier la destination du lien. ", 
-    "description": "Pertinence de l'alternative textuelle aux zones cliquables ou aux boutons graphiques.", 
-    "solution": "<p> Tout \u00e9l\u00e9ment : </p><ul> <li> <code>area</code>, </li> <li> <code>input type='image'</code>, </li> <li>tout code javascript g\u00e9n\u00e9rant un des \u00e9l\u00e9ments pr\u00e9c\u00e9dant. </li> </ul><br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable. </li>\r\n<li>Si l'\u00e9l\u00e9ment n'est pas utilis\u00e9 comme captcha ou ne fait pas partie d'un test qui deviendrait inutile si l'alternative textuelle \u00e9tait pr\u00e9sente, poursuivre le test, sinon le test est non applicable, poursuivre le test, sinon le test est non applicable. </li>\r\n<li>Si l'\u00e9l\u00e9ment poss\u00e8de un attribut <code>alt</code>, poursuivre le test, sinon le test non applicable. </li>", 
-    "name": "[IMA]-03"
+    "explanation": "", 
+    "description": "Utiliser un \u00e9l\u00e9ment h3, h4, h5 ou h6 comme premier \u00e9l\u00e9ment de titrage pr\u00e9c\u00e9dant l'\u00e9l\u00e9ment h4 dans l'ordre du code source", 
+    "solution": "", 
+    "name": "42"
   }, 
   "19402": {
     "goal": "", 
@@ -2859,16 +2771,16 @@ var checklists = {
     "solution": "", 
     "name": "47"
   }, 
-  "10061": {
-    "goal": "<ul><li><h5>1.1.1 : Contenu non textuel : (A)</h5><br />Rendre le contenu non textuel accessible sous forme d'une alternative textuelle exploitable quel que soit le mode de perception de l'utilisateur (visuel, auditif, tactile).<br><br>Le contenu des \u00e9l\u00e9ments non textuels ne sera pas perceptible pour diff\u00e9rentes cat\u00e9gories d'utilisateurs tels que :<br><br><ul><li>Les personnes handicap\u00e9es visuelles acc\u00e9dant au site via la synth\u00e8se vocale d'un lecteur d'\u00e9cran,</li><li>Les utilisateurs ayant d\u00e9sactiv\u00e9 l'affichage des \u00e9l\u00e9ments graphiques ou multim\u00e9dias, pour r\u00e9duire notamment les temps de t\u00e9l\u00e9chargement des pages en bas d\u00e9bit.<br></li></ul><br>La pr\u00e9sence d'alternatives textuelles aux contenus non textuels permet \u00e9galement \u00e0 des robots d'indexation d'en exploiter l'information, ou \u00e0 des traducteurs automatiques d'en traduire le sens.</li><li><h5>1.4.1 : Utilisation de la couleur : (A)</h5><br />Rendre l'information v\u00e9hicul\u00e9e par la couleur perceptible pour tous les utilisateurs en situation de handicap visuel. Notamment, permettre l'acc\u00e8s \u00e0 l'information aux personnes aveugles,\r\nmal voyantes (d\u00e9ficiences de perception des couleurs, d\u00e9g\u00e9n\u00e9rescence maculaire li\u00e9e \u00e0 l'age,...) , utilisant des feuilles de styles personnalis\u00e9es ou ayant un \u00e9cran monochrome/avec un nombre de couleurs limit\u00e9.</li></ul>", 
+  "19407": {
+    "goal": "", 
     "checklist": {
-      "id": 9, 
-      "name": "RGAA v2.2.1"
+      "id": 569, 
+      "name": "Qualite"
     }, 
-    "explanation": "Certaines images v\u00e9hiculant une information (hors images liens, boutons, etc.) n'ont pas une alternative pertinente par rapport \u00e0 leur r\u00f4le et \u00e0 leur contexte d'utilisation dans la page.", 
-    "description": "Pertinence de l'alternative textuelle aux \u00e9l\u00e9ments non textuels.", 
-    "solution": "<p> Tout \u00e9l\u00e9ment : </p><ul> <li> <code>img</code>, </li> <li> <code>applet</code>,</li> <li><code>object</code></li><li><code>embed</code></li><li>tout code javascript g\u00e9n\u00e9rant un des \u00e9l\u00e9ments pr\u00e9c\u00e9dant. </li> </ul><br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si l'\u00e9l\u00e9ment n'est pas contenu dans un \u00e9l\u00e9ment a ou button, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si l'\u00e9l\u00e9ment apporte visuellement une information, poursuivre le test, sinon le test est non applicable.&nbsp;</li>\r\n<li>Si l'\u00e9l\u00e9ment n'est pas un contenu sonore, visuel anim\u00e9, multim\u00e9dias, un captcha ou ne fait pas parti d'un test qui deviendrait inutile si l'alternative\r\ntextuelle \u00e9tait pr\u00e9sente, poursuivre le test, sinon le test est non\r\napplicable.</li>", 
-    "name": "[IMA]-04"
+    "explanation": "", 
+    "description": "Le contenu ne comporte pas de tableaux imbriqu\u00e9s", 
+    "solution": "", 
+    "name": "48"
   }, 
   "19408": {
     "goal": "", 
@@ -2925,16 +2837,16 @@ var checklists = {
     "solution": "", 
     "name": "53"
   }, 
-  "16206": {
-    "goal": "<div>Simplifier la lecture des titres par les moteurs.&nbsp;Forcer \u00e0 \u00e9crire des titres brefs et percutants.</div>", 
+  "19413": {
+    "goal": "", 
     "checklist": {
-      "id": 478, 
-      "name": "SEO"
+      "id": 569, 
+      "name": "Qualite"
     }, 
     "explanation": "", 
-    "description": "Le contenu de chaque \u00e9l\u00e9ment TITLE est inf\u00e9rieur ou \u00e9gal \u00e0 80 caract\u00e8res", 
-    "solution": "Limiter \u00e0 80 caract\u00e8res au plus, espaces compris, le contenu de l'\u00e9l\u00e9ment TITLE. Mettre en place un automatisme dans le CMS tronquant les contenus des titres de page automatiquement g\u00e9n\u00e9r\u00e9s. Mettre en place un processus de validation de la longueur des titres de page saisis par les r\u00e9dacteurs, permettant de les alerter en cas d'erreurs et de corriger la saisie avant publication.", 
-    "name": "46"
+    "description": "Ne pas utiliser l'\u00e9l\u00e9ment marquee", 
+    "solution": "", 
+    "name": "54"
   }, 
   "19414": {
     "goal": "", 
@@ -3123,16 +3035,16 @@ var checklists = {
     "solution": "", 
     "name": "71"
   }, 
-  "16209": {
-    "goal": "<div>Structurer la page.&nbsp;Placer des mots-clefs aux endroits importants.</div>", 
+  "19431": {
+    "goal": "", 
     "checklist": {
-      "id": 478, 
-      "name": "SEO"
+      "id": 569, 
+      "name": "Qualite"
     }, 
     "explanation": "", 
-    "description": "Le contenu de chaque page est organis\u00e9 selon une structure de titres de section HTML.", 
-    "solution": "Utiliser les \u00e9l\u00e9ments de titre de section H1, H2, H3, H4, H5, H6 pour donner \u00e0 chaque section et sous-section du contenu propre de la page un titre refl\u00e9tant son contenu.", 
-    "name": "12"
+    "description": "Ne pas utiliser l'\u00e9l\u00e9ment tt", 
+    "solution": "", 
+    "name": "72"
   }, 
   "19432": {
     "goal": "", 
@@ -3189,16 +3101,16 @@ var checklists = {
     "solution": "", 
     "name": "77"
   }, 
-  "16210": {
-    "goal": "<div>Renforcer les mots-clefs associ\u00e9s \u00e0 une page.</div><div><br></div>", 
+  "19437": {
+    "goal": "", 
     "checklist": {
-      "id": 478, 
-      "name": "SEO"
+      "id": 569, 
+      "name": "Qualite"
     }, 
     "explanation": "", 
     "description": "Les titres de section HTML comportent des mots clefs contenus dans la balise meta keywords.", 
-    "solution": "R\u00e9diger chaque \u00e9l\u00e9ment H1, H2, H3, H4, H5, H6 de mani\u00e8re \u00e0 ce qu'il contienne au moins un mot-cl\u00e9 pr\u00e9sent dans le contenu de l'attribut content de l'\u00e9l\u00e9ment META name=\"keywords\".", 
-    "name": "13"
+    "solution": "", 
+    "name": "78"
   }, 
   "19438": {
     "goal": "", 
@@ -3387,16 +3299,16 @@ var checklists = {
     "solution": "", 
     "name": "95"
   }, 
-  "16213": {
-    "goal": "<div>Ne pas diluer les mots-clefs.&nbsp;Mettre en avant les mots-clefs propres \u00e0 la page.</div>", 
+  "19455": {
+    "goal": "", 
     "checklist": {
-      "id": 478, 
-      "name": "SEO"
+      "id": 569, 
+      "name": "Qualite"
     }, 
     "explanation": "", 
-    "description": "La m\u00e9ta keywords contient exclusivement des termes en rapport direct avec le contenu.", 
-    "solution": "Renseigner le contenu de l'attribut content de l'\u00e9l\u00e9ment META name=\"keywords\" avec des mots-cl\u00e9s en rapport direct avec le contenu de la page.", 
-    "name": "44"
+    "description": "Ne pas utiliser un contenu d'attribut alt identique pour plusieurs \u00e9l\u00e9ments area ayant un attribut href diff\u00e9rent", 
+    "solution": "", 
+    "name": "96"
   }, 
   "19456": {
     "goal": "", 
@@ -3574,831 +3486,6 @@ var checklists = {
     "solution": "", 
     "name": "112"
   }, 
-  "10073": {
-    "goal": "<ul><li><h5>1.2.1 : Contenu seulement audio ou vid\u00e9o (pr\u00e9-enregistr\u00e9) : (A)</h5><br />Fournir textuellement  \u00e0 tous les utilisateurs l'information v\u00e9hicul\u00e9e par les contenus seulement vid\u00e9o ou audio  (pr\u00e9-enregistr\u00e9). Les informations fournis textuellement seront accessible car elles peuvent \u00eatre restitu\u00e9es sous diff\u00e9rentes formes (visuelle, auditive, tactile)<br><br>Dans le cas contraire, le contenu des \u00e9l\u00e9ments seulement audio ou vid\u00e9o  ne serait pas perceptible pour diff\u00e9rentes cat\u00e9gories d'utilisateurs tels que : <br><br><ul><li>Les personnes ayant une d\u00e9ficience auditive pour le contenu uniquement sonore,</li><li>Les personnes ayant une d\u00e9ficience visuelle pour le contenu uniquement vid\u00e9o,</li></ul><br>Cela permet \u00e9galement \u00e0 des robots d'indexation d'exploiter l'information, ou \u00e0 des traducteurs automatiques d'en traduire le sens.</li><li><h5>1.2.3 : Audio-description ou version de remplacement pour un m\u00e9dia temporel (pr\u00e9-enregistr\u00e9) : (A)</h5><br />Permettre aux utilisateurs en situation de handicap visuel de percevoir l'information visuelle v\u00e9hicul\u00e9e par les contenus multim\u00e9dia.<br><br>Toutes les aides techniques ne sont pas en mesure de lire automatiquement la description textuelle des contenus multim\u00e9dias. Il est donc n\u00e9cessaire de la compl\u00e9ter d'une description audio. Ainsi, une personne pr\u00e9sentant une d\u00e9ficience visuelle ou ayant des probl\u00e8mes de compr\u00e9hension de l'\u00e9crit pourra profiter de cette description audio.</li><li><h5>1.2.5 : Audio-description (pr\u00e9-enregistr\u00e9e) : (AA)</h5><br />Permettre aux utilisateurs en situation de handicap visuel de percevoir l'information visuelle v\u00e9hicul\u00e9e par les contenus multim\u00e9dia.<br><br>Toutes les aides techniques ne sont pas en mesure de lire\r\nautomatiquement la description textuelle des contenus multim\u00e9dias. Il\r\nest donc n\u00e9cessaire de la compl\u00e9ter d'une description audio. Ainsi, une\r\npersonne pr\u00e9sentant une d\u00e9ficience visuelle ou ayant des probl\u00e8mes de\r\ncompr\u00e9hension de l'\u00e9crit pourra profiter de cette description audio.</li><li><h5>1.2.7 : Audio-description \u00e9tendue (pr\u00e9-enregistr\u00e9e) : (AAA)</h5><br />Permettre aux utilisateurs en situation de handicap visuel de percevoir l'information visuelle v\u00e9hicul\u00e9e par les contenus multim\u00e9dia.<br><br>Toutes les aides techniques ne sont pas en mesure de lire\r\nautomatiquement la description textuelle des contenus multim\u00e9dias. Il\r\nest donc n\u00e9cessaire de la compl\u00e9ter d'une description audio. Ainsi, une\r\npersonne pr\u00e9sentant une d\u00e9ficience visuelle ou ayant des probl\u00e8mes de\r\ncompr\u00e9hension de l'\u00e9crit pourra profiter de cette description audio.</li></ul>", 
-    "checklist": {
-      "id": 9, 
-      "name": "RGAA v2.2.1"
-    }, 
-    "explanation": "La description audio synchronis\u00e9e ne restitue pas l'ensemble des informations visuels pr\u00e9sente dans les visuels anim\u00e9s ou les m\u00e9dias synchronis\u00e9s.", 
-    "description": "Pertinence de la description audio synchronis\u00e9e des contenus visuels anim\u00e9s ou des m\u00e9dias synchronis\u00e9s.", 
-    "solution": "Tout contenu sonore constituant une description audio d'un contenu visuel anim\u00e9 ou d'un m\u00e9dia synchronis\u00e9. <br /><br /><li>Si l'\u00e9l\u00e9ment mentionn\u00e9 dans le champ d'application est pr\u00e9sent, poursuivre le test, sinon le test est non applicable. </li>", 
-    "name": "[MUL]-05"
-  }, 
-  "17500": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Chaque image a-t-elle une alternative textuelle ?", 
-    "solution": "", 
-    "name": "1.1"
-  }, 
-  "17502": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Pour chaque image porteuse d'information ayant une alternative textuelle, cette alternative est-elle pertinente (hors cas particuliers) ?", 
-    "solution": "", 
-    "name": "1.3"
-  }, 
-  "17503": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Pour chaque image utilis\u00e9e comme CAPTCHA ou comme image-test, ayant une alternative textuelle, cette alternative permet-elle d'identifier la nature et la fonction de l'image ?", 
-    "solution": "", 
-    "name": "1.4"
-  }, 
-  "17504": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Pour chaque image utilis\u00e9e comme CAPTCHA, une solution d'acc?s alternatif au contenu ou ? la fonction du CAPTCHA est-elle pr\u00e9sente ?", 
-    "solution": "", 
-    "name": "1.5"
-  }, 
-  "17505": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Chaque image porteuse d'information a-t-elle, si n\u00e9cessaire, une description d\u00e9taill\u00e9e ?", 
-    "solution": "", 
-    "name": "1.6"
-  }, 
-  "17509": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Chaque cadre et chaque cadre en ligne a-t-il un titre de cadre ?", 
-    "solution": "", 
-    "name": "2.1"
-  }, 
-  "17510": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Pour chaque cadre et chaque cadre en ligne ayant un titre de cadre, ce titre de cadre est-il pertinent ?", 
-    "solution": "", 
-    "name": "2.2"
-  }, 
-  "17515": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Chaque m\u00e9dia temporel pr\u00e9-enregistr\u00e9 a-t-il, si n\u00e9cessaire, une transcription textuelle ou une audio-description (hors cas particuliers) ?", 
-    "solution": "", 
-    "name": "4.1"
-  }, 
-  "17517": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Chaque m\u00e9dia temporel synchronis\u00e9 pr\u00e9-enregistr\u00e9 a-t-il, si n\u00e9cessaire, des sous-titres synchronis\u00e9s (hors cas particuliers) ?", 
-    "solution": "", 
-    "name": "4.3"
-  }, 
-  "17518": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Pour chaque m\u00e9dia temporel synchronis\u00e9 pr\u00e9-enregistr\u00e9 ayant des sous-titres synchronis\u00e9s, ces sous-titres sont-ils pertinents ?", 
-    "solution": "", 
-    "name": "4.4"
-  }, 
-  "17521": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Chaque m\u00e9dia temporel synchronis\u00e9 pr\u00e9-enregistr\u00e9 a-t-il, si n\u00e9cessaire, une audio-description synchronis\u00e9e ?", 
-    "solution": "", 
-    "name": "4.7"
-  }, 
-  "17522": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Pour chaque m\u00e9dia temporel pr\u00e9-enregistr\u00e9 ayant une audio-description synchronis\u00e9e, celle-ci est-elle pertinente ?", 
-    "solution": "", 
-    "name": "4.8"
-  }, 
-  "17523": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Chaque m\u00e9dia temporel pr\u00e9-enregistr\u00e9 a-t-il, si n\u00e9cessaire, une interpr\u00e9tation en langue des signes (hors cas particuliers) ?", 
-    "solution": "", 
-    "name": "4.9"
-  }, 
-  "17524": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Pour chaque m\u00e9dia temporel pr\u00e9-enregistr\u00e9 ayant une interpr\u00e9tation en langue des signes, celle-ci est-elle pertinente ?", 
-    "solution": "", 
-    "name": "4.10"
-  }, 
-  "17525": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Chaque m\u00e9dia temporel pr\u00e9-enregistr\u00e9 a-t-il, si n\u00e9cessaire, une audio-description \u00e9tendue synchronis\u00e9e (hors cas particuliers) ?", 
-    "solution": "", 
-    "name": "4.11"
-  }, 
-  "17529": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Chaque m\u00e9dia temporel est-il clairement identifiable (hors cas particuliers) ?", 
-    "solution": "", 
-    "name": "4.15"
-  }, 
-  "17530": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Chaque m\u00e9dia non temporel a-t-il, si n\u00e9cessaire, une alternative (hors cas particuliers) ?", 
-    "solution": "", 
-    "name": "4.16"
-  }, 
-  "17532": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Chaque son d\u00e9clench\u00e9 automatiquement est-il contr?lable par l'utilisateur ?", 
-    "solution": "", 
-    "name": "4.18"
-  }, 
-  "17534": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "La consultation de chaque m\u00e9dia temporel est-elle contr?lable par le clavier et la souris ?", 
-    "solution": "", 
-    "name": "4.20"
-  }, 
-  "17535": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "La consultation de chaque m\u00e9dia non temporel est-elle contr?lable par le clavier et la souris ?", 
-    "solution": "", 
-    "name": "4.21"
-  }, 
-  "17536": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Chaque m\u00e9dia temporel et non temporel est-il compatible avec les technologies d'assistance ?", 
-    "solution": "", 
-    "name": "4.22"
-  }, 
-  "17537": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Chaque tableau de donn\u00e9es a-t-il un r\u00e9sum\u00e9 ?", 
-    "solution": "", 
-    "name": "5.1"
-  }, 
-  "17538": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Pour chaque tableau ayant un r\u00e9sum\u00e9, celui-ci est-il pertinent ?", 
-    "solution": "", 
-    "name": "5.2"
-  }, 
-  "17539": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Pour chaque tableau de mise en forme, le contenu lin\u00e9aris\u00e9 reste-t-il compr\u00e9hensible ?", 
-    "solution": "", 
-    "name": "5.3"
-  }, 
-  "17540": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Chaque tableau de donn\u00e9es a-t-il un titre ?", 
-    "solution": "", 
-    "name": "5.4"
-  }, 
-  "17541": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Pour chaque tableau de donn\u00e9es ayant un titre, celui-ci est-il pertinent ?", 
-    "solution": "", 
-    "name": "5.5"
-  }, 
-  "17542": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Pour chaque tableau de donn\u00e9es, chaque en-t?te de colonnes et chaque en-t?te de lignes sont-ils correctement d\u00e9clar\u00e9s ?", 
-    "solution": "", 
-    "name": "5.6"
-  }, 
-  "17543": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Pour chaque tableau de donn\u00e9es, la technique appropri\u00e9e permettant d'associer chaque cellule avec ses en-t?tes est-elle utilis\u00e9e ?", 
-    "solution": "", 
-    "name": "5.7"
-  }, 
-  "17544": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Chaque tableau de mise en forme ne doit pas utiliser d'\u00e9l\u00e9ments propres aux tableaux de donn\u00e9es. Cette r?gle est-elle respect\u00e9e ?", 
-    "solution": "", 
-    "name": "5.8"
-  }, 
-  "17549": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Chaque zone cliquable d'une image r\u00e9active c?t\u00e9 serveur est-elle doubl\u00e9e d'un lien dans la page ?", 
-    "solution": "", 
-    "name": "6.5"
-  }, 
-  "17550": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Dans chaque page Web, chaque lien, ? l'exception des ancres nomm\u00e9es, a-t-il un intitul\u00e9 ?", 
-    "solution": "", 
-    "name": "6.6"
-  }, 
-  "17552": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Pour chaque script ayant une alternative, cette alternative est-elle pertinente ?", 
-    "solution": "", 
-    "name": "7.2"
-  }, 
-  "17554": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Chaque script est-il, si n\u00e9cessaire, compatible avec les technologies d'assistance ?", 
-    "solution": "", 
-    "name": "7.4"
-  }, 
-  "17556": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Chaque script qui provoque une alerte non sollicit\u00e9e est-il contr?lable par l'utilisateur (hors cas particuliers) ?", 
-    "solution": "", 
-    "name": "7.6"
-  }, 
-  "17557": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Chaque page Web est-elle d\u00e9finie par un type de document ?", 
-    "solution": "", 
-    "name": "8.1"
-  }, 
-  "17558": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Pour chaque page Web, le code source est-il valide selon le type de document sp\u00e9cifi\u00e9 ?", 
-    "solution": "", 
-    "name": "8.2"
-  }, 
-  "17561": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Chaque page Web a-t-elle un titre de page ?", 
-    "solution": "", 
-    "name": "8.5"
-  }, 
-  "17562": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Pour chaque page Web ayant un titre de page, ce titre est-il pertinent ?", 
-    "solution": "", 
-    "name": "8.6"
-  }, 
-  "10095": {
-    "goal": "<ul><li><h5>2.4.1 : Contourner des blocs : (A)</h5><br />Rendre les contenus navigables pour les utilisateurs qui y ont un acc\u00e8s s\u00e9quentiel lin\u00e9aire.<br><br>Les personnes utilisant un lecteur d'\u00e9cran, un agrandisseur, les\r\npersonnes qui ont une limitation cognitive ou celles qui ne se servent que du\r\nclavier pour cause de limitation motrice lisent la page de mani\u00e8re lin\u00e9aire. De ce fait, des liens internes \u00e0 la page ou les titres de hi\u00e9rarchie leur permettent soit d'acc\u00e9der directement \u00e0 l'information qui les int\u00e9resse, soit de sauter d'autres informations qui ne les int\u00e9ressent pas et de gagner ainsi un temps pr\u00e9cieux.</li></ul>", 
-    "checklist": {
-      "id": 9, 
-      "name": "RGAA v2.2.1"
-    }, 
-    "explanation": "Toutes les page ne comportent au moins un titre de hi\u00e9rarchie H1.", 
-    "description": "Pr\u00e9sence d'au moins un titre de hi\u00e9rarchie de premier niveau ( h1).", 
-    "solution": "<p> Tout \u00e9l\u00e9ment <code>h1</code>. </p><br /><br />", 
-    "name": "[STR]-01"
-  }, 
-  "17567": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Dans chaque page Web, l'information est-elle structur\u00e9e par l'utilisation appropri\u00e9e de titres ?", 
-    "solution": "", 
-    "name": "9.1"
-  }, 
-  "17568": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Dans chaque page Web, chaque liste est-elle structur\u00e9e avec les balises appropri\u00e9es ?", 
-    "solution": "", 
-    "name": "9.2"
-  }, 
-  "10096": {
-    "goal": "<ul><li><h5>1.3.1 : Information et relations : (A)</h5><br />Rendre l'information ind\u00e9pendante de sa mise en forme visuelle ou sonore.<br><br>Ce crit\u00e8re de succ\u00e8s est b\u00e9n\u00e9fique \u00e0 des personnes ayant diff\u00e9rents types de handicaps. Les personnes aveugles ou sourdes et aveugles utilisant un lecteur d'\u00e9cran ou un terminal braille auront acc\u00e8s \u00e0 l'information disponible par la couleur lorsque celle-ci est \u00e9galement mise \u00e0 disposition de fa\u00e7on textuelle.<br>Il vise notamment \u00e0 permettre \u00e0 ce que les agents utilisateurs restituent une information en fonction des besoins de l'utilisateur et cela ind\u00e9pendamment de sa mise en forme visuelle ou sonore. </li><li><h5>2.4.6 : En-t\u00eates et \u00e9tiquettes : (AA)</h5><br />Permettre aux utilisateurs d'identifier l'information donn\u00e9e dans une page Web et de comprendre son organisation.<br><br>    L'utilisation d'en-t\u00eates et d'\u00e9tiquettes facilitera la lecture et la compr\u00e9hension d'une page pour les personnes ayant une m\u00e9moire \u00e0 court terme ou des difficult\u00e9s de lecture. Cela permettra \u00e9galement aux utilisateurs de lecteur d'\u00e9cran de pouvoir aller ou sauter directement \u00e0 un contenu</li></ul>", 
-    "checklist": {
-      "id": 9, 
-      "name": "RGAA v2.2.1"
-    }, 
-    "explanation": "Le contenu des titres de hi\u00e9rarchie ne refl\u00e8te pas le contenu qu'il pr\u00e9c\u00e8de.", 
-    "description": "Pertinence du contenu des titres de hi\u00e9rarchie.", 
-    "solution": "<p> Tout \u00e9l\u00e9ment : </p><ul> <li> <code>h1,</code> </li> <li> <code>h2,</code> </li> <li> <code>h3</code>, </li> <li> <code>h4</code>, </li> <li> <code>h5</code>, </li> <li> <code>h6</code>, </li> </ul><br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable. </li>", 
-    "name": "[STR]-02"
-  }, 
-  "17570": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Dans chaque page Web, la signification de chaque abr\u00e9viation est-elle pertinente ?", 
-    "solution": "", 
-    "name": "9.4"
-  }, 
-  "17572": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Dans le site Web, des feuilles de styles sont-elles utilis\u00e9es pour contr?ler la pr\u00e9sentation de l'information ?", 
-    "solution": "", 
-    "name": "10.1"
-  }, 
-  "17573": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Dans chaque page Web, le contenu visible reste-t-il pr\u00e9sent lorsque les feuilles de styles ou les images sont d\u00e9sactiv\u00e9es ?", 
-    "solution": "", 
-    "name": "10.2"
-  }, 
-  "17587": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Chaque champ de formulaire a-t-il une \u00e9tiquette ?", 
-    "solution": "", 
-    "name": "11.1"
-  }, 
-  "17590": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Dans chaque formulaire, chaque \u00e9tiquette de champ et son champ associ\u00e9 sont-ils accol\u00e9s ?", 
-    "solution": "", 
-    "name": "11.4"
-  }, 
-  "17591": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Dans chaque formulaire, les informations de m?me nature sont-elles regroup\u00e9es, si n\u00e9cessaire ?", 
-    "solution": "", 
-    "name": "11.5"
-  }, 
-  "17592": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Dans chaque formulaire, chaque regroupement de champs de formulaire a-t-il une l\u00e9gende ?", 
-    "solution": "", 
-    "name": "11.6"
-  }, 
-  "17593": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Dans chaque formulaire, chaque l\u00e9gende associ\u00e9e ? un groupement de champs de formulaire est-elle pertinente ?", 
-    "solution": "", 
-    "name": "11.7"
-  }, 
-  "17594": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Dans chaque formulaire, chaque liste de choix est-elle structur\u00e9e de mani?re pertinente ?", 
-    "solution": "", 
-    "name": "11.8"
-  }, 
-  "17596": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Dans chaque formulaire, le contr?le de saisie est-il utilis\u00e9 de mani?re pertinente ?", 
-    "solution": "", 
-    "name": "11.10"
-  }, 
-  "17597": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Dans chaque formulaire, le contr?le de saisie est-il accompagn\u00e9, si possible, de suggestions facilitant la correction des erreurs de saisie ?", 
-    "solution": "", 
-    "name": "11.11"
-  }, 
-  "17598": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Pour chaque formulaire, les donn\u00e9es ? caract?re financier, juridique ou personnel peuvent-elles ?tre modifi\u00e9es, mise ? jour ou r\u00e9cup\u00e9r\u00e9es par l'utilisateur ?", 
-    "solution": "", 
-    "name": "11.12"
-  }, 
-  "17599": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Pour chaque formulaire, toutes les donn\u00e9es peuvent-elles ?tre modifi\u00e9es, mises ? jour ou r\u00e9cup\u00e9r\u00e9es par l'utilisateur ?", 
-    "solution": "", 
-    "name": "11.13"
-  }, 
-  "17600": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Pour chaque formulaire, des aides ? la saisie sont-elles pr\u00e9sentes ?", 
-    "solution": "", 
-    "name": "11.14"
-  }, 
-  "17615": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Dans chaque page Web, la navigation ne doit pas contenir de pi?ge au clavier. Cette r?gle est-elle respect\u00e9e ?", 
-    "solution": "", 
-    "name": "12.14"
-  }, 
-  "17617": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Dans chaque page Web, pour chaque ouverture de nouvelle fen?tre, l'utilisateur est-il averti ?", 
-    "solution": "", 
-    "name": "13.2"
-  }, 
-  "17630": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Dans chaque page Web, les changements brusques de luminosit\u00e9 ou les effets de flash sont-ils correctement utilis\u00e9s ?", 
-    "solution": "", 
-    "name": "13.15"
-  }, 
-  "17632": {
-    "goal": "", 
-    "checklist": {
-      "id": 525, 
-      "name": "Accessiweb 2.1 non d\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Dans chaque page Web, chaque contenu en mouvement ou clignotant est-il contr?lable par l'utilisateur ?", 
-    "solution": "", 
-    "name": "13.17"
-  }, 
-  "12155": {
-    "goal": "", 
-    "checklist": {
-      "id": 425, 
-      "name": "Accessiweb 2.1 D\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Dans chaque page Web, chaque script  qui provoque un changement brusque de luminosit\u00e9 ou un effet de flash v\u00e9rifie-t-il une de ces conditions ?", 
-    "solution": "", 
-    "name": "13.15.2"
-  }, 
-  "10113": {
-    "goal": "<ul><li><h5>1.3.2 : Ordre s\u00e9quentiel logique : (A)</h5><br />Rendre l'ordre de restitution de l'information ind\u00e9pendant de sa mise en forme visuelle ou sonore lorsqu'il est lui-m\u00eame porteur de sens. <br><br>Les logiciels de lecture d'\u00e9cran, les logiciels automatiques de lecture et certains navigateurs textes lisent ou affichent les informations de mani\u00e8re lin\u00e9aire (dans le cas des tableaux cellule apr\u00e8s cellule, ligne apr\u00e8s ligne). C'est pourquoi l'information doit toujours \u00eatre logiquement ordonn\u00e9e, m\u00eame en mode de lecture lin\u00e9aire, afin que le contenu reste compr\u00e9hensible</li></ul>", 
-    "checklist": {
-      "id": 9, 
-      "name": "RGAA v2.2.1"
-    }, 
-    "explanation": "La lecture lin\u00e9aire des tableaux de cellule en cellule et de ligne en ligne ne permet pas de comprendre le contenu du tableau.", 
-    "description": "Lin\u00e9arisation correcte des tableaux de mise en page.", 
-    "solution": "<p> Tout \u00e9l\u00e9ment <code>table</code> identifi\u00e9 comme tableau de mise en page. </p><br /><br /><li>Si l'\u00e9l\u00e9ment mentionn\u00e9 dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable. </li>", 
-    "name": "[TAB]-06"
-  }, 
-  "10114": {
-    "goal": "<ul><li><h5>1.3.1 : Information et relations : (A)</h5><br />Rendre l'information ind\u00e9pendante de sa mise en forme visuelle ou sonore.<br><br>Ce crit\u00e8re de succ\u00e8s est b\u00e9n\u00e9fique \u00e0 des personnes ayant diff\u00e9rents types de handicaps. Les personnes aveugles ou sourdes et aveugles utilisant un lecteur d'\u00e9cran ou un terminal braille auront acc\u00e8s \u00e0 l'information disponible par la couleur lorsque celle-ci est \u00e9galement mise \u00e0 disposition de fa\u00e7on textuelle.<br>Il vise notamment \u00e0 permettre \u00e0 ce que les agents utilisateurs restituent une information en fonction des besoins de l'utilisateur et cela ind\u00e9pendamment de sa mise en forme visuelle ou sonore. </li></ul>", 
-    "checklist": {
-      "id": 9, 
-      "name": "RGAA v2.2.1"
-    }, 
-    "explanation": "La pr\u00e9sence d'\u00e9l\u00e9ments propre aux tableaux de donn\u00e9es dans les tableaux de mise en forme peut contribuer \u00e0 diminuer la lisibilit\u00e9 de la page par les lecteurs d'\u00e9cran qui traiteront ces tableaux comme des tableaux de donn\u00e9es (lecture ligne \u00e0 ligne et case \u00e0 case).", 
-    "description": "Absence des \u00e9l\u00e9ments propres aux tableaux de donn\u00e9es dans les tableaux de mise en page.", 
-    "solution": "<p> Tout \u00e9l\u00e9ment <code>table</code> identifi\u00e9 comme tableau de mise en page. </p><br /><br /><li>Si l'\u00e9l\u00e9ment mentionn\u00e9 dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable. </li>", 
-    "name": "[TAB]-04"
-  }, 
-  "10115": {
-    "goal": "<ul><li><h5>1.3.1 : Information et relations : (A)</h5><br />Rendre l'information ind\u00e9pendante de sa mise en forme visuelle ou sonore.<br><br>Ce crit\u00e8re de succ\u00e8s est b\u00e9n\u00e9fique \u00e0 des personnes ayant diff\u00e9rents types de handicaps. Les personnes aveugles ou sourdes et aveugles utilisant un lecteur d'\u00e9cran ou un terminal braille auront acc\u00e8s \u00e0 l'information disponible par la couleur lorsque celle-ci est \u00e9galement mise \u00e0 disposition de fa\u00e7on textuelle.<br>Il vise notamment \u00e0 permettre \u00e0 ce que les agents utilisateurs restituent une information en fonction des besoins de l'utilisateur et cela ind\u00e9pendamment de sa mise en forme visuelle ou sonore. </li></ul>", 
-    "checklist": {
-      "id": 9, 
-      "name": "RGAA v2.2.1"
-    }, 
-    "explanation": "Aucun titre n'est pr\u00e9sent.", 
-    "description": "Pr\u00e9sence d'un titre pour les tableaux de donn\u00e9es.", 
-    "solution": "<p> Tout \u00e9l\u00e9ment <code>table</code> identifi\u00e9 comme tableau de donn\u00e9es. </p><br /><br /><li>Si l'\u00e9l\u00e9ment mentionn\u00e9 dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable. </li>", 
-    "name": "[TAB]-07"
-  }, 
-  "10119": {
-    "goal": "<ul><li><h5>1.1.1 : Contenu non textuel : (A)</h5><br />Rendre le contenu non textuel accessible sous forme d'une alternative textuelle exploitable quel que soit le mode de perception de l'utilisateur (visuel, auditif, tactile).<br><br>Le contenu des \u00e9l\u00e9ments non textuels ne sera pas perceptible pour diff\u00e9rentes cat\u00e9gories d'utilisateurs tels que :<br><br><ul><li>Les personnes handicap\u00e9es visuelles acc\u00e9dant au site via la synth\u00e8se vocale d'un lecteur d'\u00e9cran,</li><li>Les utilisateurs ayant d\u00e9sactiv\u00e9 l'affichage des \u00e9l\u00e9ments graphiques ou multim\u00e9dias, pour r\u00e9duire notamment les temps de t\u00e9l\u00e9chargement des pages en bas d\u00e9bit.<br></li></ul><br>La pr\u00e9sence d'alternatives textuelles aux contenus non textuels permet \u00e9galement \u00e0 des robots d'indexation d'en exploiter l'information, ou \u00e0 des traducteurs automatiques d'en traduire le sens.</li><li><h5>1.3.1 : Information et relations : (A)</h5><br />Rendre l'information ind\u00e9pendante de sa mise en forme visuelle ou sonore.<br><br>Ce crit\u00e8re de succ\u00e8s est b\u00e9n\u00e9fique \u00e0 des personnes ayant diff\u00e9rents types de handicaps. Les personnes aveugles ou sourdes et aveugles utilisant un lecteur d'\u00e9cran ou un terminal braille auront acc\u00e8s \u00e0 l'information disponible par la couleur lorsque celle-ci est \u00e9galement mise \u00e0 disposition de fa\u00e7on textuelle.<br>Il vise notamment \u00e0 permettre \u00e0 ce que les agents utilisateurs restituent une information en fonction des besoins de l'utilisateur et cela ind\u00e9pendamment de sa mise en forme visuelle ou sonore. </li></ul>", 
-    "checklist": {
-      "id": 9, 
-      "name": "RGAA v2.2.1"
-    }, 
-    "explanation": "Du contenu porteur d'information est g\u00e9n\u00e9r\u00e9 gr\u00e2ce aux feuilles de styles.", 
-    "description": "Absence de g\u00e9n\u00e9ration de contenus porteur d'information via les styles CSS.", 
-    "solution": "<p> Tout \u00e9l\u00e9ment sur lequel est appliqu\u00e9 des styles <abbr title=\"Cascading Style Sheets\" lang=\"en\" xml:lang=\"en\">CSS</abbr> appliqu\u00e9 dans la page via l'attribut <code>style</code>, une feuille de styles interne, une feuille de styles externe ou du code javascript. </p><br /><br /><li>Si l'\u00e9l\u00e9ment mentionn\u00e9 dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable. </li>\r\n<li>Si le style <abbr title=\"Cascading Style Sheets\" lang=\"en\" xml:lang=\"en\">CSS</abbr> appliqu\u00e9 sur l'\u00e9l\u00e9ment utilise la propri\u00e9t\u00e9 <code>content</code>, poursuivre le test, sinon le test est non applicable. </li>", 
-    "name": "[PR\u00e9]-01"
-  }, 
-  "11864": {
-    "goal": "", 
-    "checklist": {
-      "id": 425, 
-      "name": "Accessiweb 2.1 D\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Chaque image (balise img) a-t-elle un attribut alt ?", 
-    "solution": "", 
-    "name": "1.1.1"
-  }, 
-  "11940": {
-    "goal": "", 
-    "checklist": {
-      "id": 425, 
-      "name": "Accessiweb 2.1 D\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Pour chaque m\u00e9dia temporel synchronis\u00e9 pr\u00e9-enregistr\u00e9 ayant des sous-titres synchronis\u00e9s, ces sous-titres sont-ils pertinents ?", 
-    "solution": "", 
-    "name": "4.4.1"
-  }, 
-  "19401": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Utiliser un \u00e9l\u00e9ment h3, h4, h5 ou h6 comme premier \u00e9l\u00e9ment de titrage pr\u00e9c\u00e9dant l'\u00e9l\u00e9ment h4 dans l'ordre du code source", 
-    "solution": "", 
-    "name": "42"
-  }, 
-  "11976": {
-    "goal": "", 
-    "checklist": {
-      "id": 425, 
-      "name": "Accessiweb 2.1 D\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Pour chaque tableau de mise en forme, le contenu lin\u00e9aris\u00e9 reste-t-il compr\u00e9hensible ?", 
-    "solution": "", 
-    "name": "5.3.1"
-  }, 
-  "19407": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Le contenu ne comporte pas de tableaux imbriqu\u00e9s", 
-    "solution": "", 
-    "name": "48"
-  }, 
-  "12016": {
-    "goal": "", 
-    "checklist": {
-      "id": 425, 
-      "name": "Accessiweb 2.1 D\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Un script ne doit pas supprimer le focus d'un \u00e9l\u00e9ment qui le re\u00e7oit. Cette r\u00e8gle est-elle respect\u00e9e (hors cas particuliers) ?", 
-    "solution": "", 
-    "name": "7.3.3"
-  }, 
-  "12020": {
-    "goal": "", 
-    "checklist": {
-      "id": 425, 
-      "name": "Accessiweb 2.1 D\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Chaque script qui provoque une alerte non sollicit\u00e9e est-il contr\u00f4lable par l'utilisateur (hors cas particuliers) ?", 
-    "solution": "", 
-    "name": "7.6.1"
-  }, 
-  "12029": {
-    "goal": "", 
-    "checklist": {
-      "id": 425, 
-      "name": "Accessiweb 2.1 D\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Pour chaque page Web ayant un titre de page (balise title), le contenu de cette balise est-il pertinent ?", 
-    "solution": "", 
-    "name": "8.6.1"
-  }, 
-  "19413": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser l'\u00e9l\u00e9ment marquee", 
-    "solution": "", 
-    "name": "54"
-  }, 
   "19073": {
     "goal": "Permettre \u00e0 l'utilisateur de pr\u00e9voir le comportement des liens qui ouvrent une nouvelle fen\u00eatre.", 
     "checklist": {
@@ -4409,204 +3496,6 @@ var checklists = {
     "description": "Utiliser avec pr\u00e9caution l'attribut target avec la valeur _blank pour l'\u00e9l\u00e9ment a", 
     "solution": "Ne pas utiliser l'attribut target ou&nbsp;: \r\nIndiquer le comportement du lien dans le libell\u00e9 du lien (contenu de l'\u00e9l\u00e9ment &lt;a&gt;) ou dans l'attribut title.\r\nExemple : &lt;a href=\"http://www.google.fr\" target=\"_blank\"&gt;Site de google (nouvelle fen\u00eatre)&lt;/a&gt;\r\nExemple : &lt;a href=\" http://www.google.fr\" target=\"_blank\" title=\"Site de google (nouvelle fen\u00eatre)\"&gt;Site de google&lt;/a&gt;\r\nAvertissement&nbsp;: le contenu de l'attribut title doit reprendre \u00e9galement le libell\u00e9 du lien. (exemple incorrect&nbsp;: &lt;a href=\" http://www.google.fr\" target=\"_blank\" title=\"nouvelle fen\u00eatre\"&gt;Site de google&lt;/a&gt;)", 
     "name": "3"
-  }, 
-  "12045": {
-    "goal": "", 
-    "checklist": {
-      "id": 425, 
-      "name": "Accessiweb 2.1 D\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Dans chaque page Web, la signification de chaque abr\u00e9viation est-elle pertinente ?", 
-    "solution": "", 
-    "name": "9.4.2"
-  }, 
-  "12051": {
-    "goal": "", 
-    "checklist": {
-      "id": 425, 
-      "name": "Accessiweb 2.1 D\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Dans chaque page Web, l'information reste-t-elle pr\u00e9sente lorsque les feuilles de styles sont d\u00e9sactiv\u00e9es ?", 
-    "solution": "", 
-    "name": "10.2.1"
-  }, 
-  "16170": {
-    "goal": "<div>Permettre aux moteurs de comprendre le contenu des images.&nbsp;Placer des mots-clefs dans la page en dehors du texte directement visible par les visiteurs.</div>", 
-    "checklist": {
-      "id": 478, 
-      "name": "SEO"
-    }, 
-    "explanation": "", 
-    "description": "Chaque image ou \u00e9l\u00e9ment non textuel est dot\u00e9e d'une alternative textuelle", 
-    "solution": "Renseigner l'attribut ALT de chaque \u00e9l\u00e9ment IMG, AREA, INPUT type image, APPLET. Fournir un contenu alternatif dans chaque \u00e9l\u00e9ment OBJECT. Renseigner le contenu de l'\u00e9l\u00e9ment NOEMBED.", 
-    "name": "1"
-  }, 
-  "16171": {
-    "goal": "<div>Simplifier la lecture des alternatives par les moteurs.&nbsp;Inciter \u00e0 \u00e9crire des alternatives br\u00e8ves et percutantes.</div>", 
-    "checklist": {
-      "id": 478, 
-      "name": "SEO"
-    }, 
-    "explanation": "", 
-    "description": "La longueur des alternatives textuelles est inf\u00e9rieure ou \u00e9gale \u00e0 80 caract\u00e8res.", 
-    "solution": "Limiter \u00e0 80 caract\u00e8res au plus, espaces compris, le contenu de l'attribut ALT des \u00e9l\u00e9ments IMG, AREA, INPUT type image, APPLET. Le cas \u00e9ch\u00e9ant, recourir \u00e0 un automatisme du CMS pour tronquer les contenus automatiquement ins\u00e9r\u00e9s comme alternative. Mettre en place dans l'interface de saisie des contenus une validation de la longueur des champs d'alternatives d'images avertissant le r\u00e9dacteur et lui permettant de corriger celles-ci avant la publication.", 
-    "name": "4"
-  }, 
-  "16172": {
-    "goal": "Renforcer les m\u00eames mots-clefs.", 
-    "checklist": {
-      "id": 478, 
-      "name": "SEO"
-    }, 
-    "explanation": "", 
-    "description": "Les termes pr\u00e9sents dans l'alternative textuelle des images sont \u00e9galement pr\u00e9sents dans le contenu de la page.", 
-    "solution": "Renseigner l'attribut ALT des \u00e9l\u00e9ments IMG, AREA, APPLET en reprenant des mots-cl\u00e9s pr\u00e9sents dans le contenu textuel auquel elles sont associ\u00e9es dans la page.", 
-    "name": "5"
-  }, 
-  "16177": {
-    "goal": "<div>Eviter que les r\u00e9sultats des moteurs soient des pages partielles (cadre int\u00e9rieur uniquement par exemple).&nbsp;Simplifier le crawl des moteurs.</div>", 
-    "checklist": {
-      "id": 478, 
-      "name": "SEO"
-    }, 
-    "explanation": "", 
-    "description": "Le site n'emploie pas la technique des jeux de cadres", 
-    "solution": "Ne pas utiliser les \u00e9l\u00e9ments FRAMESET, FRAME et NOFRAMES. ", 
-    "name": "9"
-  }, 
-  "16178": {
-    "goal": "Fournir du contenu accessible aux moteurs.", 
-    "checklist": {
-      "id": 478, 
-      "name": "SEO"
-    }, 
-    "explanation": "", 
-    "description": "Si le site utilise la technique des jeux de cadres, l'\u00e9l\u00e9ment NOFRAME est utilis\u00e9.", 
-    "solution": "Utiliser un \u00e9l\u00e9ment NOFRAMES dans chaque \u00e9l\u00e9ment FRAMESET.", 
-    "name": "6"
-  }, 
-  "16179": {
-    "goal": "Fournir du contenu cibl\u00e9 et pertinent aux moteurs.", 
-    "checklist": {
-      "id": 478, 
-      "name": "SEO"
-    }, 
-    "explanation": "", 
-    "description": "Le contenu de chaque \u00e9l\u00e9ment noframe d\u00e9crit le contenu du cadre", 
-    "solution": "Donner \u00e0 chaque \u00e9l\u00e9ment NOFRAMES un contenu descriptif des cadres du FRAMESET correspondant.", 
-    "name": "7"
-  }, 
-  "16180": {
-    "goal": "Eviter les p\u00e9nalit\u00e9s des moteurs pour keyword-stuffing (bourrage de mots-cl\u00e9s).", 
-    "checklist": {
-      "id": 478, 
-      "name": "SEO"
-    }, 
-    "explanation": "", 
-    "description": "Le contenu de chaque \u00e9l\u00e9ment noframe n'est pas limit\u00e9 \u00e0 une liste de mots-cl\u00e9s.", 
-    "solution": "Utiliser les mots cl\u00e9s dans chaque \u00e9l\u00e9ment NOFRAMES sous la forme d'un texte r\u00e9dig\u00e9 d\u00e9crivant le contenu des cadres du FRAMESET correspondant.", 
-    "name": "8"
-  }, 
-  "16181": {
-    "goal": "Permettre aux moteurs de comprendre le contenu des vid\u00e9os et pistes audio.", 
-    "checklist": {
-      "id": 478, 
-      "name": "SEO"
-    }, 
-    "explanation": "", 
-    "description": "Chaque contenu audio et vid\u00e9o est accompagn\u00e9 de sa transcription textuelle", 
-    "solution": "V\u00e9rifier la pr\u00e9sence d'une transcription textuelle de chaque contenu audio ou vid\u00e9o, dans la page o\u00f9 se trouve celui-ci. La transcription balis\u00e9e en HTML reproduit l'ensemble de l'information pertinente du contenu audio ou vid\u00e9o, et en particulier des paroles et images contenant du texte, sous une forme int\u00e9grale ou synth\u00e9tique.", 
-    "name": "2"
-  }, 
-  "12087": {
-    "goal": "", 
-    "checklist": {
-      "id": 425, 
-      "name": "Accessiweb 2.1 D\u00e9ploy\u00e9e"
-    }, 
-    "explanation": "", 
-    "description": "Dans chaque formulaire, chaque \u00e9tiquette de champ et son champ associ\u00e9 sont-ils accol\u00e9s ?", 
-    "solution": "", 
-    "name": "11.4.1"
-  }, 
-  "16184": {
-    "goal": "Limiter les risques que le site soit consid\u00e9r\u00e9 comme \"ferme de liens\" et p\u00e9nalis\u00e9 par les moteurs.", 
-    "checklist": {
-      "id": 478, 
-      "name": "SEO"
-    }, 
-    "explanation": "", 
-    "description": "Le nombre de liens externes dans une page n'exc\u00e8de pas le nombre de liens internes.", 
-    "solution": "Limiter le nombre de liens externes dans chaque page \u00e0 un nombre inf\u00e9rieur au total des liens internes pr\u00e9sent dans celle-ci. Mettre en place dans l'interface d'\u00e9dition des contenus une validation du nombre de liens externes, permettant au r\u00e9dacteur d'\u00eatre averti lors de l'ajout d'un lien externe et de corriger en cons\u00e9quences.", 
-    "name": "38"
-  }, 
-  "16190": {
-    "goal": "Permettre aux moteurs d'identifier rapidement la langue du contenu.", 
-    "checklist": {
-      "id": 478, 
-      "name": "SEO"
-    }, 
-    "explanation": "", 
-    "description": "Le code source de chaque page indique la langue principale du contenu.", 
-    "solution": "Renseigner l'attribut lang de l'\u00e9l\u00e9ment racine HTML \u00e0 l'aide d'un code de langue conforme au registre des codes de langue de l'IANA.", 
-    "name": "51"
-  }, 
-  "16191": {
-    "goal": "<div>Encourager les utilisateurs des moteurs \u00e0 visiter le site.&nbsp;Eviter les p\u00e9nalit\u00e9s des moteurs pour keyword-stuffing (bourrage de mots-cl\u00e9s).&nbsp;Eviter que les moteurs choisissent d'eux-m\u00eame une description pour la page</div>", 
-    "checklist": {
-      "id": 478, 
-      "name": "SEO"
-    }, 
-    "explanation": "", 
-    "description": "Le contenu de l'\u00e9l\u00e9ment meta description est une phrase significative et non une liste de mots clefs.", 
-    "solution": "R\u00e9diger le contenu de l'attribut content de l'\u00e9l\u00e9ment META name=\"description\".", 
-    "name": "48"
-  }, 
-  "16192": {
-    "goal": "<div>Encourager les utilisateurs des moteurs \u00e0 visiter le site.&nbsp;Placer des mots-clefs dans la description et en renforcer l'importance.&nbsp;Eviter que les moteurs choisissent d'eux-m\u00eame une description pour la page.</div>", 
-    "checklist": {
-      "id": 478, 
-      "name": "SEO"
-    }, 
-    "explanation": "", 
-    "description": "Le code source de chaque page contient une metadonn\u00e9e qui en d\u00e9crit le contenu.", 
-    "solution": "Utiliser dans la section HEAD de la page l'\u00e9l\u00e9ment META name=\"description\" et renseigner son attribut content avec la description du contenu propre de la page.", 
-    "name": "42"
-  }, 
-  "16194": {
-    "goal": "<div>Eviter le keyword-stuffing (bourrage de mots-cl\u00e9s).&nbsp;Garder le ciblage de la page.&nbsp;</div>", 
-    "checklist": {
-      "id": 478, 
-      "name": "SEO"
-    }, 
-    "explanation": "", 
-    "description": "Le nombre de caract\u00e8res contenus dans la balise META Description est inf\u00e9rieur ou \u00e9gal \u00e0 250.", 
-    "solution": "Limiter \u00e0 250 caract\u00e8res au plus, espaces compris, le contenu de l'attribut content de l'\u00e9l\u00e9ment META name=\"description\". Mettre en place un automatisme dans le CMS tronquant le contenu des attributs content automatiquement g\u00e9n\u00e9r\u00e9s. Mettre en place dans l'interface d'\u00e9dition une validation de la longueur des descriptions saisies par les r\u00e9dacteurs, avertissant ceux-ci en cas d'erreur et leur permettant de corriger la saisie concern\u00e9e avant publication de la page.", 
-    "name": "49"
-  }, 
-  "16196": {
-    "goal": "<div>Renforcer les mots-clefs associ\u00e9s \u00e0 une page.&nbsp;Encourager les utilisateurs des moteurs \u00e0 visiter la page.</div>", 
-    "checklist": {
-      "id": 478, 
-      "name": "SEO"
-    }, 
-    "explanation": "", 
-    "description": "Le titre de chaque page (\u00e9l\u00e9ment TITLE) permet d'identifier son contenu.", 
-    "solution": "<div>R\u00e9diger le contenu de l'\u00e9l\u00e9ment TITLE de chaque page de mani\u00e8re \u00e0 en d\u00e9crire de mani\u00e8re concise le contenu ou la fonction. Pr\u00e9ciser l'\u00e9tape en cours dans l'\u00e9l\u00e9ment&nbsp;TITLE&nbsp;des pages correspondant \u00e0 des \u00e9tapes dans un processus (exemple : \u00e9tape 3 de votre inscription, etc).&nbsp;</div><div>Pr\u00e9ciser l'intervalle dans une page d'une s\u00e9rie de pages de r\u00e9sultats de recherche (R\u00e9sultats 10 \u00e0 19 de la recherche sur \"Foo\")&nbsp;</div><div>Pr\u00e9ciser l'\u00e9tat dans le titre d'une page demande de confirmation ou de confirmation lors de la soumission d'un formulaire (exemple: demande de confirmation de suppression - mes documents).</div>", 
-    "name": "45"
-  }, 
-  "16197": {
-    "goal": "<div>Mettre en avant la structure de la page.&nbsp;Placer des mots-clefs aux endroits importants.</div>", 
-    "checklist": {
-      "id": 478, 
-      "name": "SEO"
-    }, 
-    "explanation": "", 
-    "description": "Chaque page du site contient un \u00e9l\u00e9ment de titre de section H1.", 
-    "solution": "Faire figurer au moins un \u00e9l\u00e9ment H1 comme titre de section principal du contenu propre de la page. Automatiser le cas \u00e9ch\u00e9ant la pr\u00e9sence et le contenu de l'\u00e9l\u00e9ment H1 via les gabarits du CMS. Mettre en place un processus de validation de la pr\u00e9sence de l'\u00e9l\u00e9ment H1 quand celui-ci est manuellement ins\u00e9r\u00e9 par le r\u00e9dacteur, avertissant en cas d'erreur et permettant la correction avant publication du contenu.", 
-    "name": "10"
   }, 
   "10058": {
     "goal": "<ul><li><h5>1.1.1 : Contenu non textuel : (A)</h5><br />Rendre le contenu non textuel accessible sous forme d'une alternative textuelle exploitable quel que soit le mode de perception de l'utilisateur (visuel, auditif, tactile).<br><br>Le contenu des \u00e9l\u00e9ments non textuels ne sera pas perceptible pour diff\u00e9rentes cat\u00e9gories d'utilisateurs tels que :<br><br><ul><li>Les personnes handicap\u00e9es visuelles acc\u00e9dant au site via la synth\u00e8se vocale d'un lecteur d'\u00e9cran,</li><li>Les utilisateurs ayant d\u00e9sactiv\u00e9 l'affichage des \u00e9l\u00e9ments graphiques ou multim\u00e9dias, pour r\u00e9duire notamment les temps de t\u00e9l\u00e9chargement des pages en bas d\u00e9bit.<br></li></ul><br>La pr\u00e9sence d'alternatives textuelles aux contenus non textuels permet \u00e9galement \u00e0 des robots d'indexation d'en exploiter l'information, ou \u00e0 des traducteurs automatiques d'en traduire le sens.</li></ul>", 
@@ -4619,38 +3508,27 @@ var checklists = {
     "solution": "<p> Tout \u00e9l\u00e9ment : </p><ul> <li> <code>img</code>, </li> <li> <code>area</code>, </li> <li> <code>input type='image'</code>, </li> <li> <code>applet</code>, </li> <li>tout code javascript g\u00e9n\u00e9rant un des \u00e9l\u00e9ments pr\u00e9c\u00e9dant. </li> </ul><br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable. </li>\r\n<li>Si l'\u00e9l\u00e9ment n'est pas un captcha ou ne fait pas parti d'un test qui deviendrait inutile si l'alternative textuelle \u00e9tait pr\u00e9sente, poursuivre le test, sinon le test est non applicable. </li>", 
     "name": "[IMA]-01"
   }, 
-  "16203": {
-    "goal": "Contr\u00f4ler l'indexation des moteurs.", 
+  "10060": {
+    "goal": "<ul><li><h5>1.1.1 : Contenu non textuel : (A)</h5><br />Rendre le contenu non textuel accessible sous forme d'une alternative textuelle exploitable quel que soit le mode de perception de l'utilisateur (visuel, auditif, tactile).<br><br>Le contenu des \u00e9l\u00e9ments non textuels ne sera pas perceptible pour diff\u00e9rentes cat\u00e9gories d'utilisateurs tels que :<br><br><ul><li>Les personnes handicap\u00e9es visuelles acc\u00e9dant au site via la synth\u00e8se vocale d'un lecteur d'\u00e9cran,</li><li>Les utilisateurs ayant d\u00e9sactiv\u00e9 l'affichage des \u00e9l\u00e9ments graphiques ou multim\u00e9dias, pour r\u00e9duire notamment les temps de t\u00e9l\u00e9chargement des pages en bas d\u00e9bit.<br></li></ul><br>La pr\u00e9sence d'alternatives textuelles aux contenus non textuels permet \u00e9galement \u00e0 des robots d'indexation d'en exploiter l'information, ou \u00e0 des traducteurs automatiques d'en traduire le sens.</li></ul>", 
     "checklist": {
-      "id": 478, 
-      "name": "SEO"
+      "id": 9, 
+      "name": "RGAA v2.2.1"
     }, 
-    "explanation": "", 
-    "description": "La racine du site contient des instructions pour les robots d'indexation.", 
-    "solution": "Mettre en place un fichier robots.txt \u00e0 la racine du site et renseigner son contenu \u00e0 l'aide des directives indiqu\u00e9es par http://www.robotstxt.org/", 
-    "name": "58"
+    "explanation": "Certaines alternatives de boutons graphiques ou de zones cliquables d'image MAP ont une alternative ALT qui ne permet pas de comprendre pr\u00e9cis\u00e9ment l'action ou d'identifier la destination du lien. ", 
+    "description": "Pertinence de l'alternative textuelle aux zones cliquables ou aux boutons graphiques.", 
+    "solution": "<p> Tout \u00e9l\u00e9ment : </p><ul> <li> <code>area</code>, </li> <li> <code>input type='image'</code>, </li> <li>tout code javascript g\u00e9n\u00e9rant un des \u00e9l\u00e9ments pr\u00e9c\u00e9dant. </li> </ul><br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable. </li>\r\n<li>Si l'\u00e9l\u00e9ment n'est pas utilis\u00e9 comme captcha ou ne fait pas partie d'un test qui deviendrait inutile si l'alternative textuelle \u00e9tait pr\u00e9sente, poursuivre le test, sinon le test est non applicable, poursuivre le test, sinon le test est non applicable. </li>\r\n<li>Si l'\u00e9l\u00e9ment poss\u00e8de un attribut <code>alt</code>, poursuivre le test, sinon le test non applicable. </li>", 
+    "name": "[IMA]-03"
   }, 
-  "16204": {
-    "goal": "Simplifier le crawl des moteurs.", 
+  "10061": {
+    "goal": "<ul><li><h5>1.1.1 : Contenu non textuel : (A)</h5><br />Rendre le contenu non textuel accessible sous forme d'une alternative textuelle exploitable quel que soit le mode de perception de l'utilisateur (visuel, auditif, tactile).<br><br>Le contenu des \u00e9l\u00e9ments non textuels ne sera pas perceptible pour diff\u00e9rentes cat\u00e9gories d'utilisateurs tels que :<br><br><ul><li>Les personnes handicap\u00e9es visuelles acc\u00e9dant au site via la synth\u00e8se vocale d'un lecteur d'\u00e9cran,</li><li>Les utilisateurs ayant d\u00e9sactiv\u00e9 l'affichage des \u00e9l\u00e9ments graphiques ou multim\u00e9dias, pour r\u00e9duire notamment les temps de t\u00e9l\u00e9chargement des pages en bas d\u00e9bit.<br></li></ul><br>La pr\u00e9sence d'alternatives textuelles aux contenus non textuels permet \u00e9galement \u00e0 des robots d'indexation d'en exploiter l'information, ou \u00e0 des traducteurs automatiques d'en traduire le sens.</li><li><h5>1.4.1 : Utilisation de la couleur : (A)</h5><br />Rendre l'information v\u00e9hicul\u00e9e par la couleur perceptible pour tous les utilisateurs en situation de handicap visuel. Notamment, permettre l'acc\u00e8s \u00e0 l'information aux personnes aveugles,\r\nmal voyantes (d\u00e9ficiences de perception des couleurs, d\u00e9g\u00e9n\u00e9rescence maculaire li\u00e9e \u00e0 l'age,...) , utilisant des feuilles de styles personnalis\u00e9es ou ayant un \u00e9cran monochrome/avec un nombre de couleurs limit\u00e9.</li></ul>", 
     "checklist": {
-      "id": 478, 
-      "name": "SEO"
+      "id": 9, 
+      "name": "RGAA v2.2.1"
     }, 
-    "explanation": "", 
-    "description": "Le site propose un fichier sitemap indiquant les contenus \u00e0 explorer.", 
-    "solution": "Cr\u00e9er un fichier sitemap.xml contenant la liste des pages du site \u00e0 la racine du site.", 
-    "name": "59"
-  }, 
-  "16205": {
-    "goal": "S\u00e9parer la forme et le contenu.\r\nSimplifier l'acc\u00e8s aux contenus.", 
-    "checklist": {
-      "id": 478, 
-      "name": "SEO"
-    }, 
-    "explanation": "", 
-    "description": "Les contenus HTML sont mis en forme \u00e0 l'aide de styles CSS externalis\u00e9s.", 
-    "solution": "Placer les styles CSS dans des fichiers externes appel\u00e9s avec les \u00e9l\u00e9ments LINK ou la r\u00e8gle @import dans un \u00e9l\u00e9ment STYLE. Ne pas placer les styles CSS directement entre les balises de l'\u00e9l\u00e9ment STYLE ou dans l'attribut style des \u00e9l\u00e9ments HTML. Le cas \u00e9ch\u00e9ant, mettre en place une validation dans l'interface d'\u00e9dition alertant l'utilisateur en cas de saisie d'un attribut style en mode source.", 
-    "name": "74"
+    "explanation": "Certaines images v\u00e9hiculant une information (hors images liens, boutons, etc.) n'ont pas une alternative pertinente par rapport \u00e0 leur r\u00f4le et \u00e0 leur contexte d'utilisation dans la page.", 
+    "description": "Pertinence de l'alternative textuelle aux \u00e9l\u00e9ments non textuels.", 
+    "solution": "<p> Tout \u00e9l\u00e9ment : </p><ul> <li> <code>img</code>, </li> <li> <code>applet</code>,</li> <li><code>object</code></li><li><code>embed</code></li><li>tout code javascript g\u00e9n\u00e9rant un des \u00e9l\u00e9ments pr\u00e9c\u00e9dant. </li> </ul><br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si l'\u00e9l\u00e9ment n'est pas contenu dans un \u00e9l\u00e9ment a ou button, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si l'\u00e9l\u00e9ment apporte visuellement une information, poursuivre le test, sinon le test est non applicable.&nbsp;</li>\r\n<li>Si l'\u00e9l\u00e9ment n'est pas un contenu sonore, visuel anim\u00e9, multim\u00e9dias, un captcha ou ne fait pas parti d'un test qui deviendrait inutile si l'alternative\r\ntextuelle \u00e9tait pr\u00e9sente, poursuivre le test, sinon le test est non\r\napplicable.</li>", 
+    "name": "[IMA]-04"
   }, 
   "10062": {
     "goal": "<ul><li><h5>1.1.1 : Contenu non textuel : (A)</h5><br />Rendre le contenu non textuel accessible sous forme d'une alternative textuelle exploitable quel que soit le mode de perception de l'utilisateur (visuel, auditif, tactile).<br><br>Le contenu des \u00e9l\u00e9ments non textuels ne sera pas perceptible pour diff\u00e9rentes cat\u00e9gories d'utilisateurs tels que :<br><br><ul><li>Les personnes handicap\u00e9es visuelles acc\u00e9dant au site via la synth\u00e8se vocale d'un lecteur d'\u00e9cran,</li><li>Les utilisateurs ayant d\u00e9sactiv\u00e9 l'affichage des \u00e9l\u00e9ments graphiques ou multim\u00e9dias, pour r\u00e9duire notamment les temps de t\u00e9l\u00e9chargement des pages en bas d\u00e9bit.<br></li></ul><br>La pr\u00e9sence d'alternatives textuelles aux contenus non textuels permet \u00e9galement \u00e0 des robots d'indexation d'en exploiter l'information, ou \u00e0 des traducteurs automatiques d'en traduire le sens.</li></ul>", 
@@ -4718,17 +3596,6 @@ var checklists = {
     "solution": "<p> Tout \u00e9l\u00e9ment : </p><ul> <li> <code>a</code>, </li> <li> <code>area</code>, </li> <li> <code>applet</code>,</li><li> <code>object</code>,</li><li> <code>embed</code>,</li><li>tout code javascript g\u00e9n\u00e9rant un des \u00e9l\u00e9ments pr\u00e9c\u00e9dents ou d\u00e9clenchant un t\u00e9l\u00e9chargement. </li> </ul><br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si l'\u00e9l\u00e9ment permet de t\u00e9l\u00e9charger ou de consulter un contenu visuel anim\u00e9, sonore ou un m\u00e9dia synchronis\u00e9 porteur d'informations, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si le contenu visuel anim\u00e9, sonore ou le m\u00e9dia synchronis\u00e9 n'est pas une alternative anim\u00e9e, sonore ou synchronis\u00e9e \u00e0  un contenu textuel pr\u00e9sent dans la page,  qui est identifi\u00e9e en tant que tel et qui n'apporte pas plus d'information que le contenu textuel, poursuivre le test, sinon le test est non applicable.</li>", 
     "name": "[MUL]-02"
   }, 
-  "16212": {
-    "goal": "<div>Eviter le keyword-stuffing (bourrage de mots-cl\u00e9s).&nbsp;Renforcer les mots-clefs majeurs.</div>", 
-    "checklist": {
-      "id": 478, 
-      "name": "SEO"
-    }, 
-    "explanation": "", 
-    "description": "Le contenu de chaque \u00e9l\u00e9ment meta keywords est inf\u00e9rieur ou \u00e9gal \u00e0 10 termes.", 
-    "solution": "Limiter \u00e0 10 termes ou expressions au plus le contenu de l'attribut content de l'\u00e9l\u00e9ment META name=\"keywords\". Mettre en place dans le CMS un automatisme limitant le nombre de mots-cl\u00e9s ins\u00e9r\u00e9s dans l'attribut. Mettre en place dans l'interface d'\u00e9dition un processus de validation alertant le r\u00e9dacteur en cas de saisie de plus de 10 mots-cl\u00e9s et lui permettant de corriger avant publication.", 
-    "name": "43"
-  }, 
   "10069": {
     "goal": "<ul><li><h5>1.2.5 : Audio-description (pr\u00e9-enregistr\u00e9e) : (AA)</h5><br />Permettre aux utilisateurs en situation de handicap visuel de percevoir l'information visuelle v\u00e9hicul\u00e9e par les contenus multim\u00e9dia.<br><br>Toutes les aides techniques ne sont pas en mesure de lire\r\nautomatiquement la description textuelle des contenus multim\u00e9dias. Il\r\nest donc n\u00e9cessaire de la compl\u00e9ter d'une description audio. Ainsi, une\r\npersonne pr\u00e9sentant une d\u00e9ficience visuelle ou ayant des probl\u00e8mes de\r\ncompr\u00e9hension de l'\u00e9crit pourra profiter de cette description audio.</li></ul>", 
     "checklist": {
@@ -4773,16 +3640,16 @@ var checklists = {
     "solution": "<p> Tout \u00e9l\u00e9ment : </p><ul> <li> <code>a</code>, </li> <li> <code>area</code>, </li> <li> <code>applet</code>,</li><li> <code>object</code>,</li><li> <code>embed</code>,</li><li>tout code javascript g\u00e9n\u00e9rant un des \u00e9l\u00e9ments pr\u00e9c\u00e9dents ou d\u00e9clenchant un t\u00e9l\u00e9chargement. </li> </ul><br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est pr\u00e9sent ou utilis\u00e9 dans la page, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si l'\u00e9l\u00e9ment permet de t\u00e9l\u00e9charger ou de restituer un contenu visuel anim\u00e9 ou multim\u00e9dia qui apporte de l'information, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si le\r\ncontenu visuel anim\u00e9 ou le m\u00e9dia synchronis\u00e9 n'est pas une\r\nalternative anim\u00e9e ou synchronis\u00e9e \u00e0  un contenu textuel\r\npr\u00e9sent dans la page,  qui est identifi\u00e9e en tant\r\nque tel et qui n'apporte pas plus d'information que le contenu\r\ntextuel, poursuivre le test, sinon le test est non applicable.</li><li>Si le contenu visuel anim\u00e9 ou le m\u00e9dia synchronis\u00e9 n'a pas d\u00e9j\u00e0 une transcription textuelle restituant l'ensemble des informations, poursuivre le test, sinon le test est non applicable<br></li>\r\n<li>Si le contenu de l'\u00e9l\u00e9ment n\u00e9cessite l'utilisation d'une description audio synchronis\u00e9e pour le rendre compr\u00e9hensible, poursuivre le test, sinon le test est non applicable.</li>", 
     "name": "[MUL]-04"
   }, 
-  "16217": {
-    "goal": "Renforcer les mots-clefs de la page.", 
+  "10073": {
+    "goal": "<ul><li><h5>1.2.1 : Contenu seulement audio ou vid\u00e9o (pr\u00e9-enregistr\u00e9) : (A)</h5><br />Fournir textuellement  \u00e0 tous les utilisateurs l'information v\u00e9hicul\u00e9e par les contenus seulement vid\u00e9o ou audio  (pr\u00e9-enregistr\u00e9). Les informations fournis textuellement seront accessible car elles peuvent \u00eatre restitu\u00e9es sous diff\u00e9rentes formes (visuelle, auditive, tactile)<br><br>Dans le cas contraire, le contenu des \u00e9l\u00e9ments seulement audio ou vid\u00e9o  ne serait pas perceptible pour diff\u00e9rentes cat\u00e9gories d'utilisateurs tels que : <br><br><ul><li>Les personnes ayant une d\u00e9ficience auditive pour le contenu uniquement sonore,</li><li>Les personnes ayant une d\u00e9ficience visuelle pour le contenu uniquement vid\u00e9o,</li></ul><br>Cela permet \u00e9galement \u00e0 des robots d'indexation d'exploiter l'information, ou \u00e0 des traducteurs automatiques d'en traduire le sens.</li><li><h5>1.2.3 : Audio-description ou version de remplacement pour un m\u00e9dia temporel (pr\u00e9-enregistr\u00e9) : (A)</h5><br />Permettre aux utilisateurs en situation de handicap visuel de percevoir l'information visuelle v\u00e9hicul\u00e9e par les contenus multim\u00e9dia.<br><br>Toutes les aides techniques ne sont pas en mesure de lire automatiquement la description textuelle des contenus multim\u00e9dias. Il est donc n\u00e9cessaire de la compl\u00e9ter d'une description audio. Ainsi, une personne pr\u00e9sentant une d\u00e9ficience visuelle ou ayant des probl\u00e8mes de compr\u00e9hension de l'\u00e9crit pourra profiter de cette description audio.</li><li><h5>1.2.5 : Audio-description (pr\u00e9-enregistr\u00e9e) : (AA)</h5><br />Permettre aux utilisateurs en situation de handicap visuel de percevoir l'information visuelle v\u00e9hicul\u00e9e par les contenus multim\u00e9dia.<br><br>Toutes les aides techniques ne sont pas en mesure de lire\r\nautomatiquement la description textuelle des contenus multim\u00e9dias. Il\r\nest donc n\u00e9cessaire de la compl\u00e9ter d'une description audio. Ainsi, une\r\npersonne pr\u00e9sentant une d\u00e9ficience visuelle ou ayant des probl\u00e8mes de\r\ncompr\u00e9hension de l'\u00e9crit pourra profiter de cette description audio.</li><li><h5>1.2.7 : Audio-description \u00e9tendue (pr\u00e9-enregistr\u00e9e) : (AAA)</h5><br />Permettre aux utilisateurs en situation de handicap visuel de percevoir l'information visuelle v\u00e9hicul\u00e9e par les contenus multim\u00e9dia.<br><br>Toutes les aides techniques ne sont pas en mesure de lire\r\nautomatiquement la description textuelle des contenus multim\u00e9dias. Il\r\nest donc n\u00e9cessaire de la compl\u00e9ter d'une description audio. Ainsi, une\r\npersonne pr\u00e9sentant une d\u00e9ficience visuelle ou ayant des probl\u00e8mes de\r\ncompr\u00e9hension de l'\u00e9crit pourra profiter de cette description audio.</li></ul>", 
     "checklist": {
-      "id": 478, 
-      "name": "SEO"
+      "id": 9, 
+      "name": "RGAA v2.2.1"
     }, 
-    "explanation": "", 
-    "description": "Les URL contiennent des termes pr\u00e9sents dans les titres de pages.", 
-    "solution": "Si vous utilisez un CMS, v\u00e9rifier qu'il est bien param\u00e9tr\u00e9 pour utiliser le titre de la page dans la construction de l'URL.", 
-    "name": "37"
+    "explanation": "La description audio synchronis\u00e9e ne restitue pas l'ensemble des informations visuels pr\u00e9sente dans les visuels anim\u00e9s ou les m\u00e9dias synchronis\u00e9s.", 
+    "description": "Pertinence de la description audio synchronis\u00e9e des contenus visuels anim\u00e9s ou des m\u00e9dias synchronis\u00e9s.", 
+    "solution": "Tout contenu sonore constituant une description audio d'un contenu visuel anim\u00e9 ou d'un m\u00e9dia synchronis\u00e9. <br /><br /><li>Si l'\u00e9l\u00e9ment mentionn\u00e9 dans le champ d'application est pr\u00e9sent, poursuivre le test, sinon le test est non applicable. </li>", 
+    "name": "[MUL]-05"
   }, 
   "10074": {
     "goal": "<ul><li><h5>1.2.3 : Audio-description ou version de remplacement pour un m\u00e9dia temporel (pr\u00e9-enregistr\u00e9) : (A)</h5><br />Permettre aux utilisateurs en situation de handicap visuel de percevoir l'information visuelle v\u00e9hicul\u00e9e par les contenus multim\u00e9dia.<br><br>Toutes les aides techniques ne sont pas en mesure de lire automatiquement la description textuelle des contenus multim\u00e9dias. Il est donc n\u00e9cessaire de la compl\u00e9ter d'une description audio. Ainsi, une personne pr\u00e9sentant une d\u00e9ficience visuelle ou ayant des probl\u00e8mes de compr\u00e9hension de l'\u00e9crit pourra profiter de cette description audio.</li><li><h5>1.2.5 : Audio-description (pr\u00e9-enregistr\u00e9e) : (AA)</h5><br />Permettre aux utilisateurs en situation de handicap visuel de percevoir l'information visuelle v\u00e9hicul\u00e9e par les contenus multim\u00e9dia.<br><br>Toutes les aides techniques ne sont pas en mesure de lire\r\nautomatiquement la description textuelle des contenus multim\u00e9dias. Il\r\nest donc n\u00e9cessaire de la compl\u00e9ter d'une description audio. Ainsi, une\r\npersonne pr\u00e9sentant une d\u00e9ficience visuelle ou ayant des probl\u00e8mes de\r\ncompr\u00e9hension de l'\u00e9crit pourra profiter de cette description audio.</li></ul>", 
@@ -4806,17 +3673,6 @@ var checklists = {
     "solution": "<p> Tout \u00e9l\u00e9ment : </p><ul> <li> <code>a</code>, </li> <li> <code>applet</code>, </li> <li> <code>object</code>, </li> <li> <code>embed</code>, </li>  </ul><br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si l'\u00e9l\u00e9ment permet de t\u00e9l\u00e9charger ou de restituer un m\u00e9dia synchronis\u00e9 qui apporte de l'information, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si ce m\u00e9dia synchronis\u00e9 ne diffuse pas un contenu en direct, poursuivre le test, sinon le test est non applicable. <br></li><li>Si le\r\nm\u00e9dia synchronis\u00e9 n'est pas une\r\nalternative anim\u00e9e, sonore ou synchronis\u00e9e \u00e0  un contenu textuel\r\npr\u00e9sent dans la page,  qui est identifi\u00e9e en tant\r\nque tel et qui n'apporte pas plus d'information que le contenu\r\ntextuel, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si le m\u00e9dia synchronis\u00e9 n\u00e9cessite l'utilisation de sous-titres synchronis\u00e9s pour le rendre compr\u00e9hensible, poursuivre le test, sinon le test est non applicable.</li>", 
     "name": "[MUL]-09"
   }, 
-  "16221": {
-    "goal": "Am\u00e9liorer la popularit\u00e9 du site.", 
-    "checklist": {
-      "id": 478, 
-      "name": "SEO"
-    }, 
-    "explanation": "", 
-    "description": "Le site fait l'objet de liens entrants.", 
-    "solution": "", 
-    "name": "61"
-  }, 
   "19088": {
     "goal": "Permettre aux utilisateurs de distinguer les diff\u00e9rents tableaux de donn\u00e9es pr\u00e9sents dans une page.", 
     "checklist": {
@@ -4827,17 +3683,6 @@ var checklists = {
     "description": "Utiliser avec pr\u00e9caution des contenus identiques pour plusieurs \u00e9l\u00e9ments caption", 
     "solution": "Mettre un contenu diff\u00e9rent pour chaque \u00e9l\u00e9ment caption d'un tableau de donn\u00e9es.", 
     "name": "9"
-  }, 
-  "16229": {
-    "goal": "Fournir des contenus indexables aux moteurs.", 
-    "checklist": {
-      "id": 478, 
-      "name": "SEO"
-    }, 
-    "explanation": "", 
-    "description": "Si le site propose un fil de syndication, celui propose des contenus et pas seulement des liens.", 
-    "solution": "Reproduire dans le fil RSS, associ\u00e9 \u00e0 chaque lien, le r\u00e9sum\u00e9 ou l'introduction des contenus correspondants.", 
-    "name": "23"
   }, 
   "10089": {
     "goal": "<ul><li><h5>4.1.1 : Analyse syntaxique : (A)</h5><br />Permettre aux agents utilisateurs et aux technologies d'assistance d'interpr\u00e9ter correctement les contenus balis\u00e9s. <br><br>En effet, la pr\u00e9sence d'erreurs dans l'utilisation d'une grammaire formelle d\u00e9finie par le W3C peut perturber le bon fonctionnement des technologies d'assistance.</li></ul>", 
@@ -4894,27 +3739,27 @@ var checklists = {
     "solution": "<p> Tout \u00e9l\u00e9ment : </p><br><ul>  <li> <code>basefont</code>, </li>  <li> <code>blink</code>, </li> <li> <code>center</code>, </li> <li> <code>font</code>, </li>  <li> <code>marquee</code>, </li> <li> <code>s</code>, </li>  <li> <code>strike</code>, </li> <li> <code>tt</code>, </li> <li> <code>u</code>, </li> </ul><p> ou attribut : </p><ul> <li> <code>align</code>, </li> <li> <code>alink</code>, </li> <li> <code>background</code>, </li> <li> <code>basefont</code>, </li> <li> <code>bgcolor</code>, </li> <li> <code>border</code>, </li> <li> <code>color</code>, </li> <li> <code>link</code>, </li> <li> <code>text</code>, </li> <li> <code>vlink</code>, </li> </ul><br /><br />", 
     "name": "[PR\u00e9]-08"
   }, 
-  "16239": {
-    "goal": "Simplifier la compr\u00e9hension du contenu de la page.", 
+  "10095": {
+    "goal": "<ul><li><h5>2.4.1 : Contourner des blocs : (A)</h5><br />Rendre les contenus navigables pour les utilisateurs qui y ont un acc\u00e8s s\u00e9quentiel lin\u00e9aire.<br><br>Les personnes utilisant un lecteur d'\u00e9cran, un agrandisseur, les\r\npersonnes qui ont une limitation cognitive ou celles qui ne se servent que du\r\nclavier pour cause de limitation motrice lisent la page de mani\u00e8re lin\u00e9aire. De ce fait, des liens internes \u00e0 la page ou les titres de hi\u00e9rarchie leur permettent soit d'acc\u00e9der directement \u00e0 l'information qui les int\u00e9resse, soit de sauter d'autres informations qui ne les int\u00e9ressent pas et de gagner ainsi un temps pr\u00e9cieux.</li></ul>", 
     "checklist": {
-      "id": 478, 
-      "name": "SEO"
+      "id": 9, 
+      "name": "RGAA v2.2.1"
     }, 
-    "explanation": "", 
-    "description": "Le code source de chaque page contient une metadonn\u00e9e qui d\u00e9finit le jeu de caract\u00e8res.", 
-    "solution": "Utiliser dans la section HEAD de la page l'\u00e9l\u00e9ment META http-equiv=\"Content-Type\" et pr\u00e9ciser le jeu de caract\u00e8re utilis\u00e9 dans son attribut content.", 
-    "name": "47"
+    "explanation": "Toutes les page ne comportent au moins un titre de hi\u00e9rarchie H1.", 
+    "description": "Pr\u00e9sence d'au moins un titre de hi\u00e9rarchie de premier niveau ( h1).", 
+    "solution": "<p> Tout \u00e9l\u00e9ment <code>h1</code>. </p><br /><br />", 
+    "name": "[STR]-01"
   }, 
-  "16240": {
-    "goal": "Permettre aux moteurs d'acc\u00e9der \u00e0 tous les contenus.", 
+  "10096": {
+    "goal": "<ul><li><h5>1.3.1 : Information et relations : (A)</h5><br />Rendre l'information ind\u00e9pendante de sa mise en forme visuelle ou sonore.<br><br>Ce crit\u00e8re de succ\u00e8s est b\u00e9n\u00e9fique \u00e0 des personnes ayant diff\u00e9rents types de handicaps. Les personnes aveugles ou sourdes et aveugles utilisant un lecteur d'\u00e9cran ou un terminal braille auront acc\u00e8s \u00e0 l'information disponible par la couleur lorsque celle-ci est \u00e9galement mise \u00e0 disposition de fa\u00e7on textuelle.<br>Il vise notamment \u00e0 permettre \u00e0 ce que les agents utilisateurs restituent une information en fonction des besoins de l'utilisateur et cela ind\u00e9pendamment de sa mise en forme visuelle ou sonore. </li><li><h5>2.4.6 : En-t\u00eates et \u00e9tiquettes : (AA)</h5><br />Permettre aux utilisateurs d'identifier l'information donn\u00e9e dans une page Web et de comprendre son organisation.<br><br>    L'utilisation d'en-t\u00eates et d'\u00e9tiquettes facilitera la lecture et la compr\u00e9hension d'une page pour les personnes ayant une m\u00e9moire \u00e0 court terme ou des difficult\u00e9s de lecture. Cela permettra \u00e9galement aux utilisateurs de lecteur d'\u00e9cran de pouvoir aller ou sauter directement \u00e0 un contenu</li></ul>", 
     "checklist": {
-      "id": 478, 
-      "name": "SEO"
+      "id": 9, 
+      "name": "RGAA v2.2.1"
     }, 
-    "explanation": "", 
-    "description": "Les styles ne sont pas utilis\u00e9s pour g\u00e9n\u00e9rer du contenu.", 
-    "solution": "Ne pas utiliser la propri\u00e9t\u00e9 CSS content ainsi que les images d'arri\u00e8re-plan CSS pour afficher dans la page un contenu absent de la source HTML.", 
-    "name": "71"
+    "explanation": "Le contenu des titres de hi\u00e9rarchie ne refl\u00e8te pas le contenu qu'il pr\u00e9c\u00e8de.", 
+    "description": "Pertinence du contenu des titres de hi\u00e9rarchie.", 
+    "solution": "<p> Tout \u00e9l\u00e9ment : </p><ul> <li> <code>h1,</code> </li> <li> <code>h2,</code> </li> <li> <code>h3</code>, </li> <li> <code>h4</code>, </li> <li> <code>h5</code>, </li> <li> <code>h6</code>, </li> </ul><br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable. </li>", 
+    "name": "[STR]-02"
   }, 
   "10097": {
     "goal": "<ul><li><h5>1.3.1 : Information et relations : (A)</h5><br />Rendre l'information ind\u00e9pendante de sa mise en forme visuelle ou sonore.<br><br>Ce crit\u00e8re de succ\u00e8s est b\u00e9n\u00e9fique \u00e0 des personnes ayant diff\u00e9rents types de handicaps. Les personnes aveugles ou sourdes et aveugles utilisant un lecteur d'\u00e9cran ou un terminal braille auront acc\u00e8s \u00e0 l'information disponible par la couleur lorsque celle-ci est \u00e9galement mise \u00e0 disposition de fa\u00e7on textuelle.<br>Il vise notamment \u00e0 permettre \u00e0 ce que les agents utilisateurs restituent une information en fonction des besoins de l'utilisateur et cela ind\u00e9pendamment de sa mise en forme visuelle ou sonore. </li></ul>", 
@@ -4927,16 +3772,16 @@ var checklists = {
     "solution": "<p> Tout \u00e9l\u00e9ment : </p><ul> <li> <code>h2,</code> </li> <li> <code>h3</code>, </li> <li> <code>h4</code>, </li> <li> <code>h5</code>, </li> <li> <code>h6</code>, </li> </ul><br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable. </li>", 
     "name": "[STR]-03"
   }, 
-  "16243": {
-    "goal": "<div>Optimiser la vitesse d'acc\u00e8s.&nbsp;Simplifier la compr\u00e9hension de la cible par les moteurs.</div>", 
+  "10099": {
+    "goal": "<ul><li><h5>1.3.1 : Information et relations : (A)</h5><br />Rendre l'information ind\u00e9pendante de sa mise en forme visuelle ou sonore.<br><br>Ce crit\u00e8re de succ\u00e8s est b\u00e9n\u00e9fique \u00e0 des personnes ayant diff\u00e9rents types de handicaps. Les personnes aveugles ou sourdes et aveugles utilisant un lecteur d'\u00e9cran ou un terminal braille auront acc\u00e8s \u00e0 l'information disponible par la couleur lorsque celle-ci est \u00e9galement mise \u00e0 disposition de fa\u00e7on textuelle.<br>Il vise notamment \u00e0 permettre \u00e0 ce que les agents utilisateurs restituent une information en fonction des besoins de l'utilisateur et cela ind\u00e9pendamment de sa mise en forme visuelle ou sonore. </li></ul>", 
     "checklist": {
-      "id": 478, 
-      "name": "SEO"
+      "id": 9, 
+      "name": "RGAA v2.2.1"
     }, 
-    "explanation": "", 
-    "description": "Si le nom de domaine correspond \u00e0 une zone g\u00e9ographique, le site est h\u00e9berg\u00e9 dans cette zone.", 
-    "solution": "Si le domaine de votre site comporte une extension en .fr, par exemple, \u00e9tablir l'h\u00e9bergement en France ou dans un pays limitrophe.", 
-    "name": "31"
+    "explanation": "Certains contenus de type liste ordonn\u00e9e ne sont pas structur\u00e9s avec des \u00e9l\u00e9ments de liste appropri\u00e9s, et sont simul\u00e9s avec des signes typographiques (tirets).", 
+    "description": "Absence de simulation visuelle de liste non ordonn\u00e9e.", 
+    "solution": "<p> Tout segment de texte. </p><br /><br /><li>Si deux segments de texte diff\u00e9rents ou identiques sont pr\u00e9sents dans la page, poursuivre le test, sinon le test est non applicable. </li>\r\n<li>Si les segments de texte sont mis en forme visuellement par un marqueur de liste (-, &gt;, #, *, image ou image de fond repr\u00e9sentant un marqueur de liste, etc), poursuivre le test, sinon le test est non applicable. </li>", 
+    "name": "[STR]-05"
   }, 
   "10100": {
     "goal": "<ul><li><h5>1.3.1 : Information et relations : (A)</h5><br />Rendre l'information ind\u00e9pendante de sa mise en forme visuelle ou sonore.<br><br>Ce crit\u00e8re de succ\u00e8s est b\u00e9n\u00e9fique \u00e0 des personnes ayant diff\u00e9rents types de handicaps. Les personnes aveugles ou sourdes et aveugles utilisant un lecteur d'\u00e9cran ou un terminal braille auront acc\u00e8s \u00e0 l'information disponible par la couleur lorsque celle-ci est \u00e9galement mise \u00e0 disposition de fa\u00e7on textuelle.<br>Il vise notamment \u00e0 permettre \u00e0 ce que les agents utilisateurs restituent une information en fonction des besoins de l'utilisateur et cela ind\u00e9pendamment de sa mise en forme visuelle ou sonore. </li></ul>", 
@@ -4960,27 +3805,16 @@ var checklists = {
     "solution": "<p> Tout \u00e9l\u00e9ment <code>dl</code>. </p><br /><br /><li>Si l'\u00e9l\u00e9ment mentionn\u00e9 dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable. </li>", 
     "name": "[STR]-07"
   }, 
-  "19431": {
-    "goal": "", 
+  "10107": {
+    "goal": "<ul><li><h5>3.1.4 : Abr\u00e9viations : (AAA)</h5><br />Permettre aux utilisateurs de comprendre l'information v\u00e9hicul\u00e9e par les sigles. Permettre aux synth\u00e8ses vocales d'\u00e9noncer correctement les abr\u00e9viations ou acronymes, en \u00e9pelant les abr\u00e9viations et en \u00e9non\u00e7ant comme un mot les acronymes, lorsque n\u00e9cessaire.</li></ul>", 
     "checklist": {
-      "id": 569, 
-      "name": "Qualite"
+      "id": 9, 
+      "name": "RGAA v2.2.1"
     }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser l'\u00e9l\u00e9ment tt", 
-    "solution": "", 
-    "name": "72"
-  }, 
-  "16251": {
-    "goal": "Simplifier le crawl.", 
-    "checklist": {
-      "id": 478, 
-      "name": "SEO"
-    }, 
-    "explanation": "", 
-    "description": "Les formats d'images utilis\u00e9s sont indexables par les principaux moteurs de recherche d'image.", 
-    "solution": "Limiter le format des images aux seuls JPEG, PNG, GIF ou SVG.", 
-    "name": "20"
+    "explanation": "Le contenu de la version non abr\u00e9g\u00e9 de l'abr\u00e9viation ne correspond pas \u00e0 la r\u00e9el signification de l'abr\u00e9viation.", 
+    "description": "Pertinence de la version non abr\u00e9g\u00e9e de l'abr\u00e9viation.", 
+    "solution": "Tout \u00e9l\u00e9ment abbr ayant un attribut title non vide<br /><br /><li>Si l'\u00e9l\u00e9ment est mentionn\u00e9 dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable. </li>", 
+    "name": "[STR]-11"
   }, 
   "10108": {
     "goal": "<ul><li><h5>3.1.4 : Abr\u00e9viations : (AAA)</h5><br />Permettre aux utilisateurs de comprendre l'information v\u00e9hicul\u00e9e par les sigles. Permettre aux synth\u00e8ses vocales d'\u00e9noncer correctement les abr\u00e9viations ou acronymes, en \u00e9pelant les abr\u00e9viations et en \u00e9non\u00e7ant comme un mot les acronymes, lorsque n\u00e9cessaire.</li></ul>", 
@@ -5026,38 +3860,38 @@ var checklists = {
     "solution": "<p> Tout \u00e9l\u00e9ment <code>table</code> identifi\u00e9 comme tableau de donn\u00e9es, ayant au moins deux lignes d'en-t\u00eate (<code>th</code>) ou deux colonnes d'en-t\u00eate (<code>th</code>) s\u00e9par\u00e9es par des lignes ou des colonnes de contenu. </p><br /><br /><li>Si l'\u00e9l\u00e9ment mentionn\u00e9 dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable. </li>", 
     "name": "[TAB]-03"
   }, 
-  "16257": {
-    "goal": "Simplifier la compr\u00e9hension du contenu par les moteurs.", 
+  "10113": {
+    "goal": "<ul><li><h5>1.3.2 : Ordre s\u00e9quentiel logique : (A)</h5><br />Rendre l'ordre de restitution de l'information ind\u00e9pendant de sa mise en forme visuelle ou sonore lorsqu'il est lui-m\u00eame porteur de sens. <br><br>Les logiciels de lecture d'\u00e9cran, les logiciels automatiques de lecture et certains navigateurs textes lisent ou affichent les informations de mani\u00e8re lin\u00e9aire (dans le cas des tableaux cellule apr\u00e8s cellule, ligne apr\u00e8s ligne). C'est pourquoi l'information doit toujours \u00eatre logiquement ordonn\u00e9e, m\u00eame en mode de lecture lin\u00e9aire, afin que le contenu reste compr\u00e9hensible</li></ul>", 
     "checklist": {
-      "id": 478, 
-      "name": "SEO"
+      "id": 9, 
+      "name": "RGAA v2.2.1"
     }, 
-    "explanation": "", 
-    "description": "Les mises en majuscules \u00e0 des fins d\u00e9coratives sont effectu\u00e9es \u00e0 l'aide des styles CSS.", 
-    "solution": "Utiliser la propri\u00e9t\u00e9 CSS text-decoration pour r\u00e9aliser les mises en majuscules d\u00e9coratives (mises en majuscules autres que celles des sigles ou contenus commun\u00e9ment mis en majuscule).", 
-    "name": "72"
+    "explanation": "La lecture lin\u00e9aire des tableaux de cellule en cellule et de ligne en ligne ne permet pas de comprendre le contenu du tableau.", 
+    "description": "Lin\u00e9arisation correcte des tableaux de mise en page.", 
+    "solution": "<p> Tout \u00e9l\u00e9ment <code>table</code> identifi\u00e9 comme tableau de mise en page. </p><br /><br /><li>Si l'\u00e9l\u00e9ment mentionn\u00e9 dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable. </li>", 
+    "name": "[TAB]-06"
   }, 
-  "16258": {
-    "goal": "", 
+  "10114": {
+    "goal": "<ul><li><h5>1.3.1 : Information et relations : (A)</h5><br />Rendre l'information ind\u00e9pendante de sa mise en forme visuelle ou sonore.<br><br>Ce crit\u00e8re de succ\u00e8s est b\u00e9n\u00e9fique \u00e0 des personnes ayant diff\u00e9rents types de handicaps. Les personnes aveugles ou sourdes et aveugles utilisant un lecteur d'\u00e9cran ou un terminal braille auront acc\u00e8s \u00e0 l'information disponible par la couleur lorsque celle-ci est \u00e9galement mise \u00e0 disposition de fa\u00e7on textuelle.<br>Il vise notamment \u00e0 permettre \u00e0 ce que les agents utilisateurs restituent une information en fonction des besoins de l'utilisateur et cela ind\u00e9pendamment de sa mise en forme visuelle ou sonore. </li></ul>", 
     "checklist": {
-      "id": 478, 
-      "name": "SEO"
+      "id": 9, 
+      "name": "RGAA v2.2.1"
     }, 
-    "explanation": "", 
-    "description": "Le site propose un fichier sitemap indiquant les contenus \u00e0 explorer", 
-    "solution": "", 
-    "name": ""
+    "explanation": "La pr\u00e9sence d'\u00e9l\u00e9ments propre aux tableaux de donn\u00e9es dans les tableaux de mise en forme peut contribuer \u00e0 diminuer la lisibilit\u00e9 de la page par les lecteurs d'\u00e9cran qui traiteront ces tableaux comme des tableaux de donn\u00e9es (lecture ligne \u00e0 ligne et case \u00e0 case).", 
+    "description": "Absence des \u00e9l\u00e9ments propres aux tableaux de donn\u00e9es dans les tableaux de mise en page.", 
+    "solution": "<p> Tout \u00e9l\u00e9ment <code>table</code> identifi\u00e9 comme tableau de mise en page. </p><br /><br /><li>Si l'\u00e9l\u00e9ment mentionn\u00e9 dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable. </li>", 
+    "name": "[TAB]-04"
   }, 
-  "16259": {
-    "goal": "Simplifier le crawl.", 
+  "10115": {
+    "goal": "<ul><li><h5>1.3.1 : Information et relations : (A)</h5><br />Rendre l'information ind\u00e9pendante de sa mise en forme visuelle ou sonore.<br><br>Ce crit\u00e8re de succ\u00e8s est b\u00e9n\u00e9fique \u00e0 des personnes ayant diff\u00e9rents types de handicaps. Les personnes aveugles ou sourdes et aveugles utilisant un lecteur d'\u00e9cran ou un terminal braille auront acc\u00e8s \u00e0 l'information disponible par la couleur lorsque celle-ci est \u00e9galement mise \u00e0 disposition de fa\u00e7on textuelle.<br>Il vise notamment \u00e0 permettre \u00e0 ce que les agents utilisateurs restituent une information en fonction des besoins de l'utilisateur et cela ind\u00e9pendamment de sa mise en forme visuelle ou sonore. </li></ul>", 
     "checklist": {
-      "id": 478, 
-      "name": "SEO"
+      "id": 9, 
+      "name": "RGAA v2.2.1"
     }, 
-    "explanation": "", 
-    "description": "Le fichier robots.txt propose une r\u00e9f\u00e9rence valide \u00e0 un fichier sitemap.", 
-    "solution": "Faire figurer dans le fichier robots.txt une indication du type : Sitemap: http://www.example.com/sitemap.xml", 
-    "name": "69"
+    "explanation": "Aucun titre n'est pr\u00e9sent.", 
+    "description": "Pr\u00e9sence d'un titre pour les tableaux de donn\u00e9es.", 
+    "solution": "<p> Tout \u00e9l\u00e9ment <code>table</code> identifi\u00e9 comme tableau de donn\u00e9es. </p><br /><br /><li>Si l'\u00e9l\u00e9ment mentionn\u00e9 dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable. </li>", 
+    "name": "[TAB]-07"
   }, 
   "10116": {
     "goal": "<ul><li><h5>1.3.1 : Information et relations : (A)</h5><br />Rendre l'information ind\u00e9pendante de sa mise en forme visuelle ou sonore.<br><br>Ce crit\u00e8re de succ\u00e8s est b\u00e9n\u00e9fique \u00e0 des personnes ayant diff\u00e9rents types de handicaps. Les personnes aveugles ou sourdes et aveugles utilisant un lecteur d'\u00e9cran ou un terminal braille auront acc\u00e8s \u00e0 l'information disponible par la couleur lorsque celle-ci est \u00e9galement mise \u00e0 disposition de fa\u00e7on textuelle.<br>Il vise notamment \u00e0 permettre \u00e0 ce que les agents utilisateurs restituent une information en fonction des besoins de l'utilisateur et cela ind\u00e9pendamment de sa mise en forme visuelle ou sonore. </li></ul>", 
@@ -5092,27 +3926,16 @@ var checklists = {
     "solution": "<p> Tout \u00e9l\u00e9ment <code>table</code> identifi\u00e9 comme tableau de donn\u00e9es.</p><br /><br /><li>Si l'\u00e9l\u00e9ment mentionn\u00e9 dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable. </li>\r\n<li>Si l'\u00e9l\u00e9ment poss\u00e8de un attribut <code>summary</code> non vide, poursuivre le test, sinon le test est non applicable.</li>", 
     "name": "[TAB]-10"
   }, 
-  "16263": {
-    "goal": "Simplifier l'indexation et le crawl.", 
+  "10119": {
+    "goal": "<ul><li><h5>1.1.1 : Contenu non textuel : (A)</h5><br />Rendre le contenu non textuel accessible sous forme d'une alternative textuelle exploitable quel que soit le mode de perception de l'utilisateur (visuel, auditif, tactile).<br><br>Le contenu des \u00e9l\u00e9ments non textuels ne sera pas perceptible pour diff\u00e9rentes cat\u00e9gories d'utilisateurs tels que :<br><br><ul><li>Les personnes handicap\u00e9es visuelles acc\u00e9dant au site via la synth\u00e8se vocale d'un lecteur d'\u00e9cran,</li><li>Les utilisateurs ayant d\u00e9sactiv\u00e9 l'affichage des \u00e9l\u00e9ments graphiques ou multim\u00e9dias, pour r\u00e9duire notamment les temps de t\u00e9l\u00e9chargement des pages en bas d\u00e9bit.<br></li></ul><br>La pr\u00e9sence d'alternatives textuelles aux contenus non textuels permet \u00e9galement \u00e0 des robots d'indexation d'en exploiter l'information, ou \u00e0 des traducteurs automatiques d'en traduire le sens.</li><li><h5>1.3.1 : Information et relations : (A)</h5><br />Rendre l'information ind\u00e9pendante de sa mise en forme visuelle ou sonore.<br><br>Ce crit\u00e8re de succ\u00e8s est b\u00e9n\u00e9fique \u00e0 des personnes ayant diff\u00e9rents types de handicaps. Les personnes aveugles ou sourdes et aveugles utilisant un lecteur d'\u00e9cran ou un terminal braille auront acc\u00e8s \u00e0 l'information disponible par la couleur lorsque celle-ci est \u00e9galement mise \u00e0 disposition de fa\u00e7on textuelle.<br>Il vise notamment \u00e0 permettre \u00e0 ce que les agents utilisateurs restituent une information en fonction des besoins de l'utilisateur et cela ind\u00e9pendamment de sa mise en forme visuelle ou sonore. </li></ul>", 
     "checklist": {
-      "id": 478, 
-      "name": "SEO"
+      "id": 9, 
+      "name": "RGAA v2.2.1"
     }, 
-    "explanation": "", 
-    "description": "Les URL des liens internes contiennent exclusivement des caract\u00e8res alphanum\u00e9riques ou consid\u00e9r\u00e9s comme s\u00fbrs.", 
-    "solution": "<div>N'utiliser dans les URL de liens internes que les caract\u00e8res suivants :&nbsp;</div><div>chiffres de 0 \u00e0 9&nbsp;</div><div>Lettres de a \u00e0 z et de&nbsp;A \u00e0 Z&nbsp;</div><div>Caract\u00e8res $ - _ . + ! * ' ( ) ,&nbsp;&amp; / : ; = ? @&nbsp;#&nbsp;%&nbsp;[ ]&nbsp;</div><div>Par exemple, une rubrique libell\u00e9e \"\u00e9t\u00e9\" correspondra dans les url \u00e0 un r\u00e9pertoire \"ete\".</div>", 
-    "name": "35"
-  }, 
-  "16267": {
-    "goal": "Simplifier l'indexation.", 
-    "checklist": {
-      "id": 478, 
-      "name": "SEO"
-    }, 
-    "explanation": "", 
-    "description": "Le serveur envoie un code HTTP 404 pour les ressources non trouv\u00e9es.", 
-    "solution": "Configurer vos CMS, framework, serveur pour qu'il renvoie un code HTTP 404 pour les ressources non trouv\u00e9es.", 
-    "name": "76"
+    "explanation": "Du contenu porteur d'information est g\u00e9n\u00e9r\u00e9 gr\u00e2ce aux feuilles de styles.", 
+    "description": "Absence de g\u00e9n\u00e9ration de contenus porteur d'information via les styles CSS.", 
+    "solution": "<p> Tout \u00e9l\u00e9ment sur lequel est appliqu\u00e9 des styles <abbr title=\"Cascading Style Sheets\" lang=\"en\" xml:lang=\"en\">CSS</abbr> appliqu\u00e9 dans la page via l'attribut <code>style</code>, une feuille de styles interne, une feuille de styles externe ou du code javascript. </p><br /><br /><li>Si l'\u00e9l\u00e9ment mentionn\u00e9 dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable. </li>\r\n<li>Si le style <abbr title=\"Cascading Style Sheets\" lang=\"en\" xml:lang=\"en\">CSS</abbr> appliqu\u00e9 sur l'\u00e9l\u00e9ment utilise la propri\u00e9t\u00e9 <code>content</code>, poursuivre le test, sinon le test est non applicable. </li>", 
+    "name": "[PR\u00e9]-01"
   }, 
   "10124": {
     "goal": "<ul><li><h5>1.1.1 : Contenu non textuel : (A)</h5><br />Rendre le contenu non textuel accessible sous forme d'une alternative textuelle exploitable quel que soit le mode de perception de l'utilisateur (visuel, auditif, tactile).<br><br>Le contenu des \u00e9l\u00e9ments non textuels ne sera pas perceptible pour diff\u00e9rentes cat\u00e9gories d'utilisateurs tels que :<br><br><ul><li>Les personnes handicap\u00e9es visuelles acc\u00e9dant au site via la synth\u00e8se vocale d'un lecteur d'\u00e9cran,</li><li>Les utilisateurs ayant d\u00e9sactiv\u00e9 l'affichage des \u00e9l\u00e9ments graphiques ou multim\u00e9dias, pour r\u00e9duire notamment les temps de t\u00e9l\u00e9chargement des pages en bas d\u00e9bit.<br></li></ul><br>La pr\u00e9sence d'alternatives textuelles aux contenus non textuels permet \u00e9galement \u00e0 des robots d'indexation d'en exploiter l'information, ou \u00e0 des traducteurs automatiques d'en traduire le sens.</li><li><h5>4.1.2 : Nom, r\u00f4le et valeur : (A)</h5><br />Permettre aux agents utilisateurs et aux technologies d'assistance de disposer de l'information n\u00e9cessaire sur les changements d'\u00e9tats, de valeurs et de nom intervenant dans l'interface utilisateur. <br><br>Certains contenus ajout\u00e9s dans les pages peuvent en effet int\u00e9grer leur propre interface de navigation. Dans ce cas, certains utilisateurs peuvent se trouver dans l'impossibilit\u00e9 de les utiliser dans leur contexte de navigation si leur interface n'a pas \u00e9t\u00e9 con\u00e7ue dans une technologie susceptible d'\u00eatre accessible</li></ul>", 
@@ -5146,17 +3969,6 @@ var checklists = {
     "description": "Pr\u00e9sence d'une alternative aux \u00e9l\u00e9ments embed.", 
     "solution": "<p> Tout \u00e9l\u00e9ment <code>embed</code> ou tout code javascript g\u00e9n\u00e9rant un \u00e9l\u00e9ment <code>embed</code>. </p><br /><br /><li>Si l'\u00e9l\u00e9ment mentionn\u00e9 dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si l'\u00e9l\u00e9ment apporte de l'information, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si le\r\ncontenu visuel anim\u00e9, sonore ou le m\u00e9dia synchronis\u00e9 n'est pas une\r\nalternative anim\u00e9e, sonore ou synchronis\u00e9e \u00e0  un contenu textuel\r\npr\u00e9sent dans la page,  qui est identifi\u00e9e en tant\r\nque tel et qui n'apporte pas plus d'information que le contenu\r\ntextuel, poursuivre le test, sinon le test est non applicable.</li><li>Si le contenu n'est pas consult\u00e9 dans un environnement informatique\r\nmaitris\u00e9 permettant&nbsp; la restitution des contenus affich\u00e9s au travers de l'\u00e9l\u00e9ment embed, poursuivre\r\nle test, sinon le test est non applicable.</li>", 
     "name": "[MUL]-12"
-  }, 
-  "19437": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Les titres de section HTML comportent des mots clefs contenus dans la balise meta keywords.", 
-    "solution": "", 
-    "name": "78"
   }, 
   "10129": {
     "goal": "<ul><li><h5>2.1.1 : Clavier : (A)</h5><br />Rendre les contenus accessibles via un p\u00e9riph\u00e9rique de type clavier. <br><br>Certains utilisateurs ayant un handicap moteur ou visuel n'utiliseront par exemple que le clavier ou un p\u00e9riph\u00e9rique adapt\u00e9 pour naviguer. De plus, il est \u00e0 noter que de nombreux terminaux mobiles ne proposent pas d'interface souris mais uniquement une interface clavier.</li><li><h5>2.1.3 : Clavier (pas d'exception) : (AAA)</h5><br />Rendre les contenus accessibles via un p\u00e9riph\u00e9rique de type clavier.<br><br>Certains utilisateurs ayant un handicap moteur ou visuel n'utiliseront\r\npar exemple que le clavier ou un p\u00e9riph\u00e9rique adapt\u00e9 pour naviguer. De\r\nplus, il est \u00e0 noter que de nombreux terminaux mobiles ne proposent pas\r\nd'interface souris mais uniquement une interface clavier.</li></ul>", 
@@ -5729,17 +4541,6 @@ var checklists = {
     "description": "Pr\u00e9sence d'une description audio synchronis\u00e9e \u00e9tendue pour les contenus visuels anim\u00e9s ou les m\u00e9dias synchronis\u00e9s.", 
     "solution": "<p> Tout \u00e9l\u00e9ment : </p><ul> <li> <code>a</code>, </li> <li> <code>area</code>, </li> <li> <code>applet</code>,</li><li> <code>object</code>,</li><li> <code>embed</code>,</li><li>tout code javascript g\u00e9n\u00e9rant un des \u00e9l\u00e9ments pr\u00e9c\u00e9dents ou d\u00e9clenchant un t\u00e9l\u00e9chargement. </li> </ul><br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est\r\npr\u00e9sent ou utilis\u00e9 dans la page, poursuivre le test, sinon le test est\r\nnon applicable.</li>\r\n<li>Si l'\u00e9l\u00e9ment permet de t\u00e9l\u00e9charger ou de restituer un contenu\r\nvisuel anim\u00e9 ou un m\u00e9dia synchronis\u00e9 qui apporte de l'information, poursuivre le\r\ntest, sinon le test est non applicable.</li>\r\n<li>Si le\r\ncontenu visuel anim\u00e9 ou le m\u00e9dia synchronis\u00e9 n'est pas une\r\nalternative anim\u00e9e ou synchronis\u00e9e \u00e0  un contenu textuel\r\npr\u00e9sent dans la page,  qui est identifi\u00e9e en tant\r\nque tel et qui n'apporte pas plus d'information que le contenu\r\ntextuel, poursuivre le test, sinon le test est non applicable.</li><li>Si le contenu de l'\u00e9l\u00e9ment n\u00e9cessite l'utilisation d'une\r\ndescription audio pour le rendre compr\u00e9hensible, poursuivre le test,\r\nsinon le test est non applicable.</li><li>Si la dur\u00e9e des pauses dans la piste sonore du contenu visuel anim\u00e9 ou du m\u00e9dia synchronis\u00e9 ne permet pas de restituer l'ensemble des informations n\u00e9cessaire \u00e0 la compr\u00e9hension de l'\u00e9l\u00e9ment,\r\npoursuivre le test, sinon le test est non applicable</li>", 
     "name": "[MUL]-07"
-  }, 
-  "19455": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser un contenu d'attribut alt identique pour plusieurs \u00e9l\u00e9ments area ayant un attribut href diff\u00e9rent", 
-    "solution": "", 
-    "name": "96"
   }, 
   "10239": {
     "goal": "<ul><li><h5>1.4.4 : Redimensionnement du texte : (AA)</h5><br />Permettre aux utilisateurs en situation de handicap visuel de recourir \u00e0 l'agrandissement des textes sans perte d'information et sans avoir recours \u00e0 une technologie d'assistance</li></ul>", 
