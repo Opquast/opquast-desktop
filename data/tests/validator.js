@@ -646,7 +646,10 @@ function _getDetails(node) {
 	}
 
 	//
-	return node.outerHTML.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+	return {
+		"path": _getSelector(node),
+		"text": node.outerHTML.replace(/</g, "&lt;").replace(/>/g, "&gt;")
+	}
 }
 
 /**

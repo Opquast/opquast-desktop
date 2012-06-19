@@ -115,16 +115,21 @@
 				var aData = oTable.fnGetData(nTr), aOut = $('<div><div>'), aDetails = $('<ul></ul>'), nodes = $(nTr).data("details");
 
 				for each (var node in nodes) {
-					var a = $('<a>' + node + '</a>');
-					/*a.click(function() {
-						with (window.__ffinspector) {
-							//closeInspectorUI(true);
-							//openInspectorUI();
-							inspectNode(node);
-							//node.scrollIntoView();
-						}
-					});*/
-
+					var a;
+					
+					if(node.path) {
+						a = $('<a>' + node.text + '</a>');
+						/*a.click(function() {
+							with (window.__ffinspector) {
+								//closeInspectorUI(true);
+								//openInspectorUI();
+								inspectNode(node);
+								//node.scrollIntoView();
+							}
+						});*/
+					} else {
+						a = $('<a>' + node + '</a>');
+					}
 					aDetails.append($('<li></li>').append(a));
 				};
 
