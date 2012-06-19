@@ -3,9 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
-		<link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.8.20.custom.css" />
-		<link rel="stylesheet" href="css/jquery.dataTables.css" />
-		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.8.20.custom.css">
+		<link rel="stylesheet" href="css/jquery.dataTables.css">
+		<link rel="stylesheet" href="css/style.css">
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/jquery-ui-1.8.20.custom.js"></script>
 		<script type="text/javascript" src="js/jquery.dataTables.js"></script>
@@ -15,11 +15,10 @@
 	<body>
 		<p id="noresults"></p>
 		<script type="text/javascript">
-			//if ($.inArray(location.protocol, ["about:", "resource:"]) == -1) {
-				$("#noresults").append('Aucun résultat pour l\'instant.<br><a href="loading.html?run"><button>Lancer</button></a>');
-			/*} else {
-				$("#noresults").append('Il faut se rendre sur une page avant de lancer les tests, banane !');
-			}*/
+			$("#noresults").append('Aucun résultat pour l\'instant.<br><button>Lancer</button>');
+			$("button").click(function() {
+				document.location.href = "loading.html?run";
+			});
 		</script>
 	</body>
 </html>
