@@ -197,12 +197,16 @@ http://www.datatables.net/plug-ins/filtering
     }
 
 
-    function fnCreateSelect(aData) {
+    function fnCreateSelect(aData, bRegex, bSmart) {
         var index = i;
         var r = '<select class="search_init select_filter"><option value="" class="search_init">' + label + '</option>', j, iLen = aData.length;
 
         for (j = 0; j < iLen; j++) {
-            r += '<option value="' + aData[j] + '">' + aData[j] + '</option>';
+        	if(bRegex) {
+				r += '<option value="' + aData[j].value + '">' + aData[j].label + '</option>';        		
+        	} else {
+        		r += '<option value="' + aData[j] + '">' + aData[j] + '</option>';
+        	}
         }
         var select = $(r + '</select>');
         th.html(select);
@@ -214,7 +218,7 @@ http://www.datatables.net/plug-ins/filtering
             } else {
                 $(this).addClass("search_init");
             }
-            oTable.fnFilter($(this).val(), index);
+            oTable.fnFilter($(this).val(), index, bRegex, bSmart);
         });
     }
 
@@ -285,7 +289,9 @@ http://www.datatables.net/plug-ins/filtering
                             fnCreateInput(bRegex, bSmart, false);
                             break;
                         case "select":
-                            fnCreateSelect(aoColumn.values);
+                        	bRegex = (aoColumn.bRegex == null ? false : aoColumn.bRegex);
+                            bSmart = (aoColumn.bSmart == null ? false : aoColumn.bSmart);
+                            fnCreateSelect(aoColumn.values, bRegex, bSmart);
                             break;
                         case "number-range":
                             fnCreateRangeInput();

@@ -1,5 +1,5 @@
 /*global xhrMephisto, CSSParser*/
-var regFunction = RegExp().compile("([^\\s:{]*)\\(", "i")
+var regFunction = RegExp().compile("([^\\s:{]*)\\(", "i"), inlineStyles = jQueryMephisto("body").find("*[style]");
 
 /**
  *
@@ -74,19 +74,13 @@ function cssNumberOfFonts(doc) {
 		var result = [];
 
 		//
-		for (var i = 0; i < rule.declarations.length; i++) {
+		if (rule && rule.parentStyleSheet && rule.declarations) {
 			//
-			if (rule && rule.parentStyleSheet) {
+			for (var i = 0; i < rule.declarations.length; i++) {
 				//
 				if (rule.declarations[i]["property"] == "font-family") {
 					//
-					result.push({
-						"href" : rule.parentStyleSheet._extra["href"],
-						"selector" : rule.mSelectorText,
-						"rule" : rule.declarations[i]["parsedCssText"],
-						"line" : rule.currentLine,
-						"value" : rule.declarations[i]["valueText"]
-					});
+					result.push(rule.declarations[i]["valueText"]);
 				}
 			}
 		}
@@ -101,7 +95,7 @@ function cssNumberOfFonts(doc) {
 		result = _analyseStylesheets(doc, "screen", callback);
 
 		// inline style walk
-		jQueryMephisto("*[style]").each(function() {
+		inlineStyles.each(function() {
 			//
 			var parser = new CSSParser(), sheet = parser.parse(".style{" + jQueryMephisto(this).attr("style") + "}", false, false), item = this;
 
@@ -117,19 +111,13 @@ function cssNumberOfFonts(doc) {
 				var rule = rules[k];
 
 				//
-				for (var i = 0; i < rule.declarations.length; i++) {
+				if (rule && rule.declarations) {
 					//
-					if (rule && rule.parentStyleSheet) {
+					for (var i = 0; i < rule.declarations.length; i++) {
 						//
 						if (rule.declarations[i]["property"] == "font-family") {
 							//
-							result.push({
-								"href" : "inline",
-								"selector" : _getXPath(item),
-								"rule" : rule.declarations[i]["parsedCssText"],
-								"line" : null,
-								"value" : rule.declarations[i]["valueText"]
-							});
+							result.push(rule.declarations[i]["valueText"]);
 						}
 					}
 				}
@@ -137,22 +125,10 @@ function cssNumberOfFonts(doc) {
 		});
 
 		//
-		var fonts = [];
+		jQueryMephisto.unique(result);
 
 		//
-		result.forEach(function(element, index, array) {
-			//
-			var _font = element.value;
-			delete element.value;
-
-			//
-			if (jQueryMephisto.inArray(_font, fonts) == -1) {
-				fonts.push(_font);
-			}
-		});
-
-		//
-		if (fonts.length <= 3) {
+		if (result.length <= 3) {
 			result = [];
 		}
 	}
@@ -175,26 +151,21 @@ function cssNumberOfFonts(doc) {
  */
 function cssAbsoluteFontSize(doc) {
 	//
-	var result = [];
+	var result = [], reg = new RegExp().compile("[0-9.]+(p(t|c|x)|(c|m)m|in)", "i");
 
 	//
 	function callback(rule) {
 		//
-		var result = [], reg = new RegExp().compile("[0-9.]+(p(t|c|x)|(c|m)m|in)", "i");
+		var result = [];
 
 		//
-		for (var i = 0; i < rule.declarations.length; i++) {
+		if (rule && rule.parentStyleSheet && rule.declarations) {
 			//
-			if (rule && rule.parentStyleSheet) {
+			for (var i = 0; i < rule.declarations.length; i++) {
 				//
 				if (rule.declarations[i]["property"] == "font-size" && rule.declarations[i]["valueText"].match(reg)) {
 					//
-					result.push({
-						"href" : rule.parentStyleSheet._extra["href"],
-						"selector" : rule.mSelectorText,
-						"rule" : rule.declarations[i]["parsedCssText"],
-						"line" : rule.currentLine
-					});
+					result.push(_getCssDetails(rule, i));
 				}
 			}
 		}
@@ -206,10 +177,10 @@ function cssAbsoluteFontSize(doc) {
 	//
 	try {
 		//
-		result = _analyseStylesheets(doc, "screen", callback), reg = new RegExp().compile("[0-9.]+(p(t|c|x)|(c|m)m|in)", "i");
+		result = _analyseStylesheets(doc, "screen", callback);
 
 		// inline style walk
-		jQueryMephisto("*[style]").each(function() {
+		inlineStyles.each(function() {
 			//
 			var parser = new CSSParser(), sheet = parser.parse(".style{" + jQueryMephisto(this).attr("style") + "}", false, false), item = this;
 
@@ -225,18 +196,13 @@ function cssAbsoluteFontSize(doc) {
 				var rule = rules[k];
 
 				//
-				for (var i = 0; i < rule.declarations.length; i++) {
+				if (rule && rule.declarations) {
 					//
-					if (rule && rule.parentStyleSheet) {
+					for (var i = 0; i < rule.declarations.length; i++) {
 						//
 						if (rule.declarations[i]["property"] == "font-size" && rule.declarations[i]["valueText"].match(reg)) {
 							//
-							result.push({
-								"href" : "inline",
-								"selector" : _getXPath(item),
-								"rule" : rule.declarations[i]["parsedCssText"],
-								"line" : null
-							});
+							result.push(_getInlineCssDetails(rule, i, item));
 						}
 					}
 				}
@@ -262,17 +228,17 @@ function cssAbsoluteFontSize(doc) {
  */
 function cssAbsoluteFontSizeInForm(doc) {
 	//
-	var result = [];
+	var result = [], reg = new RegExp().compile("[0-9.]+(p(t|c|x)|(c|m)m|in)", "i");
 
 	//
 	function callback(rule) {
 		//
-		var result = [], reg = new RegExp().compile("[0-9.]+(p(t|c|x)|(c|m)m|in)", "i");
+		var result = [];
 
-		//
-		for (var i = 0; i < rule.declarations.length; i++) {
+		///
+		if (rule && rule.parentStyleSheet && rule.declarations) {
 			//
-			if (rule && rule.parentStyleSheet) {
+			for (var i = 0; i < rule.declarations.length; i++) {
 				//
 				if (rule.declarations[i]["property"] == "font-size" && rule.declarations[i]["valueText"].match(reg)) {
 					//
@@ -280,12 +246,7 @@ function cssAbsoluteFontSizeInForm(doc) {
 						//
 						if (jQueryMephisto.inArray(this.tagName.toUpperCase(), ["BUTTON", "INPUT", "SELECT", "TEXTAREA"]) != -1) {
 							//
-							result.push({
-								"href" : rule.parentStyleSheet._extra["href"],
-								"selector" : rule.mSelectorText,
-								"rule" : rule.declarations[i]["parsedCssText"],
-								"line" : rule.currentLine
-							});
+							result.push(_getCssDetails(rule, i));
 
 							// break
 							return false;
@@ -302,7 +263,7 @@ function cssAbsoluteFontSizeInForm(doc) {
 	//
 	try {
 		//
-		result = _analyseStylesheets(doc, "screen", callback), reg = new RegExp().compile("[0-9.]+(p(t|c|x)|(c|m)m|in)", "i");
+		result = _analyseStylesheets(doc, "screen", callback);
 
 		// inline style walk
 		jQueryMephisto("button[style], input[style], select[style], textarea[style]").each(function() {
@@ -321,18 +282,13 @@ function cssAbsoluteFontSizeInForm(doc) {
 				var rule = rules[k];
 
 				//
-				for (var i = 0; i < rule.declarations.length; i++) {
+				if (rule && rule.declarations) {
 					//
-					if (rule && rule.parentStyleSheet) {
+					for (var i = 0; i < rule.declarations.length; i++) {
 						//
 						if (rule.declarations[i]["property"] == "font-size" && rule.declarations[i]["valueText"].match(reg)) {
 							//
-							result.push({
-								"href" : "inline",
-								"selector" : _getXPath(item),
-								"rule" : rule.declarations[i]["parsedCssText"],
-								"line" : null
-							});
+							result.push(_getInlineCssDetails(rule, i, item));
 						}
 					}
 				}
@@ -366,18 +322,13 @@ function cssDirection(doc) {
 		var result = [];
 
 		//
-		for (var i = 0; i < rule.declarations.length; i++) {
+		if (rule && rule.parentStyleSheet && rule.declarations) {
 			//
-			if (rule && rule.parentStyleSheet) {
+			for (var i = 0; i < rule.declarations.length; i++) {
 				//
 				if (rule.declarations[i]["property"] == "direction") {
 					//
-					result.push({
-						"href" : rule.parentStyleSheet._extra["href"],
-						"selector" : rule.mSelectorText,
-						"rule" : rule.declarations[i]["parsedCssText"],
-						"line" : rule.currentLine
-					});
+					result.push(_getCssDetails(rule, i));
 				}
 			}
 		}
@@ -392,7 +343,7 @@ function cssDirection(doc) {
 		result = _analyseStylesheets(doc, "screen", callback);
 
 		// inline style walk
-		jQueryMephisto("*[style]").each(function() {
+		inlineStyles.each(function() {
 			//
 			var parser = new CSSParser(), sheet = parser.parse(".style{" + jQueryMephisto(this).attr("style") + "}", false, false), item = this;
 
@@ -408,18 +359,13 @@ function cssDirection(doc) {
 				var rule = rules[k];
 
 				//
-				for (var i = 0; i < rule.declarations.length; i++) {
+				if (rule && rule.declarations) {
 					//
-					if (rule && rule.parentStyleSheet) {
+					for (var i = 0; i < rule.declarations.length; i++) {
 						//
 						if (rule.declarations[i]["property"] == "direction") {
 							//
-							result.push({
-								"href" : "inline",
-								"selector" : _getXPath(item),
-								"rule" : rule.declarations[i]["parsedCssText"],
-								"line" : null
-							});
+							result.push(_getInlineCssDetails(rule, i, item));
 						}
 					}
 				}
@@ -453,18 +399,13 @@ function cssDisplayNone(doc) {
 		var result = [];
 
 		//
-		for (var i = 0; i < rule.declarations.length; i++) {
+		if (rule && rule.parentStyleSheet && rule.declarations) {
 			//
-			if (rule && rule.parentStyleSheet) {
+			for (var i = 0; i < rule.declarations.length; i++) {
 				//
 				if (rule.declarations[i]["property"] == "display" && rule.declarations[i]["valueText"] == "none") {
 					//
-					result.push({
-						"href" : rule.parentStyleSheet._extra["href"],
-						"selector" : rule.mSelectorText,
-						"rule" : rule.declarations[i]["parsedCssText"],
-						"line" : rule.currentLine
-					});
+					result.push(_getCssDetails(rule, i));
 				}
 			}
 		}
@@ -479,7 +420,7 @@ function cssDisplayNone(doc) {
 		result = _analyseStylesheets(doc, "screen", callback);
 
 		// inline style walk
-		jQueryMephisto("*[style]").each(function() {
+		inlineStyles.each(function() {
 			//
 			var parser = new CSSParser(), sheet = parser.parse(".style{" + jQueryMephisto(this).attr("style") + "}", false, false), item = this;
 
@@ -495,18 +436,13 @@ function cssDisplayNone(doc) {
 				var rule = rules[k];
 
 				//
-				for (var i = 0; i < rule.declarations.length; i++) {
+				if (rule && rule.declarations) {
 					//
-					if (rule && rule.parentStyleSheet) {
+					for (var i = 0; i < rule.declarations.length; i++) {
 						//
 						if (rule.declarations[i]["property"] == "display" && rule.declarations[i]["valueText"] == "none") {
 							//
-							result.push({
-								"href" : "inline",
-								"selector" : _getXPath(item),
-								"rule" : rule.declarations[i]["parsedCssText"],
-								"line" : null
-							});
+							result.push(_getInlineCssDetails(rule, i, item));
 						}
 					}
 				}
@@ -540,18 +476,13 @@ function cssVisibilityHidden(doc) {
 		var result = [];
 
 		//
-		for (var i = 0; i < rule.declarations.length; i++) {
+		if (rule && rule.parentStyleSheet && rule.declarations) {
 			//
-			if (rule && rule.parentStyleSheet) {
+			for (var i = 0; i < rule.declarations.length; i++) {
 				//
 				if (rule.declarations[i]["property"] == "visibility" && rule.declarations[i]["valueText"] == "hidden") {
 					//
-					result.push({
-						"href" : rule.parentStyleSheet._extra["href"],
-						"selector" : rule.mSelectorText,
-						"rule" : rule.declarations[i]["parsedCssText"],
-						"line" : rule.currentLine
-					});
+					result.push(_getCssDetails(rule, i));
 				}
 			}
 		}
@@ -566,7 +497,7 @@ function cssVisibilityHidden(doc) {
 		result = _analyseStylesheets(doc, "screen", callback);
 
 		// inline style walk
-		jQueryMephisto("*[style]").each(function() {
+		inlineStyles.each(function() {
 			//
 			var parser = new CSSParser(), sheet = parser.parse(".style{" + jQueryMephisto(this).attr("style") + "}", false, false), item = this;
 
@@ -582,18 +513,13 @@ function cssVisibilityHidden(doc) {
 				var rule = rules[k];
 
 				//
-				for (var i = 0; i < rule.declarations.length; i++) {
+				if (rule && rule.declarations) {
 					//
-					if (rule && rule.parentStyleSheet) {
+					for (var i = 0; i < rule.declarations.length; i++) {
 						//
 						if (rule.declarations[i]["property"] == "visibility" && rule.declarations[i]["valueText"] == "hidden") {
 							//
-							result.push({
-								"href" : "inline",
-								"selector" : _getXPath(item),
-								"rule" : rule.declarations[i]["parsedCssText"],
-								"line" : null
-							});
+							result.push(_getInlineCssDetails(rule, i, item));
 						}
 					}
 				}
@@ -627,9 +553,9 @@ function cssHoverLinks(doc) {
 		var result = [], rules = [];
 
 		//
-		for (var i = 0; i < rule.declarations.length; i++) {
+		if (rule && rule.parentStyleSheet && rule.declarations) {
 			//
-			if (rule && rule.parentStyleSheet) {
+			for (var i = 0; i < rule.declarations.length; i++) {
 				//
 				if (rule.mSelectorText.match(reg)) {
 					//
@@ -648,12 +574,7 @@ function cssHoverLinks(doc) {
 										//
 										if (rule.declarations[i]["valueText"] != jQueryMephisto(this).css(rule.declarations[i]["property"])) {
 											//
-											result.push({
-												"href" : rule.parentStyleSheet._extra["href"],
-												"selector" : rule.mSelectorText,
-												"rule" : rule.declarations[i]["parsedCssText"],
-												"line" : rule.currentLine
-											});
+											result.push(_getCssDetails(rule, i));
 										}
 									}
 								}
@@ -692,26 +613,21 @@ function cssHoverLinks(doc) {
  */
 function cssPixelFontSize(doc) {
 	//
-	var result = [];
+	var result = [], reg = new RegExp().compile("[0-9.]+px", "i");
 
 	//
 	function callback(rule) {
 		//
-		var result = [], reg = new RegExp().compile("[0-9.]+px", "i");
+		var result = [];
 
 		//
-		for (var i = 0; i < rule.declarations.length; i++) {
+		if (rule && rule.parentStyleSheet && rule.declarations) {
 			//
-			if (rule && rule.parentStyleSheet) {
+			for (var i = 0; i < rule.declarations.length; i++) {
 				//
 				if (rule.declarations[i]["property"] == "font-size" && rule.declarations[i]["valueText"].match(reg)) {
 					//
-					result.push({
-						"href" : rule.parentStyleSheet._extra["href"],
-						"selector" : rule.mSelectorText,
-						"rule" : rule.declarations[i]["parsedCssText"],
-						"line" : rule.currentLine
-					});
+					result.push(_getCssDetails(rule, i));
 				}
 			}
 		}
@@ -723,10 +639,10 @@ function cssPixelFontSize(doc) {
 	//
 	try {
 		//
-		result = _analyseStylesheets(doc, "screen", callback), reg = new RegExp().compile("[0-9.]+px", "i");
+		result = _analyseStylesheets(doc, "screen", callback);
 
 		// inline style walk
-		jQueryMephisto("*[style]").each(function() {
+		inlineStyles.each(function() {
 			//
 			var parser = new CSSParser(), sheet = parser.parse(".style{" + jQueryMephisto(this).attr("style") + "}", false, false), item = this;
 
@@ -742,18 +658,13 @@ function cssPixelFontSize(doc) {
 				var rule = rules[k];
 
 				//
-				for (var i = 0; i < rule.declarations.length; i++) {
+				if (rule && rule.declarations) {
 					//
-					if (rule && rule.parentStyleSheet) {
+					for (var i = 0; i < rule.declarations.length; i++) {
 						//
 						if (rule.declarations[i]["property"] == "font-size" && rule.declarations[i]["valueText"].match(reg)) {
 							//
-							result.push({
-								"href" : "inline",
-								"selector" : _getXPath(item),
-								"rule" : rule.declarations[i]["parsedCssText"],
-								"line" : null
-							});
+							result.push(_getInlineCssDetails(rule, i, item));
 						}
 					}
 				}
@@ -2166,8 +2077,7 @@ function cssInternalStyles(doc) {
  */
 function cssContent(doc) {
 	//
-	var result = [];
-	var exclusions = ["", '', " ", ' ', '" "', "' '", '"."', "'.'", "none"];
+	var result = [], exclusions = ["", '', " ", ' ', '" "', "' '", '"."', "'.'", "none"];
 
 	//
 	try {
@@ -2276,9 +2186,9 @@ function cssGenericFont(doc) {
 		var result = [], generics = ["serif", "sans-serif", "cursive", "fantasy", "monospace"];
 
 		//
-		for (var i = 0; i < rule.declarations.length; i++) {
+		if (rule && rule.parentStyleSheet && rule.declarations) {
 			//
-			if (rule && rule.parentStyleSheet) {
+			for (var i = 0; i < rule.declarations.length; i++) {
 				//
 				if (rule.declarations[i]["property"] == "font-family") {
 					//
@@ -2287,12 +2197,7 @@ function cssGenericFont(doc) {
 					//
 					if (jQueryMephisto.inArray(font, generics) == -1) {
 						//
-						result.push({
-							"href" : rule.parentStyleSheet._extra["href"],
-							"selector" : rule.mSelectorText,
-							"rule" : rule.declarations[i]["parsedCssText"],
-							"line" : rule.currentLine
-						});
+						result.push(_getCssDetails(rule, i));
 					}
 				}
 			}
@@ -2308,7 +2213,7 @@ function cssGenericFont(doc) {
 		result = _analyseStylesheets(doc, "screen", callback), generics = ["serif", "sans-serif", "cursive", "fantasy", "monospace"];
 
 		// inline style walk
-		jQueryMephisto("*[style]").each(function() {
+		inlineStyles.each(function() {
 			//
 			var parser = new CSSParser(), sheet = parser.parse(".style{" + jQueryMephisto(this).attr("style") + "}", false, false), item = this;
 
@@ -2324,19 +2229,20 @@ function cssGenericFont(doc) {
 				var rule = rules[k];
 
 				//
-				for (var i = 0; i < rule.declarations.length; i++) {
+				if (rule && rule.declarations) {
 					//
-					var fontFamily = rule.declarations[i]["valueText"].split(","), font = fontFamily[fontFamily.length - 1].replace(/['"]/g, "").trim();
-
-					//
-					if (jQueryMephisto.inArray(font, generics) == -1) {
+					for (var i = 0; i < rule.declarations.length; i++) {
 						//
-						result.push({
-							"href" : "inline",
-							"selector" : _getXPath(item),
-							"rule" : rule.declarations[i]["parsedCssText"],
-							"line" : null
-						});
+						if (rule.declarations[i]["property"] == "font-family") {
+							//
+							var fontFamily = rule.declarations[i]["valueText"].split(","), font = fontFamily[fontFamily.length - 1].replace(/['"]/g, "").trim();
+
+							//
+							if (jQueryMephisto.inArray(font, generics) == -1) {
+								//
+								result.push(_getInlineCssDetails(rule, i, item));
+							}
+						}
 					}
 				}
 			}
@@ -2361,26 +2267,21 @@ function cssGenericFont(doc) {
  */
 function cssBackgroundImage(doc) {
 	//
-	var result = [];
+	var result = [], reg = new RegExp().compile('^url\\(', "i");
 
 	//
 	function callback(rule) {
 		//
-		var result = [], reg = new RegExp().compile('^url\\(', "i");
+		var result = [];
 
 		//
-		for (var i = 0; i < rule.declarations.length; i++) {
+		if (rule && rule.parentStyleSheet && rule.declarations) {
 			//
-			if (rule && rule.parentStyleSheet) {
+			for (var i = 0; i < rule.declarations.length; i++) {
 				//
 				if (rule.declarations[i]["property"] == "background-image" && rule.declarations[i]["valueText"].match(reg)) {
 					//
-					result.push({
-						"href" : rule.parentStyleSheet._extra["href"],
-						"selector" : rule.mSelectorText,
-						"rule" : rule.declarations[i]["parsedCssText"],
-						"line" : rule.currentLine
-					});
+					result.push(_getCssDetails(rule, i));
 				}
 			}
 		}
@@ -2395,7 +2296,7 @@ function cssBackgroundImage(doc) {
 		result = _analyseStylesheets(doc, "screen", callback), reg = new RegExp().compile('^url\\(', "i");
 
 		// inline style walk
-		jQueryMephisto("*[style]").each(function() {
+		inlineStyles.each(function() {
 			//
 			var parser = new CSSParser(), sheet = parser.parse(".style{" + jQueryMephisto(this).attr("style") + "}", false, false), item = this;
 
@@ -2411,16 +2312,14 @@ function cssBackgroundImage(doc) {
 				var rule = rules[k];
 
 				//
-				for (var i = 0; i < rule.declarations.length; i++) {
+				if (rule && rule.declarations) {
 					//
-					if (rule.declarations[i]["property"] == "background-image" && rule.declarations[i]["valueText"].match(reg)) {
+					for (var i = 0; i < rule.declarations.length; i++) {
 						//
-						result.push({
-							"href" : "inline",
-							"selector" : _getXPath(item),
-							"rule" : rule.declarations[i]["parsedCssText"],
-							"line" : null
-						});
+						if (rule.declarations[i]["property"] == "background-image" && rule.declarations[i]["valueText"].match(reg)) {
+							//
+							result.push(_getInlineCssDetails(rule, i, item));
+						}
 					}
 				}
 			}
@@ -2477,27 +2376,31 @@ function cssUppercase(doc) {
 	//
 	var result = [];
 	var exclusions = ["ABBR", "ACRONYM", "ADDRESS", "BLOCKQUOTE", "CITE", "CODE", "KBD", "PRE", "Q", "RP", "RT", "RUBY", "SAMP", "SUB", "SUP", "TIME", "VAR", "IFRAME", "SCRIPT"];
-	//var reg = new RegExp().compile("^[^a-z]*[A-Z][^a-z]*[A-Z][^a-z]*[A-Z][^a-z]*$", "g");
+	var reg = new RegExp().compile("^[^a-z]*[A-Z][^a-z]*[A-Z][^a-z]*[A-Z][^a-z]*$", "g");
 
 	//
 	try {
 		//
-		jQueryMephisto("body").find("*").andSelf().each(function() {
-			// 
-			if (jQueryMephisto.inArray(this.tagName.toUpperCase(), exclusions) == -1 && jQueryMephisto(this).css("text-decoration") != "uppercase" && jQueryMephisto(this).parents(exclusions.toString().toLowerCase()).size() == 0) {
+		var treeWalker = doc.createTreeWalker(doc.body, NodeFilter.SHOW_ELEMENT, {
+			acceptNode : function(_node) {
 				//
-				var _text = jQueryMephisto(this).contents().filter(function() {
-					return this.nodeType == 3;
-				}).text().trim();
+				if (jQueryMephisto.inArray(_node.tagName.toUpperCase(), exclusions) != -1) {
+					return NodeFilter.FILTER_REJECT;
+				}
 
 				//
-				if (_text != "" && _text.toUpperCase() == _text) {
-					result.push(_getDetails(this));
+				else if (reg.test(jQueryMephisto(_node).text()) && jQueryMephisto(_node).css("text-decoration") != "uppercase") {
+					return NodeFilter.FILTER_ACCEPT;
 				}
 			}
-		});
+		}, false);
+
+		//
+		while (treeWalker.nextNode()) {
+			result.push(_getDetails(treeWalker.currentNode));
+		}
 	}
-	
+
 	//
 	catch (err) {
 		// Error Logging
@@ -2524,18 +2427,13 @@ function cssTextAlignJustify(doc) {
 		var result = [];
 
 		//
-		for (var i = 0; i < rule.declarations.length; i++) {
+		if (rule && rule.parentStyleSheet && rule.declarations) {
 			//
-			if (rule && rule.parentStyleSheet) {
+			for (var i = 0; i < rule.declarations.length; i++) {
 				//
 				if (rule.declarations[i]["property"] == "text-align" && rule.declarations[i]["valueText"] == "justify") {
 					//
-					result.push({
-						"href" : rule.parentStyleSheet._extra["href"],
-						"selector" : rule.mSelectorText,
-						"rule" : rule.declarations[i]["parsedCssText"],
-						"line" : rule.currentLine
-					});
+					result.push(_getCssDetails(rule, i));
 				}
 			}
 		}
@@ -2550,7 +2448,7 @@ function cssTextAlignJustify(doc) {
 		result = _analyseStylesheets(doc, "screen", callback);
 
 		// inline style walk
-		jQueryMephisto("*[style]").each(function() {
+		inlineStyles.each(function() {
 			//
 			var parser = new CSSParser(), sheet = parser.parse(".style{" + jQueryMephisto(this).attr("style") + "}", false, false), item = this;
 
@@ -2566,16 +2464,14 @@ function cssTextAlignJustify(doc) {
 				var rule = rules[k];
 
 				//
-				for (var i = 0; i < rule.declarations.length; i++) {
+				if (rule && rule.declarations) {
 					//
-					if (rule.declarations[i]["property"] == "text-align" && rule.declarations[i]["valueText"] == "justify") {
+					for (var i = 0; i < rule.declarations.length; i++) {
 						//
-						result.push({
-							"href" : "inline",
-							"selector" : _getXPath(item),
-							"rule" : rule.declarations[i]["parsedCssText"],
-							"line" : null
-						});
+						if (rule.declarations[i]["property"] == "text-align" && rule.declarations[i]["valueText"] == "justify") {
+							//
+							result.push(_getInlineCssDetails(rule, i, item));
+						}
 					}
 				}
 			}

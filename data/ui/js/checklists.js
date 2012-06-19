@@ -10,121 +10,55 @@ checklists = {
     "solution": "Tout \u00e9l\u00e9ment :\r\n<br>\r\n<br>\r\n<ul><li>script cot\u00e9 serveur (expiration de session, ent\u00eate http refresh)\r\n  </li><li>applet,\r\n  </li><li>object,\r\n  </li><li>embed.</li></ul>\r\n<br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si l'\u00e9l\u00e9ment provoque un rafra\u00eechissement automatique de la page, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si le rafra\u00eechissement automatique ne pourrait \u00eatre supprim\u00e9e sans changer fondamentalement l'information ou les fonctionnalit\u00e9s du contenu, poursuivre le test, sinon le test est non applicable. </li>", 
     "name": "[NAV]-09"
   }, 
-  "696": {
-    "goal": "<ul>\r\n    <li>Fournir aux utilisateurs une continuit\u00e9 dans la navigation</li>\r\n    <li>\u00c9viter les changements de contexte</li>\r\n</ul>", 
-    "checklist": {
-      "id": 11, 
-      "name": "Opquast V2"
-    }, 
-    "explanation": "", 
-    "description": "La navigation sur le site ne provoque pas d'ouvertures de nouvelles fen\u00eatres", 
-    "solution": "", 
-    "name": "197"
-  }, 
-  "715": {
-    "goal": "<ul>\r\n    <li>Acc\u00e9l\u00e9rer la vitesse d'affichage des pages</li>\r\n    <li>Am\u00e9liorer les performances</li>\r\n    <li>Diminuer la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger</li>\r\n</ul>", 
-    "checklist": {
-      "id": 11, 
-      "name": "Opquast V2"
-    }, 
-    "explanation": "", 
-    "description": "Les scripts sont minifi\u00e9s", 
-    "solution": "<ul>\r\n    <li>Supprimer les espaces non n\u00e9cessaires et les commentaires dans les fichiers Javascript, par exemple en recourant \u00e0 des outils tels que <a href=\"http://crockford.com/javascript/jsmin\">crockford.com/javascript/jsmin</a> ou <a href=\"http://developer.yahoo.com/yui/compressor/\">developer.yahoo.com/yui/compressor/</a></li>\r\n</ul>", 
-    "name": "216"
-  }, 
-  "500": {
-    "goal": "<ul>\r\n    <li>Permettre la navigation et la consultation pour les utilisateurs plac\u00e9s dans des contextes o\u00f9 les images ne sont pas perceptibles (navigateurs texte, lecteur d'\u00e9cran, images d\u00e9sactiv\u00e9es)</li>\r\n    <li>Permettre aux robots d'exploiter l'information v\u00e9hicul\u00e9e par les images (r\u00e9f\u00e9rencement, traduction automatique)</li>\r\n    <li>Permettre l'affichage d'un texte pendant la chargement des images</li>\r\n</ul>", 
-    "checklist": {
-      "id": 11, 
-      "name": "Opquast V2"
-    }, 
-    "explanation": "", 
-    "description": "Chaque image est dot\u00e9e d'une alternative textuelle appropri\u00e9e", 
-    "solution": "<p>L'attribut <code>alt</code> est pr\u00e9sent pour chaque \u00e9l\u00e9ment <code>&lt;img&gt;</code>, sous la forme&nbsp;:</p>\r\n<ul>\r\n    <li><code>alt=\"\"</code> pour les images qui ne v\u00e9hiculent pas d'information n\u00e9cessaire \u00e0 la compr\u00e9hension du texte&nbsp;: <code>&lt;img src=\"spacer.gif\" height=\"1\" width=\"1\" alt=\"\"&gt;</code>. Attention&nbsp;: l'omission de l'attribut <code>alt</code> n'est pas l'\u00e9quivalent d'un attribut vide et n'est pas acceptable.</li>\r\n    <li><code>alt=\"_fonction_\"</code> pour les images liens, avec comme contenu (_fonction_) la fonction du lien&nbsp;: <code>&lt;img src=\"\u2026\" alt=\"Accueil\"&gt;</code> pour la traditionnelle ic\u00f4ne \"home\".<li>\r\n    <li><code>alt=\"_description_\"</code> pour les images dont la perception est n\u00e9cessaire \u00e0 la compr\u00e9hension du contenu.</li>\r\n</ul>\r\n<p>La description de l'image ou de sa fonction doit \u00eatre concise. Aucune limite de longueur normative n'existe, mais 120 caract\u00e8res serait un maximum indicatif. Le seuil limite d'une alternative textuelle n'est pas tant sa longueur que la complexit\u00e9 de l'information : si cette derni\u00e8re n\u00e9cessite d'\u00eatre structur\u00e9e (\u00e0 l'aide d'\u00e9l\u00e9ments de tableaux, de listes, de titres, de paragraphes, etc.), il ne s'agit plus de la fournir sous la forme d'une alternative textuelle simple, mais de donner une description \u00e9tendue de l'image. Celle-ci prend la forme d'un contenu textuel structur\u00e9, pr\u00e9sent dans la m\u00eame page que l'image ou dans une page imm\u00e9diatement accessible \u00e0 partir de celle-ci.</p></li></ul>", 
-    "name": "1"
-  }, 
-  "501": {
-    "goal": "<ul>\r\n    <li>Faciliter la validation du code source et favoriser un rendu pr\u00e9visible quelque-soit le navigateur (en mode de rendu strict pour les moteurs de rendu CSS)</li>\r\n</ul>", 
-    "checklist": {
-      "id": 11, 
-      "name": "Opquast V2"
-    }, 
-    "explanation": "", 
-    "description": "Le code source de chaque page d\u00e9bute par un d\u00e9claration de type de document (doctype) dont la syntaxe est conforme \u00e0 celles recommand\u00e9es par le W3C", 
-    "solution": "<ul>\r\n    <li>Placer la DTD en d\u00e9but de code source (elle ne doit \u00eatre pr\u00e9c\u00e9d\u00e9e d'aucun commentaire, balisage ou prologue XML)</li>\r\n    <li>Utiliser uniquement une DTD indiqu\u00e9e dans http://www.w3.org/QA/2002/04/valid-dtd-list.html</li>\r\n</ul>", 
-    "name": "2"
-  }, 
-  "502": {
-    "goal": "<ul>\r\n    <li>Permettre aux utilisateurs qui le souhaitent de visualiser la structure du contenu de la page</li>\r\n    <li>Permettre aux machines et aux outils d'indexation d'extraire le plan de chaque page</li>\r\n    <li>Am\u00e9liorer le r\u00e9f\u00e9rencement en facilitant l'interpr\u00e9tation du contenu par les robots d'indexation</li>\r\n</ul>", 
-    "checklist": {
-      "id": 11, 
-      "name": "Opquast V2"
-    }, 
-    "explanation": "", 
-    "description": "Le contenu de chaque page est organis\u00e9 selon une structure de titres et sous-titres hi\u00e9rarchis\u00e9e", 
-    "solution": "<ul>\r\n    <li>Structurer le document en titres et sous-titres \u00e0 l'aide des \u00e9l\u00e9ments HTML <code>&lt;h1&gt;</code> \u00e0 <code>&lt;h6&gt;</code></li>\r\n    <li>Veiller \u00e0 ce que la structure ne comporte pas de \"trous\"</li>\r\n    <li>Veiller \u00e0 ce que chaque page comporte au moins un titre de niveau 1 avec l'\u00e9l\u00e9ment <code>&lt;h1&gt;</code></li>\r\n</ul>", 
-    "name": "3"
-  }, 
-  "503": {
-    "goal": "<ul>\r\n    <li>Permettre aux utilisateurs de conserver la maitrise de leur environnement de travail</li>\r\n    <li>\u00c9viter des interruptions ou des pertes d'information en cours de lecture, notamment pour les utilisateurs \u00e9quip\u00e9s de lecteurs d'\u00e9cran</li>\r\n</ul>", 
-    "checklist": {
-      "id": 11, 
-      "name": "Opquast V2"
-    }, 
-    "explanation": "", 
-    "description": "Le site n'impose pas de redirection ou de rafraichissement automatique c\u00f4t\u00e9 client", 
-    "solution": "<p>Ne pas utiliser&nbsp;:</p>\r\n<ul>\r\n    <li>l'\u00e9l\u00e9ment <code>&lt;meta http-equiv=\"refresh\"&gt;</code></li>\r\n</ul></li></ul>", 
-    "name": "4"
-  }, 
-  "504": {
+  "19197": {
     "goal": "", 
     "checklist": {
-      "id": 11, 
-      "name": "Opquast V2"
+      "id": 567, 
+      "name": "Accessibility Second step : risk management"
     }, 
     "explanation": "", 
-    "description": "Les styles ne sont pas utilis\u00e9s pour g\u00e9n\u00e9rer du contenu", 
+    "description": "Utiliser les valeurs none et hidden des propri\u00e9t\u00e9s display et visibility avec pr\u00e9caution", 
     "solution": "", 
-    "name": "5"
+    "name": "28"
   }, 
-  "508": {
-    "goal": "<ul>\r\n    <li>Permettre aux utilisateurs d'identifier la nature des contenus de chaque page dans les onglets, dans les favoris, dans la fen\u00eatre du navigateur ou dans les lecteurs d'\u00e9cran.</li>\r\n</ul>", 
+  "19287": {
+    "goal": "Permettre la restitution d'un titre au groupe form\u00e9 par optgroup.", 
     "checklist": {
-      "id": 11, 
-      "name": "Opquast V2"
+      "id": 568, 
+      "name": "Accessibility first step: error detection"
     }, 
     "explanation": "", 
-    "description": "Le titre de chaque page permet d'identifier son contenu", 
-    "solution": "<ul>\r\n    <li>R\u00e9diger le contenu de l'\u00e9l\u00e9ment <code>&lt;title&gt;</code> de chaque page de mani\u00e8re \u00e0 en d\u00e9crire de mani\u00e8re concise le contenu ou la fonction, y compris \u00e0 la suite d'une requ\u00eate AJAX modifiant de mani\u00e8re essentielle le contenu de la page.</li>\r\n    <li>Pr\u00e9ciser l'\u00e9tape en cours dans l'\u00e9l\u00e9ment <code>&lt;title&gt;</code> des pages correspondant \u00e0 des \u00e9tapes dans un processus (exemple&nbsp;: \u00e9tape 3 de votre inscription, etc).</li>\r\n    <li>Pr\u00e9ciser l'intervalle dans une page d'une s\u00e9rie de pages de r\u00e9sultats de recherche (R\u00e9sultats 10 \u00e0 19 de la recherche sur \"Foo\")</li>\r\n    <li>Pr\u00e9ciser l'\u00e9tat dans le titre d'une page demande de confirmation ou de confirmation lors de la soumission d'un formulaire (exemple: demande de confirmation de suppression - mes documents).</li>\r\n</ul>", 
-    "name": "9"
-  }, 
-  "511": {
-    "goal": "<ul>\r\n    <li>Permettre aux utilisateurs d'identifier le site dans les onglets, dans les favoris, dans la fen\u00eatre du navigateur ou dans les lecteurs d'\u00e9cran.</li>\r\n</ul>", 
-    "checklist": {
-      "id": 11, 
-      "name": "Opquast V2"
-    }, 
-    "explanation": "", 
-    "description": "Le titre de chaque page permet d'identifier le site", 
-    "solution": "<ul>\r\n    <li>R\u00e9diger le contenu de l'\u00e9l\u00e9ment <code>&lt;title&gt;</code> de chaque page de mani\u00e8re \u00e0 y indiquer le nom du site.</li>\r\n</ul>", 
-    "name": "12"
+    "description": "Utiliser un attribut label pour chaque \u00e9l\u00e9ment optgroup", 
+    "solution": "Ajouter un attribut label aux \u00e9l\u00e9ments optgroup. Exemple&nbsp;: &lt;optgroup label='france'&gt;...&lt;/optgroup&gt;", 
+    "name": "75"
   }, 
   "529": {
     "goal": "", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "La dur\u00e9e des contenus vid\u00e9o ou audio est indiqu\u00e9e", 
     "solution": "", 
     "name": "30"
   }, 
+  "19306": {
+    "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
+    "checklist": {
+      "id": 568, 
+      "name": "Accessibility first step: error detection"
+    }, 
+    "explanation": "", 
+    "description": "Ne pas utiliser l'attribut text", 
+    "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
+    "name": "33"
+  }, 
   "533": {
     "goal": "", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Les animations, sons et clignotements peuvent \u00eatre mis en pause", 
@@ -135,7 +69,7 @@ checklists = {
     "goal": "<ul>\r\n    <li>Faciliter la compr\u00e9hension des donn\u00e9es attendues dans les formulaires</li>\r\n    <li>Faciliter la saisie en permettant de s\u00e9lectionner l'\u00e9tiquette plut\u00f4t que la case \u00e0 cocher ou le bouton radio</li>\r\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Chaque champ de formulaire est associ\u00e9 dans le code source \u00e0 une \u00e9tiquette qui lui est propre", 
@@ -146,18 +80,29 @@ checklists = {
     "goal": "<ul>\r\n    <li>Donner un retour \u00e0 l'utilisateur sur l'action qu'il vient d'effectuer</li>\r\n    <li>Guider l'utilisateur directement vers les \u00e9l\u00e9ments sur lesquels il doit agir</li>\r\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "En cas de rejet des donn\u00e9es saisies dans un formulaire, les champs contenant les donn\u00e9es rejet\u00e9es sont indiqu\u00e9s \u00e0 l'utilisateur.", 
     "solution": "<ul>\r\n    <li>Faire figurer en d\u00e9but de formulaire un message indiquant que tout ou partie des champs n\u00e9cessitent une correction de la saisie pr\u00e9c\u00e9dente. Indiquer \u00e9galement cette information dans l'\u00e9l\u00e9ment <code>&lt;title&gt;</code> de la page.</li>\r\n    <li>Et indiquer dans l'\u00e9tiquette de chaque champ concern\u00e9 qu'il doit \u00eatre corrig\u00e9 (par exemple, avec la mention \"erreur de saisie\")</li>\r\n</ul>", 
     "name": "36"
   }, 
+  "19289": {
+    "goal": "Permettre la distinction des diff\u00e9rents groupes form\u00e9s.", 
+    "checklist": {
+      "id": 568, 
+      "name": "Accessibility first step: error detection"
+    }, 
+    "explanation": "", 
+    "description": "Ne pas utiliser d'attribut label vide sur l'\u00e9l\u00e9ment optgroup", 
+    "solution": "D\u00e9terminer le nom du groupe form\u00e9 par optgroup et renseigner l'attribut label avec ce nom.", 
+    "name": "77"
+  }, 
   "538": {
     "goal": "<ul>\r\n    <li>Permettre aux utilisateurs de savoir \u00e0 l'avance si un champ est obligatoire</li>\r\n    <li>Pr\u00e9venir les erreurs avant qu'elles ne surviennent</li>\r\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "L'\u00e9tiquette de chaque champ de formulaire indique si la saisie est obligatoire", 
@@ -168,7 +113,7 @@ checklists = {
     "goal": "<ul>\r\n    <li>\u00c9viter aux utilisateurs d'avoir par exemple l'URL du lien en guise de libell\u00e9 dans une aide technique, celle-ci \u00e9tant contrainte \u00e0 trouver dans le code de la page une information \u00e0 donner en guise de libell\u00e9 vide</li>\r\n    <li>\u00c9viter aux utilisateurs de ne pas acc\u00e9der au lien lorsque CSS est d\u00e9sactiv\u00e9 dans un navigateur graphique.</li>\r\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Chaque lien est dot\u00e9 d'un intitul\u00e9 dans le code source", 
@@ -179,7 +124,7 @@ checklists = {
     "goal": "<ul>\r\n    <li>\u00c9viter les clics inutiles sur des contenus soulign\u00e9s per\u00e7us comme des hyperliens</li>\r\n    <li>Faciliter l'identification des liens</li>\r\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Le soulignement est r\u00e9serv\u00e9 aux hyperliens.", 
@@ -190,7 +135,7 @@ checklists = {
     "goal": "<ul>\r\n    <li>Am\u00e9liorer l'interpr\u00e9tation des pages par les synth\u00e8ses vocales</li>\r\n    <li>Am\u00e9liorer le r\u00e9f\u00e9rencement en permettant aux moteurs de reconna\u00eetre la langue du contenu</li>\r\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Le code source de chaque page indique la langue principale du contenu", 
@@ -201,7 +146,7 @@ checklists = {
     "goal": "<ul>\r\n    <li>Am\u00e9liorer la consultation et la navigation pour les personnes handicap\u00e9es\r\n\u00e9viter les probl\u00e8mes d'impression ou de mise en favoris</li>\r\n    <li>Am\u00e9liorer le r\u00e9f\u00e9rencement en \u00e9vitant l'indexation de pages orphelines</li>\r\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Le site n'emploie pas la technique des jeux de cadres", 
@@ -212,7 +157,7 @@ checklists = {
     "goal": "", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Les iframes sont dot\u00e9es d'un titre explicite", 
@@ -223,7 +168,7 @@ checklists = {
     "goal": "<ul>\n    <li>Permettre la navigation au clavier</li>\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Le focus clavier n'est ni supprim\u00e9 ni masqu\u00e9", 
@@ -234,7 +179,7 @@ checklists = {
     "goal": "", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "L'utilisateur est averti des ouvertures de nouvelles fen\u00eatres", 
@@ -245,7 +190,7 @@ checklists = {
     "goal": "<ul>\r\n    <li>Permettre \u00e0 l'utilisateur de naviguer sur le site sans avoir d'op\u00e9ration sp\u00e9cifique \u00e0 effectuer pendant la navigation</li>\r\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "La navigation sur le site ne provoque pas l'ouverture de fen\u00eatres surgissantes (\"popups\")", 
@@ -256,18 +201,29 @@ checklists = {
     "goal": "", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "La consultation du site ne redimensionne pas la fen\u00eatre du navigateur.", 
     "solution": "", 
     "name": "63"
   }, 
+  "19250": {
+    "goal": "Eviter les trous dans la hi\u00e9rarchie des titres.", 
+    "checklist": {
+      "id": 568, 
+      "name": "Accessibility first step: error detection"
+    }, 
+    "explanation": "", 
+    "description": "Utiliser un \u00e9l\u00e9ment h2, h3, h4, h5 ou h6 comme premier \u00e9l\u00e9ment de titrage pr\u00e9c\u00e9dant l'\u00e9l\u00e9ment h3 dans l'ordre du code source", 
+    "solution": "Pr\u00e9c\u00e9der chaque \u00e9l\u00e9ment h3 d'un \u00e9l\u00e9ment h2, h3, h4, h5 ou h6.", 
+    "name": "21"
+  }, 
   "574": {
     "goal": "<ul>\r\n    <li>Permettre au navigateur de choisir le bon encodage des caract\u00e8res pour afficher la page.</li>\r\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Les ent\u00eates envoy\u00e9s par le serveur contiennent les informations relatives au jeu de caract\u00e8res employ\u00e9", 
@@ -278,7 +234,7 @@ checklists = {
     "goal": "", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Le serveur envoie les informations permettant la mise en cache des contenus.", 
@@ -289,7 +245,7 @@ checklists = {
     "goal": "<ul>\r\n    <li>Permettre aux utilisateurs de rejoindre la page d'accueil du site m\u00eame lorsqu'il oublie de taper le pr\u00e9fixe www</li>\r\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "L'adresse du site et de ses sous-domaines fonctionnent avec ou sans pr\u00e9fixe www.", 
@@ -300,7 +256,7 @@ checklists = {
     "goal": "<ul>\r\n    <li>Informer l'utilisateur sur l'erreur rencontr\u00e9e, sur la continuit\u00e9 de fonctionnement du serveur, et met hors de cause la connexion de l'utilisateur</li>\r\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Le serveur envoie une page d'erreur 404 personnalis\u00e9e.", 
@@ -311,7 +267,7 @@ checklists = {
     "goal": "", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Le serveur envoie un code http 404 pour les ressources non trouv\u00e9es", 
@@ -322,7 +278,7 @@ checklists = {
     "goal": "", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Le serveur transmet des contenus compress\u00e9s aux clients qui les acceptent", 
@@ -333,7 +289,7 @@ checklists = {
     "goal": "<ul>\r\n    <li>Permettre aux utilisateurs de configurer la fr\u00e9quence \u00e0 laquelle leurs outils consultent le fil de syndication</li>\r\n    <li>R\u00e9duire la charge du serveur</li>\r\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Le code source des fils de syndication indique leur fr\u00e9quence de mise \u00e0 jour", 
@@ -344,7 +300,7 @@ checklists = {
     "goal": "", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Les hyperliens contenus dans les fils de syndication sont absolus.", 
@@ -355,7 +311,7 @@ checklists = {
     "goal": "", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Les fils de syndication sont d\u00e9tectables par les agents utilisateurs", 
@@ -366,7 +322,7 @@ checklists = {
     "goal": "<ul>\n    <li>Permettre aux aides techniques de restituer l'information contenue dans les tableaux de donn\u00e9es de mani\u00e8re explicite, en indiquant \u00e0 l'utilisateur les relations logique entre contenu et en-t\u00eates du tableau</li>\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Les cellules des tableaux de donn\u00e9es sont reli\u00e9es \u00e0 leurs en-t\u00eates.", 
@@ -377,7 +333,7 @@ checklists = {
     "goal": "<ul>\n    <li>Fournir un acc\u00e8s \u00e0 l'information pour les utilisateurs dont le navigateur ou la platre-forme ne supporte pas les technologies utilis\u00e9es dans les objets inclus</li>\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Les objets inclus sont dot\u00e9s d'une alternative appropri\u00e9e", 
@@ -388,7 +344,7 @@ checklists = {
     "goal": "<ul>\r\n    <li>Faciliter le traitement des pages par les aides techniques</li>\r\n    <li>Favoriser la s\u00e9paration du contenu structur\u00e9 et de sa mise en forme</li>\r\n    <li>All\u00e9ger le code HTML</li>\r\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Le contenu ne comporte pas de tableaux imbriqu\u00e9s", 
@@ -399,40 +355,84 @@ checklists = {
     "goal": "<ul>\r\n<li>simplifier la gestion des caract\u00e8res de tous types en recourant \u00e0 un jeux de caract\u00e8res aussi complet que possible.</li>\r\n<li>faciliter la r\u00e9utilisation du contenu en recourant au jeu consid\u00e9r\u00e9 comme jeu par d\u00e9faut dans diff\u00e9rents contextes (XML).</li>\r\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Le codage de caract\u00e8res utilis\u00e9 est UTF-8", 
     "solution": "", 
     "name": "89"
   }, 
+  "19128": {
+    "goal": "Permettre l'association des champs de formulaire avec les \u00e9tiquettes qui les d\u00e9crivent.", 
+    "checklist": {
+      "id": 567, 
+      "name": "Accessibility Second step : risk management"
+    }, 
+    "explanation": "", 
+    "description": "Utiliser les \u00e9l\u00e9ments input de type radio&nbsp; sans attribut id avec pr\u00e9caution", 
+    "solution": "Ajouter un attribut id sur l'\u00e9l\u00e9ment.", 
+    "name": "20"
+  }, 
   "596": {
     "goal": "<ul>\n    <li>Permettre la restitution en tant que telles des listes par les navigateurs et les aides techniques, afin de faciliter leur compr\u00e9hension par les utilisateurs.</li>\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Les \u00e9l\u00e9ments visuellement pr\u00e9sent\u00e9s sous forme de liste sont balis\u00e9s de fa\u00e7on appropri\u00e9e dans le code source", 
     "solution": "<p>Utiliser les \u00e9l\u00e9ments HTML appropri\u00e9s&nbsp;:</p>\r\n<ul>\r\n    <li><code>&lt;ul&gt;</code> et <code>&lt;li&gt;</code> pour les liste non ordonn\u00e9es</li>\r\n    <li><code>&lt;ol&gt;</code> et <code>&lt;li&gt;</code> pour les listes ordonn\u00e9es</li>\r\n    <li><code>&lt;dl&gt;</code>, <code>&lt;dt&gt;</code> et <code>&lt;dd&gt;</code> pour les listes de d\u00e9finition</li>\r\n</ul>", 
     "name": "97"
   }, 
+  "19302": {
+    "goal": "Permettre aux utilisateurs de diff\u00e9rencier les tableaux de donn\u00e9es des tableaux de mise en page en n'utilisant pas les caract\u00e9ristiques sp\u00e9cifiques aux premiers dans les seconds.", 
+    "checklist": {
+      "id": 568, 
+      "name": "Accessibility first step: error detection"
+    }, 
+    "explanation": "", 
+    "description": "Ne pas utiliser d'attribut summary sur un \u00e9l\u00e9ment table contenant uniquement des cellules td", 
+    "solution": "Ne pas utiliser d'attribut summary dans les tableaux de mis en page.", 
+    "name": "55"
+  }, 
+  "19285": {
+    "goal": "Eviter aux utilisateurs un rechargement de la page qu'il ne pourrait pas ma\u00eetriser. ", 
+    "checklist": {
+      "id": 568, 
+      "name": "Accessibility first step: error detection"
+    }, 
+    "explanation": "", 
+    "description": "Ne pas utiliser l'\u00e9l\u00e9ment meta avec un attribut http-equiv ayant la valeur refresh", 
+    "solution": "Eviter les rechargements automatiques des pages ou utiliser un syst\u00e8me de rechargement o\u00f9 les utilisateurs sont inform\u00e9s du fonctionnement et o\u00f9 ils peuvent d\u00e9sactiver ce rechargement avec la souris et avec le clavier.", 
+    "name": "5"
+  }, 
   "599": {
     "goal": "<ul>\n    <li>Permettre un affichage hors-ligne correct des pages en indiquant au navigateur le jeu de caract\u00e8res utilis\u00e9</li>\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Le code source de chaque page contient une metadonn\u00e9e qui d\u00e9finit le jeu de caract\u00e8res", 
     "solution": "<p>L'\u00e9l\u00e9ment meta est renseign\u00e9 en fonction de l'encodage effectif du document et de son type MIME sous la forme&nbsp;:</p>\r\n<ul>\r\n    <li><code>&lt;meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\"&gt;</code> en HTML</li>\r\n    <li><code>&lt;meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\" /&gt;</code> ou <code>&lt;meta http-equiv=\"Content-Type\" content=\"application/xhtml+xml; charset=ISO-8859-1\" /&gt;</code> en XHTML.</li>\r\n</ul>", 
     "name": "100"
   }, 
+  "11864": {
+    "goal": "", 
+    "checklist": {
+      "id": 425, 
+      "name": "Accessiweb 2.1 D\u00e9ploy\u00e9e"
+    }, 
+    "explanation": "", 
+    "description": "Chaque image (balise img) a-t-elle un attribut alt ?", 
+    "solution": "", 
+    "name": "1.1.1"
+  }, 
   "613": {
     "goal": "<ul>\r\n    <li>\u00c9viter le t\u00e9l\u00e9chargement de donn\u00e9es inutiles</li>\r\n    <li>Am\u00e9liorer les performances</li>\r\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Les vignettes ne sont pas des images de taille sup\u00e9rieure redimensionn\u00e9es c\u00f4t\u00e9 client.", 
@@ -443,7 +443,7 @@ checklists = {
     "goal": "<ul>\r\n    <li>Aider l'internaute \u00e0 comprendre ce qu'on attend et ainsi, faciliter le passage \u00e0 l'\u00e9tape suivante</li>\r\n    <li>\u00c9viter la frustration de l'utilisateur</li>\r\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "En cas de rejet des donn\u00e9es saisies dans un formulaire, les raisons du rejet sont indiqu\u00e9es \u00e0 l'utilisateur.", 
@@ -454,7 +454,7 @@ checklists = {
     "goal": "<ul>\n    <li>Donner \u00e0 l'utilisateur une vue globale de ce qu'il a saisie dans les pages pr\u00e9c\u00e9dentes</li>\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Lors de la saisie d'un formulaire r\u00e9parti sur plusieurs pages, un r\u00e9capitulatif global est affich\u00e9 avant l'envoi d\u00e9finitif.", 
@@ -465,7 +465,7 @@ checklists = {
     "goal": "<ul>\r\n    <li>Toujours laisser la main \u00e0 l'utilisateur sur la totalit\u00e9 des informations qu'il donne</li>\r\n    <li>Permettre \u00e0 l'utilisateur de modifier des informations sur lesquelles il voudrait revenir</li>\r\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "En cas de rejet des donn\u00e9es saisies dans un formulaire, toutes les donn\u00e9es saisies peuvent \u00eatre modifi\u00e9es par l'utilisateur.", 
@@ -476,7 +476,7 @@ checklists = {
     "goal": "<ul>\r\n    <li>Donner  \u00e0 l'utilisateur un retour sur l'action qu'il vient d'effectuer</li>\r\n    <li>\u00c9viter la frustration d'un utilisateur qui pense que le processus est fini alors qu'il y a eu un probl\u00e8me</li>\r\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "La soumission d'un formulaire est suivie d'un message indiquant la r\u00e9ussite ou non de l'action souhait\u00e9e", 
@@ -487,7 +487,7 @@ checklists = {
     "goal": "<ul>\r\n    <li>Limiter le risque d'erreurs de saisie</li>\r\n    <li>Limiter les risques associ\u00e9s \u00e0 l'envoi de donn\u00e9es eronn\u00e9es ou inexploitables</li>\r\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "L'\u00e9tiquette de chaque champ de formulaire indique, le cas \u00e9ch\u00e9ant, quel format de saisie doit \u00eatre respect\u00e9", 
@@ -498,7 +498,7 @@ checklists = {
     "goal": "<ul>\r\n    <li>Limiter les difficult\u00e9s \u00e0 cliquer sur un lien lorsque celui ci occupe plus d'espace en mode survol\u00e9 ou activ\u00e9</li>\r\n    <li>Limiter les effets de clignotements ou de d\u00e9placement de contenus.</li>\r\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Le survol ou l'activation des hyperliens ne modifie pas la mise en page.", 
@@ -509,7 +509,7 @@ checklists = {
     "goal": "<ul>\r\n    <li>Permettre un r\u00e9f\u00e9rencement cibl\u00e9</li>\r\n    <li>Am\u00e9liorer le guidage pour les outils de recherche</li>\r\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "La racine du site contient des instructions pour les robots d'indexation", 
@@ -520,7 +520,7 @@ checklists = {
     "goal": "<ul>\r\n    <li>Permettre aux outils de recherche et d'indexation d'extraire des informations sur les pages et ainsi d'am\u00e9liorer la restitution aux utilisateurs</li>\r\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Le code source de chaque page contient une metadonn\u00e9e qui en d\u00e9crit le contenu", 
@@ -531,29 +531,51 @@ checklists = {
     "goal": "<ul>\r\n    <li>Am\u00e9liorer l'identification visuelle du site et de ses pages</li>\r\n    <li>Faciliter l'identification dans le navigateur et dans les favoris ou signets</li>\r\n    <li>Permettre l'affichage, l'appel, et la m\u00e9morisation \u00e9ventuelle de l'ic\u00f4ne de favori par tous les navigateurs.</li>\r\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Le code source des pages contient un appel valide \u00e0 un ic\u00f4ne de favori.", 
     "solution": "<p>Selon le format choisi pour l'ic\u00f4ne et son emplacement, utilisez un lien du type&nbsp;:</p>\r\n<ul>\r\n    <li><code>&lt;link rel=\"icon\" type=\"image/png\" href=\"/img/favicon.png\" /&gt;</code> (format png, mais aussi jpg, gif, etc)</li>\r\n    <li><code>&lt;link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"/img/favicon.ico\" /&gt;</code> (format ico Microsoft seul reconnu par Internet Explorer)</li>\r\n</ul>", 
     "name": "128"
   }, 
+  "19305": {
+    "goal": "Permettre l'association des cellules avec leurs ent\u00eates dans les tableaux de donn\u00e9es.", 
+    "checklist": {
+      "id": 568, 
+      "name": "Accessibility first step: error detection"
+    }, 
+    "explanation": "", 
+    "description": "Ne pas utiliser un contenu d'attribut headers qui ne correspond \u00e0 aucune valeur d'attribut id pr\u00e9sent dans le m\u00eame tableau", 
+    "solution": "Renseigner les attributs headers des \u00e9l\u00e9ments td avec les valeurs des attributs id des ent\u00eates associ\u00e9es. ", 
+    "name": "65"
+  }, 
   "636": {
     "goal": "<ul>\r\n    <li>\u00c9viter l'ouverture inopin\u00e9e sur le poste client d'un autre logiciel que le navigateur Web.</li>\r\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Les liens provoquant l'ouverture d'un logiciel externe ont un libell\u00e9 explicite.", 
     "solution": "<ul>\r\n    <li>R\u00e9diger les libell\u00e9s de liens concern\u00e9s de mani\u00e8re \u00e0 indiquer le comportement ou \u00e0 permettre de l'anticiper. Par exemple, r\u00e9diger les liens maisl sous la forme d'adresse mail ou de \"Envoyer un mail \u00e0\u2026\".</li>\r\n</ul>", 
     "name": "137"
   }, 
+  "19184": {
+    "goal": "Eviter aux utilisateurs l'obligation de poss\u00e9der un p\u00e9riph\u00e9rique de pointage tel que la souris et d'avoir la capacit\u00e9 de scroller pour interagir avec le site ou avoir acc\u00e8s \u00e0 une information.", 
+    "checklist": {
+      "id": 567, 
+      "name": "Accessibility Second step : risk management"
+    }, 
+    "explanation": "", 
+    "description": "Utiliser le gestionnaire d'\u00e9v\u00e9nement onscroll avec pr\u00e9caution", 
+    "solution": "Ne pas utiliser l'\u00e9v\u00e8nement onscroll ou fournir un moyen d'effectuer la m\u00eame action d'une mani\u00e8re ind\u00e9pendante du p\u00e9riph\u00e9rique d'entr\u00e9e.", 
+    "name": "46"
+  }, 
   "639": {
     "goal": "<ul>\r\n    <li>Permettre l'impression des contenus sous une forme sp\u00e9cifique.</li>\r\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Le site propose au moins une feuille de style d\u00e9di\u00e9e \u00e0 l'impression", 
@@ -564,7 +586,7 @@ checklists = {
     "goal": "<ul>\n    <li>Permettre aux contenus de s'afficher correctement, m\u00eame lorsque les polices pr\u00e9vues ne sont pas pr\u00e9sentes sur le syst\u00e8me de l'utilisateur.</li>\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Une famille g\u00e9n\u00e9rique de police est indiqu\u00e9e comme dernier \u00e9l\u00e9ment de substitution.", 
@@ -575,18 +597,29 @@ checklists = {
     "goal": "<ul>\n    <li>Permettre aux utilisateurs \u00e9quip\u00e9s de navigateurs qui ne g\u00e8rent pas l'agrandissement des polices en taille fixe d'agrandir les polices sans difficult\u00e9.</li>\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "La taille des polices destin\u00e9es \u00e0 l'affichage \u00e9cran est exprim\u00e9e en taille variable et non en taille fixe.", 
     "solution": "<ul>\r\n    <li>Ne pas modifier la taille de la police par d\u00e9faut ou l'indiquer en utilisant une unit\u00e9 proportionnelle aux r\u00e9glages de l'utilisateur(em, ex, %) et non avec une unit\u00e9 d\u00e9pendante du p\u00e9riph\u00e9rique de consultation (px, pt, cm etc)</li>\r\n</ul>", 
     "name": "142"
   }, 
+  "19313": {
+    "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
+    "checklist": {
+      "id": 568, 
+      "name": "Accessibility first step: error detection"
+    }, 
+    "explanation": "", 
+    "description": "Ne pas utiliser l'attribut vlink", 
+    "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
+    "name": "32"
+  }, 
   "645": {
     "goal": "<ul>\r\n    <li>Permettre aux agents utilisateurs d'opter pour le traitement linguistique appropri\u00e9, et notamment&nbsp;:\r\n        <ul>\r\n            <li>la prononciation correcte du contenu par les synth\u00e8ses vocales (lecteurs d'\u00e9cran)/li>\r\n            <li>la traduction pertinente du contenu par les outils de traduction automatis\u00e9s.</li>\r\n        </ul>\r\n    </li>\r\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Le serveur envoie l'indication de la langue principale du contenu.", 
@@ -597,7 +630,7 @@ checklists = {
     "goal": "<ul>\n    <li>Permettre aux utilisateurs d'aides techniques (lecteurs d'\u00e9cran) d'identifier ais\u00e9ment la nature des informations fournie par un tableau.</li>\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Les titres des tableaux de donn\u00e9es sont renseign\u00e9s.", 
@@ -615,22 +648,44 @@ checklists = {
     "solution": "Ne pas utiliser l'attribut target _blank ou&nbsp;indiquer l'ouverture dans une nouvelle fen\u00eatre dans le contenu de l'attribut alt associ\u00e9 \u00e0 l'\u00e9l\u00e9ment area. Exemple : &lt;area alt='France \u2013 nouvelle fen\u00eatre'&gt;&lt;/area&gt;", 
     "name": "4"
   }, 
+  "19308": {
+    "goal": "Permettre l'association des cellules avec leurs ent\u00eates dans les tableaux de donn\u00e9es.", 
+    "checklist": {
+      "id": 568, 
+      "name": "Accessibility first step: error detection"
+    }, 
+    "explanation": "", 
+    "description": "Utiliser un attribut scope ou id pour chaque \u00e9l\u00e9ment th&nbsp; non vide", 
+    "solution": "Utiliser un attribut scope ou id sur les ent\u00eates (th) des tableaux de donn\u00e9es.", 
+    "name": "59"
+  }, 
   "651": {
     "goal": "<ul>\r\n    <li>Fournir un contenu compr\u00e9hensible aux utilisateurs dont l'agent utilisateur ou l'aide technique (lecteur d'\u00e9cran) ne permet pas de restituer la mise en forme initialement pr\u00e9vue \u00e0 l'aide d'un tableau.</li>\r\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "La lin\u00e9arisation des tableaux utilis\u00e9s pour la mise en page ne nuit pas \u00e0 la compr\u00e9hension des contenus", 
     "solution": "<ul>\r\n    <li>Regrouper dans une m\u00eame cellules les informations qui doivent \u00eatre verticalement associ\u00e9es (ne pas les r\u00e9partir dans des cellules plac\u00e9es dans des lignes successives du tableau)</li>\r\n</ul>", 
     "name": "152"
   }, 
+  "19355": {
+    "goal": "", 
+    "checklist": {
+      "id": 568, 
+      "name": "Accessibility first step: error detection"
+    }, 
+    "explanation": "", 
+    "description": "Ne pas utiliser l\u2019\u00e9l\u00e9ment fieldset en dehors d'un \u00e9l\u00e9ment form", 
+    "solution": "", 
+    "name": "70"
+  }, 
   "654": {
     "goal": "<ul>\r\n    <li>Permettre aux utilisateurs qui ne peuvent acc\u00e9der au son ou \u00e0 l'image propos\u00e9es sous forme multim\u00e9dia d'acc\u00e9der \u00e0 une transcription textuelle servant d'alternative</li>\r\n    <li>Permettre l'exploitation de l'information par des robots et notamment&nbsp;: am\u00e9liorer l'indexation et le r\u00e9f\u00e9rencement, permettre son acc\u00e8s via des outils de traduction en ligne</li>\r\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Chaque contenu audio et vid\u00e9o est accompagn\u00e9 de sa transcription textuelle", 
@@ -641,7 +696,7 @@ checklists = {
     "goal": "", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Les styles en ligne sont utilis\u00e9s de mani\u00e8re appropri\u00e9e", 
@@ -652,7 +707,7 @@ checklists = {
     "goal": "<ul>\r\n    <li>Limiter les risques d'interpr\u00e9tation hasardeux du DOM d'un document par des agents utilisateurs diff\u00e9rents</li>\r\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Le code source de chaque page ne comporte pas d'erreur portant sur l'arbre du document ou la syntaxe des balises et attributs.", 
@@ -663,7 +718,7 @@ checklists = {
     "goal": "<ul>\r\n    <li>Favoriser l'adaptation de la mise en forme des contenus par les agents utilisateurs, selon les besoins de l'utilisateur</li>\r\n    <li>All\u00e9ger le poids du code source des pages, en incitant \u00e0 mutualiser les informations de mise en forme gr\u00e2ce \u00e0 CSS</li>\r\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Le code source de chaque page ne contient pas d'\u00e9l\u00e9ments ou d'attributs de pr\u00e9sentation", 
@@ -674,7 +729,7 @@ checklists = {
     "goal": "<ul>\n    <li>Augmenter la vitesse d'affichage de la page</li>\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Les dimensions r\u00e9elles des images sont indiqu\u00e9es dans le code source.", 
@@ -685,7 +740,7 @@ checklists = {
     "goal": "<ul>\r\n    <li>Permettre aux utilisateurs qui ne peuvent ou ne veulent pas activer les scripts d'acc\u00e9der tout de m\u00eame aux contenus</li>\r\n    <li>Favoriser l'exploitation des contenus par des robots</li>\r\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "L'acc\u00e8s aux contenus et services est possible sans le support des scripts", 
@@ -696,7 +751,7 @@ checklists = {
     "goal": "<ul>\n    <li>Permettre une restitution pr\u00e9visible par les agents utilisateurs conformes.</li>\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Le code source des pages est valide au regard de la grammaire choisie", 
@@ -736,11 +791,22 @@ checklists = {
     "solution": "Ne pas utiliser l'attribut target _blank ou&nbsp;indiquer textuellement l'ouverture dans une nouvelle fen\u00eatre dans le formulaire ou sur le bouton permettant de valider le formulaire. Exemple&nbsp;: &lt;input type='submit' value='ok' title='Valider la recherche \u2013 nouvelle fen\u00eatre' /&gt;", 
     "name": "15"
   }, 
+  "19191": {
+    "goal": "Ne pas supprimer le rep\u00e8re visuel que constitue l'encadr\u00e9 pris par les \u00e9l\u00e9ments interactifs lorsqu'ils re\u00e7oivent le focus.", 
+    "checklist": {
+      "id": 567, 
+      "name": "Accessibility Second step : risk management"
+    }, 
+    "explanation": "", 
+    "description": "Utiliser la valeur 0 ou none pour la propri\u00e9t\u00e9 outline avec pr\u00e9caution", 
+    "solution": "Ne pas utiliser la propri\u00e9t\u00e9 outline ou alors, seulement pour accentuer la mani\u00e8re dont sont restitu\u00e9s les \u00e9l\u00e9ments interactifs lorsqu'ils re\u00e7oivent le focus.\r\nExemple&nbsp;:\r\na:focus, input:focus, select:focus, textarea:focus {\r\noutline: 3px solid red !important;\r\n}", 
+    "name": "30"
+  }, 
   "676": {
     "goal": "<ul>\r\n    <li>Fournir aux utilisateurs un acc\u00e8s direct et imm\u00e9diat aux contenus, m\u00eame lorsque l'administrateur du site d\u00e9cide de proposer une animation ou une publicit\u00e9 pr\u00e9alable.</li>\r\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Le d\u00e9roulement des animations ne bloque pas la navigation ou l'acc\u00e8s aux contenus", 
@@ -751,7 +817,7 @@ checklists = {
     "goal": "<ul>\n    <li>Donner aux utilisateurs la possibilit\u00e9 de s'\u00e9quiper du ou des plugins n\u00e9cessaires </li>\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Un lien d'information est propos\u00e9 pour chaque plugin n\u00e9cessaire \u00e0 la consultation du contenu", 
@@ -762,7 +828,7 @@ checklists = {
     "goal": "<ul>\n    <li>S'assurer qu'au moins un des deux processus de validation a bien lieu</li>\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Les validations de formulaires c\u00f4t\u00e9 client ont une alternative c\u00f4t\u00e9 serveur.", 
@@ -773,7 +839,7 @@ checklists = {
     "goal": "<ul>\r\n    <li>Permettre aux utilisateurs d'identifier sans ambigu\u00eft\u00e9 les champs de formulaire et la nature des infos \u00e0 saisir</li>\r\n    <li>Pr\u00e9venir les erreurs de saisie</li>\r\n    <li>Faciliter et acc\u00e9l\u00e9rer l'usage du formulaire</li>\r\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Chaque \u00e9tiquette de formulaire est visuellement rattach\u00e9e au champ qu'elle d\u00e9crit", 
@@ -784,7 +850,7 @@ checklists = {
     "goal": "<p>Des champs de formulaire doivent \u00eatre regroup\u00e9s avec le balisage appropri\u00e9 lorsque leurs \u00e9tiquettes ne suffisent pas \u00e0 indiquer clairement le r\u00f4le de chaque champ concern\u00e9. Le regroupement permet alors de compl\u00e9ter ces \u00e9tiquettes par une l\u00e9gende commune. Ceci permet&nbsp;:</p>\r\n<ul>\r\n    <li>de faciliter le remplissage du formulaire&nbsp;:</li>\r\n        <ul>\r\n            <li>en contextualisant les informations demand\u00e9es</li>\r\n            <li>en d\u00e9coupant l'ensemble des informations demand\u00e9es en sous-groupes</li>\r\n        </ul>\r\n    <li>de donner aux aides techniques le moyen d'expliciter les \u00e9tiquettes des champs de formulaire qui le n\u00e9cessitent \u00e0 l'aide d'une l\u00e9gende attribu\u00e9e au groupe de champs</li>\r\n    <li>d'obtenir un rendu appropri\u00e9 des regroupements de champs de formulaire par tous les navigateurs</li>\r\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Les champs de formulaire qui n\u00e9cessitent une information commune sont regroup\u00e9s sous une m\u00eame l\u00e9gende", 
@@ -795,7 +861,7 @@ checklists = {
     "goal": "<ul>\r\n    <li>Permettre aux aides techniques de restituer \u00e0 l'utilisateur une liste&nbsp;:\r\n        <ul>\r\n             <li>dont l'organisation soit clairement perceptible</li>\r\n             <li>dont le contenu est navigable de mani\u00e8re ais\u00e9e</li>\r\n        </ul>\r\n    </li>\r\n    <li>Favoriser un rendu appropri\u00e9 des listes d\u00e9roulantes complexe dans tous les navigateurs.</li>\r\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Les \u00e9l\u00e9ments d'une liste d\u00e9roulante qui peuvent \u00eatre regroup\u00e9s le sont de mani\u00e8re appropri\u00e9e", 
@@ -806,12 +872,23 @@ checklists = {
     "goal": "<ul>\n    <li>Permettre aux utilisateurs, handicap\u00e9s ou pas d'acc\u00e9der rapidement \u00e0 l'item de liste recherch\u00e9</li>\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Les listes d'options de formulaires sont pr\u00e9sent\u00e9es dans un ordre identifiable", 
     "solution": "<ul>\r\n    <li>Jean-Marc Hardy propose plusieurs types de classement possibles&nbsp;: <a href=\"http://www.redaction.be/exemples/canevaslogiques_nov_03.htm\">www.redaction.be/exemples/canevaslogiques_nov_03.htm</a></li>\r\n</ul>", 
     "name": "185"
+  }, 
+  "19290": {
+    "goal": "Eviter l'utilisation d'\u00e9l\u00e9ments \u00e0 des fins de pr\u00e9sentation.", 
+    "checklist": {
+      "id": 568, 
+      "name": "Accessibility first step: error detection"
+    }, 
+    "explanation": "", 
+    "description": "Ne pas utiliser d'\u00e9l\u00e9ment p vide", 
+    "solution": "Supprimer les \u00e9l\u00e9ments &lt;p&gt; qui ne poss\u00e8dent pas de contenu. Utiliser les propri\u00e9t\u00e9s des feuilles de styles margin et padding pour d\u00e9terminer les \u00e9carts entres les diff\u00e9rents \u00e9l\u00e9ments.", 
+    "name": "29"
   }, 
   "19120": {
     "goal": "Permettre d'\u00e9viter la redondance lorsqu'un lien est compos\u00e9 \u00e0 la fois de texte et d'une image.", 
@@ -824,11 +901,22 @@ checklists = {
     "solution": "Mettre un alt=\"\" sur l'\u00e9l\u00e9ment img lorsque ce dernier est inclus dans un lien textuel dont le libell\u00e9 permet d\u00e9j\u00e0 de conna\u00eetre la destination du lien.", 
     "name": "6"
   }, 
+  "11976": {
+    "goal": "", 
+    "checklist": {
+      "id": 425, 
+      "name": "Accessiweb 2.1 D\u00e9ploy\u00e9e"
+    }, 
+    "explanation": "", 
+    "description": "Pour chaque tableau de mise en forme, le contenu lin\u00e9aris\u00e9 reste-t-il compr\u00e9hensible ?", 
+    "solution": "", 
+    "name": "5.3.1"
+  }, 
   "690": {
     "goal": "<ul>\r\n    <li>Mettre \u00e0 disposition des informations synth\u00e9tiques et lisibles par les machines sur l'ensemble des contenus propos\u00e9s</li>\r\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Le site propose un fichier sitemap indiquant les contenus \u00e0 explorer", 
@@ -868,16 +956,16 @@ checklists = {
     "solution": "Ajouter un attribut id sur l'\u00e9l\u00e9ment.", 
     "name": "19"
   }, 
-  "19128": {
-    "goal": "Permettre l'association des champs de formulaire avec les \u00e9tiquettes qui les d\u00e9crivent.", 
+  "696": {
+    "goal": "<ul>\r\n    <li>Fournir aux utilisateurs une continuit\u00e9 dans la navigation</li>\r\n    <li>\u00c9viter les changements de contexte</li>\r\n</ul>", 
     "checklist": {
-      "id": 567, 
-      "name": "Accessibility Second step : risk management"
+      "id": 11, 
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
-    "description": "Utiliser les \u00e9l\u00e9ments input de type radio&nbsp; sans attribut id avec pr\u00e9caution", 
-    "solution": "Ajouter un attribut id sur l'\u00e9l\u00e9ment.", 
-    "name": "20"
+    "description": "La navigation sur le site ne provoque pas d'ouvertures de nouvelles fen\u00eatres", 
+    "solution": "", 
+    "name": "197"
   }, 
   "19130": {
     "goal": "Permettre l'association des champs de formulaire avec les \u00e9tiquettes qui les d\u00e9crivent.", 
@@ -894,7 +982,7 @@ checklists = {
     "goal": "<ul>\r\n    <li>Am\u00e9liorer la lisibilit\u00e9 des contenus</li>\r\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Le nombre de polices utilis\u00e9es sur le site est inf\u00e9rieur ou \u00e9gal \u00e0 trois (sauf pr\u00e9sentation de travaux ou produits graphiques).", 
@@ -916,18 +1004,29 @@ checklists = {
     "goal": "<ul>\r\n    <li>Permettre la consultation sur les t\u00e9l\u00e9phones portables et smartphones. Ce qui ne se limite pas \u00e0 l'iPhone.</li>\r\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Le site propose une ou plusieurs feuilles de style d\u00e9di\u00e9es aux terminaux mobiles", 
     "solution": "<ul>\r\n    <li>Fournir une feuille de style sp\u00e9cifique pour le type de media handheld</li>\r\n</ul>", 
     "name": "206"
   }, 
+  "19147": {
+    "goal": "Permettre la restitution de la nature des contenus (ici une liste de d\u00e9finition) aux  utilisateurs qui ne per\u00e7oivent pas la mise en page originale.\r\nEviter l'utilisation d'\u00e9l\u00e9ment en fonction de la mani\u00e8re dont ils sont restitu\u00e9s visuellement.", 
+    "checklist": {
+      "id": 567, 
+      "name": "Accessibility Second step : risk management"
+    }, 
+    "explanation": "", 
+    "description": "Utiliser avec pr\u00e9caution des \u00e9l\u00e9ments p successifs commen\u00e7ant chacun leur contenu par -, \u2013, \u2014, * ou \u2022", 
+    "solution": "Utiliser les \u00e9l\u00e9ments ul et li pour baliser les listes.", 
+    "name": "2"
+  }, 
   "709": {
     "goal": "<ul>\r\n    <li>Permettre un copier coller des contenus sans mise en forme en majuscules</li>\r\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Les mises en majuscules \u00e0 des fins d\u00e9coratives sont effectu\u00e9es \u00e0 l'aide des styles", 
@@ -949,7 +1048,7 @@ checklists = {
     "goal": "<ul>\r\n    <li>Permettre le chargement prioritaire des contenus</li>\r\n    <li>Limiter le d\u00e9lai d'affichage des contenus </li>\r\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Les appels aux scripts sont plac\u00e9s apr\u00e8s le contenu", 
@@ -960,29 +1059,29 @@ checklists = {
     "goal": "<ul>\r\n    <li>Minimiser la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger par l'utilisateur</li>\r\n    <li>Am\u00e9liorer les performances</li>\r\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Les fonctions de scripts sont plac\u00e9s dans des fichiers externes.", 
     "solution": "<ul>\r\n    <li>N'utiliser le contenu de l'\u00e9l\u00e9ment <code>&lt;script&gt;</code> que pour renseigner des variables ou initialiser un script et d\u00e9porter les fonctions dans les fichiers Javascript externes</li></ul>", 
     "name": "215"
   }, 
-  "19147": {
-    "goal": "Permettre la restitution de la nature des contenus (ici une liste de d\u00e9finition) aux  utilisateurs qui ne per\u00e7oivent pas la mise en page originale.\r\nEviter l'utilisation d'\u00e9l\u00e9ment en fonction de la mani\u00e8re dont ils sont restitu\u00e9s visuellement.", 
+  "715": {
+    "goal": "<ul>\r\n    <li>Acc\u00e9l\u00e9rer la vitesse d'affichage des pages</li>\r\n    <li>Am\u00e9liorer les performances</li>\r\n    <li>Diminuer la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger</li>\r\n</ul>", 
     "checklist": {
-      "id": 567, 
-      "name": "Accessibility Second step : risk management"
+      "id": 11, 
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
-    "description": "Utiliser avec pr\u00e9caution des \u00e9l\u00e9ments p successifs commen\u00e7ant chacun leur contenu par -, \u2013, \u2014, * ou \u2022", 
-    "solution": "Utiliser les \u00e9l\u00e9ments ul et li pour baliser les listes.", 
-    "name": "2"
+    "description": "Les scripts sont minifi\u00e9s", 
+    "solution": "<ul>\r\n    <li>Supprimer les espaces non n\u00e9cessaires et les commentaires dans les fichiers Javascript, par exemple en recourant \u00e0 des outils tels que <a href=\"http://crockford.com/javascript/jsmin\">crockford.com/javascript/jsmin</a> ou <a href=\"http://developer.yahoo.com/yui/compressor/\">developer.yahoo.com/yui/compressor/</a></li>\r\n</ul>", 
+    "name": "216"
   }, 
   "716": {
     "goal": "<ul>\r\n    <li>Minimiser la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger par l'utilisateur</li>\r\n    <li>Am\u00e9liorer les performances </li>\r\n</ul>", 
     "checklist": {
       "id": 11, 
-      "name": "Opquast V2"
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
     "description": "Les informations de style sont minifi\u00e9es", 
@@ -1066,16 +1165,16 @@ checklists = {
     "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
     "name": "26"
   }, 
-  "19171": {
-    "goal": "Permettre un comportement \u00e9quivalent et/ou l'acc\u00e8s \u00e0 une information \u00e9quivalente quel que soit le p\u00e9riph\u00e9rique d'entr\u00e9e des utilisateurs", 
+  "12155": {
+    "goal": "", 
     "checklist": {
-      "id": 567, 
-      "name": "Accessibility Second step : risk management"
+      "id": 425, 
+      "name": "Accessiweb 2.1 D\u00e9ploy\u00e9e"
     }, 
     "explanation": "", 
-    "description": "Utiliser avec pr\u00e9caution le gestionnaire d'\u00e9v\u00e9nement onblur lorsque vous n'utilisez pas le gestionnaire d'\u00e9v\u00e9nement onmouseout", 
-    "solution": "Lors de l'utilisation de l'\u00e9v\u00e9nement onblur, inclure un comportement \u00e9quivalent sur l'\u00e9v\u00e9nement onmouseout ou pr\u00e9voir un autre \u00e9l\u00e9ment permettant de r\u00e9aliser la m\u00eame action via la souris", 
-    "name": "33"
+    "description": "Dans chaque page Web, chaque script  qui provoque un changement brusque de luminosit\u00e9 ou un effet de flash v\u00e9rifie-t-il une de ces conditions ?", 
+    "solution": "", 
+    "name": "13.15.2"
   }, 
   "19172": {
     "goal": "Eviter aux utilisateurs un changement de contexte sans validation explicite de leur part.", 
@@ -1132,16 +1231,16 @@ checklists = {
     "solution": "Ne pas utiliser l'\u00e9v\u00e8nement ondbclick ou fournir un moyen d'effectuer la m\u00eame action d'une mani\u00e8re ind\u00e9pendante du p\u00e9riph\u00e9rique d'entr\u00e9e.", 
     "name": "38"
   }, 
-  "19177": {
-    "goal": "Permettre un comportement \u00e9quivalent et/ou l'acc\u00e8s \u00e0 une information \u00e9quivalente quel que soit le p\u00e9riph\u00e9rique d'entr\u00e9e des utilisateurs", 
+  "502": {
+    "goal": "<ul>\r\n    <li>Permettre aux utilisateurs qui le souhaitent de visualiser la structure du contenu de la page</li>\r\n    <li>Permettre aux machines et aux outils d'indexation d'extraire le plan de chaque page</li>\r\n    <li>Am\u00e9liorer le r\u00e9f\u00e9rencement en facilitant l'interpr\u00e9tation du contenu par les robots d'indexation</li>\r\n</ul>", 
     "checklist": {
-      "id": 567, 
-      "name": "Accessibility Second step : risk management"
+      "id": 11, 
+      "name": "Qualit\u00e9 Web - Opquast V2"
     }, 
     "explanation": "", 
-    "description": "Utiliser avec pr\u00e9caution le gestionnaire d'\u00e9v\u00e9nement onfocus lorsque vous n'utilisez pas le gestionnaire d'\u00e9v\u00e9nement onmouseover", 
-    "solution": "Lors de l'utilisation de l'\u00e9v\u00e9nement onfocus, inclure un comportement \u00e9quivalent sur l'\u00e9v\u00e9nement onmouseover ou pr\u00e9voir un autre \u00e9l\u00e9ment permettant de r\u00e9aliser la m\u00eame action via la souris", 
-    "name": "39"
+    "description": "Le contenu de chaque page est organis\u00e9 selon une structure de titres et sous-titres hi\u00e9rarchis\u00e9e", 
+    "solution": "<ul>\r\n    <li>Structurer le document en titres et sous-titres \u00e0 l'aide des \u00e9l\u00e9ments HTML <code>&lt;h1&gt;</code> \u00e0 <code>&lt;h6&gt;</code></li>\r\n    <li>Veiller \u00e0 ce que la structure ne comporte pas de \"trous\"</li>\r\n    <li>Veiller \u00e0 ce que chaque page comporte au moins un titre de niveau 1 avec l'\u00e9l\u00e9ment <code>&lt;h1&gt;</code></li>\r\n</ul>", 
+    "name": "3"
   }, 
   "19178": {
     "goal": "Conserver le focus sur les \u00e9l\u00e9ments le recevant.", 
@@ -1209,16 +1308,16 @@ checklists = {
     "solution": "Lors de l'utilisation de l'\u00e9v\u00e9nement onmouseover, inclure un comportement \u00e9quivalent sur l'\u00e9v\u00e9nement onfocus ou pr\u00e9voir un autre \u00e9l\u00e9ment permettant de r\u00e9aliser la m\u00eame action via le clavier", 
     "name": "45"
   }, 
-  "19184": {
-    "goal": "Eviter aux utilisateurs l'obligation de poss\u00e9der un p\u00e9riph\u00e9rique de pointage tel que la souris et d'avoir la capacit\u00e9 de scroller pour interagir avec le site ou avoir acc\u00e8s \u00e0 une information.", 
+  "12016": {
+    "goal": "", 
     "checklist": {
-      "id": 567, 
-      "name": "Accessibility Second step : risk management"
+      "id": 425, 
+      "name": "Accessiweb 2.1 D\u00e9ploy\u00e9e"
     }, 
     "explanation": "", 
-    "description": "Utiliser le gestionnaire d'\u00e9v\u00e9nement onscroll avec pr\u00e9caution", 
-    "solution": "Ne pas utiliser l'\u00e9v\u00e8nement onscroll ou fournir un moyen d'effectuer la m\u00eame action d'une mani\u00e8re ind\u00e9pendante du p\u00e9riph\u00e9rique d'entr\u00e9e.", 
-    "name": "46"
+    "description": "Un script ne doit pas supprimer le focus d'un \u00e9l\u00e9ment qui le re\u00e7oit. Cette r\u00e8gle est-elle respect\u00e9e (hors cas particuliers) ?", 
+    "solution": "", 
+    "name": "7.3.3"
   }, 
   "19185": {
     "goal": "Eviter aux utilisateurs tout \u00e9v\u00e9nement d\u00e9clench\u00e9 automatiquement au bout d'un certain temps.", 
@@ -1253,6 +1352,17 @@ checklists = {
     "solution": "Ne pas utiliser cette m\u00e9thode ou alors pr\u00e9venir au pr\u00e9alable l'utilisateur de ce comportement.", 
     "name": "49"
   }, 
+  "12020": {
+    "goal": "", 
+    "checklist": {
+      "id": 425, 
+      "name": "Accessiweb 2.1 D\u00e9ploy\u00e9e"
+    }, 
+    "explanation": "", 
+    "description": "Chaque script qui provoque une alerte non sollicit\u00e9e est-il contr\u00f4lable par l'utilisateur (hors cas particuliers) ?", 
+    "solution": "", 
+    "name": "7.6.1"
+  }, 
   "19190": {
     "goal": "Permettre aux utilisateurs d'agrandir le texte avec les zooms textuels des agents utilisateurs.", 
     "checklist": {
@@ -1264,16 +1374,16 @@ checklists = {
     "solution": "Utiliser les unit\u00e9s em, %, ou les mots-cl\u00e9s (large, medium, small, etc.) pour d\u00e9finir les valeurs de la propri\u00e9t\u00e9 font-size pour tous les \u00e9l\u00e9ments ou, au minimum, sur les \u00e9l\u00e9ments de formulaire.", 
     "name": "29"
   }, 
-  "19191": {
-    "goal": "Ne pas supprimer le rep\u00e8re visuel que constitue l'encadr\u00e9 pris par les \u00e9l\u00e9ments interactifs lorsqu'ils re\u00e7oivent le focus.", 
+  "19171": {
+    "goal": "Permettre un comportement \u00e9quivalent et/ou l'acc\u00e8s \u00e0 une information \u00e9quivalente quel que soit le p\u00e9riph\u00e9rique d'entr\u00e9e des utilisateurs", 
     "checklist": {
       "id": 567, 
       "name": "Accessibility Second step : risk management"
     }, 
     "explanation": "", 
-    "description": "Utiliser la valeur 0 ou none pour la propri\u00e9t\u00e9 outline avec pr\u00e9caution", 
-    "solution": "Ne pas utiliser la propri\u00e9t\u00e9 outline ou alors, seulement pour accentuer la mani\u00e8re dont sont restitu\u00e9s les \u00e9l\u00e9ments interactifs lorsqu'ils re\u00e7oivent le focus.\r\nExemple&nbsp;:\r\na:focus, input:focus, select:focus, textarea:focus {\r\noutline: 3px solid red !important;\r\n}", 
-    "name": "30"
+    "description": "Utiliser avec pr\u00e9caution le gestionnaire d'\u00e9v\u00e9nement onblur lorsque vous n'utilisez pas le gestionnaire d'\u00e9v\u00e9nement onmouseout", 
+    "solution": "Lors de l'utilisation de l'\u00e9v\u00e9nement onblur, inclure un comportement \u00e9quivalent sur l'\u00e9v\u00e9nement onmouseout ou pr\u00e9voir un autre \u00e9l\u00e9ment permettant de r\u00e9aliser la m\u00eame action via la souris", 
+    "name": "33"
   }, 
   "19192": {
     "goal": "Favoriser le parcours oculaire des utilisateurs lorsque les yeux reviennent \u00e0 la ligne en conservant les diff\u00e9rences de longueur de ligne qui, de fait, serviront de rep\u00e8re visuel.", 
@@ -1308,16 +1418,16 @@ checklists = {
     "solution": "", 
     "name": "12"
   }, 
-  "19197": {
+  "12029": {
     "goal": "", 
     "checklist": {
-      "id": 567, 
-      "name": "Accessibility Second step : risk management"
+      "id": 425, 
+      "name": "Accessiweb 2.1 D\u00e9ploy\u00e9e"
     }, 
     "explanation": "", 
-    "description": "Utiliser les valeurs none et hidden des propri\u00e9t\u00e9s display et visibility avec pr\u00e9caution", 
+    "description": "Pour chaque page Web ayant un titre de page (balise title), le contenu de cette balise est-il pertinent ?", 
     "solution": "", 
-    "name": "28"
+    "name": "8.6.1"
   }, 
   "19200": {
     "goal": "", 
@@ -1330,6 +1440,17 @@ checklists = {
     "solution": "", 
     "name": "5"
   }, 
+  "19359": {
+    "goal": "", 
+    "checklist": {
+      "id": 568, 
+      "name": "Accessibility first step: error detection"
+    }, 
+    "explanation": "", 
+    "description": "Ne pas utiliser un contenu d'attribut alt identique au texte pr\u00e9sent dans un lien si l'\u00e9l\u00e9ment img est un descendant d'\u00e9l\u00e9ment a contenant \u00e9galement du texte", 
+    "solution": "", 
+    "name": "42"
+  }, 
   "19205": {
     "goal": "", 
     "checklist": {
@@ -1341,6 +1462,28 @@ checklists = {
     "solution": "", 
     "name": "24"
   }, 
+  "503": {
+    "goal": "<ul>\r\n    <li>Permettre aux utilisateurs de conserver la maitrise de leur environnement de travail</li>\r\n    <li>\u00c9viter des interruptions ou des pertes d'information en cours de lecture, notamment pour les utilisateurs \u00e9quip\u00e9s de lecteurs d'\u00e9cran</li>\r\n</ul>", 
+    "checklist": {
+      "id": 11, 
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    }, 
+    "explanation": "", 
+    "description": "Le site n'impose pas de redirection ou de rafraichissement automatique c\u00f4t\u00e9 client", 
+    "solution": "<p>Ne pas utiliser&nbsp;:</p>\r\n<ul>\r\n    <li>l'\u00e9l\u00e9ment <code>&lt;meta http-equiv=\"refresh\"&gt;</code></li>\r\n</ul></li></ul>", 
+    "name": "4"
+  }, 
+  "19219": {
+    "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
+    "checklist": {
+      "id": 568, 
+      "name": "Accessibility first step: error detection"
+    }, 
+    "explanation": "", 
+    "description": "Ne pas utiliser l'attribut alink", 
+    "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
+    "name": "52"
+  }, 
   "19212": {
     "goal": "", 
     "checklist": {
@@ -1351,6 +1494,17 @@ checklists = {
     "description": "Utiliser avec pr\u00e9caution les \u00e9l\u00e9ments td quand l'ensemble des cellules d'une colonne contient du texte en gras", 
     "solution": "", 
     "name": "13"
+  }, 
+  "12045": {
+    "goal": "", 
+    "checklist": {
+      "id": 425, 
+      "name": "Accessiweb 2.1 D\u00e9ploy\u00e9e"
+    }, 
+    "explanation": "", 
+    "description": "Dans chaque page Web, la signification de chaque abr\u00e9viation est-elle pertinente ?", 
+    "solution": "", 
+    "name": "9.4.2"
   }, 
   "19214": {
     "goal": "", 
@@ -1385,16 +1539,16 @@ checklists = {
     "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
     "name": "27"
   }, 
-  "19219": {
-    "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
+  "12051": {
+    "goal": "", 
     "checklist": {
-      "id": 568, 
-      "name": "Accessibility first step: error detection"
+      "id": 425, 
+      "name": "Accessiweb 2.1 D\u00e9ploy\u00e9e"
     }, 
     "explanation": "", 
-    "description": "Ne pas utiliser l'attribut alink", 
-    "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
-    "name": "52"
+    "description": "Dans chaque page Web, l'information reste-t-elle pr\u00e9sente lorsque les feuilles de styles sont d\u00e9sactiv\u00e9es ?", 
+    "solution": "", 
+    "name": "10.2.1"
   }, 
   "19220": {
     "goal": "Permettre la restitution d'un contenu alternatif aux utilisateurs qui ne peuvent pas percevoir le contenu de l'\u00e9l\u00e9ment.", 
@@ -1660,16 +1814,16 @@ checklists = {
     "solution": "Ajouter un contenu \u00e0 l'\u00e9l\u00e9ment.", 
     "name": "16"
   }, 
-  "19250": {
-    "goal": "Eviter les trous dans la hi\u00e9rarchie des titres.", 
+  "12082": {
+    "goal": "", 
     "checklist": {
-      "id": 568, 
-      "name": "Accessibility first step: error detection"
+      "id": 425, 
+      "name": "Accessiweb 2.1 D\u00e9ploy\u00e9e"
     }, 
     "explanation": "", 
-    "description": "Utiliser un \u00e9l\u00e9ment h2, h3, h4, h5 ou h6 comme premier \u00e9l\u00e9ment de titrage pr\u00e9c\u00e9dant l'\u00e9l\u00e9ment h3 dans l'ordre du code source", 
-    "solution": "Pr\u00e9c\u00e9der chaque \u00e9l\u00e9ment h3 d'un \u00e9l\u00e9ment h2, h3, h4, h5 ou h6.", 
-    "name": "21"
+    "description": "Chaque \u00e9tiquette (balise label) associ\u00e9e \u00e0 un champ de formulaire (balise input de type text, password, checkbox, radio, file ou balises textarea et select) v\u00e9rifie-t-elle ces conditions ?", 
+    "solution": "", 
+    "name": "11.1.3"
   }, 
   "19251": {
     "goal": "Eviter \u00e0 l'utilisateur d'avoir une hi\u00e9rarchie de titre incompl\u00e8te ou incoh\u00e9rente", 
@@ -1715,16 +1869,16 @@ checklists = {
     "solution": "Pr\u00e9c\u00e9der chaque \u00e9l\u00e9ment h5 d'un \u00e9l\u00e9ment h4, h5 ou h6.", 
     "name": "23"
   }, 
-  "19255": {
-    "goal": "Eviter \u00e0 l'utilisateur d'avoir une hi\u00e9rarchie de titre incompl\u00e8te ou incoh\u00e9rente", 
+  "12087": {
+    "goal": "", 
     "checklist": {
-      "id": 568, 
-      "name": "Accessibility first step: error detection"
+      "id": 425, 
+      "name": "Accessiweb 2.1 D\u00e9ploy\u00e9e"
     }, 
     "explanation": "", 
-    "description": "Ne pas utiliser d'\u00e9l\u00e9ment h6 vide", 
-    "solution": "Ajouter un contenu \u00e0 l'\u00e9l\u00e9ment.", 
-    "name": "19"
+    "description": "Dans chaque formulaire, chaque \u00e9tiquette de champ et son champ associ\u00e9 sont-ils accol\u00e9s ?", 
+    "solution": "", 
+    "name": "11.4.1"
   }, 
   "19256": {
     "goal": "Eviter les trous dans la hi\u00e9rarchie des titres.", 
@@ -1858,28 +2012,6 @@ checklists = {
     "solution": "Renseigner le contenu de l'attribut alt avec la destination ou la fonction du bouton d'action.", 
     "name": "40"
   }, 
-  "19273": {
-    "goal": "Eviter \u00e0 l'utilisateur d'avoir des \u00e9l\u00e9ments interactifs dont il ne peut connaitre la destination ou l'action", 
-    "checklist": {
-      "id": 568, 
-      "name": "Accessibility first step: error detection"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser d'attribut value vide pour un \u00e9l\u00e9ment input de type submit", 
-    "solution": "Mettre le texte correspondant \u00e0 l'action associ\u00e9e dans l'attribut value. Exemple : &lt;input type=''submit'' value=''envoyer le message''&gt;", 
-    "name": "67"
-  }, 
-  "19275": {
-    "goal": "Permettre l'association des \u00e9tiquettes avec les champs auxquelles elles se rapportent.", 
-    "checklist": {
-      "id": 568, 
-      "name": "Accessibility first step: error detection"
-    }, 
-    "explanation": "", 
-    "description": "Utiliser l'attribut for pour l'\u00e9l\u00e9ment label", 
-    "solution": "Ajouter un attribut for sur l'\u00e9l\u00e9ment label. Exemple&nbsp;: &lt;label for='champ-xxx'&gt;xxx&lt;/label&gt;", 
-    "name": "72"
-  }, 
   "19276": {
     "goal": "Eviter \u00e0 l'utilisateur la restitution d'\u00e9tiquette associ\u00e9e \u00e0 aucun champ de formulaire.", 
     "checklist": {
@@ -1891,1611 +2023,16 @@ checklists = {
     "solution": "Mettre dans l'attribut for la valeur de l'identifiant du champ associ\u00e9 au label", 
     "name": "73"
   }, 
-  "19277": {
-    "goal": "Eviter \u00e0 l'utilisateur la restitution d'\u00e9tiquette associ\u00e9e \u00e0 aucun champ de formulaire.", 
+  "19273": {
+    "goal": "Eviter \u00e0 l'utilisateur d'avoir des \u00e9l\u00e9ments interactifs dont il ne peut connaitre la destination ou l'action", 
     "checklist": {
       "id": 568, 
       "name": "Accessibility first step: error detection"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser un contenu d'attribut for qui ne correspond \u00e0 aucune valeur d'attribut id existant&nbsp; dans le m\u00eame \u00e9l\u00e9ment form", 
-    "solution": "Corriger la valeur de l'attribut for afin de la faire correspondre au champ associ\u00e9 au label", 
-    "name": "74"
-  }, 
-  "19278": {
-    "goal": "Permettre la d\u00e9claration de la langue du document et l'adaptation des aides techniques \u00e0 celle-ci.", 
-    "checklist": {
-      "id": 568, 
-      "name": "Accessibility first step: error detection"
-    }, 
-    "explanation": "", 
-    "description": "Utiliser un code de langue conforme dans l'attribut lang", 
-    "solution": "Donner une valeur conforme au code de langue dans l'attribut lang. Exemple&nbsp;: \u201cfr\u201c pour le fran\u00e7ais, \u201cen\u201c pour l'anglais. Voir http://www.loc.gov/standards/iso639-2/php/code_list.php pour la liste compl\u00e8te des codes de langue.", 
-    "name": "7"
-  }, 
-  "19280": {
-    "goal": "Eviter \u00e0 l'utilisateur la pr\u00e9sence de groupement d'\u00e9l\u00e9ments de formulaire qu'il ne pourra pas identifier.", 
-    "checklist": {
-      "id": 568, 
-      "name": "Accessibility first step: error detection"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser d'\u00e9l\u00e9ment legend vide", 
-    "solution": "Renseigner l'\u00e9l\u00e9ment legend avec le titre du groupe form\u00e9 d'\u00e9l\u00e9ments de formulaire.", 
-    "name": "71"
-  }, 
-  "19281": {
-    "goal": "Permettre la restitution sans erreur du nombre d'\u00e9l\u00e9ments composant une liste.\r\nEviter l'utilisation d'\u00e9l\u00e9ments \u00e0 des fins de pr\u00e9sentation.", 
-    "checklist": {
-      "id": 568, 
-      "name": "Accessibility first step: error detection"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser d'\u00e9l\u00e9ment li vide", 
-    "solution": "Supprimer les \u00e9l\u00e9ments &lt;li&gt; qui ne poss\u00e8dent pas de contenu. Utiliser les propri\u00e9t\u00e9s des feuilles de styles margin et padding pour d\u00e9terminer les \u00e9carts entres les diff\u00e9rents \u00e9l\u00e9ments.", 
-    "name": "26"
-  }, 
-  "19282": {
-    "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
-    "checklist": {
-      "id": 568, 
-      "name": "Accessibility first step: error detection"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser l'attribut link", 
-    "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
-    "name": "34"
-  }, 
-  "19283": {
-    "goal": "Eviter l'utilisation d'\u00e9l\u00e9ments obsol\u00e8tes que les agents utilisateurs de sauraient pas interpr\u00e9ter.", 
-    "checklist": {
-      "id": 568, 
-      "name": "Accessibility first step: error detection"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser l'\u00e9l\u00e9ment listing", 
-    "solution": "Utiliser l'\u00e9l\u00e9ment pre au lieu de listing.", 
-    "name": "57"
-  }, 
-  "19284": {
-    "goal": "Permettre d'\u00e9viter la pr\u00e9sence de contenu d\u00e9filant qu'il n'est pas possible d'arr\u00eater.", 
-    "checklist": {
-      "id": 568, 
-      "name": "Accessibility first step: error detection"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser l'\u00e9l\u00e9ment marquee", 
-    "solution": "Eviter les contenus d\u00e9filant ou utiliser un syst\u00e8me de d\u00e9filement des contenus que les utilisateurs peuvent contr\u00f4ler avec la souris et avec le clavier.", 
-    "name": "68"
-  }, 
-  "19285": {
-    "goal": "Eviter aux utilisateurs un rechargement de la page qu'il ne pourrait pas ma\u00eetriser. ", 
-    "checklist": {
-      "id": 568, 
-      "name": "Accessibility first step: error detection"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser l'\u00e9l\u00e9ment meta avec un attribut http-equiv ayant la valeur refresh", 
-    "solution": "Eviter les rechargements automatiques des pages ou utiliser un syst\u00e8me de rechargement o\u00f9 les utilisateurs sont inform\u00e9s du fonctionnement et o\u00f9 ils peuvent d\u00e9sactiver ce rechargement avec la souris et avec le clavier.", 
-    "name": "5"
-  }, 
-  "19287": {
-    "goal": "Permettre la restitution d'un titre au groupe form\u00e9 par optgroup.", 
-    "checklist": {
-      "id": 568, 
-      "name": "Accessibility first step: error detection"
-    }, 
-    "explanation": "", 
-    "description": "Utiliser un attribut label pour chaque \u00e9l\u00e9ment optgroup", 
-    "solution": "Ajouter un attribut label aux \u00e9l\u00e9ments optgroup. Exemple&nbsp;: &lt;optgroup label='france'&gt;...&lt;/optgroup&gt;", 
-    "name": "75"
-  }, 
-  "19288": {
-    "goal": "Permettre la distinction des diff\u00e9rents groupes form\u00e9s.", 
-    "checklist": {
-      "id": 568, 
-      "name": "Accessibility first step: error detection"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser un contenu d'attribut label identique pour plusieurs \u00e9l\u00e9ment optgroup d'un m\u00eame \u00e9l\u00e9ment select", 
-    "solution": "D\u00e9terminer un titre diff\u00e9rent pour chaque groupe form\u00e9 par les \u00e9l\u00e9ments optgroup.", 
-    "name": "76"
-  }, 
-  "19289": {
-    "goal": "Permettre la distinction des diff\u00e9rents groupes form\u00e9s.", 
-    "checklist": {
-      "id": 568, 
-      "name": "Accessibility first step: error detection"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser d'attribut label vide sur l'\u00e9l\u00e9ment optgroup", 
-    "solution": "D\u00e9terminer le nom du groupe form\u00e9 par optgroup et renseigner l'attribut label avec ce nom.", 
-    "name": "77"
-  }, 
-  "19290": {
-    "goal": "Eviter l'utilisation d'\u00e9l\u00e9ments \u00e0 des fins de pr\u00e9sentation.", 
-    "checklist": {
-      "id": 568, 
-      "name": "Accessibility first step: error detection"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser d'\u00e9l\u00e9ment p vide", 
-    "solution": "Supprimer les \u00e9l\u00e9ments &lt;p&gt; qui ne poss\u00e8dent pas de contenu. Utiliser les propri\u00e9t\u00e9s des feuilles de styles margin et padding pour d\u00e9terminer les \u00e9carts entres les diff\u00e9rents \u00e9l\u00e9ments.", 
-    "name": "29"
-  }, 
-  "19292": {
-    "goal": "Eviter l'utilisation d'\u00e9l\u00e9ments obsol\u00e8tes que les agents utilisateurs de sauraient pas interpr\u00e9ter.", 
-    "checklist": {
-      "id": 568, 
-      "name": "Accessibility first step: error detection"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser l'\u00e9l\u00e9ment plaintext", 
-    "solution": "Utiliser l'\u00e9l\u00e9ment pre au lieu de plaintext.", 
-    "name": "64"
-  }, 
-  "19295": {
-    "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
-    "checklist": {
-      "id": 568, 
-      "name": "Accessibility first step: error detection"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser l'\u00e9l\u00e9ment strike", 
-    "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
-    "name": "56"
-  }, 
-  "19296": {
-    "goal": "Permettre l'identification des tableaux de donn\u00e9es et la restitution des contenus permettant de les caract\u00e9riser.", 
-    "checklist": {
-      "id": 568, 
-      "name": "Accessibility first step: error detection"
-    }, 
-    "explanation": "", 
-    "description": "Utiliser un \u00e9l\u00e9ment caption comme premier enfant de l'\u00e9l\u00e9ment table si le tableau contient au moins un \u00e9l\u00e9ment th", 
-    "solution": "Positionner un \u00e9l\u00e9ment caption tout de suite apr\u00e8s l'\u00e9l\u00e9ment table lorsqu'il s'agit d'un tableau de donn\u00e9es.", 
-    "name": "48"
-  }, 
-  "19298": {
-    "goal": "Permettre l'identification des tableaux de donn\u00e9es et la restitution des contenus permettant de les caract\u00e9riser.", 
-    "checklist": {
-      "id": 568, 
-      "name": "Accessibility first step: error detection"
-    }, 
-    "explanation": "", 
-    "description": "Utiliser au moins un \u00e9l\u00e9ment th dans l'\u00e9l\u00e9ment table contenant un \u00e9l\u00e9ment caption ou ayant un attribut summary non vide", 
-    "solution": "Modifier le code de mani\u00e8re \u00e0 utiliser l'\u00e9l\u00e9ment th \u00e0 la place de l'\u00e9l\u00e9ment td afin de d\u00e9clarer les ent\u00eates des tableaux de donn\u00e9es. Si c'est un tableau de mise en forme supprimer le caption ou le summary non vide", 
-    "name": "58"
-  }, 
-  "19300": {
-    "goal": "Permettre aux utilisateurs de distinguer le sujet d'un tableau de donn\u00e9es de la mani\u00e8re dont il est construit.", 
-    "checklist": {
-      "id": 568, 
-      "name": "Accessibility first step: error detection"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser un contenu d'attribut summary identique au contenu de l'\u00e9l\u00e9ment caption", 
-    "solution": "Mettre dans l'\u00e9l\u00e9ment caption un contenu servant \u00e0 titrer le tableau et dans l'attribut summary un contenu pour d\u00e9crire l'organisation du tableau", 
-    "name": "53"
-  }, 
-  "19301": {
-    "goal": "Permettre l'identification des tableaux de donn\u00e9es et la restitution des contenus permettant de les caract\u00e9riser.", 
-    "checklist": {
-      "id": 568, 
-      "name": "Accessibility first step: error detection"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser d'attribut summary vide sur l'\u00e9l\u00e9ment table si le tableau contient un \u00e9l\u00e9ment th ou caption", 
-    "solution": "Inclure un contenu \u00e0 l'attribut summary de l'\u00e9l\u00e9ment table lorsqu'il s'agit d'un tableau de donn\u00e9es.", 
-    "name": "54"
-  }, 
-  "19302": {
-    "goal": "Permettre aux utilisateurs de diff\u00e9rencier les tableaux de donn\u00e9es des tableaux de mise en page en n'utilisant pas les caract\u00e9ristiques sp\u00e9cifiques aux premiers dans les seconds.", 
-    "checklist": {
-      "id": 568, 
-      "name": "Accessibility first step: error detection"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser d'attribut summary sur un \u00e9l\u00e9ment table contenant uniquement des cellules td", 
-    "solution": "Ne pas utiliser d'attribut summary dans les tableaux de mis en page.", 
-    "name": "55"
-  }, 
-  "19303": {
-    "goal": "Permettre l'association des cellules avec leurs ent\u00eates dans les tableaux de donn\u00e9es.", 
-    "checklist": {
-      "id": 568, 
-      "name": "Accessibility first step: error detection"
-    }, 
-    "explanation": "", 
-    "description": "Mettre un attribut headers sur l'\u00e9l\u00e9ment td s'il se rapporte \u00e0 un \u00e9l\u00e9ment th ayant un attribut id", 
-    "solution": "Utiliser un attribut headers sur les cellules td des tableaux de donn\u00e9es dont les ent\u00eates (th) contiennent un attribut id.", 
-    "name": "63"
-  }, 
-  "19305": {
-    "goal": "Permettre l'association des cellules avec leurs ent\u00eates dans les tableaux de donn\u00e9es.", 
-    "checklist": {
-      "id": 568, 
-      "name": "Accessibility first step: error detection"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser un contenu d'attribut headers qui ne correspond \u00e0 aucune valeur d'attribut id pr\u00e9sent dans le m\u00eame tableau", 
-    "solution": "Renseigner les attributs headers des \u00e9l\u00e9ments td avec les valeurs des attributs id des ent\u00eates associ\u00e9es. ", 
-    "name": "65"
-  }, 
-  "19306": {
-    "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
-    "checklist": {
-      "id": 568, 
-      "name": "Accessibility first step: error detection"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser l'attribut text", 
-    "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
-    "name": "33"
-  }, 
-  "19308": {
-    "goal": "Permettre l'association des cellules avec leurs ent\u00eates dans les tableaux de donn\u00e9es.", 
-    "checklist": {
-      "id": 568, 
-      "name": "Accessibility first step: error detection"
-    }, 
-    "explanation": "", 
-    "description": "Utiliser un attribut scope ou id pour chaque \u00e9l\u00e9ment th&nbsp; non vide", 
-    "solution": "Utiliser un attribut scope ou id sur les ent\u00eates (th) des tableaux de donn\u00e9es.", 
-    "name": "59"
-  }, 
-  "19309": {
-    "goal": "Permettre l'association des cellules avec leurs ent\u00eates dans les tableaux de donn\u00e9es.", 
-    "checklist": {
-      "id": 568, 
-      "name": "Accessibility first step: error detection"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser une valeur d'attribut scope autre que row ou col", 
-    "solution": "Utiliser la valeur row sur l'attribut scope des ent\u00eates de ligne et la valeur col sur les ent\u00eates de colonnes.", 
-    "name": "60"
-  }, 
-  "19310": {
-    "goal": "Permettre la restitution du titre de la page.", 
-    "checklist": {
-      "id": 568, 
-      "name": "Accessibility first step: error detection"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser d'\u00e9l\u00e9ment title vide", 
-    "solution": "D\u00e9terminer le titre de la page et renseigner l'\u00e9l\u00e9ment title avec ce titre.", 
-    "name": "4"
-  }, 
-  "19311": {
-    "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
-    "checklist": {
-      "id": 568, 
-      "name": "Accessibility first step: error detection"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser l'\u00e9l\u00e9ment tt", 
-    "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
-    "name": "62"
-  }, 
-  "19313": {
-    "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
-    "checklist": {
-      "id": 568, 
-      "name": "Accessibility first step: error detection"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser l'attribut vlink", 
-    "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
-    "name": "32"
-  }, 
-  "19314": {
-    "goal": "Eviter l'utilisation d'\u00e9l\u00e9ments obsol\u00e8tes que les agents utilisateurs de sauraient pas interpr\u00e9ter.", 
-    "checklist": {
-      "id": 568, 
-      "name": "Accessibility first step: error detection"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser l'\u00e9l\u00e9ment xmp", 
-    "solution": "Utiliser l'\u00e9l\u00e9ment pre au lieu de xmp.", 
-    "name": "28"
-  }, 
-  "19338": {
-    "goal": "", 
-    "checklist": {
-      "id": 568, 
-      "name": "Accessibility first step: error detection"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser d'attribut alt vide sur un \u00e9l\u00e9ment area dot\u00e9 d'un attribut href", 
-    "solution": "", 
-    "name": "41"
-  }, 
-  "19348": {
-    "goal": "", 
-    "checklist": {
-      "id": 568, 
-      "name": "Accessibility first step: error detection"
-    }, 
-    "explanation": "", 
-    "description": "Utiliser un \u00e9l\u00e9ment button ou un \u00e9l\u00e9ment input de type submit, image ou button dans chaque \u00e9l\u00e9ment form", 
-    "solution": "", 
-    "name": "66"
-  }, 
-  "19353": {
-    "goal": "", 
-    "checklist": {
-      "id": 568, 
-      "name": "Accessibility first step: error detection"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser une valeur d'attribut dir autre que ltr, rtl ou vide", 
-    "solution": "", 
-    "name": "8"
-  }, 
-  "19355": {
-    "goal": "", 
-    "checklist": {
-      "id": 568, 
-      "name": "Accessibility first step: error detection"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser l\u2019\u00e9l\u00e9ment fieldset en dehors d'un \u00e9l\u00e9ment form", 
-    "solution": "", 
-    "name": "70"
-  }, 
-  "19359": {
-    "goal": "", 
-    "checklist": {
-      "id": 568, 
-      "name": "Accessibility first step: error detection"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser un contenu d'attribut alt identique au texte pr\u00e9sent dans un lien si l'\u00e9l\u00e9ment img est un descendant d'\u00e9l\u00e9ment a contenant \u00e9galement du texte", 
-    "solution": "", 
-    "name": "42"
-  }, 
-  "19360": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Utiliser une dtd conforme aux recommandations du W3C avant l'\u00e9l\u00e9ment html", 
-    "solution": "", 
-    "name": "1"
-  }, 
-  "19361": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Utiliser un attribut title pour l'\u00e9l\u00e9ment iframe", 
-    "solution": "", 
-    "name": "2"
-  }, 
-  "19362": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Utiliser un \u00e9l\u00e9ment title enfant de l'\u00e9l\u00e9ment head", 
-    "solution": "", 
-    "name": "3"
-  }, 
-  "19363": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Utiliser un attribut alt pour l'\u00e9l\u00e9ment img", 
-    "solution": "", 
-    "name": "4"
-  }, 
-  "19364": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Les URL des liens internes contiennent exclusivement des caract\u00e8res alphanum\u00e9riques ou consid\u00e9r\u00e9s comme s\u00fbrs.", 
-    "solution": "", 
-    "name": "5"
-  }, 
-  "19365": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Utiliser un attribut alt pour l'\u00e9l\u00e9ment area", 
-    "solution": "", 
-    "name": "6"
-  }, 
-  "19366": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Utiliser un attribut alt pour l'\u00e9l\u00e9ment applet", 
-    "solution": "", 
-    "name": "7"
-  }, 
-  "19367": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Utiliser un attribut alt pour chaque \u00e9l\u00e9ment input de type image", 
-    "solution": "", 
-    "name": "8"
-  }, 
-  "19368": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Utiliser une URI comme valeur de l'attribut longdesc", 
-    "solution": "", 
-    "name": "9"
-  }, 
-  "19369": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Le code source de chaque page contient une metadonn\u00e9e qui d\u00e9finit le jeu de caract\u00e8res.", 
-    "solution": "", 
-    "name": "10"
-  }, 
-  "19370": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser l'\u00e9l\u00e9ment meta avec un attribut http-equiv ayant la valeur refresh", 
-    "solution": "", 
-    "name": "11"
-  }, 
-  "19371": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Utiliser au moins un \u00e9l\u00e9ment th dans l'\u00e9l\u00e9ment table contenant un \u00e9l\u00e9ment caption ou ayant un attribut summary non vide", 
-    "solution": "", 
-    "name": "12"
-  }, 
-  "19372": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Utiliser un attribut scope ou id pour chaque \u00e9l\u00e9ment th non vide", 
-    "solution": "", 
-    "name": "13"
-  }, 
-  "19373": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Utiliser un attribut lang pour l'\u00e9l\u00e9ment html", 
-    "solution": "", 
-    "name": "14"
-  }, 
-  "19374": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser une valeur d'attribut scope autre que row ou col", 
-    "solution": "", 
-    "name": "15"
-  }, 
-  "19375": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser un contenu d'attribut headers qui ne correspond \u00e0 aucune valeur d'attribut id pr\u00e9sent dans le m\u00eame tableau", 
-    "solution": "", 
-    "name": "16"
-  }, 
-  "19376": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Utiliser un code de langue conforme dans l'attribut lang", 
-    "solution": "", 
-    "name": "17"
-  }, 
-  "19377": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Utiliser l'attribut for pour l'\u00e9l\u00e9ment label", 
-    "solution": "", 
-    "name": "18"
-  }, 
-  "19378": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser d'attribut for vide pour l'\u00e9l\u00e9ment label", 
-    "solution": "", 
-    "name": "19"
-  }, 
-  "19379": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser un contenu d'attribut for qui ne correspond \u00e0 aucune valeur d'attribut id existant dans le m\u00eame \u00e9l\u00e9ment form", 
-    "solution": "", 
-    "name": "20"
-  }, 
-  "19380": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Les hyperliens contenus dans les fils de syndication sont absolus.", 
-    "solution": "", 
-    "name": "21"
-  }, 
-  "19381": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Utiliser un attribut title pour chaque \u00e9l\u00e9ment frame", 
-    "solution": "", 
-    "name": "22"
-  }, 
-  "19382": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Les vignettes ne sont pas des images de taille sup\u00e9rieure redimensionn\u00e9es c\u00f4t\u00e9 client.", 
-    "solution": "", 
-    "name": "23"
-  }, 
-  "19383": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser de syntaxes d'attribut erron\u00e9es ni d'imbrications d'\u00e9l\u00e9ments non conformes dans l'\u00e9l\u00e9ment html", 
-    "solution": "", 
-    "name": "24"
-  }, 
-  "19384": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Les URL contiennent des termes pr\u00e9sents dans les titres de pages.", 
-    "solution": "", 
-    "name": "25"
-  }, 
-  "19385": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Utiliser un \u00e9l\u00e9ment caption comme premier enfant de l'\u00e9l\u00e9ment table si le tableau contient au moins un \u00e9l\u00e9ment th", 
-    "solution": "", 
-    "name": "26"
-  }, 
-  "19386": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser d'\u00e9l\u00e9ment caption dans un \u00e9l\u00e9ment table contenant uniquement des cellules td", 
-    "solution": "", 
-    "name": "27"
-  }, 
-  "19387": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser d'attribut summary sur un \u00e9l\u00e9ment table contenant uniquement des cellules td", 
-    "solution": "", 
-    "name": "28"
-  }, 
-  "19388": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Mettre un attribut headers sur l'\u00e9l\u00e9ment td s'il se rapporte \u00e0 un \u00e9l\u00e9ment th ayant un attribut id", 
-    "solution": "", 
-    "name": "29"
-  }, 
-  "19389": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Utiliser un attribut label pour chaque \u00e9l\u00e9ment optgroup", 
-    "solution": "", 
-    "name": "30"
-  }, 
-  "19390": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Le code source des pages contient un appel valide \u00e0 un ic\u00f4ne de favori.", 
-    "solution": "", 
-    "name": "31"
-  }, 
-  "19391": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Le code source des pages est valide au regard de la grammaire choisie", 
-    "solution": "", 
-    "name": "32"
-  }, 
-  "19392": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Les appels aux scripts sont plac\u00e9s apr\u00e8s le contenu", 
-    "solution": "", 
-    "name": "33"
-  }, 
-  "19393": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser une valeur d'attribut dir autre que ltr, rtl ou vide", 
-    "solution": "", 
-    "name": "34"
-  }, 
-  "19394": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Le code source des fils de syndication indique leur fr\u00e9quence de mise \u00e0 jour", 
-    "solution": "", 
-    "name": "35"
-  }, 
-  "19395": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Utiliser au moins un \u00e9l\u00e9ment h1 descendant de l'\u00e9l\u00e9ment body", 
-    "solution": "", 
-    "name": "36"
-  }, 
-  "19396": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Utiliser un \u00e9l\u00e9ment button ou un \u00e9l\u00e9ment input de type submit, image ou button dans chaque \u00e9l\u00e9ment form", 
-    "solution": "", 
-    "name": "37"
-  }, 
-  "19397": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Le site n'emploie pas la technique des jeux de cadres", 
-    "solution": "", 
-    "name": "38"
-  }, 
-  "19398": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Utiliser un \u00e9l\u00e9ment h1, h2, h3, h4, h5 ou h6 comme premier \u00e9l\u00e9ment de titrage pr\u00e9c\u00e9dant l'\u00e9l\u00e9ment h2 dans l'ordre du code source", 
-    "solution": "", 
-    "name": "39"
-  }, 
-  "19399": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Utiliser un \u00e9l\u00e9ment h2, h3, h4, h5 ou h6 comme premier \u00e9l\u00e9ment de titrage pr\u00e9c\u00e9dant l'\u00e9l\u00e9ment h3 dans l'ordre du code source", 
-    "solution": "", 
-    "name": "40"
-  }, 
-  "19400": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Les fonctions de scripts sont plac\u00e9s dans des fichiers externes.", 
-    "solution": "", 
-    "name": "41"
-  }, 
-  "19401": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Utiliser un \u00e9l\u00e9ment h3, h4, h5 ou h6 comme premier \u00e9l\u00e9ment de titrage pr\u00e9c\u00e9dant l'\u00e9l\u00e9ment h4 dans l'ordre du code source", 
-    "solution": "", 
-    "name": "42"
-  }, 
-  "19402": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Utiliser un \u00e9l\u00e9ment h4, h5 ou h6 comme premier \u00e9l\u00e9ment de titrage pr\u00e9c\u00e9dant l'\u00e9l\u00e9ment h5 dans l'ordre du code source", 
-    "solution": "", 
-    "name": "43"
-  }, 
-  "19403": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Utiliser un \u00e9l\u00e9ment h5 ou h6 comme premier \u00e9l\u00e9ment de titrage pr\u00e9c\u00e9dant l'\u00e9l\u00e9ment h6 dans l'ordre du code source", 
-    "solution": "", 
-    "name": "44"
-  }, 
-  "19404": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Utiliser un \u00e9l\u00e9ment dt comme premier enfant de l'\u00e9l\u00e9ment dl", 
-    "solution": "", 
-    "name": "45"
-  }, 
-  "19405": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Si le site utilise la technique des jeux de cadres, l'\u00e9l\u00e9ment NOFRAME est utilis\u00e9.", 
-    "solution": "", 
-    "name": "46"
-  }, 
-  "19406": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Utiliser un \u00e9l\u00e9ment legend enfant de l'\u00e9l\u00e9ment fieldset", 
-    "solution": "", 
-    "name": "47"
-  }, 
-  "19407": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Le contenu ne comporte pas de tableaux imbriqu\u00e9s", 
-    "solution": "", 
-    "name": "48"
-  }, 
-  "19408": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Le soulignement est r\u00e9serv\u00e9 aux hyperliens.", 
-    "solution": "", 
-    "name": "49"
-  }, 
-  "19409": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Les contenus HTML sont mis en forme \u00e0 l'aide de styles CSS externalis\u00e9s.", 
-    "solution": "", 
-    "name": "50"
-  }, 
-  "19410": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser l'\u00e9l\u00e9ment bgsound", 
-    "solution": "", 
-    "name": "51"
-  }, 
-  "19411": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser l'\u00e9l\u00e9ment blink", 
-    "solution": "", 
-    "name": "52"
-  }, 
-  "19412": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser l'\u00e9l\u00e9ment listing", 
-    "solution": "", 
-    "name": "53"
-  }, 
-  "19413": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser l'\u00e9l\u00e9ment marquee", 
-    "solution": "", 
-    "name": "54"
-  }, 
-  "19414": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser l'\u00e9l\u00e9ment plaintext", 
-    "solution": "", 
-    "name": "55"
-  }, 
-  "19415": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser l'\u00e9l\u00e9ment strike", 
-    "solution": "", 
-    "name": "56"
-  }, 
-  "19416": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser l'\u00e9l\u00e9ment xmp", 
-    "solution": "", 
-    "name": "57"
-  }, 
-  "19417": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser l'attribut align", 
-    "solution": "", 
-    "name": "58"
-  }, 
-  "19418": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser l'attribut alink", 
-    "solution": "", 
-    "name": "59"
-  }, 
-  "19419": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser l'attribut background", 
-    "solution": "", 
-    "name": "60"
-  }, 
-  "19420": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser l'attribut bgcolor", 
-    "solution": "", 
-    "name": "61"
-  }, 
-  "19421": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser l'attribut border", 
-    "solution": "", 
-    "name": "62"
-  }, 
-  "19422": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser l'attribut link", 
-    "solution": "", 
-    "name": "63"
-  }, 
-  "19423": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser l'attribut text", 
-    "solution": "", 
-    "name": "64"
-  }, 
-  "19424": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser l'attribut vlink", 
-    "solution": "", 
-    "name": "65"
-  }, 
-  "19425": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Le site propose au moins une feuille de style d\u00e9di\u00e9e \u00e0 l'impression", 
-    "solution": "", 
-    "name": "66"
-  }, 
-  "19426": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "La taille des polices destin\u00e9es \u00e0 l'affichage \u00e9cran est exprim\u00e9e en taille variable et non en taille fixe.", 
-    "solution": "", 
-    "name": "67"
-  }, 
-  "19427": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Les formats d'images utilis\u00e9s sont indexables par les principaux moteurs de recherche d'image.", 
-    "solution": "", 
-    "name": "68"
-  }, 
-  "19428": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser l'\u00e9l\u00e9ment basefont", 
-    "solution": "", 
-    "name": "69"
-  }, 
-  "19429": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser l'\u00e9l\u00e9ment center", 
-    "solution": "", 
-    "name": "70"
-  }, 
-  "19430": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser l'\u00e9l\u00e9ment font", 
-    "solution": "", 
-    "name": "71"
-  }, 
-  "19431": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser l'\u00e9l\u00e9ment tt", 
-    "solution": "", 
-    "name": "72"
-  }, 
-  "19432": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Une famille g\u00e9n\u00e9rique de police est indiqu\u00e9e comme dernier \u00e9l\u00e9ment de substitution.", 
-    "solution": "", 
-    "name": "73"
-  }, 
-  "19433": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser l'\u00e9l\u00e9ment fieldset en dehors d'un \u00e9l\u00e9ment form", 
-    "solution": "", 
-    "name": "74"
-  }, 
-  "19434": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Les mises en majuscules \u00e0 des fins d\u00e9coratives sont effectu\u00e9es \u00e0 l'aide des styles CSS.", 
-    "solution": "", 
-    "name": "75"
-  }, 
-  "19435": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser un attribut title vide pour l'\u00e9l\u00e9ment frame", 
-    "solution": "", 
-    "name": "76"
-  }, 
-  "19436": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser un attribut title vide sur l'\u00e9l\u00e9ment iframe", 
-    "solution": "", 
-    "name": "77"
-  }, 
-  "19437": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Les titres de section HTML comportent des mots clefs contenus dans la balise meta keywords.", 
-    "solution": "", 
-    "name": "78"
-  }, 
-  "19438": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser d'\u00e9l\u00e9ment h1 vide", 
-    "solution": "", 
-    "name": "79"
-  }, 
-  "19439": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser d'\u00e9l\u00e9ment h2 vide", 
-    "solution": "", 
-    "name": "80"
-  }, 
-  "19440": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser d'\u00e9l\u00e9ment h3 vide", 
-    "solution": "", 
-    "name": "81"
-  }, 
-  "19441": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser d'\u00e9l\u00e9ment h4 vide", 
-    "solution": "", 
-    "name": "82"
-  }, 
-  "19442": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser d'\u00e9l\u00e9ment h5 vide", 
-    "solution": "", 
-    "name": "83"
-  }, 
-  "19443": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser d'\u00e9l\u00e9ment h6 vide", 
-    "solution": "", 
-    "name": "84"
-  }, 
-  "19444": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser d'\u00e9l\u00e9ment li vide", 
-    "solution": "", 
-    "name": "85"
-  }, 
-  "19445": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser d'\u00e9l\u00e9ment a vide \u00e0 l'exception des ancres", 
-    "solution": "", 
-    "name": "86"
-  }, 
-  "19446": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser d'\u00e9l\u00e9ment button vide", 
-    "solution": "", 
-    "name": "87"
-  }, 
-  "19447": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser d'attribut alt vide si l'\u00e9l\u00e9ment est le seul enfant d'un \u00e9l\u00e9ment a ou button", 
-    "solution": "", 
-    "name": "88"
-  }, 
-  "19448": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser d'attribut alt vide pour un \u00e9l\u00e9ment input de type image", 
-    "solution": "", 
-    "name": "89"
-  }, 
-  "19449": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser d'attribut alt vide sur un \u00e9l\u00e9ment area dot\u00e9 d'un attribut href", 
-    "solution": "", 
-    "name": "90"
-  }, 
-  "19450": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser d'attribut summary vide sur l'\u00e9l\u00e9ment table si le tableau contient un \u00e9l\u00e9ment th ou caption", 
-    "solution": "", 
-    "name": "91"
-  }, 
-  "19451": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
     }, 
     "explanation": "", 
     "description": "Ne pas utiliser d'attribut value vide pour un \u00e9l\u00e9ment input de type submit", 
-    "solution": "", 
-    "name": "92"
-  }, 
-  "19452": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser d'\u00e9l\u00e9ment p vide", 
-    "solution": "", 
-    "name": "93"
-  }, 
-  "19453": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser d'\u00e9l\u00e9ment title vide", 
-    "solution": "", 
-    "name": "94"
-  }, 
-  "19454": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser un contenu d'attribut alt identique au texte pr\u00e9sent dans un lien si l'\u00e9l\u00e9ment img est un descendant d'\u00e9l\u00e9ment a contenant \u00e9galement du texte", 
-    "solution": "", 
-    "name": "95"
-  }, 
-  "19455": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser un contenu d'attribut alt identique pour plusieurs \u00e9l\u00e9ments area ayant un attribut href diff\u00e9rent", 
-    "solution": "", 
-    "name": "96"
-  }, 
-  "19456": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser un contenu d'\u00e9l\u00e9ment caption identique au contenu de l'attribut summary", 
-    "solution": "", 
-    "name": "97"
-  }, 
-  "19457": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser d'\u00e9l\u00e9ment caption vide", 
-    "solution": "", 
-    "name": "98"
-  }, 
-  "19458": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser un contenu d'attribut summary identique au contenu de l'\u00e9l\u00e9ment caption", 
-    "solution": "", 
-    "name": "99"
-  }, 
-  "19459": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser d'\u00e9l\u00e9ment legend vide", 
-    "solution": "", 
-    "name": "100"
-  }, 
-  "19460": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser un contenu d'attribut label identique pour plusieurs \u00e9l\u00e9ment optgroup d'un m\u00eame \u00e9l\u00e9ment select", 
-    "solution": "", 
-    "name": "101"
-  }, 
-  "19461": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Ne pas utiliser d'attribut label vide sur l'\u00e9l\u00e9ment optgroup", 
-    "solution": "", 
-    "name": "102"
-  }, 
-  "19462": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "La longueur des alternatives textuelles est inf\u00e9rieure ou \u00e9gale \u00e0 80 caract\u00e8res.", 
-    "solution": "", 
-    "name": "103"
-  }, 
-  "19463": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Le contenu de chaque \u00e9l\u00e9ment meta keywords est inf\u00e9rieur ou \u00e9gal \u00e0 10 termes.", 
-    "solution": "", 
-    "name": "104"
-  }, 
-  "19464": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Le contenu de chaque \u00e9l\u00e9ment TITLE est inf\u00e9rieur ou \u00e9gal \u00e0 80 caract\u00e8res", 
-    "solution": "", 
-    "name": "105"
-  }, 
-  "19465": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Le nombre de caract\u00e8res contenus dans la balise META Description est inf\u00e9rieur ou \u00e9gal \u00e0 250.", 
-    "solution": "", 
-    "name": "106"
-  }, 
-  "19466": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Les termes pr\u00e9sents dans l'alternative textuelle des images sont \u00e9galement pr\u00e9sents dans le contenu de la page.", 
-    "solution": "", 
-    "name": "107"
-  }, 
-  "19467": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Le serveur envoie un code HTTP 404 pour les ressources non trouv\u00e9es.", 
-    "solution": "", 
-    "name": "108"
-  }, 
-  "19468": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "La racine du site contient des instructions pour les robots d'indexation.", 
-    "solution": "", 
-    "name": "109"
-  }, 
-  "19469": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Les ent\u00eates envoy\u00e9s par le serveur contiennent les informations relatives au jeu de caract\u00e8res employ\u00e9", 
-    "solution": "", 
-    "name": "110"
-  }, 
-  "19470": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Le serveur envoie les informations permettant la mise en cache des contenus.", 
-    "solution": "", 
-    "name": "111"
-  }, 
-  "19471": {
-    "goal": "", 
-    "checklist": {
-      "id": 569, 
-      "name": "Qualite"
-    }, 
-    "explanation": "", 
-    "description": "Le serveur transmet des contenus compress\u00e9s aux clients qui les acceptent", 
-    "solution": "", 
-    "name": "112"
-  }, 
-  "19073": {
-    "goal": "Permettre \u00e0 l'utilisateur de pr\u00e9voir le comportement des liens qui ouvrent une nouvelle fen\u00eatre.", 
-    "checklist": {
-      "id": 567, 
-      "name": "Accessibility Second step : risk management"
-    }, 
-    "explanation": "", 
-    "description": "Utiliser avec pr\u00e9caution l'attribut target avec la valeur _blank pour l'\u00e9l\u00e9ment a", 
-    "solution": "Ne pas utiliser l'attribut target ou&nbsp;: \r\nIndiquer le comportement du lien dans le libell\u00e9 du lien (contenu de l'\u00e9l\u00e9ment &lt;a&gt;) ou dans l'attribut title.\r\nExemple : &lt;a href=\"http://www.google.fr\" target=\"_blank\"&gt;Site de google (nouvelle fen\u00eatre)&lt;/a&gt;\r\nExemple : &lt;a href=\" http://www.google.fr\" target=\"_blank\" title=\"Site de google (nouvelle fen\u00eatre)\"&gt;Site de google&lt;/a&gt;\r\nAvertissement&nbsp;: le contenu de l'attribut title doit reprendre \u00e9galement le libell\u00e9 du lien. (exemple incorrect&nbsp;: &lt;a href=\" http://www.google.fr\" target=\"_blank\" title=\"nouvelle fen\u00eatre\"&gt;Site de google&lt;/a&gt;)", 
-    "name": "3"
+    "solution": "Mettre le texte correspondant \u00e0 l'action associ\u00e9e dans l'attribut value. Exemple : &lt;input type=''submit'' value=''envoyer le message''&gt;", 
+    "name": "67"
   }, 
   "10058": {
     "goal": "<ul><li><h5>1.1.1 : Contenu non textuel : (A)</h5><br />Rendre le contenu non textuel accessible sous forme d'une alternative textuelle exploitable quel que soit le mode de perception de l'utilisateur (visuel, auditif, tactile).<br><br>Le contenu des \u00e9l\u00e9ments non textuels ne sera pas perceptible pour diff\u00e9rentes cat\u00e9gories d'utilisateurs tels que :<br><br><ul><li>Les personnes handicap\u00e9es visuelles acc\u00e9dant au site via la synth\u00e8se vocale d'un lecteur d'\u00e9cran,</li><li>Les utilisateurs ayant d\u00e9sactiv\u00e9 l'affichage des \u00e9l\u00e9ments graphiques ou multim\u00e9dias, pour r\u00e9duire notamment les temps de t\u00e9l\u00e9chargement des pages en bas d\u00e9bit.<br></li></ul><br>La pr\u00e9sence d'alternatives textuelles aux contenus non textuels permet \u00e9galement \u00e0 des robots d'indexation d'en exploiter l'information, ou \u00e0 des traducteurs automatiques d'en traduire le sens.</li></ul>", 
@@ -3507,6 +2044,17 @@ checklists = {
     "description": "Pr\u00e9sence de l'attribut alt.", 
     "solution": "<p> Tout \u00e9l\u00e9ment : </p><ul> <li> <code>img</code>, </li> <li> <code>area</code>, </li> <li> <code>input type='image'</code>, </li> <li> <code>applet</code>, </li> <li>tout code javascript g\u00e9n\u00e9rant un des \u00e9l\u00e9ments pr\u00e9c\u00e9dant. </li> </ul><br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable. </li>\r\n<li>Si l'\u00e9l\u00e9ment n'est pas un captcha ou ne fait pas parti d'un test qui deviendrait inutile si l'alternative textuelle \u00e9tait pr\u00e9sente, poursuivre le test, sinon le test est non applicable. </li>", 
     "name": "[IMA]-01"
+  }, 
+  "19255": {
+    "goal": "Eviter \u00e0 l'utilisateur d'avoir une hi\u00e9rarchie de titre incompl\u00e8te ou incoh\u00e9rente", 
+    "checklist": {
+      "id": 568, 
+      "name": "Accessibility first step: error detection"
+    }, 
+    "explanation": "", 
+    "description": "Ne pas utiliser d'\u00e9l\u00e9ment h6 vide", 
+    "solution": "Ajouter un contenu \u00e0 l'\u00e9l\u00e9ment.", 
+    "name": "19"
   }, 
   "10060": {
     "goal": "<ul><li><h5>1.1.1 : Contenu non textuel : (A)</h5><br />Rendre le contenu non textuel accessible sous forme d'une alternative textuelle exploitable quel que soit le mode de perception de l'utilisateur (visuel, auditif, tactile).<br><br>Le contenu des \u00e9l\u00e9ments non textuels ne sera pas perceptible pour diff\u00e9rentes cat\u00e9gories d'utilisateurs tels que :<br><br><ul><li>Les personnes handicap\u00e9es visuelles acc\u00e9dant au site via la synth\u00e8se vocale d'un lecteur d'\u00e9cran,</li><li>Les utilisateurs ayant d\u00e9sactiv\u00e9 l'affichage des \u00e9l\u00e9ments graphiques ou multim\u00e9dias, pour r\u00e9duire notamment les temps de t\u00e9l\u00e9chargement des pages en bas d\u00e9bit.<br></li></ul><br>La pr\u00e9sence d'alternatives textuelles aux contenus non textuels permet \u00e9galement \u00e0 des robots d'indexation d'en exploiter l'information, ou \u00e0 des traducteurs automatiques d'en traduire le sens.</li></ul>", 
@@ -3596,6 +2144,17 @@ checklists = {
     "solution": "<p> Tout \u00e9l\u00e9ment : </p><ul> <li> <code>a</code>, </li> <li> <code>area</code>, </li> <li> <code>applet</code>,</li><li> <code>object</code>,</li><li> <code>embed</code>,</li><li>tout code javascript g\u00e9n\u00e9rant un des \u00e9l\u00e9ments pr\u00e9c\u00e9dents ou d\u00e9clenchant un t\u00e9l\u00e9chargement. </li> </ul><br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si l'\u00e9l\u00e9ment permet de t\u00e9l\u00e9charger ou de consulter un contenu visuel anim\u00e9, sonore ou un m\u00e9dia synchronis\u00e9 porteur d'informations, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si le contenu visuel anim\u00e9, sonore ou le m\u00e9dia synchronis\u00e9 n'est pas une alternative anim\u00e9e, sonore ou synchronis\u00e9e \u00e0  un contenu textuel pr\u00e9sent dans la page,  qui est identifi\u00e9e en tant que tel et qui n'apporte pas plus d'information que le contenu textuel, poursuivre le test, sinon le test est non applicable.</li>", 
     "name": "[MUL]-02"
   }, 
+  "19284": {
+    "goal": "Permettre d'\u00e9viter la pr\u00e9sence de contenu d\u00e9filant qu'il n'est pas possible d'arr\u00eater.", 
+    "checklist": {
+      "id": 568, 
+      "name": "Accessibility first step: error detection"
+    }, 
+    "explanation": "", 
+    "description": "Ne pas utiliser l'\u00e9l\u00e9ment marquee", 
+    "solution": "Eviter les contenus d\u00e9filant ou utiliser un syst\u00e8me de d\u00e9filement des contenus que les utilisateurs peuvent contr\u00f4ler avec la souris et avec le clavier.", 
+    "name": "68"
+  }, 
   "10069": {
     "goal": "<ul><li><h5>1.2.5 : Audio-description (pr\u00e9-enregistr\u00e9e) : (AA)</h5><br />Permettre aux utilisateurs en situation de handicap visuel de percevoir l'information visuelle v\u00e9hicul\u00e9e par les contenus multim\u00e9dia.<br><br>Toutes les aides techniques ne sont pas en mesure de lire\r\nautomatiquement la description textuelle des contenus multim\u00e9dias. Il\r\nest donc n\u00e9cessaire de la compl\u00e9ter d'une description audio. Ainsi, une\r\npersonne pr\u00e9sentant une d\u00e9ficience visuelle ou ayant des probl\u00e8mes de\r\ncompr\u00e9hension de l'\u00e9crit pourra profiter de cette description audio.</li></ul>", 
     "checklist": {
@@ -3673,6 +2232,39 @@ checklists = {
     "solution": "<p> Tout \u00e9l\u00e9ment : </p><ul> <li> <code>a</code>, </li> <li> <code>applet</code>, </li> <li> <code>object</code>, </li> <li> <code>embed</code>, </li>  </ul><br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si l'\u00e9l\u00e9ment permet de t\u00e9l\u00e9charger ou de restituer un m\u00e9dia synchronis\u00e9 qui apporte de l'information, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si ce m\u00e9dia synchronis\u00e9 ne diffuse pas un contenu en direct, poursuivre le test, sinon le test est non applicable. <br></li><li>Si le\r\nm\u00e9dia synchronis\u00e9 n'est pas une\r\nalternative anim\u00e9e, sonore ou synchronis\u00e9e \u00e0  un contenu textuel\r\npr\u00e9sent dans la page,  qui est identifi\u00e9e en tant\r\nque tel et qui n'apporte pas plus d'information que le contenu\r\ntextuel, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si le m\u00e9dia synchronis\u00e9 n\u00e9cessite l'utilisation de sous-titres synchronis\u00e9s pour le rendre compr\u00e9hensible, poursuivre le test, sinon le test est non applicable.</li>", 
     "name": "[MUL]-09"
   }, 
+  "19292": {
+    "goal": "Eviter l'utilisation d'\u00e9l\u00e9ments obsol\u00e8tes que les agents utilisateurs de sauraient pas interpr\u00e9ter.", 
+    "checklist": {
+      "id": 568, 
+      "name": "Accessibility first step: error detection"
+    }, 
+    "explanation": "", 
+    "description": "Ne pas utiliser l'\u00e9l\u00e9ment plaintext", 
+    "solution": "Utiliser l'\u00e9l\u00e9ment pre au lieu de plaintext.", 
+    "name": "64"
+  }, 
+  "19295": {
+    "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
+    "checklist": {
+      "id": 568, 
+      "name": "Accessibility first step: error detection"
+    }, 
+    "explanation": "", 
+    "description": "Ne pas utiliser l'\u00e9l\u00e9ment strike", 
+    "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
+    "name": "56"
+  }, 
+  "19296": {
+    "goal": "Permettre l'identification des tableaux de donn\u00e9es et la restitution des contenus permettant de les caract\u00e9riser.", 
+    "checklist": {
+      "id": 568, 
+      "name": "Accessibility first step: error detection"
+    }, 
+    "explanation": "", 
+    "description": "Utiliser un \u00e9l\u00e9ment caption comme premier enfant de l'\u00e9l\u00e9ment table si le tableau contient au moins un \u00e9l\u00e9ment th", 
+    "solution": "Positionner un \u00e9l\u00e9ment caption tout de suite apr\u00e8s l'\u00e9l\u00e9ment table lorsqu'il s'agit d'un tableau de donn\u00e9es.", 
+    "name": "48"
+  }, 
   "19088": {
     "goal": "Permettre aux utilisateurs de distinguer les diff\u00e9rents tableaux de donn\u00e9es pr\u00e9sents dans une page.", 
     "checklist": {
@@ -3683,6 +2275,72 @@ checklists = {
     "description": "Utiliser avec pr\u00e9caution des contenus identiques pour plusieurs \u00e9l\u00e9ments caption", 
     "solution": "Mettre un contenu diff\u00e9rent pour chaque \u00e9l\u00e9ment caption d'un tableau de donn\u00e9es.", 
     "name": "9"
+  }, 
+  "19298": {
+    "goal": "Permettre l'identification des tableaux de donn\u00e9es et la restitution des contenus permettant de les caract\u00e9riser.", 
+    "checklist": {
+      "id": 568, 
+      "name": "Accessibility first step: error detection"
+    }, 
+    "explanation": "", 
+    "description": "Utiliser au moins un \u00e9l\u00e9ment th dans l'\u00e9l\u00e9ment table contenant un \u00e9l\u00e9ment caption ou ayant un attribut summary non vide", 
+    "solution": "Modifier le code de mani\u00e8re \u00e0 utiliser l'\u00e9l\u00e9ment th \u00e0 la place de l'\u00e9l\u00e9ment td afin de d\u00e9clarer les ent\u00eates des tableaux de donn\u00e9es. Si c'est un tableau de mise en forme supprimer le caption ou le summary non vide", 
+    "name": "58"
+  }, 
+  "19311": {
+    "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
+    "checklist": {
+      "id": 568, 
+      "name": "Accessibility first step: error detection"
+    }, 
+    "explanation": "", 
+    "description": "Ne pas utiliser l'\u00e9l\u00e9ment tt", 
+    "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
+    "name": "62"
+  }, 
+  "19300": {
+    "goal": "Permettre aux utilisateurs de distinguer le sujet d'un tableau de donn\u00e9es de la mani\u00e8re dont il est construit.", 
+    "checklist": {
+      "id": 568, 
+      "name": "Accessibility first step: error detection"
+    }, 
+    "explanation": "", 
+    "description": "Ne pas utiliser un contenu d'attribut summary identique au contenu de l'\u00e9l\u00e9ment caption", 
+    "solution": "Mettre dans l'\u00e9l\u00e9ment caption un contenu servant \u00e0 titrer le tableau et dans l'attribut summary un contenu pour d\u00e9crire l'organisation du tableau", 
+    "name": "53"
+  }, 
+  "19301": {
+    "goal": "Permettre l'identification des tableaux de donn\u00e9es et la restitution des contenus permettant de les caract\u00e9riser.", 
+    "checklist": {
+      "id": 568, 
+      "name": "Accessibility first step: error detection"
+    }, 
+    "explanation": "", 
+    "description": "Ne pas utiliser d'attribut summary vide sur l'\u00e9l\u00e9ment table si le tableau contient un \u00e9l\u00e9ment th ou caption", 
+    "solution": "Inclure un contenu \u00e0 l'attribut summary de l'\u00e9l\u00e9ment table lorsqu'il s'agit d'un tableau de donn\u00e9es.", 
+    "name": "54"
+  }, 
+  "19277": {
+    "goal": "Eviter \u00e0 l'utilisateur la restitution d'\u00e9tiquette associ\u00e9e \u00e0 aucun champ de formulaire.", 
+    "checklist": {
+      "id": 568, 
+      "name": "Accessibility first step: error detection"
+    }, 
+    "explanation": "", 
+    "description": "Ne pas utiliser un contenu d'attribut for qui ne correspond \u00e0 aucune valeur d'attribut id existant&nbsp; dans le m\u00eame \u00e9l\u00e9ment form", 
+    "solution": "Corriger la valeur de l'attribut for afin de la faire correspondre au champ associ\u00e9 au label", 
+    "name": "74"
+  }, 
+  "19303": {
+    "goal": "Permettre l'association des cellules avec leurs ent\u00eates dans les tableaux de donn\u00e9es.", 
+    "checklist": {
+      "id": 568, 
+      "name": "Accessibility first step: error detection"
+    }, 
+    "explanation": "", 
+    "description": "Mettre un attribut headers sur l'\u00e9l\u00e9ment td s'il se rapporte \u00e0 un \u00e9l\u00e9ment th ayant un attribut id", 
+    "solution": "Utiliser un attribut headers sur les cellules td des tableaux de donn\u00e9es dont les ent\u00eates (th) contiennent un attribut id.", 
+    "name": "63"
   }, 
   "10089": {
     "goal": "<ul><li><h5>4.1.1 : Analyse syntaxique : (A)</h5><br />Permettre aux agents utilisateurs et aux technologies d'assistance d'interpr\u00e9ter correctement les contenus balis\u00e9s. <br><br>En effet, la pr\u00e9sence d'erreurs dans l'utilisation d'une grammaire formelle d\u00e9finie par le W3C peut perturber le bon fonctionnement des technologies d'assistance.</li></ul>", 
@@ -3739,6 +2397,17 @@ checklists = {
     "solution": "<p> Tout \u00e9l\u00e9ment : </p><br><ul>  <li> <code>basefont</code>, </li>  <li> <code>blink</code>, </li> <li> <code>center</code>, </li> <li> <code>font</code>, </li>  <li> <code>marquee</code>, </li> <li> <code>s</code>, </li>  <li> <code>strike</code>, </li> <li> <code>tt</code>, </li> <li> <code>u</code>, </li> </ul><p> ou attribut : </p><ul> <li> <code>align</code>, </li> <li> <code>alink</code>, </li> <li> <code>background</code>, </li> <li> <code>basefont</code>, </li> <li> <code>bgcolor</code>, </li> <li> <code>border</code>, </li> <li> <code>color</code>, </li> <li> <code>link</code>, </li> <li> <code>text</code>, </li> <li> <code>vlink</code>, </li> </ul><br /><br />", 
     "name": "[PR\u00e9]-08"
   }, 
+  "19310": {
+    "goal": "Permettre la restitution du titre de la page.", 
+    "checklist": {
+      "id": 568, 
+      "name": "Accessibility first step: error detection"
+    }, 
+    "explanation": "", 
+    "description": "Ne pas utiliser d'\u00e9l\u00e9ment title vide", 
+    "solution": "D\u00e9terminer le titre de la page et renseigner l'\u00e9l\u00e9ment title avec ce titre.", 
+    "name": "4"
+  }, 
   "10095": {
     "goal": "<ul><li><h5>2.4.1 : Contourner des blocs : (A)</h5><br />Rendre les contenus navigables pour les utilisateurs qui y ont un acc\u00e8s s\u00e9quentiel lin\u00e9aire.<br><br>Les personnes utilisant un lecteur d'\u00e9cran, un agrandisseur, les\r\npersonnes qui ont une limitation cognitive ou celles qui ne se servent que du\r\nclavier pour cause de limitation motrice lisent la page de mani\u00e8re lin\u00e9aire. De ce fait, des liens internes \u00e0 la page ou les titres de hi\u00e9rarchie leur permettent soit d'acc\u00e9der directement \u00e0 l'information qui les int\u00e9resse, soit de sauter d'autres informations qui ne les int\u00e9ressent pas et de gagner ainsi un temps pr\u00e9cieux.</li></ul>", 
     "checklist": {
@@ -3772,6 +2441,17 @@ checklists = {
     "solution": "<p> Tout \u00e9l\u00e9ment : </p><ul> <li> <code>h2,</code> </li> <li> <code>h3</code>, </li> <li> <code>h4</code>, </li> <li> <code>h5</code>, </li> <li> <code>h6</code>, </li> </ul><br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable. </li>", 
     "name": "[STR]-03"
   }, 
+  "19314": {
+    "goal": "Eviter l'utilisation d'\u00e9l\u00e9ments obsol\u00e8tes que les agents utilisateurs de sauraient pas interpr\u00e9ter.", 
+    "checklist": {
+      "id": 568, 
+      "name": "Accessibility first step: error detection"
+    }, 
+    "explanation": "", 
+    "description": "Ne pas utiliser l'\u00e9l\u00e9ment xmp", 
+    "solution": "Utiliser l'\u00e9l\u00e9ment pre au lieu de xmp.", 
+    "name": "28"
+  }, 
   "10099": {
     "goal": "<ul><li><h5>1.3.1 : Information et relations : (A)</h5><br />Rendre l'information ind\u00e9pendante de sa mise en forme visuelle ou sonore.<br><br>Ce crit\u00e8re de succ\u00e8s est b\u00e9n\u00e9fique \u00e0 des personnes ayant diff\u00e9rents types de handicaps. Les personnes aveugles ou sourdes et aveugles utilisant un lecteur d'\u00e9cran ou un terminal braille auront acc\u00e8s \u00e0 l'information disponible par la couleur lorsque celle-ci est \u00e9galement mise \u00e0 disposition de fa\u00e7on textuelle.<br>Il vise notamment \u00e0 permettre \u00e0 ce que les agents utilisateurs restituent une information en fonction des besoins de l'utilisateur et cela ind\u00e9pendamment de sa mise en forme visuelle ou sonore. </li></ul>", 
     "checklist": {
@@ -3804,6 +2484,39 @@ checklists = {
     "description": "Balisage correct des listes de d\u00e9finitions.", 
     "solution": "<p> Tout \u00e9l\u00e9ment <code>dl</code>. </p><br /><br /><li>Si l'\u00e9l\u00e9ment mentionn\u00e9 dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable. </li>", 
     "name": "[STR]-07"
+  }, 
+  "19177": {
+    "goal": "Permettre un comportement \u00e9quivalent et/ou l'acc\u00e8s \u00e0 une information \u00e9quivalente quel que soit le p\u00e9riph\u00e9rique d'entr\u00e9e des utilisateurs", 
+    "checklist": {
+      "id": 567, 
+      "name": "Accessibility Second step : risk management"
+    }, 
+    "explanation": "", 
+    "description": "Utiliser avec pr\u00e9caution le gestionnaire d'\u00e9v\u00e9nement onfocus lorsque vous n'utilisez pas le gestionnaire d'\u00e9v\u00e9nement onmouseover", 
+    "solution": "Lors de l'utilisation de l'\u00e9v\u00e9nement onfocus, inclure un comportement \u00e9quivalent sur l'\u00e9v\u00e9nement onmouseover ou pr\u00e9voir un autre \u00e9l\u00e9ment permettant de r\u00e9aliser la m\u00eame action via la souris", 
+    "name": "39"
+  }, 
+  "19073": {
+    "goal": "Permettre \u00e0 l'utilisateur de pr\u00e9voir le comportement des liens qui ouvrent une nouvelle fen\u00eatre.", 
+    "checklist": {
+      "id": 567, 
+      "name": "Accessibility Second step : risk management"
+    }, 
+    "explanation": "", 
+    "description": "Utiliser avec pr\u00e9caution l'attribut target avec la valeur _blank pour l'\u00e9l\u00e9ment a", 
+    "solution": "Ne pas utiliser l'attribut target ou&nbsp;: \r\nIndiquer le comportement du lien dans le libell\u00e9 du lien (contenu de l'\u00e9l\u00e9ment &lt;a&gt;) ou dans l'attribut title.\r\nExemple : &lt;a href=\"http://www.google.fr\" target=\"_blank\"&gt;Site de google (nouvelle fen\u00eatre)&lt;/a&gt;\r\nExemple : &lt;a href=\" http://www.google.fr\" target=\"_blank\" title=\"Site de google (nouvelle fen\u00eatre)\"&gt;Site de google&lt;/a&gt;\r\nAvertissement&nbsp;: le contenu de l'attribut title doit reprendre \u00e9galement le libell\u00e9 du lien. (exemple incorrect&nbsp;: &lt;a href=\" http://www.google.fr\" target=\"_blank\" title=\"nouvelle fen\u00eatre\"&gt;Site de google&lt;/a&gt;)", 
+    "name": "3"
+  }, 
+  "19348": {
+    "goal": "", 
+    "checklist": {
+      "id": 568, 
+      "name": "Accessibility first step: error detection"
+    }, 
+    "explanation": "", 
+    "description": "Utiliser un \u00e9l\u00e9ment button ou un \u00e9l\u00e9ment input de type submit, image ou button dans chaque \u00e9l\u00e9ment form", 
+    "solution": "", 
+    "name": "66"
   }, 
   "10107": {
     "goal": "<ul><li><h5>3.1.4 : Abr\u00e9viations : (AAA)</h5><br />Permettre aux utilisateurs de comprendre l'information v\u00e9hicul\u00e9e par les sigles. Permettre aux synth\u00e8ses vocales d'\u00e9noncer correctement les abr\u00e9viations ou acronymes, en \u00e9pelant les abr\u00e9viations et en \u00e9non\u00e7ant comme un mot les acronymes, lorsque n\u00e9cessaire.</li></ul>", 
@@ -3937,6 +2650,17 @@ checklists = {
     "solution": "<p> Tout \u00e9l\u00e9ment sur lequel est appliqu\u00e9 des styles <abbr title=\"Cascading Style Sheets\" lang=\"en\" xml:lang=\"en\">CSS</abbr> appliqu\u00e9 dans la page via l'attribut <code>style</code>, une feuille de styles interne, une feuille de styles externe ou du code javascript. </p><br /><br /><li>Si l'\u00e9l\u00e9ment mentionn\u00e9 dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable. </li>\r\n<li>Si le style <abbr title=\"Cascading Style Sheets\" lang=\"en\" xml:lang=\"en\">CSS</abbr> appliqu\u00e9 sur l'\u00e9l\u00e9ment utilise la propri\u00e9t\u00e9 <code>content</code>, poursuivre le test, sinon le test est non applicable. </li>", 
     "name": "[PR\u00e9]-01"
   }, 
+  "19338": {
+    "goal": "", 
+    "checklist": {
+      "id": 568, 
+      "name": "Accessibility first step: error detection"
+    }, 
+    "explanation": "", 
+    "description": "Ne pas utiliser d'attribut alt vide sur un \u00e9l\u00e9ment area dot\u00e9 d'un attribut href", 
+    "solution": "", 
+    "name": "41"
+  }, 
   "10124": {
     "goal": "<ul><li><h5>1.1.1 : Contenu non textuel : (A)</h5><br />Rendre le contenu non textuel accessible sous forme d'une alternative textuelle exploitable quel que soit le mode de perception de l'utilisateur (visuel, auditif, tactile).<br><br>Le contenu des \u00e9l\u00e9ments non textuels ne sera pas perceptible pour diff\u00e9rentes cat\u00e9gories d'utilisateurs tels que :<br><br><ul><li>Les personnes handicap\u00e9es visuelles acc\u00e9dant au site via la synth\u00e8se vocale d'un lecteur d'\u00e9cran,</li><li>Les utilisateurs ayant d\u00e9sactiv\u00e9 l'affichage des \u00e9l\u00e9ments graphiques ou multim\u00e9dias, pour r\u00e9duire notamment les temps de t\u00e9l\u00e9chargement des pages en bas d\u00e9bit.<br></li></ul><br>La pr\u00e9sence d'alternatives textuelles aux contenus non textuels permet \u00e9galement \u00e0 des robots d'indexation d'en exploiter l'information, ou \u00e0 des traducteurs automatiques d'en traduire le sens.</li><li><h5>4.1.2 : Nom, r\u00f4le et valeur : (A)</h5><br />Permettre aux agents utilisateurs et aux technologies d'assistance de disposer de l'information n\u00e9cessaire sur les changements d'\u00e9tats, de valeurs et de nom intervenant dans l'interface utilisateur. <br><br>Certains contenus ajout\u00e9s dans les pages peuvent en effet int\u00e9grer leur propre interface de navigation. Dans ce cas, certains utilisateurs peuvent se trouver dans l'impossibilit\u00e9 de les utiliser dans leur contexte de navigation si leur interface n'a pas \u00e9t\u00e9 con\u00e7ue dans une technologie susceptible d'\u00eatre accessible</li></ul>", 
     "checklist": {
@@ -3969,6 +2693,17 @@ checklists = {
     "description": "Pr\u00e9sence d'une alternative aux \u00e9l\u00e9ments embed.", 
     "solution": "<p> Tout \u00e9l\u00e9ment <code>embed</code> ou tout code javascript g\u00e9n\u00e9rant un \u00e9l\u00e9ment <code>embed</code>. </p><br /><br /><li>Si l'\u00e9l\u00e9ment mentionn\u00e9 dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si l'\u00e9l\u00e9ment apporte de l'information, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si le\r\ncontenu visuel anim\u00e9, sonore ou le m\u00e9dia synchronis\u00e9 n'est pas une\r\nalternative anim\u00e9e, sonore ou synchronis\u00e9e \u00e0  un contenu textuel\r\npr\u00e9sent dans la page,  qui est identifi\u00e9e en tant\r\nque tel et qui n'apporte pas plus d'information que le contenu\r\ntextuel, poursuivre le test, sinon le test est non applicable.</li><li>Si le contenu n'est pas consult\u00e9 dans un environnement informatique\r\nmaitris\u00e9 permettant&nbsp; la restitution des contenus affich\u00e9s au travers de l'\u00e9l\u00e9ment embed, poursuivre\r\nle test, sinon le test est non applicable.</li>", 
     "name": "[MUL]-12"
+  }, 
+  "19288": {
+    "goal": "Permettre la distinction des diff\u00e9rents groupes form\u00e9s.", 
+    "checklist": {
+      "id": 568, 
+      "name": "Accessibility first step: error detection"
+    }, 
+    "explanation": "", 
+    "description": "Ne pas utiliser un contenu d'attribut label identique pour plusieurs \u00e9l\u00e9ment optgroup d'un m\u00eame \u00e9l\u00e9ment select", 
+    "solution": "D\u00e9terminer un titre diff\u00e9rent pour chaque groupe form\u00e9 par les \u00e9l\u00e9ments optgroup.", 
+    "name": "76"
   }, 
   "10129": {
     "goal": "<ul><li><h5>2.1.1 : Clavier : (A)</h5><br />Rendre les contenus accessibles via un p\u00e9riph\u00e9rique de type clavier. <br><br>Certains utilisateurs ayant un handicap moteur ou visuel n'utiliseront par exemple que le clavier ou un p\u00e9riph\u00e9rique adapt\u00e9 pour naviguer. De plus, il est \u00e0 noter que de nombreux terminaux mobiles ne proposent pas d'interface souris mais uniquement une interface clavier.</li><li><h5>2.1.3 : Clavier (pas d'exception) : (AAA)</h5><br />Rendre les contenus accessibles via un p\u00e9riph\u00e9rique de type clavier.<br><br>Certains utilisateurs ayant un handicap moteur ou visuel n'utiliseront\r\npar exemple que le clavier ou un p\u00e9riph\u00e9rique adapt\u00e9 pour naviguer. De\r\nplus, il est \u00e0 noter que de nombreux terminaux mobiles ne proposent pas\r\nd'interface souris mais uniquement une interface clavier.</li></ul>", 
@@ -4013,6 +2748,17 @@ checklists = {
     "description": "Possibilit\u00e9 de d\u00e9sactiver toute alerte non sollicit\u00e9e ou toute mise \u00e0 jour automatique d'un contenu de la page.", 
     "solution": "<p> Tout code javascript utilis\u00e9 dans la page. </p><br /><br /><li>Si du code javascript est utilis\u00e9 dans la page, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si le code javascript provoque une alerte non sollicit\u00e9e ou met \u00e0 jour le contenu de la page sans action de l'utilisateur, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si l'alerte ou la mise \u00e0 jour n'est pas d\u00fbe \u00e0 un \u00e9v\u00e9nement ou une situation soudaine et impr\u00e9vue qui exige une action imm\u00e9diate afin de pr\u00e9server la sant\u00e9, la s\u00e9curit\u00e9 ou la propri\u00e9t\u00e9, poursuivre le test, sinon le test est non applicable. </li>", 
     "name": "[SCR]-04"
+  }, 
+  "19353": {
+    "goal": "", 
+    "checklist": {
+      "id": 568, 
+      "name": "Accessibility first step: error detection"
+    }, 
+    "explanation": "", 
+    "description": "Ne pas utiliser une valeur d'attribut dir autre que ltr, rtl ou vide", 
+    "solution": "", 
+    "name": "8"
   }, 
   "10136": {
     "goal": "<ul><li><h5>2.3.1 : Pas plus de trois flashs ou sous le seuil critique : (A)</h5><br />Rendre le contenu accessible aux utilisateurs en situation de handicap les exposant \u00e0 un risque en cas de flash. <br><br>A certaines fr\u00e9quences, les changements brusques de luminosit\u00e9 des couleurs \u00e0 l'\u00e9cran, comme les effets stroboscopiques (flash), peuvent provoquer chez certains utilisateurs des crises d'\u00e9pilepsie</li></ul>", 
@@ -4333,6 +3079,17 @@ checklists = {
     "solution": "<p> Tout \u00e9l\u00e9ment <code>bgsound</code>. </p><br /><br />", 
     "name": "[MUL]-30"
   }, 
+  "19275": {
+    "goal": "Permettre l'association des \u00e9tiquettes avec les champs auxquelles elles se rapportent.", 
+    "checklist": {
+      "id": 568, 
+      "name": "Accessibility first step: error detection"
+    }, 
+    "explanation": "", 
+    "description": "Utiliser l'attribut for pour l'\u00e9l\u00e9ment label", 
+    "solution": "Ajouter un attribut for sur l'\u00e9l\u00e9ment label. Exemple&nbsp;: &lt;label for='champ-xxx'&gt;xxx&lt;/label&gt;", 
+    "name": "72"
+  }, 
   "10181": {
     "goal": "<ul><li><h5>2.4.1 : Contourner des blocs : (A)</h5><br />Rendre les contenus navigables pour les utilisateurs qui y ont un acc\u00e8s s\u00e9quentiel lin\u00e9aire.<br><br>Les personnes utilisant un lecteur d'\u00e9cran, un agrandisseur, les\r\npersonnes qui ont une limitation cognitive ou celles qui ne se servent que du\r\nclavier pour cause de limitation motrice lisent la page de mani\u00e8re lin\u00e9aire. De ce fait, des liens internes \u00e0 la page ou les titres de hi\u00e9rarchie leur permettent soit d'acc\u00e9der directement \u00e0 l'information qui les int\u00e9resse, soit de sauter d'autres informations qui ne les int\u00e9ressent pas et de gagner ainsi un temps pr\u00e9cieux.</li><li><h5>4.1.2 : Nom, r\u00f4le et valeur : (A)</h5><br />Permettre aux agents utilisateurs et aux technologies d'assistance de disposer de l'information n\u00e9cessaire sur les changements d'\u00e9tats, de valeurs et de nom intervenant dans l'interface utilisateur. <br><br>Certains contenus ajout\u00e9s dans les pages peuvent en effet int\u00e9grer leur propre interface de navigation. Dans ce cas, certains utilisateurs peuvent se trouver dans l'impossibilit\u00e9 de les utiliser dans leur contexte de navigation si leur interface n'a pas \u00e9t\u00e9 con\u00e7ue dans une technologie susceptible d'\u00eatre accessible</li></ul>", 
     "checklist": {
@@ -4465,6 +3222,17 @@ checklists = {
     "solution": "<p> Tout \u00e9l\u00e9ment <code>a</code>. </p><br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable. </li>\r\n<li>Si l'\u00e9l\u00e9ment n'est pas un \u00e9l\u00e9ment <code>a</code> ayant un attribut <code>name</code> ou <code>id</code>, d\u00e9pourvu d'attribut <code>href</code> ou ayant un attribut <code>href</code> dont la valeur est \u00e9gale au caract\u00e8re # suivi du contenu de l'attribut <code>name</code> ou <code>id</code>, poursuivre le test, sinon le test est non applicable. </li>", 
     "name": "[NAV]-16"
   }, 
+  "19278": {
+    "goal": "Permettre la d\u00e9claration de la langue du document et l'adaptation des aides techniques \u00e0 celle-ci.", 
+    "checklist": {
+      "id": 568, 
+      "name": "Accessibility first step: error detection"
+    }, 
+    "explanation": "", 
+    "description": "Utiliser un code de langue conforme dans l'attribut lang", 
+    "solution": "Donner une valeur conforme au code de langue dans l'attribut lang. Exemple&nbsp;: \u201cfr\u201c pour le fran\u00e7ais, \u201cen\u201c pour l'anglais. Voir http://www.loc.gov/standards/iso639-2/php/code_list.php pour la liste compl\u00e8te des codes de langue.", 
+    "name": "7"
+  }, 
   "10198": {
     "goal": "<ul><li><h5>2.4.2 : Titre de page : (A)</h5><br />Permettre aux utilisateurs d'identifier le contenu d'une page et de s'orienter dans un site.<br><br>La pr\u00e9sence d'un titre appropri\u00e9 permet l'identification de la page. C'est la premi\u00e8re information lue par les synth\u00e8ses vocales. Elle est \u00e9galement utilis\u00e9e par les navigateurs pour titrer les fen\u00eatres et par les moteurs de recherche dans leurs listes de r\u00e9sultats.</li></ul>", 
     "checklist": {
@@ -4486,6 +3254,61 @@ checklists = {
     "description": "Pertinence du titre de la page.", 
     "solution": "<p> Tout \u00e9l\u00e9ment <code>title</code>. </p><br /><br /><li>Si l'\u00e9l\u00e9ment mentionn\u00e9 dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable. </li>\r\n", 
     "name": "[STA]-07"
+  }, 
+  "11940": {
+    "goal": "", 
+    "checklist": {
+      "id": 425, 
+      "name": "Accessiweb 2.1 D\u00e9ploy\u00e9e"
+    }, 
+    "explanation": "", 
+    "description": "Pour chaque m\u00e9dia temporel synchronis\u00e9 pr\u00e9-enregistr\u00e9 ayant des sous-titres synchronis\u00e9s, ces sous-titres sont-ils pertinents ?", 
+    "solution": "", 
+    "name": "4.4.1"
+  }, 
+  "19280": {
+    "goal": "Eviter \u00e0 l'utilisateur la pr\u00e9sence de groupement d'\u00e9l\u00e9ments de formulaire qu'il ne pourra pas identifier.", 
+    "checklist": {
+      "id": 568, 
+      "name": "Accessibility first step: error detection"
+    }, 
+    "explanation": "", 
+    "description": "Ne pas utiliser d'\u00e9l\u00e9ment legend vide", 
+    "solution": "Renseigner l'\u00e9l\u00e9ment legend avec le titre du groupe form\u00e9 d'\u00e9l\u00e9ments de formulaire.", 
+    "name": "71"
+  }, 
+  "19281": {
+    "goal": "Permettre la restitution sans erreur du nombre d'\u00e9l\u00e9ments composant une liste.\r\nEviter l'utilisation d'\u00e9l\u00e9ments \u00e0 des fins de pr\u00e9sentation.", 
+    "checklist": {
+      "id": 568, 
+      "name": "Accessibility first step: error detection"
+    }, 
+    "explanation": "", 
+    "description": "Ne pas utiliser d'\u00e9l\u00e9ment li vide", 
+    "solution": "Supprimer les \u00e9l\u00e9ments &lt;li&gt; qui ne poss\u00e8dent pas de contenu. Utiliser les propri\u00e9t\u00e9s des feuilles de styles margin et padding pour d\u00e9terminer les \u00e9carts entres les diff\u00e9rents \u00e9l\u00e9ments.", 
+    "name": "26"
+  }, 
+  "19309": {
+    "goal": "Permettre l'association des cellules avec leurs ent\u00eates dans les tableaux de donn\u00e9es.", 
+    "checklist": {
+      "id": 568, 
+      "name": "Accessibility first step: error detection"
+    }, 
+    "explanation": "", 
+    "description": "Ne pas utiliser une valeur d'attribut scope autre que row ou col", 
+    "solution": "Utiliser la valeur row sur l'attribut scope des ent\u00eates de ligne et la valeur col sur les ent\u00eates de colonnes.", 
+    "name": "60"
+  }, 
+  "19282": {
+    "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
+    "checklist": {
+      "id": 568, 
+      "name": "Accessibility first step: error detection"
+    }, 
+    "explanation": "", 
+    "description": "Ne pas utiliser l'attribut link", 
+    "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
+    "name": "34"
   }, 
   "10222": {
     "goal": "<ul><li><h5>3.3.3 : Suggestion apr\u00e8s une erreur : (AA)</h5><br />Permettre aux utilisateurs de corriger leurs erreurs de saisie. <br><br>Certains utilisateurs ayant un handicap sont susceptible de faire plus\r\nd'erreurs de saisie que les utilisateurs n'ayant aucun handicap. Il est\r\ndonc important de faciliter leur correction aux utilisateurs.</li></ul>", 
@@ -4520,6 +3343,39 @@ checklists = {
     "solution": "<p> Tout \u00e9l\u00e9ment : </p><ul> <li> <code>a</code>, </li> <li> <code>area</code>, </li> <li> <code>applet</code>, </li> <li> <code>embed</code>, </li> <li> <code>object</code>. </li> </ul><br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable. </li>\r\n<li>Si l'\u00e9l\u00e9ment permet de t\u00e9l\u00e9charger ou de mettre \u00e0 disposition une version compl\u00e9mentaire en langue des signes d'un contenu, poursuivre le test, sinon le test est non applicable. </li>", 
     "name": "[MUL]-32"
   }, 
+  "19283": {
+    "goal": "Eviter l'utilisation d'\u00e9l\u00e9ments obsol\u00e8tes que les agents utilisateurs de sauraient pas interpr\u00e9ter.", 
+    "checklist": {
+      "id": 568, 
+      "name": "Accessibility first step: error detection"
+    }, 
+    "explanation": "", 
+    "description": "Ne pas utiliser l'\u00e9l\u00e9ment listing", 
+    "solution": "Utiliser l'\u00e9l\u00e9ment pre au lieu de listing.", 
+    "name": "57"
+  }, 
+  "500": {
+    "goal": "<ul>\r\n    <li>Permettre la navigation et la consultation pour les utilisateurs plac\u00e9s dans des contextes o\u00f9 les images ne sont pas perceptibles (navigateurs texte, lecteur d'\u00e9cran, images d\u00e9sactiv\u00e9es)</li>\r\n    <li>Permettre aux robots d'exploiter l'information v\u00e9hicul\u00e9e par les images (r\u00e9f\u00e9rencement, traduction automatique)</li>\r\n    <li>Permettre l'affichage d'un texte pendant la chargement des images</li>\r\n</ul>", 
+    "checklist": {
+      "id": 11, 
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    }, 
+    "explanation": "", 
+    "description": "Chaque image est dot\u00e9e d'une alternative textuelle appropri\u00e9e", 
+    "solution": "<p>L'attribut <code>alt</code> est pr\u00e9sent pour chaque \u00e9l\u00e9ment <code>&lt;img&gt;</code>, sous la forme&nbsp;:</p>\r\n<ul>\r\n    <li><code>alt=\"\"</code> pour les images qui ne v\u00e9hiculent pas d'information n\u00e9cessaire \u00e0 la compr\u00e9hension du texte&nbsp;: <code>&lt;img src=\"spacer.gif\" height=\"1\" width=\"1\" alt=\"\"&gt;</code>. Attention&nbsp;: l'omission de l'attribut <code>alt</code> n'est pas l'\u00e9quivalent d'un attribut vide et n'est pas acceptable.</li>\r\n    <li><code>alt=\"_fonction_\"</code> pour les images liens, avec comme contenu (_fonction_) la fonction du lien&nbsp;: <code>&lt;img src=\"\u2026\" alt=\"Accueil\"&gt;</code> pour la traditionnelle ic\u00f4ne \"home\".<li>\r\n    <li><code>alt=\"_description_\"</code> pour les images dont la perception est n\u00e9cessaire \u00e0 la compr\u00e9hension du contenu.</li>\r\n</ul>\r\n<p>La description de l'image ou de sa fonction doit \u00eatre concise. Aucune limite de longueur normative n'existe, mais 120 caract\u00e8res serait un maximum indicatif. Le seuil limite d'une alternative textuelle n'est pas tant sa longueur que la complexit\u00e9 de l'information : si cette derni\u00e8re n\u00e9cessite d'\u00eatre structur\u00e9e (\u00e0 l'aide d'\u00e9l\u00e9ments de tableaux, de listes, de titres, de paragraphes, etc.), il ne s'agit plus de la fournir sous la forme d'une alternative textuelle simple, mais de donner une description \u00e9tendue de l'image. Celle-ci prend la forme d'un contenu textuel structur\u00e9, pr\u00e9sent dans la m\u00eame page que l'image ou dans une page imm\u00e9diatement accessible \u00e0 partir de celle-ci.</p></li></ul>", 
+    "name": "1"
+  }, 
+  "501": {
+    "goal": "<ul>\r\n    <li>Faciliter la validation du code source et favoriser un rendu pr\u00e9visible quelque-soit le navigateur (en mode de rendu strict pour les moteurs de rendu CSS)</li>\r\n</ul>", 
+    "checklist": {
+      "id": 11, 
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    }, 
+    "explanation": "", 
+    "description": "Le code source de chaque page d\u00e9bute par un d\u00e9claration de type de document (doctype) dont la syntaxe est conforme \u00e0 celles recommand\u00e9es par le W3C", 
+    "solution": "<ul>\r\n    <li>Placer la DTD en d\u00e9but de code source (elle ne doit \u00eatre pr\u00e9c\u00e9d\u00e9e d'aucun commentaire, balisage ou prologue XML)</li>\r\n    <li>Utiliser uniquement une DTD indiqu\u00e9e dans http://www.w3.org/QA/2002/04/valid-dtd-list.html</li>\r\n</ul>", 
+    "name": "2"
+  }, 
   "10230": {
     "goal": "<ul><li><h5>1.1.1 : Contenu non textuel : (A)</h5><br />Rendre le contenu non textuel accessible sous forme d'une alternative textuelle exploitable quel que soit le mode de perception de l'utilisateur (visuel, auditif, tactile).<br><br>Le contenu des \u00e9l\u00e9ments non textuels ne sera pas perceptible pour diff\u00e9rentes cat\u00e9gories d'utilisateurs tels que :<br><br><ul><li>Les personnes handicap\u00e9es visuelles acc\u00e9dant au site via la synth\u00e8se vocale d'un lecteur d'\u00e9cran,</li><li>Les utilisateurs ayant d\u00e9sactiv\u00e9 l'affichage des \u00e9l\u00e9ments graphiques ou multim\u00e9dias, pour r\u00e9duire notamment les temps de t\u00e9l\u00e9chargement des pages en bas d\u00e9bit.<br></li></ul><br>La pr\u00e9sence d'alternatives textuelles aux contenus non textuels permet \u00e9galement \u00e0 des robots d'indexation d'en exploiter l'information, ou \u00e0 des traducteurs automatiques d'en traduire le sens.</li></ul>", 
     "checklist": {
@@ -4541,6 +3397,39 @@ checklists = {
     "description": "Pr\u00e9sence d'une description audio synchronis\u00e9e \u00e9tendue pour les contenus visuels anim\u00e9s ou les m\u00e9dias synchronis\u00e9s.", 
     "solution": "<p> Tout \u00e9l\u00e9ment : </p><ul> <li> <code>a</code>, </li> <li> <code>area</code>, </li> <li> <code>applet</code>,</li><li> <code>object</code>,</li><li> <code>embed</code>,</li><li>tout code javascript g\u00e9n\u00e9rant un des \u00e9l\u00e9ments pr\u00e9c\u00e9dents ou d\u00e9clenchant un t\u00e9l\u00e9chargement. </li> </ul><br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est\r\npr\u00e9sent ou utilis\u00e9 dans la page, poursuivre le test, sinon le test est\r\nnon applicable.</li>\r\n<li>Si l'\u00e9l\u00e9ment permet de t\u00e9l\u00e9charger ou de restituer un contenu\r\nvisuel anim\u00e9 ou un m\u00e9dia synchronis\u00e9 qui apporte de l'information, poursuivre le\r\ntest, sinon le test est non applicable.</li>\r\n<li>Si le\r\ncontenu visuel anim\u00e9 ou le m\u00e9dia synchronis\u00e9 n'est pas une\r\nalternative anim\u00e9e ou synchronis\u00e9e \u00e0  un contenu textuel\r\npr\u00e9sent dans la page,  qui est identifi\u00e9e en tant\r\nque tel et qui n'apporte pas plus d'information que le contenu\r\ntextuel, poursuivre le test, sinon le test est non applicable.</li><li>Si le contenu de l'\u00e9l\u00e9ment n\u00e9cessite l'utilisation d'une\r\ndescription audio pour le rendre compr\u00e9hensible, poursuivre le test,\r\nsinon le test est non applicable.</li><li>Si la dur\u00e9e des pauses dans la piste sonore du contenu visuel anim\u00e9 ou du m\u00e9dia synchronis\u00e9 ne permet pas de restituer l'ensemble des informations n\u00e9cessaire \u00e0 la compr\u00e9hension de l'\u00e9l\u00e9ment,\r\npoursuivre le test, sinon le test est non applicable</li>", 
     "name": "[MUL]-07"
+  }, 
+  "504": {
+    "goal": "", 
+    "checklist": {
+      "id": 11, 
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    }, 
+    "explanation": "", 
+    "description": "Les styles ne sont pas utilis\u00e9s pour g\u00e9n\u00e9rer du contenu", 
+    "solution": "", 
+    "name": "5"
+  }, 
+  "511": {
+    "goal": "<ul>\r\n    <li>Permettre aux utilisateurs d'identifier le site dans les onglets, dans les favoris, dans la fen\u00eatre du navigateur ou dans les lecteurs d'\u00e9cran.</li>\r\n</ul>", 
+    "checklist": {
+      "id": 11, 
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    }, 
+    "explanation": "", 
+    "description": "Le titre de chaque page permet d'identifier le site", 
+    "solution": "<ul>\r\n    <li>R\u00e9diger le contenu de l'\u00e9l\u00e9ment <code>&lt;title&gt;</code> de chaque page de mani\u00e8re \u00e0 y indiquer le nom du site.</li>\r\n</ul>", 
+    "name": "12"
+  }, 
+  "508": {
+    "goal": "<ul>\r\n    <li>Permettre aux utilisateurs d'identifier la nature des contenus de chaque page dans les onglets, dans les favoris, dans la fen\u00eatre du navigateur ou dans les lecteurs d'\u00e9cran.</li>\r\n</ul>", 
+    "checklist": {
+      "id": 11, 
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    }, 
+    "explanation": "", 
+    "description": "Le titre de chaque page permet d'identifier son contenu", 
+    "solution": "<ul>\r\n    <li>R\u00e9diger le contenu de l'\u00e9l\u00e9ment <code>&lt;title&gt;</code> de chaque page de mani\u00e8re \u00e0 en d\u00e9crire de mani\u00e8re concise le contenu ou la fonction, y compris \u00e0 la suite d'une requ\u00eate AJAX modifiant de mani\u00e8re essentielle le contenu de la page.</li>\r\n    <li>Pr\u00e9ciser l'\u00e9tape en cours dans l'\u00e9l\u00e9ment <code>&lt;title&gt;</code> des pages correspondant \u00e0 des \u00e9tapes dans un processus (exemple&nbsp;: \u00e9tape 3 de votre inscription, etc).</li>\r\n    <li>Pr\u00e9ciser l'intervalle dans une page d'une s\u00e9rie de pages de r\u00e9sultats de recherche (R\u00e9sultats 10 \u00e0 19 de la recherche sur \"Foo\")</li>\r\n    <li>Pr\u00e9ciser l'\u00e9tat dans le titre d'une page demande de confirmation ou de confirmation lors de la soumission d'un formulaire (exemple: demande de confirmation de suppression - mes documents).</li>\r\n</ul>", 
+    "name": "9"
   }, 
   "10239": {
     "goal": "<ul><li><h5>1.4.4 : Redimensionnement du texte : (AA)</h5><br />Permettre aux utilisateurs en situation de handicap visuel de recourir \u00e0 l'agrandissement des textes sans perte d'information et sans avoir recours \u00e0 une technologie d'assistance</li></ul>", 

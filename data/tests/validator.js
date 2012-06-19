@@ -214,36 +214,6 @@ jQueryMephisto.expr[':'].internal = function(obj, index, meta, stack) {
 
 	return false;
 };
-/**
- * Remove duplicates from an array
- *
- * @author Mickaël Hoareau
- * @param {array}
- *            arr_duplicates
- * @version 1.0
- */
-/*function uniqueArr(arr_duplicates) {
-// Will check for the Uniqueness
-function contains(arr, elm) {
-for (j = 0; j < arr.length; j++) {
-if (arr[j] == elm) {
-return true;
-}
-}
-
-return false;
-}
-
-temp = [];
-for (i = 0; i < arr_duplicates.length; i++) {
-if (!contains(temp, arr_duplicates[i])) {
-temp.length += 1;
-temp[temp.length - 1] = arr_duplicates[i];
-}
-}
-
-return temp;
-}*/
 
 /**
  * Init on dom's load
@@ -313,13 +283,6 @@ function _sendXHR(method, uri) {
 
 			//
 			xhrMephisto.setRequestHeader("Referer", document.location.href);
-
-			//
-			if (request.hasHeader("Authorization")) {
-				xhrMephisto.setRequestHeader("Authorization", request.getHeader("Authorization"));
-			} else {
-				xhrMephisto.setRequestHeader("Authorization", false);
-			}
 
 			//
 			//var _start = (new Date).getTime();
@@ -674,7 +637,7 @@ function _getSelector(node) {
 function _getDetails(node) {
 	//
 	if (node == undefined) {
-		return {};
+		return;
 	}
 
 	//
@@ -683,7 +646,27 @@ function _getDetails(node) {
 	}
 
 	//
-	return node.outerHTML;
+	return node.outerHTML.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
+function _getCssDetails(rule, i) {
+	//
+	return rule.parentStyleSheet._extra["href"] + " (ligne " + rule.currentLine + ") : " + rule.mSelectorText + " {" + rule.declarations[i]["parsedCssText"] + "}";
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
+function _getInlineCssDetails(rule, i, item) {
+	//
+	return "style en ligne sur " + _getXPath(item) + " : " + rule.declarations[i]["parsedCssText"];
 }
 
 /**
@@ -1198,7 +1181,7 @@ function loop_over_tests(criterion, tests_list) {
 			timer += _diff;
 
 			//
-			if (timing_validator && _diff >= 500) {
+			if (timing_validator && _diff >= 999) {
 				console.log("[" + _diff + "] " + document.location + " | " + criterion + " | " + _test);
 			}
 		}

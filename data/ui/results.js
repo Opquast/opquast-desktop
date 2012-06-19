@@ -8,6 +8,8 @@
 	}, {
 		bVisible : false
 	}];
+	
+	window.__ffinspector = null;
 
 	window.showResults = function(tests) {
 		try {
@@ -82,7 +84,20 @@
 				sPlaceHolder : "head:before",
 				aoColumns : [{
 					type : "select",
-					values : ["Conforme", "Non conforme", "Indéterminé", "Non applicable"]
+					bRegex : true,
+					values : [{
+						value : '^Conforme',
+						label : 'Conforme'
+					}, {
+						value : '^Non conforme',
+						label : 'Non conforme'
+					}, {
+						value : '^Indéterminé',
+						label : 'Indéterminé'
+					}, {
+						value : '^Non applicable',
+						label : 'Non applicable'
+					}]
 				}, {
 					type : "select",
 					values : values
@@ -100,20 +115,24 @@
 				var aData = oTable.fnGetData(nTr), aOut = $('<div><div>'), aDetails = $('<ul></ul>'), nodes = $(nTr).data("details");
 
 				for each (var node in nodes) {
-					var a = $('<a>' + node.replace("<", "&lt;").replace(">", "&gt;") + '</a>');
+					var a = $('<a>' + node + '</a>');
 					/*a.click(function() {
-					 with(window.__ffinspector) {
-					 closeInspectorUI(true);
-					 openInspectorUI();
-					 inspectNode($(node.path).get(0));
-					 //node.scrollIntoView();
-					 }
-					 });*/
+						with (window.__ffinspector) {
+							//closeInspectorUI(true);
+							//openInspectorUI();
+							inspectNode(node);
+							//node.scrollIntoView();
+						}
+					});*/
 
 					aDetails.append($('<li></li>').append(a));
 				};
 
-				aOut.append('<h1>Commentaires</h1><p>' + aData[5] + '</p><h2>Éléments concernés</h2>').append(aDetails);
+				aOut.append('<h1>Commentaires</h1><p>' + aData[5] + '</p>');
+
+				if (nodes.length > 0) {
+					aOut.append('<h2>Éléments concernés</h2>').append(aDetails);
+				}
 
 				return aOut;
 			}
@@ -147,4 +166,4 @@
 			console.error(e);
 		};
 	}
-})(); 
+})();
