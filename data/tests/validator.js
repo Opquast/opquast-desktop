@@ -603,7 +603,11 @@ function _getSelector(node) {
 			var id = '#' + node.id;
 
 			//
-			selector = xname + id + " > " + selector;
+			if(selector != "") {
+				selector = xname + id + " > " + selector;
+			} else {
+				selector = xname + id;
+			}
 			break;
 		}
 
@@ -621,7 +625,11 @@ function _getSelector(node) {
 			}
 
 			//
-			selector = xname + ":eq(" + idx + ") > " + selector;
+			if(selector != "") {
+				selector = xname + ":eq(" + idx + ") > " + selector;
+			} else {
+				selector = xname + ":eq(" + idx + ")";
+			}
 		}
 	}
 
