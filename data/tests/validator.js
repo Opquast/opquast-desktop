@@ -626,9 +626,9 @@ function _getSelector(node) {
 
 			//
 			if(selector != "") {
-				selector = xname + ":eq(" + idx + ") > " + selector;
+				selector = xname + "[" + idx + "] > " + selector;
 			} else {
-				selector = xname + ":eq(" + idx + ")";
+				selector = xname + "[" + idx + "];
 			}
 		}
 	}
