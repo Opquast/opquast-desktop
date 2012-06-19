@@ -614,7 +614,7 @@ function _getSelector(node) {
 		//
 		else {
 			//
-			var idx = 0;
+			var idx = 1;
 
 			//
 			for (var sib = node.previousSibling; sib; sib = sib.previousSibling) {
@@ -626,9 +626,9 @@ function _getSelector(node) {
 
 			//
 			if(selector != "") {
-				selector = xname + "[" + idx + "] > " + selector;
+				selector = xname + ":nth-of-type([" + idx + ") > " + selector;
 			} else {
-				selector = xname + "[" + idx + "];
+				selector = xname + ":nth-of-type([" + idx + ")";
 			}
 		}
 	}
