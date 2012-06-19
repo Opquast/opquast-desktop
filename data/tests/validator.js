@@ -648,7 +648,7 @@ function _getDetails(node) {
 	//
 	return {
 		"path": _getSelector(node),
-		"text": node.outerHTML.replace(/</g, "&lt;").replace(/>/g, "&gt;")
+		"text": node.outerHTML.replace(/</g, "&lt;").replace(/>/g, "&gt;").substr(0, 200)
 	}
 }
 
