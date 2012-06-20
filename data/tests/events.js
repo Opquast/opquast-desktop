@@ -11,15 +11,15 @@
  * for the specific language governing rights and limitations under the
  * License.
  *
- * The Original Code is Mephisto.
+ * The Original Code is Opquast Desktop.
  *
  * The Initial Developer of the Original Code is
- * Temesis SARL.
- * Portions created by the Initial Developer are Copyright (C) 2011
+ * Temesis SAS.
+ * Portions created by the Initial Developer are Copyright (C) 2012
  * the Initial Developer. All Rights Reserved.
  *
  * Contributor(s):
- *   Fabrice Bonny <fabrice.bonny@temesis.com> (Original Author)
+ *   Fabrice Bonny <fabrice.bonny@temesis.com>
  *   Olivier Meunier <olivier.meunier@temesis.com>
  *
  * Alternatively, the contents of this file may be used under the terms of
@@ -35,6 +35,7 @@
  * the terms of any one of the MPL, the GPL or the LGPL.
  *
  * ***** END LICENSE BLOCK ***** */
+
 const esl = Components.classes["@mozilla.org/eventlistenerservice;1"].getService(Components.interfaces.nsIEventListenerService);
 
 (function() {
