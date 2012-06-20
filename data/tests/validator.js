@@ -626,9 +626,9 @@ function _getSelector(node) {
 
 			//
 			if(selector != "") {
-				selector = xname + ":nth-of-type([" + idx + ") > " + selector;
+				selector = xname + ":nth-of-type(" + idx + ") > " + selector;
 			} else {
-				selector = xname + ":nth-of-type([" + idx + ")";
+				selector = xname + ":nth-of-type(" + idx + ")";
 			}
 		}
 	}

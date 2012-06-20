@@ -9,8 +9,6 @@
 		bVisible : false
 	}];
 	
-	window.__ffinspector = null;
-
 	window.showResults = function(tests) {
 		try {
 			function pad(number) {
@@ -118,15 +116,12 @@
 					var a;
 					
 					if(node.path) {
-						a = $('<a>' + node.text + '</a>');
-						/*a.click(function() {
-							with (window.__ffinspector) {
-								//closeInspectorUI(true);
-								//openInspectorUI();
-								inspectNode(node);
-								//node.scrollIntoView();
-							}
-						});*/
+						a = $('<a href="#">' + node.text + '</a>');
+						a.get(0).node_path = node.path;
+						a.click(function(evt) {
+							evt.preventDefault();
+							_inspectElement(this.node_path);
+						});
 					} else {
 						a = $('<a>' + node + '</a>');
 					}
