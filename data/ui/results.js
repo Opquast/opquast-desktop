@@ -45,7 +45,10 @@
         bVisible : false
     }];
 
+    window.tests = null;
+
     window.showResults = function(tests) {
+        window.tests = tests;
         try {
             function pad(number) {
                 return (number < 10 ? '0' : '') + number
