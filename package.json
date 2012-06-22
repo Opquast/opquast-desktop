@@ -6,5 +6,32 @@
     "fullName": "Opquast Desktop",
     "id": "opquast-desktop@temesis.com",
     "description": "Opquast Reporting and testing in your browser",
-    "dependencies": ["addon-kit", "api-utils", "test-harness"]
+    "dependencies": ["addon-kit", "api-utils", "test-harness"],
+
+    "preferences": [
+        {
+            "name": "debug",
+            "title": "Debug mode",
+            "type": "bool",
+            "value": false
+        },
+        {
+            "name": "showRefs",
+            "title": "Show test references",
+            "type": "bool",
+            "value": true
+        },
+        {
+            "name": "showTimes",
+            "title": "Show execution time for each test",
+            "type": "bool",
+            "value": false
+        },
+        {
+            "name": "showDetails",
+            "title": "Show test details",
+            "type": "bool",
+            "value": false
+        }
+    ]
 }
