@@ -105,6 +105,7 @@ body {
     text-align: center;
     font-weight: bold;
     float: none;
+    padding: 0.5em 0;
 }
 
 #test_result tbody td img {
@@ -112,4 +113,16 @@ body {
 }
 #test_result img.opener {
     margin-right: 16px;
+}
+
+#test_result div.details ul {
+    margin: 1em 0;
+    padding-left: 40px;
+}
+#test_result div.details li {
+    margin: 0.5em 0;
+}
+#test_result div.details ul a {
+    color: #06c;
+    text-decoration: underline;
 }

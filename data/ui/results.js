@@ -87,6 +87,7 @@
                 // @formatter:on
 
                 tr.data("details", result.details);
+                tr.data("comment", result.comment);
             }
 
             var values = [];
@@ -150,7 +151,10 @@
 
 
             function fnFormatDetails(oTable, nTr) {
-                var aData = oTable.fnGetData(nTr), aOut = $('<div><div>'), aDetails = $('<ul></ul>'), nodes = $(nTr).data("details");
+                var aData = oTable.fnGetData(nTr),
+                    aOut = $('<div class="details"><div>'),
+                    aDetails = $('<ul></ul>'),
+                    nodes = $(nTr).data("details");
 
                 for each (var node in nodes) {
                     var a;
@@ -163,12 +167,12 @@
                             _inspectElement(this.node_path);
                         });
                     } else {
-                        a = $('<a>' + node + '</a>');
+                        a = $('<span>' + node + '</span>');
                     }
                     aDetails.append($('<li></li>').append(a));
                 };
 
-                aOut.append('<h1>' + _("oqs.comment") + '</h1><p>' + aData[5] + '</p>');
+                aOut.append('<h1>' + _("oqs.comment") + '</h1><p>' + $(nTr).data("comment") + '</p>');
 
                 if (nodes.length > 0) {
                     aOut.append('<h2>' + _("oqs.targeted_elements") + '</h2>').append(aDetails);
