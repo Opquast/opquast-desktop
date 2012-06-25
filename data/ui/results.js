@@ -41,12 +41,11 @@
 
     window.showResults = function(tests, prefs) {
         window.tests = tests;
-        var column_def = [null, null, null, null, null, null];
+        var column_def = [null, null, null, null, null];
 
         // Setting some column visibilty
         column_def[2] = prefs.showRefs ? null : {bVisible: false};
         column_def[4] = prefs.showTimes ? null : {bVisible: false};
-        column_def[5] = prefs.showDetails ? null : {bVisible: false};
 
         // Localize column titles
         $("#test_result thead th:eq(0)").text(_("oqs.all_results"));
@@ -54,12 +53,11 @@
         $("#test_result thead th:eq(2)").text(_("oqs.references"));
         $("#test_result thead th:eq(3)").text(_("oqs.test_label"));
         $("#test_result thead th:eq(4)").text(_("oqs.test_duration"));
-        $("#test_result thead th:eq(5)").text(_("oqs.details"));
 
         try {
             var _date = new Date(tests.datetime), table = $('table'), tbody = $('tbody');
             window._showInfo(_("oqs.analyze_info",
-                _date.toLocaleDateString(), _date.toLocaleTimeString(), tests.timer
+                _date.toLocaleFormat(_("oqs.date_format")), _date.toLocaleTimeString(), Math.round(tests.timer*10)/10
             ));
 
             for each (var result in tests.oaa_results) {
@@ -84,8 +82,7 @@
                     '<td>' + criterion.checklist.name + '</td>',
                     '<td>' + criterion.name + '</td>',
                     '<td>' + criterion.description + '</td>',
-                    '<td>' + result.time + '</td>',
-                    '<td>' + result.comment + '</td>'
+                    '<td>' + result.time + '</td>'
                 );
                 // @formatter:on
 
@@ -142,7 +139,7 @@
                 }, {
                     type : "select",
                     values : values
-                }, null, null, null, null]
+                }, null, null, null]
             });
 
             // bug : filtering trigger sorting

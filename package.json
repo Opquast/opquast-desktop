@@ -26,12 +26,6 @@
             "title": "Show execution time for each test",
             "type": "bool",
             "value": false
-        },
-        {
-            "name": "showDetails",
-            "title": "Show test details",
-            "type": "bool",
-            "value": false
         }
     ]
 }
