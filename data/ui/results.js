@@ -58,7 +58,7 @@
 
         try {
             var _date = new Date(tests.datetime), table = $('table'), tbody = $('tbody');
-            $("#test_result caption").text(_("oqs.analyze_info",
+            window._showInfo(_("oqs.analyze_info",
                 _date.toLocaleDateString(), _date.toLocaleTimeString(), tests.timer
             ));
 
