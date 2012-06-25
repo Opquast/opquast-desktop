@@ -79,9 +79,25 @@ body {
 }
 
 #test_result th, .dataTables_info {
-    background-color: #ced7e2;
+    background-color: #dfdcd4;
     color: #000;
-    border: 1px solid #ccc;
+}
+#test_result th, #test_result td {
+    border: 1px solid #d3cfc4;
+}
+
+.dataTable tbody>tr.odd {
+    background-color: #fff;
+}
+.dataTable tbody>tr.even {
+    background-color: #fafaf9;
+}
+
+.dataTable tbody>tr.odd>td.sorting_1 {
+    background-color: #f4f3f1;
+}
+.dataTable tbody>tr.even>td.sorting_1 {
+    background-color: #f0efeb;
 }
 
 .dataTables_info {
@@ -89,22 +105,4 @@ body {
     text-align: center;
     font-weight: bold;
     float: none;
-}
-
-#test_result td {
-    border: 1px solid #ccc;
-}
-
-.dataTable tbody>tr.odd {
-    background-color: #f0f8ff;
-}
-.dataTable tbody>tr.even {
-    background-color: #fff;
-}
-
-.dataTable tbody>tr.even>td.sorting_1 {
-    background-color: #d7edff;
-}
-.dataTable tbody>tr.odd>td.sorting_1 {
-    background-color: #e1f1ff;
 }
