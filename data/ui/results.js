@@ -48,14 +48,19 @@
         column_def[4] = prefs.showTimes ? null : {bVisible: false};
         column_def[5] = prefs.showDetails ? null : {bVisible: false};
 
-        try {
-            function pad(number) {
-                return (number < 10 ? '0' : '') + number
-            }
+        // Localize column titles
+        $("#test_result thead th:eq(0)").text(_("oqs.all_results"));
+        $("#test_result thead th:eq(1)").text(_("oqs.all_checklists"));
+        $("#test_result thead th:eq(2)").text(_("oqs.references"));
+        $("#test_result thead th:eq(3)").text(_("oqs.test_label"));
+        $("#test_result thead th:eq(4)").text(_("oqs.test_duration"));
+        $("#test_result thead th:eq(5)").text(_("oqs.details"));
 
+        try {
             var _date = new Date(tests.datetime), table = $('table'), tbody = $('tbody');
-            $('caption').text('analyse du ' + pad(_date.getDate()) + "/" + pad(_date.getMonth() + 1) + "/" + _date.getFullYear() + " à " + _date.toLocaleTimeString() + ' (durée : ' + tests.timer + ' secondes)');
-            //$("tbody").empty();
+            $("#test_result caption").text(_("oqs.analyze_info",
+                _date.toLocaleDateString(), _date.toLocaleTimeString(), tests.timer
+            ));
 
             for each (var result in tests.oaa_results) {
                 if (!(result.id in window.checklists)) {
@@ -64,10 +69,10 @@
 
                 var criterion = window.checklists[result.id];
                 var results = {
-                    "c" : "Conforme",
-                    "nc" : "Non conforme",
-                    "i" : "Indéterminé",
-                    "na" : "Non applicable"
+                    "c" : _("oqs.pass"),
+                    "nc" : _("oqs.fail"),
+                    "i" : _("oqs.cannot_tell"),
+                    "na" : _("oqs.not_applicable")
                 };
 
                 var tr = $('<tr></tr>');
@@ -108,11 +113,11 @@
                 bDestroy : true,
                 sDom : "lrtip",
                 oLanguage : {
-                    sZeroRecords : "Aucun résultat",
-                    sInfo : "Affichage des résultats _START_ à _END_ sur _TOTAL_",
-                    sInfoEmpty : "Affichage de 0 résultat",
-                    sInfoFiltered : "(filtré de _MAX_ résultats)",
-                    sSearch : "Rechercher"
+                    sZeroRecords : _("oqs.no_result"),
+                    sInfo : _("oqs.display_info"),
+                    sInfoEmpty : _("oqs.display_empty"),
+                    sInfoFiltered : _("oqs.display_filtered"),
+                    sSearch : _("oqs.search")
                 },
                 aoColumns : column_def
             })
@@ -123,17 +128,17 @@
                     type : "select",
                     bRegex : true,
                     values : [{
-                        value : '^Conforme',
-                        label : 'Conforme'
+                        value : '^' + _("oqs.pass"),
+                        label : _("oqs.pass")
                     }, {
-                        value : '^Non conforme',
-                        label : 'Non conforme'
+                        value : '^' + _("oqs.fail"),
+                        label : _("oqs.fail")
                     }, {
-                        value : '^Indéterminé',
-                        label : 'Indéterminé'
+                        value : '^' + _("oqs.cannot_tell"),
+                        label : _("oqs.cannot_tell")
                     }, {
-                        value : '^Non applicable',
-                        label : 'Non applicable'
+                        value : '^' + _("oqs.not_applicable"),
+                        label : _("oqs.not_applicable")
                     }]
                 }, {
                     type : "select",
@@ -167,10 +172,10 @@
                     aDetails.append($('<li></li>').append(a));
                 };
 
-                aOut.append('<h1>Commentaires</h1><p>' + aData[5] + '</p>');
+                aOut.append('<h1>' + _("oqs.comment") + '</h1><p>' + aData[5] + '</p>');
 
                 if (nodes.length > 0) {
-                    aOut.append('<h2>Éléments concernés</h2>').append(aDetails);
+                    aOut.append('<h2>' + _("oqs.targeted_elements") + '</h2>').append(aDetails);
                 }
 
                 return aOut;
