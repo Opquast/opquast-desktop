@@ -38,11 +38,14 @@
 
 html {
     background-color: #fff;
+    margin: 0;
+    padding: 0;
+    zoom: 1;
 }
 
 body {
-    margin: 10px;
-    overflow: auto;
+    margin: 0 2px;
+    padding: 0;
     font-family: Lucida Grande, sans-serif;
     font-size: 12px;
 }
@@ -59,15 +62,26 @@ body {
     background-image: none;
 }
 
-#test_result, #test_result table {
+#test_result {
     border-collapse: collapse;
     width: 100%;
+    margin: 0;
+}
+
+#test_result thead th {
+    border-top: none;
+}
+#test_result tr th:last-child, #test_result tr td:last-child {
+    border-right: none;
+}
+#test_result tr th:first-child, #test_result tr td:first-child {
+    border-left: none;
 }
 
 #test_result th, .dataTables_info {
-    background-color: #eee;
+    background-color: #ced7e2;
     color: #000;
-    border: 1px solid #333;
+    border: 1px solid #ccc;
 }
 
 .dataTables_info {
@@ -79,4 +93,18 @@ body {
 
 #test_result td {
     border: 1px solid #ccc;
+}
+
+.dataTable tbody>tr.odd {
+    background-color: #f0f8ff;
+}
+.dataTable tbody>tr.even {
+    background-color: #fff;
+}
+
+.dataTable tbody>tr.even>td.sorting_1 {
+    background-color: #d7edff;
+}
+.dataTable tbody>tr.odd>td.sorting_1 {
+    background-color: #e1f1ff;
 }
