@@ -106,3 +106,10 @@ body {
     font-weight: bold;
     float: none;
 }
+
+#test_result tbody td img {
+    vertical-align: middle;
+}
+#test_result img.opener {
+    margin-right: 16px;
+}

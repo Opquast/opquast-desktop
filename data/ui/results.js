@@ -41,7 +41,7 @@
 
     window.showResults = function(tests, prefs) {
         window.tests = tests;
-        var column_def = [null, null, null, null, null, null, {bSortable: false}];
+        var column_def = [null, null, null, null, null, null];
 
         // Setting some column visibilty
         column_def[2] = prefs.showRefs ? null : {bVisible: false};
@@ -85,8 +85,7 @@
                     '<td>' + criterion.name + '</td>',
                     '<td>' + criterion.description + '</td>',
                     '<td>' + result.time + '</td>',
-                    '<td>' + result.comment + '</td>',
-                    '<td></td>'
+                    '<td>' + result.comment + '</td>'
                 );
                 // @formatter:on
 
@@ -143,7 +142,7 @@
                 }, {
                     type : "select",
                     values : values
-                }, null, null, null, null, null]
+                }, null, null, null, null]
             });
 
             // bug : filtering trigger sorting
@@ -181,21 +180,21 @@
                 return aOut;
             }
 
-            $('#test_result tbody tr td:last-child').each(function() {
-                var img = $('<img src="img/details_open.png" alt="" />');
+            $('#test_result tbody tr td:first-child').each(function() {
+                var img = $('<img class="opener" src="img/closed.png" alt="" />');
                 img.addClass("center");
 
                 img.click(function() {
                     var nTr = this.parentNode.parentNode;
-                    if (this.src.match('details_close')) {
-                       this.src = "img/details_open.png";
+                    if (this.src.match('opened')) {
+                       this.src = "img/closed.png";
                        oTable.fnClose(nTr);
                     } else {
-                       this.src = "img/details_close.png";
+                       this.src = "img/opened.png";
                        oTable.fnOpen(nTr, fnFormatDetails(oTable, nTr), 'details');
                     }
                 });
-                $(this).append(img);
+                $(this).prepend(img);
             });
         } catch(e) {
             console.error(e);
