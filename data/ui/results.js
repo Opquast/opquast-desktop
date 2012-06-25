@@ -37,18 +37,17 @@
  * ***** END LICENSE BLOCK ***** */
 
 (function() {
-    var oTable;
-
-    window.aoColumns = [null, null, null, null, {
-        bVisible : false
-    }, {
-        bVisible : false
-    }];
-
     window.tests = null;
 
-    window.showResults = function(tests) {
+    window.showResults = function(tests, prefs) {
         window.tests = tests;
+        var column_def = [null, null, null, null, null, null, {bSortable: false}];
+
+        // Setting some column visibilty
+        column_def[2] = prefs.showRefs ? null : {bVisible: false};
+        column_def[4] = prefs.showTimes ? null : {bVisible: false};
+        column_def[5] = prefs.showDetails ? null : {bVisible: false};
+
         try {
             function pad(number) {
                 return (number < 10 ? '0' : '') + number
@@ -81,7 +80,8 @@
                     '<td>' + criterion.name + '</td>',
                     '<td>' + criterion.description + '</td>',
                     '<td>' + result.time + '</td>',
-                    '<td>' + result.comment + '</td>'
+                    '<td>' + result.comment + '</td>',
+                    '<td></td>'
                 );
                 // @formatter:on
 
@@ -114,7 +114,7 @@
                     sInfoFiltered : "(filtré de _MAX_ résultats)",
                     sSearch : "Rechercher"
                 },
-                aoColumns : aoColumns
+                aoColumns : column_def
             })
 
             oTable.columnFilter({
@@ -147,7 +147,7 @@
                 return true;
             });
 
-            //
+
             function fnFormatDetails(oTable, nTr) {
                 var aData = oTable.fnGetData(nTr), aOut = $('<div><div>'), aDetails = $('<ul></ul>'), nodes = $(nTr).data("details");
 
@@ -176,30 +176,21 @@
                 return aOut;
             }
 
-            //
-            var nCloneTh = $('<th>Détails</th>');
-            var nCloneTd = document.createElement('td');
-            nCloneTd.innerHTML = '<img src="img/details_open.png">';
-            nCloneTd.className = "center";
+            $('#test_result tbody tr td:last-child').each(function() {
+                var img = $('<img src="img/details_open.png" alt="" />');
+                img.addClass("center");
 
-            $('#test_result thead tr').each(function() {
-                $(this).append(nCloneTh);
-            });
-
-            $('#test_result tbody tr').each(function() {
-                $(this).append(nCloneTd.cloneNode(true));
-            });
-
-            //
-            $('#test_result tbody td img').live('click', function() {
-                var nTr = this.parentNode.parentNode;
-                if (this.src.match('details_close')) {
-                    this.src = "img/details_open.png";
-                    oTable.fnClose(nTr);
-                } else {
-                    this.src = "img/details_close.png";
-                    oTable.fnOpen(nTr, fnFormatDetails(oTable, nTr), 'details');
-                }
+                img.click(function() {
+                    var nTr = this.parentNode.parentNode;
+                    if (this.src.match('details_close')) {
+                       this.src = "img/details_open.png";
+                       oTable.fnClose(nTr);
+                    } else {
+                       this.src = "img/details_close.png";
+                       oTable.fnOpen(nTr, fnFormatDetails(oTable, nTr), 'details');
+                    }
+                });
+                $(this).append(img);
             });
         } catch(e) {
             console.error(e);
