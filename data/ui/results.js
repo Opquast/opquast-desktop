@@ -88,6 +88,7 @@
 
                 tr.data("details", result.details);
                 tr.data("comment", result.comment);
+                tr.data("is_open", false);
             }
 
             var values = [];
@@ -172,7 +173,7 @@
                     aDetails.append($('<li></li>').append(a));
                 };
 
-                aOut.append('<h1>' + _("oqs.comment") + '</h1><p>' + $(nTr).data("comment") + '</p>');
+                aOut.append('<h2>' + _("oqs.comment") + '</h2><p>' + $(nTr).data("comment") + '</p>');
 
                 if (nodes.length > 0) {
                     aOut.append('<h2>' + _("oqs.targeted_elements") + '</h2>').append(aDetails);
@@ -181,19 +182,23 @@
                 return aOut;
             }
 
+            function toggleLine(nTr) {
+                if ($(nTr).data("is_open")) {
+                    oTable.fnClose(nTr);
+                    $(nTr).data("is_open", false);
+                    $("img.opener", nTr).attr("src", "img/closed.png");
+                } else {
+                    oTable.fnOpen(nTr, fnFormatDetails(oTable, nTr), "details");
+                    $(nTr).data("is_open", true);
+                    $("img.opener", nTr).attr("src", "img/opened.png");
+                }
+            }
+
             $('#test_result tbody tr td:first-child').each(function() {
                 var img = $('<img class="opener" src="img/closed.png" alt="" />');
                 img.addClass("center");
-
-                img.click(function() {
-                    var nTr = this.parentNode.parentNode;
-                    if (this.src.match('opened')) {
-                       this.src = "img/closed.png";
-                       oTable.fnClose(nTr);
-                    } else {
-                       this.src = "img/opened.png";
-                       oTable.fnOpen(nTr, fnFormatDetails(oTable, nTr), 'details');
-                    }
+                $(this.parentNode).click(function() {
+                    toggleLine(this, img);
                 });
                 $(this).prepend(img);
             });
