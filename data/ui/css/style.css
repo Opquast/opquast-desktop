@@ -62,6 +62,36 @@ body {
     background-image: none;
 }
 
+button.launch {
+    margin-top: 1em;
+    padding: 4px 14px 4px 8px;
+    border-radius: 4px;
+    border: 1px solid #555;
+    background: -moz-linear-gradient(hsl(209, 15%, 27%), hsl(210, 20%, 13%)) no-repeat padding-box;
+    color: #ddd;
+    font-size: 1.2em;
+}
+button.launch span {
+    display: inline-block;
+    width: 23px;
+    height: 18px;
+    margin-bottom: 2px;
+    margin-right: 6px;
+    background: url(../img/launch-big.png) no-repeat 0 0;
+}
+button.launch:hover, button.launch:active {
+    background: -moz-linear-gradient(hsl(209, 10%, 28%), hsl(210, 14%, 8%)) no-repeat padding-box;
+    color: #fff;
+}
+button.launch:active {
+    border-color: #000;
+}
+button.launch:hover span, button.launch:active span {
+    background-position: -25px 0;
+}
+
+
+
 #test_result {
     border-collapse: collapse;
     width: 100%;

@@ -56,14 +56,35 @@
 
 #opquast-desktop-panel-toolbar toolbarbutton {
     border: none;
-    padding: 0;
+    padding: 0 4px;
     margin: 0 2px 2px 2px;
     line-height: 1;
     text-shadow: none;
 }
 
+#opquast-desktop-panel-toolbar .button {
+    border-radius: 4px;
+    border: 1px solid #555;
+    background: -moz-linear-gradient(hsl(209, 15%, 27%), hsl(210, 20%, 13%)) no-repeat padding-box;
+}
+#opquast-desktop-panel-toolbar .button:hover, #opquast-desktop-panel-toolbar .button:active {
+    background: -moz-linear-gradient(hsl(209, 10%, 28%), hsl(210, 14%, 8%)) no-repeat padding-box;
+    color: #fff;
+}
+#opquast-desktop-panel-toolbar .button:active {
+    border-color: #000;
+}
+
+#opquast-desktop-panel-toolbar button[disabled=true] {
+    border-color: rgba(255,255,255, 0.1);
+    color: rgba(255,255,255, 0.1) !important;
+}
+
 #opquast-desktop-panel-infobox {
-    margin: 5px 2px 0 2px;
+    padding: 5px 6px 0 6px;
+    margin: 0 2px 2px 2px;
+    line-height: 1;
+    vertical-align: middle;
 }
 
 #opquast-desktop-panel-searchbox {
@@ -75,21 +96,18 @@
     background-color: rgba(255,255,255, 0.7);
 }
 
-/*
-#opquast-desktop-panel-toolbar toolbarbutton[disabled], #opquast-desktop-panel-toolbar textbox[disabled] {
-    display: none;
-}
-
-#opquast-desktop-panel-toolbar #opquast-desktop-panel-showbutton {
-    display: none;
-}
-
-/**/
-
 #opquast-desktop-panel-toolbar {
     padding: 0px 16px 3px;
     background: -moz-linear-gradient(hsl(209, 18%, 30%), hsl(210, 24%, 16%)) no-repeat padding-box;
-    color: #ccc;
+    color: #ddd;
+}
+
+#opquast-desktop-panel-launchbutton {
+    list-style-image: url("launch.png");
+    -moz-image-region: rect(0, 16px, 16px, 0);
+}
+#opquast-desktop-panel-launchbutton:hover {
+    -moz-image-region: rect(0, 32px, 16px, 16px);
 }
 
 #opquast-desktop-panel-closebutton {
@@ -97,7 +115,7 @@
     -moz-image-region: rect(0, 16px, 16px, 0);
     min-width: 16px;
     width: 16px;
-    margin: 0;
+    border: none;
 }
 
 #opquast-desktop-panel-closebutton:hover {
