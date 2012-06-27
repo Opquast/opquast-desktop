@@ -37,6 +37,8 @@
 
 /*global xhrMephisto, CSSParser*/
 var regFunction = RegExp().compile("([^\\s:{]*)\\(", "i"), inlineStyles = jQueryMephisto("body").find("*[style]");
+var langs = ['aa', 'aa-DJ', 'aa-ER', 'aa-ER-SAAHO', 'aa-ET', 'af', 'af-NA', 'af-ZA', 'ak', 'ak-GH', 'am', 'am-ET', 'ar', 'ar-AE', 'ar-BH', 'ar-DZ', 'ar-EG', 'ar-IQ', 'ar-JO', 'ar-KW', 'ar-LB', 'ar-LY', 'ar-MA', 'ar-OM', 'ar-QA', 'ar-SA', 'ar-SD', 'ar-SY', 'ar-TN', 'ar-YE', 'as', 'as-IN', 'az', 'az-AZ', 'az-Cyrl', 'az-Cyrl-AZ', 'az-Latn', 'az-Latn-AZ', 'be', 'be-BY', 'bg', 'bg-BG', 'bn', 'bn-BD', 'bn-IN', 'bs', 'bs-BA', 'byn', 'byn-ER', 'ca', 'ca-ES', 'cch', 'cch-NG', 'cop', 'cs', 'cs-CZ', 'cy', 'cy-GB', 'da', 'da-DK', 'de', 'de-AT', 'de-BE', 'de-CH', 'de-DE', 'de-LI', 'de-LU', 'dv', 'dv-MV', 'dz', 'dz-BT', 'ee', 'ee-GH', 'ee-TG', 'el', 'el-CY', 'el-GR', 'el-POLYTON', 'en', 'en-AS', 'en-AU', 'en-BE', 'en-BW', 'en-BZ', 'en-CA', 'en-Dsrt', 'en-Dsrt-US', 'en-GB', 'en-GU', 'en-HK', 'en-IE', 'en-IN', 'en-JM', 'en-MH', 'en-MP', 'en-MT', 'en-NA', 'en-NZ', 'en-PH', 'en-PK', 'en-SG', 'en-Shaw', 'en-TT', 'en-UM', 'en-US', 'en-US-POSIX', 'en-VI', 'en-ZA', 'en-ZW', 'eo', 'es', 'es-AR', 'es-BO', 'es-CL', 'es-CO', 'es-CR', 'es-DO', 'es-EC', 'es-ES', 'es-GT', 'es-HN', 'es-MX', 'es-NI', 'es-PA', 'es-PE', 'es-PR', 'es-PY', 'es-SV', 'es-US', 'es-UY', 'es-VE', 'et', 'et-EE', 'eu', 'eu-ES', 'fa', 'fa-AF', 'fa-IR', 'fi', 'fi-FI', 'fil', 'fil-PH', 'fo', 'fo-FO', 'fr', 'fr-BE', 'fr-CA', 'fr-CH', 'fr-FR', 'fr-LU', 'fr-MC', 'fr-SN', 'fur', 'fur-IT', 'ga', 'ga-IE', 'gaa', 'gaa-GH', 'gez', 'gez-ER', 'gez-ET', 'gl', 'gl-ES', 'gu', 'gu-IN', 'gv', 'gv-GB', 'ha', 'ha-Arab', 'ha-Arab-NG', 'ha-Arab-SD', 'ha-GH', 'ha-Latn', 'ha-Latn-GH', 'ha-Latn-NE', 'ha-Latn-NG', 'ha-NE', 'ha-NG', 'ha-SD', 'haw', 'haw-US', 'he', 'he-IL', 'hi', 'hi-IN', 'hr', 'hr-HR', 'hu', 'hu-HU', 'hy', 'hy-AM', 'hy-AM-REVISED', 'ia', 'id', 'id-ID', 'ig', 'ig-NG', 'ii', 'ii-CN', 'in', 'is', 'is-IS', 'it', 'it-CH', 'it-IT', 'iu', 'iw', 'ja', 'ja-JP', 'ka', 'ka-GE', 'kaj', 'kaj-NG', 'kam', 'kam-KE', 'kcg', 'kcg-NG', 'kfo', 'kfo-CI', 'kk', 'kk-Cyrl', 'kk-Cyrl-KZ', 'kk-KZ', 'kl', 'kl-GL', 'km', 'km-KH', 'kn', 'kn-IN', 'ko', 'ko-KR', 'kok', 'kok-IN', 'kpe', 'kpe-GN', 'kpe-LR', 'ku', 'ku-Arab', 'ku-Latn', 'ku-Latn-TR', 'ku-TR', 'kw', 'kw-GB', 'ky', 'ky-KG', 'ln', 'ln-CD', 'ln-CG', 'lo', 'lo-LA', 'lt', 'lt-LT', 'lv', 'lv-LV', 'mk', 'mk-MK', 'ml', 'ml-IN', 'mn', 'mn-CN', 'mn-Cyrl', 'mn-Cyrl-MN', 'mn-MN', 'mn-Mong', 'mn-Mong-CN', 'mo', 'mr', 'mr-IN', 'ms', 'ms-BN', 'ms-MY', 'mt', 'mt-MT', 'my', 'my-MM', 'nb', 'nb-NO', 'ne', 'ne-IN', 'ne-NP', 'nl', 'nl-BE', 'nl-NL', 'nn', 'nn-NO', 'no', 'nr', 'nr-ZA', 'nso', 'nso-ZA', 'ny', 'ny-MW', 'om', 'om-ET', 'om-KE', 'or', 'or-IN', 'pa', 'pa-Arab', 'pa-Arab-PK', 'pa-Guru', 'pa-Guru-IN', 'pa-IN', 'pa-PK', 'pl', 'pl-PL', 'ps', 'ps-AF', 'pt', 'pt-BR', 'pt-PT', 'ro', 'ro-MD', 'ro-RO', 'ru', 'ru-RU', 'ru-UA', 'rw', 'rw-RW', 'sa', 'sa-IN', 'se', 'se-FI', 'se-NO', 'sh', 'sh-BA', 'sh-CS', 'sh-YU', 'si', 'si-LK', 'sid', 'sid-ET', 'sk', 'sk-SK', 'sl', 'sl-SI', 'so', 'so-DJ', 'so-ET', 'so-KE', 'so-SO', 'sq', 'sq-AL', 'sr', 'sr-BA', 'sr-CS', 'sr-Cyrl', 'sr-Cyrl-BA', 'sr-Cyrl-CS', 'sr-Cyrl-ME', 'sr-Cyrl-RS', 'sr-Cyrl-YU', 'sr-Latn', 'sr-Latn-BA', 'sr-Latn-CS', 'sr-Latn-ME', 'sr-Latn-RS', 'sr-Latn-YU', 'sr-ME', 'sr-RS', 'sr-YU', 'ss', 'ss-SZ', 'ss-ZA', 'st', 'st-LS', 'st-ZA', 'sv', 'sv-FI', 'sv-SE', 'sw', 'sw-KE', 'sw-TZ', 'syr', 'syr-SY', 'ta', 'ta-IN', 'te', 'te-IN', 'tg', 'tg-Cyrl', 'tg-Cyrl-TJ', 'tg-TJ', 'th', 'th-TH', 'ti', 'ti-ER', 'ti-ET', 'tig', 'tig-ER', 'tl', 'tn', 'tn-ZA', 'to', 'to-TO', 'tr', 'tr-TR', 'trv', 'ts', 'ts-ZA', 'tt', 'tt-RU', 'ug', 'ug-Arab', 'ug-Arab-CN', 'ug-CN', 'uk', 'uk-UA', 'ur', 'ur-IN', 'ur-PK', 'uz', 'uz-AF', 'uz-Arab', 'uz-Arab-AF', 'uz-Cyrl', 'uz-Cyrl-UZ', 'uz-Latn', 'uz-Latn-UZ', 'uz-UZ', 've', 've-ZA', 'vi', 'vi-VN', 'wal', 'wal-ET', 'wo', 'wo-Latn', 'wo-Latn-SN', 'wo-SN', 'xh', 'xh-ZA', 'yo', 'yo-NG', 'zh', 'zh-CN', 'zh-Hans', 'zh-Hans-CN', 'zh-Hans-HK', 'zh-Hans-MO', 'zh-Hans-SG', 'zh-Hant', 'zh-Hant-HK', 'zh-Hant-MO', 'zh-Hant-TW', 'zh-HK', 'zh-MO', 'zh-SG', 'zh-TW', 'zu', 'zu-ZA'];
+var badLinks = ['cliquez ici', 'lire la suite', 'en savoir plus', "plus d'infos"];
 
 /**
  *
@@ -263,6 +265,103 @@ function cssAbsoluteFontSize(doc) {
  * @param doc
  * @return
  */
+function cssAbsoluteFontSizeOnScreen(doc) {
+	//
+	var result = [], reg = new RegExp().compile("[0-9.]+(p(t|c)|(c|m)m|in)", "i");
+
+	//
+	function callback(rule) {
+		//
+		var result = [];
+
+		//
+		if (rule && rule.parentStyleSheet && rule.declarations) {
+			//
+			for (var i = 0; i < rule.declarations.length; i++) {
+				//
+				if (rule.declarations[i]["property"] == "font-size" && rule.declarations[i]["valueText"].match(reg)) {
+					//
+					result.push({
+						"href" : rule.parentStyleSheet._extra["href"],
+						"selector" : rule.mSelectorText,
+						"rule" : rule.declarations[i]["parsedCssText"],
+						"line" : rule.currentLine
+					});
+				}
+			}
+		}
+
+		//
+		return result;
+	}
+
+	//
+	try {
+		//
+		result = _analyseStylesheets(doc, "screen", callback).concat(_analyseStylesheets(doc, "tv", callback), _analyseStylesheets(doc, "handheld", callback), _analyseStylesheets(doc, "projection", callback));
+		result = result.filter(function(element, index) {
+			var occurences = 0;
+			for (var i = index; i < result.length; i++) {
+				var item = result[i];
+				if (element.line == item.line && element.href == item.href && element.rule == item.rule && element.selector == item.selector) {
+					occurences++;
+				}
+			}
+			return occurences < 2;
+		});
+
+		// inline style walk
+		jQueryMephisto("*[style]").each(function() {
+			//
+			var parser = new CSSParser(), sheet = parser.parse(".style{" + jQueryMephisto(this).attr("style") + "}", false, false), item = this;
+
+			//
+			sheet.resolveVariables("screen");
+
+			//
+			var rules = sheet.cssRules;
+
+			// rules walk
+			for (var k = 0; k < rules.length; k++) {
+				//
+				var rule = rules[k];
+
+				//
+				if (rule && rule.declarations) {
+					//
+					for (var i = 0; i < rule.declarations.length; i++) {
+						//
+						if (rule.declarations[i]["property"] == "font-size" && rule.declarations[i]["valueText"].match(reg)) {
+							//
+							result.push({
+								"href" : "inline",
+								"selector" : _getXPath(item),
+								"rule" : rule.declarations[i]["parsedCssText"],
+								"line" : null
+							});
+						}
+					}
+				}
+			}
+		});
+	}
+
+	//
+	catch (err) {
+		// Error Logging
+		logger.error("cssAbsoluteFontSizeOnScreen", err);
+		result = false;
+	}
+
+	//
+	return result;
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
 function cssAbsoluteFontSizeInForm(doc) {
 	//
 	var result = [], reg = new RegExp().compile("[0-9.]+(p(t|c|x)|(c|m)m|in)", "i");
@@ -300,7 +399,17 @@ function cssAbsoluteFontSizeInForm(doc) {
 	//
 	try {
 		//
-		result = _analyseStylesheets(doc, "screen", callback);
+		result = _analyseStylesheets(doc, "screen", callback).concat(_analyseStylesheets(doc, "tv", callback), _analyseStylesheets(doc, "handheld", callback), _analyseStylesheets(doc, "projection", callback));
+		result = result.filter(function(element, index) {
+			var occurences = 0;
+			for (var i = index; i < result.length; i++) {
+				var item = result[i];
+				if (element.line == item.line && element.href == item.href && element.rule == item.rule && element.selector == item.selector) {
+					occurences++;
+				}
+			}
+			return occurences < 2;
+		});
 
 		// inline style walk
 		jQueryMephisto("button[style], input[style], select[style], textarea[style]").each(function() {
@@ -426,6 +535,139 @@ function cssDirection(doc) {
  * @param doc
  * @return
  */
+function cssBackgroundColorWoColor(doc) {
+	//
+	var result = [];
+
+	//
+	try {
+		//
+		jQueryMephisto("body, body *").filter(function() {
+			//
+			var _backgroundColor = jQueryMephisto(this).css("background-color");
+			var _color = jQueryMephisto(this).css("color");
+
+			//
+			if (_backgroundColor != "transparent" && _color == "rgb(0, 0, 0)") {
+				result.push(_getDetails(this));
+			}
+		});
+	}
+
+	//
+	catch (err) {
+		// Error Logging
+		logger.error("cssBackgroundColorWoColor", err);
+		result = false;
+	}
+
+	//
+	return result;
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
+function cssColorWoBackgroundColor(doc) {
+	//
+	var result = [];
+
+	//
+	try {
+		//
+		jQueryMephisto("body, body *").filter(function() {
+			//
+			var _backgroundColor = jQueryMephisto(this).css("background-color");
+			var _color = jQueryMephisto(this).css("color");
+
+			//
+			if (_backgroundColor == "transparent") {
+				//
+				jQueryMephisto(this).parents().each(function(index, Element) {
+					//
+					var _parentBackgroundColor = jQueryMephisto(this).css("background-color");
+
+					if (_parentBackgroundColor != "transparent") {
+						_backgroundColor = _parentBackgroundColor;
+						return false;
+					}
+				});
+			}
+
+			//
+			if (_backgroundColor == "transparent" && _color != "rgb(0, 0, 0)") {
+				result.push(_getDetails(this));
+			}
+		});
+	}
+
+	//
+	catch (err) {
+		// Error Logging
+		logger.error("cssColorWoBackgroundColor", err);
+		result = false;
+	}
+
+	//
+	return result;
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
+function cssBackgroundImageWoBackgroundColor(doc) {
+	//
+	var result = [];
+
+	//
+	try {
+		//
+		jQueryMephisto("body").find("*").andSelf().filter(function() {
+			//
+			var _backgroundColor = jQueryMephisto(this).css("background-color");
+			var _backgroundImage = jQueryMephisto(this).css("background-image");
+
+			//
+			if (_backgroundColor == "transparent") {
+				//
+				jQueryMephisto(this).parents().each(function(index, Element) {
+					//
+					var _parentBackgroundColor = jQueryMephisto(this).css("background-color");
+
+					if (_parentBackgroundColor != "transparent") {
+						_backgroundColor = _parentBackgroundColor;
+						return false;
+					}
+				});
+			}
+
+			//
+			if (_backgroundColor == "transparent" && _backgroundImage != "none") {
+				result.push(_getDetails(this));
+			}
+		});
+	}
+
+	//
+	catch (err) {
+		// Error Logging
+		logger.error("cssBackgroundImageWoBackgroundColor", err);
+		result = false;
+	}
+
+	//
+	return result;
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
 function cssDisplayNone(doc) {
 	//
 	var result = [];
@@ -480,6 +722,226 @@ function cssDisplayNone(doc) {
 						if (rule.declarations[i]["property"] == "display" && rule.declarations[i]["valueText"] == "none") {
 							//
 							result.push(_getInlineCssDetails(rule, i, item));
+						}
+					}
+				}
+			}
+		});
+	}
+
+	//
+	catch (err) {
+		// Error Logging
+		logger.error("cssDisplayNone", err);
+		result = false;
+	}
+
+	//
+	return result;
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
+function cssBackgroundColorWoColor(doc) {
+	//
+	var result = [];
+
+	//
+	try {
+		//
+		jQueryMephisto("body, body *").filter(function() {
+			//
+			var _backgroundColor = jQueryMephisto(this).css("background-color");
+			var _color = jQueryMephisto(this).css("color");
+
+			//
+			if (_backgroundColor != "transparent" && _color == "rgb(0, 0, 0)") {
+				result.push(_getDetails(this));
+			}
+		});
+	}
+
+	//
+	catch (err) {
+		// Error Logging
+		logger.error("cssBackgroundColorWoColor", err);
+		result = false;
+	}
+
+	//
+	return result;
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
+function cssColorWoBackgroundColor(doc) {
+	//
+	var result = [];
+
+	//
+	try {
+		//
+		jQueryMephisto("body, body *").filter(function() {
+			//
+			var _backgroundColor = jQueryMephisto(this).css("background-color");
+			var _color = jQueryMephisto(this).css("color");
+
+			//
+			if (_backgroundColor == "transparent") {
+				//
+				jQueryMephisto(this).parents().each(function(index, Element) {
+					//
+					var _parentBackgroundColor = jQueryMephisto(this).css("background-color");
+
+					if (_parentBackgroundColor != "transparent") {
+						_backgroundColor = _parentBackgroundColor;
+						return false;
+					}
+				});
+			}
+
+			//
+			if (_backgroundColor == "transparent" && _color != "rgb(0, 0, 0)") {
+				result.push(_getDetails(this));
+			}
+		});
+	}
+
+	//
+	catch (err) {
+		// Error Logging
+		logger.error("cssColorWoBackgroundColor", err);
+		result = false;
+	}
+
+	//
+	return result;
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
+function cssBackgroundImageWoBackgroundColor(doc) {
+	//
+	var result = [];
+
+	//
+	try {
+		//
+		jQueryMephisto("body").find("*").andSelf().filter(function() {
+			//
+			var _backgroundColor = jQueryMephisto(this).css("background-color");
+			var _backgroundImage = jQueryMephisto(this).css("background-image");
+
+			//
+			if (_backgroundColor == "transparent") {
+				//
+				jQueryMephisto(this).parents().each(function(index, Element) {
+					//
+					var _parentBackgroundColor = jQueryMephisto(this).css("background-color");
+
+					if (_parentBackgroundColor != "transparent") {
+						_backgroundColor = _parentBackgroundColor;
+						return false;
+					}
+				});
+			}
+
+			//
+			if (_backgroundColor == "transparent" && _backgroundImage != "none") {
+				result.push(_getDetails(this));
+			}
+		});
+	}
+
+	//
+	catch (err) {
+		// Error Logging
+		logger.error("cssBackgroundImageWoBackgroundColor", err);
+		result = false;
+	}
+
+	//
+	return result;
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
+function cssDisplayNone(doc) {
+	//
+	var result = [];
+
+	//
+	function callback(rule) {
+		//
+		var result = [];
+
+		//
+		if (rule && rule.parentStyleSheet && rule.declarations) {
+			//
+			for (var i = 0; i < rule.declarations.length; i++) {
+				//
+				if (rule.declarations[i]["property"] == "display" && rule.declarations[i]["valueText"] == "none") {
+					//
+					result.push({
+						"href" : rule.parentStyleSheet._extra["href"],
+						"selector" : rule.mSelectorText,
+						"rule" : rule.declarations[i]["parsedCssText"],
+						"line" : rule.currentLine
+					});
+				}
+			}
+		}
+
+		//
+		return result;
+	}
+
+	//
+	try {
+		//
+		result = _analyseStylesheets(doc, "screen", callback);
+
+		// inline style walk
+		jQueryMephisto("*[style]").each(function() {
+			//
+			var parser = new CSSParser(), sheet = parser.parse(".style{" + jQueryMephisto(this).attr("style") + "}", false, false), item = this;
+
+			//
+			sheet.resolveVariables("screen");
+
+			//
+			var rules = sheet.cssRules;
+
+			// rules walk
+			for (var k = 0; k < rules.length; k++) {
+				//
+				var rule = rules[k];
+
+				//
+				if (rule && rule.declarations) {
+					//
+					for (var i = 0; i < rule.declarations.length; i++) {
+						//
+						if (rule.declarations[i]["property"] == "display" && rule.declarations[i]["valueText"] == "none") {
+							//
+							result.push({
+								"href" : "inline",
+								"selector" : _getXPath(item),
+								"rule" : rule.declarations[i]["parsedCssText"],
+								"line" : null
+							});
 						}
 					}
 				}
@@ -783,7 +1245,7 @@ function rightCharset(doc) {
  */
 function htmlLanguage(doc) {
 	//
-	var result = [], langs = ['aa', 'aa-DJ', 'aa-ER', 'aa-ER-SAAHO', 'aa-ET', 'af', 'af-NA', 'af-ZA', 'ak', 'ak-GH', 'am', 'am-ET', 'ar', 'ar-AE', 'ar-BH', 'ar-DZ', 'ar-EG', 'ar-IQ', 'ar-JO', 'ar-KW', 'ar-LB', 'ar-LY', 'ar-MA', 'ar-OM', 'ar-QA', 'ar-SA', 'ar-SD', 'ar-SY', 'ar-TN', 'ar-YE', 'as', 'as-IN', 'az', 'az-AZ', 'az-Cyrl', 'az-Cyrl-AZ', 'az-Latn', 'az-Latn-AZ', 'be', 'be-BY', 'bg', 'bg-BG', 'bn', 'bn-BD', 'bn-IN', 'bs', 'bs-BA', 'byn', 'byn-ER', 'ca', 'ca-ES', 'cch', 'cch-NG', 'cop', 'cs', 'cs-CZ', 'cy', 'cy-GB', 'da', 'da-DK', 'de', 'de-AT', 'de-BE', 'de-CH', 'de-DE', 'de-LI', 'de-LU', 'dv', 'dv-MV', 'dz', 'dz-BT', 'ee', 'ee-GH', 'ee-TG', 'el', 'el-CY', 'el-GR', 'el-POLYTON', 'en', 'en-AS', 'en-AU', 'en-BE', 'en-BW', 'en-BZ', 'en-CA', 'en-Dsrt', 'en-Dsrt-US', 'en-GB', 'en-GU', 'en-HK', 'en-IE', 'en-IN', 'en-JM', 'en-MH', 'en-MP', 'en-MT', 'en-NA', 'en-NZ', 'en-PH', 'en-PK', 'en-SG', 'en-Shaw', 'en-TT', 'en-UM', 'en-US', 'en-US-POSIX', 'en-VI', 'en-ZA', 'en-ZW', 'eo', 'es', 'es-AR', 'es-BO', 'es-CL', 'es-CO', 'es-CR', 'es-DO', 'es-EC', 'es-ES', 'es-GT', 'es-HN', 'es-MX', 'es-NI', 'es-PA', 'es-PE', 'es-PR', 'es-PY', 'es-SV', 'es-US', 'es-UY', 'es-VE', 'et', 'et-EE', 'eu', 'eu-ES', 'fa', 'fa-AF', 'fa-IR', 'fi', 'fi-FI', 'fil', 'fil-PH', 'fo', 'fo-FO', 'fr', 'fr-BE', 'fr-CA', 'fr-CH', 'fr-FR', 'fr-LU', 'fr-MC', 'fr-SN', 'fur', 'fur-IT', 'ga', 'ga-IE', 'gaa', 'gaa-GH', 'gez', 'gez-ER', 'gez-ET', 'gl', 'gl-ES', 'gu', 'gu-IN', 'gv', 'gv-GB', 'ha', 'ha-Arab', 'ha-Arab-NG', 'ha-Arab-SD', 'ha-GH', 'ha-Latn', 'ha-Latn-GH', 'ha-Latn-NE', 'ha-Latn-NG', 'ha-NE', 'ha-NG', 'ha-SD', 'haw', 'haw-US', 'he', 'he-IL', 'hi', 'hi-IN', 'hr', 'hr-HR', 'hu', 'hu-HU', 'hy', 'hy-AM', 'hy-AM-REVISED', 'ia', 'id', 'id-ID', 'ig', 'ig-NG', 'ii', 'ii-CN', 'in', 'is', 'is-IS', 'it', 'it-CH', 'it-IT', 'iu', 'iw', 'ja', 'ja-JP', 'ka', 'ka-GE', 'kaj', 'kaj-NG', 'kam', 'kam-KE', 'kcg', 'kcg-NG', 'kfo', 'kfo-CI', 'kk', 'kk-Cyrl', 'kk-Cyrl-KZ', 'kk-KZ', 'kl', 'kl-GL', 'km', 'km-KH', 'kn', 'kn-IN', 'ko', 'ko-KR', 'kok', 'kok-IN', 'kpe', 'kpe-GN', 'kpe-LR', 'ku', 'ku-Arab', 'ku-Latn', 'ku-Latn-TR', 'ku-TR', 'kw', 'kw-GB', 'ky', 'ky-KG', 'ln', 'ln-CD', 'ln-CG', 'lo', 'lo-LA', 'lt', 'lt-LT', 'lv', 'lv-LV', 'mk', 'mk-MK', 'ml', 'ml-IN', 'mn', 'mn-CN', 'mn-Cyrl', 'mn-Cyrl-MN', 'mn-MN', 'mn-Mong', 'mn-Mong-CN', 'mo', 'mr', 'mr-IN', 'ms', 'ms-BN', 'ms-MY', 'mt', 'mt-MT', 'my', 'my-MM', 'nb', 'nb-NO', 'ne', 'ne-IN', 'ne-NP', 'nl', 'nl-BE', 'nl-NL', 'nn', 'nn-NO', 'no', 'nr', 'nr-ZA', 'nso', 'nso-ZA', 'ny', 'ny-MW', 'om', 'om-ET', 'om-KE', 'or', 'or-IN', 'pa', 'pa-Arab', 'pa-Arab-PK', 'pa-Guru', 'pa-Guru-IN', 'pa-IN', 'pa-PK', 'pl', 'pl-PL', 'ps', 'ps-AF', 'pt', 'pt-BR', 'pt-PT', 'ro', 'ro-MD', 'ro-RO', 'ru', 'ru-RU', 'ru-UA', 'rw', 'rw-RW', 'sa', 'sa-IN', 'se', 'se-FI', 'se-NO', 'sh', 'sh-BA', 'sh-CS', 'sh-YU', 'si', 'si-LK', 'sid', 'sid-ET', 'sk', 'sk-SK', 'sl', 'sl-SI', 'so', 'so-DJ', 'so-ET', 'so-KE', 'so-SO', 'sq', 'sq-AL', 'sr', 'sr-BA', 'sr-CS', 'sr-Cyrl', 'sr-Cyrl-BA', 'sr-Cyrl-CS', 'sr-Cyrl-ME', 'sr-Cyrl-RS', 'sr-Cyrl-YU', 'sr-Latn', 'sr-Latn-BA', 'sr-Latn-CS', 'sr-Latn-ME', 'sr-Latn-RS', 'sr-Latn-YU', 'sr-ME', 'sr-RS', 'sr-YU', 'ss', 'ss-SZ', 'ss-ZA', 'st', 'st-LS', 'st-ZA', 'sv', 'sv-FI', 'sv-SE', 'sw', 'sw-KE', 'sw-TZ', 'syr', 'syr-SY', 'ta', 'ta-IN', 'te', 'te-IN', 'tg', 'tg-Cyrl', 'tg-Cyrl-TJ', 'tg-TJ', 'th', 'th-TH', 'ti', 'ti-ER', 'ti-ET', 'tig', 'tig-ER', 'tl', 'tn', 'tn-ZA', 'to', 'to-TO', 'tr', 'tr-TR', 'trv', 'ts', 'ts-ZA', 'tt', 'tt-RU', 'ug', 'ug-Arab', 'ug-Arab-CN', 'ug-CN', 'uk', 'uk-UA', 'ur', 'ur-IN', 'ur-PK', 'uz', 'uz-AF', 'uz-Arab', 'uz-Arab-AF', 'uz-Cyrl', 'uz-Cyrl-UZ', 'uz-Latn', 'uz-Latn-UZ', 'uz-UZ', 've', 've-ZA', 'vi', 'vi-VN', 'wal', 'wal-ET', 'wo', 'wo-Latn', 'wo-Latn-SN', 'wo-SN', 'xh', 'xh-ZA', 'yo', 'yo-NG', 'zh', 'zh-CN', 'zh-Hans', 'zh-Hans-CN', 'zh-Hans-HK', 'zh-Hans-MO', 'zh-Hans-SG', 'zh-Hant', 'zh-Hant-HK', 'zh-Hant-MO', 'zh-Hant-TW', 'zh-HK', 'zh-MO', 'zh-SG', 'zh-TW', 'zu', 'zu-ZA'];
+	var result = [];
 
 	//
 	try {
@@ -812,9 +1274,105 @@ function htmlLanguage(doc) {
  * @param doc
  * @return
  */
+function htmlSpaceBetweenLetters(doc) {
+	//
+	var result = [], reg = new RegExp().compile("(\s+[A-Za-z]){3,}", "i");
+
+	//
+	try {
+		//
+		jQueryMephisto("pre").each(function() {
+			//
+			if (re.test(jQueryMephisto(this).text())) {
+				result.push(_getDetails(this));
+			}
+		});
+	}
+
+	//
+	catch (err) {
+		// Error Logging
+		logger.error("htmlSpaceBetweenLetters", err);
+		result = false;
+	}
+
+	//
+	return result;
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
+function htmlElementLanguage(doc) {
+	//
+	var result = [];
+
+	//
+	try {
+		//
+		jQueryMephisto("body").find("*[lang], *[xml\\:lang]").each(function() {
+			//
+			var _lang = jQueryMephisto.trim(jQueryMephisto(this).attr("lang")), _xml_lang = jQueryMephisto.trim(jQueryMephisto(this).attr("xml:lang"));
+
+			//
+			if (jQueryMephisto.inArray(_lang, langs) == -1 || jQueryMephisto.inArray(_xml_lang, langs) == -1) {
+				result.push(_getDetails(jQueryMephisto("html").get(0)));
+			}
+		});
+	}
+
+	//
+	catch (err) {
+		// Error Logging
+		logger.error("htmlElementLanguage", err);
+		result = false;
+	}
+
+	//
+	return result;
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
+function htmlSpaceBetweenLetters(doc) {
+	//
+	var result = [], reg = new RegExp().compile("(\s+[A-Za-z]){3,}", "i");
+
+	//
+	try {
+		//
+		jQueryMephisto("pre").each(function() {
+			//
+			if (re.test(jQueryMephisto(this).text())) {
+				result.push(_getDetails(this));
+			}
+		});
+	}
+
+	//
+	catch (err) {
+		// Error Logging
+		logger.error("htmlSpaceBetweenLetters", err);
+		result = false;
+	}
+
+	//
+	return result;
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
 function httpLanguage(doc) {
 	//
-	var result = [], langs = ['aa', 'aa-DJ', 'aa-ER', 'aa-ER-SAAHO', 'aa-ET', 'af', 'af-NA', 'af-ZA', 'ak', 'ak-GH', 'am', 'am-ET', 'ar', 'ar-AE', 'ar-BH', 'ar-DZ', 'ar-EG', 'ar-IQ', 'ar-JO', 'ar-KW', 'ar-LB', 'ar-LY', 'ar-MA', 'ar-OM', 'ar-QA', 'ar-SA', 'ar-SD', 'ar-SY', 'ar-TN', 'ar-YE', 'as', 'as-IN', 'az', 'az-AZ', 'az-Cyrl', 'az-Cyrl-AZ', 'az-Latn', 'az-Latn-AZ', 'be', 'be-BY', 'bg', 'bg-BG', 'bn', 'bn-BD', 'bn-IN', 'bs', 'bs-BA', 'byn', 'byn-ER', 'ca', 'ca-ES', 'cch', 'cch-NG', 'cop', 'cs', 'cs-CZ', 'cy', 'cy-GB', 'da', 'da-DK', 'de', 'de-AT', 'de-BE', 'de-CH', 'de-DE', 'de-LI', 'de-LU', 'dv', 'dv-MV', 'dz', 'dz-BT', 'ee', 'ee-GH', 'ee-TG', 'el', 'el-CY', 'el-GR', 'el-POLYTON', 'en', 'en-AS', 'en-AU', 'en-BE', 'en-BW', 'en-BZ', 'en-CA', 'en-Dsrt', 'en-Dsrt-US', 'en-GB', 'en-GU', 'en-HK', 'en-IE', 'en-IN', 'en-JM', 'en-MH', 'en-MP', 'en-MT', 'en-NA', 'en-NZ', 'en-PH', 'en-PK', 'en-SG', 'en-Shaw', 'en-TT', 'en-UM', 'en-US', 'en-US-POSIX', 'en-VI', 'en-ZA', 'en-ZW', 'eo', 'es', 'es-AR', 'es-BO', 'es-CL', 'es-CO', 'es-CR', 'es-DO', 'es-EC', 'es-ES', 'es-GT', 'es-HN', 'es-MX', 'es-NI', 'es-PA', 'es-PE', 'es-PR', 'es-PY', 'es-SV', 'es-US', 'es-UY', 'es-VE', 'et', 'et-EE', 'eu', 'eu-ES', 'fa', 'fa-AF', 'fa-IR', 'fi', 'fi-FI', 'fil', 'fil-PH', 'fo', 'fo-FO', 'fr', 'fr-BE', 'fr-CA', 'fr-CH', 'fr-FR', 'fr-LU', 'fr-MC', 'fr-SN', 'fur', 'fur-IT', 'ga', 'ga-IE', 'gaa', 'gaa-GH', 'gez', 'gez-ER', 'gez-ET', 'gl', 'gl-ES', 'gu', 'gu-IN', 'gv', 'gv-GB', 'ha', 'ha-Arab', 'ha-Arab-NG', 'ha-Arab-SD', 'ha-GH', 'ha-Latn', 'ha-Latn-GH', 'ha-Latn-NE', 'ha-Latn-NG', 'ha-NE', 'ha-NG', 'ha-SD', 'haw', 'haw-US', 'he', 'he-IL', 'hi', 'hi-IN', 'hr', 'hr-HR', 'hu', 'hu-HU', 'hy', 'hy-AM', 'hy-AM-REVISED', 'ia', 'id', 'id-ID', 'ig', 'ig-NG', 'ii', 'ii-CN', 'in', 'is', 'is-IS', 'it', 'it-CH', 'it-IT', 'iu', 'iw', 'ja', 'ja-JP', 'ka', 'ka-GE', 'kaj', 'kaj-NG', 'kam', 'kam-KE', 'kcg', 'kcg-NG', 'kfo', 'kfo-CI', 'kk', 'kk-Cyrl', 'kk-Cyrl-KZ', 'kk-KZ', 'kl', 'kl-GL', 'km', 'km-KH', 'kn', 'kn-IN', 'ko', 'ko-KR', 'kok', 'kok-IN', 'kpe', 'kpe-GN', 'kpe-LR', 'ku', 'ku-Arab', 'ku-Latn', 'ku-Latn-TR', 'ku-TR', 'kw', 'kw-GB', 'ky', 'ky-KG', 'ln', 'ln-CD', 'ln-CG', 'lo', 'lo-LA', 'lt', 'lt-LT', 'lv', 'lv-LV', 'mk', 'mk-MK', 'ml', 'ml-IN', 'mn', 'mn-CN', 'mn-Cyrl', 'mn-Cyrl-MN', 'mn-MN', 'mn-Mong', 'mn-Mong-CN', 'mo', 'mr', 'mr-IN', 'ms', 'ms-BN', 'ms-MY', 'mt', 'mt-MT', 'my', 'my-MM', 'nb', 'nb-NO', 'ne', 'ne-IN', 'ne-NP', 'nl', 'nl-BE', 'nl-NL', 'nn', 'nn-NO', 'no', 'nr', 'nr-ZA', 'nso', 'nso-ZA', 'ny', 'ny-MW', 'om', 'om-ET', 'om-KE', 'or', 'or-IN', 'pa', 'pa-Arab', 'pa-Arab-PK', 'pa-Guru', 'pa-Guru-IN', 'pa-IN', 'pa-PK', 'pl', 'pl-PL', 'ps', 'ps-AF', 'pt', 'pt-BR', 'pt-PT', 'ro', 'ro-MD', 'ro-RO', 'ru', 'ru-RU', 'ru-UA', 'rw', 'rw-RW', 'sa', 'sa-IN', 'se', 'se-FI', 'se-NO', 'sh', 'sh-BA', 'sh-CS', 'sh-YU', 'si', 'si-LK', 'sid', 'sid-ET', 'sk', 'sk-SK', 'sl', 'sl-SI', 'so', 'so-DJ', 'so-ET', 'so-KE', 'so-SO', 'sq', 'sq-AL', 'sr', 'sr-BA', 'sr-CS', 'sr-Cyrl', 'sr-Cyrl-BA', 'sr-Cyrl-CS', 'sr-Cyrl-ME', 'sr-Cyrl-RS', 'sr-Cyrl-YU', 'sr-Latn', 'sr-Latn-BA', 'sr-Latn-CS', 'sr-Latn-ME', 'sr-Latn-RS', 'sr-Latn-YU', 'sr-ME', 'sr-RS', 'sr-YU', 'ss', 'ss-SZ', 'ss-ZA', 'st', 'st-LS', 'st-ZA', 'sv', 'sv-FI', 'sv-SE', 'sw', 'sw-KE', 'sw-TZ', 'syr', 'syr-SY', 'ta', 'ta-IN', 'te', 'te-IN', 'tg', 'tg-Cyrl', 'tg-Cyrl-TJ', 'tg-TJ', 'th', 'th-TH', 'ti', 'ti-ER', 'ti-ET', 'tig', 'tig-ER', 'tl', 'tn', 'tn-ZA', 'to', 'to-TO', 'tr', 'tr-TR', 'trv', 'ts', 'ts-ZA', 'tt', 'tt-RU', 'ug', 'ug-Arab', 'ug-Arab-CN', 'ug-CN', 'uk', 'uk-UA', 'ur', 'ur-IN', 'ur-PK', 'uz', 'uz-AF', 'uz-Arab', 'uz-Arab-AF', 'uz-Cyrl', 'uz-Cyrl-UZ', 'uz-Latn', 'uz-Latn-UZ', 'uz-UZ', 've', 've-ZA', 'vi', 'vi-VN', 'wal', 'wal-ET', 'wo', 'wo-Latn', 'wo-Latn-SN', 'wo-SN', 'xh', 'xh-ZA', 'yo', 'yo-NG', 'zh', 'zh-CN', 'zh-Hans', 'zh-Hans-CN', 'zh-Hans-HK', 'zh-Hans-MO', 'zh-Hans-SG', 'zh-Hant', 'zh-Hant-HK', 'zh-Hant-MO', 'zh-Hant-TW', 'zh-HK', 'zh-MO', 'zh-SG', 'zh-TW', 'zu', 'zu-ZA'];
+	var result = [];
 
 	//
 	try {
@@ -1161,7 +1719,7 @@ function htmlAreaWoAlt(doc) {
  */
 function htmlDefaultTitle(doc) {
 	//
-	var result = [], reg = new RegExp().compile("^(untitled( document)?|welcome to adobe golive( \d+)?|default( title| document)?|document sans nom)$", "i");
+	var result = [], reg = new RegExp().compile("^(untitled( document)?|welcome to adobe golive( \d+)?|default( title| document| page)?|document sans nom|page (sans titre|par défaut))$", "i");
 
 	//
 	try {
@@ -3906,13 +4464,9 @@ function htmlFakeOrderedList(doc) {
  * @param doc
  * @return
  */
-function _htmlFieldWithoutTitleAndLabel(type) {
+function _htmlFieldWithoutTitleAndLabel(type, implicit) {
 	//
-	var result = [];
-	var selector;
-	var fields = {};
-	var i = 0;
-	var j = 0;
+	var result = [], selector, fields = {}, i = 0, j = 0;
 
 	//
 	try {
@@ -3932,6 +4486,11 @@ function _htmlFieldWithoutTitleAndLabel(type) {
 					var id = jQueryMephisto.trim(jQueryMephisto(this).attr("id"));
 					var title = jQueryMephisto.trim(jQueryMephisto(this).attr("title")).toLowerCase();
 					var label = _getAllText(jQueryMephisto("label[for=" + id + "]").get(0));
+
+					//
+					if (implicit && label == "") {
+						label = _getAllText(jQueryMephisto(this).parents("label").get(0));
+					}
 
 					//
 					if (fields[i][j][title] == undefined) {
@@ -3962,6 +4521,11 @@ function _htmlFieldWithoutTitleAndLabel(type) {
 						var id = jQueryMephisto.trim(jQueryMephisto(this).attr("id"));
 						var title = jQueryMephisto.trim(jQueryMephisto(this).attr("title")).toLowerCase();
 						var label = _getAllText(jQueryMephisto("label[for=" + id + "]").get(0));
+
+						//
+						if (implicit && label == "") {
+							label = _getAllText(jQueryMephisto(this).parents("label").get(0));
+						}
 
 						//
 						if (fields[i][title] == undefined) {
@@ -4000,7 +4564,26 @@ function _htmlFieldWithoutTitleAndLabel(type) {
 
 								//
 								if (_tmp["attributes"]) {
-									if (((type != "select" && type != "textarea") && (_tmp["attributes"]["type"] == type || _tmp["attributes"]["type"] == "")) || ((type == "select" || type == "textarea") && _tmp["tag"] == type)) {
+									//
+									if (type != "select" && type != "textarea") {
+										//
+										var _type = "text";
+
+										//
+										for each (var attribute in _tmp["attributes"]) {
+											if (attribute["name"] == "type") {
+												_type = attribute["value"];
+											}
+										}
+
+										//
+										if (_type == type) {
+											result.push(_tmp);
+										}
+									}
+
+									//
+									else if ((type == "select" || type == "textarea") && _tmp["tag"] == type) {
 										result.push(_tmp);
 									}
 								}
@@ -4030,7 +4613,17 @@ function _htmlFieldWithoutTitleAndLabel(type) {
  */
 function htmlInputTextWithoutTitleAndLabel(doc) {
 	//
-	return _htmlFieldWithoutTitleAndLabel("text");
+	return _htmlFieldWithoutTitleAndLabel("text", false);
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
+function htmlInputTextWithoutTitleAndAnyLabel(doc) {
+	//
+	return _htmlFieldWithoutTitleAndLabel("text", true);
 }
 
 /**
@@ -4040,7 +4633,17 @@ function htmlInputTextWithoutTitleAndLabel(doc) {
  */
 function htmlInputCheckboxWithoutTitleAndLabel(doc) {
 	//
-	return _htmlFieldWithoutTitleAndLabel("checkbox");
+	return _htmlFieldWithoutTitleAndLabel("checkbox", false);
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
+function htmlInputCheckboxWithoutTitleAndAnyLabel(doc) {
+	//
+	return _htmlFieldWithoutTitleAndLabel("checkbox", true);
 }
 
 /**
@@ -4050,7 +4653,17 @@ function htmlInputCheckboxWithoutTitleAndLabel(doc) {
  */
 function htmlInputFileWithoutTitleAndLabel(doc) {
 	//
-	return _htmlFieldWithoutTitleAndLabel("file");
+	return _htmlFieldWithoutTitleAndLabel("file", false);
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
+function htmlInputFileWithoutTitleAndAnyLabel(doc) {
+	//
+	return _htmlFieldWithoutTitleAndLabel("file", true);
 }
 
 /**
@@ -4060,7 +4673,17 @@ function htmlInputFileWithoutTitleAndLabel(doc) {
  */
 function htmlInputRadioWithoutTitleAndLabel(doc) {
 	//
-	return _htmlFieldWithoutTitleAndLabel("radio");
+	return _htmlFieldWithoutTitleAndLabel("radio", false);
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
+function htmlInputRadioWithoutTitleAndAnyLabel(doc) {
+	//
+	return _htmlFieldWithoutTitleAndLabel("radio", true);
 }
 
 /**
@@ -4070,7 +4693,17 @@ function htmlInputRadioWithoutTitleAndLabel(doc) {
  */
 function htmlInputPasswordWithoutTitleAndLabel(doc) {
 	//
-	return _htmlFieldWithoutTitleAndLabel("password");
+	return _htmlFieldWithoutTitleAndLabel("password", false);
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
+function htmlInputPasswordWithoutTitleAndAnyLabel(doc) {
+	//
+	return _htmlFieldWithoutTitleAndLabel("password", true);
 }
 
 /**
@@ -4080,7 +4713,17 @@ function htmlInputPasswordWithoutTitleAndLabel(doc) {
  */
 function htmlSelectWithoutTitleAndLabel(doc) {
 	//
-	return _htmlFieldWithoutTitleAndLabel("select");
+	return _htmlFieldWithoutTitleAndLabel("select", false);
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
+function htmlSelectWithoutTitleAndAnyLabel(doc) {
+	//
+	return _htmlFieldWithoutTitleAndLabel("select", true);
 }
 
 /**
@@ -4090,7 +4733,17 @@ function htmlSelectWithoutTitleAndLabel(doc) {
  */
 function htmlTextareaWithoutTitleAndLabel(doc) {
 	//
-	return _htmlFieldWithoutTitleAndLabel("textarea");
+	return _htmlFieldWithoutTitleAndLabel("textarea", false);
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
+function htmlTextareaWithoutTitleAndAnyLabel(doc) {
+	//
+	return _htmlFieldWithoutTitleAndLabel("textarea", true);
 }
 
 /**
@@ -4402,7 +5055,7 @@ function htmlH1(doc) {
 	//
 	try {
 		//
-		jQueryMephisto("body").filter(":header").each(function() {
+		jQueryMephisto(":header").each(function() {
 			//
 			if (this.tagName.toUpperCase() == "H1") {
 				result.push(_getDetails(this));
@@ -4433,7 +5086,7 @@ function htmlH2(doc) {
 	//
 	try {
 		//
-		jQueryMephisto("body").filter(":header").each(function() {
+		jQueryMephisto(":header").each(function() {
 			//
 			if (this.tagName.toUpperCase() == "H2") {
 				result.push(_getDetails(this));
@@ -4464,7 +5117,7 @@ function htmlH3(doc) {
 	//
 	try {
 		//
-		jQueryMephisto("body").filter(":header").each(function() {
+		jQueryMephisto(":header").each(function() {
 			//
 			if (this.tagName.toUpperCase() == "H3") {
 				result.push(_getDetails(this));
@@ -4495,7 +5148,7 @@ function htmlH4(doc) {
 	//
 	try {
 		//
-		jQueryMephisto("body").filter(":header").each(function() {
+		jQueryMephisto(":header").each(function() {
 			//
 			if (this.tagName.toUpperCase() == "H4") {
 				result.push(_getDetails(this));
@@ -4526,7 +5179,7 @@ function htmlH5(doc) {
 	//
 	try {
 		//
-		jQueryMephisto("body").filter(":header").each(function() {
+		jQueryMephisto(":header").each(function() {
 			//
 			if (this.tagName.toUpperCase() == "H5") {
 				result.push(_getDetails(this));
@@ -4557,7 +5210,7 @@ function htmlH6(doc) {
 	//
 	try {
 		//
-		jQueryMephisto("body").filter(":header").each(function() {
+		jQueryMephisto(":header").each(function() {
 			//
 			if (this.tagName.toUpperCase() == "H6") {
 				result.push(_getDetails(this));
@@ -4903,12 +5556,12 @@ function htmlImageAnimatedNotInButtonOrA(doc) {
  */
 function htmlScript(doc) {
 	//
-	var result = []
+	var result = [];
 
 	//
 	try {
 		//
-		jQueryMephisto(document).filter("script").each(function() {
+		jQueryMephisto("script").each(function() {
 			if (jQueryMephisto.trim(jQueryMephisto(this).attr("src")) != '' || jQueryMephisto.trim(jQueryMephisto(this).text()) != '') {
 				result.push(_getDetails(this));
 			}
@@ -4918,7 +5571,366 @@ function htmlScript(doc) {
 	//
 	catch (err) {
 		// Error Logging
-		logger.error("htmlImageAnimatedNotInButtonOrA", err);
+		logger.error("htmlScript", err);
+		result = false;
+	}
+
+	//
+	return result;
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
+function htmlLinksTextWithInvalidTitle(doc) {
+	//
+	var result = [];
+
+	//
+	try {
+		//
+		jQueryMephisto("a:not(:has(img))").each(function() {
+			if (jQueryMephisto.trim(jQueryMephisto(this).attr("title")) == '' || jQueryMephisto.trim(jQueryMephisto(this).attr("title")) == jQueryMephisto.trim(jQueryMephisto(this).text()) || jQueryMephisto.inArray(jQueryMephisto.trim(jQueryMephisto(this).attr("title")), badLinks) != -1) {
+				result.push(_getDetails(this));
+			}
+		});
+	}
+
+	//
+	catch (err) {
+		// Error Logging
+		logger.error("htmlLinksTextWithInvalidTitle", err);
+		result = false;
+	}
+
+	//
+	return result;
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
+function htmlLinksTextInvalid(doc) {
+	//
+	var result = [];
+
+	//
+	try {
+		//
+		jQueryMephisto("a:not(:has(img))").each(function() {
+			if (jQueryMephisto.inArray(jQueryMephisto.trim(jQueryMephisto(this).text()), badLinks) != -1) {
+				result.push(_getDetails(this));
+			}
+		});
+	}
+
+	//
+	catch (err) {
+		// Error Logging
+		logger.error("htmlLinksTextInvalid", err);
+		result = false;
+	}
+
+	//
+	return result;
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
+function htmlLinksTextNotUnique(doc) {
+	//
+	var result = [], links = {};
+
+	//
+	try {
+		//
+		jQueryMephisto("a:not(:has(img))").each(function() {
+			//
+			var context = jQueryMephisto.trim(jQueryMephisto(this).text()) + "∞|∞" + jQueryMephisto.trim(jQueryMephisto(this).attr("title")), href = jQueryMephisto.trim(jQueryMephisto(this).attr("href"));
+
+			//
+			if (jQueryMephisto.inArray(context, Object.keys(links)) != -1) {
+				//
+				if (links[context] != href) {
+					result.push(_getDetails(this));
+				}
+			}
+
+			//
+			else {
+				links[context] = href;
+			}
+		});
+	}
+
+	//
+	catch (err) {
+		// Error Logging
+		logger.error("htmlLinksTextNotUnique", err);
+		result = false;
+	}
+
+	//
+	return result;
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
+function htmlLinksImageWithInvalidAlt(doc) {
+	//
+	var result = [];
+
+	//
+	try {
+		//
+		jQueryMephisto("a").has("img").filter(function() {
+			return jQueryMephisto.trim(jQueryMephisto(this).text()) == "";
+		}).each(function() {
+			if (jQueryMephisto.inArray(jQueryMephisto.trim(jQueryMephisto("img", this).attr("alt")), badLinks) != -1) {
+				result.push(_getDetails(this));
+			}
+		});
+	}
+
+	//
+	catch (err) {
+		// Error Logging
+		logger.error("htmlLinksImageWithInvalidAlt", err);
+		result = false;
+	}
+
+	//
+	return result;
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
+function htmlLinksImageWithInvalidTitle(doc) {
+	//
+	var result = [];
+
+	//
+	try {
+		//
+		jQueryMephisto("a").has("img").filter(function() {
+			return jQueryMephisto.trim(jQueryMephisto(this).text()) == "";
+		}).each(function() {
+			if (jQueryMephisto.trim(jQueryMephisto(this).attr("title")) == '' || jQueryMephisto.trim(jQueryMephisto(this).attr("title")) == jQueryMephisto.trim(jQueryMephisto("img", this).attr("alt")) || jQueryMephisto.inArray(jQueryMephisto.trim(jQueryMephisto(this).attr("title")), badLinks) != -1) {
+				result.push(_getDetails(this));
+			}
+		});
+	}
+
+	//
+	catch (err) {
+		// Error Logging
+		logger.error("htmlLinksImageWithInvalidTitle", err);
+		result = false;
+	}
+
+	//
+	return result;
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
+function htmlLinksImageNotUnique(doc) {
+	//
+	var result = [], links = {};
+
+	//
+	try {
+		//
+		jQueryMephisto("a").has("img").filter(function() {
+			return jQueryMephisto.trim(jQueryMephisto(this).text()) == "";
+		}).each(function() {
+			//
+			var context = jQueryMephisto.trim(jQueryMephisto("img", this).attr("alt")) + "∞|∞" + jQueryMephisto.trim(jQueryMephisto(this).attr("title")), href = jQueryMephisto.trim(jQueryMephisto(this).attr("href"));
+
+			//
+			if (jQueryMephisto.inArray(context, Object.keys(links)) != -1) {
+				//
+				if (links[context] != href) {
+					result.push(_getDetails(this));
+				}
+			}
+
+			//
+			else {
+				links[context] = href;
+			}
+		});
+	}
+
+	//
+	catch (err) {
+		// Error Logging
+		logger.error("htmlLinksImageNotUnique", err);
+		result = false;
+	}
+
+	//
+	return result;
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
+function htmlLinksWithInvalidText(doc) {
+	//
+	var result = [];
+
+	//
+	try {
+		//
+		jQueryMephisto("a").has("img").filter(function() {
+			return jQueryMephisto.trim(jQueryMephisto(this).text()) != "";
+		}).each(function() {
+			if ((jQueryMephisto.inArray(jQueryMephisto.trim(jQueryMephisto(this).text()), badLinks) != -1 && (jQueryMephisto.trim(jQueryMephisto("img", this).attr("alt")) == '' || jQueryMephisto.trim(jQueryMephisto("img", this).attr("alt")), badLinks) != -1) || jQueryMephisto.inArray(jQueryMephisto.trim(jQueryMephisto(this).text() + " " + jQueryMephisto.trim(jQueryMephisto("img", this).attr("alt"))), badLinks) != -1 || jQueryMephisto.inArray(jQueryMephisto.trim(jQueryMephisto("img", this).attr("alt")) + " " + jQueryMephisto.trim(jQueryMephisto(this).text()), badLinks) != -1) {
+				result.push(_getDetails(this));
+			}
+		});
+	}
+
+	//
+	catch (err) {
+		// Error Logging
+		logger.error("htmlLinksWithInvalidText", err);
+		result = false;
+	}
+
+	//
+	return result;
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
+function htmlLinksNotUnique(doc) {
+	//
+	var result = [], links = {};
+
+	//
+	try {
+		//
+		jQueryMephisto("a").has("img").filter(function() {
+			return jQueryMephisto.trim(jQueryMephisto(this).text()) != "";
+		}).each(function() {
+			//
+			var context = jQueryMephisto.trim(jQueryMephisto(this).text()) + "∞|∞" + jQueryMephisto.trim(jQueryMephisto("img", this).attr("alt")) + "∞|∞" + jQueryMephisto.trim(jQueryMephisto(this).attr("title"));
+			var href = jQueryMephisto.trim(jQueryMephisto(this).attr("href"));
+
+			//
+			if (jQueryMephisto.inArray(context, Object.keys(links)) != -1) {
+				//
+				if (links[context] != href) {
+					result.push(_getDetails(this));
+				}
+			}
+
+			//
+			else {
+				links[context] = href;
+			}
+		});
+	}
+
+	//
+	catch (err) {
+		// Error Logging
+		logger.error("htmlLinksNotUnique", err);
+		result = false;
+	}
+
+	//
+	return result;
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
+function htmlAreaWithInvalidAlt(doc) {
+	//
+	var result = [];
+
+	//
+	try {
+		//
+		jQueryMephisto("area[alt]").each(function() {
+			if (jQueryMephisto.inArray(jQueryMephisto.trim(jQueryMephisto(this).attr("alt")), badLinks) != -1) {
+				result.push(_getDetails(this));
+			}
+		});
+	}
+
+	//
+	catch (err) {
+		// Error Logging
+		logger.error("htmlAreaWithInvalidAlt", err);
+		result = false;
+	}
+
+	//
+	return result;
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
+function htmlAreaNotUnique(doc) {
+	//
+	var result = [], links = {};
+
+	//
+	try {
+		//
+		jQueryMephisto("area[alt]").each(function() {
+			//
+			var context = jQueryMephisto.trim(jQueryMephisto(this).attr("alt")) + "∞|∞" + jQueryMephisto.trim(jQueryMephisto(this).attr("title")), href = jQueryMephisto.trim(jQueryMephisto(this).attr("href"));
+
+			//
+			if (jQueryMephisto.inArray(context, Object.keys(links)) != -1) {
+				//
+				if (links[context] != href) {
+					result.push(_getDetails(this));
+				}
+			}
+
+			//
+			else {
+				links[context] = href;
+			}
+		});
+	}
+
+	//
+	catch (err) {
+		// Error Logging
+		logger.error("htmlAreaNotUnique", err);
 		result = false;
 	}
 

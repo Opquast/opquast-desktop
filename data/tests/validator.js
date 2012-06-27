@@ -35,9 +35,8 @@
  * the terms of any one of the MPL, the GPL or the LGPL.
  *
  * ***** END LICENSE BLOCK ***** */
-
 var debug_validator = false;
-var timing_validator = true;
+var timing_validator = false;
 var config_saveAndRefresh_delay = 1000;
 // 1500
 var exit_validator = false;
@@ -641,7 +640,7 @@ function _getSelector(node) {
 			var id = '#' + node.id;
 
 			//
-			if(selector != "") {
+			if (selector != "") {
 				selector = xname + id + " > " + selector;
 			} else {
 				selector = xname + id;
@@ -663,7 +662,7 @@ function _getSelector(node) {
 			}
 
 			//
-			if(selector != "") {
+			if (selector != "") {
 				selector = xname + ":nth-of-type(" + idx + ") > " + selector;
 			} else {
 				selector = xname + ":nth-of-type(" + idx + ")";
@@ -693,8 +692,8 @@ function _getDetails(node) {
 
 	//
 	return {
-		"path": _getSelector(node),
-		"text": node.outerHTML.replace(/</g, "&lt;").replace(/>/g, "&gt;").substr(0, 200)
+		"path" : _getSelector(node),
+		"text" : node.outerHTML.replace(/</g, "&lt;").replace(/>/g, "&gt;").substr(0, 200)
 	}
 }
 
@@ -1025,7 +1024,7 @@ function synthesize_results(arg_results) {
 				'id' : criterion_data.id,
 				'result' : status,
 				'results_list' : [],
-				'comment' : criterion_data.comment.join(",\n"),
+				'comment' : (criterion_data.comment || []).join(",\n"),
 				'details' : criterion_data.details,
 				'time' : criterion_data.time
 			};
