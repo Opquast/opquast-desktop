@@ -86,6 +86,7 @@
                 );
                 // @formatter:on
 
+                tr.data("test_id", result.id);
                 tr.data("details", result.details);
                 tr.data("comment", result.comment);
                 tr.data("is_open", false);
@@ -155,6 +156,7 @@
                 var aData = oTable.fnGetData(nTr),
                     aOut = $('<div class="details"><div>'),
                     aDetails = $('<ul></ul>'),
+                    aFeedback = $('<a href="#">' + _("oqs.report_test_problem") + '</a>'),
                     nodes = $(nTr).data("details");
 
                 for each (var node in nodes) {
@@ -178,6 +180,18 @@
                 if (nodes.length > 0) {
                     aOut.append('<h2>' + _("oqs.targeted_elements") + '</h2>').append(aDetails);
                 }
+
+
+                aFeedback.click(function(evt) {
+                    evt.preventDefault();
+                    _testFeedback({
+                        test_id: $(nTr).data("test_id"),
+                        test_name: $("td",nTr).eq(2).text(),
+                        checklist: $("td",nTr).eq(1).text()
+                    });
+                });
+                aOut.append('<h2>' + _("oqs.feedback") + "</h2>");
+                aOut.append($('<p></p>').append(aFeedback));
 
                 return aOut;
             }

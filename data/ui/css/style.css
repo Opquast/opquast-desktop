@@ -159,7 +159,7 @@ button.launch:hover span, button.launch:active span {
 #test_result div.details li {
     margin: 0.5em 0;
 }
-#test_result div.details ul a {
+#test_result div.details a {
     color: #06c;
     text-decoration: underline;
 }
