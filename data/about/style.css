@@ -216,6 +216,8 @@ h1,h2,h3 {
 #header-wrap h1 {
     padding-top: 40px;
     color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #000;
 }
 
 #main {
@@ -227,6 +229,23 @@ h1,h2,h3 {
     padding-top: 1em;
     text-align: center;
 }
+
+#logos {
+    margin: 0 0 1em 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+
+}
+#logos li {
+    display: block;
+    float: left;
+    width: 33%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
 
 table tbody tr>td:nth-child(2) {
     white-space: nowrap;
