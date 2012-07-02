@@ -87,6 +87,17 @@ checklists = {
         "solution": "", 
         "name": "4.9.2"
     }, 
+    "16231": {
+        "goal": "Permettre le remplacement de l'ancienne URL par la nouvelle dans les index des moteurs.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Si le site propose des redirections, celles-ci sont permanentes (code 301).", 
+        "solution": "\u00c9vitez toutes les formes de redirections ne passant pas le protocole HTTP comme la redirection via un \u00e9l\u00e9ment META dans l'ent\u00eate du code HTML de la page, ou l'utilisation de Javascript. Param\u00e9trez les redirections pour quelles envoient un code 301 (via .htaccess sur Apache ou via headers en PHP, par exemple).", 
+        "name": "75"
+    }, 
     "11950": {
         "goal": "", 
         "checklist": {
@@ -130,6 +141,28 @@ checklists = {
         "description": "Chaque m\u00e9dia temporel synchronis\u00e9 pr\u00e9-enregistr\u00e9 v\u00e9rifie-t-il, si n\u00e9cessaire, une de ces conditions ? (hors cas particuliers)", 
         "solution": "", 
         "name": "4.11.1"
+    }, 
+    "16421": {
+        "goal": "", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Les m\u00eames pages sont servies aux humains et aux robots.", 
+        "solution": "", 
+        "name": ""
+    }, 
+    "16422": {
+        "goal": "<div>Permettre l'indexation de tous les contenus.&nbsp;Eviter les p\u00e9nalit\u00e9s.</div>", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "<div>Javascript ou les styles CSS ne sont pas utilis\u00e9s pour masquer un contenu de fa\u00e7on permanente.</div>", 
+        "solution": "Ne pas utiliser de styles CSS ou javascript pour masquer dans les rendus utilisateur un contenu qui serait sp\u00e9cifiquement r\u00e9serv\u00e9 aux robots d'indexation.", 
+        "name": "21"
     }, 
     "11953": {
         "goal": "", 
@@ -175,6 +208,17 @@ checklists = {
         "solution": "", 
         "name": "4.12.1"
     }, 
+    "16232": {
+        "goal": "Obtenir des liens depuis plusieurs sites \u00e0 forte influence.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Les vid\u00e9os sont soumises \u00e0 au moins deux diffuseurs externes.", 
+        "solution": "Publier les contenus vid\u00e9o et audio via au moins deux services de diffusion publique.", 
+        "name": "68"
+    }, 
     "11955": {
         "goal": "", 
         "checklist": {
@@ -185,6 +229,17 @@ checklists = {
         "description": "Pour chaque m\u00e9dia temporel pr\u00e9-enregistr\u00e9 seulement vid\u00e9o ayant une audio-description \u00e9tendue synchronis\u00e9e, celle-ci est-elle pertinente ?", 
         "solution": "", 
         "name": "4.12.2"
+    }, 
+    "16217": {
+        "goal": "Renforcer les mots-clefs de la page.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Les URL contiennent des termes pr\u00e9sents dans les titres de pages.", 
+        "solution": "Si vous utilisez un CMS, v\u00e9rifier qu'il est bien param\u00e9tr\u00e9 pour utiliser le titre de la page dans la construction de l'URL.", 
+        "name": "37"
     }, 
     "11956": {
         "goal": "", 
@@ -207,6 +262,17 @@ checklists = {
         "description": "Pour chaque m\u00e9dia temporel pr\u00e9-enregistr\u00e9 seulement audio, ayant une transcription textuelle, celle-ci est-elle pertinente (hors cas particuliers) ?", 
         "solution": "", 
         "name": "4.2.1"
+    }, 
+    "19233": {
+        "goal": "Permettre aux utilisateurs de distinguer le sujet d'un tableau de donn\u00e9es de la mani\u00e8re dont il est construit.", 
+        "checklist": {
+            "id": 568, 
+            "name": "Accessibility first step: error detection"
+        }, 
+        "explanation": "", 
+        "description": "Ne pas utiliser un contenu d'\u00e9l\u00e9ment caption identique au contenu de l'attribut summary", 
+        "solution": "Mettre dans l'\u00e9l\u00e9ment caption un contenu servant \u00e0 titrer le tableau et dans l'attribut summary un contenu pour d\u00e9crire l'organisation du tableau", 
+        "name": "49"
     }, 
     "11957": {
         "goal": "", 
@@ -240,6 +306,17 @@ checklists = {
         "description": "Chaque m\u00e9dia temporel synchronis\u00e9 ayant une transcription textuelle, celle-ci est-elle pertinente ?", 
         "solution": "", 
         "name": "4.14.2"
+    }, 
+    "16233": {
+        "goal": "<div>Simplifier le crawl des moteurs.&nbsp;Am\u00e9liorer le ranking du site.</div>", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le site et le serveur sont configur\u00e9s pour d\u00e9livrer les pages de mani\u00e8re performante.", 
+        "solution": "<div>\"Configurer le serveur Web pour qu'il puisse g\u00e9rer la mise en cache des \u00e9l\u00e9ments statiques et g\u00e9rer - au niveau applicatif - la possible mise en cache des \u00e9l\u00e9ments dynamiques.</div><div>En pratique, et en accord avec les sp\u00e9cifications HTTP le serveur devra envoyer les en-t\u00eates ETag, Date et Last-Modified correspondant respectivement \u00e0 l'identifiant de la ressource, \u00e0 la date de traitement de la requ\u00eate et \u00e0 la date de derni\u00e8re modification de la ressource demand\u00e9e. L'ensemble des dates \u00e9tant au format GMT. Ces informations pouvant \u00eatre compl\u00e9t\u00e9es par les champs Content-Length et Expires si la taille en octets et la date d'expiration exacte du contenu sont connues.</div><div>Afin d'informer les proxys et les clients finaux sur le comportement \u00e0 adopter vis \u00e0 vis des contenus mis en cache, les auteurs devront utiliser les en-t\u00eates HTTP Cache-Control et Pragma en accord avec les d\u00e9lais de r\u00e9actualisation n\u00e9cessaires et le caract\u00e8re priv\u00e9 de la diffusion.</div><div>La possible mise en cache pourra \u00eatre ainsi finalis\u00e9e par la soumission d'un message 304 Not Modified (sans la ressource demand\u00e9e dans le corps de la requ\u00eate) lorsque le serveur recevra un ent\u00eate If-Modified-Since contenant une date ant\u00e9rieure \u00e0 la date de modification de la dite ressource.</div><div>Activer le module Gzip ou Deflate du serveur pour les ressources textuelles (javascript, CSS, HTML).</div><div>Supprimer les espaces non n\u00e9cessaires et les commentaires dans les fichiers Javascript, par exemple en recourant \u00e0 des outils tels que crockford.com/javascript/jsmin ou developer.yahoo.com/yui/compressor/&nbsp;</div><div>Supprimer les espaces non n\u00e9cessaires et les commentaires dans les fichiers CSS, par exemple en recourant \u00e0 des outils tels que developer.yahoo.com/yui/compressor/ \"</div>", 
+        "name": "80"
     }, 
     "11960": {
         "goal": "", 
@@ -472,6 +549,17 @@ checklists = {
         "solution": "", 
         "name": "4.20.3"
     }, 
+    "16235": {
+        "goal": "Simplifier le crawl.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Tous les hyperliens du site sont valides.", 
+        "solution": "S'assurer que l'outil utilis\u00e9 pour la r\u00e9daction des contenus poss\u00e8de une gestion satisfaisante et coh\u00e9rente des hyperliens internes. \r\nLancer r\u00e9guli\u00e8rement un contr\u00f4le de la validit\u00e9 de l'ensemble des liens du site incluant les liens externes.", 
+        "name": "40"
+    }, 
     "11970": {
         "goal": "", 
         "checklist": {
@@ -549,6 +637,17 @@ checklists = {
         "solution": "", 
         "name": "5.2.1"
     }, 
+    "16236": {
+        "goal": "Simplifier l'indexation.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Les adresses URL ne contiennent pas d'indication concernant les param\u00e8tres de session.", 
+        "solution": "Configurez les CMS, framework, serveur et langage utilis\u00e9s pour ne pas transmettre les param\u00e8tres de session dans l'URL.", 
+        "name": "34"
+    }, 
     "11975": {
         "goal": "", 
         "checklist": {
@@ -559,6 +658,17 @@ checklists = {
         "description": "Pour chaque tableau de mise en forme (balise table) ayant un attribut summary, le contenu de cet attribut est-il vide (summary=\"\") ?", 
         "solution": "", 
         "name": "5.2.2"
+    }, 
+    "19305": {
+        "goal": "Permettre l'association des cellules avec leurs ent\u00eates dans les tableaux de donn\u00e9es.", 
+        "checklist": {
+            "id": 568, 
+            "name": "Accessibility first step: error detection"
+        }, 
+        "explanation": "", 
+        "description": "Ne pas utiliser un contenu d'attribut headers qui ne correspond \u00e0 aucune valeur d'attribut id pr\u00e9sent dans le m\u00eame tableau", 
+        "solution": "Renseigner les attributs headers des \u00e9l\u00e9ments td avec les valeurs des attributs id des ent\u00eates associ\u00e9es. ", 
+        "name": "65"
     }, 
     "11976": {
         "goal": "", 
@@ -637,6 +747,17 @@ checklists = {
         "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
         "name": "25"
     }, 
+    "16237": {
+        "goal": "Simplifier la compr\u00e9hension de la langue des pages par les moteurs.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Les sous domaines et r\u00e9pertoires linguistiques utilisent le registre de code IANA.", 
+        "solution": "Nommer les sous-domaines et les r\u00e9pertoires linguistiques \u00e0 l'aide des codes de langue indiqu\u00e9s par le registre des codes de langue de l'IANA : http://www.iana.org/assignments/language-subtag-registry&nbsp;", 
+        "name": "29"
+    }, 
     "11980": {
         "goal": "", 
         "checklist": {
@@ -647,6 +768,17 @@ checklists = {
         "description": "Pour chaque tableau de donn\u00e9es (balise table), chaque en-t\u00eate de lignes a-t-il une balise th ?", 
         "solution": "", 
         "name": "5.6.2"
+    }, 
+    "18283": {
+        "goal": "", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "La couleur de chaque mot clef ou texte  est diff\u00e9rente de la couleur du fond de la page.", 
+        "solution": "", 
+        "name": "0"
     }, 
     "11981": {
         "goal": "", 
@@ -758,6 +890,28 @@ checklists = {
         "solution": "", 
         "name": "6.1.2"
     }, 
+    "19120": {
+        "goal": "Permettre d'\u00e9viter la redondance lorsqu'un lien est compos\u00e9 \u00e0 la fois de texte et d'une image.", 
+        "checklist": {
+            "id": 567, 
+            "name": "Accessibility Second step : risk management"
+        }, 
+        "explanation": "", 
+        "description": "Utiliser avec pr\u00e9caution l'attribut alt vide pour les \u00e9l\u00e9ments img descendant d'\u00e9l\u00e9ments a qui contiennent \u00e9galement du texte", 
+        "solution": "Mettre un alt=\"\" sur l'\u00e9l\u00e9ment img lorsque ce dernier est inclus dans un lien textuel dont le libell\u00e9 permet d\u00e9j\u00e0 de conna\u00eetre la destination du lien.", 
+        "name": "6"
+    }, 
+    "19171": {
+        "goal": "Permettre un comportement \u00e9quivalent et/ou l'acc\u00e8s \u00e0 une information \u00e9quivalente quel que soit le p\u00e9riph\u00e9rique d'entr\u00e9e des utilisateurs", 
+        "checklist": {
+            "id": 567, 
+            "name": "Accessibility Second step : risk management"
+        }, 
+        "explanation": "", 
+        "description": "Utiliser avec pr\u00e9caution le gestionnaire d'\u00e9v\u00e9nement onblur lorsque vous n'utilisez pas le gestionnaire d'\u00e9v\u00e9nement onmouseout", 
+        "solution": "Lors de l'utilisation de l'\u00e9v\u00e9nement onblur, inclure un comportement \u00e9quivalent sur l'\u00e9v\u00e9nement onmouseout ou pr\u00e9voir un autre \u00e9l\u00e9ment permettant de r\u00e9aliser la m\u00eame action via la souris", 
+        "name": "33"
+    }, 
     "11988": {
         "goal": "", 
         "checklist": {
@@ -791,6 +945,28 @@ checklists = {
         "solution": "", 
         "name": "6.1.4"
     }, 
+    "16239": {
+        "goal": "Simplifier la compr\u00e9hension du contenu de la page.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le code source de chaque page contient une metadonn\u00e9e qui d\u00e9finit le jeu de caract\u00e8res.", 
+        "solution": "Utiliser dans la section HEAD de la page l'\u00e9l\u00e9ment META http-equiv=\"Content-Type\" et pr\u00e9ciser le jeu de caract\u00e8re utilis\u00e9 dans son attribut content.", 
+        "name": "47"
+    }, 
+    "16171": {
+        "goal": "<div>Simplifier la lecture des alternatives par les moteurs.&nbsp;Inciter \u00e0 \u00e9crire des alternatives br\u00e8ves et percutantes.</div>", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "La longueur des alternatives textuelles est inf\u00e9rieure ou \u00e9gale \u00e0 80 caract\u00e8res.", 
+        "solution": "Limiter \u00e0 80 caract\u00e8res au plus, espaces compris, le contenu de l'attribut ALT des \u00e9l\u00e9ments IMG, AREA, INPUT type image, APPLET. Le cas \u00e9ch\u00e9ant, recourir \u00e0 un automatisme du CMS pour tronquer les contenus automatiquement ins\u00e9r\u00e9s comme alternative. Mettre en place dans l'interface de saisie des contenus une validation de la longueur des champs d'alternatives d'images avertissant le r\u00e9dacteur et lui permettant de corriger celles-ci avant la publication.", 
+        "name": "4"
+    }, 
     "11943": {
         "goal": "", 
         "checklist": {
@@ -802,16 +978,137 @@ checklists = {
         "solution": "", 
         "name": "4.6.1"
     }, 
-    "19094": {
-        "goal": "Permettre la restitution de la nature des contenus (ici une liste) et de leurs caract\u00e9ristiques (ici le nombre d'item de cette liste) aux  utilisateurs qui ne per\u00e7oivent pas la mise en page originale.\r\nAinsi, la transmission uniquement visuelle d'une information s\u00e9mantique est \u00e9vit\u00e9e.", 
+    "16654": {
+        "goal": "Eviter le contenu dupliqu\u00e9.", 
         "checklist": {
-            "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "id": 478, 
+            "name": "SEO"
         }, 
         "explanation": "", 
-        "description": "Utiliser avec pr\u00e9caution des \u00e9l\u00e9ments div successifs commen\u00e7ant chacun leur contenu par -, \u2013, \u2014, * ou \u2022", 
-        "solution": "Utiliser les \u00e9l\u00e9ments ul et li pour baliser les listes.", 
-        "name": "1"
+        "description": "Les URL alternatives vers chaque page font l'objet d'une redirection 301 vers l'URL principale.", 
+        "solution": "Choisir une URL principale et rediriger tous les domaines alternatifs \u00e9ventuels vers ce domaine (via .htaccess sous Apache, par exemple).", 
+        "name": "79"
+    }, 
+    "16655": {
+        "goal": "Eviter le contenu dupliqu\u00e9.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Les liens internes utilisent une URL unique pour chaque page.", 
+        "solution": "N'utilisez pas d'URL alternative \u00e0 l'int\u00e9rieur de votre site. Une m\u00eame ressource doit toujours \u00eatre appel\u00e9 avec la m\u00eame URL sur l'ensemble du site.", 
+        "name": "41"
+    }, 
+    "16656": {
+        "goal": "Permettre l'am\u00e9lioration de la popularit\u00e9.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le site n'interdit pas la mise en place de liens entrants.", 
+        "solution": "Adopter une politique ou des conditions d'utilisation qui autorise par d\u00e9faut les liens entrants.", 
+        "name": "62"
+    }, 
+    "16657": {
+        "goal": "", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Chaque contenu audio et vid\u00e9o est accompagn\u00e9 de sa transcription textuelle", 
+        "solution": "", 
+        "name": ""
+    }, 
+    "16661": {
+        "goal": "", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Certaines pages doivent utiliser des micro-donn\u00e9es", 
+        "solution": "", 
+        "name": ""
+    }, 
+    "16662": {
+        "goal": "", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Il doit y avoir les fichiers robots.txt et sitemap.xml", 
+        "solution": "", 
+        "name": ""
+    }, 
+    "16663": {
+        "goal": "", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le nom des images doit \u00eatre explicite", 
+        "solution": "", 
+        "name": ""
+    }, 
+    "16664": {
+        "goal": "", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Des liens internes dot\u00e9s d'ancres significatives renvoient vers des pages pertinentes du site.", 
+        "solution": "", 
+        "name": ""
+    }, 
+    "16665": {
+        "goal": "", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le site ne propose pas de contenu dupliqu\u00e9.", 
+        "solution": "", 
+        "name": ""
+    }, 
+    "16666": {
+        "goal": "", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Chaque fragment de texte r\u00e9dig\u00e9 dans une langue diff\u00e9rente de la langue principale indique la langue qu'il utilise", 
+        "solution": "", 
+        "name": ""
+    }, 
+    "16667": {
+        "goal": "", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Les redirections \u00e9ventuelles ne sont pas effectu\u00e9es \u00e0 l'aide de code http 302", 
+        "solution": "", 
+        "name": ""
+    }, 
+    "16668": {
+        "goal": "", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le code html des pages contient un minimum d'\u00e9l\u00e9ments de structure n'ayant pas de sens s\u00e9mantique.", 
+        "solution": "", 
+        "name": ""
     }, 
     "11994": {
         "goal": "", 
@@ -824,6 +1121,28 @@ checklists = {
         "solution": "", 
         "name": "6.2.1"
     }, 
+    "16240": {
+        "goal": "Permettre aux moteurs d'acc\u00e9der \u00e0 tous les contenus.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Les styles ne sont pas utilis\u00e9s pour g\u00e9n\u00e9rer du contenu.", 
+        "solution": "Ne pas utiliser la propri\u00e9t\u00e9 CSS content ainsi que les images d'arri\u00e8re-plan CSS pour afficher dans la page un contenu absent de la source HTML.", 
+        "name": "71"
+    }, 
+    "16674": {
+        "goal": "", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Chaque contenu multim\u00e9dia (vid\u00e9o, audio, flash, etc.) est accompagn\u00e9 d'une alternative textuelle", 
+        "solution": "", 
+        "name": ""
+    }, 
     "11995": {
         "goal": "", 
         "checklist": {
@@ -834,6 +1153,39 @@ checklists = {
         "description": "Pour chaque lien image ayant un titre de lien (attribut title), le contenu de cet attribut est-il pertinent ?", 
         "solution": "", 
         "name": "6.2.2"
+    }, 
+    "16676": {
+        "goal": "", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "La version compl\u00e8te de chaque sigle pertinent est donn\u00e9e de fa\u00e7on adjacente \u00e0 celui-ci.", 
+        "solution": "", 
+        "name": ""
+    }, 
+    "19359": {
+        "goal": "", 
+        "checklist": {
+            "id": 568, 
+            "name": "Accessibility first step: error detection"
+        }, 
+        "explanation": "", 
+        "description": "Ne pas utiliser un contenu d'attribut alt identique au texte pr\u00e9sent dans un lien si l'\u00e9l\u00e9ment img est un descendant d'\u00e9l\u00e9ment a contenant \u00e9galement du texte", 
+        "solution": "", 
+        "name": "42"
+    }, 
+    "16172": {
+        "goal": "Renforcer les m\u00eames mots-clefs.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Les termes pr\u00e9sents dans l'alternative textuelle des images sont \u00e9galement pr\u00e9sents dans le contenu de la page.", 
+        "solution": "Renseigner l'attribut ALT des \u00e9l\u00e9ments IMG, AREA, APPLET en reprenant des mots-cl\u00e9s pr\u00e9sents dans le contenu textuel auquel elles sont associ\u00e9es dans la page.", 
+        "name": "5"
     }, 
     "11996": {
         "goal": "", 
@@ -857,6 +1209,39 @@ checklists = {
         "solution": "", 
         "name": "4.6.2"
     }, 
+    "16684": {
+        "goal": "", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Pour \u00e9viter les anomalies statistiques, on introduit une proportion de liens entrants en nofollow", 
+        "solution": "", 
+        "name": ""
+    }, 
+    "16685": {
+        "goal": "", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Si, dans une page, plusieurs liens sont fait vers une m\u00eame destination, les liens redondants contiennent une ancre", 
+        "solution": "", 
+        "name": ""
+    }, 
+    "16686": {
+        "goal": "", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Un lien est fait vers la version canonique d'une page", 
+        "solution": "", 
+        "name": ""
+    }, 
     "11997": {
         "goal": "", 
         "checklist": {
@@ -868,16 +1253,27 @@ checklists = {
         "solution": "", 
         "name": "6.2.4"
     }, 
-    "19173": {
-        "goal": "Eviter aux utilisateurs un changement de contexte sans validation explicite de leur part.", 
+    "16690": {
+        "goal": "", 
         "checklist": {
-            "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "id": 478, 
+            "name": "SEO"
         }, 
         "explanation": "", 
-        "description": "Utiliser avec pr\u00e9caution le gestionnaire d'\u00e9v\u00e9nement onchange pour d\u00e9clencher la m\u00e9thode submit", 
-        "solution": "Pr\u00e9voir un bouton de validation explicite que l'utilisateur devra d\u00e9clencher \u00e0 cette fin pour soumettre un formulaire.\r\nAlternativement, il est possible d'informer au pr\u00e9alable les utilisateurs de ce comportement.", 
-        "name": "35"
+        "description": "Les pages de contenu non significatif et les r\u00e9sultats de formulaires ne seront pas indexables", 
+        "solution": "", 
+        "name": ""
+    }, 
+    "16691": {
+        "goal": "", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Les \u00e9l\u00e9ments r\u00e9currents de navigation (menus) sont plac\u00e9s en fin de page", 
+        "solution": "", 
+        "name": ""
     }, 
     "11998": {
         "goal": "", 
@@ -900,6 +1296,17 @@ checklists = {
         "description": "Chaque intitul\u00e9 de lien image (contenu de l'attribut alt ou contenu entre &lt;object&gt;&lt;/object&gt;) est-il explicite hors contexte (hors cas particulier) ?", 
         "solution": "", 
         "name": "6.3.2"
+    }, 
+    "16241": {
+        "goal": "Fournir aux moteurs un contenu pertinent et riche en mots-clefs.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "La page d'accueil expose la nature des contenus et services propos\u00e9s.", 
+        "solution": "Pr\u00e9voir sur la page d'accueil une information, une phrase, un contenu r\u00e9sumant les contenus et services propos\u00e9s sur le site. ", 
+        "name": "18"
     }, 
     "12000": {
         "goal": "", 
@@ -978,6 +1385,17 @@ checklists = {
         "solution": "", 
         "name": "6.4.3"
     }, 
+    "16242": {
+        "goal": "Permettre aux moteurs d'indexer le contenu des PDF.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le texte des documents PDF internes est s\u00e9lectionnable.", 
+        "solution": "Ne pas diffuser de PDF issu du scan de documents initiaux mais uniquement des documents convertis au format num\u00e9rique (par OCR le cas \u00e9ch\u00e9ant).", 
+        "name": "22"
+    }, 
     "12005": {
         "goal": "", 
         "checklist": {
@@ -988,6 +1406,17 @@ checklists = {
         "description": "Chaque lien identique de type composite a-t-il les m\u00eames fonction et destination ?", 
         "solution": "", 
         "name": "6.4.4"
+    }, 
+    "16228": {
+        "goal": "<div>Am\u00e9liorer la cr\u00e9dibilit\u00e9 du site.&nbsp;Fournir des contenus indexables aux moteurs.</div>", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le site ne contient pas de liens vers des pages en construction.", 
+        "solution": "Lors de la mise en place de nouvelles pages ou rubriques, aucun lien vers celles-ci n'est mis en place dans la partie publique du site avant leur ach\u00e8vement complet.&nbsp;", 
+        "name": "67"
     }, 
     "19311": {
         "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
@@ -1055,6 +1484,17 @@ checklists = {
         "solution": "", 
         "name": "6.6.1"
     }, 
+    "16243": {
+        "goal": "<div>Optimiser la vitesse d'acc\u00e8s.&nbsp;Simplifier la compr\u00e9hension de la cible par les moteurs.</div>", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Si le nom de domaine correspond \u00e0 une zone g\u00e9ographique, le site est h\u00e9berg\u00e9 dans cette zone.", 
+        "solution": "Si le domaine de votre site comporte une extension en .fr, par exemple, \u00e9tablir l'h\u00e9bergement en France ou dans un pays limitrophe.", 
+        "name": "31"
+    }, 
     "12010": {
         "goal": "", 
         "checklist": {
@@ -1088,6 +1528,17 @@ checklists = {
         "solution": "", 
         "name": "4.8.2"
     }, 
+    "19155": {
+        "goal": "Permettre aux utilisateurs de distinguer les donn\u00e9es fournies et la mani\u00e8re avec laquelle chaque tableau de donn\u00e9es est construit.", 
+        "checklist": {
+            "id": 567, 
+            "name": "Accessibility Second step : risk management"
+        }, 
+        "explanation": "", 
+        "description": "Utiliser avec pr\u00e9caution des contenus identiques pour plusieurs attribut summary", 
+        "solution": "D\u00e9crire les donn\u00e9es et la mani\u00e8re dont est construit chaque tableau de donn\u00e9es et ajouter cette description \u00e0 l'attribut summary des tableaux.", 
+        "name": "11"
+    }, 
     "12012": {
         "goal": "", 
         "checklist": {
@@ -1098,6 +1549,17 @@ checklists = {
         "description": "Chaque script d\u00e9butant par la balise script et ayant une alternative v\u00e9rifie-t-il une de ces conditions ?", 
         "solution": "", 
         "name": "7.2.1"
+    }, 
+    "16683": {
+        "goal": "", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le volume de liens entrants est \u00e9quitablement r\u00e9parti entre la home page et le reste des pages.", 
+        "solution": "", 
+        "name": ""
     }, 
     "12013": {
         "goal": "", 
@@ -1131,6 +1593,17 @@ checklists = {
         "description": "Chaque \u00e9l\u00e9ment poss\u00e9dant un gestionnaire d'\u00e9v\u00e9nement contr\u00f4l\u00e9 par un script v\u00e9rifie-t-il une de ces conditions (hors cas particuliers) ?", 
         "solution": "", 
         "name": "7.3.1"
+    }, 
+    "16244": {
+        "goal": "", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Les noms de rubriques ne contiennent pas de caract\u00e8res sp\u00e9ciaux.", 
+        "solution": "", 
+        "name": ""
     }, 
     "12015": {
         "goal": "", 
@@ -1198,6 +1671,17 @@ checklists = {
         "solution": "", 
         "name": "7.6.1"
     }, 
+    "16177": {
+        "goal": "<div>Eviter que les r\u00e9sultats des moteurs soient des pages partielles (cadre int\u00e9rieur uniquement par exemple).&nbsp;Simplifier le crawl des moteurs.</div>", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le site n'emploie pas la technique des jeux de cadres", 
+        "solution": "Ne pas utiliser les \u00e9l\u00e9ments FRAMESET, FRAME et NOFRAMES. ", 
+        "name": "9"
+    }, 
     "12021": {
         "goal": "", 
         "checklist": {
@@ -1241,6 +1725,17 @@ checklists = {
         "description": "Pour chaque d\u00e9claration de type de document, le code source de la page v\u00e9rifie-t-il ces conditions ?", 
         "solution": "", 
         "name": "8.2.1"
+    }, 
+    "16246": {
+        "goal": "Eviter le contenu dupliqu\u00e9.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le contenu de chaque nom de domaine lui est propre.", 
+        "solution": "Ne pas dupliquer de contenu entre les diff\u00e9rents noms de domaine ou de sous-domaine.", 
+        "name": "27"
     }, 
     "12025": {
         "goal": "", 
@@ -1308,6 +1803,17 @@ checklists = {
         "solution": "", 
         "name": "10.5.3"
     }, 
+    "16681": {
+        "goal": "", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le ratio texte/code de chaque page vis\u00e9e pour le r\u00e9f\u00e9rencement est sup\u00e9rieur \u00e0 15%.", 
+        "solution": "", 
+        "name": ""
+    }, 
     "12029": {
         "goal": "", 
         "checklist": {
@@ -1318,6 +1824,17 @@ checklists = {
         "description": "Pour chaque page Web ayant un titre de page (balise title), le contenu de cette balise est-il pertinent ?", 
         "solution": "", 
         "name": "8.6.1"
+    }, 
+    "16247": {
+        "goal": "<div>Avoir au moins un titre optimis\u00e9 et propre \u00e0 chaque page.<br></div>", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le site comporte autant de titres de section H1 diff\u00e9rents que de pages.", 
+        "solution": "R\u00e9diger le contenu des \u00e9l\u00e9ments H1 de mani\u00e8re \u00e0 ce que chacun soit unique sur l'ensemble du site.", 
+        "name": "15"
     }, 
     "500": {
         "goal": "<ul>\r\n    <li>Permettre la navigation et la consultation pour les utilisateurs plac\u00e9s dans des contextes o\u00f9 les images ne sont pas perceptibles (navigateurs texte, lecteur d'\u00e9cran, images d\u00e9sactiv\u00e9es)</li>\r\n    <li>Permettre aux robots d'exploiter l'information v\u00e9hicul\u00e9e par les images (r\u00e9f\u00e9rencement, traduction automatique)</li>\r\n    <li>Permettre l'affichage d'un texte pendant la chargement des images</li>\r\n</ul>", 
@@ -3816,16 +4333,16 @@ checklists = {
         "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
         "name": "26"
     }, 
-    "19171": {
-        "goal": "Permettre un comportement \u00e9quivalent et/ou l'acc\u00e8s \u00e0 une information \u00e9quivalente quel que soit le p\u00e9riph\u00e9rique d'entr\u00e9e des utilisateurs", 
+    "16255": {
+        "goal": "Permettre l'indexation des contenus textuels publi\u00e9s sous forme graphique et optimiser l'exploitation des liens et boutons de navigation dont le libell\u00e9 est un texte mis en image.", 
         "checklist": {
-            "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "id": 478, 
+            "name": "SEO"
         }, 
         "explanation": "", 
-        "description": "Utiliser avec pr\u00e9caution le gestionnaire d'\u00e9v\u00e9nement onblur lorsque vous n'utilisez pas le gestionnaire d'\u00e9v\u00e9nement onmouseout", 
-        "solution": "Lors de l'utilisation de l'\u00e9v\u00e9nement onblur, inclure un comportement \u00e9quivalent sur l'\u00e9v\u00e9nement onmouseout ou pr\u00e9voir un autre \u00e9l\u00e9ment permettant de r\u00e9aliser la m\u00eame action via la souris", 
-        "name": "33"
+        "description": "Les textes mis en images sont reproduits dans l'alternative textuelle.", 
+        "solution": "Reproduire le texte mis en image dans l'attribut ALT de l'\u00e9l\u00e9ment IMG, AREA, INPUT type image, APPLET.", 
+        "name": "3"
     }, 
     "19172": {
         "goal": "Eviter aux utilisateurs un changement de contexte sans validation explicite de leur part.", 
@@ -4047,27 +4564,27 @@ checklists = {
         "solution": "Ne pas associer ces deux propri\u00e9t\u00e9s sur le m\u00eame s\u00e9lecteur.", 
         "name": "32"
     }, 
-    "19120": {
-        "goal": "Permettre d'\u00e9viter la redondance lorsqu'un lien est compos\u00e9 \u00e0 la fois de texte et d'une image.", 
+    "16249": {
+        "goal": "Simplifier le crawl.", 
         "checklist": {
-            "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "id": 478, 
+            "name": "SEO"
         }, 
         "explanation": "", 
-        "description": "Utiliser avec pr\u00e9caution l'attribut alt vide pour les \u00e9l\u00e9ments img descendant d'\u00e9l\u00e9ments a qui contiennent \u00e9galement du texte", 
-        "solution": "Mettre un alt=\"\" sur l'\u00e9l\u00e9ment img lorsque ce dernier est inclus dans un lien textuel dont le libell\u00e9 permet d\u00e9j\u00e0 de conna\u00eetre la destination du lien.", 
-        "name": "6"
+        "description": "L'acc\u00e8s aux contenus significatifs n'est pas  conditionn\u00e9 par le support des cookies.", 
+        "solution": "Ne pas conditionner l'acc\u00e8s au site au support des cookies en dehors de l'utilisation de session avec login et mot de passe.", 
+        "name": "57"
     }, 
-    "19197": {
-        "goal": "", 
+    "16170": {
+        "goal": "<div>Permettre aux moteurs de comprendre le contenu des images.&nbsp;Placer des mots-clefs dans la page en dehors du texte directement visible par les visiteurs.</div>", 
         "checklist": {
-            "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "id": 478, 
+            "name": "SEO"
         }, 
         "explanation": "", 
-        "description": "Utiliser les valeurs none et hidden des propri\u00e9t\u00e9s display et visibility avec pr\u00e9caution", 
-        "solution": "", 
-        "name": "28"
+        "description": "Chaque image ou \u00e9l\u00e9ment non textuel est dot\u00e9e d'une alternative textuelle", 
+        "solution": "Renseigner l'attribut ALT de chaque \u00e9l\u00e9ment IMG, AREA, INPUT type image, APPLET. Fournir un contenu alternatif dans chaque \u00e9l\u00e9ment OBJECT. Renseigner le contenu de l'\u00e9l\u00e9ment NOEMBED.", 
+        "name": "1"
     }, 
     "19200": {
         "goal": "", 
@@ -4079,6 +4596,17 @@ checklists = {
         "description": "Utiliser avec pr\u00e9caution un attribut title dont la valeur est plus courte que le contenu de l'\u00e9l\u00e9ment a", 
         "solution": "", 
         "name": "5"
+    }, 
+    "16256": {
+        "goal": "", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Les redirections \u00e9ventuelles ne sont pas effectu\u00e9es \u00e0 l'aide de code http 302", 
+        "solution": "", 
+        "name": ""
     }, 
     "12075": {
         "goal": "", 
@@ -4124,6 +4652,17 @@ checklists = {
         "solution": "", 
         "name": "13"
     }, 
+    "19257": {
+        "goal": "Permettre la restitution d'un titre de page destin\u00e9 \u00e0 identifier le contenu du document.", 
+        "checklist": {
+            "id": 568, 
+            "name": "Accessibility first step: error detection"
+        }, 
+        "explanation": "", 
+        "description": "Utiliser un \u00e9l\u00e9ment title enfant de l'\u00e9l\u00e9ment head", 
+        "solution": "Ajouter un \u00e9l\u00e9ment title dans l'\u00e9l\u00e9ment head.", 
+        "name": "3"
+    }, 
     "19214": {
         "goal": "", 
         "checklist": {
@@ -4134,6 +4673,17 @@ checklists = {
         "description": "Utiliser la propri\u00e9t\u00e9 direction avec pr\u00e9caution", 
         "solution": "", 
         "name": "27"
+    }, 
+    "19245": {
+        "goal": "Permettre la restitution d'un contenu d\u00e9crivant la fonction et/ou le contenu de l'\u00e9l\u00e9ment.", 
+        "checklist": {
+            "id": 568, 
+            "name": "Accessibility first step: error detection"
+        }, 
+        "explanation": "", 
+        "description": "Ne pas utiliser un attribut title vide pour l'\u00e9l\u00e9ment frame", 
+        "solution": "Ajouter un contenu \u00e0 l'attribut title des \u00e9l\u00e9ments frame permettant de conna\u00eetre la fonction ou le contenu de la frame. Exemple&nbsp;: &lt;frame title='navigation src='...' principale'&gt;&lt;/frame&gt;", 
+        "name": "10"
     }, 
     "19216": {
         "goal": "\u00c9viter \u00e0 l'utilisateur d'avoir des \u00e9l\u00e9ments interactifs dont il ne peut connaitre la destination ou l'action", 
@@ -4179,16 +4729,16 @@ checklists = {
         "solution": "ajouter l'attribut alt sur l'\u00e9l\u00e9ment. Exemple&nbsp;: &lt;applet alt='...'&gt;&lt;/applet&gt;", 
         "name": "37"
     }, 
-    "19221": {
-        "goal": "Permettre aux utilisateurs de distinguer les liens qui m\u00e8nent \u00e0 des adresses diff\u00e9rentes.", 
+    "16174": {
+        "goal": "", 
         "checklist": {
-            "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "id": 478, 
+            "name": "SEO"
         }, 
         "explanation": "", 
-        "description": "Utiliser un attribut alt pour l'\u00e9l\u00e9ment area", 
-        "solution": "ajouter l'attribut alt sur l'\u00e9l\u00e9ment. Exemple&nbsp;: &lt;area alt='...'&gt;&lt;/area&gt;", 
-        "name": "36"
+        "description": "Chaque zone cliquable d'une image r\u00e9active c\u00f4t\u00e9 client (image map) contient une alternative textuelle.", 
+        "solution": "", 
+        "name": ""
     }, 
     "12062": {
         "goal": "", 
@@ -4234,16 +4784,16 @@ checklists = {
         "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
         "name": "61"
     }, 
-    "19227": {
-        "goal": "Permettre d'\u00e9viter la lecture automatique de son qu'il n'est pas possible d'arr\u00eater.", 
+    "16175": {
+        "goal": "Ne pas gaspiller une opportunit\u00e9 de fournir du texte aux moteurs.", 
         "checklist": {
-            "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "id": 478, 
+            "name": "SEO"
         }, 
         "explanation": "", 
-        "description": "Ne pas utiliser l'\u00e9l\u00e9ment bgsound", 
-        "solution": "Utiliser un syst\u00e8me de lecture des sons que les utilisateurs peuvent contr\u00f4ler avec la souris et avec le clavier.", 
-        "name": "47"
+        "description": "Les textes pouvant \u00eatre mis en forme via des styles ne sont pas remplac\u00e9s par des images", 
+        "solution": "Utiliser les propri\u00e9t\u00e9s CSS (couleurs, polices de caract\u00e8res, graisse, etc.) pour mettre en forme le contenu textuel de la source HTML.", 
+        "name": "73"
     }, 
     "19228": {
         "goal": "Permettre d'\u00e9viter la pr\u00e9sence de clignotement qu'il n'est pas possible d'arr\u00eater.", 
@@ -4289,16 +4839,27 @@ checklists = {
         "solution": "Mettre du texte dans l'\u00e9l\u00e9ment button. Exemple&nbsp;: &lt;button&gt;Passer ma commande&lt;/button&gt;", 
         "name": "31"
     }, 
-    "19233": {
-        "goal": "Permettre aux utilisateurs de distinguer le sujet d'un tableau de donn\u00e9es de la mani\u00e8re dont il est construit.", 
+    "16257": {
+        "goal": "Simplifier la compr\u00e9hension du contenu par les moteurs.", 
         "checklist": {
-            "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "id": 478, 
+            "name": "SEO"
         }, 
         "explanation": "", 
-        "description": "Ne pas utiliser un contenu d'\u00e9l\u00e9ment caption identique au contenu de l'attribut summary", 
-        "solution": "Mettre dans l'\u00e9l\u00e9ment caption un contenu servant \u00e0 titrer le tableau et dans l'attribut summary un contenu pour d\u00e9crire l'organisation du tableau", 
-        "name": "49"
+        "description": "Les mises en majuscules \u00e0 des fins d\u00e9coratives sont effectu\u00e9es \u00e0 l'aide des styles CSS.", 
+        "solution": "Utiliser la propri\u00e9t\u00e9 CSS text-decoration pour r\u00e9aliser les mises en majuscules d\u00e9coratives (mises en majuscules autres que celles des sigles ou contenus commun\u00e9ment mis en majuscule).", 
+        "name": "72"
+    }, 
+    "16176": {
+        "goal": "", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le contenu alternatif des images-liens est repr\u00e9sentatif du contenu de la page cible", 
+        "solution": "", 
+        "name": ""
     }, 
     "19234": {
         "goal": "Permettre la restitution du sujet du tableau de donn\u00e9es.", 
@@ -4332,6 +4893,17 @@ checklists = {
         "description": "Pour chaque information v\u00e9hicul\u00e9e par la couleur et indiqu\u00e9e par un mot ou un ensemble de mots, l'information ne doit pas \u00eatre donn\u00e9e uniquement par la couleur. Cette r\u00e8gle est-elle impl\u00e9ment\u00e9e de fa\u00e7on pertinente ?", 
         "solution": "", 
         "name": "3.2.2"
+    }, 
+    "16189": {
+        "goal": "Permettre aux moteurs d'associer le site \u00e0 la zone g\u00e9ographique vis\u00e9e.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Hors extensions g\u00e9n\u00e9riques, l'extension du nom de domaine correspond \u00e0 la zone g\u00e9ographique vis\u00e9e.", 
+        "solution": "Utiliser une extension de nom de domaine de type .fr, .en etc. coh\u00e9rente avec la zone g\u00e9ographique pour laquelle les services sont propos\u00e9s ou qui est la cible des contenus publi\u00e9s.", 
+        "name": "30"
     }, 
     "12081": {
         "goal": "", 
@@ -4377,16 +4949,16 @@ checklists = {
         "solution": "Ajouter un attribut title sur chaque \u00e9l\u00e9ment frame. Exemple&nbsp;: &lt;frame title='...' src='...'&gt;&lt;/frame&gt;", 
         "name": "9"
     }, 
-    "19245": {
-        "goal": "Permettre la restitution d'un contenu d\u00e9crivant la fonction et/ou le contenu de l'\u00e9l\u00e9ment.", 
+    "16178": {
+        "goal": "Fournir du contenu accessible aux moteurs.", 
         "checklist": {
-            "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "id": 478, 
+            "name": "SEO"
         }, 
         "explanation": "", 
-        "description": "Ne pas utiliser un attribut title vide pour l'\u00e9l\u00e9ment frame", 
-        "solution": "Ajouter un contenu \u00e0 l'attribut title des \u00e9l\u00e9ments frame permettant de conna\u00eetre la fonction ou le contenu de la frame. Exemple&nbsp;: &lt;frame title='navigation src='...' principale'&gt;&lt;/frame&gt;", 
-        "name": "10"
+        "description": "Si le site utilise la technique des jeux de cadres, l'\u00e9l\u00e9ment NOFRAME est utilis\u00e9.", 
+        "solution": "Utiliser un \u00e9l\u00e9ment NOFRAMES dans chaque \u00e9l\u00e9ment FRAMESET.", 
+        "name": "6"
     }, 
     "19246": {
         "goal": "Eviter \u00e0 l'utilisateur d'avoir une hi\u00e9rarchie de titre incompl\u00e8te ou incoh\u00e9rente", 
@@ -4443,16 +5015,16 @@ checklists = {
         "solution": "Pr\u00e9c\u00e9der chaque \u00e9l\u00e9ment h3 d'un \u00e9l\u00e9ment h2, h3, h4, h5 ou h6.", 
         "name": "21"
     }, 
-    "19251": {
-        "goal": "Eviter \u00e0 l'utilisateur d'avoir une hi\u00e9rarchie de titre incompl\u00e8te ou incoh\u00e9rente", 
+    "16179": {
+        "goal": "Fournir du contenu cibl\u00e9 et pertinent aux moteurs.", 
         "checklist": {
-            "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "id": 478, 
+            "name": "SEO"
         }, 
         "explanation": "", 
-        "description": "Ne pas utiliser d'\u00e9l\u00e9ment h4 vide", 
-        "solution": "Ajouter un contenu \u00e0 l'\u00e9l\u00e9ment.", 
-        "name": "17"
+        "description": "Le contenu de chaque \u00e9l\u00e9ment noframe d\u00e9crit le contenu du cadre", 
+        "solution": "Donner \u00e0 chaque \u00e9l\u00e9ment NOFRAMES un contenu descriptif des cadres du FRAMESET correspondant.", 
+        "name": "7"
     }, 
     "19252": {
         "goal": "Eviter les trous dans la hi\u00e9rarchie des titres.", 
@@ -4509,16 +5081,16 @@ checklists = {
         "solution": "Pr\u00e9c\u00e9der chaque \u00e9l\u00e9ment h6 d'un \u00e9l\u00e9ment h5 ou h6.", 
         "name": "24"
     }, 
-    "19257": {
-        "goal": "Permettre la restitution d'un titre de page destin\u00e9 \u00e0 identifier le contenu du document.", 
+    "16180": {
+        "goal": "Eviter les p\u00e9nalit\u00e9s des moteurs pour keyword-stuffing (bourrage de mots-cl\u00e9s).", 
         "checklist": {
-            "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "id": 478, 
+            "name": "SEO"
         }, 
         "explanation": "", 
-        "description": "Utiliser un \u00e9l\u00e9ment title enfant de l'\u00e9l\u00e9ment head", 
-        "solution": "Ajouter un \u00e9l\u00e9ment title dans l'\u00e9l\u00e9ment head.", 
-        "name": "3"
+        "description": "Le contenu de chaque \u00e9l\u00e9ment noframe n'est pas limit\u00e9 \u00e0 une liste de mots-cl\u00e9s.", 
+        "solution": "Utiliser les mots cl\u00e9s dans chaque \u00e9l\u00e9ment NOFRAMES sous la forme d'un texte r\u00e9dig\u00e9 d\u00e9crivant le contenu des cadres du FRAMESET correspondant.", 
+        "name": "8"
     }, 
     "19258": {
         "goal": "Permettre la d\u00e9claration de la langue du document et l'adaptation des aides techniques \u00e0 celle-ci.", 
@@ -4564,27 +5136,27 @@ checklists = {
         "solution": "Ajouter un attribut title sur chaque \u00e9l\u00e9ment iframe.", 
         "name": "11"
     }, 
-    "19262": {
-        "goal": "Permettre la restitution d'un contenu d\u00e9crivant la fonction et/ou le contenu de l'\u00e9l\u00e9ment.", 
+    "16258": {
+        "goal": "", 
         "checklist": {
-            "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "id": 478, 
+            "name": "SEO"
         }, 
         "explanation": "", 
-        "description": "Ne pas utiliser un attribut title vide sur l'\u00e9l\u00e9ment iframe", 
-        "solution": "Ajouter un contenu \u00e0 l'attribut title des \u00e9l\u00e9ments iframe.", 
-        "name": "12"
+        "description": "Le site propose un fichier sitemap indiquant les contenus \u00e0 explorer", 
+        "solution": "", 
+        "name": ""
     }, 
-    "19263": {
-        "goal": "Permettre la restitution d'un contenu alternatif aux utilisateurs qui ne peuvent pas percevoir le contenu de l'\u00e9l\u00e9ment.", 
+    "16181": {
+        "goal": "Permettre aux moteurs de comprendre le contenu des vid\u00e9os et pistes audio.", 
         "checklist": {
-            "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "id": 478, 
+            "name": "SEO"
         }, 
         "explanation": "", 
-        "description": "Utiliser un attribut alt pour l'\u00e9l\u00e9ment img", 
-        "solution": "ajouter l'attribut alt sur l'\u00e9l\u00e9ment. Exemple&nbsp;: &lt;img src='...' alt='...' /&gt;", 
-        "name": "35"
+        "description": "Chaque contenu audio et vid\u00e9o est accompagn\u00e9 de sa transcription textuelle", 
+        "solution": "V\u00e9rifier la pr\u00e9sence d'une transcription textuelle de chaque contenu audio ou vid\u00e9o, dans la page o\u00f9 se trouve celui-ci. La transcription balis\u00e9e en HTML reproduit l'ensemble de l'information pertinente du contenu audio ou vid\u00e9o, et en particulier des paroles et images contenant du texte, sous une forme int\u00e9grale ou synth\u00e9tique.", 
+        "name": "2"
     }, 
     "12030": {
         "goal": "", 
@@ -4608,16 +5180,16 @@ checklists = {
         "solution": "Ajouter une url dans l'attribut longdesc. Exemple&nbsp;: &lt;img longdesc=\"url-de-la-description.html\" \u2026 &gt;", 
         "name": "45"
     }, 
-    "19269": {
-        "goal": "Permettre la restitution d'un contenu alternatif aux utilisateurs qui ne peuvent pas percevoir le contenu de l'\u00e9l\u00e9ment.", 
+    "16182": {
+        "goal": "Simplifier l'acc\u00e8s aux contenus sp\u00e9cifiques pour les moteurs.", 
         "checklist": {
-            "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "id": 478, 
+            "name": "SEO"
         }, 
         "explanation": "", 
-        "description": "Utiliser un attribut alt pour chaque \u00e9l\u00e9ment input de type image", 
-        "solution": "ajouter l'attribut alt sur l'\u00e9l\u00e9ment. Exemple&nbsp;: &lt;input type='image' alt='...'/&gt;", 
-        "name": "38"
+        "description": "Le contenu textuel propre \u00e0 chaque page pr\u00e9c\u00e8de les \u00e9l\u00e9ments de navigation.", 
+        "solution": "Dans l'ordre du code source HTML, placer les \u00e9l\u00e9ments de navigation apr\u00e8s le contenu propre de la page dans l'\u00e9l\u00e9ment BODY.", 
+        "name": "14"
     }, 
     "19270": {
         "goal": "Eviter \u00e0 l'utilisateur d'avoir des \u00e9l\u00e9ments interactifs dont il ne peut connaitre la destination ou l'action", 
@@ -4629,6 +5201,17 @@ checklists = {
         "description": "Ne pas utiliser d'attribut alt vide pour un \u00e9l\u00e9ment input de type image", 
         "solution": "Renseigner le contenu de l'attribut alt avec la destination ou la fonction du bouton d'action.", 
         "name": "40"
+    }, 
+    "19292": {
+        "goal": "Eviter l'utilisation d'\u00e9l\u00e9ments obsol\u00e8tes que les agents utilisateurs de sauraient pas interpr\u00e9ter.", 
+        "checklist": {
+            "id": 568, 
+            "name": "Accessibility first step: error detection"
+        }, 
+        "explanation": "", 
+        "description": "Ne pas utiliser l'\u00e9l\u00e9ment plaintext", 
+        "solution": "Utiliser l'\u00e9l\u00e9ment pre au lieu de plaintext.", 
+        "name": "64"
     }, 
     "19273": {
         "goal": "Eviter \u00e0 l'utilisateur d'avoir des \u00e9l\u00e9ments interactifs dont il ne peut connaitre la destination ou l'action", 
@@ -4707,16 +5290,16 @@ checklists = {
         "solution": "Renseigner l'\u00e9l\u00e9ment legend avec le titre du groupe form\u00e9 d'\u00e9l\u00e9ments de formulaire.", 
         "name": "71"
     }, 
-    "19281": {
-        "goal": "Permettre la restitution sans erreur du nombre d'\u00e9l\u00e9ments composant une liste.\r\nEviter l'utilisation d'\u00e9l\u00e9ments \u00e0 des fins de pr\u00e9sentation.", 
+    "16184": {
+        "goal": "Limiter les risques que le site soit consid\u00e9r\u00e9 comme \"ferme de liens\" et p\u00e9nalis\u00e9 par les moteurs.", 
         "checklist": {
-            "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "id": 478, 
+            "name": "SEO"
         }, 
         "explanation": "", 
-        "description": "Ne pas utiliser d'\u00e9l\u00e9ment li vide", 
-        "solution": "Supprimer les \u00e9l\u00e9ments &lt;li&gt; qui ne poss\u00e8dent pas de contenu. Utiliser les propri\u00e9t\u00e9s des feuilles de styles margin et padding pour d\u00e9terminer les \u00e9carts entres les diff\u00e9rents \u00e9l\u00e9ments.", 
-        "name": "26"
+        "description": "Le nombre de liens externes dans une page n'exc\u00e8de pas le nombre de liens internes.", 
+        "solution": "Limiter le nombre de liens externes dans chaque page \u00e0 un nombre inf\u00e9rieur au total des liens internes pr\u00e9sent dans celle-ci. Mettre en place dans l'interface d'\u00e9dition des contenus une validation du nombre de liens externes, permettant au r\u00e9dacteur d'\u00eatre averti lors de l'ajout d'un lien externe et de corriger en cons\u00e9quences.", 
+        "name": "38"
     }, 
     "11926": {
         "goal": "", 
@@ -4762,16 +5345,16 @@ checklists = {
         "solution": "Ajouter un attribut id sur l'\u00e9l\u00e9ment.", 
         "name": "17"
     }, 
-    "19287": {
-        "goal": "Permettre la restitution d'un titre au groupe form\u00e9 par optgroup.", 
+    "16185": {
+        "goal": "Renforcer les mots-clefs associ\u00e9s \u00e0 un lien et \u00e0 une page.", 
         "checklist": {
-            "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "id": 478, 
+            "name": "SEO"
         }, 
         "explanation": "", 
-        "description": "Utiliser un attribut label pour chaque \u00e9l\u00e9ment optgroup", 
-        "solution": "Ajouter un attribut label aux \u00e9l\u00e9ments optgroup. Exemple&nbsp;: &lt;optgroup label='france'&gt;...&lt;/optgroup&gt;", 
-        "name": "75"
+        "description": "Des libell\u00e9s de liens identiques pointent vers la m\u00eame page.", 
+        "solution": "R\u00e9diger les libell\u00e9s de lien plac\u00e9s entre les balises de l'\u00e9l\u00e9ment A de mani\u00e8re \u00e0 ce que chaque URL vis\u00e9e soit associ\u00e9e \u00e0 un libell\u00e9 unique dans la page. Mettre en place dans l'interface d'\u00e9dition un processus de validation avant publication de la page qui avertit le contributeur et lui permet de corriger les libell\u00e9s concern\u00e9s.", 
+        "name": "39"
     }, 
     "19288": {
         "goal": "Permettre la distinction des diff\u00e9rents groupes form\u00e9s.", 
@@ -4806,16 +5389,27 @@ checklists = {
         "solution": "Supprimer les \u00e9l\u00e9ments &lt;p&gt; qui ne poss\u00e8dent pas de contenu. Utiliser les propri\u00e9t\u00e9s des feuilles de styles margin et padding pour d\u00e9terminer les \u00e9carts entres les diff\u00e9rents \u00e9l\u00e9ments.", 
         "name": "29"
     }, 
-    "19292": {
-        "goal": "Eviter l'utilisation d'\u00e9l\u00e9ments obsol\u00e8tes que les agents utilisateurs de sauraient pas interpr\u00e9ter.", 
+    "16259": {
+        "goal": "Simplifier le crawl.", 
         "checklist": {
-            "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "id": 478, 
+            "name": "SEO"
         }, 
         "explanation": "", 
-        "description": "Ne pas utiliser l'\u00e9l\u00e9ment plaintext", 
-        "solution": "Utiliser l'\u00e9l\u00e9ment pre au lieu de plaintext.", 
-        "name": "64"
+        "description": "Le fichier robots.txt propose une r\u00e9f\u00e9rence valide \u00e0 un fichier sitemap.", 
+        "solution": "Faire figurer dans le fichier robots.txt une indication du type : Sitemap: http://www.example.com/sitemap.xml", 
+        "name": "69"
+    }, 
+    "16186": {
+        "goal": "Simplifier le crawl des moteurs.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "La navigation est possible via des liens HTML.", 
+        "solution": "Faire figurer dans les pages un menu de navigation compos\u00e9 de liens A donnant acc\u00e8s \u00e0 l'ensemble des contenus, ou s'assurer que chaque page du site est atteignable via des liens A plac\u00e9s au fil du contenu ou via des listes de liens contextuelles, ou via un plan de site compos\u00e9 de liens HTML.", 
+        "name": "53"
     }, 
     "12031": {
         "goal": "", 
@@ -4839,6 +5433,17 @@ checklists = {
         "solution": "Positionner un \u00e9l\u00e9ment caption tout de suite apr\u00e8s l'\u00e9l\u00e9ment table lorsqu'il s'agit d'un tableau de donn\u00e9es.", 
         "name": "48"
     }, 
+    "16191": {
+        "goal": "<div>Encourager les utilisateurs des moteurs \u00e0 visiter le site.&nbsp;Eviter les p\u00e9nalit\u00e9s des moteurs pour keyword-stuffing (bourrage de mots-cl\u00e9s).&nbsp;Eviter que les moteurs choisissent d'eux-m\u00eame une description pour la page</div>", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le contenu de l'\u00e9l\u00e9ment meta description est une phrase significative et non une liste de mots clefs.", 
+        "solution": "R\u00e9diger le contenu de l'attribut content de l'\u00e9l\u00e9ment META name=\"description\".", 
+        "name": "48"
+    }, 
     "19298": {
         "goal": "Permettre l'identification des tableaux de donn\u00e9es et la restitution des contenus permettant de les caract\u00e9riser.", 
         "checklist": {
@@ -4849,6 +5454,17 @@ checklists = {
         "description": "Utiliser au moins un \u00e9l\u00e9ment th dans l'\u00e9l\u00e9ment table contenant un \u00e9l\u00e9ment caption ou ayant un attribut summary non vide", 
         "solution": "Modifier le code de mani\u00e8re \u00e0 utiliser l'\u00e9l\u00e9ment th \u00e0 la place de l'\u00e9l\u00e9ment td afin de d\u00e9clarer les ent\u00eates des tableaux de donn\u00e9es. Si c'est un tableau de mise en forme supprimer le caption ou le summary non vide", 
         "name": "58"
+    }, 
+    "16187": {
+        "goal": "Simplifier le crawl des moteurs.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Les menus sont utilisables sans extension (flash...) ou activation de langages (CSS ou JavaScript..).", 
+        "solution": "Rendre l'utilisation des menus ind\u00e9pendante du support des CSS et de javascript en veillant \u00e0 une utilisation non-obstructive de ces technologies. Ne pas utiliser de technologies tierces telles que Flash pour les menus de navigation du site.", 
+        "name": "65"
     }, 
     "19300": {
         "goal": "Permettre aux utilisateurs de distinguer le sujet d'un tableau de donn\u00e9es de la mani\u00e8re dont il est construit.", 
@@ -4894,16 +5510,16 @@ checklists = {
         "solution": "Utiliser un attribut headers sur les cellules td des tableaux de donn\u00e9es dont les ent\u00eates (th) contiennent un attribut id.", 
         "name": "63"
     }, 
-    "19305": {
-        "goal": "Permettre l'association des cellules avec leurs ent\u00eates dans les tableaux de donn\u00e9es.", 
+    "16188": {
+        "goal": "Simplifier la r\u00e9cup\u00e9ration des contenus par les moteurs.", 
         "checklist": {
-            "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "id": 478, 
+            "name": "SEO"
         }, 
         "explanation": "", 
-        "description": "Ne pas utiliser un contenu d'attribut headers qui ne correspond \u00e0 aucune valeur d'attribut id pr\u00e9sent dans le m\u00eame tableau", 
-        "solution": "Renseigner les attributs headers des \u00e9l\u00e9ments td avec les valeurs des attributs id des ent\u00eates associ\u00e9es. ", 
-        "name": "65"
+        "description": "Les contenus du site sont consultables sans extension (flash...) ou activation de langages (CSS ou JavaScript..).", 
+        "solution": "Utiliser javascript et CSS de mani\u00e8re non-obtructive, en permettant la consultation du contenu \u00e0 partir de la seule source HTML statique. Ne pas recourir aux technologies de type Flash pour le contenu ou fournir une alternative compl\u00e8te aux contenus publi\u00e9s en flash.&nbsp;", 
+        "name": "70"
     }, 
     "19306": {
         "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
@@ -4993,6 +5609,28 @@ checklists = {
         "solution": "Ajouter un attribut id sur l'\u00e9l\u00e9ment.", 
         "name": "18"
     }, 
+    "16669": {
+        "goal": "", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Les textes d'un document sont dans une seul langue", 
+        "solution": "", 
+        "name": ""
+    }, 
+    "16190": {
+        "goal": "Permettre aux moteurs d'identifier rapidement la langue du contenu.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le code source de chaque page indique la langue principale du contenu.", 
+        "solution": "Renseigner l'attribut lang de l'\u00e9l\u00e9ment racine HTML \u00e0 l'aide d'un code de langue conforme au registre des codes de langue de l'IANA.", 
+        "name": "51"
+    }, 
     "12095": {
         "goal": "", 
         "checklist": {
@@ -5015,27 +5653,38 @@ checklists = {
         "solution": "", 
         "name": "8.8.2"
     }, 
-    "19155": {
-        "goal": "Permettre aux utilisateurs de distinguer les donn\u00e9es fournies et la mani\u00e8re avec laquelle chaque tableau de donn\u00e9es est construit.", 
+    "16222": {
+        "goal": "", 
         "checklist": {
-            "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "id": 478, 
+            "name": "SEO"
         }, 
         "explanation": "", 
-        "description": "Utiliser avec pr\u00e9caution des contenus identiques pour plusieurs attribut summary", 
-        "solution": "D\u00e9crire les donn\u00e9es et la mani\u00e8re dont est construit chaque tableau de donn\u00e9es et ajouter cette description \u00e0 l'attribut summary des tableaux.", 
-        "name": "11"
+        "description": "Les liens externes ont un libell\u00e9 significatif.", 
+        "solution": "", 
+        "name": ""
     }, 
-    "19265": {
-        "goal": "Eviter \u00e0 l'utilisateur d'avoir des \u00e9l\u00e9ments interactifs dont il ne peut connaitre la destination ou l'action", 
+    "16192": {
+        "goal": "<div>Encourager les utilisateurs des moteurs \u00e0 visiter le site.&nbsp;Placer des mots-clefs dans la description et en renforcer l'importance.&nbsp;Eviter que les moteurs choisissent d'eux-m\u00eame une description pour la page.</div>", 
         "checklist": {
-            "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "id": 478, 
+            "name": "SEO"
         }, 
         "explanation": "", 
-        "description": "Ne pas utiliser d'attribut alt vide si l'\u00e9l\u00e9ment est le seul enfant d'un \u00e9l\u00e9ment a ou button", 
-        "solution": "Renseigner le contenu de l'attribut alt avec la destination du lien ou la fonction du bouton d'action.", 
-        "name": "39"
+        "description": "Le code source de chaque page contient une metadonn\u00e9e qui en d\u00e9crit le contenu.", 
+        "solution": "Utiliser dans la section HEAD de la page l'\u00e9l\u00e9ment META name=\"description\" et renseigner son attribut content avec la description du contenu propre de la page.", 
+        "name": "42"
+    }, 
+    "16193": {
+        "goal": "<div>Placer des mots-clefs dans la description et en renforcer l'importance.&nbsp;Fournir une description propre \u00e0 chaque page.&nbsp;Eviter que les moteurs choisissent d'eux-m\u00eame une description pour la page</div>", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le site compte autant de meta description diff\u00e9rentes que de pages.", 
+        "solution": "Donner un contenu unique sur l'ensemble du site \u00e0 l'attribut content de l'\u00e9l\u00e9ment META name=\"description\" de chaque page.", 
+        "name": "52"
     }, 
     "19338": {
         "goal": "", 
@@ -5047,6 +5696,28 @@ checklists = {
         "description": "Ne pas utiliser d'attribut alt vide sur un \u00e9l\u00e9ment area dot\u00e9 d'un attribut href", 
         "solution": "", 
         "name": "41"
+    }, 
+    "16194": {
+        "goal": "<div>Eviter le keyword-stuffing (bourrage de mots-cl\u00e9s).&nbsp;Garder le ciblage de la page.&nbsp;</div>", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le nombre de caract\u00e8res contenus dans la balise META Description est inf\u00e9rieur ou \u00e9gal \u00e0 250.", 
+        "solution": "Limiter \u00e0 250 caract\u00e8res au plus, espaces compris, le contenu de l'attribut content de l'\u00e9l\u00e9ment META name=\"description\". Mettre en place un automatisme dans le CMS tronquant le contenu des attributs content automatiquement g\u00e9n\u00e9r\u00e9s. Mettre en place dans l'interface d'\u00e9dition une validation de la longueur des descriptions saisies par les r\u00e9dacteurs, avertissant ceux-ci en cas d'erreur et leur permettant de corriger la saisie concern\u00e9e avant publication de la page.", 
+        "name": "49"
+    }, 
+    "16250": {
+        "goal": "Simplifier l'indexation et la compr\u00e9hension des images.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le nom de fichier des images significatives est coh\u00e9rent avec leur contenu.", 
+        "solution": "Pour les images de contenu ou illustrant celui-ci ainsi que pour les images du type logo du site, nommer les fichiers images avec des termes repr\u00e9sentatif de leur contenu.", 
+        "name": "25"
     }, 
     "12099": {
         "goal": "", 
@@ -5070,16 +5741,16 @@ checklists = {
         "solution": "", 
         "name": "66"
     }, 
-    "19353": {
-        "goal": "", 
+    "16196": {
+        "goal": "<div>Renforcer les mots-clefs associ\u00e9s \u00e0 une page.&nbsp;Encourager les utilisateurs des moteurs \u00e0 visiter la page.</div>", 
         "checklist": {
-            "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "id": 478, 
+            "name": "SEO"
         }, 
         "explanation": "", 
-        "description": "Ne pas utiliser une valeur d'attribut dir autre que ltr, rtl ou vide", 
-        "solution": "", 
-        "name": "8"
+        "description": "Le titre de chaque page (\u00e9l\u00e9ment TITLE) permet d'identifier son contenu.", 
+        "solution": "<div>R\u00e9diger le contenu de l'\u00e9l\u00e9ment TITLE de chaque page de mani\u00e8re \u00e0 en d\u00e9crire de mani\u00e8re concise le contenu ou la fonction. Pr\u00e9ciser l'\u00e9tape en cours dans l'\u00e9l\u00e9ment&nbsp;TITLE&nbsp;des pages correspondant \u00e0 des \u00e9tapes dans un processus (exemple : \u00e9tape 3 de votre inscription, etc).&nbsp;</div><div>Pr\u00e9ciser l'intervalle dans une page d'une s\u00e9rie de pages de r\u00e9sultats de recherche (R\u00e9sultats 10 \u00e0 19 de la recherche sur \"Foo\")&nbsp;</div><div>Pr\u00e9ciser l'\u00e9tat dans le titre d'une page demande de confirmation ou de confirmation lors de la soumission d'un formulaire (exemple: demande de confirmation de suppression - mes documents).</div>", 
+        "name": "45"
     }, 
     "19355": {
         "goal": "", 
@@ -5103,16 +5774,49 @@ checklists = {
         "solution": "", 
         "name": "8.9.1"
     }, 
-    "19359": {
-        "goal": "", 
+    "16197": {
+        "goal": "<div>Mettre en avant la structure de la page.&nbsp;Placer des mots-clefs aux endroits importants.</div>", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Chaque page du site contient un \u00e9l\u00e9ment de titre de section H1.", 
+        "solution": "Faire figurer au moins un \u00e9l\u00e9ment H1 comme titre de section principal du contenu propre de la page. Automatiser le cas \u00e9ch\u00e9ant la pr\u00e9sence et le contenu de l'\u00e9l\u00e9ment H1 via les gabarits du CMS. Mettre en place un processus de validation de la pr\u00e9sence de l'\u00e9l\u00e9ment H1 quand celui-ci est manuellement ins\u00e9r\u00e9 par le r\u00e9dacteur, avertissant en cas d'erreur et permettant la correction avant publication du contenu.", 
+        "name": "10"
+    }, 
+    "19262": {
+        "goal": "Permettre la restitution d'un contenu d\u00e9crivant la fonction et/ou le contenu de l'\u00e9l\u00e9ment.", 
         "checklist": {
             "id": 568, 
             "name": "Accessibility first step: error detection"
         }, 
         "explanation": "", 
-        "description": "Ne pas utiliser un contenu d'attribut alt identique au texte pr\u00e9sent dans un lien si l'\u00e9l\u00e9ment img est un descendant d'\u00e9l\u00e9ment a contenant \u00e9galement du texte", 
+        "description": "Ne pas utiliser un attribut title vide sur l'\u00e9l\u00e9ment iframe", 
+        "solution": "Ajouter un contenu \u00e0 l'attribut title des \u00e9l\u00e9ments iframe.", 
+        "name": "12"
+    }, 
+    "16198": {
+        "goal": "", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Chaque page du site est structur\u00e9e \u00e0 l'aide d'au moins deux niveaux de titrage de section distincts.", 
         "solution": "", 
-        "name": "42"
+        "name": ""
+    }, 
+    "16199": {
+        "goal": "<div>Fournir aux moteurs des mots-clefs situ\u00e9s aux endroits importants de l'URL.</div><div><br></div>", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le site propose plusieurs r\u00e9pertoires et/ou sous-domaines.", 
+        "solution": "R\u00e9partir les contenus par sous-domaines ou par r\u00e9pertoires th\u00e9matiques", 
+        "name": "26"
     }, 
     "12063": {
         "goal": "", 
@@ -5124,6 +5828,17 @@ checklists = {
         "description": "Pour chaque \u00e9l\u00e9ment recevant le focus, l'indication visuelle du navigateur ne doit pas \u00eatre d\u00e9grad\u00e9e (propri\u00e9t\u00e9 CSS outline-color). Cette r\u00e8gle est-elle respect\u00e9e ?", 
         "solution": "", 
         "name": "10.7.2"
+    }, 
+    "16200": {
+        "goal": "Simplifier le crawl des moteurs.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le site propose un plan du site contenant des liens HTML.", 
+        "solution": "Mettre en place une page \"Plan de site\" form\u00e9e de liens A donnant acc\u00e8s directement ou indirectement \u00e0 l'ensemble des contenus significatifs du site.", 
+        "name": "54"
     }, 
     "12105": {
         "goal": "", 
@@ -5157,6 +5872,17 @@ checklists = {
         "description": "Chaque ensemble de pages v\u00e9rifie-t-il une de ces conditions (hors cas particuliers) ?", 
         "solution": "", 
         "name": "12.1.1"
+    }, 
+    "19263": {
+        "goal": "Permettre la restitution d'un contenu alternatif aux utilisateurs qui ne peuvent pas percevoir le contenu de l'\u00e9l\u00e9ment.", 
+        "checklist": {
+            "id": 568, 
+            "name": "Accessibility first step: error detection"
+        }, 
+        "explanation": "", 
+        "description": "Utiliser un attribut alt pour l'\u00e9l\u00e9ment img", 
+        "solution": "ajouter l'attribut alt sur l'\u00e9l\u00e9ment. Exemple&nbsp;: &lt;img src='...' alt='...' /&gt;", 
+        "name": "35"
     }, 
     "12107": {
         "goal": "", 
@@ -5213,6 +5939,17 @@ checklists = {
         "solution": "", 
         "name": "12.3.1"
     }, 
+    "19251": {
+        "goal": "Eviter \u00e0 l'utilisateur d'avoir une hi\u00e9rarchie de titre incompl\u00e8te ou incoh\u00e9rente", 
+        "checklist": {
+            "id": 568, 
+            "name": "Accessibility first step: error detection"
+        }, 
+        "explanation": "", 
+        "description": "Ne pas utiliser d'\u00e9l\u00e9ment h4 vide", 
+        "solution": "Ajouter un contenu \u00e0 l'\u00e9l\u00e9ment.", 
+        "name": "17"
+    }, 
     "12110": {
         "goal": "", 
         "checklist": {
@@ -5256,6 +5993,17 @@ checklists = {
         "description": "Les liens du plan du site sont-ils fonctionnels ?", 
         "solution": "", 
         "name": "12.4.2"
+    }, 
+    "16687": {
+        "goal": "", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le titre de chaque page (\u00e9l\u00e9ment TITLE) permet d'identifier le site", 
+        "solution": "", 
+        "name": ""
     }, 
     "12113": {
         "goal": "", 
@@ -5323,6 +6071,28 @@ checklists = {
         "solution": "", 
         "name": "12.5.3"
     }, 
+    "16248": {
+        "goal": "Simplifier le crawl.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "L'acc\u00e8s aux contenus significatifs n'est pas conditionn\u00e9 par des actions de formulaires.", 
+        "solution": "Mettre en place des liens HTML donnant acc\u00e8s \u00e0 l'ensemble des contenus significatifs.", 
+        "name": "55"
+    }, 
+    "19265": {
+        "goal": "Eviter \u00e0 l'utilisateur d'avoir des \u00e9l\u00e9ments interactifs dont il ne peut connaitre la destination ou l'action", 
+        "checklist": {
+            "id": 568, 
+            "name": "Accessibility first step: error detection"
+        }, 
+        "explanation": "", 
+        "description": "Ne pas utiliser d'attribut alt vide si l'\u00e9l\u00e9ment est le seul enfant d'un \u00e9l\u00e9ment a ou button", 
+        "solution": "Renseigner le contenu de l'attribut alt avec la destination du lien ou la fonction du bouton d'action.", 
+        "name": "39"
+    }, 
     "12117": {
         "goal": "", 
         "checklist": {
@@ -5344,6 +6114,17 @@ checklists = {
         "description": "Chaque image texte applet (balise applet), en l'absence d'un m\u00e9canisme de remplacement, doit si possible \u00eatre remplac\u00e9e par du texte styl\u00e9. Cette r\u00e8gle est-elle respect\u00e9e (hors cas particuliers)?", 
         "solution": "", 
         "name": "1.8.4"
+    }, 
+    "19197": {
+        "goal": "", 
+        "checklist": {
+            "id": 567, 
+            "name": "Accessibility Second step : risk management"
+        }, 
+        "explanation": "", 
+        "description": "Utiliser les valeurs none et hidden des propri\u00e9t\u00e9s display et visibility avec pr\u00e9caution", 
+        "solution": "", 
+        "name": "28"
     }, 
     "12118": {
         "goal": "", 
@@ -5433,16 +6214,16 @@ checklists = {
         "solution": "", 
         "name": "12.10.1"
     }, 
-    "19130": {
-        "goal": "Permettre l'association des champs de formulaire avec les \u00e9tiquettes qui les d\u00e9crivent.", 
+    "16251": {
+        "goal": "Simplifier le crawl.", 
         "checklist": {
-            "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "id": 478, 
+            "name": "SEO"
         }, 
         "explanation": "", 
-        "description": "Utiliser les \u00e9l\u00e9ments input de type text&nbsp; sans attribut id avec pr\u00e9caution", 
-        "solution": "Ajouter un attribut id sur l'\u00e9l\u00e9ment.", 
-        "name": "21"
+        "description": "Les formats d'images utilis\u00e9s sont indexables par les principaux moteurs de recherche d'image.", 
+        "solution": "Limiter le format des images aux seuls JPEG, PNG, GIF ou SVG.", 
+        "name": "20"
     }, 
     "12124": {
         "goal": "", 
@@ -5488,6 +6269,17 @@ checklists = {
         "solution": "", 
         "name": "12.11.1"
     }, 
+    "16230": {
+        "goal": "Simplifier l'indexation et la compr\u00e9hension des images.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Les images sont coh\u00e9rentes avec les contenus de la page.", 
+        "solution": "Choisir les images de mani\u00e8re \u00e0 ce qu'elles illustrent ou compl\u00e8tent explicitement le contenu de la page.", 
+        "name": "24"
+    }, 
     "12127": {
         "goal": "", 
         "checklist": {
@@ -5520,6 +6312,17 @@ checklists = {
         "description": "Dans chaque page Web, chaque lien d'\u00e9vitement ou d'acc\u00e8s rapide est-il fonctionnel ?", 
         "solution": "", 
         "name": "12.11.3"
+    }, 
+    "16183": {
+        "goal": "Associer les liens avec les termes correspondants.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le libell\u00e9 de chaque hyperlien d\u00e9crit sa fonction ou la nature du contenu vers lequel il pointe.", 
+        "solution": "D\u00e9crire la fonction du lien ou le contenu vis\u00e9 dans le libell\u00e9 plac\u00e9 entre les balises de l'\u00e9l\u00e9ment A, dans l'attribut ALT des \u00e9l\u00e9ments AREA, INPUT type image, APPLET ainsi que dans l'attribut ALT des \u00e9l\u00e9ments IMG qui sont le seul contenu d'un lien A.", 
+        "name": "32"
     }, 
     "12129": {
         "goal": "", 
@@ -5564,6 +6367,17 @@ checklists = {
         "description": "Dans chaque page Web, l'ordre de tabulation dans le contenu est-il coh\u00e9rent ?", 
         "solution": "", 
         "name": "12.13.1"
+    }, 
+    "16224": {
+        "goal": "Conserver le ciblage de la page.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Les liens qui ne sont pas en rapport avec les contenus ou services propos\u00e9s sont d\u00e9clar\u00e9s en nofollow.", 
+        "solution": "Renseigner l'attribut rel des \u00e9l\u00e9ments A et AREA concern\u00e9s avec la valeur \"nofollow\".", 
+        "name": "33"
     }, 
     "12132": {
         "goal": "", 
@@ -5641,6 +6455,17 @@ checklists = {
         "description": "Pour chaque page Web, chaque proc\u00e9d\u00e9 de redirection effectu\u00e9 via un script v\u00e9rifie-t-il une de ces conditions (hors cas particuliers) ?", 
         "solution": "", 
         "name": "13.1.3"
+    }, 
+    "19269": {
+        "goal": "Permettre la restitution d'un contenu alternatif aux utilisateurs qui ne peuvent pas percevoir le contenu de l'\u00e9l\u00e9ment.", 
+        "checklist": {
+            "id": 568, 
+            "name": "Accessibility first step: error detection"
+        }, 
+        "explanation": "", 
+        "description": "Utiliser un attribut alt pour chaque \u00e9l\u00e9ment input de type image", 
+        "solution": "ajouter l'attribut alt sur l'\u00e9l\u00e9ment. Exemple&nbsp;: &lt;input type='image' alt='...'/&gt;", 
+        "name": "38"
     }, 
     "12137": {
         "goal": "", 
@@ -5730,6 +6555,17 @@ checklists = {
         "solution": "", 
         "name": "9.2.3"
     }, 
+    "16201": {
+        "goal": "Simplifier le crawl des moteurs.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le plan du site est accessible depuis la page d'accueil.", 
+        "solution": "Faire figurer un lien A vers la page de plan de site sur la page d'accueil.", 
+        "name": "63"
+    }, 
     "12141": {
         "goal": "", 
         "checklist": {
@@ -5785,6 +6621,17 @@ checklists = {
         "solution": "", 
         "name": "13.5.1"
     }, 
+    "19287": {
+        "goal": "Permettre la restitution d'un titre au groupe form\u00e9 par optgroup.", 
+        "checklist": {
+            "id": 568, 
+            "name": "Accessibility first step: error detection"
+        }, 
+        "explanation": "", 
+        "description": "Utiliser un attribut label pour chaque \u00e9l\u00e9ment optgroup", 
+        "solution": "Ajouter un attribut label aux \u00e9l\u00e9ments optgroup. Exemple&nbsp;: &lt;optgroup label='france'&gt;...&lt;/optgroup&gt;", 
+        "name": "75"
+    }, 
     "12145": {
         "goal": "", 
         "checklist": {
@@ -5806,6 +6653,17 @@ checklists = {
         "description": "Dans chaque page Web, la premi\u00e8re occurrence de chaque acronyme v\u00e9rifie-t-elle une de ces conditions ?", 
         "solution": "", 
         "name": "9.3.1"
+    }, 
+    "16202": {
+        "goal": "Simplifier le crawl des moteurs.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le site propose un fil d'Ariane.", 
+        "solution": "Fournir un fil d'Ariane en d\u00e9but de la zone de contenu principal de la page. Il commence par un lien vers la page d'accueil, suivi des liens correspondants aux rubriques et sous-rubriques \u00e9ventuelles o\u00f9 se trouve la page.", 
+        "name": "66"
     }, 
     "12146": {
         "goal": "", 
@@ -5851,16 +6709,16 @@ checklists = {
         "solution": "", 
         "name": "13.7.1"
     }, 
-    "19135": {
-        "goal": "Permettre l'identification et la distinction des diff\u00e9rents groupes form\u00e9s dans les \u00e9l\u00e9ments de formulaire.", 
+    "16252": {
+        "goal": "Simplifier le crawl.", 
         "checklist": {
-            "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "id": 478, 
+            "name": "SEO"
         }, 
         "explanation": "", 
-        "description": "Utiliser avec pr\u00e9caution un contenu identique pour plusieurs \u00e9l\u00e9ments legend", 
-        "solution": "D\u00e9terminer un titre diff\u00e9rent pour chaque groupe form\u00e9 dans les \u00e9l\u00e9ments de formulaire.", 
-        "name": "16"
+        "description": "L'acc\u00e8s aux contenus significatifs n'est pas  conditionn\u00e9e par le support de javascript.", 
+        "solution": "Utiliser les scripts de mani\u00e8re non-obstructive, c'est \u00e0 dire comme am\u00e9lioration de l'interaction sur la base d'une source HTML statique enti\u00e8rement navigable.", 
+        "name": "56"
     }, 
     "12149": {
         "goal": "", 
@@ -5884,6 +6742,17 @@ checklists = {
         "solution": "", 
         "name": "13.9.1"
     }, 
+    "16221": {
+        "goal": "Am\u00e9liorer la popularit\u00e9 du site.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le site fait l'objet de liens entrants.", 
+        "solution": "", 
+        "name": "61"
+    }, 
     "12043": {
         "goal": "", 
         "checklist": {
@@ -5894,6 +6763,17 @@ checklists = {
         "description": "Dans chaque page Web, la premi\u00e8re occurrence de chaque abr\u00e9viation v\u00e9rifie-t-elle une de ces conditions ?", 
         "solution": "", 
         "name": "9.3.2"
+    }, 
+    "16203": {
+        "goal": "Contr\u00f4ler l'indexation des moteurs.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "La racine du site contient des instructions pour les robots d'indexation.", 
+        "solution": "Mettre en place un fichier robots.txt \u00e0 la racine du site et renseigner son contenu \u00e0 l'aide des directives indiqu\u00e9es par http://www.robotstxt.org/", 
+        "name": "58"
     }, 
     "12151": {
         "goal": "", 
@@ -5928,6 +6808,17 @@ checklists = {
         "solution": "", 
         "name": "1.9.5"
     }, 
+    "19130": {
+        "goal": "Permettre l'association des champs de formulaire avec les \u00e9tiquettes qui les d\u00e9crivent.", 
+        "checklist": {
+            "id": 567, 
+            "name": "Accessibility Second step : risk management"
+        }, 
+        "explanation": "", 
+        "description": "Utiliser les \u00e9l\u00e9ments input de type text&nbsp; sans attribut id avec pr\u00e9caution", 
+        "solution": "Ajouter un attribut id sur l'\u00e9l\u00e9ment.", 
+        "name": "21"
+    }, 
     "12153": {
         "goal": "", 
         "checklist": {
@@ -5950,6 +6841,17 @@ checklists = {
         "solution": "", 
         "name": "13.15.1"
     }, 
+    "16675": {
+        "goal": "", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Les contenus qui le peuvent sont enrichis avec des meta-donn\u00e9es.", 
+        "solution": "", 
+        "name": ""
+    }, 
     "12155": {
         "goal": "", 
         "checklist": {
@@ -5971,6 +6873,17 @@ checklists = {
         "description": "Dans chaque page Web, la signification de chaque acronyme est-elle pertinente ?", 
         "solution": "", 
         "name": "9.4.1"
+    }, 
+    "16204": {
+        "goal": "Simplifier le crawl des moteurs.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le site propose un fichier sitemap indiquant les contenus \u00e0 explorer.", 
+        "solution": "Cr\u00e9er un fichier sitemap.xml contenant la liste des pages du site \u00e0 la racine du site.", 
+        "name": "59"
     }, 
     "12156": {
         "goal": "", 
@@ -6016,6 +6929,17 @@ checklists = {
         "solution": "", 
         "name": "13.16.1"
     }, 
+    "19221": {
+        "goal": "Permettre aux utilisateurs de distinguer les liens qui m\u00e8nent \u00e0 des adresses diff\u00e9rentes.", 
+        "checklist": {
+            "id": 568, 
+            "name": "Accessibility first step: error detection"
+        }, 
+        "explanation": "", 
+        "description": "Utiliser un attribut alt pour l'\u00e9l\u00e9ment area", 
+        "solution": "ajouter l'attribut alt sur l'\u00e9l\u00e9ment. Exemple&nbsp;: &lt;area alt='...'&gt;&lt;/area&gt;", 
+        "name": "36"
+    }, 
     "12159": {
         "goal": "", 
         "checklist": {
@@ -6048,6 +6972,17 @@ checklists = {
         "description": "Dans chaque page Web, la signification de chaque abr\u00e9viation est-elle pertinente ?", 
         "solution": "", 
         "name": "9.4.2"
+    }, 
+    "16205": {
+        "goal": "S\u00e9parer la forme et le contenu.\r\nSimplifier l'acc\u00e8s aux contenus.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Les contenus HTML sont mis en forme \u00e0 l'aide de styles CSS externalis\u00e9s.", 
+        "solution": "Placer les styles CSS dans des fichiers externes appel\u00e9s avec les \u00e9l\u00e9ments LINK ou la r\u00e8gle @import dans un \u00e9l\u00e9ment STYLE. Ne pas placer les styles CSS directement entre les balises de l'\u00e9l\u00e9ment STYLE ou dans l'attribut style des \u00e9l\u00e9ments HTML. Le cas \u00e9ch\u00e9ant, mettre en place une validation dans l'interface d'\u00e9dition alertant l'utilisateur en cas de saisie d'un attribut style en mode source.", 
+        "name": "74"
     }, 
     "12161": {
         "goal": "", 
@@ -6115,6 +7050,17 @@ checklists = {
         "solution": "", 
         "name": "3.4.1"
     }, 
+    "16260": {
+        "goal": "Encourager les moteurs \u00e0 crawler le site quand n\u00e9cessaire.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le temps de rafraichissement indiqu\u00e9 dans le fichier sitemap est coh\u00e9rent avec la fr\u00e9quence de mise \u00e0 jour du site.", 
+        "solution": "<div>Renseigner l'\u00e9l\u00e9ment changefreq du fichier sitemap.xml de mani\u00e8re coh\u00e9rente avec la fr\u00e9quence moyenne de mise \u00e0 jour du site (always, hourly, daily, weekly, monthly, yearly, never)</div>", 
+        "name": "60"
+    }, 
     "19185": {
         "goal": "Eviter aux utilisateurs tout \u00e9v\u00e9nement d\u00e9clench\u00e9 automatiquement au bout d'un certain temps.", 
         "checklist": {
@@ -6136,6 +7082,17 @@ checklists = {
         "description": "Chaque m\u00e9dia temporel pr\u00e9-enregistr\u00e9 seulement audio a-t-il, si n\u00e9cessaire, une transcription textuelle (hors cas particuliers) ?", 
         "solution": "", 
         "name": "4.1.1"
+    }, 
+    "16261": {
+        "goal": "Permettre aux moteurs d'indexer le num\u00e9ro de t\u00e9l\u00e9phone et l'adresse.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "L'adresse et le num\u00e9ro de t\u00e9l\u00e9phone de l'entreprise sont disponibles sous forme textuelle.", 
+        "solution": "Indiquer sous forme de contenu textuel HTML l'adresse postale et le num\u00e9ro de t\u00e9l\u00e9phone de la soci\u00e9t\u00e9 ou de l'organisme, dans chaque page du site ou dans une page de type Contact.", 
+        "name": "19"
     }, 
     "12046": {
         "goal": "", 
@@ -6159,6 +7116,17 @@ checklists = {
         "solution": "", 
         "name": "10.15.4"
     }, 
+    "16206": {
+        "goal": "<div>Simplifier la lecture des titres par les moteurs.&nbsp;Forcer \u00e0 \u00e9crire des titres brefs et percutants.</div>", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le contenu de chaque \u00e9l\u00e9ment TITLE est inf\u00e9rieur ou \u00e9gal \u00e0 80 caract\u00e8res", 
+        "solution": "Limiter \u00e0 80 caract\u00e8res au plus, espaces compris, le contenu de l'\u00e9l\u00e9ment TITLE. Mettre en place un automatisme dans le CMS tronquant les contenus des titres de page automatiquement g\u00e9n\u00e9r\u00e9s. Mettre en place un processus de validation de la longueur des titres de page saisis par les r\u00e9dacteurs, permettant de les alerter en cas d'erreurs et de corriger la saisie avant publication.", 
+        "name": "46"
+    }, 
     "19275": {
         "goal": "Permettre l'association des \u00e9tiquettes avec les champs auxquelles elles se rapportent.", 
         "checklist": {
@@ -6170,6 +7138,17 @@ checklists = {
         "solution": "Ajouter un attribut for sur l'\u00e9l\u00e9ment label. Exemple&nbsp;: &lt;label for='champ-xxx'&gt;xxx&lt;/label&gt;", 
         "name": "72"
     }, 
+    "16263": {
+        "goal": "Simplifier l'indexation et le crawl.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Les URL des liens internes contiennent exclusivement des caract\u00e8res alphanum\u00e9riques ou consid\u00e9r\u00e9s comme s\u00fbrs.", 
+        "solution": "<div>N'utiliser dans les URL de liens internes que les caract\u00e8res suivants :&nbsp;</div><div>chiffres de 0 \u00e0 9&nbsp;</div><div>Lettres de a \u00e0 z et de&nbsp;A \u00e0 Z&nbsp;</div><div>Caract\u00e8res $ - _ . + ! * ' ( ) ,&nbsp;&amp; / : ; = ? @&nbsp;#&nbsp;%&nbsp;[ ]&nbsp;</div><div>Par exemple, une rubrique libell\u00e9e \"\u00e9t\u00e9\" correspondra dans les url \u00e0 un r\u00e9pertoire \"ete\".</div>", 
+        "name": "35"
+    }, 
     "11910": {
         "goal": "", 
         "checklist": {
@@ -6180,6 +7159,17 @@ checklists = {
         "description": "Chaque cadre en ligne (balise iframe) a-t-il un attribut title ?", 
         "solution": "", 
         "name": "2.1.2"
+    }, 
+    "16223": {
+        "goal": "Conserver le ciblage de la page.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Les liens externes sont en rapport avec les contenus ou services propos\u00e9s.", 
+        "solution": "Ne faire figurer dans chaque page que des liens externes en rapport avec le contenu ou le service propos\u00e9 dans celle-ci.", 
+        "name": "36"
     }, 
     "12047": {
         "goal": "", 
@@ -6203,6 +7193,72 @@ checklists = {
         "solution": "", 
         "name": "11.14.2"
     }, 
+    "16207": {
+        "goal": "Mettre en avant les mots-clefs sp\u00e9cifiques de la page.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le contenu de l'\u00e9l\u00e9ment TITLE de chaque page ne commence pas par le nom du site.", 
+        "solution": "Indiquer le nom de site apr\u00e8s la formulation identifiant le contenu propre de la page dans le contenu de l'\u00e9l\u00e9ment TITLE.", 
+        "name": "50"
+    }, 
+    "16267": {
+        "goal": "Simplifier l'indexation.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le serveur envoie un code HTTP 404 pour les ressources non trouv\u00e9es.", 
+        "solution": "Configurer vos CMS, framework, serveur pour qu'il renvoie un code HTTP 404 pour les ressources non trouv\u00e9es.", 
+        "name": "76"
+    }, 
+    "19173": {
+        "goal": "Eviter aux utilisateurs un changement de contexte sans validation explicite de leur part.", 
+        "checklist": {
+            "id": 567, 
+            "name": "Accessibility Second step : risk management"
+        }, 
+        "explanation": "", 
+        "description": "Utiliser avec pr\u00e9caution le gestionnaire d'\u00e9v\u00e9nement onchange pour d\u00e9clencher la m\u00e9thode submit", 
+        "solution": "Pr\u00e9voir un bouton de validation explicite que l'utilisateur devra d\u00e9clencher \u00e0 cette fin pour soumettre un formulaire.\r\nAlternativement, il est possible d'informer au pr\u00e9alable les utilisateurs de ce comportement.", 
+        "name": "35"
+    }, 
+    "16253": {
+        "goal": "Eviter le contenu dupliqu\u00e9.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Les noms de domaine secondaires redirigent en 301 vers le nom de domaine principal.", 
+        "solution": "Choisir un nom de domaine principal et rediriger tous les domaines alternatifs \u00e9ventuels vers ce domaine (via .htaccess sous Apache, par exemple).", 
+        "name": "78"
+    }, 
+    "16270": {
+        "goal": "Renforcer les mots-cl\u00e9s.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Les libell\u00e9s du menu principal de navigation sont coh\u00e9rents avec le contenu des rubriques.", 
+        "solution": "R\u00e9diger les libell\u00e9s des liens du menu de navigation vers les rubriques du site de mani\u00e8re \u00e0 refl\u00e9ter explicitement la nature et le contenu de chaque rubrique correspondante.", 
+        "name": "64"
+    }, 
+    "16271": {
+        "goal": "", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Les pages non significatives sont interdites \u00e0 l'indexation", 
+        "solution": "", 
+        "name": ""
+    }, 
     "12048": {
         "goal": "", 
         "checklist": {
@@ -6213,6 +7269,39 @@ checklists = {
         "description": "Dans chaque page Web, les balises servant \u00e0 la pr\u00e9sentation de l'information ne doivent pas \u00eatre pr\u00e9sentes dans le code source des pages. Cette r\u00e8gle est-elle respect\u00e9e ?", 
         "solution": "", 
         "name": "10.1.1"
+    }, 
+    "16208": {
+        "goal": "Mettre en avant les mots-clefs.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le contenu vis\u00e9 pour le r\u00e9f\u00e9rencement est mis en exergue (strong ou em).", 
+        "solution": "Utiliser les \u00e9l\u00e9ments EM ou STRONG pour baliser les mots-cl\u00e9s correspondant au contenu propre de la page, quand ils ne sont pas pr\u00e9sents dans un \u00e9l\u00e9ment de titre de section.", 
+        "name": "11"
+    }, 
+    "16272": {
+        "goal": "", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "l'adresse du site est renseign\u00e9e dans les profils et comptes associ\u00e9s sur les m\u00e9dias sociaux", 
+        "solution": "", 
+        "name": ""
+    }, 
+    "19094": {
+        "goal": "Permettre la restitution de la nature des contenus (ici une liste) et de leurs caract\u00e9ristiques (ici le nombre d'item de cette liste) aux  utilisateurs qui ne per\u00e7oivent pas la mise en page originale.\r\nAinsi, la transmission uniquement visuelle d'une information s\u00e9mantique est \u00e9vit\u00e9e.", 
+        "checklist": {
+            "id": 567, 
+            "name": "Accessibility Second step : risk management"
+        }, 
+        "explanation": "", 
+        "description": "Utiliser avec pr\u00e9caution des \u00e9l\u00e9ments div successifs commen\u00e7ant chacun leur contenu par -, \u2013, \u2014, * ou \u2022", 
+        "solution": "Utiliser les \u00e9l\u00e9ments ul et li pour baliser les listes.", 
+        "name": "1"
     }, 
     "19073": {
         "goal": "Permettre \u00e0 l'utilisateur de pr\u00e9voir le comportement des liens qui ouvrent une nouvelle fen\u00eatre.", 
@@ -6236,6 +7325,28 @@ checklists = {
         "solution": "", 
         "name": "10.1.2"
     }, 
+    "16209": {
+        "goal": "<div>Structurer la page.&nbsp;Placer des mots-clefs aux endroits importants.</div>", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le contenu de chaque page est organis\u00e9 selon une structure de titres de section HTML.", 
+        "solution": "Utiliser les \u00e9l\u00e9ments de titre de section H1, H2, H3, H4, H5, H6 pour donner \u00e0 chaque section et sous-section du contenu propre de la page un titre refl\u00e9tant son contenu.", 
+        "name": "12"
+    }, 
+    "16226": {
+        "goal": "Simplifier l'acc\u00e8s aux contenus.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "La page d'accueil du site n'est pas une page tunnel ou une introduction en flash.", 
+        "solution": "Ne pas faire pr\u00e9c\u00e9der la page d'accueil d'une splash screen (fen\u00eatre d'attente).", 
+        "name": "17"
+    }, 
     "19142": {
         "goal": "Permettre la restitution des \u00e9l\u00e9ments multim\u00e9dia au aides techniques.", 
         "checklist": {
@@ -6247,6 +7358,28 @@ checklists = {
         "solution": "Lorsque le contenu de l'\u00e9l\u00e9ment object doit pouvoir \u00eatre lu par une aide technique, utiliser la valeur \u201cwindow\u201c pour le param\u00e8tre wmode ou le supprimer. Lorsque le contenu est uniquement d\u00e9coratif vous pouvez laisser l'attribut wmode transparent ou opaque", 
         "name": "7"
     }, 
+    "16229": {
+        "goal": "Fournir des contenus indexables aux moteurs.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Si le site propose un fil de syndication, celui propose des contenus et pas seulement des liens.", 
+        "solution": "Reproduire dans le fil RSS, associ\u00e9 \u00e0 chaque lien, le r\u00e9sum\u00e9 ou l'introduction des contenus correspondants.", 
+        "name": "23"
+    }, 
+    "19353": {
+        "goal": "", 
+        "checklist": {
+            "id": 568, 
+            "name": "Accessibility first step: error detection"
+        }, 
+        "explanation": "", 
+        "description": "Ne pas utiliser une valeur d'attribut dir autre que ltr, rtl ou vide", 
+        "solution": "", 
+        "name": "8"
+    }, 
     "12050": {
         "goal": "", 
         "checklist": {
@@ -6257,6 +7390,17 @@ checklists = {
         "description": "Dans chaque page Web, l'utilisation des espaces v\u00e9rifie-t-elle ces conditions ?", 
         "solution": "", 
         "name": "10.1.3"
+    }, 
+    "16210": {
+        "goal": "<div>Renforcer les mots-clefs associ\u00e9s \u00e0 une page.</div><div><br></div>", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Les titres de section HTML comportent des mots clefs contenus dans la balise meta keywords.", 
+        "solution": "R\u00e9diger chaque \u00e9l\u00e9ment H1, H2, H3, H4, H5, H6 de mani\u00e8re \u00e0 ce qu'il contienne au moins un mot-cl\u00e9 pr\u00e9sent dans le contenu de l'attribut content de l'\u00e9l\u00e9ment META name=\"keywords\".", 
+        "name": "13"
     }, 
     "19295": {
         "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
@@ -6302,6 +7446,28 @@ checklists = {
         "solution": "", 
         "name": "10.2.1"
     }, 
+    "16211": {
+        "goal": "<div>S\u00e9parer clairement les langues.&nbsp;Simplifier l'identification &nbsp;de la langue des contenus par les moteurs.</div>", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Chaque langue propos\u00e9e fait l'objet d'un domaine ou d'un sous-domaine diff\u00e9rent.", 
+        "solution": "Si le site comporte plusieurs versions linguistiques, chacune est accessible via un nom de domaine ou de sous-domaine qui lui est propre.", 
+        "name": "28"
+    }, 
+    "19227": {
+        "goal": "Permettre d'\u00e9viter la lecture automatique de son qu'il n'est pas possible d'arr\u00eater.", 
+        "checklist": {
+            "id": 568, 
+            "name": "Accessibility first step: error detection"
+        }, 
+        "explanation": "", 
+        "description": "Ne pas utiliser l'\u00e9l\u00e9ment bgsound", 
+        "solution": "Utiliser un syst\u00e8me de lecture des sons que les utilisateurs peuvent contr\u00f4ler avec la souris et avec le clavier.", 
+        "name": "47"
+    }, 
     "11924": {
         "goal": "", 
         "checklist": {
@@ -6324,6 +7490,39 @@ checklists = {
         "solution": "", 
         "name": "10.2.2"
     }, 
+    "16212": {
+        "goal": "<div>Eviter le keyword-stuffing (bourrage de mots-cl\u00e9s).&nbsp;Renforcer les mots-clefs majeurs.</div>", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le contenu de chaque \u00e9l\u00e9ment meta keywords est inf\u00e9rieur ou \u00e9gal \u00e0 10 termes.", 
+        "solution": "Limiter \u00e0 10 termes ou expressions au plus le contenu de l'attribut content de l'\u00e9l\u00e9ment META name=\"keywords\". Mettre en place dans le CMS un automatisme limitant le nombre de mots-cl\u00e9s ins\u00e9r\u00e9s dans l'attribut. Mettre en place dans l'interface d'\u00e9dition un processus de validation alertant le r\u00e9dacteur en cas de saisie de plus de 10 mots-cl\u00e9s et lui permettant de corriger avant publication.", 
+        "name": "43"
+    }, 
+    "19281": {
+        "goal": "Permettre la restitution sans erreur du nombre d'\u00e9l\u00e9ments composant une liste.\r\nEviter l'utilisation d'\u00e9l\u00e9ments \u00e0 des fins de pr\u00e9sentation.", 
+        "checklist": {
+            "id": 568, 
+            "name": "Accessibility first step: error detection"
+        }, 
+        "explanation": "", 
+        "description": "Ne pas utiliser d'\u00e9l\u00e9ment li vide", 
+        "solution": "Supprimer les \u00e9l\u00e9ments &lt;li&gt; qui ne poss\u00e8dent pas de contenu. Utiliser les propri\u00e9t\u00e9s des feuilles de styles margin et padding pour d\u00e9terminer les \u00e9carts entres les diff\u00e9rents \u00e9l\u00e9ments.", 
+        "name": "26"
+    }, 
+    "16254": {
+        "goal": "Eviter le contenu dupliqu\u00e9.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Les URL alternatives vers la page d'accueil font l'objet d'une redirection 301 vers l'URL principale.", 
+        "solution": "Choisir une URL principale pour l'accueil et rediriger tous les domaines alternatifs \u00e9ventuels vers ce domaine (via .htaccess sous Apache, par exemple).", 
+        "name": "77"
+    }, 
     "12053": {
         "goal": "", 
         "checklist": {
@@ -6334,6 +7533,17 @@ checklists = {
         "description": "Dans chaque page Web, l'information reste-t-elle visible lorsque les couleurs sont d\u00e9sactiv\u00e9es ?", 
         "solution": "", 
         "name": "10.2.3"
+    }, 
+    "16213": {
+        "goal": "<div>Ne pas diluer les mots-clefs.&nbsp;Mettre en avant les mots-clefs propres \u00e0 la page.</div>", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "La m\u00e9ta keywords contient exclusivement des termes en rapport direct avec le contenu.", 
+        "solution": "Renseigner le contenu de l'attribut content de l'\u00e9l\u00e9ment META name=\"keywords\" avec des mots-cl\u00e9s en rapport direct avec le contenu de la page.", 
+        "name": "44"
     }, 
     "19282": {
         "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
@@ -6379,6 +7589,17 @@ checklists = {
         "solution": "", 
         "name": "10.3.1"
     }, 
+    "16214": {
+        "goal": "<div>Motiver les moteurs \u00e0 visiter le site r\u00e9guli\u00e8rement.&nbsp;Am\u00e9liorer la fra\u00eecheur du contenu.</div>", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le contenu du site est mis \u00e0 jour au moins une fois par mois.", 
+        "solution": "Proc\u00e9der \u00e0 des mises \u00e0 jour r\u00e9guli\u00e8res du site.", 
+        "name": "16"
+    }, 
     "11918": {
         "goal": "", 
         "checklist": {
@@ -6389,6 +7610,17 @@ checklists = {
         "description": "Pour chaque m\u00e9dia non temporel v\u00e9hiculant une information, l'information ne doit pas \u00eatre donn\u00e9e uniquement par la couleur. Cette r\u00e8gle est-elle respect\u00e9e ?", 
         "solution": "", 
         "name": "3.1.6"
+    }, 
+    "19135": {
+        "goal": "Permettre l'identification et la distinction des diff\u00e9rents groupes form\u00e9s dans les \u00e9l\u00e9ments de formulaire.", 
+        "checklist": {
+            "id": 567, 
+            "name": "Accessibility Second step : risk management"
+        }, 
+        "explanation": "", 
+        "description": "Utiliser avec pr\u00e9caution un contenu identique pour plusieurs \u00e9l\u00e9ments legend", 
+        "solution": "D\u00e9terminer un titre diff\u00e9rent pour chaque groupe form\u00e9 dans les \u00e9l\u00e9ments de formulaire.", 
+        "name": "16"
     }, 
     "19147": {
         "goal": "Permettre la restitution de la nature des contenus (ici une liste de d\u00e9finition) aux  utilisateurs qui ne per\u00e7oivent pas la mise en page originale.\r\nEviter l'utilisation d'\u00e9l\u00e9ment en fonction de la mani\u00e8re dont ils sont restitu\u00e9s visuellement.", 
