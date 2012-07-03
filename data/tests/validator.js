@@ -1689,37 +1689,129 @@ function apply_regexp_test(doc, test, language) {
  */
 function apply_doctype_test(doc, test, language) {
 	//
-	var _result = [];
-	var dt = "";
-	//
-	var doctypes = ['<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">', '<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">', '<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">', '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">', '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">', '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">', '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">', '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN" "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">', '<!DOCTYPE html PUBLIC "" "">', '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG 1.1//EN" "http://www.w3.org/2002/04/xhtml-math-svg/xhtml-math-svg.dtd">', '<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN" "">', '<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN" "">', '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.0//EN" "http://www.w3.org/TR/xhtml-basic/xhtml-basic10.dtd">', '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">'];
+	var _result = [], dt = "", reg1 = RegExp().compile('<!DOCTYPE[^>]*>', "i"), reg2 = RegExp().compile('^\\s*<!DOCTYPE[^>]*>', "i");
+	//@formatter:off
+	var doctypes = [
+		'<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">',
+		'<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">',
+		'<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">',
+		'<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">',
+		'<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">',
+		'<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">',
+		'<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">',
+		'<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN" "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">',
+		'<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG 1.1//EN" "http://www.w3.org/2002/04/xhtml-math-svg/xhtml-math-svg.dtd">',
+		'<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN" "">', '<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN" "">',
+		'<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.0//EN" "http://www.w3.org/TR/xhtml-basic/xhtml-basic10.dtd">',
+		'<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">',
+		'<!DOCTYPE html PUBLIC>'
+	];
+	//@formatter:on
 
 	//
 	try {
 		if (language == "html") {
 			//
 			if (test == "present") {
-				//
+				// detected
 				if (doc.doctype) {
 					_dt = doc.doctype;
-					dt = '<!DOCTYPE ' + _dt.name.toLowerCase() + ' PUBLIC "' + _dt.publicId + '" "' + _dt.systemId + '">';
+					dt = '<!DOCTYPE ' + _dt.name.toLowerCase() + ' PUBLIC';
+
+					//
+					if (_dt.publicId != '') {
+						dt += ' "' + _dt.publicId + '"';
+					}
+					if (_dt.systemId != '') {
+						dt += ' "' + _dt.systemId + '"';
+					}
+					dt += '>';
 
 					//
 					_result.push(dt);
+				}
+
+				//
+				else {
+					//
+					var _tmp = _sendXHR("get", document.location.href);
+
+					//
+					if (reg1.test(_tmp.responseText)) {
+						_result.push(RegExp.$1);
+					}
+				}
+			}
+
+			//
+			else if (test == "placed") {
+				// detected
+				if (doc.doctype) {
+					_dt = doc.doctype;
+					dt = '<!DOCTYPE ' + _dt.name.toLowerCase() + ' PUBLIC';
+
+					//
+					if (_dt.publicId != '') {
+						dt += ' "' + _dt.publicId + '"';
+					}
+					if (_dt.systemId != '') {
+						dt += ' "' + _dt.systemId + '"';
+					}
+					dt += '>';
+
+					//
+					_result.push(dt);
+				}
+
+				//
+				else {
+					//
+					var _tmp = _sendXHR("get", document.location.href);
+
+					//
+					if (reg2.test(_tmp.responseText)) {
+						_result.push(RegExp.$1);
+					}
 				}
 			}
 
 			//
 			else if (test == "valid") {
-				//
+				// detected
 				if (doc.doctype) {
 					_dt = doc.doctype;
-					dt = '<!DOCTYPE ' + _dt.name.toLowerCase() + ' PUBLIC "' + _dt.publicId + '" "' + _dt.systemId + '">';
+					dt = '<!DOCTYPE ' + _dt.name.toLowerCase() + ' PUBLIC';
 
 					//
+					if (_dt.publicId != '') {
+						dt += ' "' + _dt.publicId + '"';
+					}
+					if (_dt.systemId != '') {
+						dt += ' "' + _dt.systemId + '"';
+					}
+					dt += '>';
+
+					// valid
 					if (jQueryMephisto.inArray(dt, doctypes) != -1) {
 						//
 						_result.push(dt);
+					}
+				}
+
+				//
+				else {
+					//
+					var _tmp = _sendXHR("get", document.location.href);
+
+					//
+					for (var i in doctypes) {
+						//
+						var reg = RegExp().compile(doctypes[i], "i");
+
+						//
+						if (reg.test(_tmp.responseText)) {
+							_result.push(RegExp.$1);
+						}
 					}
 				}
 			}
@@ -1733,6 +1825,7 @@ function apply_doctype_test(doc, test, language) {
 	catch (err) {
 		// Error Logging
 		logger.error("apply_doctype_test", err);
+		console.log(err);
 		_result = false;
 	}
 

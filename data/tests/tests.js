@@ -36,9 +36,11 @@
  * ***** END LICENSE BLOCK ***** */
 
 /*global xhrMephisto, CSSParser*/
-var regFunction = RegExp().compile("([^\\s:{]*)\\(", "i"), inlineStyles = jQueryMephisto("body").find("*[style]");
 var langs = ['aa', 'aa-DJ', 'aa-ER', 'aa-ER-SAAHO', 'aa-ET', 'af', 'af-NA', 'af-ZA', 'ak', 'ak-GH', 'am', 'am-ET', 'ar', 'ar-AE', 'ar-BH', 'ar-DZ', 'ar-EG', 'ar-IQ', 'ar-JO', 'ar-KW', 'ar-LB', 'ar-LY', 'ar-MA', 'ar-OM', 'ar-QA', 'ar-SA', 'ar-SD', 'ar-SY', 'ar-TN', 'ar-YE', 'as', 'as-IN', 'az', 'az-AZ', 'az-Cyrl', 'az-Cyrl-AZ', 'az-Latn', 'az-Latn-AZ', 'be', 'be-BY', 'bg', 'bg-BG', 'bn', 'bn-BD', 'bn-IN', 'bs', 'bs-BA', 'byn', 'byn-ER', 'ca', 'ca-ES', 'cch', 'cch-NG', 'cop', 'cs', 'cs-CZ', 'cy', 'cy-GB', 'da', 'da-DK', 'de', 'de-AT', 'de-BE', 'de-CH', 'de-DE', 'de-LI', 'de-LU', 'dv', 'dv-MV', 'dz', 'dz-BT', 'ee', 'ee-GH', 'ee-TG', 'el', 'el-CY', 'el-GR', 'el-POLYTON', 'en', 'en-AS', 'en-AU', 'en-BE', 'en-BW', 'en-BZ', 'en-CA', 'en-Dsrt', 'en-Dsrt-US', 'en-GB', 'en-GU', 'en-HK', 'en-IE', 'en-IN', 'en-JM', 'en-MH', 'en-MP', 'en-MT', 'en-NA', 'en-NZ', 'en-PH', 'en-PK', 'en-SG', 'en-Shaw', 'en-TT', 'en-UM', 'en-US', 'en-US-POSIX', 'en-VI', 'en-ZA', 'en-ZW', 'eo', 'es', 'es-AR', 'es-BO', 'es-CL', 'es-CO', 'es-CR', 'es-DO', 'es-EC', 'es-ES', 'es-GT', 'es-HN', 'es-MX', 'es-NI', 'es-PA', 'es-PE', 'es-PR', 'es-PY', 'es-SV', 'es-US', 'es-UY', 'es-VE', 'et', 'et-EE', 'eu', 'eu-ES', 'fa', 'fa-AF', 'fa-IR', 'fi', 'fi-FI', 'fil', 'fil-PH', 'fo', 'fo-FO', 'fr', 'fr-BE', 'fr-CA', 'fr-CH', 'fr-FR', 'fr-LU', 'fr-MC', 'fr-SN', 'fur', 'fur-IT', 'ga', 'ga-IE', 'gaa', 'gaa-GH', 'gez', 'gez-ER', 'gez-ET', 'gl', 'gl-ES', 'gu', 'gu-IN', 'gv', 'gv-GB', 'ha', 'ha-Arab', 'ha-Arab-NG', 'ha-Arab-SD', 'ha-GH', 'ha-Latn', 'ha-Latn-GH', 'ha-Latn-NE', 'ha-Latn-NG', 'ha-NE', 'ha-NG', 'ha-SD', 'haw', 'haw-US', 'he', 'he-IL', 'hi', 'hi-IN', 'hr', 'hr-HR', 'hu', 'hu-HU', 'hy', 'hy-AM', 'hy-AM-REVISED', 'ia', 'id', 'id-ID', 'ig', 'ig-NG', 'ii', 'ii-CN', 'in', 'is', 'is-IS', 'it', 'it-CH', 'it-IT', 'iu', 'iw', 'ja', 'ja-JP', 'ka', 'ka-GE', 'kaj', 'kaj-NG', 'kam', 'kam-KE', 'kcg', 'kcg-NG', 'kfo', 'kfo-CI', 'kk', 'kk-Cyrl', 'kk-Cyrl-KZ', 'kk-KZ', 'kl', 'kl-GL', 'km', 'km-KH', 'kn', 'kn-IN', 'ko', 'ko-KR', 'kok', 'kok-IN', 'kpe', 'kpe-GN', 'kpe-LR', 'ku', 'ku-Arab', 'ku-Latn', 'ku-Latn-TR', 'ku-TR', 'kw', 'kw-GB', 'ky', 'ky-KG', 'ln', 'ln-CD', 'ln-CG', 'lo', 'lo-LA', 'lt', 'lt-LT', 'lv', 'lv-LV', 'mk', 'mk-MK', 'ml', 'ml-IN', 'mn', 'mn-CN', 'mn-Cyrl', 'mn-Cyrl-MN', 'mn-MN', 'mn-Mong', 'mn-Mong-CN', 'mo', 'mr', 'mr-IN', 'ms', 'ms-BN', 'ms-MY', 'mt', 'mt-MT', 'my', 'my-MM', 'nb', 'nb-NO', 'ne', 'ne-IN', 'ne-NP', 'nl', 'nl-BE', 'nl-NL', 'nn', 'nn-NO', 'no', 'nr', 'nr-ZA', 'nso', 'nso-ZA', 'ny', 'ny-MW', 'om', 'om-ET', 'om-KE', 'or', 'or-IN', 'pa', 'pa-Arab', 'pa-Arab-PK', 'pa-Guru', 'pa-Guru-IN', 'pa-IN', 'pa-PK', 'pl', 'pl-PL', 'ps', 'ps-AF', 'pt', 'pt-BR', 'pt-PT', 'ro', 'ro-MD', 'ro-RO', 'ru', 'ru-RU', 'ru-UA', 'rw', 'rw-RW', 'sa', 'sa-IN', 'se', 'se-FI', 'se-NO', 'sh', 'sh-BA', 'sh-CS', 'sh-YU', 'si', 'si-LK', 'sid', 'sid-ET', 'sk', 'sk-SK', 'sl', 'sl-SI', 'so', 'so-DJ', 'so-ET', 'so-KE', 'so-SO', 'sq', 'sq-AL', 'sr', 'sr-BA', 'sr-CS', 'sr-Cyrl', 'sr-Cyrl-BA', 'sr-Cyrl-CS', 'sr-Cyrl-ME', 'sr-Cyrl-RS', 'sr-Cyrl-YU', 'sr-Latn', 'sr-Latn-BA', 'sr-Latn-CS', 'sr-Latn-ME', 'sr-Latn-RS', 'sr-Latn-YU', 'sr-ME', 'sr-RS', 'sr-YU', 'ss', 'ss-SZ', 'ss-ZA', 'st', 'st-LS', 'st-ZA', 'sv', 'sv-FI', 'sv-SE', 'sw', 'sw-KE', 'sw-TZ', 'syr', 'syr-SY', 'ta', 'ta-IN', 'te', 'te-IN', 'tg', 'tg-Cyrl', 'tg-Cyrl-TJ', 'tg-TJ', 'th', 'th-TH', 'ti', 'ti-ER', 'ti-ET', 'tig', 'tig-ER', 'tl', 'tn', 'tn-ZA', 'to', 'to-TO', 'tr', 'tr-TR', 'trv', 'ts', 'ts-ZA', 'tt', 'tt-RU', 'ug', 'ug-Arab', 'ug-Arab-CN', 'ug-CN', 'uk', 'uk-UA', 'ur', 'ur-IN', 'ur-PK', 'uz', 'uz-AF', 'uz-Arab', 'uz-Arab-AF', 'uz-Cyrl', 'uz-Cyrl-UZ', 'uz-Latn', 'uz-Latn-UZ', 'uz-UZ', 've', 've-ZA', 'vi', 'vi-VN', 'wal', 'wal-ET', 'wo', 'wo-Latn', 'wo-Latn-SN', 'wo-SN', 'xh', 'xh-ZA', 'yo', 'yo-NG', 'zh', 'zh-CN', 'zh-Hans', 'zh-Hans-CN', 'zh-Hans-HK', 'zh-Hans-MO', 'zh-Hans-SG', 'zh-Hant', 'zh-Hant-HK', 'zh-Hant-MO', 'zh-Hant-TW', 'zh-HK', 'zh-MO', 'zh-SG', 'zh-TW', 'zu', 'zu-ZA'];
-var badLinks = ['cliquez ici', 'lire la suite', 'en savoir plus', "plus d'infos"];
+var regFunction = RegExp().compile("([^\\s:{]*)\\(", "i"), badLinks = ['cliquez ici', 'lire la suite', 'en savoir plus', "plus d'infos"];
+var cdns = RegExp().compile("^(https?://(ajax.googleapis.com/ajax/libs/|ajax.aspnetcdn.com/ajax/|yui.yahooapis.com/)|(https://ssl|http://www).google-analytics.com/)", "i");
+var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-(c|m)ore)?|piwik|prototype|modernizr|xtcore|yui).js(\\?[-\\.v0-9]+)?$", "i");
+var inlineStyles = jQueryMephisto("*[style]"), onfocusEvents = jQueryMephisto("*[onfocus]"), onblurEvents = jQueryMephisto("*[onblur]"), onchangeEvents = jQueryMephisto("*[onchange]"), onclickEvents = jQueryMephisto("*[onclick]"), onmouseoverEvents = jQueryMephisto("*[onmouseover]"), onmouseoutEvents = jQueryMephisto("*[onmouseout]");
 
 /**
  *
@@ -117,7 +119,7 @@ function cssNumberOfFonts(doc) {
 			//
 			for (var i = 0; i < rule.declarations.length; i++) {
 				//
-				if (rule.declarations[i]["property"] == "font-family") {
+				if (rule.declarations[i]["property"] == "font-family" && rule.declarations[i]["valueText"] != "inherit") {
 					//
 					result.push(rule.declarations[i]["valueText"]);
 				}
@@ -154,7 +156,7 @@ function cssNumberOfFonts(doc) {
 					//
 					for (var i = 0; i < rule.declarations.length; i++) {
 						//
-						if (rule.declarations[i]["property"] == "font-family") {
+						if (rule.declarations[i]["property"] == "font-family" && rule.declarations[i]["valueText"] != "inherit") {
 							//
 							result.push(rule.declarations[i]["valueText"]);
 						}
@@ -311,7 +313,7 @@ function cssAbsoluteFontSizeOnScreen(doc) {
 		});
 
 		// inline style walk
-		jQueryMephisto("*[style]").each(function() {
+		inlineStyles.each(function() {
 			//
 			var parser = new CSSParser(), sheet = parser.parse(".style{" + jQueryMephisto(this).attr("style") + "}", false, false), item = this;
 
@@ -542,7 +544,7 @@ function cssBackgroundColorWoColor(doc) {
 	//
 	try {
 		//
-		jQueryMephisto("body, body *").filter(function() {
+		jQueryMephisto("body").find("*").andSelf().filter(function() {
 			//
 			var _backgroundColor = jQueryMephisto(this).css("background-color");
 			var _color = jQueryMephisto(this).css("color");
@@ -577,7 +579,7 @@ function cssColorWoBackgroundColor(doc) {
 	//
 	try {
 		//
-		jQueryMephisto("body, body *").filter(function() {
+		jQueryMephisto("body").find("*").andSelf().filter(function() {
 			//
 			var _backgroundColor = jQueryMephisto(this).css("background-color");
 			var _color = jQueryMephisto(this).css("color");
@@ -752,7 +754,7 @@ function cssBackgroundColorWoColor(doc) {
 	//
 	try {
 		//
-		jQueryMephisto("body, body *").filter(function() {
+		jQueryMephisto("body").find(":not(input[type='hidden'])").andSelf().filter(function() {
 			//
 			var _backgroundColor = jQueryMephisto(this).css("background-color");
 			var _color = jQueryMephisto(this).css("color");
@@ -787,7 +789,7 @@ function cssColorWoBackgroundColor(doc) {
 	//
 	try {
 		//
-		jQueryMephisto("body, body *").filter(function() {
+		jQueryMephisto("body").find(":not(input[type='hidden'])").andSelf().filter(function() {
 			//
 			var _backgroundColor = jQueryMephisto(this).css("background-color");
 			var _color = jQueryMephisto(this).css("color");
@@ -836,7 +838,7 @@ function cssBackgroundImageWoBackgroundColor(doc) {
 	//
 	try {
 		//
-		jQueryMephisto("body").find("*").andSelf().filter(function() {
+		jQueryMephisto("body").find(":not(input[type='hidden'])").andSelf().filter(function() {
 			//
 			var _backgroundColor = jQueryMephisto(this).css("background-color");
 			var _backgroundImage = jQueryMephisto(this).css("background-image");
@@ -914,7 +916,7 @@ function cssDisplayNone(doc) {
 		result = _analyseStylesheets(doc, "screen", callback);
 
 		// inline style walk
-		jQueryMephisto("*[style]").each(function() {
+		inlineStyles.each(function() {
 			//
 			var parser = new CSSParser(), sheet = parser.parse(".style{" + jQueryMephisto(this).attr("style") + "}", false, false), item = this;
 
@@ -1253,7 +1255,7 @@ function htmlLanguage(doc) {
 		var _lang = jQueryMephisto.trim(jQueryMephisto("html").attr("lang")), _xml_lang = jQueryMephisto.trim(jQueryMephisto("html").attr("xml:lang"));
 
 		//
-		if (jQueryMephisto.inArray(_lang, langs) != -1 || jQueryMephisto.inArray(_xml_lang, langs) != -1) {
+		if (_lang != '' || _xml_lang != '') {
 			result.push(_getDetails(jQueryMephisto("html").get(0)));
 		}
 	}
@@ -1262,6 +1264,37 @@ function htmlLanguage(doc) {
 	catch (err) {
 		// Error Logging
 		logger.error("htmlLanguage", err);
+		result = false;
+	}
+
+	//
+	return result;
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
+function htmlValidLanguage(doc) {
+	//
+	var result = [];
+
+	//
+	try {
+		//
+		var _lang = jQueryMephisto.trim(jQueryMephisto("html").attr("lang")), _xml_lang = jQueryMephisto.trim(jQueryMephisto("html").attr("xml:lang"));
+
+		//
+		if (jQueryMephisto.inArray(_lang, langs) != -1 || jQueryMephisto.inArray(_xml_lang, langs) != -1) {
+			result.push(_getDetails(jQueryMephisto("html").get(0)));
+		}
+	}
+
+	//
+	catch (err) {
+		// Error Logging
+		logger.error("htmlValidLanguage", err);
 		result = false;
 	}
 
@@ -1312,13 +1345,13 @@ function htmlElementLanguage(doc) {
 	//
 	try {
 		//
-		jQueryMephisto("body").find("*[lang], *[xml\\:lang]").each(function() {
+		jQueryMephisto("*[lang], *[xml\\:lang]").each(function() {
 			//
 			var _lang = jQueryMephisto.trim(jQueryMephisto(this).attr("lang")), _xml_lang = jQueryMephisto.trim(jQueryMephisto(this).attr("xml:lang"));
 
 			//
-			if (jQueryMephisto.inArray(_lang, langs) == -1 || jQueryMephisto.inArray(_xml_lang, langs) == -1) {
-				result.push(_getDetails(jQueryMephisto("html").get(0)));
+			if ((jQueryMephisto(this).attr("lang") != undefined && jQueryMephisto.inArray(_lang, langs) == -1) || (jQueryMephisto(this).attr("xml:lang") != undefined && jQueryMephisto.inArray(_xml_lang, langs) == -1)) {
+				result.push(_getDetails(jQueryMephisto(this).get(0)));
 			}
 		});
 	}
@@ -1923,7 +1956,7 @@ function jsRefresh(doc) {
 				var content_type = element.content_type == undefined && "undefined" || element.content_type;
 
 				//
-				if (content_type.split("/")[1] == "javascript") {
+				if (content_type.split("/")[1] == "javascript" && !cdns.test(element.uri) && !jsFrameworks.test(element.uri)) {
 					//
 					_xhr = _sendXHR("GET", element.uri);
 
@@ -2238,12 +2271,12 @@ function iframeWithSameTitles(doc) {
 	//
 	try {
 		//
-		jQueryMephisto("iframe").each(function() {
+		jQueryMephisto("iframe[title]").each(function() {
 			//
 			var title = jQueryMephisto.trim(jQueryMephisto(this).attr("title")).toLowerCase(), src = this.src.split("#")[0];
 
 			//
-			if (jQueryMephisto.inArray(title, Object.keys(iframes)) != -1 && iframes[title] != src) {
+			if (title == '' || (jQueryMephisto.inArray(title, Object.keys(iframes)) != -1 && iframes[title] != src)) {
 				result.push(_getDetails(this));
 			} else {
 				iframes[title] = src;
@@ -2778,7 +2811,7 @@ function cssGenericFont(doc) {
 	//
 	function callback(rule) {
 		//
-		var result = [], generics = ["serif", "sans-serif", "cursive", "fantasy", "monospace"];
+		var result = [], generics = ["serif", "sans-serif", "cursive", "fantasy", "monospace", "inherit"];
 
 		//
 		if (rule && rule.parentStyleSheet && rule.declarations) {
@@ -2805,7 +2838,7 @@ function cssGenericFont(doc) {
 	//
 	try {
 		//
-		result = _analyseStylesheets(doc, "screen", callback), generics = ["serif", "sans-serif", "cursive", "fantasy", "monospace"];
+		result = _analyseStylesheets(doc, "screen", callback), generics = ["serif", "sans-serif", "cursive", "fantasy", "monospace", "inherit"];
 
 		// inline style walk
 		inlineStyles.each(function() {
@@ -3199,7 +3232,7 @@ function jsSetTimeout(doc) {
 			var content_type = element.content_type == undefined && "undefined" || element.content_type;
 
 			//
-			if (content_type.split("/")[1] == "javascript") {
+			if (content_type.split("/")[1] == "javascript" && !cdns.test(element.uri) && !jsFrameworks.test(element.uri)) {
 				//
 				_xhr = _sendXHR("GET", element.uri);
 
@@ -3249,7 +3282,7 @@ function jsSetInterval(doc) {
 			var content_type = element.content_type == undefined && "undefined" || element.content_type;
 
 			//
-			if (content_type.split("/")[1] == "javascript") {
+			if (content_type.split("/")[1] == "javascript" && !cdns.test(element.uri) && !jsFrameworks.test(element.uri)) {
 				//
 				_xhr = _sendXHR("GET", element.uri);
 
@@ -3299,7 +3332,7 @@ function jsWindowOpen(doc) {
 			var content_type = element.content_type == undefined && "undefined" || element.content_type;
 
 			//
-			if (content_type.split("/")[1] == "javascript") {
+			if (content_type.split("/")[1] == "javascript" && !cdns.test(element.uri) && !jsFrameworks.test(element.uri)) {
 				//
 				_xhr = _sendXHR("GET", element.uri);
 
@@ -3577,6 +3610,39 @@ function jsOnscroll(doc) {
  * @param doc
  * @return
  */
+function jsEvents(doc) {
+	//
+	var result = [], nodes = [];
+
+	//
+	try {
+		//
+		jQueryMephisto.merge(nodes, onclickEvents);
+		jQueryMephisto.merge(nodes, onchangeEvents);
+		jQueryMephisto.merge(nodes, onfocusEvents);
+		jQueryMephisto.merge(nodes, onblurEvents);
+		jQueryMephisto.merge(nodes, onmouseoverEvents);
+		jQueryMephisto.merge(nodes, onmouseoutEvents);
+
+		result = nodes.map(_getDetails);
+	}
+
+	//
+	catch (err) {
+		// Error Logging
+		logger.error("jsEvents", err);
+		result = false;
+	}
+
+	//
+	return result;
+}
+
+/**
+ *
+ * @param doc
+ * @return
+ */
 function jsOnchangeLocation(doc) {
 	//
 	var result = [], reg = new RegExp().compile("\\.location[\\.=\\s]", "i"), exclusions = ["if", "while", "for", "switch"];
@@ -3584,7 +3650,7 @@ function jsOnchangeLocation(doc) {
 	//
 	try {
 		//
-		jQueryMephisto("*[onchange]").each(function() {
+		onchangeEvents.each(function() {
 			//
 			var _onchange = jQueryMephisto.trim(jQueryMephisto(this).attr("onchange")), functions = _onchange.split(";");
 
@@ -3602,7 +3668,7 @@ function jsOnchangeLocation(doc) {
 					if (_function != "") {
 						//
 						if (reg.test(_function)) {
-							result.push(_onload);
+							result.push(_onchange);
 						}
 
 						//
@@ -3764,7 +3830,7 @@ function jsOnblurSubmit(doc) {
 	//
 	try {
 		//
-		jQueryMephisto("*[onblur]").each(function() {
+		onblurEvents.each(function() {
 			//
 			var _onblur = jQueryMephisto.trim(jQueryMephisto(this).attr("onblur")), functions = _onblur.split(";");
 
@@ -3782,7 +3848,7 @@ function jsOnblurSubmit(doc) {
 					if (_function != "") {
 						//
 						if (reg.test(_function)) {
-							result.push(_onload);
+							result.push(_onblur);
 						}
 
 						//
@@ -3823,7 +3889,7 @@ function jsOnchangeSubmit(doc) {
 	//
 	try {
 		//
-		jQueryMephisto("*[onchange]").each(function() {
+		onchangeEvents.each(function() {
 			//
 			var _onchange = jQueryMephisto.trim(jQueryMephisto(this).attr("onchange")), functions = _onchange.split(";");
 
@@ -3841,7 +3907,7 @@ function jsOnchangeSubmit(doc) {
 					if (_function != "") {
 						//
 						if (reg.test(_function)) {
-							result.push(_onload);
+							result.push(_onchange);
 						}
 
 						//
@@ -3882,7 +3948,7 @@ function jsOnfocusBlur(doc) {
 	//
 	try {
 		//
-		jQueryMephisto("*[onfocus]").each(function() {
+		onfocusEvents.each(function() {
 			//
 			var _onfocus = jQueryMephisto.trim(jQueryMephisto(this).attr("onfocus")), functions = _onfocus.split(";");
 
@@ -3900,7 +3966,7 @@ function jsOnfocusBlur(doc) {
 					if (_function != "") {
 						//
 						if (reg.test(_function)) {
-							result.push(_onload);
+							result.push(_onfocus);
 						}
 
 						//
@@ -3941,7 +4007,7 @@ function jsOnfocusSubmit(doc) {
 	//
 	try {
 		//
-		jQueryMephisto("*[onfocus]").each(function() {
+		onfocusEvents.each(function() {
 			//
 			var _onfocus = jQueryMephisto.trim(jQueryMephisto(this).attr("onfocus")), functions = _onfocus.split(";");
 
@@ -3959,7 +4025,7 @@ function jsOnfocusSubmit(doc) {
 					if (_function != "") {
 						//
 						if (reg.test(_function)) {
-							result.push(_onload);
+							result.push(_onfocus);
 						}
 
 						//
@@ -4000,7 +4066,7 @@ function jsOnmouseoutSubmit(doc) {
 	//
 	try {
 		//
-		jQueryMephisto("*[onmouseout]").each(function() {
+		onmouseoutEvents.each(function() {
 			//
 			var _onmouseout = jQueryMephisto.trim(jQueryMephisto(this).attr("onmouseout")), functions = _onmouseout.split(";");
 
@@ -4018,7 +4084,7 @@ function jsOnmouseoutSubmit(doc) {
 					if (_function != "") {
 						//
 						if (reg.test(_function)) {
-							result.push(_onload);
+							result.push(_onmouseout);
 						}
 
 						//
@@ -4059,7 +4125,7 @@ function jsOnmouseoverSubmit(doc) {
 	//
 	try {
 		//
-		jQueryMephisto("*[onmouseover]").each(function() {
+		onmouseoverEvents.each(function() {
 			//
 			var _onmouseover = jQueryMephisto.trim(jQueryMephisto(this).attr("onmouseover")), functions = _onmouseover.split(";");
 
@@ -4077,7 +4143,7 @@ function jsOnmouseoverSubmit(doc) {
 					if (_function != "") {
 						//
 						if (reg.test(_function)) {
-							result.push(_onload);
+							result.push(_onmouseover);
 						}
 
 						//
@@ -4466,26 +4532,23 @@ function htmlFakeOrderedList(doc) {
  */
 function _htmlFieldWithoutTitleAndLabel(type, implicit) {
 	//
-	var result = [], selector, fields = {}, i = 0, j = 0;
+	var result = [], fields = {}, i = 0, j = 0;
 
 	//
 	try {
 		//
 		jQueryMephisto("form").each(function() {
 			//
-			fields[i] = {};
+			fields[i] = {}, fields[i][j] = {};
 
 			//
 			if (jQueryMephisto("fieldset", jQueryMephisto(this)).size() == 0) {
 				//
-				fields[i][j] = {};
-
-				//
-				jQueryMephisto("input, select, textarea", jQueryMephisto(this)).each(function() {
+				jQueryMephisto("input:not([type='hidden']), select, textarea", jQueryMephisto(this)).each(function() {
 					//
 					var id = jQueryMephisto.trim(jQueryMephisto(this).attr("id"));
 					var title = jQueryMephisto.trim(jQueryMephisto(this).attr("title")).toLowerCase();
-					var label = _getAllText(jQueryMephisto("label[for=" + id + "]").get(0));
+					var label = _getAllText(jQueryMephisto("label[for='" + id + "']").get(0));
 
 					//
 					if (implicit && label == "") {
@@ -4513,14 +4576,11 @@ function _htmlFieldWithoutTitleAndLabel(type, implicit) {
 			else {
 				jQueryMephisto("fieldset").each(function() {
 					//
-					fields[i][j] = {};
-
-					//
-					jQueryMephisto("input, select, textarea", jQueryMephisto(this)).each(function() {
+					jQueryMephisto("input:not([type='hidden']), select, textarea", jQueryMephisto(this)).each(function() {
 						//
 						var id = jQueryMephisto.trim(jQueryMephisto(this).attr("id"));
 						var title = jQueryMephisto.trim(jQueryMephisto(this).attr("title")).toLowerCase();
-						var label = _getAllText(jQueryMephisto("label[for=" + id + "]").get(0));
+						var label = _getAllText(jQueryMephisto("label[for='" + id + "']").get(0));
 
 						//
 						if (implicit && label == "") {
@@ -4570,7 +4630,7 @@ function _htmlFieldWithoutTitleAndLabel(type, implicit) {
 										var _type = "text";
 
 										//
-										for each (var attribute in _tmp["attributes"]) {
+										for each (attribute in _tmp["attributes"]) {
 											if (attribute["name"] == "type") {
 												_type = attribute["value"];
 											}
@@ -5562,7 +5622,11 @@ function htmlScript(doc) {
 	try {
 		//
 		jQueryMephisto("script").each(function() {
-			if (jQueryMephisto.trim(jQueryMephisto(this).attr("src")) != '' || jQueryMephisto.trim(jQueryMephisto(this).text()) != '') {
+			//
+			var src = jQueryMephisto.trim(jQueryMephisto(this).attr("src"));
+
+			//
+			if ((src != '' && !cdns.test(src) && !jsFrameworks.test(src)) || jQueryMephisto.trim(jQueryMephisto(this).text()) != '') {
 				result.push(_getDetails(this));
 			}
 		});
@@ -5591,7 +5655,7 @@ function htmlLinksTextWithInvalidTitle(doc) {
 	//
 	try {
 		//
-		jQueryMephisto("a:not(:has(img))").each(function() {
+		jQueryMephisto("a[title]:not(:has(img))").each(function() {
 			if (jQueryMephisto.trim(jQueryMephisto(this).attr("title")) == '' || jQueryMephisto.trim(jQueryMephisto(this).attr("title")) == jQueryMephisto.trim(jQueryMephisto(this).text()) || jQueryMephisto.inArray(jQueryMephisto.trim(jQueryMephisto(this).attr("title")), badLinks) != -1) {
 				result.push(_getDetails(this));
 			}
@@ -5693,7 +5757,7 @@ function htmlLinksImageWithInvalidAlt(doc) {
 	//
 	try {
 		//
-		jQueryMephisto("a").has("img").filter(function() {
+		jQueryMephisto("a").has("img[alt]").filter(function() {
 			return jQueryMephisto.trim(jQueryMephisto(this).text()) == "";
 		}).each(function() {
 			if (jQueryMephisto.inArray(jQueryMephisto.trim(jQueryMephisto("img", this).attr("alt")), badLinks) != -1) {
@@ -5725,7 +5789,7 @@ function htmlLinksImageWithInvalidTitle(doc) {
 	//
 	try {
 		//
-		jQueryMephisto("a").has("img").filter(function() {
+		jQueryMephisto("a[title]").has("img").filter(function() {
 			return jQueryMephisto.trim(jQueryMephisto(this).text()) == "";
 		}).each(function() {
 			if (jQueryMephisto.trim(jQueryMephisto(this).attr("title")) == '' || jQueryMephisto.trim(jQueryMephisto(this).attr("title")) == jQueryMephisto.trim(jQueryMephisto("img", this).attr("alt")) || jQueryMephisto.inArray(jQueryMephisto.trim(jQueryMephisto(this).attr("title")), badLinks) != -1) {

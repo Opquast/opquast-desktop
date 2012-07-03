@@ -376,11 +376,11 @@ var rulesets = {
         }, 
         "A_NOT_ANCHOR": {
             "onfalse": {
-                "comment": "aucun A ni vide, ni ancre", 
+                "comment": "aucun A non ancre", 
                 "result": "na"
             }, 
             "ontrue": {
-                "comment": "au moins un A ni vide, ni ancre", 
+                "comment": "au moins un A non ancre", 
                 "result": "i"
             }
         }, 
@@ -428,11 +428,11 @@ var rulesets = {
         }, 
         "A_NOT_ANCHOR": {
             "onfalse": {
-                "comment": "aucun A ni vide, ni ancre", 
+                "comment": "aucun A non ancre", 
                 "result": "na"
             }, 
             "ontrue": {
-                "comment": "au moins un A ni vide, ni ancre", 
+                "comment": "au moins un A non ancre", 
                 "result": "i"
             }
         }, 
@@ -554,11 +554,11 @@ var rulesets = {
         }, 
         "A_NOT_ANCHOR": {
             "onfalse": {
-                "comment": "aucun A ni vide, ni ancre", 
+                "comment": "aucun A non ancre", 
                 "result": "na"
             }, 
             "ontrue": {
-                "comment": "au moins un A ni vide, ni ancre", 
+                "comment": "au moins un A non ancre", 
                 "result": "i"
             }
         }, 
@@ -606,11 +606,11 @@ var rulesets = {
         }, 
         "A_NOT_ANCHOR": {
             "onfalse": {
-                "comment": "aucun A ni vide, ni ancre", 
+                "comment": "aucun A non ancre", 
                 "result": "na"
             }, 
             "ontrue": {
-                "comment": "au moins un A ni vide, ni ancre", 
+                "comment": "au moins un A non ancre", 
                 "result": "i"
             }
         }, 
@@ -658,11 +658,11 @@ var rulesets = {
         }, 
         "A_NOT_ANCHOR": {
             "onfalse": {
-                "comment": "aucun A ni vide, ni ancre", 
+                "comment": "aucun A non ancre", 
                 "result": "na"
             }, 
             "ontrue": {
-                "comment": "au moins un A ni vide, ni ancre", 
+                "comment": "au moins un A non ancre", 
                 "result": "i"
             }
         }, 
@@ -710,11 +710,11 @@ var rulesets = {
         }, 
         "A_NOT_ANCHOR": {
             "onfalse": {
-                "comment": "aucun A ni vide, ni ancre", 
+                "comment": "aucun A non ancre", 
                 "result": "na"
             }, 
             "ontrue": {
-                "comment": "au moins un A ni vide, ni ancre", 
+                "comment": "au moins un A non ancre", 
                 "result": "i"
             }
         }, 
@@ -742,7 +742,7 @@ var rulesets = {
     "10089": {
         "DOCTYPE_PRESENT": {
             "onfalse": {
-                "comment": "le DOCTYPE est absent ou mal positionn\u00e9", 
+                "comment": "le DOCTYPE est absent", 
                 "result": "nc"
             }, 
             "ontrue": {
@@ -754,7 +754,7 @@ var rulesets = {
     "10090": {
         "DOCTYPE_PRESENT": {
             "onfalse": {
-                "comment": "le DOCTYPE est absent ou mal positionn\u00e9", 
+                "comment": "le DOCTYPE est absent", 
                 "result": "i"
             }, 
             "ontrue": {
@@ -766,18 +766,18 @@ var rulesets = {
     "10091": {
         "DOCTYPE_PRESENT": {
             "onfalse": {
-                "comment": "le DOCTYPE est absent ou mal positionn\u00e9", 
+                "comment": "le DOCTYPE est absent", 
                 "result": "na"
             }, 
             "ontrue": {
                 "chain": {
                     "DOCTYPE_VALID": {
                         "onfalse": {
-                            "comment": "le DOCTYPE est absent, mal \u00e9crit ou mal positionn\u00e9", 
+                            "comment": "le DOCTYPE est invalide", 
                             "result": "nc"
                         }, 
                         "ontrue": {
-                            "comment": "le DOCTYPE est pr\u00e9sent", 
+                            "comment": "le DOCTYPE est valide", 
                             "result": "c"
                         }
                     }
@@ -2559,11 +2559,11 @@ var rulesets = {
                 "chain": {
                     "IFRAME_W_FILLED_AND_UNIQUE_TITLE_ATTR": {
                         "onfalse": {
-                            "comment": "aucun IFRAME sans un attribut TITLE non vide et unique", 
+                            "comment": "aucun IFRAME avec un attribut TITLE vide ou non unique", 
                             "result": "i"
                         }, 
                         "ontrue": {
-                            "comment": "au moins un IFRAME avec un attribut TITLE non vide ou non unique", 
+                            "comment": "au moins un IFRAME avec un attribut TITLE vide ou non unique", 
                             "result": "nc"
                         }
                     }
@@ -3248,9 +3248,9 @@ var rulesets = {
         }
     }, 
     "10196": {
-        "A_NOT_ANCHOR_SELF": {
+        "A_NOT_ANCHOR": {
             "onfalse": {
-                "comment": "aucun A autre qu'une ancre", 
+                "comment": "aucun A non ancre", 
                 "result": "na"
             }, 
             "ontrue": {
@@ -3266,7 +3266,7 @@ var rulesets = {
                         }
                     }
                 }, 
-                "comment": "au moins A autre qu'une ancre", 
+                "comment": "au moins un A non ancre", 
                 "result": "i"
             }
         }
@@ -3354,11 +3354,11 @@ var rulesets = {
         }, 
         "A_NOT_ANCHOR": {
             "onfalse": {
-                "comment": "aucun A ni vide, ni ancre", 
+                "comment": "aucun A non ancre", 
                 "result": "na"
             }, 
             "ontrue": {
-                "comment": "au moins un A ni vide, ni ancre", 
+                "comment": "au moins un A non ancre", 
                 "result": "i"
             }
         }, 
@@ -3396,11 +3396,11 @@ var rulesets = {
         }, 
         "A_NOT_ANCHOR": {
             "onfalse": {
-                "comment": "aucun A ni vide, ni ancre", 
+                "comment": "aucun A non ancre", 
                 "result": "na"
             }, 
             "ontrue": {
-                "comment": "au moins un A ni vide, ni ancre", 
+                "comment": "au moins un A non ancre", 
                 "result": "i"
             }
         }, 
@@ -3480,11 +3480,11 @@ var rulesets = {
         }, 
         "A_NOT_ANCHOR": {
             "onfalse": {
-                "comment": "aucun A ni vide, ni ancre", 
+                "comment": "aucun A non ancre", 
                 "result": "na"
             }, 
             "ontrue": {
-                "comment": "au moins un A ni vide, ni ancre", 
+                "comment": "au moins un A non ancre", 
                 "result": "i"
             }
         }, 
@@ -4215,11 +4215,11 @@ var rulesets = {
                 "chain": {
                     "IFRAME_W_FILLED_AND_UNIQUE_TITLE_ATTR": {
                         "onfalse": {
-                            "comment": "aucun IFRAME sans un attribut TITLE non vide et unique", 
+                            "comment": "aucun IFRAME avec un attribut TITLE vide ou non unique", 
                             "result": "i"
                         }, 
                         "ontrue": {
-                            "comment": "au moins un IFRAME avec un attribut TITLE non vide ou non unique", 
+                            "comment": "au moins un IFRAME avec un attribut TITLE vide ou non unique", 
                             "result": "nc"
                         }
                     }
@@ -4252,11 +4252,11 @@ var rulesets = {
         }, 
         "A_NOT_ANCHOR": {
             "onfalse": {
-                "comment": "aucun A ni vide, ni ancre", 
+                "comment": "aucun A non ancre", 
                 "result": "na"
             }, 
             "ontrue": {
-                "comment": "au moins un A ni vide, ni ancre", 
+                "comment": "au moins un A non ancre", 
                 "result": "i"
             }
         }
@@ -4284,11 +4284,11 @@ var rulesets = {
         }, 
         "A_NOT_ANCHOR": {
             "onfalse": {
-                "comment": "aucun A ni vide, ni ancre", 
+                "comment": "aucun A non ancre", 
                 "result": "na"
             }, 
             "ontrue": {
-                "comment": "au moins un A ni vide, ni ancre", 
+                "comment": "au moins un A non ancre", 
                 "result": "i"
             }
         }
@@ -4316,11 +4316,11 @@ var rulesets = {
         }, 
         "A_NOT_ANCHOR": {
             "onfalse": {
-                "comment": "aucun A ni vide, ni ancre", 
+                "comment": "aucun A non ancre", 
                 "result": "na"
             }, 
             "ontrue": {
-                "comment": "au moins un A ni vide, ni ancre", 
+                "comment": "au moins un A non ancre", 
                 "result": "i"
             }
         }
@@ -4348,11 +4348,11 @@ var rulesets = {
         }, 
         "A_NOT_ANCHOR": {
             "onfalse": {
-                "comment": "aucun A ni vide, ni ancre", 
+                "comment": "aucun A non ancre", 
                 "result": "na"
             }, 
             "ontrue": {
-                "comment": "au moins un A ni vide, ni ancre", 
+                "comment": "au moins un A non ancre", 
                 "result": "i"
             }
         }, 
@@ -4400,11 +4400,11 @@ var rulesets = {
         }, 
         "A_NOT_ANCHOR": {
             "onfalse": {
-                "comment": "aucun A ni vide, ni ancre", 
+                "comment": "aucun A non ancre", 
                 "result": "na"
             }, 
             "ontrue": {
-                "comment": "au moins un A ni vide, ni ancre", 
+                "comment": "au moins un A non ancre", 
                 "result": "i"
             }
         }
@@ -4432,11 +4432,11 @@ var rulesets = {
         }, 
         "A_NOT_ANCHOR": {
             "onfalse": {
-                "comment": "aucun A ni vide, ni ancre", 
+                "comment": "aucun A non ancre", 
                 "result": "na"
             }, 
             "ontrue": {
-                "comment": "au moins un A ni vide, ni ancre", 
+                "comment": "au moins un A non ancre", 
                 "result": "i"
             }
         }
@@ -4464,11 +4464,11 @@ var rulesets = {
         }, 
         "A_NOT_ANCHOR": {
             "onfalse": {
-                "comment": "aucun A ni vide, ni ancre", 
+                "comment": "aucun A non ancre", 
                 "result": "na"
             }, 
             "ontrue": {
-                "comment": "au moins un A ni vide, ni ancre", 
+                "comment": "au moins un A non ancre", 
                 "result": "i"
             }
         }, 
@@ -4516,11 +4516,11 @@ var rulesets = {
         }, 
         "A_NOT_ANCHOR": {
             "onfalse": {
-                "comment": "aucun A ni vide, ni ancre", 
+                "comment": "aucun A non ancre", 
                 "result": "na"
             }, 
             "ontrue": {
-                "comment": "au moins un A ni vide, ni ancre", 
+                "comment": "au moins un A non ancre", 
                 "result": "i"
             }
         }, 
@@ -4568,11 +4568,11 @@ var rulesets = {
         }, 
         "A_NOT_ANCHOR": {
             "onfalse": {
-                "comment": "aucun A ni vide, ni ancre", 
+                "comment": "aucun A non ancre", 
                 "result": "na"
             }, 
             "ontrue": {
-                "comment": "au moins un A ni vide, ni ancre", 
+                "comment": "au moins un A non ancre", 
                 "result": "i"
             }
         }, 
@@ -4620,11 +4620,11 @@ var rulesets = {
         }, 
         "A_NOT_ANCHOR": {
             "onfalse": {
-                "comment": "aucun A ni vide, ni ancre", 
+                "comment": "aucun A non ancre", 
                 "result": "na"
             }, 
             "ontrue": {
-                "comment": "au moins un A ni vide, ni ancre", 
+                "comment": "au moins un A non ancre", 
                 "result": "i"
             }
         }, 
@@ -4672,11 +4672,11 @@ var rulesets = {
         }, 
         "A_NOT_ANCHOR": {
             "onfalse": {
-                "comment": "aucun A ni vide, ni ancre", 
+                "comment": "aucun A non ancre", 
                 "result": "na"
             }, 
             "ontrue": {
-                "comment": "au moins un A ni vide, ni ancre", 
+                "comment": "au moins un A non ancre", 
                 "result": "i"
             }
         }, 
@@ -4724,11 +4724,11 @@ var rulesets = {
         }, 
         "A_NOT_ANCHOR": {
             "onfalse": {
-                "comment": "aucun A ni vide, ni ancre", 
+                "comment": "aucun A non ancre", 
                 "result": "na"
             }, 
             "ontrue": {
-                "comment": "au moins un A ni vide, ni ancre", 
+                "comment": "au moins un A non ancre", 
                 "result": "i"
             }
         }
@@ -4756,11 +4756,11 @@ var rulesets = {
         }, 
         "A_NOT_ANCHOR": {
             "onfalse": {
-                "comment": "aucun A ni vide, ni ancre", 
+                "comment": "aucun A non ancre", 
                 "result": "na"
             }, 
             "ontrue": {
-                "comment": "au moins un A ni vide, ni ancre", 
+                "comment": "au moins un A non ancre", 
                 "result": "i"
             }
         }
@@ -5002,11 +5002,11 @@ var rulesets = {
         }, 
         "A_NOT_ANCHOR": {
             "onfalse": {
-                "comment": "aucun A ni vide, ni ancre", 
+                "comment": "aucun A non ancre", 
                 "result": "na"
             }, 
             "ontrue": {
-                "comment": "au moins un A ni vide, ni ancre", 
+                "comment": "au moins un A non ancre", 
                 "result": "i"
             }
         }, 
@@ -5054,11 +5054,11 @@ var rulesets = {
         }, 
         "A_NOT_ANCHOR": {
             "onfalse": {
-                "comment": "aucun A ni vide, ni ancre", 
+                "comment": "aucun A non ancre", 
                 "result": "na"
             }, 
             "ontrue": {
-                "comment": "au moins un A ni vide, ni ancre", 
+                "comment": "au moins un A non ancre", 
                 "result": "i"
             }
         }, 
@@ -5106,11 +5106,11 @@ var rulesets = {
         }, 
         "A_NOT_ANCHOR": {
             "onfalse": {
-                "comment": "aucun A ni vide, ni ancre", 
+                "comment": "aucun A non ancre", 
                 "result": "na"
             }, 
             "ontrue": {
-                "comment": "au moins un A ni vide, ni ancre", 
+                "comment": "au moins un A non ancre", 
                 "result": "i"
             }
         }, 
@@ -5914,14 +5914,14 @@ var rulesets = {
         }
     }, 
     "12009": {
-        "A_NOT_ANCHOR_SELF": {
+        "A_NOT_ANCHOR": {
             "onfalse": {
-                "comment": "aucun A autre qu'une ancre", 
+                "comment": "aucun A non ancre", 
                 "result": "na"
             }, 
             "ontrue": {
                 "chain": {
-                    "A_NOT_ANCHOR_SELF_WO_TEXT": {
+                    "A_NOT_ANCHOR_WO_TEXT": {
                         "onfalse": {
                             "comment": "aucun A sans contenu textuel", 
                             "result": "c"
@@ -5932,7 +5932,7 @@ var rulesets = {
                         }
                     }
                 }, 
-                "comment": "au moins A autre qu'une ancre", 
+                "comment": "au moins un A non ancre", 
                 "result": "i"
             }
         }
@@ -6022,6 +6022,16 @@ var rulesets = {
         }
     }, 
     "12019": {
+        "EVENTS": {
+            "onfalse": {
+                "comment": "aucun onclick, onchange, onfocus, onblur, onmouseover ni onmouseout", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "comment": "au moins un onclick, onchange, onfocus, onblur, onmouseover ou onmouseout", 
+                "result": "i"
+            }
+        }, 
         "SCRIPT": {
             "onfalse": {
                 "comment": "aucun SCRIPT", 
@@ -6048,7 +6058,7 @@ var rulesets = {
     "12021": {
         "DOCTYPE_PRESENT": {
             "onfalse": {
-                "comment": "le DOCTYPE est absent ou mal positionn\u00e9", 
+                "comment": "le DOCTYPE est absent", 
                 "result": "nc"
             }, 
             "ontrue": {
@@ -6060,23 +6070,23 @@ var rulesets = {
     "12022": {
         "DOCTYPE_VALID": {
             "onfalse": {
-                "comment": "le DOCTYPE est absent, mal \u00e9crit ou mal positionn\u00e9", 
+                "comment": "le DOCTYPE est invalide", 
                 "result": "nc"
             }, 
             "ontrue": {
-                "comment": "le DOCTYPE est pr\u00e9sent", 
+                "comment": "le DOCTYPE est valide", 
                 "result": "c"
             }
         }
     }, 
     "12023": {
-        "DOCTYPE_VALID": {
+        "DOCTYPE_PLACED": {
             "onfalse": {
-                "comment": "le DOCTYPE est absent, mal \u00e9crit ou mal positionn\u00e9", 
+                "comment": "le DOCTYPE est mal positionn\u00e9", 
                 "result": "nc"
             }, 
             "ontrue": {
-                "comment": "le DOCTYPE est pr\u00e9sent", 
+                "comment": "le DOCTYPE est bien positionn\u00e9", 
                 "result": "c"
             }
         }
@@ -6094,13 +6104,25 @@ var rulesets = {
         }
     }, 
     "12027": {
-        "HTML_W_LANG_ATTR_VALID": {
+        "HTML_W_LANG_ATTR": {
             "onfalse": {
-                "comment": "l'attribut LANG de HTML est vide, absent ou incorrect", 
-                "result": "nc"
+                "comment": "la balise HTML ne poss\u00e8de pas d'attribut LANG", 
+                "result": "na"
             }, 
             "ontrue": {
-                "comment": "l'attribut LANG de HTML est correct", 
+                "chain": {
+                    "HTML_W_LANG_ATTR_VALID": {
+                        "onfalse": {
+                            "comment": "l'attribut LANG de HTML est vide, absent ou incorrect", 
+                            "result": "nc"
+                        }, 
+                        "ontrue": {
+                            "comment": "l'attribut LANG de HTML est correct", 
+                            "result": "i"
+                        }
+                    }
+                }, 
+                "comment": "la balise HTML poss\u00e8de un attribut LANG", 
                 "result": "i"
             }
         }
@@ -6835,13 +6857,13 @@ var rulesets = {
             }, 
             "ontrue": {
                 "chain": {
-                    "INPUT_W_TYPE_CHECKBOX_WO_FILLED_AND_UNIQUE_ID": {
+                    "INPUT_W_TYPE_CHECKBOX_W_ANY_LABEL_WO_FILLED_AND_UNIQUE_ID": {
                         "onfalse": {
-                            "comment": "aucun INPUT de type CHECKBOX sans ID unique", 
+                            "comment": "aucun INPUT de type CHECKBOX avec un LABEL et sans ID non vide et unique", 
                             "result": "c"
                         }, 
                         "ontrue": {
-                            "comment": "au moins un INPUT de type CHECKBOX sans ID unique", 
+                            "comment": "au moins un INPUT de type CHECKBOX avec un LABEL et sans ID non vide et unique", 
                             "result": "nc"
                         }
                     }
@@ -6857,13 +6879,13 @@ var rulesets = {
             }, 
             "ontrue": {
                 "chain": {
-                    "INPUT_W_TYPE_FILE_WO_FILLED_AND_UNIQUE_ID": {
+                    "INPUT_W_TYPE_FILE_W_ANY_LABEL_WO_FILLED_AND_UNIQUE_ID": {
                         "onfalse": {
-                            "comment": "aucun INPUT de type FILE sans ID unique", 
+                            "comment": "aucun INPUT de type FILE avec un LABEL et sans ID non vide et unique", 
                             "result": "c"
                         }, 
                         "ontrue": {
-                            "comment": "au moins un INPUT de type FILE sans ID unique", 
+                            "comment": "au moins un INPUT de type FILE avec un LABEL et sans ID non vide et unique", 
                             "result": "nc"
                         }
                     }
@@ -6879,13 +6901,13 @@ var rulesets = {
             }, 
             "ontrue": {
                 "chain": {
-                    "INPUT_W_TYPE_PASSWORD_WO_FILLED_AND_UNIQUE_ID": {
+                    "INPUT_W_TYPE_PASSWORD_W_ANY_LABEL_WO_FILLED_AND_UNIQUE_ID": {
                         "onfalse": {
-                            "comment": "aucun INPUT de type PASSWORD sans ID unique", 
+                            "comment": "aucun INPUT de type PASSWORD avec un LABEL et sans ID non vide et unique", 
                             "result": "c"
                         }, 
                         "ontrue": {
-                            "comment": "au moins un INPUT de type PASSWORD sans ID unique", 
+                            "comment": "au moins un INPUT de type PASSWORD avec un LABEL et sans ID non vide et unique", 
                             "result": "nc"
                         }
                     }
@@ -6901,13 +6923,13 @@ var rulesets = {
             }, 
             "ontrue": {
                 "chain": {
-                    "INPUT_W_TYPE_RADIO_WO_FILLED_AND_UNIQUE_ID": {
+                    "INPUT_W_TYPE_RADIO_W_ANY_LABEL_WO_FILLED_AND_UNIQUE_ID": {
                         "onfalse": {
-                            "comment": "aucun INPUT de type RADIO sans ID unique", 
+                            "comment": "aucun INPUT de type RADIO avec un LABEL et sans ID non vide et unique", 
                             "result": "c"
                         }, 
                         "ontrue": {
-                            "comment": "au moins un INPUT de type RADIO sans ID unique", 
+                            "comment": "au moins un INPUT de type RADIO avec un LABEL et sans ID non vide et unique", 
                             "result": "nc"
                         }
                     }
@@ -6923,13 +6945,13 @@ var rulesets = {
             }, 
             "ontrue": {
                 "chain": {
-                    "INPUT_W_TYPE_TEXT_WO_FILLED_AND_UNIQUE_ID": {
+                    "INPUT_W_TYPE_TEXT_W_ANY_LABEL_WO_FILLED_AND_UNIQUE_ID": {
                         "onfalse": {
-                            "comment": "aucun INPUT de type TEXT sans ID unique", 
+                            "comment": "aucun INPUT de type TEXT avec un LABEL et sans ID non vide et unique", 
                             "result": "c"
                         }, 
                         "ontrue": {
-                            "comment": "au moins un INPUT de type TEXT sans ID unique", 
+                            "comment": "au moins un INPUT de type TEXT avec un LABEL et sans ID non vide et unique", 
                             "result": "nc"
                         }
                     }
@@ -6945,13 +6967,13 @@ var rulesets = {
             }, 
             "ontrue": {
                 "chain": {
-                    "SELECT_WO_FILLED_AND_UNIQUE_ID": {
+                    "SELECT_W_ANY_LABEL_WO_FILLED_AND_UNIQUE_ID": {
                         "onfalse": {
-                            "comment": "aucun SELECT sans ID unique", 
+                            "comment": "aucun SELECT avec un LABEL et sans ID non vide et unique", 
                             "result": "c"
                         }, 
                         "ontrue": {
-                            "comment": "au moins un SELECT sans ID unique", 
+                            "comment": "au moins un SELECT avec un LABEL et sans ID non vide et unique", 
                             "result": "nc"
                         }
                     }
@@ -6967,13 +6989,13 @@ var rulesets = {
             }, 
             "ontrue": {
                 "chain": {
-                    "TEXTAREA_WO_FILLED_AND_UNIQUE_ID": {
+                    "TEXTAREA_W_ANY_LABEL_WO_FILLED_AND_UNIQUE_ID": {
                         "onfalse": {
-                            "comment": "aucun TEXTAREA sans ID unique", 
+                            "comment": "aucun TEXTAREA avec un LABEL et sans ID non vide et unique", 
                             "result": "c"
                         }, 
                         "ontrue": {
-                            "comment": "au moins un TEXTAREA sans ID unique", 
+                            "comment": "au moins un TEXTAREA avec un LABEL et sans ID non vide et unique", 
                             "result": "nc"
                         }
                     }
@@ -8133,6 +8155,1052 @@ var rulesets = {
             }
         }
     }, 
+    "16170": {
+        "APPLET": {
+            "onfalse": {
+                "comment": "aucun APPLET", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "chain": {
+                    "APPLET_WO_ALT_ATTR": {
+                        "onfalse": {
+                            "comment": "aucun APPLET sans ALT", 
+                            "result": "c"
+                        }, 
+                        "ontrue": {
+                            "comment": "au moins un APPLET sans ALT", 
+                            "result": "nc"
+                        }
+                    }
+                }, 
+                "comment": "au moins un APPLET", 
+                "result": "i"
+            }
+        }, 
+        "AREA": {
+            "onfalse": {
+                "comment": "aucun AREA", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "chain": {
+                    "AREA_WO_ALT_ATTR": {
+                        "onfalse": {
+                            "comment": "aucun AREA sans ALT", 
+                            "result": "c"
+                        }, 
+                        "ontrue": {
+                            "comment": "au moins un AREA sans ALT", 
+                            "result": "nc"
+                        }
+                    }
+                }, 
+                "comment": "au moins un AREA", 
+                "result": "i"
+            }
+        }, 
+        "EMBED": {
+            "onfalse": {
+                "comment": "aucun EMBED", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "chain": {
+                    "EMBED_WO_ALTERNATIVE": {
+                        "onfalse": {
+                            "comment": "aucun EMBED sans alternative", 
+                            "result": "c"
+                        }, 
+                        "ontrue": {
+                            "comment": "au moins un EMBED sans alternative", 
+                            "result": "nc"
+                        }
+                    }
+                }, 
+                "comment": "au moins un EMBED", 
+                "result": "i"
+            }
+        }, 
+        "IMG": {
+            "onfalse": {
+                "comment": "aucun IMG", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "chain": {
+                    "IMG_WO_ALT_ATTR": {
+                        "onfalse": {
+                            "comment": "aucun IMG avec ALT vide", 
+                            "result": "c"
+                        }, 
+                        "ontrue": {
+                            "comment": "au moins un IMG avec ALT vide", 
+                            "result": "nc"
+                        }
+                    }
+                }, 
+                "comment": "au moins un IMG", 
+                "result": "i"
+            }
+        }, 
+        "INPUT_W_TYPE_IMAGE": {
+            "onfalse": {
+                "comment": "aucun INPUT de type IMAGE", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "chain": {
+                    "INPUT_W_TYPE_IMAGE_WO_ALT_ATTR": {
+                        "onfalse": {
+                            "comment": "aucun INPUT de type IMAGE sans ALT", 
+                            "result": "c"
+                        }, 
+                        "ontrue": {
+                            "comment": "au moins un INPUT de type IMAGE sans ALT", 
+                            "result": "nc"
+                        }
+                    }
+                }, 
+                "comment": "au moins un INPUT de type IMAGE", 
+                "result": "i"
+            }
+        }, 
+        "OBJECT": {
+            "onfalse": {
+                "comment": "aucun OBJECT", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "chain": {
+                    "OBJECT_WO_ALTERNATIVE": {
+                        "onfalse": {
+                            "comment": "aucun OBJECT sans alternative", 
+                            "result": "c"
+                        }, 
+                        "ontrue": {
+                            "comment": "au moins un OBJECT sans alternative", 
+                            "result": "nc"
+                        }
+                    }
+                }, 
+                "comment": "au moins un OBJECT", 
+                "result": "i"
+            }
+        }
+    }, 
+    "16171": {
+        "APPLET_W_ALT_ATTR": {
+            "onfalse": {
+                "comment": "aucun APPLET avec un attribut ALT", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "chain": {
+                    "APPLET_W_MORE_THAN_80_CHAR_ALT_ATTR": {
+                        "onfalse": {
+                            "comment": "aucun APPLET avec ALT de plus de 80 caract\u00e8res", 
+                            "result": "c"
+                        }, 
+                        "ontrue": {
+                            "comment": "au moins un APPLET avec ALT de plus de 80 caract\u00e8res", 
+                            "result": "nc"
+                        }
+                    }
+                }, 
+                "comment": "au moins un APPLET avec un attribut ALT", 
+                "result": "i"
+            }
+        }, 
+        "AREA_W_ALT_ATTR": {
+            "onfalse": {
+                "comment": "aucun AREA avec un attribut ALT", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "chain": {
+                    "AREA_W_MORE_THAN_80_CHAR_ALT_ATTR": {
+                        "onfalse": {
+                            "comment": "aucun AREA avec ALT de plus de 80 caract\u00e8res", 
+                            "result": "c"
+                        }, 
+                        "ontrue": {
+                            "comment": "au moins un AREA avec ALT de plus de 80 caract\u00e8res", 
+                            "result": "nc"
+                        }
+                    }
+                }, 
+                "comment": "au moins un AREA avec un attribut ALT", 
+                "result": "i"
+            }
+        }, 
+        "IMG_W_ALT_ATTR": {
+            "onfalse": {
+                "comment": "aucun IMG avec un attribut ALT", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "chain": {
+                    "IMG_W_MORE_THAN_80_CHAR_ALT_ATTR": {
+                        "onfalse": {
+                            "comment": "aucun IMG avec ALT de plus de 80 caract\u00e8res", 
+                            "result": "c"
+                        }, 
+                        "ontrue": {
+                            "comment": "au moins un IMG avec ALT de plus de 80 caract\u00e8res", 
+                            "result": "nc"
+                        }
+                    }
+                }, 
+                "comment": "au moins un IMG avec un attribut ALT", 
+                "result": "i"
+            }
+        }, 
+        "INPUT_W_TYPE_IMAGE_W_ALT_ATTR": {
+            "onfalse": {
+                "comment": "aucun INPUT de type IMAGE avec un attribut ALT", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "chain": {
+                    "INPUT_W_TYPE_IMAGE_W_MORE_THAN_80_CHAR_ALT_ATTR": {
+                        "onfalse": {
+                            "comment": "aucun INPUT de type IMAGE avec ALT de plus de 80 caract\u00e8res", 
+                            "result": "c"
+                        }, 
+                        "ontrue": {
+                            "comment": "au moins un INPUT de type IMAGE avec ALT de plus de 80 caract\u00e8res", 
+                            "result": "nc"
+                        }
+                    }
+                }, 
+                "comment": "au moins un INPUT de type IMAGE avec un attribut ALT", 
+                "result": "i"
+            }
+        }
+    }, 
+    "16172": {
+        "APPLET_W_FILLED_ALT_ATTR": {
+            "onfalse": {
+                "comment": "aucun APPLET avec ALT non vide", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "chain": {
+                    "APPLET_W_ALT_ATTR_TERMS_NOT_IN_CONTENT": {
+                        "onfalse": {
+                            "comment": "aucun APPLET avec ALT dont les termes ne sont pas dans le contenu de la page", 
+                            "result": "c"
+                        }, 
+                        "ontrue": {
+                            "comment": "au moins un APPLET avec ALT dont les termes ne sont pas dans le contenu de la page", 
+                            "result": "nc"
+                        }
+                    }
+                }, 
+                "comment": "au moins un APPLET avec ALT non vide", 
+                "result": "i"
+            }
+        }, 
+        "AREA_W_FILLED_ALT_ATTR": {
+            "onfalse": {
+                "comment": "aucun AREA avec ALT non vide", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "chain": {
+                    "AREA_W_ALT_ATTR_TERMS_NOT_IN_CONTENT": {
+                        "onfalse": {
+                            "comment": "aucun AREA avec ALT dont les termes ne sont pas dans le contenu de la page", 
+                            "result": "c"
+                        }, 
+                        "ontrue": {
+                            "comment": "au moins un AREA avec ALT dont les termes ne sont pas dans le contenu de la page", 
+                            "result": "nc"
+                        }
+                    }
+                }, 
+                "comment": "au moins un AREA avec ALT non vide", 
+                "result": "i"
+            }
+        }, 
+        "IMG_W_FILLED_ALT_ATTR": {
+            "onfalse": {
+                "comment": "aucun IMG avec ALT non vide", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "chain": {
+                    "IMG_W_ALT_ATTR_TERMS_NOT_IN_CONTENT": {
+                        "onfalse": {
+                            "comment": "aucun IMG avec ALT dont les termes ne sont pas dans le contenu de la page", 
+                            "result": "c"
+                        }, 
+                        "ontrue": {
+                            "comment": "au moins un IMG avec ALT dont les termes ne sont pas dans le contenu de la page", 
+                            "result": "nc"
+                        }
+                    }
+                }, 
+                "comment": "au moins un IMG avec ALT non vide", 
+                "result": "i"
+            }
+        }
+    }, 
+    "16177": {
+        "FRAME": {
+            "onfalse": {
+                "comment": "aucun FRAME", 
+                "result": "c"
+            }, 
+            "ontrue": {
+                "comment": "au moins un FRAME", 
+                "result": "nc"
+            }
+        }, 
+        "FRAMESET": {
+            "onfalse": {
+                "comment": "aucun FRAMESET", 
+                "result": "c"
+            }, 
+            "ontrue": {
+                "comment": "au moins un FRAMESET", 
+                "result": "nc"
+            }
+        }, 
+        "NOFRAMES": {
+            "onfalse": {
+                "comment": "aucun NOFRAMES", 
+                "result": "c"
+            }, 
+            "ontrue": {
+                "comment": "au moins un NOFRAMES", 
+                "result": "nc"
+            }
+        }
+    }, 
+    "16178": {
+        "FRAMESET": {
+            "onfalse": {
+                "comment": "aucun FRAMESET", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "chain": {
+                    "NOFRAMES": {
+                        "onfalse": {
+                            "comment": "aucun NOFRAMES", 
+                            "result": "nc"
+                        }, 
+                        "ontrue": {
+                            "comment": "au moins un NOFRAMES", 
+                            "result": "c"
+                        }
+                    }
+                }, 
+                "comment": "au moins un FRAMESET", 
+                "result": "i"
+            }
+        }
+    }, 
+    "16179": {
+        "NOFRAMES": {
+            "onfalse": {
+                "comment": "aucun NOFRAMES", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "comment": "au moins un NOFRAMES", 
+                "result": "i"
+            }
+        }
+    }, 
+    "16180": {
+        "NOFRAMES": {
+            "onfalse": {
+                "comment": "aucun NOFRAMES", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "comment": "au moins un NOFRAMES", 
+                "result": "i"
+            }
+        }
+    }, 
+    "16181": {
+        "APPLET": {
+            "onfalse": {
+                "comment": "aucun APPLET", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "comment": "au moins un APPLET", 
+                "result": "i"
+            }
+        }, 
+        "AUDIO": {
+            "onfalse": {
+                "comment": "aucun AUDIO", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "comment": "au moins un AUDIO", 
+                "result": "i"
+            }
+        }, 
+        "CANVAS": {
+            "onfalse": {
+                "comment": "aucun CANVAS", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "comment": "au moins un CANVAS", 
+                "result": "i"
+            }
+        }, 
+        "EMBED": {
+            "onfalse": {
+                "comment": "aucun EMBED", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "comment": "au moins un EMBED", 
+                "result": "i"
+            }
+        }, 
+        "OBJECT": {
+            "onfalse": {
+                "comment": "aucun OBJECT", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "comment": "au moins un OBJECT", 
+                "result": "i"
+            }
+        }, 
+        "VIDEO": {
+            "onfalse": {
+                "comment": "aucun VIDEO", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "comment": "au moins un VIDEO", 
+                "result": "i"
+            }
+        }
+    }, 
+    "16184": {
+        "MORE_EXT_THEN_INT_LINKS": {
+            "onfalse": {
+                "comment": "la page comporte plus de liens internes que de liens externes", 
+                "result": "c"
+            }, 
+            "ontrue": {
+                "comment": "la page comporte plus de liens externes que de liens internes", 
+                "result": "nc"
+            }
+        }
+    }, 
+    "16190": {
+        "HTML_W_LANG_ATTR_VALID": {
+            "onfalse": {
+                "comment": "l'attribut LANG de HTML est vide, absent ou incorrect", 
+                "result": "nc"
+            }, 
+            "ontrue": {
+                "comment": "l'attribut LANG de HTML est correct", 
+                "result": "i"
+            }
+        }
+    }, 
+    "16191": {
+        "META_DESCRIPTION_FILLED": {
+            "onfalse": {
+                "comment": "aucun META DESCRIPTION ou META DESCRIPTION vide", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "comment": "le META DESCRIPTION est non vide", 
+                "result": "i"
+            }
+        }
+    }, 
+    "16192": {
+        "META_DESCRIPTION_FILLED": {
+            "onfalse": {
+                "comment": "aucun META DESCRIPTION ou META DESCRIPTION vide", 
+                "result": "nc"
+            }, 
+            "ontrue": {
+                "comment": "le META DESCRIPTION est non vide", 
+                "result": "i"
+            }
+        }
+    }, 
+    "16194": {
+        "META_DESCRIPTION_FILLED": {
+            "onfalse": {
+                "comment": "aucun META DESCRIPTION ou META DESCRIPTION vide", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "chain": {
+                    "META_DESCRIPTION_W_MORE_THAN_250_CHAR": {
+                        "onfalse": {
+                            "comment": "le META DESCRIPTION contient moins de 250 caract\u00e8res", 
+                            "result": "c"
+                        }, 
+                        "ontrue": {
+                            "comment": "le META DESCRIPTION contient plus de 250 caract\u00e8res", 
+                            "result": "nc"
+                        }
+                    }
+                }, 
+                "comment": "le META DESCRIPTION est non vide", 
+                "result": "i"
+            }
+        }
+    }, 
+    "16196": {
+        "TITLE_W_TEXT": {
+            "onfalse": {
+                "comment": "TITLE est vide", 
+                "result": "nc"
+            }, 
+            "ontrue": {
+                "comment": "TITLE est rempli", 
+                "result": "i"
+            }
+        }
+    }, 
+    "16197": {
+        "H1": {
+            "onfalse": {
+                "comment": "aucun H1", 
+                "result": "nc"
+            }, 
+            "ontrue": {
+                "comment": "au moins un H1", 
+                "result": "c"
+            }
+        }
+    }, 
+    "16203": {
+        "ROBOTS_PRESENCE": {
+            "onfalse": {
+                "comment": "le robots.txt \u00e0 la racine du site est absent ou vide", 
+                "result": "nc"
+            }, 
+            "ontrue": {
+                "comment": "le robots.txt \u00e0 la racine du site est pr\u00e9sent et non vide", 
+                "result": "c"
+            }
+        }
+    }, 
+    "16204": {
+        "ROBOTS_W_VALID_SITEMAP": {
+            "onfalse": {
+                "comment": "le robots.txt est absent ou n'indique pas de sitemap", 
+                "result": "nc"
+            }, 
+            "ontrue": {
+                "comment": "le robots.txt est pr\u00e9sent et indique un sitemap", 
+                "result": "c"
+            }
+        }
+    }, 
+    "16205": {
+        "STYLE_ATTR": {
+            "onfalse": {
+                "comment": "aucun \u00e9l\u00e9ment avec un attribut STYLE", 
+                "result": "c"
+            }, 
+            "ontrue": {
+                "comment": "au moins un \u00e9l\u00e9ment avec un attribut STYLE", 
+                "result": "nc"
+            }
+        }, 
+        "STYLE_INTERNAL": {
+            "onfalse": {
+                "comment": "aucun STYLE avec du code CSS interne", 
+                "result": "c"
+            }, 
+            "ontrue": {
+                "comment": "au moins un STYLE avec du code CSS interne", 
+                "result": "nc"
+            }
+        }
+    }, 
+    "16206": {
+        "TITLE_W_MORE_THAN_80_CHAR": {
+            "onfalse": {
+                "comment": "le TITLE contient 80 caract\u00e8res ou moins", 
+                "result": "c"
+            }, 
+            "ontrue": {
+                "comment": "le TITLE contient plus de 80 caract\u00e8res", 
+                "result": "nc"
+            }
+        }
+    }, 
+    "16209": {
+        "H1": {
+            "onfalse": {
+                "comment": "aucun H1", 
+                "result": "nc"
+            }, 
+            "ontrue": {
+                "chain": {
+                    "H2": {
+                        "onfalse": {
+                            "comment": "aucun H2", 
+                            "result": "nc"
+                        }, 
+                        "ontrue": {
+                            "comment": "au moins un H2", 
+                            "result": "c"
+                        }
+                    }
+                }, 
+                "comment": "au moins un H1", 
+                "result": "i"
+            }
+        }
+    }, 
+    "16210": {
+        "H1": {
+            "onfalse": {
+                "comment": "aucun H1", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "chain": {
+                    "H1_W_TERMS_NOT_IN_CONTENT": {
+                        "onfalse": {
+                            "comment": "aucun H1 dont les termes ne sont pas dans le contenu de la page", 
+                            "result": "c"
+                        }, 
+                        "ontrue": {
+                            "comment": "au moins un H1 dont les termes ne sont pas dans le contenu de la page", 
+                            "result": "nc"
+                        }
+                    }
+                }, 
+                "comment": "au moins un H1", 
+                "result": "i"
+            }
+        }, 
+        "H2": {
+            "onfalse": {
+                "comment": "aucun H2", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "chain": {
+                    "H2_W_TERMS_NOT_IN_CONTENT": {
+                        "onfalse": {
+                            "comment": "aucun H2 dont les termes ne sont pas dans le contenu de la page", 
+                            "result": "c"
+                        }, 
+                        "ontrue": {
+                            "comment": "au moins un H2 dont les termes ne sont pas dans le contenu de la page", 
+                            "result": "nc"
+                        }
+                    }
+                }, 
+                "comment": "au moins un H2", 
+                "result": "i"
+            }
+        }, 
+        "H3": {
+            "onfalse": {
+                "comment": "aucun H3", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "chain": {
+                    "H3_W_TERMS_NOT_IN_CONTENT": {
+                        "onfalse": {
+                            "comment": "aucun H3 dont les termes ne sont pas dans le contenu de la page", 
+                            "result": "c"
+                        }, 
+                        "ontrue": {
+                            "comment": "au moins un H3 dont les termes ne sont pas dans le contenu de la page", 
+                            "result": "nc"
+                        }
+                    }
+                }, 
+                "comment": "au moins un H3", 
+                "result": "i"
+            }
+        }, 
+        "H4": {
+            "onfalse": {
+                "comment": "aucun H4", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "chain": {
+                    "H4_W_TERMS_NOT_IN_CONTENT": {
+                        "onfalse": {
+                            "comment": "aucun H4 dont les termes ne sont pas dans le contenu de la page", 
+                            "result": "c"
+                        }, 
+                        "ontrue": {
+                            "comment": "au moins un H4 dont les termes ne sont pas dans le contenu de la page", 
+                            "result": "nc"
+                        }
+                    }
+                }, 
+                "comment": "au moins un H4", 
+                "result": "i"
+            }
+        }, 
+        "H5": {
+            "onfalse": {
+                "comment": "aucun H5", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "chain": {
+                    "H5_W_TERMS_NOT_IN_CONTENT": {
+                        "onfalse": {
+                            "comment": "aucun H5 dont les termes ne sont pas dans le contenu de la page", 
+                            "result": "c"
+                        }, 
+                        "ontrue": {
+                            "comment": "au moins un H5 dont les termes ne sont pas dans le contenu de la page", 
+                            "result": "nc"
+                        }
+                    }
+                }, 
+                "comment": "au moins un H5", 
+                "result": "i"
+            }
+        }, 
+        "H6": {
+            "onfalse": {
+                "comment": "aucun H6", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "chain": {
+                    "H6_W_TERMS_NOT_IN_CONTENT": {
+                        "onfalse": {
+                            "comment": "aucun H6 dont les termes ne sont pas dans le contenu de la page", 
+                            "result": "c"
+                        }, 
+                        "ontrue": {
+                            "comment": "au moins un H6 dont les termes ne sont pas dans le contenu de la page", 
+                            "result": "nc"
+                        }
+                    }
+                }, 
+                "comment": "au moins un H6", 
+                "result": "i"
+            }
+        }
+    }, 
+    "16212": {
+        "META_KEYWORDS_FILLED": {
+            "onfalse": {
+                "comment": "aucun META KEYWORDS ou META KEYWORDS vide", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "chain": {
+                    "META_KEYWORDS_W_MORE_THAN_10_TERMS": {
+                        "onfalse": {
+                            "comment": "le META KEYWORDS contient 10 termes ou moins", 
+                            "result": "c"
+                        }, 
+                        "ontrue": {
+                            "comment": "le META KEYWORDS contient plus de 10 termes", 
+                            "result": "nc"
+                        }
+                    }
+                }, 
+                "comment": "le META KEYWORDS est non vide", 
+                "result": "i"
+            }
+        }
+    }, 
+    "16213": {
+        "META_KEYWORDS_FILLED": {
+            "onfalse": {
+                "comment": "aucun META KEYWORDS ou META KEYWORDS vide", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "comment": "le META KEYWORDS est non vide", 
+                "result": "i"
+            }
+        }
+    }, 
+    "16217": {
+        "URL_W_TERMS_NOT_IN_TITLE": {
+            "onfalse": {
+                "comment": "au moins un des termes pr\u00e9sents dans l'URL est pr\u00e9sent dans le titre", 
+                "result": "c"
+            }, 
+            "ontrue": {
+                "comment": "aucun des termes pr\u00e9sents dans l'URL n'est pr\u00e9sent dans le titre", 
+                "result": "nc"
+            }
+        }
+    }, 
+    "16221": {
+        "INLINKS": {
+            "onfalse": {
+                "comment": "moins de 3 liens entrants vers le domaine", 
+                "result": "nc"
+            }, 
+            "ontrue": {
+                "comment": "au moins 3 liens entrants vers le domaine", 
+                "result": "c"
+            }
+        }
+    }, 
+    "16229": {
+        "RSS_PRESENCE": {
+            "onfalse": {
+                "comment": "absence de syndication", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "chain": {
+                    "RSS_SUMMARY": {
+                        "onfalse": {
+                            "comment": "aucune entr\u00e9e de syndication sans r\u00e9sum\u00e9", 
+                            "result": "c"
+                        }, 
+                        "ontrue": {
+                            "comment": "au moins une entr\u00e9e de syndication sans r\u00e9sum\u00e9", 
+                            "result": "nc"
+                        }
+                    }
+                }, 
+                "comment": "pr\u00e9sence de syndication", 
+                "result": "i"
+            }
+        }
+    }, 
+    "16239": {
+        "META_CHARSET_VALID": {
+            "onfalse": {
+                "comment": "aucun META CONTENT-TYPE pr\u00e9cisant le CHARSET", 
+                "result": "nc"
+            }, 
+            "ontrue": {
+                "chain": {
+                    "META_CHARSET_REAL": {
+                        "onfalse": {
+                            "comment": "le CHARSET pr\u00e9cis\u00e9 par le META CONTENT-TYPE ne correspond pas au charset r\u00e9\u00e9l", 
+                            "result": "nc"
+                        }, 
+                        "ontrue": {
+                            "comment": "le CHARSET pr\u00e9cis\u00e9 par le META CONTENT-TYPE correspond au charset r\u00e9\u00e9l", 
+                            "result": "c"
+                        }
+                    }
+                }, 
+                "comment": "le META CONTENT-TYPE pr\u00e9cisant le CHARSET est pr\u00e9sent", 
+                "result": "i"
+            }
+        }
+    }, 
+    "16240": {
+        "CSS_BACKGROUND_IMAGE": {
+            "onfalse": {
+                "comment": "aucune image ajout\u00e9e par CSS", 
+                "result": "c"
+            }, 
+            "ontrue": {
+                "comment": "au moins une image ajout\u00e9e par CSS", 
+                "result": "i"
+            }
+        }, 
+        "CSS_CONTENT": {
+            "onfalse": {
+                "comment": "aucun contenu textuel ajout\u00e9 par CSS", 
+                "result": "c"
+            }, 
+            "ontrue": {
+                "comment": "au moins un contenu textuel ajout\u00e9 par CSS", 
+                "result": "i"
+            }
+        }
+    }, 
+    "16243": {
+        "COUNTRY_DOMAIN": {
+            "onfalse": {
+                "comment": "le domaine ne correspond pas \u00e0 une zone g\u00e9ographique", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "chain": {
+                    "COUNTRY_SERVER": {
+                        "onfalse": {
+                            "comment": "le serveur n'est pas dans la zone g\u00e9ographique du domaine", 
+                            "result": "i"
+                        }, 
+                        "ontrue": {
+                            "comment": "le serveur est dans la zone g\u00e9ographique du domaine", 
+                            "result": "c"
+                        }
+                    }
+                }, 
+                "comment": "le domaine correspond \u00e0 une zone g\u00e9ographique", 
+                "result": "i"
+            }
+        }
+    }, 
+    "16251": {
+        "IMG": {
+            "onfalse": {
+                "comment": "aucun IMG", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "chain": {
+                    "IMG_NOT_INDEXABLE": {
+                        "onfalse": {
+                            "comment": "aucun IMG dont le format n'est pas indexable par les moteurs de recherche", 
+                            "result": "c"
+                        }, 
+                        "ontrue": {
+                            "comment": "au moins un IMG dont le format n'est pas indexable par les moteurs de recherche", 
+                            "result": "nc"
+                        }
+                    }
+                }, 
+                "comment": "au moins un IMG", 
+                "result": "i"
+            }
+        }
+    }, 
+    "16257": {
+        "CSS_UPPERCASE": {
+            "onfalse": {
+                "comment": "aucune suite de majuscules d\u00e9coratives", 
+                "result": "c"
+            }, 
+            "ontrue": {
+                "comment": "au moins une suite de majuscules d\u00e9coratives", 
+                "result": "nc"
+            }
+        }
+    }, 
+    "16258": {
+        "ROBOTS_W_VALID_SITEMAP": {
+            "onfalse": {
+                "comment": "le robots.txt est absent ou n'indique pas de sitemap", 
+                "result": "nc"
+            }, 
+            "ontrue": {
+                "comment": "le robots.txt est pr\u00e9sent et indique un sitemap", 
+                "result": "c"
+            }
+        }
+    }, 
+    "16259": {
+        "ROBOTS_W_VALID_SITEMAP": {
+            "onfalse": {
+                "comment": "le robots.txt est absent ou n'indique pas de sitemap", 
+                "result": "nc"
+            }, 
+            "ontrue": {
+                "comment": "le robots.txt est pr\u00e9sent et indique un sitemap", 
+                "result": "c"
+            }
+        }
+    }, 
+    "16263": {
+        "URL_W_UNSAFE_CHARS": {
+            "onfalse": {
+                "comment": "aucune URL avec un caract\u00e8re consid\u00e9r\u00e9 comme non s\u00fbr", 
+                "result": "c"
+            }, 
+            "ontrue": {
+                "comment": "au moins une URL avec un caract\u00e8re consid\u00e9r\u00e9 comme non s\u00fbr", 
+                "result": "nc"
+            }
+        }
+    }, 
+    "16267": {
+        "HTTP_404": {
+            "onfalse": {
+                "comment": "le serveur ne renvoie pas d'ent\u00eate HTTP 404", 
+                "result": "nc"
+            }, 
+            "ontrue": {
+                "comment": "le serveur renvoie un ent\u00eate HTTP 404", 
+                "result": "c"
+            }
+        }
+    }, 
+    "16657": {
+        "APPLET": {
+            "onfalse": {
+                "comment": "aucun APPLET", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "comment": "au moins un APPLET", 
+                "result": "i"
+            }
+        }, 
+        "AUDIO": {
+            "onfalse": {
+                "comment": "aucun AUDIO", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "comment": "au moins un AUDIO", 
+                "result": "i"
+            }
+        }, 
+        "CANVAS": {
+            "onfalse": {
+                "comment": "aucun CANVAS", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "comment": "au moins un CANVAS", 
+                "result": "i"
+            }
+        }, 
+        "EMBED": {
+            "onfalse": {
+                "comment": "aucun EMBED", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "comment": "au moins un EMBED", 
+                "result": "i"
+            }
+        }, 
+        "OBJECT": {
+            "onfalse": {
+                "comment": "aucun OBJECT", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "comment": "au moins un OBJECT", 
+                "result": "i"
+            }
+        }, 
+        "VIDEO": {
+            "onfalse": {
+                "comment": "aucun VIDEO", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "comment": "au moins un VIDEO", 
+                "result": "i"
+            }
+        }
+    }, 
     "19073": {
         "A_W_TARGET_ATTR_BLANK": {
             "onfalse": {
@@ -8741,11 +9809,11 @@ var rulesets = {
                 "chain": {
                     "A_NOT_ANCHOR_WO_TEXT": {
                         "onfalse": {
-                            "comment": "aucun lien sans contenu textuel", 
+                            "comment": "aucun A sans contenu textuel", 
                             "result": "c"
                         }, 
                         "ontrue": {
-                            "comment": "au moins un lien sans contenu textuel", 
+                            "comment": "au moins un A sans contenu textuel", 
                             "result": "nc"
                         }
                     }
@@ -9442,11 +10510,11 @@ var rulesets = {
     "19259": {
         "DOCTYPE_VALID": {
             "onfalse": {
-                "comment": "le DOCTYPE est absent, mal \u00e9crit ou mal positionn\u00e9", 
+                "comment": "le DOCTYPE est invalide", 
                 "result": "nc"
             }, 
             "ontrue": {
-                "comment": "le DOCTYPE est pr\u00e9sent", 
+                "comment": "le DOCTYPE est valide", 
                 "result": "c"
             }
         }
@@ -10436,11 +11504,11 @@ var rulesets = {
     "501": {
         "DOCTYPE_VALID": {
             "onfalse": {
-                "comment": "le DOCTYPE est absent, mal \u00e9crit ou mal positionn\u00e9", 
+                "comment": "le DOCTYPE est invalide", 
                 "result": "nc"
             }, 
             "ontrue": {
-                "comment": "le DOCTYPE est pr\u00e9sent", 
+                "comment": "le DOCTYPE est valide", 
                 "result": "c"
             }
         }
@@ -11050,9 +12118,9 @@ var rulesets = {
         }
     }, 
     "540": {
-        "A_NOT_ANCHOR_SELF": {
+        "A_NOT_ANCHOR": {
             "onfalse": {
-                "comment": "aucun A autre qu'une ancre", 
+                "comment": "aucun A non ancre", 
                 "result": "na"
             }, 
             "ontrue": {
@@ -11068,7 +12136,7 @@ var rulesets = {
                         }
                     }
                 }, 
-                "comment": "au moins A autre qu'une ancre", 
+                "comment": "au moins un A non ancre", 
                 "result": "i"
             }
         }
@@ -12458,11 +13526,11 @@ var rulesets = {
     "705": {
         "CSS_MEDIA_HANDHELD": {
             "onfalse": {
-                "comment": "aucune CSS pour le mobile", 
+                "comment": "aucune CSS pour le mobile (media handheld)", 
                 "result": "nc"
             }, 
             "ontrue": {
-                "comment": "au moins une CSS pour le mobile", 
+                "comment": "au moins une CSS pour le mobile (media handheld)", 
                 "result": "c"
             }
         }
@@ -12655,6 +13723,64 @@ var rulesets = {
                     }
                 }, 
                 "comment": "un LINK avec l'attribut REL ayant la valeur STYLESHEET", 
+                "result": "i"
+            }
+        }
+    }, 
+    "FORM": {
+        "FORM": {
+            "onfalse": {
+                "comment": "aucun FORM", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "comment": "au moins un FORM", 
+                "result": "i"
+            }
+        }
+    }, 
+    "IMG": {
+        "IMG": {
+            "onfalse": {
+                "comment": "aucun IMG", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "comment": "au moins un IMG", 
+                "result": "i"
+            }
+        }
+    }, 
+    "LIST": {
+        "ORDERED_LIST": {
+            "onfalse": {
+                "comment": "aucun OL", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "comment": "au moins un OL", 
+                "result": "i"
+            }
+        }, 
+        "UNORDERED_LIST": {
+            "onfalse": {
+                "comment": "aucun UL", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "comment": "au moins un UL", 
+                "result": "i"
+            }
+        }
+    }, 
+    "TABLE": {
+        "TABLE": {
+            "onfalse": {
+                "comment": "aucun TABLE", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "comment": "au moins un TABLE", 
                 "result": "i"
             }
         }
