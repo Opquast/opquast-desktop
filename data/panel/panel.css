@@ -36,25 +36,24 @@
  *
  * ***** END LICENSE BLOCK ***** */
 
-#opquast-desktop-panel {
-    display: none;
+#opquast-desktop-dock {
     border-top: 1px solid hsla(210, 8%, 5%, .65);
     min-height: 120px;
     height: 300px;
 }
 
-#opquast-desktop-panel[visible] {
-    display: -moz-box;
+#opquast-desktop-dock[hidden=true] {
+    display: none;
 }
 
-#opquast-desktop-panel-resizer {
+.opquast-desktop-dock-resizer {
     -moz-appearance: none;
     cursor: n-resize;
     background: none;
     height: 3px;
 }
 
-#opquast-desktop-panel-toolbar toolbarbutton {
+.opquast-desktop-dock-toolbar toolbarbutton {
     -moz-appearance: none;
     border: none;
     padding: 0 4px;
@@ -63,7 +62,7 @@
     text-shadow: none;
 }
 
-#opquast-desktop-panel-toolbar .button {
+.opquast-desktop-dock-toolbar .button {
     border-radius: 4px;
     border: 1px solid #555;
     background-color: transparent;
@@ -72,27 +71,27 @@
     background-position: padding-box;
     color: #ddd;
 }
-#opquast-desktop-panel-toolbar .button:hover, #opquast-desktop-panel-toolbar .button:active {
+.opquast-desktop-dock-toolbar .button:hover, .opquast-desktop-dock-toolbar .button:active {
     background-image: -moz-linear-gradient(hsl(209, 10%, 28%), hsl(210, 14%, 8%));
     color: #fff;
 }
-#opquast-desktop-panel-toolbar .button:active {
+.opquast-desktop-dock-toolbar .button:active {
     border-color: #000;
 }
 
-#opquast-desktop-panel-toolbar button[disabled=true] {
+.opquast-desktop-dock-toolbar button[disabled=true] {
     border-color: rgba(255,255,255, 0.1);
     color: rgba(255,255,255, 0.1) !important;
 }
 
-#opquast-desktop-panel-infobox {
+.opquast-desktop-dock-infobox {
     padding: 5px 6px 0 6px;
     margin: 0 2px 2px 2px;
     line-height: 1;
     vertical-align: middle;
 }
 
-#opquast-desktop-panel-searchbox {
+.opquast-desktop-dock-searchbox {
     -moz-appearance: none;
     border-radius: 10000px;
     border: 1px inset rgba(0,0,0, 0.2);
@@ -101,21 +100,21 @@
     background-color: rgba(255,255,255, 0.7);
 }
 
-#opquast-desktop-panel-toolbar {
-    padding: 0px 16px 3px;
+.opquast-desktop-dock-toolbar {
+    padding: 0px 16px 3px 10px;
     background: -moz-linear-gradient(hsl(209, 18%, 30%), hsl(210, 24%, 16%)) no-repeat padding-box;
     color: #ddd;
 }
 
-#opquast-desktop-panel-launchbutton {
+.opquast-desktop-dock-launchbutton {
     list-style-image: url("launch.png");
     -moz-image-region: rect(0, 16px, 16px, 0);
 }
-#opquast-desktop-panel-launchbutton:hover {
+.opquast-desktop-dock-launchbutton:hover {
     -moz-image-region: rect(0, 32px, 16px, 16px);
 }
 
-#opquast-desktop-panel-closebutton {
+.opquast-desktop-dock-closebutton {
     list-style-image: url("toolbar-close.png");
     -moz-image-region: rect(0, 16px, 16px, 0);
     min-width: 16px;
@@ -123,23 +122,23 @@
     border: none;
 }
 
-#opquast-desktop-panel-closebutton:hover {
+.opquast-desktop-dock-closebutton:hover {
     -moz-image-region: rect(0, 32px, 16px, 16px);
 }
 
-#opquast-desktop-panel-closebutton:active {
+.opquast-desktop-dock-closebutton:active {
     -moz-image-region: rect(0, 48px, 16px, 32px);
 }
 
-#opquast-desktop-panel-oqslink {
+.opquast-desktop-dock-oqslink {
     font-size: 0.9em;
     color: #999;
 }
 
-#opquast-desktop-panel-oqslink:hover, #opquast-desktop-panel-oqslink:focus {
+.opquast-desktop-dock-oqslink:hover, .opquast-desktop-dock-oqslink:focus {
     color: #ccc;
 }
 
-#opquast-desktop-panel-main {
+.opquast-desktop-dock-main {
     min-width: 200px;
 }
