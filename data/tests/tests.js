@@ -5429,7 +5429,11 @@ function htmlLinksTextWithInvalidTitle(doc) {
 	try {
 		//
 		jQueryMephisto("a[title]:not(:has(img))").each(function() {
-			if (jQueryMephisto.trim(jQueryMephisto(this).attr("title")) == '' || jQueryMephisto.trim(jQueryMephisto(this).attr("title")) == jQueryMephisto.trim(jQueryMephisto(this).text()) || jQueryMephisto.inArray(jQueryMephisto.trim(jQueryMephisto(this).attr("title")), badLinks) != -1) {
+			//
+			var text = jQueryMephisto.trim(jQueryMephisto(this).text()), title = jQueryMephisto.trim(jQueryMephisto(this).attr("title"));
+
+			//
+			if (text != '' && (title == '' || title == text || jQueryMephisto.inArray(title, badLinks) != -1)) {
 				result.push(_getDetails(this));
 			}
 		});
@@ -5459,7 +5463,11 @@ function htmlLinksTextInvalid(doc) {
 	try {
 		//
 		jQueryMephisto("a:not(:has(img))").each(function() {
-			if (jQueryMephisto.inArray(jQueryMephisto.trim(jQueryMephisto(this).text()), badLinks) != -1) {
+			//
+			var text = jQueryMephisto.trim(jQueryMephisto(this).text());
+
+			//
+			if (text != '' && jQueryMephisto.inArray(text, badLinks) != -1) {
 				result.push(_getDetails(this));
 			}
 		});
@@ -5490,7 +5498,8 @@ function htmlLinksTextNotUnique(doc) {
 		//
 		jQueryMephisto("a:not(:has(img))").each(function() {
 			//
-			var context = jQueryMephisto.trim(jQueryMephisto(this).text()) + "%|%" + jQueryMephisto.trim(jQueryMephisto(this).attr("title")), href = resolveURI(jQueryMephisto.trim(jQueryMephisto(this).attr("href")), doc.location.href), _this = this;
+			var text = jQueryMephisto.trim(jQueryMephisto(this).text()), title = jQueryMephisto.trim(jQueryMephisto(this).attr("title"));
+			var context = text + "%|%" + title, href = resolveURI(jQueryMephisto.trim(jQueryMephisto(this).attr("href")), doc.location.href), _this = this;
 
 			//
 			if (jQueryMephisto.inArray(context, Object.keys(links)) == -1) {
@@ -5498,10 +5507,12 @@ function htmlLinksTextNotUnique(doc) {
 			}
 
 			//
-			links[context].push({
-				"href" : href,
-				"node" : _this
-			});
+			if (text != '') {
+				links[context].push({
+					"href" : href,
+					"node" : _this
+				});
+			}
 		});
 
 		//

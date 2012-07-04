@@ -1382,7 +1382,7 @@ var rulesets = {
                             "chain": {
                                 "TABLE_FOR_DATA_WO_CAPTION": {
                                     "onfalse": {
-                                        "comment": "tous les TABLE de donn\u00e9es ont un CAPTION", 
+                                        "comment": "aucun TABLE de donn\u00e9es sans CAPTION", 
                                         "result": "c"
                                     }, 
                                     "ontrue": {
@@ -12889,7 +12889,7 @@ var rulesets = {
                 "chain": {
                     "TABLE_FOR_DATA_WO_CAPTION": {
                         "onfalse": {
-                            "comment": "tous les TABLE de donn\u00e9es ont un CAPTION", 
+                            "comment": "aucun TABLE de donn\u00e9es sans CAPTION", 
                             "result": "i"
                         }, 
                         "ontrue": {
