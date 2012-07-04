@@ -170,7 +170,7 @@
                             _inspectElement(this.node_path);
                         });
                     } else {
-                        a = $('<span>' + node + '</span>');
+                        a = $('<pre>' + node + '</pre>');
                     }
                     aDetails.append($('<li></li>').append(a));
                 };

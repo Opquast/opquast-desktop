@@ -4072,7 +4072,7 @@ var rulesets = {
                     "IMG_W_LONGDESC_ATTR": {
                         "onfalse": {
                             "comment": "aucun IMG avec un attribut LONGDESC", 
-                            "result": "c"
+                            "result": "na"
                         }, 
                         "ontrue": {
                             "comment": "au moins un IMG avec un attribut LONGDESC", 
@@ -4927,54 +4927,20 @@ var rulesets = {
         "BGSOUND": {
             "onfalse": {
                 "comment": "aucun BGSOUND", 
-                "result": "c"
+                "result": "na"
             }, 
             "ontrue": {
                 "comment": "au moins un BGSOUND", 
-                "result": "nc"
-            }
-        }, 
-        "EMBED": {
-            "onfalse": {
-                "comment": "aucun EMBED", 
-                "result": "na"
-            }, 
-            "ontrue": {
-                "chain": {
-                    "RESOURCE_MULTIMEDIA": {
-                        "onfalse": {
-                            "comment": "aucune ressource multim\u00e9dia", 
-                            "result": "na"
-                        }, 
-                        "ontrue": {
-                            "comment": "au moins une ressource multim\u00e9dia", 
-                            "result": "i"
-                        }
-                    }
-                }, 
-                "comment": "au moins un EMBED", 
                 "result": "i"
             }
         }, 
-        "OBJECT": {
+        "RESOURCE_MULTIMEDIA": {
             "onfalse": {
-                "comment": "aucun OBJECT", 
+                "comment": "aucune ressource multim\u00e9dia", 
                 "result": "na"
             }, 
             "ontrue": {
-                "chain": {
-                    "RESOURCE_MULTIMEDIA": {
-                        "onfalse": {
-                            "comment": "aucune ressource multim\u00e9dia", 
-                            "result": "na"
-                        }, 
-                        "ontrue": {
-                            "comment": "au moins une ressource multim\u00e9dia", 
-                            "result": "i"
-                        }
-                    }
-                }, 
-                "comment": "au moins un OBJECT", 
+                "comment": "au moins une ressource multim\u00e9dia", 
                 "result": "i"
             }
         }
@@ -5792,7 +5758,7 @@ var rulesets = {
                     "A_W_TEXT_WO_IMG_NOT_UNIQUE": {
                         "onfalse": {
                             "comment": "aucun A avec texte, ne contenant aucun IMG et avec un intitul\u00e9 non unique", 
-                            "result": "i"
+                            "result": "c"
                         }, 
                         "ontrue": {
                             "comment": "au moins un A avec texte, ne contenant aucun IMG et avec un intitul\u00e9 non unique", 
@@ -5816,7 +5782,7 @@ var rulesets = {
                     "A_WO_TEXT_W_IMG_NOT_UNIQUE": {
                         "onfalse": {
                             "comment": "aucun A sans texte, contenant un IMG et avec un intitul\u00e9 non unique", 
-                            "result": "i"
+                            "result": "c"
                         }, 
                         "ontrue": {
                             "comment": "au moins un A sans texte, contenant un IMG et avec un intitul\u00e9 non unique", 
@@ -5840,7 +5806,7 @@ var rulesets = {
                     "AREA_NOT_UNIQUE": {
                         "onfalse": {
                             "comment": "aucun AREA avec un intitul\u00e9 non unique", 
-                            "result": "i"
+                            "result": "c"
                         }, 
                         "ontrue": {
                             "comment": "au moins un AREA avec un intitul\u00e9 non unique", 
@@ -5864,7 +5830,7 @@ var rulesets = {
                     "A_W_TEXT_W_IMG_NOT_UNIQUE": {
                         "onfalse": {
                             "comment": "aucun A avec texte, contenant un IMG et avec un intitul\u00e9 non unique", 
-                            "result": "i"
+                            "result": "c"
                         }, 
                         "ontrue": {
                             "comment": "au moins un A avec texte, contenant un IMG et avec un intitul\u00e9 non unique", 
@@ -6617,26 +6583,14 @@ var rulesets = {
             }, 
             "ontrue": {
                 "chain": {
-                    "INPUT_W_TYPE_CHECKBOX_WO_FILLED_AND_UNIQUE_TITLE_ATTR": {
+                    "INPUT_W_TYPE_CHECKBOX_WO_TITLE_ATTR_WO_ANY_LABEL": {
                         "onfalse": {
-                            "comment": "aucun INPUT de type CHECKBOX sans TITLE non vide et unique", 
-                            "result": "i"
+                            "comment": "aucun INPUT de type CHECKBOX sans TITLE et sans LABEL", 
+                            "result": "c"
                         }, 
                         "ontrue": {
-                            "chain": {
-                                "INPUT_W_TYPE_CHECKBOX_WO_UNIQUE_TITLE_ATTR_WO_ANY_UNIQUE_LABEL": {
-                                    "onfalse": {
-                                        "comment": "aucun INPUT de type CHECKBOX sans LABEL non vide et unique", 
-                                        "result": "c"
-                                    }, 
-                                    "ontrue": {
-                                        "comment": "au moins un INPUT de type CHECKBOX sans LABEL non vide et unique", 
-                                        "result": "nc"
-                                    }
-                                }
-                            }, 
-                            "comment": "au moins un INPUT de type CHECKBOX sans TITLE non vide et unique", 
-                            "result": "i"
+                            "comment": "au moins un INPUT de type CHECKBOX sans TITLE et sans LABEL", 
+                            "result": "nc"
                         }
                     }
                 }, 
@@ -6651,26 +6605,14 @@ var rulesets = {
             }, 
             "ontrue": {
                 "chain": {
-                    "INPUT_W_TYPE_FILE_WO_FILLED_AND_UNIQUE_TITLE_ATTR": {
+                    "INPUT_W_TYPE_FILE_WO_TITLE_ATTR_WO_ANY_LABEL": {
                         "onfalse": {
-                            "comment": "aucun INPUT de type FILE sans TITLE non vide et unique", 
-                            "result": "i"
+                            "comment": "aucun INPUT de type FILE sans TITLE et sans LABEL", 
+                            "result": "c"
                         }, 
                         "ontrue": {
-                            "chain": {
-                                "INPUT_W_TYPE_FILE_WO_UNIQUE_TITLE_ATTR_WO_ANY_UNIQUE_LABEL": {
-                                    "onfalse": {
-                                        "comment": "aucun INPUT de type FILE sans LABEL non vide et unique", 
-                                        "result": "c"
-                                    }, 
-                                    "ontrue": {
-                                        "comment": "au moins un INPUT de type FILE sans LABEL non vide et unique", 
-                                        "result": "nc"
-                                    }
-                                }
-                            }, 
-                            "comment": "au moins un INPUT de type FILE sans TITLE non vide et unique", 
-                            "result": "i"
+                            "comment": "au moins un INPUT de type FILE sans TITLE et sans LABEL", 
+                            "result": "nc"
                         }
                     }
                 }, 
@@ -6685,26 +6627,14 @@ var rulesets = {
             }, 
             "ontrue": {
                 "chain": {
-                    "INPUT_W_TYPE_PASSWORD_WO_FILLED_AND_UNIQUE_TITLE_ATTR": {
+                    "INPUT_W_TYPE_PASSWORD_WO_TITLE_ATTR_WO_ANY_LABEL": {
                         "onfalse": {
-                            "comment": "aucun INPUT de type PASSWORD sans TITLE non vide et unique", 
-                            "result": "i"
+                            "comment": "aucun INPUT de type PASSWORD sans TITLE et sans LABEL", 
+                            "result": "c"
                         }, 
                         "ontrue": {
-                            "chain": {
-                                "INPUT_W_TYPE_PASSWORD_WO_UNIQUE_TITLE_ATTR_WO_ANY_UNIQUE_LABEL": {
-                                    "onfalse": {
-                                        "comment": "aucun INPUT de type PASSWORD sans LABEL non vide et unique", 
-                                        "result": "c"
-                                    }, 
-                                    "ontrue": {
-                                        "comment": "au moins un INPUT de type PASSWORD sans LABEL non vide et unique", 
-                                        "result": "nc"
-                                    }
-                                }
-                            }, 
-                            "comment": "au moins un INPUT de type PASSWORD sans TITLE non vide et unique", 
-                            "result": "i"
+                            "comment": "au moins un INPUT de type PASSWORD sans TITLE et sans LABEL", 
+                            "result": "nc"
                         }
                     }
                 }, 
@@ -6719,26 +6649,14 @@ var rulesets = {
             }, 
             "ontrue": {
                 "chain": {
-                    "INPUT_W_TYPE_RADIO_WO_FILLED_AND_UNIQUE_TITLE_ATTR": {
+                    "INPUT_W_TYPE_RADIO_WO_TITLE_ATTR_WO_ANY_LABEL": {
                         "onfalse": {
-                            "comment": "aucun INPUT de type RADIO sans TITLE non vide et unique", 
-                            "result": "i"
+                            "comment": "aucun INPUT de type RADIO sans TITLE et sans LABEL", 
+                            "result": "c"
                         }, 
                         "ontrue": {
-                            "chain": {
-                                "INPUT_W_TYPE_RADIO_WO_UNIQUE_TITLE_ATTR_WO_ANY_UNIQUE_LABEL": {
-                                    "onfalse": {
-                                        "comment": "aucun INPUT de type RADIO sans LABEL non vide et unique", 
-                                        "result": "c"
-                                    }, 
-                                    "ontrue": {
-                                        "comment": "au moins un INPUT de type RADIO sans LABEL non vide et unique", 
-                                        "result": "nc"
-                                    }
-                                }
-                            }, 
-                            "comment": "au moins un INPUT de type RADIO sans TITLE non vide et unique", 
-                            "result": "i"
+                            "comment": "au moins un INPUT de type RADIO sans TITLE et sans LABEL", 
+                            "result": "nc"
                         }
                     }
                 }, 
@@ -6753,26 +6671,14 @@ var rulesets = {
             }, 
             "ontrue": {
                 "chain": {
-                    "INPUT_W_TYPE_TEXT_WO_FILLED_AND_UNIQUE_TITLE_ATTR": {
+                    "INPUT_W_TYPE_TEXT_WO_TITLE_ATTR_WO_ANY_LABEL": {
                         "onfalse": {
-                            "comment": "aucun INPUT de type TEXT sans TITLE non vide et unique", 
-                            "result": "i"
+                            "comment": "aucun INPUT de type TEXT sans TITLE et sans LABEL", 
+                            "result": "c"
                         }, 
                         "ontrue": {
-                            "chain": {
-                                "INPUT_W_TYPE_TEXT_WO_UNIQUE_TITLE_ATTR_WO_ANY_UNIQUE_LABEL": {
-                                    "onfalse": {
-                                        "comment": "aucun INPUT de type TEXT sans LABEL non vide et unique", 
-                                        "result": "c"
-                                    }, 
-                                    "ontrue": {
-                                        "comment": "au moins un INPUT de type TEXT sans LABEL non vide et unique", 
-                                        "result": "nc"
-                                    }
-                                }
-                            }, 
-                            "comment": "au moins un INPUT de type TEXT sans TITLE non vide et unique", 
-                            "result": "i"
+                            "comment": "au moins un INPUT de type TEXT sans TITLE et sans LABEL", 
+                            "result": "nc"
                         }
                     }
                 }, 
@@ -6787,26 +6693,14 @@ var rulesets = {
             }, 
             "ontrue": {
                 "chain": {
-                    "SELECT_WO_FILLED_AND_UNIQUE_TITLE_ATTR": {
+                    "SELECT_WO_TITLE_ATTR_WO_ANY_LABEL": {
                         "onfalse": {
-                            "comment": "aucun SELECT sans TITLE vide ou non unique", 
-                            "result": "i"
+                            "comment": "aucun SELECT sans TITLE et sans LABEL", 
+                            "result": "c"
                         }, 
                         "ontrue": {
-                            "chain": {
-                                "SELECT_WO_UNIQUE_TITLE_ATTR_WO_ANY_UNIQUE_LABEL": {
-                                    "onfalse": {
-                                        "comment": "aucun SELECT sans TITLE ou LABEL unique", 
-                                        "result": "c"
-                                    }, 
-                                    "ontrue": {
-                                        "comment": "au moins un SELECT sans TITLE ou LABEL unique", 
-                                        "result": "nc"
-                                    }
-                                }
-                            }, 
-                            "comment": "au moins un SELECT avec TITLE vide ou non unique", 
-                            "result": "i"
+                            "comment": "au moins un SELECT sans TITLE et sans LABEL", 
+                            "result": "nc"
                         }
                     }
                 }, 
@@ -6821,26 +6715,14 @@ var rulesets = {
             }, 
             "ontrue": {
                 "chain": {
-                    "TEXTAREA_WO_FILLED_AND_UNIQUE_TITLE_ATTR": {
+                    "TEXTAREA_WO_TITLE_ATTR_WO_ANY_LABEL": {
                         "onfalse": {
-                            "comment": "aucun TEXTAREA sans TITLE non vide et unique", 
-                            "result": "i"
+                            "comment": "aucun TEXTAREA sans TITLE et sans LABEL", 
+                            "result": "c"
                         }, 
                         "ontrue": {
-                            "chain": {
-                                "TEXTAREA_WO_UNIQUE_TITLE_ATTR_WO_ANY_UNIQUE_LABEL": {
-                                    "onfalse": {
-                                        "comment": "aucun TEXTAREA sans TITLE ou LABEL non vide et unique", 
-                                        "result": "c"
-                                    }, 
-                                    "ontrue": {
-                                        "comment": "au moins un TEXTAREA sans TITLE ou LABEL non vide et unique", 
-                                        "result": "nc"
-                                    }
-                                }
-                            }, 
-                            "comment": "au moins un TEXTAREA sans TITLE non vide et unique", 
-                            "result": "i"
+                            "comment": "au moins un TEXTAREA sans TITLE et sans LABEL", 
+                            "result": "nc"
                         }
                     }
                 }, 
