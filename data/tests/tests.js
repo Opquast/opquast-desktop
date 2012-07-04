@@ -1938,7 +1938,7 @@ function jsRefresh(doc) {
 	try {
 		//
 		if (sidecar.resources[0]["uri"] != doc.location.href) {
-			result.push(doc.location.href);
+			result.push(doc.location.href + " > " + sidecar.resources[0]["uri"]);
 		}
 
 		//
@@ -1964,7 +1964,7 @@ function jsRefresh(doc) {
 					if (_xhr.status == 200) {
 						//
 						if (reg1.test(_xhr.responseText) || reg2.test(_xhr.responseText) || reg3.test(_xhr.responseText)) {
-							result.push(element.uri);
+							result.push(RegExp.$1);
 						}
 					}
 
@@ -4681,29 +4681,9 @@ function htmlInputTextWithoutTitleAndLabel(doc) {
  * @param doc
  * @return
  */
-function htmlInputTextWithoutTitleAndAnyLabel(doc) {
-	//
-	return _htmlFieldWithoutTitleAndLabel("text", true);
-}
-
-/**
- *
- * @param doc
- * @return
- */
 function htmlInputCheckboxWithoutTitleAndLabel(doc) {
 	//
 	return _htmlFieldWithoutTitleAndLabel("checkbox", false);
-}
-
-/**
- *
- * @param doc
- * @return
- */
-function htmlInputCheckboxWithoutTitleAndAnyLabel(doc) {
-	//
-	return _htmlFieldWithoutTitleAndLabel("checkbox", true);
 }
 
 /**
@@ -4721,29 +4701,9 @@ function htmlInputFileWithoutTitleAndLabel(doc) {
  * @param doc
  * @return
  */
-function htmlInputFileWithoutTitleAndAnyLabel(doc) {
-	//
-	return _htmlFieldWithoutTitleAndLabel("file", true);
-}
-
-/**
- *
- * @param doc
- * @return
- */
 function htmlInputRadioWithoutTitleAndLabel(doc) {
 	//
 	return _htmlFieldWithoutTitleAndLabel("radio", false);
-}
-
-/**
- *
- * @param doc
- * @return
- */
-function htmlInputRadioWithoutTitleAndAnyLabel(doc) {
-	//
-	return _htmlFieldWithoutTitleAndLabel("radio", true);
 }
 
 /**
@@ -4761,16 +4721,6 @@ function htmlInputPasswordWithoutTitleAndLabel(doc) {
  * @param doc
  * @return
  */
-function htmlInputPasswordWithoutTitleAndAnyLabel(doc) {
-	//
-	return _htmlFieldWithoutTitleAndLabel("password", true);
-}
-
-/**
- *
- * @param doc
- * @return
- */
 function htmlSelectWithoutTitleAndLabel(doc) {
 	//
 	return _htmlFieldWithoutTitleAndLabel("select", false);
@@ -4781,29 +4731,9 @@ function htmlSelectWithoutTitleAndLabel(doc) {
  * @param doc
  * @return
  */
-function htmlSelectWithoutTitleAndAnyLabel(doc) {
-	//
-	return _htmlFieldWithoutTitleAndLabel("select", true);
-}
-
-/**
- *
- * @param doc
- * @return
- */
 function htmlTextareaWithoutTitleAndLabel(doc) {
 	//
 	return _htmlFieldWithoutTitleAndLabel("textarea", false);
-}
-
-/**
- *
- * @param doc
- * @return
- */
-function htmlTextareaWithoutTitleAndAnyLabel(doc) {
-	//
-	return _htmlFieldWithoutTitleAndLabel("textarea", true);
 }
 
 /**
