@@ -126,11 +126,9 @@ const xhrMephisto = Components.classes["@mozilla.org/xmlextras/xmlhttprequest;1"
 			src = a.href;
 
 			if (unknown) {
-				xhrMephisto.open("HEAD", src, false);
-
-				xhrMephisto.onload = function() {
+				function loadObject(aEvent) {
 					var headers = {};
-					var _headers = xhrMephisto.getAllResponseHeaders().split("\n");
+					var _headers = aEvent.target.getAllResponseHeaders().split("\n");
 
 					for (var i in _headers) {
 						var _header = _headers[i].split(":");
@@ -151,12 +149,12 @@ const xhrMephisto = Components.classes["@mozilla.org/xmlextras/xmlhttprequest;1"
 						"uri" : src,
 						"referrer" : document.location.href,
 						"method" : "HEAD",
-						"status" : xhrMephisto.status,
-						"status_text" : xhrMephisto.statusText,
-						"date" : xhrMephisto.getResponseHeader("date"),
-						"modified" : xhrMephisto.getResponseHeader("last-modified"),
-						"expires" : xhrMephisto.getResponseHeader("expires"),
-						"content_type" : xhrMephisto.getResponseHeader("content-type").split(";")[0],
+						"status" : aEvent.target.status,
+						"status_text" : aEvent.target.statusText,
+						"date" : aEvent.target.getResponseHeader("date"),
+						"modified" : aEvent.target.getResponseHeader("last-modified"),
+						"expires" : aEvent.target.getResponseHeader("expires"),
+						"content_type" : aEvent.target.getResponseHeader("content-type").split(";")[0],
 						"charset" : null,
 						"size" : 0,
 						"headers" : headers,
@@ -164,13 +162,19 @@ const xhrMephisto = Components.classes["@mozilla.org/xmlextras/xmlhttprequest;1"
 						"start_time" : 0,
 						"transfer_time" : 0
 					});
+					
+					xhrMephisto.removeEventListener("load", loadObject, false);
 				}
+
+				xhrMephisto.addEventListener("load", loadObject, false);
+
+				xhrMephisto.open("HEAD", src, false);
 
 				xhrMephisto.send(null);
 			}
 		}
 	});
-	
+
 	//
 	var stats = get_stats(body);
 	stats['images'] = images.length;
