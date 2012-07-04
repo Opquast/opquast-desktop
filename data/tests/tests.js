@@ -283,12 +283,7 @@ function cssAbsoluteFontSizeOnScreen(doc) {
 				//
 				if (rule.declarations[i]["property"] == "font-size" && rule.declarations[i]["valueText"].match(reg)) {
 					//
-					result.push({
-						"href" : rule.parentStyleSheet._extra["href"],
-						"selector" : rule.mSelectorText,
-						"rule" : rule.declarations[i]["parsedCssText"],
-						"line" : rule.currentLine
-					});
+					result.push(_getCssDetails(rule, i));
 				}
 			}
 		}
@@ -335,12 +330,7 @@ function cssAbsoluteFontSizeOnScreen(doc) {
 						//
 						if (rule.declarations[i]["property"] == "font-size" && rule.declarations[i]["valueText"].match(reg)) {
 							//
-							result.push({
-								"href" : "inline",
-								"selector" : _getXPath(item),
-								"rule" : rule.declarations[i]["parsedCssText"],
-								"line" : null
-							});
+							result.push(_getInlineCssDetails(rule, i, item));
 						}
 					}
 				}
@@ -544,13 +534,27 @@ function cssBackgroundColorWoColor(doc) {
 	//
 	try {
 		//
-		jQueryMephisto("body").find("*").andSelf().filter(function() {
+		jQueryMephisto("body").find(":not(input[type='hidden'])").andSelf().filter(function() {
 			//
 			var _backgroundColor = jQueryMephisto(this).css("background-color");
 			var _color = jQueryMephisto(this).css("color");
 
 			//
-			if (_backgroundColor != "transparent" && _color == "rgb(0, 0, 0)") {
+			if (_color == "rgb(0, 0, 0)") {
+				//
+				jQueryMephisto(this).parents().each(function(index, Element) {
+					//
+					var _parentColor = jQueryMephisto(this).css("color");
+
+					if (_parentColor != "rgb(0, 0, 0)") {
+						_color = _parentColor;
+						return false;
+					}
+				});
+			}
+
+			//
+			if (_backgroundColor != "transparent" && _color == "rgb(0, 0, 0)" && jQueryMephisto(this).clone().children().remove().end().text().trim() != '') {
 				result.push(_getDetails(this));
 			}
 		});
@@ -579,7 +583,7 @@ function cssColorWoBackgroundColor(doc) {
 	//
 	try {
 		//
-		jQueryMephisto("body").find("*").andSelf().filter(function() {
+		jQueryMephisto("body").find(":not(input[type='hidden'])").andSelf().filter(function() {
 			//
 			var _backgroundColor = jQueryMephisto(this).css("background-color");
 			var _color = jQueryMephisto(this).css("color");
@@ -599,7 +603,7 @@ function cssColorWoBackgroundColor(doc) {
 			}
 
 			//
-			if (_backgroundColor == "transparent" && _color != "rgb(0, 0, 0)") {
+			if (_backgroundColor == "transparent" && _color != "rgb(0, 0, 0)" && jQueryMephisto(this).clone().children().remove().end().text().trim() != '') {
 				result.push(_getDetails(this));
 			}
 		});
@@ -628,7 +632,7 @@ function cssBackgroundImageWoBackgroundColor(doc) {
 	//
 	try {
 		//
-		jQueryMephisto("body").find("*").andSelf().filter(function() {
+		jQueryMephisto("body").find(":not(input[type='hidden'])").andSelf().filter(function() {
 			//
 			var _backgroundColor = jQueryMephisto(this).css("background-color");
 			var _backgroundImage = jQueryMephisto(this).css("background-image");
@@ -747,139 +751,6 @@ function cssDisplayNone(doc) {
  * @param doc
  * @return
  */
-function cssBackgroundColorWoColor(doc) {
-	//
-	var result = [];
-
-	//
-	try {
-		//
-		jQueryMephisto("body").find(":not(input[type='hidden'])").andSelf().filter(function() {
-			//
-			var _backgroundColor = jQueryMephisto(this).css("background-color");
-			var _color = jQueryMephisto(this).css("color");
-
-			//
-			if (_backgroundColor != "transparent" && _color == "rgb(0, 0, 0)") {
-				result.push(_getDetails(this));
-			}
-		});
-	}
-
-	//
-	catch (err) {
-		// Error Logging
-		logger.error("cssBackgroundColorWoColor", err);
-		result = false;
-	}
-
-	//
-	return result;
-}
-
-/**
- *
- * @param doc
- * @return
- */
-function cssColorWoBackgroundColor(doc) {
-	//
-	var result = [];
-
-	//
-	try {
-		//
-		jQueryMephisto("body").find(":not(input[type='hidden'])").andSelf().filter(function() {
-			//
-			var _backgroundColor = jQueryMephisto(this).css("background-color");
-			var _color = jQueryMephisto(this).css("color");
-
-			//
-			if (_backgroundColor == "transparent") {
-				//
-				jQueryMephisto(this).parents().each(function(index, Element) {
-					//
-					var _parentBackgroundColor = jQueryMephisto(this).css("background-color");
-
-					if (_parentBackgroundColor != "transparent") {
-						_backgroundColor = _parentBackgroundColor;
-						return false;
-					}
-				});
-			}
-
-			//
-			if (_backgroundColor == "transparent" && _color != "rgb(0, 0, 0)") {
-				result.push(_getDetails(this));
-			}
-		});
-	}
-
-	//
-	catch (err) {
-		// Error Logging
-		logger.error("cssColorWoBackgroundColor", err);
-		result = false;
-	}
-
-	//
-	return result;
-}
-
-/**
- *
- * @param doc
- * @return
- */
-function cssBackgroundImageWoBackgroundColor(doc) {
-	//
-	var result = [];
-
-	//
-	try {
-		//
-		jQueryMephisto("body").find(":not(input[type='hidden'])").andSelf().filter(function() {
-			//
-			var _backgroundColor = jQueryMephisto(this).css("background-color");
-			var _backgroundImage = jQueryMephisto(this).css("background-image");
-
-			//
-			if (_backgroundColor == "transparent") {
-				//
-				jQueryMephisto(this).parents().each(function(index, Element) {
-					//
-					var _parentBackgroundColor = jQueryMephisto(this).css("background-color");
-
-					if (_parentBackgroundColor != "transparent") {
-						_backgroundColor = _parentBackgroundColor;
-						return false;
-					}
-				});
-			}
-
-			//
-			if (_backgroundColor == "transparent" && _backgroundImage != "none") {
-				result.push(_getDetails(this));
-			}
-		});
-	}
-
-	//
-	catch (err) {
-		// Error Logging
-		logger.error("cssBackgroundImageWoBackgroundColor", err);
-		result = false;
-	}
-
-	//
-	return result;
-}
-
-/**
- *
- * @param doc
- * @return
- */
 function cssDisplayNone(doc) {
 	//
 	var result = [];
@@ -896,12 +767,7 @@ function cssDisplayNone(doc) {
 				//
 				if (rule.declarations[i]["property"] == "display" && rule.declarations[i]["valueText"] == "none") {
 					//
-					result.push({
-						"href" : rule.parentStyleSheet._extra["href"],
-						"selector" : rule.mSelectorText,
-						"rule" : rule.declarations[i]["parsedCssText"],
-						"line" : rule.currentLine
-					});
+					result.push(_getCssDetails(rule, i));
 				}
 			}
 		}
@@ -938,12 +804,7 @@ function cssDisplayNone(doc) {
 						//
 						if (rule.declarations[i]["property"] == "display" && rule.declarations[i]["valueText"] == "none") {
 							//
-							result.push({
-								"href" : "inline",
-								"selector" : _getXPath(item),
-								"rule" : rule.declarations[i]["parsedCssText"],
-								"line" : null
-							});
+							result.push(_getInlineCssDetails(rule, i, item));
 						}
 					}
 				}
@@ -1417,13 +1278,7 @@ function httpLanguage(doc) {
 			//
 			if (jQueryMephisto.inArray(lang, langs) != -1) {
 				//
-				var tmp = {
-					"url" : sidecar.resources[0]["uri"],
-					"headers" : sidecar.resources[0]["headers"]
-				};
-
-				//
-				result.push(tmp);
+				result.push(_getHttpDetails(sidecar.resources[0]["uri"], sidecar.resources[0]["headers"]));
 			}
 		}
 	}
@@ -1489,13 +1344,7 @@ function httpCache(doc) {
 			//
 			if (!(element.headers["cache-control"]) && !(element.headers["etag"]) && !(element.headers["expires"]) && !(element.headers["last-modified"])) {
 				//
-				var tmp = {
-					"url" : element.uri,
-					"headers" : element.headers
-				};
-
-				//
-				result.push(tmp);
+				_getHttpDetails(element.uri, element.headers);
 			}
 		});
 	}
@@ -2056,10 +1905,7 @@ function httpGzip(doc) {
 			// is text
 			if (content_type.split("/")[0] == "text") {
 				//
-				var tmp = {
-					"url" : element.uri,
-					"headers" : element.headers
-				};
+				var tmp = _getHttpDetails(element.uri, element.headers);
 
 				// has content-encoding
 				if (element.headers["content-encoding"]) {
@@ -5382,26 +5228,23 @@ function htmlUrlWithUnsafeChars(doc) {
 function htmlUrlWithTermsNotInTitle(doc) {
 	//
 	var result = [];
-	var reg = new RegExp().compile("[\\-\\_\\.\\+\\!\\*\\'\\(\\)\\,\\&\\/\\:\\;\\=\\?\\@\\#\\%\\[\\]]", "i");
+	var reg1 = new RegExp().compile("[\\-\\_\\.\\+\\!\\*\\'\\(\\)\\,\\&\\/\\:\\;\\=\\?\\@\\#\\%\\[\\]]", "ig");
 	var url = doc.location.href.toLowerCase().replace(/[àáâãäå]/ig, "a").replace(/æ/ig, "ae").replace(/ç/ig, "c").replace(/[èéêë]/ig, "e").replace(/[ìíîï]/ig, "i").replace(/ñ/ig, "n").replace(/[òóôõö]/ig, "o").replace(/œ/ig, "oe").replace(/[ùúûü]/ig, "u").replace(/[ýÿ]/ig, "y");
-	var terms = url.split(reg);
-	var title = jQueryMephisto("title").text().trim().toLowerCase().split(" ");
-	var found = false;
+	var terms = url.split(reg1);
+	var reg2 = new RegExp().compile("[^a-zA-Z0-9àáâãäåæçèéêëìíîïñòóôõöùúûüýÿ]", "ig");
+	var title = jQueryMephisto("title").text().trim().toLowerCase().split(reg2);
 
 	//
 	try {
 		//
-		terms.some(function(value) {
-			//
-			if (jQueryMephisto.inArray(value, title) != -1) {
-				found = true;
-				return true;
-			} else {
-				return false;
-			}
+		terms = terms.filter(function(element) {
+			return element.length >= 3;
 		});
+
 		//
-		if (!found) {
+		if (terms.some(function(element) {
+			return jQueryMephisto.inArray(element, title) != -1;
+		})) {
 			result.push(true);
 		}
 	}
@@ -5717,21 +5560,50 @@ function htmlLinksTextNotUnique(doc) {
 		//
 		jQueryMephisto("a:not(:has(img))").each(function() {
 			//
-			var context = jQueryMephisto.trim(jQueryMephisto(this).text()) + "∞|∞" + jQueryMephisto.trim(jQueryMephisto(this).attr("title")), href = jQueryMephisto.trim(jQueryMephisto(this).attr("href"));
+			var context = jQueryMephisto.trim(jQueryMephisto(this).text()) + "%|%" + jQueryMephisto.trim(jQueryMephisto(this).attr("title")), href = resolveURI(jQueryMephisto.trim(jQueryMephisto(this).attr("href")), doc.location.href), _this = this;
 
 			//
-			if (jQueryMephisto.inArray(context, Object.keys(links)) != -1) {
+			if (jQueryMephisto.inArray(context, Object.keys(links)) == -1) {
+				links[context] = [];
+			}
+
+			//
+			links[context].push({
+				"href" : href,
+				"node" : _this
+			});
+		});
+
+		//
+		for each (var context in Object.keys(links)) {
+			//
+			if (links[context].length > 1) {
 				//
-				if (links[context] != href) {
-					result.push(_getDetails(this));
+				var href = "", _tmp = [], diff = false;
+
+				//
+				for each (var obj in links[context]) {
+					//
+					_tmp.push(obj["node"]);
+
+					//
+					if (href != "" && href != obj["href"]) {
+						diff = true;
+					}
+
+					//
+					href = obj["href"];
+				}
+
+				//
+				if (diff) {
+					//
+					for each (var node in _tmp) {
+						result.push(_getDetails(node));
+					}
 				}
 			}
-
-			//
-			else {
-				links[context] = href;
-			}
-		});
+		}
 	}
 
 	//
@@ -5825,7 +5697,7 @@ function htmlLinksImageNotUnique(doc) {
 			return jQueryMephisto.trim(jQueryMephisto(this).text()) == "";
 		}).each(function() {
 			//
-			var context = jQueryMephisto.trim(jQueryMephisto("img", this).attr("alt")) + "∞|∞" + jQueryMephisto.trim(jQueryMephisto(this).attr("title")), href = jQueryMephisto.trim(jQueryMephisto(this).attr("href"));
+			var context = jQueryMephisto.trim(jQueryMephisto("img", this).attr("alt")) + "%|%" + jQueryMephisto.trim(jQueryMephisto(this).attr("title")), href = jQueryMephisto.trim(jQueryMephisto(this).attr("href"));
 
 			//
 			if (jQueryMephisto.inArray(context, Object.keys(links)) != -1) {
@@ -5901,7 +5773,7 @@ function htmlLinksNotUnique(doc) {
 			return jQueryMephisto.trim(jQueryMephisto(this).text()) != "";
 		}).each(function() {
 			//
-			var context = jQueryMephisto.trim(jQueryMephisto(this).text()) + "∞|∞" + jQueryMephisto.trim(jQueryMephisto("img", this).attr("alt")) + "∞|∞" + jQueryMephisto.trim(jQueryMephisto(this).attr("title"));
+			var context = jQueryMephisto.trim(jQueryMephisto(this).text()) + "%|%" + jQueryMephisto.trim(jQueryMephisto("img", this).attr("alt")) + "%|%" + jQueryMephisto.trim(jQueryMephisto(this).attr("title"));
 			var href = jQueryMephisto.trim(jQueryMephisto(this).attr("href"));
 
 			//
@@ -5974,7 +5846,7 @@ function htmlAreaNotUnique(doc) {
 		//
 		jQueryMephisto("area[alt]").each(function() {
 			//
-			var context = jQueryMephisto.trim(jQueryMephisto(this).attr("alt")) + "∞|∞" + jQueryMephisto.trim(jQueryMephisto(this).attr("title")), href = jQueryMephisto.trim(jQueryMephisto(this).attr("href"));
+			var context = jQueryMephisto.trim(jQueryMephisto(this).attr("alt")) + "%|%" + jQueryMephisto.trim(jQueryMephisto(this).attr("title")), href = jQueryMephisto.trim(jQueryMephisto(this).attr("href"));
 
 			//
 			if (jQueryMephisto.inArray(context, Object.keys(links)) != -1) {

@@ -1272,7 +1272,7 @@ var rulesets = {
     "10111": {
         "TABLE_W_TH": {
             "onfalse": {
-                "comment": "aucun TABLE", 
+                "comment": "aucun TABLE contenant des TH", 
                 "result": "na"
             }, 
             "ontrue": {
@@ -1300,7 +1300,7 @@ var rulesets = {
                         }
                     }
                 }, 
-                "comment": "au moins un TABLE", 
+                "comment": "au moins un TABLE contenant des TH", 
                 "result": "i"
             }
         }
@@ -1308,7 +1308,7 @@ var rulesets = {
     "10112": {
         "TABLE_W_TH_LINE_OR_COLUMN": {
             "onfalse": {
-                "comment": "aucun TABLE", 
+                "comment": "aucun TABLE contenant des TH", 
                 "result": "na"
             }, 
             "ontrue": {
@@ -1336,7 +1336,7 @@ var rulesets = {
                         }
                     }
                 }, 
-                "comment": "au moins un TABLE", 
+                "comment": "au moins un TABLE contenant des TH", 
                 "result": "i"
             }
         }
@@ -1382,11 +1382,11 @@ var rulesets = {
                             "chain": {
                                 "TABLE_FOR_DATA_WO_CAPTION": {
                                     "onfalse": {
-                                        "comment": "tous les TABLE ont un CAPTION", 
+                                        "comment": "tous les TABLE de donn\u00e9es ont un CAPTION", 
                                         "result": "c"
                                     }, 
                                     "ontrue": {
-                                        "comment": "au moins un TABLE sans CAPTION", 
+                                        "comment": "au moins un TABLE de donn\u00e9es sans CAPTION", 
                                         "result": "nc"
                                     }
                                 }
@@ -1411,11 +1411,11 @@ var rulesets = {
                 "chain": {
                     "TABLE_FOR_DATA3_WO_SUMMARY": {
                         "onfalse": {
-                            "comment": "tous les TABLE ont des SUMMARY", 
+                            "comment": "tous les TABLE de donn\u00e9es ont des SUMMARY", 
                             "result": "c"
                         }, 
                         "ontrue": {
-                            "comment": "au moins un TABLE sans SUMMARY", 
+                            "comment": "au moins un TABLE de donn\u00e9es sans SUMMARY", 
                             "result": "nc"
                         }
                     }
@@ -3619,13 +3619,13 @@ var rulesets = {
             }, 
             "ontrue": {
                 "chain": {
-                    "INPUT_W_TYPE_IMAGE_WO_FILLED_ALT_ATTR": {
+                    "INPUT_W_TYPE_IMAGE_WO_ALT_ATTR": {
                         "onfalse": {
-                            "comment": "aucun INPUT de type IMAGE avec ALT vide", 
+                            "comment": "aucun INPUT de type IMAGE sans ALT", 
                             "result": "c"
                         }, 
                         "ontrue": {
-                            "comment": "au moins un INPUT de type IMAGE avec ALT vide", 
+                            "comment": "au moins un INPUT de type IMAGE sans ALT", 
                             "result": "nc"
                         }
                     }
@@ -5241,11 +5241,11 @@ var rulesets = {
                 "chain": {
                     "TABLE_FOR_DATA3_WO_SUMMARY": {
                         "onfalse": {
-                            "comment": "tous les TABLE ont des SUMMARY", 
+                            "comment": "tous les TABLE de donn\u00e9es ont des SUMMARY", 
                             "result": "c"
                         }, 
                         "ontrue": {
-                            "comment": "au moins un TABLE sans SUMMARY", 
+                            "comment": "au moins un TABLE de donn\u00e9es sans SUMMARY", 
                             "result": "nc"
                         }
                     }
@@ -5337,11 +5337,11 @@ var rulesets = {
                 "chain": {
                     "TABLE_FOR_DATA_WO_CAPTION": {
                         "onfalse": {
-                            "comment": "tous les TABLE ont un CAPTION", 
+                            "comment": "tous les TABLE de donn\u00e9es ont un CAPTION", 
                             "result": "c"
                         }, 
                         "ontrue": {
-                            "comment": "au moins un TABLE sans CAPTION", 
+                            "comment": "au moins un TABLE de donn\u00e9es sans CAPTION", 
                             "result": "nc"
                         }
                     }
@@ -5426,7 +5426,7 @@ var rulesets = {
     "11981": {
         "TABLE_W_TH": {
             "onfalse": {
-                "comment": "aucun TABLE", 
+                "comment": "aucun TABLE contenant des TH", 
                 "result": "na"
             }, 
             "ontrue": {
@@ -5442,7 +5442,7 @@ var rulesets = {
                         }
                     }
                 }, 
-                "comment": "au moins un TABLE", 
+                "comment": "au moins un TABLE contenant des TH", 
                 "result": "i"
             }
         }
@@ -5450,7 +5450,7 @@ var rulesets = {
     "11982": {
         "TABLE_W_TH": {
             "onfalse": {
-                "comment": "aucun TABLE", 
+                "comment": "aucun TABLE contenant des TH", 
                 "result": "na"
             }, 
             "ontrue": {
@@ -5466,7 +5466,7 @@ var rulesets = {
                         }
                     }
                 }, 
-                "comment": "au moins un TABLE", 
+                "comment": "au moins un TABLE contenant des TH", 
                 "result": "i"
             }
         }
@@ -5474,7 +5474,7 @@ var rulesets = {
     "11983": {
         "TABLE_W_TH": {
             "onfalse": {
-                "comment": "aucun TABLE", 
+                "comment": "aucun TABLE contenant des TH", 
                 "result": "na"
             }, 
             "ontrue": {
@@ -5502,7 +5502,7 @@ var rulesets = {
                         }
                     }
                 }, 
-                "comment": "au moins un TABLE", 
+                "comment": "au moins un TABLE contenant des TH", 
                 "result": "i"
             }
         }
@@ -6526,14 +6526,34 @@ var rulesets = {
         }
     }, 
     "12051": {
-        "CSS_CONTENT": {
+        "LINK_STYLESHEET": {
             "onfalse": {
-                "comment": "aucun contenu textuel ajout\u00e9 par CSS", 
-                "result": "i"
+                "comment": "aucun LINK avec l'attribut REL ayant la valeur STYLESHEET", 
+                "result": "na"
             }, 
             "ontrue": {
-                "comment": "au moins un contenu textuel ajout\u00e9 par CSS", 
-                "result": "nc"
+                "comment": "un LINK avec l'attribut REL ayant la valeur STYLESHEET", 
+                "result": "i"
+            }
+        }, 
+        "STYLE": {
+            "onfalse": {
+                "comment": "aucun STYLE", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "comment": "au moins un STYLE", 
+                "result": "i"
+            }
+        }, 
+        "STYLE_ATTR": {
+            "onfalse": {
+                "comment": "aucun \u00e9l\u00e9ment avec un attribut STYLE", 
+                "result": "na"
+            }, 
+            "ontrue": {
+                "comment": "au moins un \u00e9l\u00e9ment avec un attribut STYLE", 
+                "result": "i"
             }
         }
     }, 
@@ -8940,12 +8960,12 @@ var rulesets = {
     "16217": {
         "URL_W_TERMS_NOT_IN_TITLE": {
             "onfalse": {
-                "comment": "au moins un des termes pr\u00e9sents dans l'URL est pr\u00e9sent dans le titre", 
-                "result": "c"
-            }, 
-            "ontrue": {
                 "comment": "aucun des termes pr\u00e9sents dans l'URL n'est pr\u00e9sent dans le titre", 
                 "result": "nc"
+            }, 
+            "ontrue": {
+                "comment": "au moins un des termes pr\u00e9sents dans l'URL est pr\u00e9sent dans le titre", 
+                "result": "c"
             }
         }
     }, 
@@ -9408,11 +9428,11 @@ var rulesets = {
     "19153": {
         "TABLE_FOR_DATA_WO_SUMMARY": {
             "onfalse": {
-                "comment": "aucun TABLE pr\u00e9sentant des donn\u00e9es sans SUMMARY", 
+                "comment": "aucun TABLE de donn\u00e9es sans SUMMARY", 
                 "result": "c"
             }, 
             "ontrue": {
-                "comment": "au moins un TABLE pr\u00e9sentant des donn\u00e9es sans SUMMARY", 
+                "comment": "au moins un TABLE de donn\u00e9es sans SUMMARY", 
                 "result": "nc"
             }
         }
@@ -11072,7 +11092,7 @@ var rulesets = {
     "19296": {
         "TABLE_W_TH": {
             "onfalse": {
-                "comment": "aucun TABLE", 
+                "comment": "aucun TABLE contenant des TH", 
                 "result": "na"
             }, 
             "ontrue": {
@@ -11088,7 +11108,7 @@ var rulesets = {
                         }
                     }
                 }, 
-                "comment": "au moins un TABLE", 
+                "comment": "au moins un TABLE contenant des TH", 
                 "result": "i"
             }
         }
@@ -11103,11 +11123,11 @@ var rulesets = {
                 "chain": {
                     "TABLE_FOR_DATA_WO_TH": {
                         "onfalse": {
-                            "comment": "aucun TABLE pr\u00e9sentant des donn\u00e9es sans TH", 
+                            "comment": "aucun TABLE de donn\u00e9es sans TH", 
                             "result": "c"
                         }, 
                         "ontrue": {
-                            "comment": "au moins un TABLE pr\u00e9sentant des donn\u00e9es sans TH", 
+                            "comment": "au moins un TABLE de donn\u00e9es sans TH", 
                             "result": "nc"
                         }
                     }
@@ -11151,11 +11171,11 @@ var rulesets = {
                 "chain": {
                     "TABLE_FOR_DATA_WO_FILLED_SUMMARY": {
                         "onfalse": {
-                            "comment": "aucun TABLE pr\u00e9sentant des donn\u00e9es sans SUMMARY rempli", 
+                            "comment": "aucun TABLE de donn\u00e9es sans SUMMARY rempli", 
                             "result": "c"
                         }, 
                         "ontrue": {
-                            "comment": "au moins un TABLE pr\u00e9sentant des donn\u00e9es sans SUMMARY rempli", 
+                            "comment": "au moins un TABLE de donn\u00e9es sans SUMMARY rempli", 
                             "result": "nc"
                         }
                     }
@@ -12987,11 +13007,11 @@ var rulesets = {
                 "chain": {
                     "TABLE_FOR_DATA_WO_CAPTION": {
                         "onfalse": {
-                            "comment": "tous les TABLE ont un CAPTION", 
+                            "comment": "tous les TABLE de donn\u00e9es ont un CAPTION", 
                             "result": "i"
                         }, 
                         "ontrue": {
-                            "comment": "au moins un TABLE sans CAPTION", 
+                            "comment": "au moins un TABLE de donn\u00e9es sans CAPTION", 
                             "result": "nc"
                         }
                     }
