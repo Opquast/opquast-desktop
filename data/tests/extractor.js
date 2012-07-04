@@ -170,6 +170,11 @@ const xhrMephisto = Components.classes["@mozilla.org/xmlextras/xmlhttprequest;1"
 			}
 		}
 	});
+	
+	//
+	var stats = get_stats(body);
+	stats['images'] = images.length;
+	stats['links'] = links.length;
 
 	window._extractor_result = {
 		'link_selection' : link_selection,
@@ -180,7 +185,7 @@ const xhrMephisto = Components.classes["@mozilla.org/xmlextras/xmlhttprequest;1"
 		'title' : title,
 		'links' : links,
 		'images' : images,
-		'stats' : get_stats(document)
+		'stats' : stats
 	};
 
 	$.extend(window._extractor_result, result);
