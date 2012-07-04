@@ -45,17 +45,19 @@
 
         // Setting some column visibilty
         column_def[2] = prefs.showRefs ? null : {bVisible: false};
-        column_def[4] = prefs.showTimes ? null : {bVisible: false};
+        column_def[3] = prefs.showThemas ? null : {bVisible: false};
+        column_def[5] = prefs.showTimes ? null : {bVisible: false};
 
         // Localize column titles
         $("#test_result thead th:eq(0)").text(_("oqs.all_results"));
         $("#test_result thead th:eq(1)").text(_("oqs.all_checklists"));
         $("#test_result thead th:eq(2)").text(_("oqs.references"));
-        $("#test_result thead th:eq(3)").text(_("oqs.test_label"));
-        $("#test_result thead th:eq(4)").text(_("oqs.test_duration"));
+        $("#test_result thead th:eq(3)").text(_("oqs.all_themas"));
+        $("#test_result thead th:eq(4)").text(_("oqs.test_label"));
+        $("#test_result thead th:eq(5)").text(_("oqs.test_duration"));
 
         try {
-            var _date = new Date(tests.datetime), table = $('table'), tbody = $('tbody');
+            var _date = new Date(tests.datetime), table = $('table'), tbody = $('tbody'), values1 = [], values2 = [];
             window._showInfo(_("oqs.analyze_info",
                 _date.toLocaleFormat(_("oqs.date_format")), _date.toLocaleTimeString(), Math.round(tests.timer*10)/10
             ));
@@ -81,6 +83,7 @@
                     '<td><img src="img/' + result.result + '.png" alt="' + results[result.result] + '" /><span style="display:none">' + results[result.result] + '</span></td>',
                     '<td>' + criterion.checklist.name + '</td>',
                     '<td>' + criterion.name + '</td>',
+                    '<td>' + $.trim(criterion.thema) + '</td>',
                     '<td>' + criterion.description + '</td>',
                     '<td>' + result.time + '</td>'
                 );
@@ -90,18 +93,25 @@
                 tr.data("details", result.details);
                 tr.data("comment", result.comment);
                 tr.data("is_open", false);
-            }
-
-            var values = [];
-
-            for each (var checklist in checklists) {
-                var value = checklist.checklist.name;
-                if ($.inArray(value, values) == -1) {
-                    values.push(value);
+                
+                var value = criterion.checklist.name;
+                if ($.inArray(value, values1) == -1) {
+                    values1.push(value);
+                }
+                
+                var value2 = $.trim(criterion.thema);
+                if ($.inArray(value2, values2) == -1) {
+                    values2.push(value2);
                 }
             }
 
-            values.sort(function(a, b) {
+            values1.sort(function(a, b) {
+                var a = a.toLowerCase();
+                var b = b.toLowerCase();
+                return ((a < b) ? -1 : ((a > b) ? 1 : 0));
+            });
+
+            values2.sort(function(a, b) {
                 var a = a.toLowerCase();
                 var b = b.toLowerCase();
                 return ((a < b) ? -1 : ((a > b) ? 1 : 0));
@@ -141,8 +151,11 @@
                     }]
                 }, {
                     type : "select",
-                    values : values
-                }, null, null, null]
+                    values : values1
+                }, null, {
+                    type : "select",
+                    values : values2
+                }, null, null]
             });
 
             // bug : filtering trigger sorting

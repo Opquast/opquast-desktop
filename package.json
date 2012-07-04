@@ -24,6 +24,12 @@
             "value": true
         },
         {
+            "name": "showThemas",
+            "title": "Show test thema",
+            "type": "bool",
+            "value": true
+        },
+        {
             "name": "showTimes",
             "title": "Show execution time for each test",
             "type": "bool",
