@@ -1,3 +1,8 @@
+2012-07-05 - Version 0.2.1
+
+- Fixed a bug that prevented help page display on install
+- Force scroll with web inspector node selection
+
 2012-07-05 - Version 0.2
 
 - Mozilla SDK 1.8 (Firefox 13+ only)
