@@ -36,7 +36,7 @@
  *
  * ***** END LICENSE BLOCK ***** */
 
-(function() {
+(function($) {
     window.tests = null;
 
     window.showResults = function(tests, prefs) {
@@ -236,5 +236,13 @@
         } catch(e) {
             console.error(e);
         };
-    }
-})();
+    };
+
+    window.resultSearch = function(aQuery) {
+        $("#test_result").dataTable().fnFilter(aQuery);
+    };
+
+    window.changeColVis = function(aColNum, aVis) {
+        $("#test_result").dataTable().fnSetColumnVis(aColNum, aVis);
+    };
+})(jQuery);
