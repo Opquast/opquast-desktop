@@ -719,6 +719,22 @@ function _getInlineCssDetails(rule, i, item) {
 
 /**
  *
+ * @param doc
+ * @return
+ */
+function _getHttpDetails(url, headers) {
+	//
+	var _headers = "";
+	for each(header in Object.keys(headers)) {
+		_headers += "\n" + header + ": " + headers[header];
+	}
+	
+	//
+	return "entête HTTP de " + url + " :" + _headers;
+}
+
+/**
+ *
  * @param url
  * @return
  */
@@ -1629,7 +1645,7 @@ function apply_regexp_test(doc, test, language) {
 
 					//
 					if (reg.test(jQueryMephisto.data(doc.body, _src))) {
-						_result = [RegExp.$1];
+						_result.push(_getDetails(this));
 					}
 				}
 
@@ -1637,7 +1653,7 @@ function apply_regexp_test(doc, test, language) {
 				else if (_data.length) {
 					//
 					if (reg.test(_data)) {
-						_result = [RegExp.$1];
+						_result.push(_getDetails(this));
 					}
 				}
 			});
