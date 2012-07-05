@@ -1,3 +1,12 @@
+2012-07-05 - Version 0.2
+
+- Mozilla SDK 1.8 (Firefox 13+ only)
+- New way to handle panels
+- Added SEO Checklist
+- Added theme for each test
+- Added a "display" button
+- Works well with Mozilla webdev tools now
+
 2012-06-28 - Version 0.1.1
 
 - Fixed a bug with feedback link
