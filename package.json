@@ -21,13 +21,13 @@
             "name": "showRefs",
             "title": "Show test references",
             "type": "bool",
-            "value": true
+            "value": false
         },
         {
             "name": "showThemas",
             "title": "Show test thema",
             "type": "bool",
-            "value": true
+            "value": false
         },
         {
             "name": "showTimes",
