@@ -226,12 +226,13 @@
             }
 
             $('#test_result tbody tr td:first-child').each(function() {
-                var img = $('<img class="opener" src="img/closed.png" alt="" />');
-                img.addClass("center");
-                $(this.parentNode).click(function() {
-                    toggleLine(this, img);
-                });
-                $(this).prepend(img);
+                var tr = this.parentNode;
+                var img = $('<img class="opener" src="img/closed.png" alt="" />')
+                    .addClass("center")
+                    .click(function() {
+                        toggleLine(tr);
+                    })
+                    .prependTo(this);
             });
         } catch(e) {
             console.error(e);
