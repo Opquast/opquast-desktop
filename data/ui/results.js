@@ -41,12 +41,6 @@
 
     window.showResults = function(tests, prefs) {
         window.tests = tests;
-        var column_def = [null, null, null, null, null];
-
-        // Setting some column visibilty
-        column_def[2] = prefs.showRefs ? null : {bVisible: false};
-        column_def[3] = prefs.showThemas ? null : {bVisible: false};
-        column_def[5] = prefs.showTimes ? null : {bVisible: false};
 
         // Localize column titles
         $("#test_result thead th:eq(0)").text(_("oqs.all_results"));
@@ -57,7 +51,12 @@
         $("#test_result thead th:eq(5)").text(_("oqs.test_duration"));
 
         try {
-            var _date = new Date(tests.datetime), table = $('table'), tbody = $('tbody'), values1 = [], values2 = [];
+            var _date = new Date(tests.datetime),
+                table = $('table'),
+                tbody = $('tbody'),
+                values1 = [],
+                values2 = [];
+
             window._showInfo(_("oqs.analyze_info",
                 _date.toLocaleFormat(_("oqs.date_format")), _date.toLocaleTimeString(), Math.round(tests.timer*10)/10
             ));
@@ -93,12 +92,12 @@
                 tr.data("details", result.details);
                 tr.data("comment", result.comment);
                 tr.data("is_open", false);
-                
+
                 var value = criterion.checklist.name;
                 if ($.inArray(value, values1) == -1) {
                     values1.push(value);
                 }
-                
+
                 var value2 = $.trim(criterion.thema);
                 if ($.inArray(value2, values2) == -1) {
                     values2.push(value2);
@@ -128,7 +127,7 @@
                     sInfoFiltered : _("oqs.display_filtered"),
                     sSearch : _("oqs.search")
                 },
-                aoColumns : column_def
+                aoColumns : [null, null, null, null, null, null]
             })
 
             oTable.columnFilter({
@@ -164,6 +163,11 @@
                 return true;
             });
 
+            // As this crap of DataTable *removes* hidden column we should hide them after
+            // initilization.
+            oTable.fnSetColumnVis(2, prefs.showRefs);
+            oTable.fnSetColumnVis(3, prefs.showThemas);
+            oTable.fnSetColumnVis(5, prefs.showTimes);
 
             function fnFormatDetails(oTable, nTr) {
                 var aData = oTable.fnGetData(nTr),
