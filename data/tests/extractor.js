@@ -35,10 +35,13 @@
  * the terms of any one of the MPL, the GPL or the LGPL.
  *
  * ***** END LICENSE BLOCK ***** */
+
 const xhrMephisto = Components.classes["@mozilla.org/xmlextras/xmlhttprequest;1"].getService(Components.interfaces.nsIXMLHttpRequest);
 
+var links = [], images = [], body;
+
 (function($) {
-	var links = [], images = [], body = $('body', document);
+	body = $('body', document);
 
 	function encoded(val) {
 		if (val !== undefined && val !== null) {
@@ -162,9 +165,10 @@ const xhrMephisto = Components.classes["@mozilla.org/xmlextras/xmlhttprequest;1"
 						"start_time" : 0,
 						"transfer_time" : 0
 					});
-					
+
 					xhrMephisto.removeEventListener("load", loadObject, false);
 				}
+
 
 				xhrMephisto.addEventListener("load", loadObject, false);
 

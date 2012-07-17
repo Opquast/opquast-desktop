@@ -475,4 +475,4 @@ var rules = {
 	"VIDEO" : "xpath@html://video",
 	"VLINK_ATTR" : "xpath@html://*[@vlink]",
 	"XMP" : "xpath@html://xmp"
-}; 
+};

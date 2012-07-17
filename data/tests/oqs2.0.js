@@ -36,15 +36,17 @@
  *
  * ***** END LICENSE BLOCK ***** */
 
+"use strict";
+
 (function() {
 	tests = rules;
-    criteria = rulesets;
-    analyze(criteria);
-    var _results =  synthesize_results(results);
-	
-    return {
-        'oaa_results': _results,
-        'datetime': new Date(),
-        'timer' : timer/1000
-    };
+	criteria = rulesets;
+	results = analyze(criteria);
+	var _results = synthesize_results(results);
+
+	return {
+		'oaa_results' : _results,
+		'datetime' : new Date(),
+		'timer' : timer / 1000
+	};
 })();
