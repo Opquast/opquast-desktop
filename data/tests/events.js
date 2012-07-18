@@ -64,4 +64,4 @@ const esl = Components.classes["@mozilla.org/eventlistenerservice;1"].getService
     } while (tw.nextNode());
 
     sidecar.events = events;
-})();
+})(jQueryMephisto);

@@ -41,7 +41,7 @@ var timing_validator = false;
 var config_saveAndRefresh_delay = 1000;
 // 1500
 var i, j, k;
-var tests, criteria, results;
+var tests, criteria, results, checklists;
 var timer = 0;
 var urls_known = [], urls_to_add = [], urls_tested = [];
 var tested_pages_counter = 0;
@@ -256,7 +256,7 @@ var logger;
 	 * @author Fabrice Bonny, Mickaël Hoareau
 	 * @version 1.0
 	 */
-	function initJson() {
+	/*function initJson() {
 		//
 		try {
 			//
@@ -292,7 +292,7 @@ var logger;
 
 		//
 		return false;
-	}
+	}*/
 
 	/**
 	 *

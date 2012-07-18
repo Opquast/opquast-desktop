@@ -42,8 +42,8 @@ var cdns = RegExp().compile("^(https?://(ajax.googleapis.com/ajax/libs/|ajax.asp
 var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-(c|m)ore)?|piwik|prototype|modernizr|xtcore|yui).js(\\?[-\\.v0-9]+)?$", "i");
 
 (function($) {
-	var inlineStyles = $("*[style]");
-	var onfocusEvents = $("*[onfocus]"), onblurEvents = $("*[onblur]"), onchangeEvents = $("*[onchange]"), onclickEvents = $("*[onclick]"), onmouseoverEvents = $("*[onmouseover]"), onmouseoutEvents = $("*[onmouseout]");
+	let inlineStyles = $("*[style]");
+	let onfocusEvents = $("*[onfocus]"), onblurEvents = $("*[onblur]"), onchangeEvents = $("*[onchange]"), onclickEvents = $("*[onclick]"), onmouseoverEvents = $("*[onmouseover]"), onmouseoutEvents = $("*[onmouseout]");
 
 	/**
 	 *
@@ -52,7 +52,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.mobileCss = function mobileCss(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -109,12 +109,12 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.cssNumberOfFonts = function cssNumberOfFonts(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		function callback(rule) {
 			//
-			var result = [];
+			let result = [];
 
 			//
 			if (rule && rule.parentStyleSheet && rule.declarations) {
@@ -193,12 +193,12 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.cssAbsoluteFontSize = function cssAbsoluteFontSize(doc) {
 		//
-		var result = [], reg = new RegExp().compile("[0-9.]+(p(t|c|x)|(c|m)m|in)", "i");
+		let result = [], reg = new RegExp().compile("[0-9.]+(p(t|c|x)|(c|m)m|in)", "i");
 
 		//
 		function callback(rule) {
 			//
-			var result = [];
+			let result = [];
 
 			//
 			if (rule && rule.parentStyleSheet && rule.declarations) {
@@ -269,12 +269,12 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.cssAbsoluteFontSizeOnScreen = function cssAbsoluteFontSizeOnScreen(doc) {
 		//
-		var result = [], reg = new RegExp().compile("[0-9.]+(p(t|c)|(c|m)m|in)", "i");
+		let result = [], reg = new RegExp().compile("[0-9.]+(p(t|c)|(c|m)m|in)", "i");
 
 		//
 		function callback(rule) {
 			//
-			var result = [];
+			let result = [];
 
 			//
 			if (rule && rule.parentStyleSheet && rule.declarations) {
@@ -355,12 +355,12 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.cssAbsoluteFontSizeInForm = function cssAbsoluteFontSizeInForm(doc) {
 		//
-		var result = [], reg = new RegExp().compile("[0-9.]+(p(t|c|x)|(c|m)m|in)", "i");
+		let result = [], reg = new RegExp().compile("[0-9.]+(p(t|c|x)|(c|m)m|in)", "i");
 
 		//
 		function callback(rule) {
 			//
-			var result = [];
+			let result = [];
 
 			///
 			if (rule && rule.parentStyleSheet && rule.declarations) {
@@ -450,12 +450,12 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.cssDirection = function cssDirection(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		function callback(rule) {
 			//
-			var result = [];
+			let result = [];
 
 			//
 			if (rule && rule.parentStyleSheet && rule.declarations) {
@@ -526,7 +526,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.cssBackgroundColorWoColor = function cssBackgroundColorWoColor(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -574,7 +574,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.cssColorWoBackgroundColor = function cssColorWoBackgroundColor(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -622,7 +622,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.cssBackgroundImageWoBackgroundColor = function cssBackgroundImageWoBackgroundColor(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -670,12 +670,12 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.cssDisplayNone = function cssDisplayNone(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		function callback(rule) {
 			//
-			var result = [];
+			let result = [];
 
 			//
 			if (rule && rule.parentStyleSheet && rule.declarations) {
@@ -746,12 +746,12 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.cssDisplayNone = function cssDisplayNone(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		function callback(rule) {
 			//
-			var result = [];
+			let result = [];
 
 			//
 			if (rule && rule.parentStyleSheet && rule.declarations) {
@@ -822,12 +822,12 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.cssVisibilityHidden = function cssVisibilityHidden(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		function callback(rule) {
 			//
-			var result = [];
+			let result = [];
 
 			//
 			if (rule && rule.parentStyleSheet && rule.declarations) {
@@ -898,12 +898,12 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.cssHoverLinks = function cssHoverLinks(doc) {
 		//
-		var result = [], reg = new RegExp().compile("(^| )(a((#|\\.)[^ ]+)?|(#|\\.)[^ ]+):hover$", "i"), reg2 = new RegExp().compile("^(font|border|margin|padding)-[-a-z]+$", "i");
+		let result = [], reg = new RegExp().compile("(^| )(a((#|\\.)[^ ]+)?|(#|\\.)[^ ]+):hover$", "i"), reg2 = new RegExp().compile("^(font|border|margin|padding)-[-a-z]+$", "i");
 
 		//
 		function callback(rule) {
 			//
-			var result = [], rules = [];
+			let result = [], rules = [];
 
 			//
 			if (rule && rule.parentStyleSheet && rule.declarations) {
@@ -965,12 +965,12 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.cssPixelFontSize = function cssPixelFontSize(doc) {
 		//
-		var result = [], reg = new RegExp().compile("[0-9.]+px", "i");
+		let result = [], reg = new RegExp().compile("[0-9.]+px", "i");
 
 		//
 		function callback(rule) {
 			//
-			var result = [];
+			let result = [];
 
 			//
 			if (rule && rule.parentStyleSheet && rule.declarations) {
@@ -1041,7 +1041,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.utf8 = function utf8(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -1068,7 +1068,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.rightCharset = function rightCharset(doc) {
 		//
-		var result = [], reg = new RegExp().compile("[\xC2-\xDF][\x80-\xBF]|\xE0[\xA0-\xBF][\x80-\xBF]|[\xE1-\xEC\xEE\xEF][\x80-\xBF]{2}|\xED[\x80-\x9F][\x80-\xBF]|\xF0[\x90-\xBF][\x80-\xBF]{2}|[\xF1-\xF3][\x80-\xBF]{3}|\xF4[\x80-\x8F][\x80-\xBF]{2}", "m");
+		let result = [], reg = new RegExp().compile("[\xC2-\xDF][\x80-\xBF]|\xE0[\xA0-\xBF][\x80-\xBF]|[\xE1-\xEC\xEE\xEF][\x80-\xBF]{2}|\xED[\x80-\x9F][\x80-\xBF]|\xF0[\x90-\xBF][\x80-\xBF]{2}|[\xF1-\xF3][\x80-\xBF]{3}|\xF4[\x80-\x8F][\x80-\xBF]{2}", "m");
 
 		//
 		try {
@@ -1095,7 +1095,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlLanguage = function htmlLanguage(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -1125,7 +1125,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlValidLanguage = function htmlValidLanguage(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -1155,7 +1155,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlSpaceBetweenLetters = function htmlSpaceBetweenLetters(doc) {
 		//
-		var result = [], reg = new RegExp().compile("(\s+[A-Za-z]){3,}", "i");
+		let result = [], reg = new RegExp().compile("(\s+[A-Za-z]){3,}", "i");
 
 		//
 		try {
@@ -1185,7 +1185,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlElementLanguage = function htmlElementLanguage(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -1218,7 +1218,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlSpaceBetweenLetters = function htmlSpaceBetweenLetters(doc) {
 		//
-		var result = [], reg = new RegExp().compile("(\s+[A-Za-z]){3,}", "i");
+		let result = [], reg = new RegExp().compile("(\s+[A-Za-z]){3,}", "i");
 
 		//
 		try {
@@ -1248,7 +1248,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.httpLanguage = function httpLanguage(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -1282,7 +1282,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.httpCharset = function httpCharset(doc) {
 		//
-		var result = [], reg = new RegExp().compile("[\xC2-\xDF][\x80-\xBF]|\xE0[\xA0-\xBF][\x80-\xBF]|[\xE1-\xEC\xEE\xEF][\x80-\xBF]{2}|\xED[\x80-\x9F][\x80-\xBF]|\xF0[\x90-\xBF][\x80-\xBF]{2}|[\xF1-\xF3][\x80-\xBF]{3}|\xF4[\x80-\x8F][\x80-\xBF]{2}", "m");
+		let result = [], reg = new RegExp().compile("[\xC2-\xDF][\x80-\xBF]|\xE0[\xA0-\xBF][\x80-\xBF]|[\xE1-\xEC\xEE\xEF][\x80-\xBF]{2}|\xED[\x80-\x9F][\x80-\xBF]|\xF0[\x90-\xBF][\x80-\xBF]{2}|[\xF1-\xF3][\x80-\xBF]{3}|\xF4[\x80-\x8F][\x80-\xBF]{2}", "m");
 
 		//
 		try {
@@ -1315,7 +1315,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.httpCache = function httpCache(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -1346,7 +1346,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.http404 = function http404(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -1376,7 +1376,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.metaCharset = function metaCharset(doc) {
 		//
-		var result = [], reg = new RegExp().compile("^.+charset=(.+)$", "i");
+		let result = [], reg = new RegExp().compile("^.+charset=(.+)$", "i");
 
 		//
 		try {
@@ -1422,7 +1422,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.robotsSitemap = function robotsSitemap(doc) {
 		//
-		var result = [], reg = new RegExp().compile("^sitemap\s*:(.+)$", "im"), sitemap = false;
+		let result = [], reg = new RegExp().compile("^sitemap\s*:(.+)$", "im"), sitemap = false;
 
 		//
 		try {
@@ -1469,7 +1469,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.robotsPresence = function robotsPresence(doc) {
 		//
-		var result = [], reg = new RegExp().compile("^user-agent\s*:(.+)$", "im");
+		let result = [], reg = new RegExp().compile("^user-agent\s*:(.+)$", "im");
 
 		//
 		try {
@@ -1503,7 +1503,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.inlinks = function inlinks(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -1538,7 +1538,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlAreaWoAlt = function htmlAreaWoAlt(doc) {
 		//
-		var result = [], area = {};
+		let result = [], area = {};
 
 		//
 		try {
@@ -1574,7 +1574,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlDefaultTitle = function htmlDefaultTitle(doc) {
 		//
-		var result = [], reg = new RegExp().compile("^(untitled( document)?|welcome to adobe golive( \d+)?|default( title| document| page)?|document sans nom|page (sans titre|par défaut))$", "i");
+		let result = [], reg = new RegExp().compile("^(untitled( document)?|welcome to adobe golive( \d+)?|default( title| document| page)?|document sans nom|page (sans titre|par défaut))$", "i");
 
 		//
 		try {
@@ -1607,7 +1607,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlDirAttribute = function htmlDirAttribute(doc) {
 		//
-		var result = [], exclusions = ["APPLET", "BASE", "BASEFONT", "BR", "FRAME", "FRAMESET", "IFRAME", "PARAM", "SCRIPT"], values = ["", "ltr", "rtl"];
+		let result = [], exclusions = ["APPLET", "BASE", "BASEFONT", "BR", "FRAME", "FRAMESET", "IFRAME", "PARAM", "SCRIPT"], values = ["", "ltr", "rtl"];
 
 		//
 		try {
@@ -1637,7 +1637,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlAWithShortTitle = function htmlAWithShortTitle(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -1674,7 +1674,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.metaRefreshShort = function metaRefreshShort(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -1710,7 +1710,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.metaRefreshUrl = function metaRefreshUrl(doc) {
 		//
-		var result = [], reg = new RegExp().compile("^\\d+\\s*;\\s*url=(.+)$", "i");
+		let result = [], reg = new RegExp().compile("^\\d+\\s*;\\s*url=(.+)$", "i");
 
 		//
 		try {
@@ -1749,7 +1749,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.jsRefresh = function jsRefresh(doc) {
 		//
-		var result = [], reg1 = new RegExp().compile("\\.location\\.reload\\(", "i"), reg2 = new RegExp().compile("\\.location\\.replace\\(", "i"), reg3 = new RegExp().compile("\\.location\(\\.href\)?\s*=", "i");
+		let result = [], reg1 = new RegExp().compile("\\.location\\.reload\\(", "i"), reg2 = new RegExp().compile("\\.location\\.replace\\(", "i"), reg3 = new RegExp().compile("\\.location\(\\.href\)?\s*=", "i");
 
 		//
 		try {
@@ -1807,7 +1807,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.httpRefresh = function httpRefresh(doc) {
 		//
-		var result = [], reg1 = new RegExp().compile("^(\\d+)$", "i"), reg2 = new RegExp().compile("^(\\d+)\\s*;\\s*url=(.+)$", "i");
+		let result = [], reg1 = new RegExp().compile("^(\\d+)$", "i"), reg2 = new RegExp().compile("^(\\d+)\\s*;\\s*url=(.+)$", "i");
 
 		//
 		try {
@@ -1859,7 +1859,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.httpGzip = function httpGzip(doc) {
 		//
-		var result = [], reg = new RegExp().compile("(gzip|deflate)$", "i");
+		let result = [], reg = new RegExp().compile("(gzip|deflate)$", "i");
 
 		//
 		try {
@@ -1905,7 +1905,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.resAnimated = function resAnimated(doc) {
 		//
-		var result = [], images = [];
+		let result = [], images = [];
 
 		//
 		try {
@@ -1948,7 +1948,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.resMultimedia = function resMultimedia(doc) {
 		//
-		var result = [], mm_families = ["audio", "video"], mm_types = ["application/x-shockwave-flash", "application/octet-stream", "application/x-silverlight-app", "application/xaml+xml", "application/x-ms-xbap", "application/vnd.rn-realmedia", "application/ogg", "image/svg+xml"], objects = [];
+		let result = [], mm_families = ["audio", "video"], mm_types = ["application/x-shockwave-flash", "application/octet-stream", "application/x-silverlight-app", "application/xaml+xml", "application/x-ms-xbap", "application/vnd.rn-realmedia", "application/ogg", "image/svg+xml"], objects = [];
 
 		//
 		try {
@@ -2011,7 +2011,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.resMultimediaWoAudio = function resMultimediaWoAudio(doc) {
 		//
-		var result = [], mm_families = ["video"], mm_types = ["application/x-shockwave-flash", "application/octet-stream", "application/x-silverlight-app", "application/xaml+xml", "application/x-ms-xbap", "application/vnd.rn-realmedia", "application/ogg", "image/svg+xml"], objects = [];
+		let result = [], mm_families = ["video"], mm_types = ["application/x-shockwave-flash", "application/octet-stream", "application/x-silverlight-app", "application/xaml+xml", "application/x-ms-xbap", "application/vnd.rn-realmedia", "application/ogg", "image/svg+xml"], objects = [];
 
 		//
 		try {
@@ -2074,7 +2074,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.iframeWithSameTitles = function iframeWithSameTitles(doc) {
 		//
-		var result = [], iframes = {};
+		let result = [], iframes = {};
 
 		//
 		try {
@@ -2109,7 +2109,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.frameWithSameTitles = function frameWithSameTitles(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -2150,7 +2150,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlFavicon = function htmlFavicon(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -2189,7 +2189,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlFormW3Fields = function htmlFormW3Fields(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -2220,7 +2220,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.pingLongdesc = function pingLongdesc(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -2265,7 +2265,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.countryDomain = function countryDomain(doc) {
 		//
-		var result = [], extensions = ["ad", "ae", "af", "ag", "ai", "al", "am", "an", "ao", "aq", "ar", "as", "at", "au", "aw", "az", "ba", "bb", "bd", "be", "bf", "bg", "bh", "bi", "bj", "bm", "bn", "bo", "br", "bs", "bt", "bv", "bw", "by", "bz", "ca", "cc", "cf", "cg", "ch", "ci", "ck", "cl", "cm", "cn", "co", "cr", "cu", "cv", "cx", "cy", "cz", "de", "dk", "dj", "dm", "do", "dz", "ec", "ee", "eg", "eh", "er", "es", "et", "fi", "fj", "fk", "fm", "fo", "fr", "fx", "ga", "gd", "ge", "gf", "gg", "gh", "gi", "gl", "gn", "gp", "gq", "gr", "gs", "gt", "gu", "gy", "hk", "hm", "hn", "hr", "ht", "hu", "id", "ie", "il", "in", "io", "iq", "ir", "is", "it", "je", "jm", "jo", "jp", "ke", "kg", "kh", "ki", "km", "kn", "kp", "kr", "kw", "ky", "kz", "la", "lb", "lc", "li", "lk", "lr", "ls", "lt", "lu", "lv", "ly", "ma", "mc", "md", "mh", "mk", "ml", "mm", "mn", "mo", "mp", "mq", "mr", "ms", "mt", "mu", "mx", "mw", "my", "mz", "na", "nc", "nf", "ne", "ng", "ni", "nl", "no", "np", "nr", "nu", "nz", "om", "pa", "pe", "pf", "ph", "pk", "pl", "pm", "pn", "pq", "pr", "pt", "py", "pw", "qa", "re", "ro", "ru", "rw", "sa", "sb", "sc", "sd", "se", "sg", "sh", "si", "sj", "sk", "sl", "sm", "sn", "so", "sr", "st", "sv", "sy", "sz", "tc", "td", "tf", "th", "tj", "tm", "tn", "to", "tp", "tr", "tt", "tv", "tw", "tz", "ua", "ug", "uk", "um", "us", "uy", "uz", "va", "vc", "ve", "vg", "vi", "vn", "vu", "wf", "ws", "ye", "yt", "yu", "za", "zr", "zm", "zw"];
+		let result = [], extensions = ["ad", "ae", "af", "ag", "ai", "al", "am", "an", "ao", "aq", "ar", "as", "at", "au", "aw", "az", "ba", "bb", "bd", "be", "bf", "bg", "bh", "bi", "bj", "bm", "bn", "bo", "br", "bs", "bt", "bv", "bw", "by", "bz", "ca", "cc", "cf", "cg", "ch", "ci", "ck", "cl", "cm", "cn", "co", "cr", "cu", "cv", "cx", "cy", "cz", "de", "dk", "dj", "dm", "do", "dz", "ec", "ee", "eg", "eh", "er", "es", "et", "fi", "fj", "fk", "fm", "fo", "fr", "fx", "ga", "gd", "ge", "gf", "gg", "gh", "gi", "gl", "gn", "gp", "gq", "gr", "gs", "gt", "gu", "gy", "hk", "hm", "hn", "hr", "ht", "hu", "id", "ie", "il", "in", "io", "iq", "ir", "is", "it", "je", "jm", "jo", "jp", "ke", "kg", "kh", "ki", "km", "kn", "kp", "kr", "kw", "ky", "kz", "la", "lb", "lc", "li", "lk", "lr", "ls", "lt", "lu", "lv", "ly", "ma", "mc", "md", "mh", "mk", "ml", "mm", "mn", "mo", "mp", "mq", "mr", "ms", "mt", "mu", "mx", "mw", "my", "mz", "na", "nc", "nf", "ne", "ng", "ni", "nl", "no", "np", "nr", "nu", "nz", "om", "pa", "pe", "pf", "ph", "pk", "pl", "pm", "pn", "pq", "pr", "pt", "py", "pw", "qa", "re", "ro", "ru", "rw", "sa", "sb", "sc", "sd", "se", "sg", "sh", "si", "sj", "sk", "sl", "sm", "sn", "so", "sr", "st", "sv", "sy", "sz", "tc", "td", "tf", "th", "tj", "tm", "tn", "to", "tp", "tr", "tt", "tv", "tw", "tz", "ua", "ug", "uk", "um", "us", "uy", "uz", "va", "vc", "ve", "vg", "vi", "vn", "vu", "wf", "ws", "ye", "yt", "yu", "za", "zr", "zm", "zw"];
 
 		//
 		try {
@@ -2295,7 +2295,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.countryServer = function countryServer(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -2333,7 +2333,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.moreExtThenIntLinks = function moreExtThenIntLinks(doc) {
 		//
-		var result = [], int = [], ext = [], domain;
+		let result = [], int = [], ext = [], domain;
 
 		//
 		try {
@@ -2388,7 +2388,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.cssMediaPrint = function cssMediaPrint(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -2455,7 +2455,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.cssInternalStyles = function cssInternalStyles(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -2503,7 +2503,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.cssContent = function cssContent(doc) {
 		//
-		var result = [], exclusions = ["", '', " ", ' ', '" "', "' '", '"."', "'.'", "none"];
+		let result = [], exclusions = ["", '', " ", ' ', '" "', "' '", '"."', "'.'", "none"];
 
 		//
 		try {
@@ -2535,7 +2535,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.cssMediaHandheld = function cssMediaHandheld(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -2602,12 +2602,12 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.cssGenericFont = function cssGenericFont(doc) {
 		//
-		var result, generics;
+		let result = [], generics;
 
 		//
 		function callback(rule) {
 			//
-			var result = [], generics = ["serif", "sans-serif", "cursive", "fantasy", "monospace", "inherit"];
+			let result = [], generics = ["serif", "sans-serif", "cursive", "fantasy", "monospace", "inherit"];
 
 			//
 			if (rule && rule.parentStyleSheet && rule.declarations) {
@@ -2690,12 +2690,12 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.cssBackgroundImage = function cssBackgroundImage(doc) {
 		//
-		var result = [], reg = new RegExp().compile('^url\\(', "i");
+		let result = [], reg = new RegExp().compile('^url\\(', "i");
 
 		//
 		function callback(rule) {
 			//
-			var result = [];
+			let result = [];
 
 			//
 			if (rule && rule.parentStyleSheet && rule.declarations) {
@@ -2766,7 +2766,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.cssUnderline = function cssUnderline(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -2795,7 +2795,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.cssUppercase = function cssUppercase(doc) {
 		//
-		var result = [];
+		let result = [];
 		var exclusions = ["ABBR", "ACRONYM", "ADDRESS", "BLOCKQUOTE", "CITE", "CODE", "KBD", "PRE", "Q", "RP", "RT", "RUBY", "SAMP", "SUB", "SUP", "TIME", "VAR", "IFRAME", "SCRIPT"];
 		var reg = new RegExp().compile("^[^a-z]*[A-Z][^a-z]*[A-Z][^a-z]*[A-Z][^a-z]*$", "g");
 
@@ -2839,12 +2839,12 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.cssTextAlignJustify = function cssTextAlignJustify(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		function callback(rule) {
 			//
-			var result = [];
+			let result = [];
 
 			//
 			if (rule && rule.parentStyleSheet && rule.declarations) {
@@ -2915,7 +2915,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.cssTextIndentNegative = function cssTextIndentNegative(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		//
@@ -2950,7 +2950,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.cssImageSize = function cssImageSize(doc) {
 		//
-		var result = [], images = {};
+		let result = [], images = {};
 
 		//
 		try {
@@ -2997,7 +2997,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.jsSetTimeout = function jsSetTimeout(doc) {
 		//
-		var result = [], reg = new RegExp().compile("setTimeout\\(", "i");
+		let result = [], reg = new RegExp().compile("setTimeout\\(", "i");
 
 		//
 		try {
@@ -3053,7 +3053,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.jsSetInterval = function jsSetInterval(doc) {
 		//
-		var result = [], reg = new RegExp().compile("setInterval\\(", "i");
+		let result = [], reg = new RegExp().compile("setInterval\\(", "i");
 
 		//
 		try {
@@ -3102,7 +3102,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.jsWindowOpen = function jsWindowOpen(doc) {
 		//
-		var result = [], reg = RegExp().compile("(window|document)\\.open\\(", "i");
+		let result = [], reg = RegExp().compile("(window|document)\\.open\\(", "i");
 
 		//
 		try {
@@ -3151,7 +3151,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlNewWindow = function htmlNewWindow(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -3179,7 +3179,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.jsNewWindow = function jsNewWindow(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -3211,7 +3211,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.jsClickEvent = function jsClickEvent(doc) {
 		//
-		var result = [], types = ["button", "submit", "reset", "file", "image", "password", "radio", "checkbox"], tags = ["A", "AREA", "BUTTON", "INPUT"];
+		let result = [], types = ["button", "submit", "reset", "file", "image", "password", "radio", "checkbox"], tags = ["A", "AREA", "BUTTON", "INPUT"];
 
 		//
 		try {
@@ -3263,7 +3263,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.jsKeyboardOrMouseEvent = function jsKeyboardOrMouseEvent(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -3295,7 +3295,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.jsSpecificEvent = function jsSpecificEvent(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -3327,7 +3327,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.jsBlurOnFocusEvent = function jsBlurOnFocusEvent(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -3359,7 +3359,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.jsOnscroll = function jsOnscroll(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -3391,7 +3391,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.jsEvents = function jsEvents(doc) {
 		//
-		var result = [], nodes = [];
+		let result = [], nodes = [];
 
 		//
 		try {
@@ -3423,7 +3423,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.jsOnchangeLocation = function jsOnchangeLocation(doc) {
 		//
-		var result = [], reg = new RegExp().compile("\\.location[\\.=\\s]", "i"), exclusions = ["if", "else", "while", "for", "switch", "case", "try", "catch"];
+		let result = [], reg = new RegExp().compile("\\.location[\\.=\\s]", "i"), exclusions = ["if", "else", "while", "for", "switch", "case", "try", "catch"];
 
 		//
 		try {
@@ -3487,7 +3487,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.jsOnclick = function jsOnclick(doc) {
 		//
-		var result = [], tags = ["A", "BUTTON", "SELECT", "TEXTAREA", "INPUT"];
+		let result = [], tags = ["A", "BUTTON", "SELECT", "TEXTAREA", "INPUT"];
 
 		//
 		try {
@@ -3534,7 +3534,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.jsOndoubleclick = function jsOndoubleclick(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -3566,7 +3566,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.jsOnblurWoOnmouseout = function jsOnblurWoOnmouseout(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -3605,7 +3605,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.jsOnblurSubmit = function jsOnblurSubmit(doc) {
 		//
-		var result = [], reg = new RegExp().compile("\\.submit\\s?", "i"), exclusions = ["if", "else", "while", "for", "switch", "case", "try", "catch"];
+		let result = [], reg = new RegExp().compile("\\.submit\\s?", "i"), exclusions = ["if", "else", "while", "for", "switch", "case", "try", "catch"];
 
 		//
 		try {
@@ -3669,7 +3669,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.jsOnchangeSubmit = function jsOnchangeSubmit(doc) {
 		//
-		var result = [], reg = new RegExp().compile("\\.submit\\s?", "i"), exclusions = ["if", "else", "while", "for", "switch", "case", "try", "catch"];
+		let result = [], reg = new RegExp().compile("\\.submit\\s?", "i"), exclusions = ["if", "else", "while", "for", "switch", "case", "try", "catch"];
 
 		//
 		try {
@@ -3733,7 +3733,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.jsOnfocusBlur = function jsOnfocusBlur(doc) {
 		//
-		var result = [], reg = new RegExp().compile("\\.blur\\s?", "i"), exclusions = ["if", "else", "while", "for", "switch", "case", "try", "catch"];
+		let result = [], reg = new RegExp().compile("\\.blur\\s?", "i"), exclusions = ["if", "else", "while", "for", "switch", "case", "try", "catch"];
 
 		//
 		try {
@@ -3797,7 +3797,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.jsOnfocusSubmit = function jsOnfocusSubmit(doc) {
 		//
-		var result = [], reg = new RegExp().compile("\\.submit\\s?", "i"), exclusions = ["if", "else", "while", "for", "switch", "case", "try", "catch"];
+		let result = [], reg = new RegExp().compile("\\.submit\\s?", "i"), exclusions = ["if", "else", "while", "for", "switch", "case", "try", "catch"];
 
 		//
 		try {
@@ -3861,7 +3861,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.jsOnmouseoutSubmit = function jsOnmouseoutSubmit(doc) {
 		//
-		var result = [], reg = new RegExp().compile("\\.submit\\s?", "i"), exclusions = ["if", "else", "while", "for", "switch", "case", "try", "catch"];
+		let result = [], reg = new RegExp().compile("\\.submit\\s?", "i"), exclusions = ["if", "else", "while", "for", "switch", "case", "try", "catch"];
 
 		//
 		try {
@@ -3925,7 +3925,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.jsOnmouseoverSubmit = function jsOnmouseoverSubmit(doc) {
 		//
-		var result = [], reg = new RegExp().compile("\\.submit\\s?", "i"), exclusions = ["if", "else", "while", "for", "switch", "case", "try", "catch"];
+		let result = [], reg = new RegExp().compile("\\.submit\\s?", "i"), exclusions = ["if", "else", "while", "for", "switch", "case", "try", "catch"];
 
 		//
 		try {
@@ -3989,7 +3989,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.jsOnmouseoutWoOnblur = function jsOnmouseoutWoOnblur(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -4028,7 +4028,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.jsOnfocusWoOnmouseover = function jsOnfocusWoOnmouseover(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -4067,7 +4067,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.jsOnmouseoverWoOnfocus = function jsOnmouseoverWoOnfocus(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -4106,7 +4106,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.jsPopUp = function jsPopUp(doc) {
 		//
-		var result = [], reg = RegExp().compile("(window|document)\\.open\\s?", "i"), exclusions = ["if", "else", "while", "for", "switch", "case", "try", "catch"];
+		let result = [], reg = RegExp().compile("(window|document)\\.open\\s?", "i"), exclusions = ["if", "else", "while", "for", "switch", "case", "try", "catch"];
 
 		//
 		try {
@@ -4170,7 +4170,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.jsResize = function jsResize(doc) {
 		//
-		var result = [], reg = RegExp().compile("window\\.resizeTo\\s?", "i"), exclusions = ["if", "else", "while", "for", "switch", "case", "try", "catch"];
+		let result = [], reg = RegExp().compile("window\\.resizeTo\\s?", "i"), exclusions = ["if", "else", "while", "for", "switch", "case", "try", "catch"];
 
 		//
 		try {
@@ -4234,7 +4234,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.html404 = function html404(doc) {
 		//
-		var result = [];
+		let result = [];
 		var regApache = RegExp().compile("<h1>\\s*Not Found\\s*</h1>\\s*<p>\\s*The requested URL /\\w+ was not found on this server.\\s*</p>\\s*<hr>\\s*<address>\\s*Apache/.* \\(.*\\) Server at .* Port \\d+\\s*</address>", "i");
 		var regIIS = RegExp().compile("<h1>\\s*The page cannot be found\\s*</h1>[\\s|\\S]*<h2>\\s*HTTP Error 404 - File or directory not found.\\s*<br>\\s*Internet Information Services \\(IIS\\)\\s*</h2>\\s*<hr>\\s*<p>\\s*Technical Information \\(for support personnel\\)\\s*</p>", "i");
 		var regNginx = RegExp().compile("<center>\\s*<h1>\\s*404 Not Found\\s*</h1>\\s*</center>\\s*<hr>\\s*<center>\\s*nginx\\s*</center>", "i");
@@ -4274,7 +4274,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlFakeList = function htmlFakeList(doc) {
 		//
-		var result = [], reg1 = RegExp().compile("^(\\s*(-|\\*|\\+|#|>|&gt;|•|&bullet;).+\\s*(<br ?\?>)+){2,}$", "im"), reg2 = RegExp().compile("^(\\s*(-|\\*|\\+|#|>|&gt;|•|&bullet;).+\\s*){2,}$", "im");
+		let result = [], reg1 = RegExp().compile("^(\\s*(-|\\*|\\+|#|>|&gt;|•|&bullet;).+\\s*(<br ?\?>)+){2,}$", "im"), reg2 = RegExp().compile("^(\\s*(-|\\*|\\+|#|>|&gt;|•|&bullet;).+\\s*){2,}$", "im");
 
 		//
 		try {
@@ -4310,7 +4310,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlFakeOrderedList = function htmlFakeOrderedList(doc) {
 		//
-		var result = [], reg1 = RegExp().compile("^(\\s*(\\d|i|v|x)+\\s*(-|\\)|\\]).+\\s*(<br ?\?>)+){2,}$", "im"), reg2 = RegExp().compile("^(\\s*(\\d|i|v|x)+\\s*(-|\\)|\\]).+\\s*){2,}$", "im");
+		let result = [], reg1 = RegExp().compile("^(\\s*(\\d|i|v|x)+\\s*(-|\\)|\\]).+\\s*(<br ?\?>)+){2,}$", "im"), reg2 = RegExp().compile("^(\\s*(\\d|i|v|x)+\\s*(-|\\)|\\]).+\\s*){2,}$", "im");
 
 		//
 		try {
@@ -4346,7 +4346,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	function _htmlFieldWithoutTitleAndLabel(type, implicit) {
 		//
-		var result = [], fields = {}, i = 0, j = 0;
+		let result = [], fields = {}, i = 0, j = 0;
 
 		//
 		try {
@@ -4550,7 +4550,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlTdHeadersNotInThIds = function htmlTdHeadersNotInThIds(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -4598,7 +4598,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlImageWithAlternativeNotInContent = function htmlImageWithAlternativeNotInContent(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -4643,7 +4643,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlAreaWithAlternativeNotInContent = function htmlAreaWithAlternativeNotInContent(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -4688,7 +4688,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlAppletWithAlternativeNotInContent = function htmlAppletWithAlternativeNotInContent(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -4733,7 +4733,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	function _htmlHeaderWithTermsNotInContent(level) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -4837,7 +4837,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlH1 = function htmlH1(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -4867,7 +4867,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlH2 = function htmlH2(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -4897,7 +4897,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlH3 = function htmlH3(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -4927,7 +4927,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlH4 = function htmlH4(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -4957,7 +4957,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlH5 = function htmlH5(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -4987,7 +4987,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlH6 = function htmlH6(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -5017,7 +5017,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlImageNotIndexable = function htmlImageNotIndexable(doc) {
 		//
-		var result = [], formats = ["image/png", "image/gif", "image/jpeg", "image/svg+xml"], images = [];
+		let result = [], formats = ["image/png", "image/gif", "image/jpeg", "image/svg+xml"], images = [];
 
 		//
 		try {
@@ -5063,7 +5063,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlUrlWithUnsafeChars = function htmlUrlWithUnsafeChars(doc) {
 		//
-		var result = [], reg = new RegExp().compile("[^a-z0-9\\$\\-\\_\\.\\+\\!\\*\\'\\(\\)\\,\\&\\/\\:\\;\\=\\?\\@\\#\\%\\[\\]]", "i");
+		let result = [], reg = new RegExp().compile("[^a-z0-9\\$\\-\\_\\.\\+\\!\\*\\'\\(\\)\\,\\&\\/\\:\\;\\=\\?\\@\\#\\%\\[\\]]", "i");
 
 		//
 		try {
@@ -5100,7 +5100,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlUrlWithTermsNotInTitle = function htmlUrlWithTermsNotInTitle(doc) {
 		//
-		var result = [];
+		let result = [];
 		var reg1 = new RegExp().compile("[\\-\\_\\.\\+\\!\\*\\'\\(\\)\\,\\&\\/\\:\\;\\=\\?\\@\\#\\%\\[\\]]", "ig");
 		var url = doc.location.href.toLowerCase().replace(/[àáâãäå]/ig, "a").replace(/æ/ig, "ae").replace(/ç/ig, "c").replace(/[èéêë]/ig, "e").replace(/[ìíîï]/ig, "i").replace(/ñ/ig, "n").replace(/[òóôõö]/ig, "o").replace(/œ/ig, "oe").replace(/[ùúûü]/ig, "u").replace(/[ýÿ]/ig, "y");
 		var terms = url.split(reg1);
@@ -5139,7 +5139,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlLabelForNotInFieldIds = function htmlLabelForNotInFieldIds(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -5181,7 +5181,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlImageSize = function htmlImageSize(doc) {
 		//
-		var result = [], images = {};
+		let result = [], images = {};
 
 		//
 		try {
@@ -5225,7 +5225,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlNonHttpLinks = function htmlNonHttpLinks(doc) {
 		//
-		var result = [], protocols = ["http:", "https:", "javascript:"];
+		let result = [], protocols = ["http:", "https:", "javascript:"];
 
 		//
 		try {
@@ -5255,7 +5255,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlNonHttpAreaLinks = function htmlNonHttpAreaLinks(doc) {
 		//
-		var result = [], protocols = ["http:", "https:", "javascript:"];
+		let result = [], protocols = ["http:", "https:", "javascript:"];
 
 		//
 		try {
@@ -5285,7 +5285,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlImageAnimatedNotInButtonOrA = function htmlImageAnimatedNotInButtonOrA(doc) {
 		//
-		var result = [], animated = [];
+		let result = [], animated = [];
 
 		//
 		try {
@@ -5326,7 +5326,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlScript = function htmlScript(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -5359,7 +5359,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlLinksTextWithInvalidTitle = function htmlLinksTextWithInvalidTitle(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -5392,7 +5392,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlLinksTextInvalid = function htmlLinksTextInvalid(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -5425,7 +5425,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlLinksTextNotUnique = function htmlLinksTextNotUnique(doc) {
 		//
-		var result = [], links = {};
+		let result = [], links = {};
 
 		//
 		try {
@@ -5498,7 +5498,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlLinksImageWithInvalidAlt = function htmlLinksImageWithInvalidAlt(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -5529,7 +5529,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlLinksImageWithInvalidTitle = function htmlLinksImageWithInvalidTitle(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -5560,7 +5560,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlLinksImageNotUnique = function htmlLinksImageNotUnique(doc) {
 		//
-		var result = [], links = {};
+		let result = [], links = {};
 
 		//
 		try {
@@ -5603,7 +5603,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlLinksWithInvalidText = function htmlLinksWithInvalidText(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -5634,7 +5634,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlLinksNotUnique = function htmlLinksNotUnique(doc) {
 		//
-		var result = [], links = {};
+		let result = [], links = {};
 
 		//
 		try {
@@ -5678,7 +5678,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlAreaWithInvalidAlt = function htmlAreaWithInvalidAlt(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -5707,7 +5707,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.htmlAreaNotUnique = function htmlAreaNotUnique(doc) {
 		//
-		var result = [], links = {};
+		let result = [], links = {};
 
 		//
 		try {
@@ -5748,7 +5748,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.syndicationCache = function syndicationCache(doc) {
 		//
-		var result = [], syNS = "http://purl.org/rss/1.0/modules/syndication/", mime = ["application/rss+xml", "application/atom+xml", "application/xml", "text/xml"];
+		let result = [], syNS = "http://purl.org/rss/1.0/modules/syndication/", mime = ["application/rss+xml", "application/atom+xml", "application/xml", "text/xml"];
 
 		//
 		try {
@@ -5822,7 +5822,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.syndicationAbsoluteLinks = function syndicationAbsoluteLinks(doc) {
 		//
-		var result = [], mime = ["application/rss+xml", "application/atom+xml", "application/xml", "text/xml"];
+		let result = [], mime = ["application/rss+xml", "application/atom+xml", "application/xml", "text/xml"];
 
 		//
 		try {
@@ -5892,7 +5892,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.syndicationPresence = function syndicationPresence(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -5925,7 +5925,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.syndicationSummary = function syndicationSummary(doc) {
 		//
-		var result = [], mime = ["application/rss+xml", "application/atom+xml", "application/xml", "text/xml"];
+		let result = [], mime = ["application/rss+xml", "application/atom+xml", "application/xml", "text/xml"];
 
 		//
 		try {
@@ -5982,7 +5982,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.resDownloadable = function resDownloadable(doc) {
 		//
-		var result = [], dl_families = ["application"], dl_types = ["msword", "pdf", "zip", "octet-stream"], dl_reg = new RegExp().compile("^vnd\.(oasis\.opendocument\.|\.ms-|openxmlformats-officedocument\.)", "i");
+		let result = [], dl_families = ["application"], dl_types = ["msword", "pdf", "zip", "octet-stream"], dl_reg = new RegExp().compile("^vnd\.(oasis\.opendocument\.|\.ms-|openxmlformats-officedocument\.)", "i");
 
 		//
 		try {
@@ -6016,7 +6016,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.resPdf = function resPdf(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -6050,7 +6050,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	window.httpWithAndWoWww = function httpWithAndWoWww(doc) {
 		//
-		var result = [];
+		let result = [];
 
 		//
 		try {
@@ -6093,7 +6093,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	function _sameLabelsTitles2(type) {
 		//
-		var result = [], fields = {}, i = 0, j = 0;
+		let result = [], fields = {}, i = 0, j = 0;
 
 		//
 		try {
@@ -6239,7 +6239,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 	 */
 	function _sameLabelsTitles(type) {
 		//
-		var result = [], labels = [], titles = [], nodes = [];
+		let result = [], labels = [], titles = [], nodes = [];
 
 		//
 		try {
