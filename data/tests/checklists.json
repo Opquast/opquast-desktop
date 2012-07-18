@@ -1,4 +1,4 @@
-var checklists = {
+{
 	"10240": {
 		"goal": "<ul><li><h5>1.4.3 : Contraste (minimum) : (AA)</h5><br />Rendre perceptibles les contenus visuels ind\u00e9pendamment de la capacit\u00e9 \u00e0 percevoir les contrastes de couleurs. <br><br>La\r\nsaturation et la teinte n'ont que peu d'incidence pour les personnes ayant des d\u00e9ficiences de perception des couleurs&nbsp;\r\n(Knoblauch et al., 1991). Elle peut par contre affecter la\r\nperception de la luminosit\u00e9 des couleurs entre elles et donc le\r\ncontraste per\u00e7u entre une couleur de premier plan et d'arri\u00e8re plan.</li><li><h5>1.4.6 : Contraste (am\u00e9lior\u00e9) : (AAA)</h5><br />Rendre perceptibles les contenus visuels ind\u00e9pendamment de la capacit\u00e9 \u00e0 percevoir les contrastes de couleurs.<br><br>La\r\nsaturation et la teinte n'ont que peu d'incidence pour les personnes ayant des d\u00e9ficiences de perception des couleurs&nbsp;\r\n(Knoblauch et al., 1991). Elle peut par contre affecter la\r\nperception de la luminosit\u00e9 des couleurs entre elles et donc le\r\ncontraste per\u00e7u entre une couleur de premier plan et d'arri\u00e8re plan.</li><li><h5>1.4.8 : Pr\u00e9sentation visuelle : (AAA)</h5><br />Rendre les contenus textuels visuellement perceptibles sans interf\u00e9rence dans leur lisibilit\u00e9 due \u00e0 leur pr\u00e9sentation.<br><br>Les personnes ayant des d\u00e9ficiences cognitives, du langage, d'apprentissage et certaines personnes ayant une d\u00e9ficience visuelle ne peuvent lire et comprendre un texte lorsque celui-ci est pr\u00e9senter d'une fa\u00e7on qui rend sa lecture difficile sans qu'il ne soit possible de modifier cette pr\u00e9sentation.</li></ul>",
 		"checklist": {
@@ -13499,4 +13499,4 @@ var checklists = {
 		"thema": "Pr\u00e9sentation",
 		"name": "[PR\u00e9]-14"
 	}
-};
+}
