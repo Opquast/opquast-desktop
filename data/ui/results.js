@@ -60,13 +60,8 @@
             window._showInfo(_("oqs.analyze_info",
                 _date.toLocaleFormat(_("oqs.date_format")), _date.toLocaleTimeString(), Math.round(tests.timer*10)/10
             ));
-
+            
             for each (var result in tests.oaa_results) {
-                if (!(result.id in window.checklists)) {
-                    continue;
-                }
-
-                var criterion = window.checklists[result.id];
                 var results = {
                     "c" : _("oqs.pass"),
                     "nc" : _("oqs.fail"),
@@ -80,10 +75,10 @@
                 // @formatter:off
                 tr.append(
                     '<td><img src="img/' + result.result + '.png" alt="' + results[result.result] + '" /><span style="display:none">' + results[result.result] + '</span></td>',
-                    '<td>' + criterion.checklist.name + '</td>',
-                    '<td>' + criterion.name + '</td>',
-                    '<td>' + $.trim(criterion.thema) + '</td>',
-                    '<td>' + criterion.description + '</td>',
+                    '<td>' + result.criterion.checklist.name + '</td>',
+                    '<td>' + result.criterion.name + '</td>',
+                    '<td>' + $.trim(result.criterion.thema) + '</td>',
+                    '<td>' + result.criterion.description + '</td>',
                     '<td>' + result.time + '</td>'
                 );
                 // @formatter:on
@@ -93,12 +88,12 @@
                 tr.data("comment", result.comment);
                 tr.data("is_open", false);
 
-                var value = criterion.checklist.name;
+                var value = result.criterion.checklist.name;
                 if ($.inArray(value, values1) == -1) {
                     values1.push(value);
                 }
 
-                var value2 = $.trim(criterion.thema);
+                var value2 = $.trim(result.criterion.thema);
                 if ($.inArray(value2, values2) == -1) {
                     values2.push(value2);
                 }
