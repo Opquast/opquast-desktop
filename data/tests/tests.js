@@ -4702,7 +4702,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
             //
             $("img[alt!='']").each(function() {
                 //
-                var content = $("body").text().trim().toLowerCase().split(" ");
+                var content = $.unique(_getAllTextWoAlt(doc.body).split(" "));
                 var terms = $.trim($(this).attr("alt")).toLowerCase().split(" ");
                 var found = false;
 
@@ -5129,7 +5129,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
      */
     window.htmlImageNotIndexable = function htmlImageNotIndexable(doc) {
         //
-        var result = [], formats = ["image/png", "image/gif", "image/jpeg", "image/svg+xml"], images = [];
+        var result = [], formats = ["image/png", "image/gif", "image/jpeg", "image/jpg", "image/svg+xml"], images = [];
 
         //
         try {
@@ -6362,7 +6362,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("_sameLabelsTitles", err);
+            logger.error("_sameLabelsTitles2", err);
             result = false;
         }
 

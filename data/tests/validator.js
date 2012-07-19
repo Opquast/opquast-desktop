@@ -436,7 +436,8 @@ var logger;
             //
             return result;
         }
-    }
+    }
+
     /**
      *
      * @param doc
@@ -691,7 +692,7 @@ var logger;
             "path" : _getSelector(node),
             "text" : node.outerHTML.replace(/</g, "&lt;").replace(/>/g, "&gt;").substr(0, 200)
         }
-    }
+    }
     /**
      *
      * @param doc
@@ -709,7 +710,8 @@ var logger;
     window._getInlineCssDetails = function _getInlineCssDetails(rule, i, item) {
         //
         return "style en ligne sur " + _getXPath(item) + " : " + rule.declarations[i]["parsedCssText"];
-    }
+    }
+
     /**
      *
      * @param doc
@@ -731,7 +733,7 @@ var logger;
      * @param url
      * @return
      */
-    function _absolutizeURL(url) {
+    window._absolutizeURL = function _absolutizeURL(url) {
         //
         var a = document.createElement('a');
         a.href = url;
@@ -745,7 +747,7 @@ var logger;
      * @param node
      * @return
      */
-    function _getAllText(node) {
+    window._getAllText = function _getAllText(node) {
         //
         if (node == undefined) {
             return "";
@@ -774,6 +776,52 @@ var logger;
                 else if (_node.nodeType == Node.TEXT_NODE) {
                     text += " " + $.trim(_node.nodeValue);
                 }
+
+                //
+                return NodeFilter.FILTER_ACCEPT;
+            }
+        }, false);
+
+        //
+        while (treeWalker.nextNode()) {
+        }
+
+        //
+        tmp = $.trim(text.toLowerCase());
+        /*// caching
+        $(node).data("_all_text", tmp);
+        }*/
+
+        //
+        return tmp;
+    }
+    
+    /**
+     *
+     * @param node
+     * @return
+     */
+    window._getAllTextWoAlt = function _getAllTextWoAlt(node) {
+        //
+        if (node == undefined) {
+            return "";
+        }
+
+        //
+        var tmp;
+
+        /*// cached
+        if($(node).data("_all_text")) {
+        tmp = $(node).data("_all_text");
+        }
+
+        // not cached
+        else {*/
+        //
+        var text = "";
+        var treeWalker = document.createTreeWalker(node, NodeFilter.SHOW_TEXT, {
+            acceptNode: function(_node) {
+                text += " " + $.trim(_node.nodeValue);
 
                 //
                 return NodeFilter.FILTER_ACCEPT;
@@ -1086,7 +1134,8 @@ var logger;
 
         //
         return false;
-    }
+    }
+
     /**
      * Analyse the page
      *
@@ -1118,7 +1167,8 @@ var logger;
 
         //
         return false;
-    }
+    }
+
     /**
      * Test all the criteria
      *
