@@ -35,6 +35,7 @@
  * the terms of any one of the MPL, the GPL or the LGPL.
  *
  * ***** END LICENSE BLOCK ***** */
+
 const esl = Components.classes["@mozilla.org/eventlistenerservice;1"].getService(Components.interfaces.nsIEventListenerService);
 
 (function() {
@@ -63,4 +64,4 @@ const esl = Components.classes["@mozilla.org/eventlistenerservice;1"].getService
     } while (tw.nextNode());
 
     sidecar.events = events;
-})();
+})(jQueryMephisto);
