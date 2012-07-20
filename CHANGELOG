@@ -1,3 +1,8 @@
+2012-07-19 - Version 0.2.2
+
+- Lot of fixes for AMO conformance
+- Improved tests
+
 2012-07-05 - Version 0.2.1
 
 - Fixed a bug that prevented help page display on install
