@@ -216,11 +216,11 @@ var logger;
     // ------------------------------------------
 
     // prototypes
-    String.prototype.startsWith = function(str) {
+    String.startsWith = function(str) {
         return (this.match("^" + str) == str);
     };
     //
-    String.prototype.endsWith = function(str) {
+    String.endsWith = function(str) {
         return (this.match(str + "$") == str);
     };
     // Array Remove - By John Resig (MIT Licensed)

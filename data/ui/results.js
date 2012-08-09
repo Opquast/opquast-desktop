@@ -45,10 +45,10 @@ var table;
         window.tests = tests;
 
         // Localize column titles
-        $("#test_result thead th:eq(0)").text(_("oqs.all_results"));
-        $("#test_result thead th:eq(1)").text(_("oqs.all_checklists"));
+        $("#test_result thead th:eq(0)").text(_("oqs.results"));
+        $("#test_result thead th:eq(1)").text(_("oqs.checklists"));
         $("#test_result thead th:eq(2)").text(_("oqs.references"));
-        $("#test_result thead th:eq(3)").text(_("oqs.all_themas"));
+        $("#test_result thead th:eq(3)").text(_("oqs.themas"));
         $("#test_result thead th:eq(4)").text(_("oqs.test_label"));
         $("#test_result thead th:eq(5)").text(_("oqs.test_duration"));
 
@@ -73,12 +73,30 @@ var table;
 
                 // @formatter:off
                 tr.append(
-                    '<td headers="hResult"><img src="img/' + result.result + '.png" alt="' + results[result.result] + '" /><span style="display:none">' + results[result.result] + '</span></td>',
-                    '<td headers="hChecklist">' + result.criterion.checklist.name + '</td>',
-                    '<td headers="hRef">' + result.criterion.name + '</td>',
-                    '<td headers="hThema">' + $.trim(result.criterion.thema) + '</td>',
-                    '<td headers="hLabel">' + result.criterion.description + '</td>',
-                    '<td headers="hDuration">' + result.time + '</td>'
+                    $("<td></td>")
+                        .attr("headers", "hResult")
+                        .append(
+                            $("<img/>")
+                                .attr("src", "img/" + result.result + ".png")
+                                .attr("alt", results[result.result]),
+                            $("<span></span>")
+                                .attr("style", "display:none").text(results[result.result])
+                        ),
+                    $("<td></td>")
+                        .attr("headers", "hChecklist")
+                        .text(result.criterion.checklist.name),
+                    $("<td></td>")
+                        .attr("headers", "hRef")
+                        .text(result.criterion.name),
+                    $("<td></td>")
+                        .attr("headers", "hThema")
+                        .text($.trim(result.criterion.thema)),
+                    $("<td></td>")
+                        .attr("headers", "hLabel")
+                        .text(result.criterion.description),
+                    $("<td></td>")
+                        .attr("headers", "hDuration")
+                        .text(result.time)
                 );
                 // @formatter:on
 
@@ -100,14 +118,10 @@ var table;
                     return true;
                 }),
                 sortable: ["hResult", "hChecklist", "hRef", "hThema"],
-                filterable: ["hResult", "hChecklist"]
+                filterable: ["hResult", "hChecklist", "hThema"]
             });
         } catch(e) {
             console.error(e);
         };
-    };
-
-    window.resultSearch = function(aQuery) {
-        //$("#test_result").dataTable().fnFilter(aQuery);
     };
 })(jQuery);
