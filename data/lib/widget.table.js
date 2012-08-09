@@ -40,8 +40,10 @@
 
                     div.mouseover(function() {
                         $(this).css("cursor", "pointer");
-                    }).click(function() {
-                        self._sortRows(id, $("span.ui-icon", div).hasClass("ui-icon-carat-1-n"));
+                    }).click(function(evt) {
+                        if($.inArray(evt.target.tagName, ["SELECT", "OPTION"]) == -1) {
+                            self._sortRows(id, $("span.ui-icon", div).hasClass("ui-icon-carat-1-n"));
+                        }
                     });
                 }
             });
@@ -71,7 +73,6 @@
                     select.append($('<option class="optAll">' + $("div", this).text() + "</option>").click(function(evt) {
                         self._activeFilters[id] = "";
                         self._filterRows();
-                        evt.stopPropagation();
                     }));
                     filters.sort().map(function(text) {
                         select.append($("<option>" + text + "</option>").click(function() {
@@ -89,7 +90,8 @@
                 var aOut = $('<tr class="details"><td colspan="1"></td></tr>'),
                     aDetails = $('<ul></ul>'), 
                     aFeedback = $('<a href="#">' + _("oqs.report_test_problem") + '</a>'), 
-                    nodes = $(this).data("details");
+                    nodes = $(this).data("details"),
+                    tr = this;
 
                 for each (var node in nodes) {
                     var a;
@@ -116,9 +118,9 @@
                 aFeedback.click(function(evt) {
                     evt.preventDefault();
                     _testFeedback({
-                        test_id: $(self).data("test_id"),
-                        test_name: $("td", self).eq(2).text(),
-                        checklist: $("td", self).eq(1).text()
+                        test_id: $(tr).data("test_id"),
+                        test_name: $("td", tr).eq(2).text(),
+                        checklist: $("td", tr).eq(1).text()
                     });
                 });
                 $("td", aOut).append('<h2>' + _("oqs.feedback") + "</h2>");
