@@ -216,13 +216,18 @@ var logger;
     // ------------------------------------------
 
     // prototypes
-    String.startsWith = function(str) {
-        return (this.match("^" + str) == str);
-    };
-    //
-    String.endsWith = function(str) {
-        return (this.match(str + "$") == str);
-    };
+    if (typeof String.prototype.startsWith != 'function') {
+        String.startsWith = function(str) {
+            return this.slice(0, str.length) == str;
+        };
+    }
+
+    if (typeof String.prototype.endsWith != 'function') {
+        String.endsWith = function(str) {
+            return this.slice(-str.length) == str;
+        };
+    }
+
     // Array Remove - By John Resig (MIT Licensed)
     Array.remove = function(array, from, to) {
         var rest = array.slice((to || from) + 1 || array.length);
@@ -257,41 +262,41 @@ var logger;
      * @version 1.0
      */
     /*function initJson() {
-        //
-        try {
-            //
-            if (tests === null || criteria === null) {
-                // load criteria and tests
-                $.get(api_url + "checklists/" + json_checklist + "/criteria/", function(data) {
-                    var _tmp = JSON.parse(data);
+    //
+    try {
+    //
+    if (tests === null || criteria === null) {
+    // load criteria and tests
+    $.get(api_url + "checklists/" + json_checklist + "/criteria/", function(data) {
+    var _tmp = JSON.parse(data);
 
-                    //
-                    if (_tmp.test) {
-                        tests = _tmp.test;
-                    } else {
-                        logger.log('Init Error', 'tests not found');
-                    }
+    //
+    if (_tmp.test) {
+    tests = _tmp.test;
+    } else {
+    logger.log('Init Error', 'tests not found');
+    }
 
-                    //
-                    if (_tmp.criteria) {
-                        criteria = _tmp.criteria;
-                    } else {
-                        logger.log('Init Error', 'criteria not found');
-                    }
-                });
-            }
+    //
+    if (_tmp.criteria) {
+    criteria = _tmp.criteria;
+    } else {
+    logger.log('Init Error', 'criteria not found');
+    }
+    });
+    }
 
-            //
-            return true;
-        }
+    //
+    return true;
+    }
 
-        //
-        catch (err) {
-            logger.error("initJson", err);
-        }
+    //
+    catch (err) {
+    logger.error("initJson", err);
+    }
 
-        //
-        return false;
+    //
+    return false;
     }*/
 
     /**
@@ -355,8 +360,7 @@ var logger;
                 "contentType": ""
             }
         }
-    }
-    /**
+    }    /**
      *
      * @param doc
      * @return
@@ -437,7 +441,6 @@ var logger;
             return result;
         }
     }
-
     /**
      *
      * @param doc
@@ -689,8 +692,8 @@ var logger;
 
         //
         return {
-            "path" : _getSelector(node),
-            "text" : node.outerHTML.replace(/</g, "&lt;").replace(/>/g, "&gt;").substr(0, 200)
+            "path": _getSelector(node),
+            "text": node.outerHTML.replace(/</g, "&lt;").replace(/>/g, "&gt;").substr(0, 200)
         }
     }
     /**
@@ -701,8 +704,7 @@ var logger;
     window._getCssDetails = function _getCssDetails(rule, i) {
         //
         return rule.parentStyleSheet._extra["href"] + " (ligne " + rule.currentLine + ") : " + rule.mSelectorText + " {" + rule.declarations[i]["parsedCssText"] + "}";
-    }
-    /**
+    }    /**
      *
      * @param doc
      * @return
@@ -711,7 +713,6 @@ var logger;
         //
         return "style en ligne sur " + _getXPath(item) + " : " + rule.declarations[i]["parsedCssText"];
     }
-
     /**
      *
      * @param doc
@@ -727,7 +728,6 @@ var logger;
         //
         return "entête HTTP de " + url + " :" + _headers;
     }
-
     /**
      *
      * @param url
@@ -741,7 +741,6 @@ var logger;
         //
         return a.href;
     }
-
     /**
      *
      * @param node
@@ -795,7 +794,6 @@ var logger;
         //
         return tmp;
     }
-    
     /**
      *
      * @param node
@@ -841,7 +839,6 @@ var logger;
         //
         return tmp;
     }
-
     /**
      * Get a page in the pages stack
      *
@@ -1135,7 +1132,6 @@ var logger;
         //
         return false;
     }
-
     /**
      * Analyse the page
      *
@@ -1168,7 +1164,6 @@ var logger;
         //
         return false;
     }
-
     /**
      * Test all the criteria
      *
