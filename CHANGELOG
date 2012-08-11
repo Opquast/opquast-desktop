@@ -1,3 +1,8 @@
+2012-08-11 - Version 0.2.4
+
+- Removed datatables
+- Fixed jquery-ui version for AMO
+
 2012-07-19 - Version 0.2.3
 
 - Removed changelog on upgrade (for now)
