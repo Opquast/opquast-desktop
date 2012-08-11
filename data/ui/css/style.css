@@ -71,6 +71,7 @@ button.launch {
     color: #ddd;
     font-size: 1.2em;
 }
+
 button.launch span {
     display: inline-block;
     width: 23px;
@@ -79,18 +80,19 @@ button.launch span {
     margin-right: 6px;
     background: url(../img/launch-big.png) no-repeat 0 0;
 }
+
 button.launch:hover, button.launch:active {
     background: -moz-linear-gradient(hsl(209, 10%, 28%), hsl(210, 14%, 8%)) no-repeat padding-box;
     color: #fff;
 }
+
 button.launch:active {
     border-color: #000;
 }
+
 button.launch:hover span, button.launch:active span {
     background-position: -25px 0;
 }
-
-
 
 #test_result {
     border-collapse: collapse;
@@ -101,65 +103,106 @@ button.launch:hover span, button.launch:active span {
 #test_result thead th {
     border-top: none;
 }
+
 #test_result tr th:last-child, #test_result tr td:last-child {
     border-right: none;
 }
+
 #test_result tr th:first-child, #test_result tr td:first-child {
     border-left: none;
 }
 
-#test_result th, .dataTables_info {
+#test_result th, #test_result tfoot, .dataTables_info {
     background-color: #dfdcd4;
     color: #000;
 }
+
+#test_result tfoot td {
+    text-align: center;
+}
+
 #test_result th, #test_result td {
     border: 1px solid #d3cfc4;
-}
-
-.dataTable tbody>tr.odd {
-    background-color: #fff;
-}
-.dataTable tbody>tr.even {
-    background-color: #fafaf9;
-}
-
-.dataTable tbody>tr.odd>td.sorting_1 {
-    background-color: #f4f3f1;
-}
-.dataTable tbody>tr.even>td.sorting_1 {
-    background-color: #f0efeb;
-}
-
-.dataTables_info {
-    width: 100%;
-    text-align: center;
-    font-weight: bold;
-    float: none;
-    padding: 0.5em 0;
 }
 
 #test_result tbody td img {
     vertical-align: middle;
 }
+
 #test_result img.opener {
     margin-right: 16px;
     cursor: pointer;
 }
 
-#test_result div.details h2 {
-    font: bold 1.4em Helvetica,Arial,sans-serif;
+#test_result .details h2 {
+    font: bold 1.4em Helvetica, Arial, sans-serif;
     color: #666;
     margin: 0.5em 0 0 0;
 }
 
-#test_result div.details ul {
+#test_result .details ul {
     margin: 1em 0;
     padding-left: 40px;
 }
-#test_result div.details li {
+
+#test_result .details li {
     margin: 0.5em 0;
 }
-#test_result div.details a {
+
+#test_result .details a {
     color: #06c;
     text-decoration: underline;
 }
+
+select {
+    width: 10em;
+}
+
+td.sorted {
+    background-color: #D3D6FF;
+}
+
+tr.odd {
+    background-color: #fff;
+}
+ 
+tr.odd > td.sorted {
+    background-color: #f4f3f1;
+}
+
+tr.even {
+    background-color: #fafaf9;
+}
+
+tr.even > td.sorted {
+    background-color: #f0efeb;
+}
+
+td[headers="hResult"] span.ui-icon {
+    float: left;
+    margin-right: 10px;
+}
+
+/*.dataTable tbody > tr.odd {
+ background-color: #fff;
+ }
+
+ .dataTable tbody > tr.even {
+ background-color: #fafaf9;
+ }
+
+ .dataTable tbody > tr.odd > td.sorting_1 {
+ background-color: #f4f3f1;
+ }
+
+ .dataTable tbody > tr.even > td.sorting_1 {
+ background-color: #f0efeb;
+ }
+
+ .dataTables_info {
+ width: 100%;
+ text-align: center;
+ font-weight: bold;
+ float: none;
+ padding: 0.5em 0;
+ }*/
