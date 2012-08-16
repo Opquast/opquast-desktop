@@ -7622,8 +7622,8 @@
                 "result": "na"
             },
             "ontrue": {
-                "comment": "la page est rafra\u00eechie ou redirig\u00e9e automatiquement",
-                "result": "nc"
+                "comment": "la page est peut-être rafra\u00eechie ou redirig\u00e9e automatiquement",
+                "result": "i"
             }
         },
         "META_REFRESH_SHORT": {
@@ -12728,12 +12728,12 @@
     "620": {
         "CSS_HOVER_LINKS": {
             "onfalse": {
-                "comment": "aucun style pouvant changer la mise en page des liens au survol (\u00e0 v\u00e9rifier)",
-                "result": "i"
+                "comment": "aucun style pouvant changer la mise en page des liens au survol",
+                "result": "c"
             },
             "ontrue": {
                 "comment": "au moins un style pouvant changer la mise en page des liens au survol",
-                "result": "nc"
+                "result": "i"
             }
         }
     },
@@ -13404,12 +13404,12 @@
     "709": {
         "CSS_UPPERCASE": {
             "onfalse": {
-                "comment": "aucune suite de majuscules d\u00e9coratives",
+                "comment": "aucune suite de majuscules",
                 "result": "c"
             },
             "ontrue": {
-                "comment": "au moins une suite de majuscules d\u00e9coratives",
-                "result": "nc"
+                "comment": "au moins une suite de majuscules",
+                "result": "i"
             }
         }
     },
