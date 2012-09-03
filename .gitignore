@@ -2,3 +2,5 @@
 /design
 *.xpi
 /user
+test.rdf
+out.rdf

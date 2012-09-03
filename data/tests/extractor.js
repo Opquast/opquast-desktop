@@ -193,7 +193,8 @@ var links = [], images = [], body;
 		'title' : title,
 		'links' : links,
 		'images' : images,
-		'stats' : stats
+		'stats' : stats,
+		'resources': sidecar.resources
 	};
 
 	$.extend(window._extractor_result, result);

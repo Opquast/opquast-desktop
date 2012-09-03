@@ -94,34 +94,41 @@ button.launch:hover span, button.launch:active span {
     background-position: -25px 0;
 }
 
-#test_result {
+#test_result,
+#projects {
     border-collapse: collapse;
     width: 100%;
     margin: 0;
 }
 
-#test_result thead th {
+#test_result thead th,
+#projects thead th {
     border-top: none;
 }
 
-#test_result tr th:last-child, #test_result tr td:last-child {
+#test_result tr th:last-child, #test_result tr td:last-child,
+#projects tr th:last-child, #projects tr td:last-child, {
     border-right: none;
 }
 
-#test_result tr th:first-child, #test_result tr td:first-child {
+#test_result tr th:first-child, #test_result tr td:first-child,
+#projects tr th:first-child, #projects tr td:first-child {
     border-left: none;
 }
 
-#test_result th, #test_result tfoot, .dataTables_info {
+#test_result th, #test_result tfoot,
+#projects th, #projects tfoot {
     background-color: #dfdcd4;
     color: #000;
 }
 
-#test_result tfoot td {
+#test_result tfoot td,
+#projects tfoot td {
     text-align: center;
 }
 
-#test_result th, #test_result td {
+#test_result th, #test_result td,
+#projects th, #projects td {
     border: 1px solid #d3cfc4;
 }
 
@@ -182,27 +189,3 @@ td[headers="hResult"] span.ui-icon {
     float: left;
     margin-right: 10px;
 }
-
-/*.dataTable tbody > tr.odd {
- background-color: #fff;
- }
-
- .dataTable tbody > tr.even {
- background-color: #fafaf9;
- }
-
- .dataTable tbody > tr.odd > td.sorting_1 {
- background-color: #f4f3f1;
- }
-
- .dataTable tbody > tr.even > td.sorting_1 {
- background-color: #f0efeb;
- }
-
- .dataTables_info {
- width: 100%;
- text-align: center;
- font-weight: bold;
- float: none;
- padding: 0.5em 0;
- }*/
