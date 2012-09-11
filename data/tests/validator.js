@@ -217,13 +217,13 @@ var logger;
 
     // prototypes
     if (typeof String.prototype.startsWith != 'function') {
-        String.startsWith = function(str) {
+        String.prototype.startsWith = function(str) {
             return this.slice(0, str.length) == str;
         };
     }
 
     if (typeof String.prototype.endsWith != 'function') {
-        String.endsWith = function(str) {
+        String.prototype.endsWith = function(str) {
             return this.slice(-str.length) == str;
         };
     }

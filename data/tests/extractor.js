@@ -36,8 +36,7 @@
  *
  * ***** END LICENSE BLOCK ***** */
 
-const {Cc, Ci} = require("chrome");
-const xhrMephisto = Cc["@mozilla.org/xmlextras/xmlhttprequest;1"].getService(Ci.nsIXMLHttpRequest);
+const xhrMephisto = Components.classes["@mozilla.org/xmlextras/xmlhttprequest;1"].getService(Components.interfaces.nsIXMLHttpRequest);
 
 var links = [], images = [], body;
 
@@ -194,7 +193,8 @@ var links = [], images = [], body;
 		'title' : title,
 		'links' : links,
 		'images' : images,
-		'stats' : stats
+		'stats' : stats,
+		'resources': sidecar.resources
 	};
 
 	$.extend(window._extractor_result, result);
