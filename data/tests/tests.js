@@ -910,40 +910,35 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
      */
     window.cssHoverLinks = function cssHoverLinks(doc) {
         //
-        var result = [], reg = new RegExp().compile("(^| )(a((#|\\.)[^ ]+)?|(#|\\.)[^ ]+):hover$", "i"), reg2 = new RegExp().compile("^(font|border|margin|padding)-[-a-z]+$", "i");
+        var result = [], reg = new RegExp().compile("(^| )(a((#|\\.)[^ ]+)?|(#|\\.)[^ ]+):hover$", "i"), reg2 = new RegExp().compile("^([-a-z]+-)?(height|width)$", "i"),
+            reg3 = new RegExp().compile("^(bottom|display|float|left|letter-spacing|position|right|text-align|text-indent|top)$", "i"),
+            reg4 = new RegExp().compile("^(font|border|margin|outline|padding)(-[-a-z]+)?$", "i");
 
         //
         function callback(rule) {
             //
-            var result = [], rules = [];
+            var result = [];
 
             //
             if (rule && rule.parentStyleSheet && rule.declarations) {
                 //
                 for (var i = 0; i < rule.declarations.length; i++) {
+                    var selectors = rule.mSelectorText.split(",").map(function(element){
+                        return $.trim(element);
+                    });
+                    
                     //
-                    if (rule.mSelectorText.match(reg)) {
+                    for each (var selector in selectors) {
                         //
-                        for each (var selector in rule.mSelectorText.split(",")) {
+                        if (selector.match(reg)) {
                             //
-                            if (selector.match(reg)) {
-                                //
-                                var selectorWoHover = selector.replace(/:hover$/, "");
+                            var selectorOut = selector.replace(/:hover$/, ""), property = rule.declarations[i]["property"];
 
+                            //
+                            if ($(selectorOut).get(0) && $(selectorOut).get(0).tagName.toUpperCase() == "A" &&
+                                    (property.match(reg2) || property.match(reg3) || property.match(reg4))) {
                                 //
-                                $(selectorWoHover).each(function() {
-                                    //
-                                    if (this.tagName.toUpperCase() == "A") {
-                                        //
-                                        if (rule.declarations[i]["property"].match(reg2)) {
-                                            //
-                                            if (rule.declarations[i]["valueText"] != $(this).css(rule.declarations[i]["property"])) {
-                                                //
-                                                result.push(_getCssDetails(rule, i));
-                                            }
-                                        }
-                                    }
-                                });
+                                result.push(_getCssDetails(rule, i));
                             }
                         }
                     }
@@ -1784,13 +1779,16 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
      */
     window.jsRefresh = function jsRefresh(doc) {
         //
-        var result = [], reg1 = new RegExp().compile("\\.location\\.reload\\(", "i"), reg2 = new RegExp().compile("\\.location\\.replace\\(", "i"), reg3 = new RegExp().compile("\\.location\(\\.href\)?\s*=", "i");
+        var result = [], reg1 = new RegExp().compile("(\\.location\\.reload\\()", "i"), reg2 = new RegExp().compile("(\\.location\\.replace\\()", "i"),
+            reg3 = new RegExp().compile("(\\.location\(\\.href\)?\s*=)", "i");
 
         //
         try {
             //
-            if (sidecar.resources[0]["uri"] != doc.location.href) {
-                result.push(doc.location.href + " > " + sidecar.resources[0]["uri"]);
+            if((sidecar.resources.some(function(element) {
+                return (doc.location.href == element["uri"]);
+            })) == false) {
+                result.push(true);
             }
 
             //
@@ -1816,7 +1814,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
                         if (_xhr.status == 200) {
                             //
                             if (reg1.test(_xhr.responseText) || reg2.test(_xhr.responseText) || reg3.test(_xhr.responseText)) {
-                                result.push(RegExp.$1);
+                                result.push(element.uri + " (" + RegExp.$1 + ")");
                             }
                         }
 
