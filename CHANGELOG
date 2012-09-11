@@ -1,3 +1,8 @@
+2012-09-11 - Version 0.2.6
+
+- Fixed a bug with blocked requests
+- SDK 1.9
+
 2012-08-11 - Version 0.2.4
 
 - Removed datatables
