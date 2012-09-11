@@ -68,7 +68,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
                 for (var j = 0; j < sheet.media.length; j++) {
                     //
                     var _media = sheet.media.item && sheet.media.item(j) || sheet.media[j];
-                    if (startsWith(_media., "screen") || startsWith(_media, "only screen")) {
+                    if (startsWith(_media, "screen") || startsWith(_media, "only screen")) {
                         result.push(sheet.href);
                     }
                 }
