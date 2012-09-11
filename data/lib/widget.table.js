@@ -126,14 +126,14 @@
                 $("td", aOut).append('<h2>' + _("oqs.feedback") + "</h2>");
                 $("td", aOut).append($('<p></p>').append(aFeedback));
                 
-                var span = $('<span class="ui-icon ui-icon-circle-triangle-e"></span>').click(function() {
-                    if($(this).hasClass("ui-icon-circle-triangle-e")) {
+                var span = $('<span class="ui-icon ui-icon-triangle-1-e"></span>').click(function() {
+                    if($(this).hasClass("ui-icon-triangle-1-e")) {
                         var _self = self, colspan = $("thead th:visible").size();
-                        $(this).removeClass("ui-icon-circle-triangle-e").addClass("ui-icon-circle-triangle-s");
+                        $(this).removeClass("ui-icon-triangle-1-e").addClass("ui-icon-triangle-1-s");
                         $("td[colspan]", aOut).attr("colspan", colspan);
                         $(this).parent("td").parent("tr").after(aOut);
                     } else {
-                        $(this).removeClass("ui-icon-circle-triangle-s").addClass("ui-icon-circle-triangle-e");
+                        $(this).removeClass("ui-icon-triangle-1-s").addClass("ui-icon-triangle-1-e");
                         $(this).parent("td").parent("tr").next("tr.details").remove();                                                   
                     }
                 });
@@ -159,7 +159,7 @@
                             $(this).hide();
                         }
                     });
-                    $("tr:visible span.ui-icon-circle-triangle-s").click().click();
+                    $("tr:visible span.ui-icon-triangle-1-s").click().click();
                     $("tfoot").attr("colspan", $("thead th:visible").size());
             }
 
@@ -201,7 +201,7 @@
             
             $("td.sorted").removeClass("sorted");
             $("td[headers=" + header + "]").addClass("sorted");
-            $("span.ui-icon-circle-triangle-s").click().click();
+            $("span.ui-icon-triangle-1-s").click().click();
             
             this._refreshColours();
         },
@@ -241,7 +241,7 @@
                 });
             });
             
-            $("tr:visible span.ui-icon-circle-triangle-s").click().click();
+            $("tr:visible span.ui-icon-triangle-1-s").click().click();
 
             this._refreshCounts();
             this._refreshColours();

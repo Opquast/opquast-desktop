@@ -42,8 +42,9 @@ var table;
     window.showProjects = function(projects) {
         try {
             // Localize column titles
-            $("#projects thead th:eq(0)").text(_("oqs.results"));
-            $("#projects thead th:eq(1)").text(_("oqs.checklists"));
+            $("#projects thead th:eq(0)").text(_("oqs.project"));
+            $("#projects thead th:eq(1)").text(_("oqs.project_url"));
+            $("#projects thead th:eq(2)").text(_("oqs.project_choice"));
         
             var tbody = $('tbody');
             table = $('table');
@@ -62,7 +63,7 @@ var table;
                         .text(project.url),
                     $("<td></td>")
                         .attr("headers", "hAction")
-                        .append('<a onclick="_sendResults(' + project.id + ')">Choisir</a>')
+                        .append('<button onclick="_sendResults(' + project.id + ', \'' + escape(project.name) + '\')">' + _("oqs.project_choice") + '</button>')
                 );
                 // @formatter:on
 

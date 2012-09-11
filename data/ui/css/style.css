@@ -161,6 +161,11 @@ button.launch:hover span, button.launch:active span {
     text-decoration: underline;
 }
 
+#projects button {
+    cursor: pointer;
+    margin: .5em;
+}
+
 select {
     width: 10em;
 }
