@@ -68,7 +68,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
                 for (var j = 0; j < sheet.media.length; j++) {
                     //
                     var _media = sheet.media.item && sheet.media.item(j) || sheet.media[j];
-                    if (_media.startsWith("screen") || _media.startsWith("only screen")) {
+                    if (startsWith(_media., "screen") || startsWith(_media, "only screen")) {
                         result.push(sheet.href);
                     }
                 }
@@ -83,7 +83,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
                         for (var k = 0; k < rules.media; k++) {
                             //
                             var _media = sheet._extra["media"].item && sheet._extra["media"].item(k) || sheet._extra["media"][k];
-                            if (_media.startsWith("screen") || _media.startsWith("only screen")) {
+                            if (startsWith(_media, "screen") || startsWith(_media, "only screen")) {
                                 result.push(sheet.href);
                             }
                         }
@@ -2463,7 +2463,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
                             for (var l = 0; l < rule.media.length; l++) {
                                 //
                                 var _media = rule.media.item && rule.media.item(l) || rule.media[l];
-                                if (_media.startsWith("print") || _media.startsWith("only print")) {
+                                if (startsWith(_media, "print") || startsWith(_media, "only print")) {
                                     result.push(rule.parentStyleSheet.href);
                                 }
                             }
@@ -2477,7 +2477,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
                     for (var j = 0; j < sheet.media.length; j++) {
                         //
                         var _media = sheet.media.item && sheet.media.item(j) || sheet.media[j];
-                        if (_media.startsWith("print") || _media.startsWith("only print")) {
+                        if (startsWith(_media, "print") || startsWith(_media, "only print")) {
                             result.push(sheet.href);
                         }
                     }
@@ -2613,7 +2613,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
                             for (var l = 0; l < rule.media.length; l++) {
                                 //
                                 var _media = rule.media.item && rule.media.item(l) || rule.media[l];
-                                if (_media.startsWith("handheld") || _media.startsWith("only handheld")) {
+                                if (startsWith(_media, "handheld") || startsWith(_media, "only handheld")) {
                                     result.push(rule.parentStyleSheet.href);
                                 }
                             }
@@ -2627,7 +2627,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
                     for (var j = 0; j < sheet.media.length; j++) {
                         //
                         var _media = sheet.media.item && sheet.media.item(j) || sheet.media[j];
-                        if (_media.startsWith("handheld") || _media.startsWith("only handheld")) {
+                        if (startsWith(_media, "handheld") || startsWith(_media, "only handheld")) {
                             result.push(sheet.href);
                         }
                     }

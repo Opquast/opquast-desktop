@@ -216,16 +216,20 @@ var logger;
     // ------------------------------------------
 
     // prototypes
-    if (typeof String.prototype.startsWith != 'function') {
-        String.prototype.startsWith = function(str) {
-            return this.slice(0, str.length) == str;
-        };
+    function startsWith(search, target) {
+        if (typeof String.prototype.startsWith != 'function') {
+            return target.startsWith(search);   
+        } else {
+            return target.slice(0, search.length) == search;
+        }
     }
-
-    if (typeof String.prototype.endsWith != 'function') {
-        String.prototype.endsWith = function(str) {
-            return this.slice(-str.length) == str;
-        };
+    
+    function endsWith(search, target) {
+        if (typeof String.prototype.endsWith != 'function') {
+            return target.endsWith(search);   
+        } else {
+            return target.slice(-search.length) == search;
+        }
     }
 
     // Array Remove - By John Resig (MIT Licensed)
@@ -472,7 +476,7 @@ var logger;
             for (var j = 0; j < sheet._extra["media"].length; j++) {
                 //
                 var _media = sheet._extra["media"].item && sheet._extra["media"].item(j) || sheet._extra["media"][j];
-                if (_media.startsWith(media) || _media.startsWith("only " + media) || _media == "all") {
+                if (startsWith(_media, media) || startsWith(_media, "only " + media) || _media == "all") {
                     //
                     var rules = sheet.cssRules;
 
@@ -514,7 +518,7 @@ var logger;
             for (var l = 0; l < rule.media.length; l++) {
                 //
                 var _media = rule.media.item && rule.media.item(l) || rule.media[l];
-                if (_media.startsWith(media) || _media.startsWith("only " + media) || _media == "all") {
+                if (startsWith(_media, media) || startsWith(_media, "only " + media) || _media == "all") {
                     //
                     var rules = rule.cssRules;
 
@@ -536,7 +540,7 @@ var logger;
             for (var l = 0; l < rule.media.length; l++) {
                 //
                 var _media = rule.media.item && rule.media.item(l) || rule.media[l];
-                if (_media.startsWith(media) || _media.startsWith("only " + media) || _media == "all") {
+                if (startsWith(_media, media) || startsWith(_media, "only " + media) || _media == "all") {
                     //
                     var re = new RegExp().compile("(url\\()?'?\"?([^'\"\\)]*)", "i");
                     re.test(rule.href);
