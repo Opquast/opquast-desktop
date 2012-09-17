@@ -1,6 +1,9 @@
 .project
-/design
+
+.DS_Store
+
 *.xpi
+
+/design
 /user
 test.rdf
-out.rdf
