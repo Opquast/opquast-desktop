@@ -1,1 +1,9 @@
-Failed to acquire lock for git repository.
+.project
+.settings
+
+.DS_Store
+
+*.xpi
+
+/user
+test.rdf
