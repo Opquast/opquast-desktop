@@ -36,7 +36,8 @@
  *
  * ***** END LICENSE BLOCK ***** */
 
-const xhrMephisto = Components.classes["@mozilla.org/xmlextras/xmlhttprequest;1"].getService(Components.interfaces.nsIXMLHttpRequest);
+const {Ci, Cc} = require("chrome");
+const xhrMephisto = Cc["@mozilla.org/xmlextras/xmlhttprequest;1"].getService(Ci.nsIXMLHttpRequest);
 
 var links = [], images = [], body;
 
