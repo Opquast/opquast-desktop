@@ -36,8 +36,7 @@
  *
  * ***** END LICENSE BLOCK ***** */
 
-const {Ci, Cc} = require("chrome");
-const esl = Cc["@mozilla.org/eventlistenerservice;1"].getService(Ci.nsIEventListenerService);
+const esl = Components.classes["@mozilla.org/eventlistenerservice;1"].getService(Components.interfaces.nsIEventListenerService);
 
 (function() {
     var tw = window.document.createTreeWalker(

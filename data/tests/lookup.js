@@ -36,9 +36,8 @@
  *
  * ***** END LICENSE BLOCK ***** */
 
-const {Ci, Cc} = require("chrome");
-const dnsService = Cc["@mozilla.org/network/dns-service;1"].createInstance(Ci.nsIDNSService);
-const ioService = Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService);
+const dnsService = Components.classes["@mozilla.org/network/dns-service;1"].createInstance(Components.interfaces.nsIDNSService);
+const ioService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService);
 
 function lookup(domain) {
 	return dnsService.resolve(domain, 0);
