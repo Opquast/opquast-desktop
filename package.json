@@ -16,24 +16,56 @@
             "title": "Debug mode",
             "type": "bool",
             "value": false
-        },
-        {
+        }, {
             "name": "showRefs",
             "title": "Show test references",
             "type": "bool",
             "value": false
-        },
-        {
+        }, {
             "name": "showThemas",
             "title": "Show test thema",
             "type": "bool",
             "value": false
-        },
-        {
-            "name": "showTimes",
-            "title": "Show execution time for each test",
+        }, {
+            "name": "use11-opquastFr",
+            "title": "Utiliser la checklist Qualité web",
             "type": "bool",
-            "value": false
+            "value": true
+        }, {
+            "name": "use9-rgaaFr",
+            "title": "Utiliser la checklist RGAA",
+            "type": "bool",
+            "value": true
+        }, {
+            "name": "use425-accessiwebFr",
+            "title": "Utiliser la checklist Accessiweb",
+            "type": "bool",
+            "value": true
+        }, {
+            "name": "use478-seoFr",
+            "title": "Utiliser la checklist SEO",
+            "type": "bool",
+            "value": true
+        }, {
+            "name": "use568-firstStepFr",
+            "title": "Utiliser la checklist First step",
+            "type": "bool",
+            "value": true
+        }, {
+            "name": "use567-secondStepFr",
+            "title": "Utiliser la checklist Second step",
+            "type": "bool",
+            "value": true
+        }, {
+            "name": "use11-opquastEn",
+            "title": "Use Web quality checklist",
+            "type": "bool",
+            "value": true
+        },{
+            "name": "use567-secondStepen",
+            "title": "Use Second step checklist",
+            "type": "bool",
+            "value": true
         }
     ]
 }
