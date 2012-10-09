@@ -216,15 +216,15 @@ var logger;
     // ------------------------------------------
 
     // prototypes
-    function startsWith(search, target) {
-        if (typeof String.prototype.startsWith != 'function') {
+    window.startsWith = function startsWith(search, target) {
+        if (typeof String.prototype.startsWith == 'function') {
             return target.startsWith(search);   
         } else {
             return target.slice(0, search.length) == search;
         }
     }
     
-    function endsWith(search, target) {
+    window.endsWith = function endsWith(search, target) {
         if (typeof String.prototype.endsWith != 'function') {
             return target.endsWith(search);   
         } else {
@@ -364,7 +364,8 @@ var logger;
                 "contentType": ""
             }
         }
-    }    /**
+    }
+        /**
      *
      * @param doc
      * @return
@@ -445,6 +446,7 @@ var logger;
             return result;
         }
     }
+    
     /**
      *
      * @param doc
@@ -693,13 +695,24 @@ var logger;
         if (node == String(document)) {
             node = $(document.body).get(0);
         }
+        
+        var text = "";
+        
+        try {
+            text = node.outerHTML.replace(/</g, "&lt;").replace(/>/g, "&gt;").substr(0, 200);
+        } catch(e) {
+            try {
+                text = (new XMLSerializer()).serializeToString(node).replace(/</g, "&lt;").replace(/>/g, "&gt;").substr(0, 200);
+            } catch(e) {}
+        }
 
         //
         return {
             "path": _getSelector(node),
-            "text": node.outerHTML.replace(/</g, "&lt;").replace(/>/g, "&gt;").substr(0, 200)
+            "text": text
         }
     }
+    
     /**
      *
      * @param doc
@@ -708,7 +721,8 @@ var logger;
     window._getCssDetails = function _getCssDetails(rule, i) {
         //
         return rule.parentStyleSheet._extra["href"] + " (ligne " + rule.currentLine + ") : " + rule.mSelectorText + " {" + rule.declarations[i]["parsedCssText"] + "}";
-    }    /**
+    }
+        /**
      *
      * @param doc
      * @return
@@ -717,6 +731,7 @@ var logger;
         //
         return "style en ligne sur " + _getXPath(item) + " : " + rule.declarations[i]["parsedCssText"];
     }
+    
     /**
      *
      * @param doc
@@ -732,6 +747,7 @@ var logger;
         //
         return "entête HTTP de " + url + " :" + _headers;
     }
+    
     /**
      *
      * @param url
@@ -798,6 +814,7 @@ var logger;
         //
         return tmp;
     }
+    
     /**
      *
      * @param node
@@ -843,6 +860,7 @@ var logger;
         //
         return tmp;
     }
+    
     /**
      * Get a page in the pages stack
      *
@@ -1617,10 +1635,13 @@ var logger;
             //
             else if (language == "http") {
                 var _headers = "";
+				var resources = sidecar.resources.filter(
+                    function(item){return item["content_type"] == "text/html" || item["content_type"] == "application/xhtml+xml";}
+                );
 
                 //
-                for (var i in sidecar.resources[0]["headers"]) {
-                    _headers += i + ": " + sidecar.resources[0]["headers"][i] + "\n";
+                for (var i in resources[0]["headers"]) {
+                    _headers += i + ": " + resources[0]["headers"][i] + "\n";
                 }
 
                 //

@@ -223,12 +223,12 @@
                 $("td", this).each(function() {
                     var text = $(this).text(), id = $(this).attr("headers");
 
-                    if ($.inArray(id, Object.keys(self._activeFilters)) != -1 && $.inArray(self._activeFilters[id], ["", $(this).text()]) == -1) {
+                    if ($.inArray(id, Object.keys(self._activeFilters)) != -1 && $.inArray(self._activeFilters[id], ["", text]) == -1) {
                         bFiltered = true;
                     } else if (!bFiltered) {
-                        if (self._activeSearch == "" || (self._activeSearch != "" && new RegExp(self._activeSearch, "i").test($(this).text()) == true)) {
+                        if (self._activeSearch == "" || (self._activeSearch != "" && new RegExp(self._activeSearch, "i").test(text) == true)) {
                             bMatch = true;
-                        } else if (!bFiltered && !bMatch && self._activeSearch != "" && new RegExp(self._activeSearch, "i").test($(this).text()) == false) {
+                        } else if (!bFiltered && !bMatch && self._activeSearch != "" && new RegExp(self._activeSearch, "i").test(text) == false) {
                             bMatch = false;
                         }
                     }

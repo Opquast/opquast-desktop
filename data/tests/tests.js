@@ -36,10 +36,12 @@
  * ***** END LICENSE BLOCK ***** */"use strict";
 
 /*global xhrMephisto, CSSParser*/
-var langs = ['aa', 'aa-DJ', 'aa-ER', 'aa-ER-SAAHO', 'aa-ET', 'af', 'af-NA', 'af-ZA', 'ak', 'ak-GH', 'am', 'am-ET', 'ar', 'ar-AE', 'ar-BH', 'ar-DZ', 'ar-EG', 'ar-IQ', 'ar-JO', 'ar-KW', 'ar-LB', 'ar-LY', 'ar-MA', 'ar-OM', 'ar-QA', 'ar-SA', 'ar-SD', 'ar-SY', 'ar-TN', 'ar-YE', 'as', 'as-IN', 'az', 'az-AZ', 'az-Cyrl', 'az-Cyrl-AZ', 'az-Latn', 'az-Latn-AZ', 'be', 'be-BY', 'bg', 'bg-BG', 'bn', 'bn-BD', 'bn-IN', 'bs', 'bs-BA', 'byn', 'byn-ER', 'ca', 'ca-ES', 'cch', 'cch-NG', 'cop', 'cs', 'cs-CZ', 'cy', 'cy-GB', 'da', 'da-DK', 'de', 'de-AT', 'de-BE', 'de-CH', 'de-DE', 'de-LI', 'de-LU', 'dv', 'dv-MV', 'dz', 'dz-BT', 'ee', 'ee-GH', 'ee-TG', 'el', 'el-CY', 'el-GR', 'el-POLYTON', 'en', 'en-AS', 'en-AU', 'en-BE', 'en-BW', 'en-BZ', 'en-CA', 'en-Dsrt', 'en-Dsrt-US', 'en-GB', 'en-GU', 'en-HK', 'en-IE', 'en-IN', 'en-JM', 'en-MH', 'en-MP', 'en-MT', 'en-NA', 'en-NZ', 'en-PH', 'en-PK', 'en-SG', 'en-Shaw', 'en-TT', 'en-UM', 'en-US', 'en-US-POSIX', 'en-VI', 'en-ZA', 'en-ZW', 'eo', 'es', 'es-AR', 'es-BO', 'es-CL', 'es-CO', 'es-CR', 'es-DO', 'es-EC', 'es-ES', 'es-GT', 'es-HN', 'es-MX', 'es-NI', 'es-PA', 'es-PE', 'es-PR', 'es-PY', 'es-SV', 'es-US', 'es-UY', 'es-VE', 'et', 'et-EE', 'eu', 'eu-ES', 'fa', 'fa-AF', 'fa-IR', 'fi', 'fi-FI', 'fil', 'fil-PH', 'fo', 'fo-FO', 'fr', 'fr-BE', 'fr-CA', 'fr-CH', 'fr-FR', 'fr-LU', 'fr-MC', 'fr-SN', 'fur', 'fur-IT', 'ga', 'ga-IE', 'gaa', 'gaa-GH', 'gez', 'gez-ER', 'gez-ET', 'gl', 'gl-ES', 'gu', 'gu-IN', 'gv', 'gv-GB', 'ha', 'ha-Arab', 'ha-Arab-NG', 'ha-Arab-SD', 'ha-GH', 'ha-Latn', 'ha-Latn-GH', 'ha-Latn-NE', 'ha-Latn-NG', 'ha-NE', 'ha-NG', 'ha-SD', 'haw', 'haw-US', 'he', 'he-IL', 'hi', 'hi-IN', 'hr', 'hr-HR', 'hu', 'hu-HU', 'hy', 'hy-AM', 'hy-AM-REVISED', 'ia', 'id', 'id-ID', 'ig', 'ig-NG', 'ii', 'ii-CN', 'in', 'is', 'is-IS', 'it', 'it-CH', 'it-IT', 'iu', 'iw', 'ja', 'ja-JP', 'ka', 'ka-GE', 'kaj', 'kaj-NG', 'kam', 'kam-KE', 'kcg', 'kcg-NG', 'kfo', 'kfo-CI', 'kk', 'kk-Cyrl', 'kk-Cyrl-KZ', 'kk-KZ', 'kl', 'kl-GL', 'km', 'km-KH', 'kn', 'kn-IN', 'ko', 'ko-KR', 'kok', 'kok-IN', 'kpe', 'kpe-GN', 'kpe-LR', 'ku', 'ku-Arab', 'ku-Latn', 'ku-Latn-TR', 'ku-TR', 'kw', 'kw-GB', 'ky', 'ky-KG', 'ln', 'ln-CD', 'ln-CG', 'lo', 'lo-LA', 'lt', 'lt-LT', 'lv', 'lv-LV', 'mk', 'mk-MK', 'ml', 'ml-IN', 'mn', 'mn-CN', 'mn-Cyrl', 'mn-Cyrl-MN', 'mn-MN', 'mn-Mong', 'mn-Mong-CN', 'mo', 'mr', 'mr-IN', 'ms', 'ms-BN', 'ms-MY', 'mt', 'mt-MT', 'my', 'my-MM', 'nb', 'nb-NO', 'ne', 'ne-IN', 'ne-NP', 'nl', 'nl-BE', 'nl-NL', 'nn', 'nn-NO', 'no', 'nr', 'nr-ZA', 'nso', 'nso-ZA', 'ny', 'ny-MW', 'om', 'om-ET', 'om-KE', 'or', 'or-IN', 'pa', 'pa-Arab', 'pa-Arab-PK', 'pa-Guru', 'pa-Guru-IN', 'pa-IN', 'pa-PK', 'pl', 'pl-PL', 'ps', 'ps-AF', 'pt', 'pt-BR', 'pt-PT', 'ro', 'ro-MD', 'ro-RO', 'ru', 'ru-RU', 'ru-UA', 'rw', 'rw-RW', 'sa', 'sa-IN', 'se', 'se-FI', 'se-NO', 'sh', 'sh-BA', 'sh-CS', 'sh-YU', 'si', 'si-LK', 'sid', 'sid-ET', 'sk', 'sk-SK', 'sl', 'sl-SI', 'so', 'so-DJ', 'so-ET', 'so-KE', 'so-SO', 'sq', 'sq-AL', 'sr', 'sr-BA', 'sr-CS', 'sr-Cyrl', 'sr-Cyrl-BA', 'sr-Cyrl-CS', 'sr-Cyrl-ME', 'sr-Cyrl-RS', 'sr-Cyrl-YU', 'sr-Latn', 'sr-Latn-BA', 'sr-Latn-CS', 'sr-Latn-ME', 'sr-Latn-RS', 'sr-Latn-YU', 'sr-ME', 'sr-RS', 'sr-YU', 'ss', 'ss-SZ', 'ss-ZA', 'st', 'st-LS', 'st-ZA', 'sv', 'sv-FI', 'sv-SE', 'sw', 'sw-KE', 'sw-TZ', 'syr', 'syr-SY', 'ta', 'ta-IN', 'te', 'te-IN', 'tg', 'tg-Cyrl', 'tg-Cyrl-TJ', 'tg-TJ', 'th', 'th-TH', 'ti', 'ti-ER', 'ti-ET', 'tig', 'tig-ER', 'tl', 'tn', 'tn-ZA', 'to', 'to-TO', 'tr', 'tr-TR', 'trv', 'ts', 'ts-ZA', 'tt', 'tt-RU', 'ug', 'ug-Arab', 'ug-Arab-CN', 'ug-CN', 'uk', 'uk-UA', 'ur', 'ur-IN', 'ur-PK', 'uz', 'uz-AF', 'uz-Arab', 'uz-Arab-AF', 'uz-Cyrl', 'uz-Cyrl-UZ', 'uz-Latn', 'uz-Latn-UZ', 'uz-UZ', 've', 've-ZA', 'vi', 'vi-VN', 'wal', 'wal-ET', 'wo', 'wo-Latn', 'wo-Latn-SN', 'wo-SN', 'xh', 'xh-ZA', 'yo', 'yo-NG', 'zh', 'zh-CN', 'zh-Hans', 'zh-Hans-CN', 'zh-Hans-HK', 'zh-Hans-MO', 'zh-Hans-SG', 'zh-Hant', 'zh-Hant-HK', 'zh-Hant-MO', 'zh-Hant-TW', 'zh-HK', 'zh-MO', 'zh-SG', 'zh-TW', 'zu', 'zu-ZA'];
-var regFunction = RegExp().compile("([^\\s:{}&|]*)\\(", "i"), badLinks = ['cliquez ici', 'lire la suite', 'en savoir plus', "plus d'infos"];
+var langs = ['aa', 'ab', 'ae', 'af', 'ak', 'am', 'an', 'ar', 'as', 'av', 'ay', 'az', 'ba', 'be', 'bg', 'bh', 'bi', 'bm', 'bn', 'bo', 'br', 'bs', 'ca', 'ce', 'ch', 'co', 'cr', 'cs', 'cu', 'cv', 'cy', 'da', 'de', 'dv', 'dz', 'ee', 'el', 'en', 'eo', 'es', 'et', 'eu', 'fa', 'ff', 'fi', 'fj', 'fo', 'fr', 'fy', 'ga', 'gd', 'gl', 'gn', 'gu', 'gv', 'ha', 'he', 'hi', 'ho', 'hr', 'ht', 'hu', 'hy', 'hz', 'ia', 'id', 'ie', 'ig', 'ii', 'ik', 'io', 'is', 'it', 'iu', 'ja', 'jv', 'ka', 'kg', 'ki', 'kj', 'kk', 'kl', 'km', 'kn', 'ko', 'kr', 'ks', 'ku', 'kv', 'kw', 'ky', 'la', 'lb', 'lg', 'li', 'ln', 'lo', 'lt', 'lu', 'lv', 'mg', 'mh', 'mi', 'mk', 'ml', 'mn', 'mo', 'mr', 'ms', 'mt', 'my', 'na', 'nb', 'nd', 'ne', 'ng', 'nl', 'nn', 'no', 'nr', 'nv', 'ny', 'oc', 'oj', 'om', 'or', 'os', 'pa', 'pi', 'pl', 'ps', 'pt', 'qu', 'rm', 'rn', 'ro', 'ru', 'rw', 'sa', 'sc', 'sd', 'se', 'sg', 'si', 'sk', 'sl', 'sm', 'sn', 'so', 'sq', 'sr', 'ss', 'st', 'su', 'sv', 'sw', 'ta', 'te', 'tg', 'th', 'ti', 'tk', 'tl', 'tn', 'to', 'tr', 'ts', 'tt', 'tw', 'ty', 'ug', 'uk', 'ur', 'uz', 've', 'vi', 'vo', 'wa', 'wo', 'xh', 'yi', 'yo', 'za', 'zh', 'zu'];
+var regFunction = RegExp().compile("([^\\s:{}&|]*)\\(", "i");
+var badLinks = ['cliquez ici', '> cliquez ici', 'lire la suite', '> lire la suite', 'en savoir plus', '> en savoir plus', "plus d'infos", "> plus d'infos"];
 var cdns = RegExp().compile("^(https?://(ajax.googleapis.com/ajax/libs/|ajax.aspnetcdn.com/ajax/|yui.yahooapis.com/)|(https://ssl|http://www).google-analytics.com/)", "i");
 var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-(c|m)ore)?|piwik|prototype|modernizr|xtcore|yui).js(\\?[-\\.v0-9]+)?$", "i");
+var syndMime = ["application/rss+xml", "application/atom+xml", "application/xml", "text/xml"];
 
 (function($) {
     var inlineStyles = $("*[style]");
@@ -95,7 +97,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("mobileCss", err);
+            logger.error("mobileCss", err);console.log("mobileCss");console.log(err);
             result = false;
         }
 
@@ -124,7 +126,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
                     //
                     if (rule.declarations[i]["property"] == "font-family" && rule.declarations[i]["valueText"] != "inherit") {
                         //
-                        result.push(rule.declarations[i]["valueText"]);
+                        result.push($.trim(rule.declarations[i]["valueText"]).toLowerCase());
                     }
                 }
             }
@@ -161,7 +163,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
                             //
                             if (rule.declarations[i]["property"] == "font-family" && rule.declarations[i]["valueText"] != "inherit") {
                                 //
-                                result.push(rule.declarations[i]["valueText"]);
+                                result.push($.trim(rule.declarations[i]["valueText"]).toLowerCase());
                             }
                         }
                     }
@@ -180,7 +182,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("cssNumberOfFonts", err);
+            logger.error("cssNumberOfFonts", err);console.log("cssNumberOfFonts");console.log(err);console.log(err);
             result = false;
         }
 
@@ -257,7 +259,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("cssAbsoluteFontSize", err);
+            logger.error("cssAbsoluteFontSize", err);console.log("cssAbsoluteFontSize");console.log(err);
             result = false;
         }
 
@@ -344,7 +346,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("cssAbsoluteFontSizeOnScreen", err);
+            logger.error("cssAbsoluteFontSizeOnScreen", err);console.log("cssAbsoluteFontSizeOnScreen");console.log(err);
             result = false;
         }
 
@@ -440,7 +442,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("cssAbsoluteFontSizeInForm", err);
+            logger.error("cssAbsoluteFontSizeInForm", err);console.log("cssAbsoluteFontSizeInForm");console.log(err);
             result = false;
         }
 
@@ -517,7 +519,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("cssDirection", err);
+            logger.error("cssDirection", err);console.log("cssDirection");console.log(err);
             result = false;
         }
 
@@ -566,7 +568,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("cssBackgroundColorWoColor", err);
+            logger.error("cssBackgroundColorWoColor", err);console.log("cssBackgroundColorWoColor");console.log(err);
             result = false;
         }
 
@@ -615,7 +617,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("cssColorWoBackgroundColor", err);
+            logger.error("cssColorWoBackgroundColor", err);console.log("cssColorWoBackgroundColor");console.log(err);
             result = false;
         }
 
@@ -664,7 +666,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("cssBackgroundImageWoBackgroundColor", err);
+            logger.error("cssBackgroundImageWoBackgroundColor", err);console.log("cssBackgroundImageWoBackgroundColor");console.log(err);
             result = false;
         }
 
@@ -741,7 +743,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("cssDisplayNone", err);
+            logger.error("cssDisplayNone", err);console.log("cssDisplayNone");console.log(err);
             result = false;
         }
 
@@ -818,7 +820,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("cssDisplayNone", err);
+            logger.error("cssDisplayNone", err);console.log("cssDisplayNone");console.log(err);
             result = false;
         }
 
@@ -895,7 +897,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("cssVisibilityHidden", err);
+            logger.error("cssVisibilityHidden", err);console.log("cssVisibilityHidden");console.log(err);
             result = false;
         }
 
@@ -958,7 +960,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("cssHoverLinks", err);
+            logger.error("cssHoverLinks", err);console.log("cssHoverLinks");console.log(err);
             result = false;
         }
 
@@ -1035,7 +1037,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("cssPixelFontSize", err);
+            logger.error("cssPixelFontSize", err);console.log("cssPixelFontSize");console.log(err);
             result = false;
         }
 
@@ -1063,7 +1065,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("utf8", err);
+            logger.error("utf8", err);console.log("utf8");console.log(err);
             result = false;
         }
 
@@ -1091,7 +1093,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("rightCharset", err);
+            logger.error("rightCharset", err);console.log("rightCharset");console.log(err);
             result = false;
         }
 
@@ -1122,7 +1124,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlLanguage", err);
+            logger.error("htmlLanguage", err);console.log("htmlLanguage");console.log(err);
             result = false;
         }
 
@@ -1142,7 +1144,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         try {
             //
-            var _lang = $.trim($("html").attr("lang")), _xml_lang = $.trim($("html").attr("xml:lang"));
+            var _lang = $.trim($("html").attr("lang")).split("-")[0], _xml_lang = $.trim($("html").attr("xml:lang")).split("-")[0];
 
             //
             if ($.inArray(_lang, langs) != -1 || $.inArray(_xml_lang, langs) != -1) {
@@ -1153,7 +1155,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlValidLanguage", err);
+            logger.error("htmlValidLanguage", err);console.log("htmlValidLanguage");console.log(err);
             result = false;
         }
 
@@ -1175,7 +1177,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
             //
             $("pre").each(function() {
                 //
-                if (re.test($(this).text())) {
+                if (reg.test($(this).text())) {
                     result.push(_getDetails(this));
                 }
             });
@@ -1184,7 +1186,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlSpaceBetweenLetters", err);
+            logger.error("htmlSpaceBetweenLetters", err);console.log("htmlSpaceBetweenLetters");console.log(err);
             result = false;
         }
 
@@ -1206,7 +1208,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
             //
             $("*[lang], *[xml\\:lang]").each(function() {
                 //
-                var _lang = $.trim($(this).attr("lang")), _xml_lang = $.trim($(this).attr("xml:lang"));
+                var _lang = $.trim($(this).attr("lang")).split("-")[0], _xml_lang = $.trim($(this).attr("xml:lang")).split("-")[0];
 
                 //
                 if (($(this).attr("lang") != undefined && $.inArray(_lang, langs) == -1) || ($(this).attr("xml:lang") != undefined && $.inArray(_xml_lang, langs) == -1)) {
@@ -1218,45 +1220,14 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlElementLanguage", err);
+            logger.error("htmlElementLanguage", err);console.log("htmlElementLanguage");console.log(err);
             result = false;
         }
 
         //
         return result;
     }
-
-    /**
-     *
-     * @param doc
-     * @return
-     */
-    window.htmlSpaceBetweenLetters = function htmlSpaceBetweenLetters(doc) {
-        //
-        var result = [], reg = new RegExp().compile("(\s+[A-Za-z]){3,}", "i");
-
-        //
-        try {
-            //
-            $("pre").each(function() {
-                //
-                if (re.test($(this).text())) {
-                    result.push(_getDetails(this));
-                }
-            });
-        }
-
-        //
-        catch (err) {
-            // Error Logging
-            logger.error("htmlSpaceBetweenLetters", err);
-            result = false;
-        }
-
-        //
-        return result;
-    }
-
+    
     /**
      *
      * @param doc
@@ -1268,15 +1239,21 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 
         //
         try {
+            var resources = sidecar.resources.filter(
+                function(item){
+                    return (item["content_type"] == "text/html" || item["content_type"] == "application/xhtml+xml") && item['status'] == 200;
+                }
+            );
+            
             //
-            if (sidecar.resources[0]["headers"]["content-language"]) {
+            if (resources[0]["headers"]["content-language"]) {
                 //
-                var lang = sidecar.resources[0]["headers"]["content-language"];
+                var lang = resources[0]["headers"]["content-language"].split("-")[0];
 
                 //
                 if ($.inArray(lang, langs) != -1) {
                     //
-                    result.push(_getHttpDetails(sidecar.resources[0]["uri"], sidecar.resources[0]["headers"]));
+                    result.push(_getHttpDetails(resources[0]["uri"], resources[0]["headers"]));
                 }
             }
         }
@@ -1284,7 +1261,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("httpLanguage", err);
+            logger.error("httpLanguage", err);console.log("httpLanguage");console.log(err);
             result = false;
         }
 
@@ -1303,8 +1280,14 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 
         //
         try {
+            var resources = sidecar.resources.filter(
+                function(item){
+                    return (item["content_type"] == "text/html" || item["content_type"] == "application/xhtml+xml") && item['status'] == 200;
+                }
+            );
+            
             //
-            var charset = sidecar.resources[0]["charset"] == undefined && "undefined" || sidecar.resources[0]["charset"];
+            var charset = resources[0]["charset"] == undefined && "undefined" || resources[0]["charset"];
 
             //
             if (charset.toLowerCase() == doc.characterSet.toLowerCase()) {
@@ -1318,7 +1301,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("httpCharset", err);
+            logger.error("httpCharset", err);console.log("httpCharset");console.log(err);
             result = false;
         }
 
@@ -1350,7 +1333,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("httpCache", err);
+            logger.error("httpCache", err);console.log("httpCache");console.log(err);
             result = false;
         }
 
@@ -1381,7 +1364,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("http404", err);
+            logger.error("http404", err);console.log("http404");console.log(err);
             result = false;
         }
 
@@ -1428,7 +1411,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("metaCharset", err);
+            logger.error("metaCharset", err);console.log("metaCharset");console.log(err);
             result = false;
         }
 
@@ -1476,7 +1459,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("robotsSitemap", err);
+            logger.error("robotsSitemap", err);console.log("robotsSitemap");console.log(err);
             result = false;
         }
 
@@ -1511,7 +1494,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("robotsPresence", err);
+            logger.error("robotsPresence", err);console.log("robotsPresence");console.log(err);
             result = false;
         }
 
@@ -1547,7 +1530,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("inlinks", err);
+            logger.error("inlinks", err);console.log("inlinks");console.log(err);
             result = false;
         }
 
@@ -1584,7 +1567,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlAreaWoAlt", err);
+            logger.error("htmlAreaWoAlt", err);console.log("htmlAreaWoAlt");console.log(err);
             result = false;
         }
 
@@ -1618,7 +1601,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlDefaultTitle", err);
+            logger.error("htmlDefaultTitle", err);console.log("htmlDefaultTitle");console.log(err);
             result = false;
         }
 
@@ -1649,7 +1632,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlDirAttribute", err);
+            logger.error("htmlDirAttribute", err);console.log("htmlDirAttribute");console.log(err);
             result = false;
         }
 
@@ -1687,7 +1670,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlDirAttribute", err);
+            logger.error("htmlDirAttribute", err);console.log("htmlDirAttribute");console.log(err);
             result = false;
         }
 
@@ -1724,7 +1707,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("metaRefreshShort", err);
+            logger.error("metaRefreshShort", err);console.log("metaRefreshShort");console.log(err);
             result = false;
         }
 
@@ -1764,7 +1747,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("metaRefresh", err);
+            logger.error("metaRefresh", err);console.log("metaRefresh");console.log(err);
             result = false;
         }
 
@@ -1826,7 +1809,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("jsRefresh", err);
+            logger.error("jsRefresh", err);console.log("jsRefresh");console.log(err);
             result = false;
         }
 
@@ -1845,10 +1828,16 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
 
         //
         try {
+            var resources = sidecar.resources.filter(
+                function(item){
+                    return (item["content_type"] == "text/html" || item["content_type"] == "application/xhtml+xml") && item['status'] == 200;
+                }
+            );
+            
             //
-            if (sidecar.resources[0]["headers"]["refresh"]) {
+            if (resources[0]["headers"]["refresh"]) {
                 //
-                var refresh = sidecar.resources[0]["headers"]["refresh"];
+                var refresh = resources[0]["headers"]["refresh"];
 
                 //
                 if (reg1.test(refresh)) {
@@ -1858,7 +1847,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
                     //
                     if (delay < 72000) {
                         //
-                        result.push(sidecar.resources[0]["headers"]);
+                        result.push(resources[0]["headers"]);
                     }
                 }
 
@@ -1870,7 +1859,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
                     //
                     if (delay < 72000 && url == doc.location.href) {
                         //
-                        result.push(sidecar.resources[0]["headers"]);
+                        result.push(resources[0]["headers"]);
                     }
                 }
             }
@@ -1879,7 +1868,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("httpRefresh", err);
+            logger.error("httpRefresh", err);console.log("httpRefresh");console.log(err);
             result = false;
         }
 
@@ -1926,7 +1915,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("httpGzip", err);
+            logger.error("httpGzip", err);console.log("httpGzip");console.log(err);
             result = false;
         }
 
@@ -1970,7 +1959,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("resAnimated", err);
+            logger.error("resAnimated", err);console.log("resAnimated");console.log(err);
             result = false;
         }
 
@@ -2034,7 +2023,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("resMultimedia", err);
+            logger.error("resMultimedia", err);console.log("resMultimedia");console.log(err);
             result = false;
         }
 
@@ -2098,7 +2087,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("resMultimediaWoAudio", err);
+            logger.error("resMultimediaWoAudio", err);console.log("resMultimediaWoAudio");console.log(err);
             result = false;
         }
 
@@ -2134,7 +2123,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("iframeWithSameTitles", err);
+            logger.error("iframeWithSameTitles", err);console.log("iframeWithSameTitles");console.log(err);
             result = false;
         }
 
@@ -2156,14 +2145,12 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
             //
             $("frame").each(function() {
                 //
-                var title = $.trim($(this).attr("title"));
-                var src = this.src.split("#")[0];
+                var title = $.trim($(this).attr("title")).toLowerCase(), src = this.src.split("#")[0];
 
                 //
                 $("frame").each(function() {
                     //
-                    var _title = $.trim($(this).attr("title"));
-                    var _src = this.src.split("#")[0];
+                    var _title = $.trim($(this).attr("title")).toLowerCase(), _src = this.src.split("#")[0];
 
                     //
                     if ((_title == '' || _title == title) && _src != src) {
@@ -2176,7 +2163,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("frameWithSameTitles", err);
+            logger.error("frameWithSameTitles", err);console.log("frameWithSameTitles");console.log(err);
             result = false;
         }
 
@@ -2216,7 +2203,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlFavicon", err);
+            logger.error("htmlFavicon", err);console.log("htmlFavicon");console.log(err);
             result = false;
         }
 
@@ -2248,7 +2235,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlFormW3Fields", err);
+            logger.error("htmlFormW3Fields", err);console.log("htmlFormW3Fields");console.log(err);
             result = false;
         }
 
@@ -2294,7 +2281,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("pingLongdesc", err);
+            logger.error("pingLongdesc", err);console.log("pingLongdesc");console.log(err);
             result = false;
         }
 
@@ -2325,7 +2312,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("countryDomain", err);
+            logger.error("countryDomain", err);console.log("countryDomain");console.log(err);
             result = false;
         }
 
@@ -2364,7 +2351,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("countryServer", err);
+            logger.error("countryServer", err);console.log("countryServer");console.log(err);
             result = false;
         }
 
@@ -2387,7 +2374,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
             var aDomain = doc.location.host.split("."), domain = aDomain.slice(aDomain.length - 2, aDomain.length).join(".");
 
             //
-            $("a[href]:not([href='')], a[href]:not([href^='#'])").each(function() {
+            $("a[href]:not([href='']):not([href^='#'])").each(function() {
                 //
                 var uri = resolveURI($(this).attr("href").trim(), doc.location.href);
 
@@ -2420,7 +2407,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("moreExtThenIntLinks", err);
+            logger.error("moreExtThenIntLinks", err);console.log("moreExtThenIntLinks");console.log(err);
             result = false;
         }
 
@@ -2448,7 +2435,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
                 var sheet = sheets.item(i);
 
                 // no media
-                if (sheet.media.length == 0) {
+                if (sheet.media.length == 0 || (sheet.media.item && sheet.media.item(0) == "all")) {
                     //
                     var rules = sheet.cssRules;
 
@@ -2488,7 +2475,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("cssMediaPrint", err);
+            logger.error("cssMediaPrint", err);console.log("cssMediaPrint");console.log(err);
             result = false;
         }
 
@@ -2537,7 +2524,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("cssInternalStyles", err);
+            logger.error("cssInternalStyles", err);console.log("cssInternalStyles");console.log(err);
             result = false;
         }
 
@@ -2570,7 +2557,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("cssContent", err);
+            logger.error("cssContent", err);console.log("cssContent");console.log(err);
             result = false;
         }
 
@@ -2598,7 +2585,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
                 var sheet = sheets.item(i);
 
                 // no media
-                if (sheet.media.length == 0) {
+                if (sheet.media.length == 0 || (sheet.media.item && sheet.media.item(0) == "all")) {
                     //
                     var rules = sheet.cssRules;
 
@@ -2638,7 +2625,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("cssMediaHandheld", err);
+            logger.error("cssMediaHandheld", err);console.log("cssMediaHandheld");console.log(err);
             result = false;
         }
 
@@ -2727,7 +2714,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("cssGenericFont", err);
+            logger.error("cssGenericFont", err);console.log("cssGenericFont");console.log(err);
             result = false;
         }
 
@@ -2804,7 +2791,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("cssBackgroundImage", err);
+            logger.error("cssBackgroundImage", err);console.log("cssBackgroundImage");console.log(err);
             result = false;
         }
 
@@ -2834,7 +2821,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("cssUnderline", err);
+            logger.error("cssUnderline", err);console.log("cssUnderline");console.log(err);
             result = false;
         }
 
@@ -2879,7 +2866,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("cssUppercase", err);
+            logger.error("cssUppercase", err);console.log("cssUppercase");console.log(err);
             result = false;
         }
 
@@ -2956,7 +2943,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("cssTextAlignJustify", err);
+            logger.error("cssTextAlignJustify", err);console.log("cssTextAlignJustify");console.log(err);
             result = false;
         }
 
@@ -2992,7 +2979,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("cssTextIndentNegative", err);
+            logger.error("cssTextIndentNegative", err);console.log("cssTextIndentNegative");console.log(err);
             result = false;
         }
 
@@ -3040,7 +3027,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("cssImageSize", err);
+            logger.error("cssImageSize", err);console.log("cssImageSize");console.log(err);
             result = false;
         }
 
@@ -3097,7 +3084,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("jsSetTimeout", err);
+            logger.error("jsSetTimeout", err);console.log("jsSetTimeout");console.log(err);
             result = false;
         }
 
@@ -3147,7 +3134,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("jsSetInterval", err);
+            logger.error("jsSetInterval", err);console.log("jsSetInterval");console.log(err);
             result = false;
         }
 
@@ -3197,7 +3184,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("jsWindowOpen", err);
+            logger.error("jsWindowOpen", err);console.log("jsWindowOpen");console.log(err);
             result = false;
         }
 
@@ -3225,7 +3212,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlNewWindow", err);
+            logger.error("htmlNewWindow", err);console.log("htmlNewWindow");console.log(err);
             result = false;
         }
 
@@ -3259,7 +3246,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("jsNewWindow", err);
+            logger.error("jsNewWindow", err);console.log("jsNewWindow");console.log(err);
             result = false;
         }
 
@@ -3312,7 +3299,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("jsClickEvent", err);
+            logger.error("jsClickEvent", err);console.log("jsClickEvent");console.log(err);
             result = false;
         }
 
@@ -3345,7 +3332,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("jsKeyboardOrMouseEvent", err);
+            logger.error("jsKeyboardOrMouseEvent", err);console.log("jsKeyboardOrMouseEvent");console.log(err);
             result = false;
         }
 
@@ -3378,7 +3365,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("jsSpecificEvent", err);
+            logger.error("jsSpecificEvent", err);console.log("jsSpecificEvent");console.log(err);
             result = false;
         }
 
@@ -3411,7 +3398,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("jsBlurOnFocusEvent", err);
+            logger.error("jsBlurOnFocusEvent", err);console.log("jsBlurOnFocusEvent");console.log(err);
             result = false;
         }
 
@@ -3444,7 +3431,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("jsOnscroll", err);
+            logger.error("jsOnscroll", err);console.log("jsOnscroll");console.log(err);
             result = false;
         }
 
@@ -3477,7 +3464,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("jsEvents", err);
+            logger.error("jsEvents", err);console.log("jsEvents");console.log(err);
             result = false;
         }
 
@@ -3542,7 +3529,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("jsOnchangeLocation", err);
+            logger.error("jsOnchangeLocation", err);console.log("jsOnchangeLocation");console.log(err);
             result = false;
         }
 
@@ -3590,7 +3577,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("jsOnclick", err);
+            logger.error("jsOnclick", err);console.log("jsOnclick");console.log(err);
             result = false;
         }
 
@@ -3623,7 +3610,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("jsOndoubleclick", err);
+            logger.error("jsOndoubleclick", err);console.log("jsOndoubleclick");console.log(err);
             result = false;
         }
 
@@ -3663,7 +3650,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("jsOnblurWoOnmouseout", err);
+            logger.error("jsOnblurWoOnmouseout", err);console.log("jsOnblurWoOnmouseout");console.log(err);
             result = false;
         }
 
@@ -3728,7 +3715,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("jsOnblurSubmit", err);
+            logger.error("jsOnblurSubmit", err);console.log("jsOnblurSubmit");console.log(err);
             result = false;
         }
 
@@ -3793,7 +3780,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("jsOnchangeSubmit", err);
+            logger.error("jsOnchangeSubmit", err);console.log("jsOnchangeSubmit");console.log(err);
             result = false;
         }
 
@@ -3858,7 +3845,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("jsOnfocusBlur", err);
+            logger.error("jsOnfocusBlur", err);console.log("jsOnfocusBlur");console.log(err);
             result = false;
         }
 
@@ -3923,7 +3910,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("jsOnfocusSubmit", err);
+            logger.error("jsOnfocusSubmit", err);console.log("jsOnfocusSubmit");console.log(err);
             result = false;
         }
 
@@ -3988,7 +3975,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("jsOnmouseoutSubmit", err);
+            logger.error("jsOnmouseoutSubmit", err);console.log("jsOnmouseoutSubmit");console.log(err);
             result = false;
         }
 
@@ -4053,7 +4040,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("jsOnmouseoverSubmit", err);
+            logger.error("jsOnmouseoverSubmit", err);console.log("jsOnmouseoverSubmit");console.log(err);
             result = false;
         }
 
@@ -4093,7 +4080,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("jsOnmouseoutWoOnblur", err);
+            logger.error("jsOnmouseoutWoOnblur", err);console.log("jsOnmouseoutWoOnblur");console.log(err);
             result = false;
         }
 
@@ -4133,7 +4120,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("jsOnfocusWoOnmouseover", err);
+            logger.error("jsOnfocusWoOnmouseover", err);console.log("jsOnfocusWoOnmouseover");console.log(err);
             result = false;
         }
 
@@ -4173,7 +4160,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("jsOnmouseoverWoOnfocus", err);
+            logger.error("jsOnmouseoverWoOnfocus", err);console.log("jsOnmouseoverWoOnfocus");console.log(err);
             result = false;
         }
 
@@ -4238,7 +4225,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("jsPopUp", err);
+            logger.error("jsPopUp", err);console.log("jsPopUp");console.log(err);
             result = false;
         }
 
@@ -4303,7 +4290,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("jsResize", err);
+            logger.error("jsResize", err);console.log("jsResize");console.log(err);
             result = false;
         }
 
@@ -4344,7 +4331,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("html404", err);
+            logger.error("html404", err);console.log("html404");console.log(err);
             result = false;
         }
 
@@ -4381,7 +4368,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlFakeList", err);
+            logger.error("htmlFakeList", err);console.log("htmlFakeList");console.log(err);
             result = false;
         }
 
@@ -4418,7 +4405,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlFakeOrderedList", err);
+            logger.error("htmlFakeOrderedList", err);console.log("htmlFakeOrderedList");console.log(err);
             result = false;
         }
 
@@ -4447,9 +4434,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
                     //
                     $("input:not([type='hidden']), select, textarea", $(this)).each(function() {
                         //
-                        var id = $.trim($(this).attr("id"));
-                        var title = $.trim($(this).attr("title")).toLowerCase();
-                        var label = _getAllText($("label[for='" + id + "']").get(0));
+                        var id = $.trim($(this).attr("id")), title = $.trim($(this).attr("title")).toLowerCase(), label = _getAllText($("label[for='" + id + "']").get(0));
 
                         //
                         if (implicit && label == "") {
@@ -4479,9 +4464,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
                         //
                         $("input:not([type='hidden']), select, textarea", $(this)).each(function() {
                             //
-                            var id = $.trim($(this).attr("id"));
-                            var title = $.trim($(this).attr("title")).toLowerCase();
-                            var label = _getAllText($("label[for='" + id + "']").get(0));
+                            var id = $.trim($(this).attr("id")), title = $.trim($(this).attr("title")).toLowerCase(), label = _getAllText($("label[for='" + id + "']").get(0));
 
                             //
                             if (implicit && label == "") {
@@ -4559,7 +4542,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("_htmlFieldWithoutTitleAndLabel", err);
+            logger.error("_htmlFieldWithoutTitleAndLabel", err);console.log("_htmlFieldWithoutTitleAndLabel");console.log(err);
             result = false;
         }
 
@@ -4678,7 +4661,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlTdHeadersNotInThIds", err);
+            logger.error("htmlTdHeadersNotInThIds", err);console.log("htmlTdHeadersNotInThIds");console.log(err);
             result = false;
         }
 
@@ -4724,7 +4707,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlImageWithAlternativeNotInContent", err);
+            logger.error("htmlImageWithAlternativeNotInContent", err);console.log("htmlImageWithAlternativeNotInContent");console.log(err);
             result = false;
         }
 
@@ -4770,7 +4753,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlAreaWithAlternativeNotInContent", err);
+            logger.error("htmlAreaWithAlternativeNotInContent", err);console.log("htmlAreaWithAlternativeNotInContent");console.log(err);
             result = false;
         }
 
@@ -4816,7 +4799,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlAppletWithAlternativeNotInContent", err);
+            logger.error("htmlAppletWithAlternativeNotInContent", err);console.log("htmlAppletWithAlternativeNotInContent");console.log(err);
             result = false;
         }
 
@@ -4866,7 +4849,66 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlHeaderWithTermsNotInContent", err);
+            logger.error("htmlHeaderWithTermsNotInContent", err);console.log("htmlHeaderWithTermsNotInContent");console.log(err);
+            result = false;
+        }
+
+        //
+        return result;
+    }
+    
+    /**
+     *
+     * @param doc
+     * @return
+     */
+    function _htmlHeaderWithTermsInMetaKeywords(level) {
+        //
+        var result = [];
+
+        //
+        try {
+            //
+            $("h" + level).each(function() {
+                //
+                var keywords = [];
+                try {
+                    keywords = $("meta[name='keywords']").attr("content").trim().toLowerCase().split(" ");
+                } catch (e) {
+                }
+                var terms = $(this).text().trim().split(" ");
+                try {
+                    terms = $.merge(terms, $.trim($("img", this).attr("alt")).toLowerCase().split(" "));
+                } catch(e) {
+                }
+                var found = false;
+                
+                //
+                if (keywords.length == 0) {
+                    return result;
+                }
+
+                //
+                terms.some(function(value) {
+                    //
+                    if ($.inArray(value, keywords) != -1) {
+                        found = true;
+                        return true;
+                    } else {
+                        return false;
+                    }
+                });
+                //
+                if (!found) {
+                    result.push(_getDetails(this));
+                }
+            });
+        }
+
+        //
+        catch (err) {
+            // Error Logging
+            logger.error("htmlHeaderWithTermsInMetaKeywords", err);console.log("htmlHeaderWithTermsInMetaKeywords");console.log(err);
             result = false;
         }
 
@@ -4883,6 +4925,16 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         return _htmlHeaderWithTermsNotInContent("1");
     }
+    
+    /**
+     *
+     * @param doc
+     * @return
+     */
+    window.htmlH1WithTermsInMetaKeywords = function htmlH1WithTermsInMetaKeywords(doc) {
+        //
+        return _htmlHeaderWithTermsInMetaKeywords("1");
+    }
 
     /**
      *
@@ -4892,6 +4944,16 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
     window.htmlH2WithTermsNotInContent = function htmlH2WithTermsNotInContent(doc) {
         //
         return _htmlHeaderWithTermsNotInContent("2");
+    }
+    
+    /**
+     *
+     * @param doc
+     * @return
+     */
+    window.htmlH2WithTermsInMetaKeywords = function htmlH2WithTermsInMetaKeywords(doc) {
+        //
+        return _htmlHeaderWithTermsInMetaKeywords("2");
     }
 
     /**
@@ -4909,9 +4971,29 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
      * @param doc
      * @return
      */
+    window.htmlH3WithTermsInMetaKeywords = function htmlH3WithTermsInMetaKeywords(doc) {
+        //
+        return _htmlHeaderWithTermsInMetaKeywords("3");
+    }
+    
+    /**
+     *
+     * @param doc
+     * @return
+     */
     window.htmlH4WithTermsNotInContent = function htmlH4WithTermsNotInContent(doc) {
         //
         return _htmlHeaderWithTermsNotInContent("4");
+    }
+    
+    /**
+     *
+     * @param doc
+     * @return
+     */
+    window.htmlH4WithTermsInMetaKeywords = function htmlH4WithTermsInMetaKeywords(doc) {
+        //
+        return _htmlHeaderWithTermsInMetaKeywords("4");
     }
 
     /**
@@ -4923,6 +5005,16 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         return _htmlHeaderWithTermsNotInContent("5");
     }
+    
+    /**
+     *
+     * @param doc
+     * @return
+     */
+    window.htmlH5WithTermsInMetaKeywords = function htmlH5WithTermsInMetaKeywords(doc) {
+        //
+        return _htmlHeaderWithTermsInMetaKeywords("5");
+    }
 
     /**
      *
@@ -4932,6 +5024,16 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
     window.htmlH6WithTermsNotInContent = function htmlH6WithTermsNotInContent(doc) {
         //
         return _htmlHeaderWithTermsNotInContent("6");
+    }
+    
+    /**
+     *
+     * @param doc
+     * @return
+     */
+    window.htmlH6WithTermsInMetaKeywords = function htmlH6WithTermsInMetaKeywords(doc) {
+        //
+        return _htmlHeaderWithTermsInMetaKeywords("6");
     }
 
     /**
@@ -4957,7 +5059,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlH1", err);
+            logger.error("htmlH1", err);console.log("htmlH1");console.log(err);
             result = false;
         }
 
@@ -4988,7 +5090,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlH2", err);
+            logger.error("htmlH2", err);console.log("htmlH2");console.log(err);
             result = false;
         }
 
@@ -5019,7 +5121,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlH3", err);
+            logger.error("htmlH3", err);console.log("htmlH3");console.log(err);
             result = false;
         }
 
@@ -5050,7 +5152,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlH4", err);
+            logger.error("htmlH4", err);console.log("htmlH4");console.log(err);
             result = false;
         }
 
@@ -5081,7 +5183,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlH5", err);
+            logger.error("htmlH5", err);console.log("htmlH5");console.log(err);
             result = false;
         }
 
@@ -5112,7 +5214,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlH6", err);
+            logger.error("htmlH6", err);console.log("htmlH6");console.log(err);
             result = false;
         }
 
@@ -5159,7 +5261,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlImageNotIndexable", err);
+            logger.error("htmlImageNotIndexable", err);console.log("htmlImageNotIndexable");console.log(err);
             result = false;
         }
 
@@ -5179,7 +5281,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         try {
             //
-            $("*[href]").each(function() {
+            $("*[href]:not([href^='mailto:'])").each(function() {
                 //
                 if ($(this).attr("href").match(reg)) {
                     result.push(_getDetails(this));
@@ -5197,7 +5299,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlUrlWithUnsafeChars", err);
+            logger.error("htmlUrlWithUnsafeChars", err);console.log("htmlUrlWithUnsafeChars");console.log(err);
             result = false;
         }
 
@@ -5237,7 +5339,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlUrlWithTermsNotInTitle", err);
+            logger.error("htmlUrlWithTermsNotInTitle", err);console.log("htmlUrlWithTermsNotInTitle");console.log(err);
             result = false;
         }
 
@@ -5280,7 +5382,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlLabelForNotInFieldIds", err);
+            logger.error("htmlLabelForNotInFieldIds", err);console.log("htmlLabelForNotInFieldIds");console.log(err);
             result = false;
         }
 
@@ -5325,7 +5427,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlImageSize", err);
+            logger.error("htmlImageSize", err);console.log("htmlImageSize");console.log(err);
             result = false;
         }
 
@@ -5356,7 +5458,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlNonHttpLinks", err);
+            logger.error("htmlNonHttpLinks", err);console.log("htmlNonHttpLinks");console.log(err);
             result = false;
         }
 
@@ -5387,7 +5489,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlNonHttpAreaLinks", err);
+            logger.error("htmlNonHttpAreaLinks", err);console.log("htmlNonHttpAreaLinks");console.log(err);
             result = false;
         }
 
@@ -5429,7 +5531,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlImageAnimatedNotInButtonOrA", err);
+            logger.error("htmlImageAnimatedNotInButtonOrA", err);console.log("htmlImageAnimatedNotInButtonOrA");console.log(err);
             result = false;
         }
 
@@ -5463,7 +5565,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlScript", err);
+            logger.error("htmlScript", err);console.log("htmlScript");console.log(err);
             result = false;
         }
 
@@ -5485,7 +5587,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
             //
             $("a[title]:not(:has(img))").each(function() {
                 //
-                var text = $.trim($(this).text()), title = $.trim($(this).attr("title"));
+                var text = $.trim($(this).text()).toLowerCase(), title = $.trim($(this).attr("title")).toLowerCase();
 
                 //
                 if (text != '' && (title == '' || title == text || $.inArray(title, badLinks) != -1)) {
@@ -5497,7 +5599,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlLinksTextWithInvalidTitle", err);
+            logger.error("htmlLinksTextWithInvalidTitle", err);console.log("htmlLinksTextWithInvalidTitle");console.log(err);
             result = false;
         }
 
@@ -5519,10 +5621,10 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
             //
             $("a:not(:has(img))").each(function() {
                 //
-                var text = $.trim($(this).text());
+                var text = $.trim($(this).text()).toLowerCase(), title = $.trim($(this).attr("title")).toLowerCase();
 
                 //
-                if (text != '' && $.inArray(text, badLinks) != -1) {
+                if (text != '' && $.inArray(text, badLinks) != -1 && (title == '' || $.inArray(title, badLinks) != -1)) {
                     result.push(_getDetails(this));
                 }
             });
@@ -5531,7 +5633,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlLinksTextInvalid", err);
+            logger.error("htmlLinksTextInvalid", err);console.log("htmlLinksTextInvalid");console.log(err);
             result = false;
         }
 
@@ -5553,7 +5655,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
             //
             $("a:not(:has(img))").each(function() {
                 //
-                var text = $.trim($(this).text()), title = $.trim($(this).attr("title"));
+                var text = $.trim($(this).text()).toLowerCase(), title = $.trim($(this).attr("title")).toLowerCase();
                 var context = text + "%|%" + title, href = resolveURI($.trim($(this).attr("href")), doc.location.href), _this = this;
 
                 //
@@ -5605,7 +5707,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlLinksTextNotUnique", err);
+            logger.error("htmlLinksTextNotUnique", err);console.log("htmlLinksTextNotUnique");console.log(err);
             result = false;
         }
 
@@ -5637,7 +5739,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlLinksImageWithInvalidAlt", err);
+            logger.error("htmlLinksImageWithInvalidAlt", err);console.log("htmlLinksImageWithInvalidAlt");console.log(err);
             result = false;
         }
 
@@ -5660,7 +5762,8 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
             $("a[title]").has("img").filter(function() {
                 return $.trim($(this).text()) == "";
             }).each(function() {
-                if ($.trim($(this).attr("title")) == '' || $.trim($(this).attr("title")) == $.trim($("img", this).attr("alt")) || $.inArray($.trim($(this).attr("title")), badLinks) != -1) {
+                var title = $.trim($(this).attr("title")).toLowerCase();
+                if (title == '' || $.inArray(title, badLinks) != -1) {
                     result.push(_getDetails(this));
                 }
             });
@@ -5669,7 +5772,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlLinksImageWithInvalidTitle", err);
+            logger.error("htmlLinksImageWithInvalidTitle", err);console.log("htmlLinksImageWithInvalidTitle");console.log(err);
             result = false;
         }
 
@@ -5693,7 +5796,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
                 return $.trim($(this).text()) == "";
             }).each(function() {
                 //
-                var context = $.trim($("img", this).attr("alt")) + "%|%" + $.trim($(this).attr("title")), href = $.trim($(this).attr("href"));
+                var context = $.trim($("img", this).attr("alt")).toLowerCase() + "%|%" + $.trim($(this).attr("title")).toLowerCase(), href = $.trim($(this).attr("href"));
 
                 //
                 if ($.inArray(context, Object.keys(links)) != -1) {
@@ -5713,7 +5816,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlLinksImageNotUnique", err);
+            logger.error("htmlLinksImageNotUnique", err);console.log("htmlLinksImageNotUnique");console.log(err);
             result = false;
         }
 
@@ -5745,7 +5848,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlLinksWithInvalidText", err);
+            logger.error("htmlLinksWithInvalidText", err);console.log("htmlLinksWithInvalidText");console.log(err);
             result = false;
         }
 
@@ -5769,7 +5872,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
                 return $.trim($(this).text()) != "";
             }).each(function() {
                 //
-                var context = $.trim($(this).text()) + "%|%" + $.trim($("img", this).attr("alt")) + "%|%" + $.trim($(this).attr("title"));
+                var context = $.trim($(this).text()).toLowerCase() + "%|%" + $.trim($("img", this).attr("alt")).toLowerCase() + "%|%" + $.trim($(this).attr("title")).toLowerCase();
                 var href = $.trim($(this).attr("href"));
 
                 //
@@ -5790,7 +5893,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlLinksNotUnique", err);
+            logger.error("htmlLinksNotUnique", err);console.log("htmlLinksNotUnique");console.log(err);
             result = false;
         }
 
@@ -5820,7 +5923,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlAreaWithInvalidAlt", err);
+            logger.error("htmlAreaWithInvalidAlt", err);console.log("htmlAreaWithInvalidAlt");console.log(err);
             result = false;
         }
 
@@ -5842,7 +5945,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
             //
             $("area[alt]").each(function() {
                 //
-                var context = $.trim($(this).attr("alt")) + "%|%" + $.trim($(this).attr("title")), href = $.trim($(this).attr("href"));
+                var context = $.trim($(this).attr("alt")).toLowerCase() + "%|%" + $.trim($(this).attr("title")).toLowerCase(), href = $.trim($(this).attr("href"));
 
                 //
                 if ($.inArray(context, Object.keys(links)) != -1) {
@@ -5862,7 +5965,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("htmlAreaNotUnique", err);
+            logger.error("htmlAreaNotUnique", err);console.log("htmlAreaNotUnique");console.log(err);
             result = false;
         }
 
@@ -5877,19 +5980,19 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
      */
     window.syndicationCache = function syndicationCache(doc) {
         //
-        var result = [], syNS = "http://purl.org/rss/1.0/modules/syndication/", mime = ["application/rss+xml", "application/atom+xml", "application/xml", "text/xml"];
+        var result = [], syNS = "http://purl.org/rss/1.0/modules/syndication/";
 
         //
         try {
             //
             window._extractor_result.links.forEach(function(element, index, array) {
                 //
-                if (element.rel == "alternate" && $.inArray(element.type, mime) != -1) {
+                if (element.rel == "alternate" && $.inArray(element.type, syndMime) != -1) {
                     //
                     var _xhr = _sendXHR("GET", element.uri);
 
                     //
-                    if (_xhr.status == 200 && $.inArray(_xhr.contentType, mime) != -1) {
+                    if (_xhr.status == 200 && $.inArray(_xhr.contentType, syndMime) != -1) {
                         // RSS
                         if (element.type == "application/rss+xml") {
                             // RSS 2
@@ -5937,7 +6040,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("syndicationCache", err);
+            logger.error("syndicationCache", err);console.log("syndicationCache");console.log(err);
             result = false;
         }
 
@@ -5952,19 +6055,19 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
      */
     window.syndicationAbsoluteLinks = function syndicationAbsoluteLinks(doc) {
         //
-        var result = [], mime = ["application/rss+xml", "application/atom+xml", "application/xml", "text/xml"];
+        var result = [];
 
         //
         try {
             //
             window._extractor_result.links.forEach(function(element, index, array) {
                 //
-                if (element.rel == "alternate" && $.inArray(element.type, mime) != -1) {
+                if (element.rel == "alternate" && $.inArray(element.type, syndMime) != -1) {
                     //
                     var _xhr = _sendXHR("GET", element.uri);
 
                     //
-                    if (_xhr.status == 200 && $.inArray(_xhr.contentType, mime) != -1) {
+                    if (_xhr.status == 200 && $.inArray(_xhr.contentType, syndMime) != -1) {
                         // RSS
                         if (element.type == "application/rss+xml") {
                             // RSS 2
@@ -6008,7 +6111,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("syndicationAbsoluteLinks", err);
+            logger.error("syndicationAbsoluteLinks", err);console.log("syndicationAbsoluteLinks");console.log(err);
             result = false;
         }
 
@@ -6030,11 +6133,8 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
             //
             window._extractor_result.links.forEach(function(element, index, array) {
                 //
-                if (element.rel == "alternate") {
-                    //
-                    if ($.inArray(element.type, ["application/rss+xml", "application/atom+xml"]) != -1) {
-                        result.push(_getDetails($("link[rel='alternate'][href='" + element.href + "'][type='" + element.type + "']").get(0)));
-                    }
+                if (element.rel == "alternate" && $.inArray(element.type, syndMime) != -1) {
+                    result.push(_getDetails($("link[rel='alternate'][href='" + element.href + "'][type='" + element.type + "']").get(0)));
                 }
             });
         }
@@ -6042,7 +6142,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("syndicationPresence", err);
+            logger.error("syndicationPresence", err);console.log("syndicationPresence");console.log(err);
             result = false;
         }
 
@@ -6057,19 +6157,19 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
      */
     window.syndicationSummary = function syndicationSummary(doc) {
         //
-        var result = [], mime = ["application/rss+xml", "application/atom+xml", "application/xml", "text/xml"];
+        var result = [];
 
         //
         try {
             //
             window._extractor_result.links.forEach(function(element, index, array) {
                 //
-                if (element.rel == "alternate" && $.inArray(element.type, mime) != -1) {
+                if (element.rel == "alternate" && $.inArray(element.type, syndMime) != -1) {
                     //
                     var _xhr = _sendXHR("GET", element.uri);
 
                     //
-                    if (_xhr.status == 200 && $.inArray(_xhr.contentType, mime) != -1) {
+                    if (_xhr.status == 200 && $.inArray(_xhr.contentType, syndMime) != -1) {
                         // RSS
                         if (element.type == "application/rss+xml") {
                             //
@@ -6099,7 +6199,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("syndicationSummary", err);
+            logger.error("syndicationSummary", err);console.log("syndicationSummary");console.log(err);
             result = false;
         }
 
@@ -6135,7 +6235,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("resDownloadable", err);
+            logger.error("resDownloadable", err);console.log("resDownloadable");console.log(err);
             result = false;
         }
 
@@ -6170,7 +6270,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("resPdf", err);
+            logger.error("resPdf", err);console.log("resPdf");console.log(err);
             result = false;
         }
 
@@ -6214,7 +6314,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("httpWithAndWoWww", err);
+            logger.error("httpWithAndWoWww", err);console.log("httpWithAndWoWww");console.log(err);
             result = false;
         }
 
@@ -6246,16 +6346,10 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
                     //
                     $("input, select, textarea", $(this)).each(function() {
                         //
-                        var id = $.trim($(this).attr("id"));
-                        var title = $.trim($(this).attr("title"));
-                        var label = $("label[for=" + id + "]").text().trim().toLowerCase();
-
-                        //
-                        if (title) {
-                            title = title.toLowerCase();
-                        } else {
-                            title = "";
-                        }
+                        var id = $.trim($(this).attr("id")),
+                            oTitle = $(this).attr("title"), 
+                            title = oTitle ? $.trim(oTitle).toLowerCase() : "",
+                            label = $("label[for=" + id + "]").text().trim().toLowerCase();
 
                         //
                         if (fields[i][j][title] == undefined) {
@@ -6283,9 +6377,10 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
                         //
                         $("input, select, textarea", $(this)).each(function() {
                             //
-                            var id = $.trim($(this).attr("id"));
-                            var title = $.trim($(this).attr("title"));
-                            var label = $("label[for=" + id + "]").text().trim().toLowerCase();
+                            var id = $.trim($(this).attr("id")),
+                                oTitle = $(this).attr("title"), 
+                                title = oTitle ? $.trim(oTitle).toLowerCase() : "",
+                                label = $("label[for=" + id + "]").text().trim().toLowerCase();
 
                             //
                             if (title) {
@@ -6360,7 +6455,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("_sameLabelsTitles2", err);
+            logger.error("_sameLabelsTitles2", err);console.log("_sameLabelsTitles2");console.log(err);
             result = false;
         }
 
@@ -6386,10 +6481,10 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
                     //
                     $("input, select, textarea", $(this)).each(function() {
                         //
-                        var id = $.trim($(this).attr("id"));
-                        var oLabel = $("label[for=" + id + "]");
-                        var label = oLabel ? $.trim(oLabel.text()).toLowerCase() : "";
-                        var title = $.trim($(this).attr("title"));
+                        var id = $.trim($(this).attr("id")),
+                            oLabel = $("label[for=" + id + "]"),
+                            label = oLabel ? $.trim(oLabel.text()).toLowerCase() : "",
+                            title = $.trim($(this).attr("title")).toLowerCase();
 
                         // label hidden
                         if (oLabel && (oLabel.css("display") == "none" || oLabel.css("visibility") == "hidden")) {
@@ -6434,10 +6529,10 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
                         //
                         $("input, select, textarea", $(this)).each(function() {
                             //
-                            var id = $.trim($(this).attr("id"));
-                            var oLabel = $("label[for=" + id + "]");
-                            var label = oLabel ? $.trim(oLabel.text()).toLowerCase() : "";
-                            var title = $.trim($(this).attr("title"));
+                            var id = $.trim($(this).attr("id")),
+                                oLabel = $("label[for=" + id + "]"),
+                                label = oLabel ? $.trim(oLabel.text()).toLowerCase() : "",
+                                title = $.trim($(this).attr("title")).toLowerCase();
 
                             // label hidden
                             if (oLabel && (oLabel.css("display") == "none" || oLabel.css("visibility") == "hidden")) {
@@ -6515,7 +6610,7 @@ var jsFrameworks = RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootools(-
         //
         catch (err) {
             // Error Logging
-            logger.error("_sameLabelsTitles", err);
+            logger.error("_sameLabelsTitles", err);console.log("_sameLabelsTitles");console.log(err);
             result = false;
         }
 

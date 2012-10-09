@@ -194,23 +194,23 @@
         }
     },
     "10062": {
-        "APPLET": {
+        "APPLET_WO_FILLED_ALT_ATTR": {
             "onfalse": {
-                "comment": "aucun APPLET",
+                "comment": "aucun APPLET avec ALT vide",
                 "result": "na"
             },
             "ontrue": {
-                "comment": "au moins un APPLET",
+                "comment": "au moins un APPLET avec ALT vide",
                 "result": "i"
             }
         },
-        "IMG": {
+        "IMG_W_EMPTY_ALT_ATTR": {
             "onfalse": {
-                "comment": "aucun IMG",
+                "comment": "aucun IMG avec ALT vide",
                 "result": "na"
             },
             "ontrue": {
-                "comment": "au moins un IMG",
+                "comment": "au moins un IMG avec ALT vide",
                 "result": "i"
             }
         }
@@ -5758,11 +5758,11 @@
                     "A_W_TEXT_WO_IMG_NOT_UNIQUE": {
                         "onfalse": {
                             "comment": "aucun A avec texte, ne contenant aucun IMG et avec un intitul\u00e9 non unique",
-                            "result": "c"
+                            "result": "i"
                         },
                         "ontrue": {
                             "comment": "au moins un A avec texte, ne contenant aucun IMG et avec un intitul\u00e9 non unique",
-                            "result": "i"
+                            "result": "nc"
                         }
                     }
                 },
@@ -7622,8 +7622,8 @@
                 "result": "na"
             },
             "ontrue": {
-                "comment": "la page est peut-être rafra\u00eechie ou redirig\u00e9e automatiquement",
-                "result": "i"
+                "comment": "la page est rafra\u00eechie ou redirig\u00e9e automatiquement",
+                "result": "nc"
             }
         },
         "META_REFRESH_SHORT": {
@@ -8641,14 +8641,14 @@
             },
             "ontrue": {
                 "chain": {
-                    "H1_W_TERMS_NOT_IN_CONTENT": {
+                    "H1_W_TERMS_IN_META_KEYWORDS": {
                         "onfalse": {
-                            "comment": "aucun H1 dont les termes ne sont pas dans le contenu de la page",
-                            "result": "c"
+                            "comment": "aucun H1 dont au moins un terme est dans le meta keywords",
+                            "result": "nc"
                         },
                         "ontrue": {
-                            "comment": "au moins un H1 dont les termes ne sont pas dans le contenu de la page",
-                            "result": "nc"
+                            "comment": "au moins un H1 dont aucun terme n'est dans le meta keywords",
+                            "result": "c"
                         }
                     }
                 },
@@ -8663,14 +8663,14 @@
             },
             "ontrue": {
                 "chain": {
-                    "H2_W_TERMS_NOT_IN_CONTENT": {
+                    "H2_W_TERMS_IN_META_KEYWORDS": {
                         "onfalse": {
-                            "comment": "aucun H2 dont les termes ne sont pas dans le contenu de la page",
-                            "result": "c"
+                            "comment": "aucun H2 dont au moins un terme est dans le meta keywords",
+                            "result": "nc"
                         },
                         "ontrue": {
-                            "comment": "au moins un H2 dont les termes ne sont pas dans le contenu de la page",
-                            "result": "nc"
+                            "comment": "au moins un H2 dont aucun terme n'est dans le meta keywords",
+                            "result": "c"
                         }
                     }
                 },
@@ -8685,14 +8685,14 @@
             },
             "ontrue": {
                 "chain": {
-                    "H3_W_TERMS_NOT_IN_CONTENT": {
+                    "H3_W_TERMS_IN_META_KEYWORDS": {
                         "onfalse": {
                             "comment": "aucun H3 dont les termes ne sont pas dans le contenu de la page",
                             "result": "c"
                         },
                         "ontrue": {
-                            "comment": "au moins un H3 dont les termes ne sont pas dans le contenu de la page",
-                            "result": "nc"
+                            "comment": "au moins un H3 dont aucun terme n'est dans le meta keywords",
+                            "result": "c"
                         }
                     }
                 },
@@ -8707,14 +8707,14 @@
             },
             "ontrue": {
                 "chain": {
-                    "H4_W_TERMS_NOT_IN_CONTENT": {
+                    "H4_W_TERMS_IN_META_KEYWORDS": {
                         "onfalse": {
-                            "comment": "aucun H4 dont les termes ne sont pas dans le contenu de la page",
-                            "result": "c"
+                            "comment": "aucun H4 dont au moins un terme est dans le meta keywords",
+                            "result": "nc"
                         },
                         "ontrue": {
-                            "comment": "au moins un H4 dont les termes ne sont pas dans le contenu de la page",
-                            "result": "nc"
+                            "comment": "au moins un H4 dont aucun terme n'est dans le meta keywords",
+                            "result": "c"
                         }
                     }
                 },
@@ -8729,14 +8729,14 @@
             },
             "ontrue": {
                 "chain": {
-                    "H5_W_TERMS_NOT_IN_CONTENT": {
+                    "H5_W_TERMS_IN_META_KEYWORDS": {
                         "onfalse": {
-                            "comment": "aucun H5 dont les termes ne sont pas dans le contenu de la page",
-                            "result": "c"
+                            "comment": "aucun H5 dont au moins un terme est dans le meta keywords",
+                            "result": "nc"
                         },
                         "ontrue": {
-                            "comment": "au moins un H5 dont les termes ne sont pas dans le contenu de la page",
-                            "result": "nc"
+                            "comment": "au moins un H5 dont aucun terme n'est dans le meta keywords",
+                            "result": "c"
                         }
                     }
                 },
@@ -8751,14 +8751,14 @@
             },
             "ontrue": {
                 "chain": {
-                    "H6_W_TERMS_NOT_IN_CONTENT": {
+                    "H6_W_TERMS_IN_META_KEYWORDS": {
                         "onfalse": {
-                            "comment": "aucun H6 dont les termes ne sont pas dans le contenu de la page",
-                            "result": "c"
+                            "comment": "aucun H6 dont au moins un terme est dans le meta keywords",
+                            "result": "nc"
                         },
                         "ontrue": {
-                            "comment": "au moins un H6 dont les termes ne sont pas dans le contenu de la page",
-                            "result": "nc"
+                            "comment": "au moins un H6 dont aucun terme n'est dans le meta keywords",
+                            "result": "c"
                         }
                     }
                 },
@@ -12268,25 +12268,13 @@
         }
     },
     "582": {
-        "LINK_ALTERN_ATOM": {
+        "RSS_PRESENCE": {
             "onfalse": {
-                "chain": {
-                    "LINK_ALTERN_RSS": {
-                        "onfalse": {
-                            "comment": "aucun LINK de type ATOM ou RSS",
-                            "result": "i"
-                        },
-                        "ontrue": {
-                            "comment": "au moins un LINK de type RSS",
-                            "result": "c"
-                        }
-                    }
-                },
-                "comment": "aucun LINK de type ATOM",
+                "comment": "absence de syndication",
                 "result": "i"
             },
             "ontrue": {
-                "comment": "au moins un LINK de type ATOM",
+                "comment": "présence de syndication",
                 "result": "c"
             }
         }
@@ -12728,12 +12716,12 @@
     "620": {
         "CSS_HOVER_LINKS": {
             "onfalse": {
-                "comment": "aucun style pouvant changer la mise en page des liens au survol",
-                "result": "c"
+                "comment": "aucun style pouvant changer la mise en page des liens au survol (\u00e0 v\u00e9rifier)",
+                "result": "i"
             },
             "ontrue": {
                 "comment": "au moins un style pouvant changer la mise en page des liens au survol",
-                "result": "i"
+                "result": "nc"
             }
         }
     },
@@ -13404,12 +13392,12 @@
     "709": {
         "CSS_UPPERCASE": {
             "onfalse": {
-                "comment": "aucune suite de majuscules",
+                "comment": "aucune suite de majuscules d\u00e9coratives",
                 "result": "c"
             },
             "ontrue": {
-                "comment": "au moins une suite de majuscules",
-                "result": "i"
+                "comment": "au moins une suite de majuscules d\u00e9coratives",
+                "result": "nc"
             }
         }
     },
@@ -13486,20 +13474,8 @@
                             "chain": {
                                 "JS_W_REDUDANT_SPACES": {
                                     "onfalse": {
-                                        "chain": {
-                                            "JS_W_COMMENTS": {
-                                                "onfalse": {
-                                                    "comment": "aucun JS avec des commentaires",
-                                                    "result": "c"
-                                                },
-                                                "ontrue": {
-                                                    "comment": "au moins un JS avec des commentaires",
-                                                    "result": "nc"
-                                                }
-                                            }
-                                        },
                                         "comment": "aucun JS avec des espaces inutiles",
-                                        "result": "i"
+                                        "result": "c"
                                     },
                                     "ontrue": {
                                         "comment": "au moins un JS avec des espaces inutiles",
@@ -13508,7 +13484,7 @@
                                 }
                             },
                             "comment": "aucun JS avec des retours \u00e0 la ligne",
-                            "result": "i"
+                            "result": "c"
                         },
                         "ontrue": {
                             "comment": "au moins un JS avec des retours \u00e0 la ligne",
@@ -13547,7 +13523,7 @@
                                             }
                                         },
                                         "comment": "aucune CSS avec des retours \u00e0 la ligne",
-                                        "result": "i"
+                                        "result": "c"
                                     },
                                     "ontrue": {
                                         "comment": "au moins une CSS avec des retours \u00e0 la ligne",
@@ -13580,7 +13556,7 @@
                                 }
                             },
                             "comment": "aucune CSS avec des retours \u00e0 la ligne",
-                            "result": "i"
+                            "result": "c"
                         },
                         "ontrue": {
                             "comment": "au moins une CSS avec des retours \u00e0 la ligne",

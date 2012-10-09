@@ -38,7 +38,7 @@
 
 const xhrMephisto = Components.classes["@mozilla.org/xmlextras/xmlhttprequest;1"].getService(Components.interfaces.nsIXMLHttpRequest);
 
-var links = [], images = [], body;
+var links = [], images = [], body, head;
 
 (function($) {
 	body = $('body', document);
@@ -76,7 +76,7 @@ var links = [], images = [], body;
 		}
 	}
 
-	var link_selection = $('head link[href][rel], body a[href]:not([href^="#"])').each(function() {
+	var link_selection = $('link[href][rel], body a[href]:not([href^="#"])').each(function() {
 		var tag = this.tagName.toLowerCase();
 		var label = tag == 'link' && this.getAttribute('title') || this.textContent;
 		links.push({
@@ -97,10 +97,10 @@ var links = [], images = [], body;
 			'longdesc' : encoded(this.getAttribute('longdesc')),
 			'width' : encoded(this.getAttribute('width')),
 			'height' : encoded(this.getAttribute('height'))
-		})
+		});
 	});
 
-	var title = $('head>title');
+	var title = $('head > title');
 	if (title.length == 0) {
 		title = null;
 	} else {
