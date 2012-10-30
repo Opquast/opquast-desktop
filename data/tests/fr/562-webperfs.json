@@ -1,0 +1,878 @@
+{
+    "19918": {
+        "goal": "", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "L'acc\u00e8s \u00e0 une page se fait sans redirection pr\u00e9alable.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "0"
+    }, 
+    "19916": {
+        "goal": "", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "L'utilisation de window.setTimeout() est limit\u00e9e \u00e0 une occurence par page.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "506"
+    }, 
+    "19931": {
+        "goal": "", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les dimensions d\u00e9clar\u00e9es d'une image sont ses dimensions r\u00e9elles", 
+        "solution": "", 
+        "thema": "", 
+        "name": "0"
+    }, 
+    "19910": {
+        "goal": "", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Le nombre de scripts internes charg\u00e9s en m\u00eame temps que le HTML est limit\u00e9 \u00e0 3.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "500"
+    }, 
+    "19932": {
+        "goal": "", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les dimensions r\u00e9elles des images sont indiqu\u00e9es dans le code source", 
+        "solution": "", 
+        "thema": "", 
+        "name": "0"
+    }, 
+    "19911": {
+        "goal": "", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Le nombre de CSS internes charg\u00e9s en m\u00eame temps que le HTML est limit\u00e9 \u00e0 3.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "501"
+    }, 
+    "19912": {
+        "goal": "", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Chaque cookie est limit\u00e9 \u00e0 4 Ko", 
+        "solution": "", 
+        "thema": "", 
+        "name": "502"
+    }, 
+    "19919": {
+        "goal": "", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les fichiers propos\u00e9s au t\u00e9l\u00e9chargement en haute qualit\u00e9 le sont \u00e9galement en basse qualit\u00e9", 
+        "solution": "", 
+        "thema": "", 
+        "name": "0"
+    }, 
+    "19913": {
+        "goal": "", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Le nombre de cookies est limit\u00e9 \u00e0 20 par domaine", 
+        "solution": "", 
+        "thema": "", 
+        "name": "503"
+    }, 
+    "19920": {
+        "goal": "", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les JPEG ne contiennent pas de meta-donn\u00e9es sonores", 
+        "solution": "", 
+        "thema": "", 
+        "name": "0"
+    }, 
+    "19914": {
+        "goal": "", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "L'URL d'une ressource ne pr\u00e9sente pas de variantes li\u00e9es \u00e0 la casse", 
+        "solution": "", 
+        "thema": "", 
+        "name": "504"
+    }, 
+    "19915": {
+        "goal": "", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les tableaux ont une largeur de rendu fixe.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "505"
+    }, 
+    "19011": {
+        "goal": "<ul><li>Diminuer la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Le serveur envoie les informations permettant la mise en cache des contenus.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "1"
+    }, 
+    "19012": {
+        "goal": "<div class=\"lastUnit size2of3\">\r\n        \r\n            \r\n                \r\n                    \r\n                        \r\n                            <div class=\"lastUnit size2of3\"><ul><li>Diminuer la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger\r\n                        \r\n                    \r\n                \r\n            \r\n        \r\n    </li></ul></div>\r\n                        \r\n                    \r\n                \r\n            \r\n        \r\n    </div>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Le serveur transmet des contenus compress\u00e9s aux clients qui les acceptent.", 
+        "solution": "Activer le module Gzip ou Deflate du serveur pour les ressources textuelles (Javascript, CSS, HTML).", 
+        "thema": "", 
+        "name": "2"
+    }, 
+    "19013": {
+        "goal": "<ul><li>Diminuer la charge de traitement par le serveur</li><li>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<style>\r\n<!--table\r\n\t{mso-displayed-decimal-separator:\"\\.\";\r\n\tmso-displayed-thousand-separator:\\00A0;}\r\n@page\r\n\t{margin:1.0in .75in 1.0in .75in;\r\n\tmso-header-margin:.5in;\r\n\tmso-footer-margin:.5in;}\r\ntd\r\n\t{padding-top:1px;\r\n\tpadding-right:1px;\r\n\tpadding-left:1px;\r\n\tmso-ignore:padding;\r\n\tcolor:black;\r\n\tfont-size:12.0pt;\r\n\tfont-weight:400;\r\n\tfont-style:normal;\r\n\ttext-decoration:none;\r\n\tfont-family:Calibri, sans-serif;\r\n\tmso-font-charset:0;\r\n\tmso-number-format:General;\r\n\ttext-align:general;\r\n\tvertical-align:bottom;\r\n\tborder:none;\r\n\tmso-background-source:auto;\r\n\tmso-pattern:auto;\r\n\tmso-protection:locked visible;\r\n\twhite-space:nowrap;\r\n\tmso-rotate:0;}\r\n.xl63\r\n\t{text-align:left;\r\n\tvertical-align:middle;\r\n\tpadding-left:12px;\r\n\tmso-char-indent-count:1;}\r\n--></style>Diminuer la charge de traitement par le client<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": " La compression est r\u00e9serv\u00e9e aux ressources qui ne le sont pas nativement.\r\n\t\t\r\n\t", 
+        "solution": "", 
+        "thema": "", 
+        "name": "3"
+    }, 
+    "19014": {
+        "goal": "<div class=\"lastUnit size2of3\"><ul><li>Diminuer la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger\r\n                        \r\n                    \r\n                \r\n            \r\n        \r\n    </li></ul></div>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les scripts sont minifi\u00e9s.", 
+        "solution": "Supprimer les espaces non n\u00e9cessaires et les commentaires dans les \r\nfichiers Javascript, par exemple en recourant \u00e0 des outils tels que <a href=\"http://crockford.com/javascript/jsmin\">crockford.com/javascript/jsmin</a> ou <a href=\"http://developer.yahoo.com/yui/compressor/\">developer.yahoo.com/yui/compressor/</a>", 
+        "thema": "", 
+        "name": "50"
+    }, 
+    "19015": {
+        "goal": "<div class=\"lastUnit size2of3\">\r\n        \r\n            \r\n                \r\n                    \r\n                        \r\n                            <div class=\"lastUnit size2of3\"><ul><li>Diminuer la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger\r\n                        \r\n                    \r\n                \r\n            \r\n        \r\n    </li></ul></div>\r\n                        \r\n                    \r\n                \r\n            \r\n        \r\n    </div>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les feuilles de style sont minifi\u00e9es.", 
+        "solution": "<div class=\"couple line\"><div class=\"lastUnit size2of3\">\r\n                        \r\n                    \r\n                \r\n            \r\n        \r\n    </div>Supprimer les espaces non n\u00e9cessaires et les commentaires dans les fichiers CSS, par exemple en recourant \u00e0 des outils tels que <a href=\"http://developer.yahoo.com/yui/compressor/\">developer.yahoo.com/yui/compressor/</a></div>", 
+        "thema": "", 
+        "name": "100"
+    }, 
+    "19016": {
+        "goal": "<ul><li>Diminuer la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger\r\n                        \r\n                    \r\n                \r\n            \r\n        \r\n    </li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Le code HTML est minifi\u00e9.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "201"
+    }, 
+    "19017": {
+        "goal": "", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les images n\u00e9cessaires \u00e0 une interaction font l'objet d'un pr\u00e9chargement\r\n\t\t\r\n\t", 
+        "solution": "", 
+        "thema": "", 
+        "name": "151"
+    }, 
+    "19018": {
+        "goal": "", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les ressources statiques sont h\u00e9berg\u00e9es sur un autre domaine.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "150"
+    }, 
+    "19019": {
+        "goal": "<ul><li>Diminuer la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les images sont propos\u00e9es dans des formats appropri\u00e9s", 
+        "solution": "png, jpg, webp, .ico, .gif .svg", 
+        "thema": "", 
+        "name": "152"
+    }, 
+    "19020": {
+        "goal": "<ul><li>Diminuer la charge de traitement par le client<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "La largeur et la hauteur des images sont indiqu\u00e9es dans le code HTML.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "153"
+    }, 
+    "19021": {
+        "goal": "<ul><li>Diminuer la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger</li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "La taille de l'image d\u00e9clar\u00e9e et la taille de l'image r\u00e9elle sont identiques.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "156"
+    }, 
+    "19022": {
+        "goal": "<ul><li>Diminuer la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger</li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les images ne comportent que les m\u00e9ta-donn\u00e9es n\u00e9cessaires \u00e0 la pr\u00e9visualisation.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "154"
+    }, 
+    "19023": {
+        "goal": "<ul><li>Diminuer la charge de traitement par le client</li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les dimensions d\u00e9clar\u00e9es d'une image respectent le ratio de l'image r\u00e9elle.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "155"
+    }, 
+    "19024": {
+        "goal": "<ul><li>Assurer \u00e0 l'utilisateur la perception du chargement de la page<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les scripts sont inclus de mani\u00e8re \u00e0 ne pas interrompre le rendu navigateur.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "51"
+    }, 
+    "19025": {
+        "goal": "", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les scripts non utiles imm\u00e9diatement sont charg\u00e9s juste avant leur utilisation.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "52"
+    }, 
+    "19026": {
+        "goal": "", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Toutes les instructions CSS sont utilis\u00e9es dans le site.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "102"
+    }, 
+    "19027": {
+        "goal": "<ul><li>Diminuer la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger</li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les ressources audio sont compress\u00e9es dans la limite d'une qualit\u00e9 sonore acceptable.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "250"
+    }, 
+    "19028": {
+        "goal": "<ul><li>Diminuer la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger</li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les ressources vid\u00e9o sont compress\u00e9es dans la limite d'une qualit\u00e9 visuelle acceptable.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "251"
+    }, 
+    "19029": {
+        "goal": "<ul><li>Diminuer la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger</li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Seule la pr\u00e9visualisation d'une vid\u00e9o est pr\u00e9-charg\u00e9e au chargement de la page.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "252"
+    }, 
+    "19030": {
+        "goal": "<ul><li>Diminuer la charge de traitement par le client<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les ent\u00eates envoy\u00e9s par le serveur contiennent les informations relatives au jeu de caract\u00e8res employ\u00e9.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "4"
+    }, 
+    "19031": {
+        "goal": "<ul><li>Diminuer la charge de traitement par le client<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "La section head commence par un \u00e9l\u00e9ment meta indiquant le jeu de caract\u00e8res employ\u00e9.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "202"
+    }, 
+    "19032": {
+        "goal": "<ul><li>Diminuer la charge de traitement par le client<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Seules les animations visibles sont actives.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "253"
+    }, 
+    "19033": {
+        "goal": "<ul><li>Assurer \u00e0 l'utilisateur la perception du chargement de la page<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Une image statique remplace une animation au chargement.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "254"
+    }, 
+    "19034": {
+        "goal": "<ul><li>Diminuer la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger</li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les fontes charg\u00e9es ne contiennent que le jeu de caract\u00e8res utile \u00e0 l'affichage du site.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "103"
+    }, 
+    "19035": {
+        "goal": "<ul><li>Diminuer la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger</li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les fontes charg\u00e9es ne contiennent que les variantes utiles \u00e0 l'affichage du site.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "104"
+    }, 
+    "19036": {
+        "goal": "<ul><li>Diminuer la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Sauf besoin sp\u00e9cifique (impression), les PDF sont propos\u00e9s en basse r\u00e9solution.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "300"
+    }, 
+    "19037": {
+        "goal": "<ul><li>Diminuer la charge de traitement par le client<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les ressources statiques sont servies sans cookies.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "10"
+    }, 
+    "19038": {
+        "goal": "", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Chaque ressource statique est toujours servie par le m\u00eame domaine.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "11"
+    }, 
+    "19039": {
+        "goal": "<ul><li>Diminuer la charge de traitement par le serveur</li><li>Diminuer la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Le code HTML envoy\u00e9 par le serveur n'appelle que des ressources accessibles sans redirection.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "12"
+    }, 
+    "19040": {
+        "goal": "<ul><li>Diminuer la charge de traitement par le client<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les \u00e9v\u00e9nements sont port\u00e9s par un \u00e9l\u00e9ment parent plut\u00f4t que par de multiples enfants.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "55"
+    }, 
+    "19041": {
+        "goal": "<ul><li>Diminuer la charge de traitement par le client<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les requ\u00eates sur le DOM sont cibl\u00e9es \u00e0 l'aide d'un identifiant.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "56"
+    }, 
+    "19042": {
+        "goal": "<ul><li>Diminuer la charge de traitement par le client</li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les scripts manipulent des classes plut\u00f4t que les styles en ligne.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "58"
+    }, 
+    "19043": {
+        "goal": "<ul><li>Diminuer la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les fonctions de scripts sont plac\u00e9es dans des fichiers externes.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "53"
+    }, 
+    "19044": {
+        "goal": "<ul><li>Diminuer la charge de traitement par le client                        \r\n                    \r\n                \r\n            \r\n        \r\n    </li></ul>\r\n", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Un s\u00e9lecteur ne se termine jamais par le s\u00e9lecteur universel.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "107"
+    }, 
+    "19045": {
+        "goal": "<ul><li>Assurer \u00e0 l'utilisateur la perception du chargement de la page<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Le serveur envoie la section head de la page d\u00e8s qu'elle est disponible.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "15"
+    }, 
+    "19046": {
+        "goal": "<ul><li>Diminuer le nombre de requ\u00eates serveur\r\n                        \r\n                    \r\n                \r\n            \r\n        \r\n    </li></ul>\r\n", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Le changement d'images d'arri\u00e8re-plan lors d'un rollover est g\u00e9r\u00e9 \u00e0 l'aide d'un sprite CSS.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "105"
+    }, 
+    "19047": {
+        "goal": "<ul><li>Diminuer le nombre de requ\u00eates serveur\r\n                        \r\n                    \r\n                \r\n            \r\n        \r\n    </li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les arri\u00e8res-plan sont combin\u00e9s dans un sprite CSS.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "106"
+    }, 
+    "19048": {
+        "goal": "<ul><li>Diminuer la charge de traitement par le serveur<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Le versionning de ressources statiques se fait via un param\u00e8tre ajout\u00e9 apr\u00e8s le nom du fichier ou directement dans le nom du fichier.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "16"
+    }, 
+    "19049": {
+        "goal": "<ul><li>Diminuer la charge de traitement par le serveur</li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Le versionning de ressources statiques se fait directement dans le nom du fichier.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "17"
+    }, 
+    "19050": {
+        "goal": "<ul><li>Diminuer le nombre de requ\u00eates serveur<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "L'indication de mise en cache des ressources statiques est d'au moins un mois.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "19"
+    }, 
+    "19051": {
+        "goal": "<ul><li>Diminuer la charge de traitement par le serveur<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les param\u00e8tres d'URL de ressources statiques ne sont utilis\u00e9s que pour le versioning.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "18"
+    }, 
+    "19052": {
+        "goal": "<ul><li>Diminuer le nombre de requ\u00eates serveur<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Le serveur respecte l'ordre pr\u00e9f\u00e9rentiel de langues des outils de consultation.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "5"
+    }, 
+    "19053": {
+        "goal": "<ul><li>Diminuer la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger</li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Le poids des pages d'erreur 404 des ressources non adress\u00e9es directement \u00e0 l'utilisateur est au maximum de 3Ko", 
+        "solution": "", 
+        "thema": "", 
+        "name": "6"
+    }, 
+    "19054": {
+        "goal": "<ul><li>Diminuer la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger</li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Le poids des pages d'erreur 403 des ressources non adress\u00e9es directement \u00e0 l'utilisateur est au maximum de 3Ko", 
+        "solution": "", 
+        "thema": "", 
+        "name": "7"
+    }, 
+    "19055": {
+        "goal": "<ul><li>Diminuer le nombre de requ\u00eates serveur<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Le serveur envoie l'indication de la langue principale du contenu.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "8"
+    }, 
+    "19056": {
+        "goal": "", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Un commentaire conditionnel vide pr\u00e9c\u00e8de l'\u00e9l\u00e9ment racine si les commentaires conditionnels sont utilis\u00e9s.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "203"
+    }, 
+    "19057": {
+        "goal": "", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les ressources statiques ne sont pas h\u00e9berg\u00e9es sur plus de 3 sous-domaines diff\u00e9rents.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "13"
+    }, 
+    "19058": {
+        "goal": "<ul><li>Diminuer la charge de traitement par le client</li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Toutes les balises HTML sont ferm\u00e9es", 
+        "solution": "", 
+        "thema": "", 
+        "name": "200"
+    }, 
+    "19059": {
+        "goal": "<ul><li>Diminuer le nombre de requ\u00eates serveur\r\n                        \r\n                    \r\n                \r\n            \r\n        \r\n    </li></ul>\r\n", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Tous les hyperliens internes du site sont valides.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "9"
+    }, 
+    "19060": {
+        "goal": "<ul><li>Diminuer le nombre de requ\u00eates serveur<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "La saisie utilisateur est valid\u00e9e c\u00f4t\u00e9 client pour r\u00e9duire les requ\u00eates comportant des donn\u00e9es erron\u00e9es.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "59"
+    }, 
+    "19061": {
+        "goal": "<ul><li>Diminuer le nombre de requ\u00eates serveur<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Si l'audience vis\u00e9e du site est g\u00e9ographiquement dispers\u00e9e, le site utilise un CDN.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "20"
+    }, 
+    "19062": {
+        "goal": "<ul><li>Diminuer la charge de traitement par le client<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les scripts manipulent les styles en ligne par blocs plut\u00f4t qu'un par un.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "57"
+    }, 
+    "19063": {
+        "goal": "<ul><li>Diminuer la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger</li><li>Diminuer le nombre de requ\u00eates serveur<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les requ\u00eates JSON utilisent GET pour b\u00e9n\u00e9ficier du cache.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "21"
+    }, 
+    "19064": {
+        "goal": "<ul><li>Diminuer la charge de traitement par le client<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les scripts n'utilisent pas document.write.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "54"
+    }, 
+    "19065": {
+        "goal": "<ul><li>Diminuer la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger</li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les requ\u00eates JSON sont minifi\u00e9es.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "61"
+    }, 
+    "19066": {
+        "goal": "<ul><li>Diminuer la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger</li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les requ\u00eates JSON sont compress\u00e9es.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "62"
+    }, 
+    "19067": {
+        "goal": "", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les styles ne comportent pas de reset CSS", 
+        "solution": "", 
+        "thema": "", 
+        "name": "101"
+    }, 
+    "19068": {
+        "goal": "<ul><li>Diminuer la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger</li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Le code source de chaque page ne contient pas d'\u00e9l\u00e9ments ou d'attributs de pr\u00e9sentation.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "204"
+    }, 
+    "19069": {
+        "goal": "<ul><li>Assurer \u00e0 l'utilisateur la perception du chargement de la page<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Un feedback pr\u00e9-charg\u00e9 est fourni \u00e0 l'utilisateur pendant le traitement d'une requ\u00eate dynamique.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "63"
+    }, 
+    "19070": {
+        "goal": "<ul><li>Diminuer la charge de traitement par le client<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Le stockage local est utilis\u00e9 quand les cookies ne sont pas n\u00e9cessaires.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "64"
+    }, 
+    "19071": {
+        "goal": "<ul><li>Diminuer le nombre de requ\u00eates serveur<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les formulaires comportent une aide \u00e0 la saisie pour \u00e9viter des requ\u00eates comportant des donn\u00e9es erron\u00e9es.", 
+        "solution": "", 
+        "thema": "", 
+        "name": "60"
+    }
+}
