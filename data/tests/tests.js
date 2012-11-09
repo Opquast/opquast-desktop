@@ -5078,6 +5078,134 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return result;
     }
+    
+    /**
+     *
+     * @param doc
+     * @return
+     */
+    window.httpResource403 = function httpResource403(doc) {
+        //
+        var result = [];
+
+        //
+        try {
+            //
+            sidecar.resources.forEach(function(element, index, array) {
+                //
+                if (element.status == "403" && element.referrer == "") {
+                    //
+                    result.push(element.uri);
+                }
+            });
+        }
+
+        //
+        catch (err) {
+            // Error Logging
+            logger.error("httpResource403", err);
+            result = false;
+        }
+
+        //
+        return result;
+    }
+    
+    /**
+     *
+     * @param doc
+     * @return
+     */
+    window.httpResource403MoreThan3k = function httpResource403MoreThan3k(doc) {
+        //
+        var result = [];
+
+        //
+        try {
+            //
+            sidecar.resources.forEach(function(element, index, array) {
+                //
+                if (element.status == "403" && element.referrer == "" && parseInt(element["headers"]["content-length"], 10) > 3000) {
+                    //
+                    result.push(element.uri);
+                }
+            });
+        }
+
+        //
+        catch (err) {
+            // Error Logging
+            logger.error("httpResource403MoreThan3k", err);
+            result = false;
+        }
+
+        //
+        return result;
+    }
+    
+    /**
+     *
+     * @param doc
+     * @return
+     */
+    window.httpResource404 = function httpResource404(doc) {
+        //
+        var result = [];
+
+        //
+        try {
+            //
+            sidecar.resources.forEach(function(element, index, array) {
+                //
+                if (element.status == "404" && element.referrer == "") {
+                    //
+                    result.push(element.uri);
+                }
+            });
+        }
+
+        //
+        catch (err) {
+            // Error Logging
+            logger.error("httpResource404", err);
+            result = false;
+        }
+
+        //
+        return result;
+    }
+    
+    /**
+     *
+     * @param doc
+     * @return
+     */
+    window.httpResource404MoreThan3k = function httpResource404MoreThan3k(doc) {
+        //
+        var result = [];
+
+        //
+        try {
+            //
+            sidecar.resources.forEach(function(element, index, array) {
+                //
+                if (element.status == "404" && element.referrer == "" && parseInt(element["headers"]["content-length"], 10) > 3000) {
+                    //
+                    result.push(element.uri);
+                }
+            });
+        }
+
+        //
+        catch (err) {
+            // Error Logging
+            logger.error("httpResource404MoreThan3k", err);
+            result = false;
+        }
+
+        //
+        return result;
+    }
 
     /**
      *
