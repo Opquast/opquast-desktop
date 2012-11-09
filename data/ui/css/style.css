@@ -109,7 +109,7 @@ button.launch:hover span, button.launch:active span {
 }
 
 #test_result tr th:last-child, #test_result tr td:last-child,
-#projects tr th:last-child, #projects tr td:last-child, {
+#projects tr th:last-child, #projects tr td:last-child {
     border-right: none;
 }
 
