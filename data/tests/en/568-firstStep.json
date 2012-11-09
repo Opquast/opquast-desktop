@@ -1,0 +1,974 @@
+{
+    "19359": {
+        "goal": "", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "If an img element is a child of an a element with text, do not use the same text for its alt attribute as the text inside the a element", 
+        "solution": "", 
+        "thema": "HTML", 
+        "name": "42"
+    }, 
+    "19338": {
+        "goal": "", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "When you provide an alt attribute for an area element, do not leave it empty", 
+        "solution": "", 
+        "thema": "HTML", 
+        "name": "41"
+    }, 
+    "19355": {
+        "goal": "", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Don't use a fieldset element without a form element", 
+        "solution": "", 
+        "thema": "HTML", 
+        "name": "70"
+    }, 
+    "19216": {
+        "goal": "\u00c9viter \u00e0 l'utilisateur d'avoir des \u00e9l\u00e9ments interactifs dont il ne peut connaitre la destination ou l'action", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "When you provide an a element, do not leave it empty except if it is used as an anchor", 
+        "solution": "Mettre un libell\u00e9 dans l'\u00e9l\u00e9ment &lt;a&gt;. Par exemple : &lt;a href=\"http://www.google.fr\"&gt;Site de google&lt;/a&gt;", 
+        "thema": "HTML", 
+        "name": "30"
+    }, 
+    "19218": {
+        "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Don't use the align attribute", 
+        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
+        "thema": "HTML", 
+        "name": "27"
+    }, 
+    "19219": {
+        "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Don't use an alink attribute", 
+        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
+        "thema": "HTML", 
+        "name": "52"
+    }, 
+    "19220": {
+        "goal": "Permettre la restitution d'un contenu alternatif aux utilisateurs qui ne peuvent pas percevoir le contenu de l'\u00e9l\u00e9ment.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Use the alt attribute for every applet element", 
+        "solution": "ajouter l'attribut alt sur l'\u00e9l\u00e9ment. Exemple&nbsp;: &lt;applet alt='...'&gt;&lt;/applet&gt;", 
+        "thema": "HTML", 
+        "name": "37"
+    }, 
+    "19221": {
+        "goal": "Permettre aux utilisateurs de distinguer les liens qui m\u00e8nent \u00e0 des adresses diff\u00e9rentes.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Use the alt attribute for every area element", 
+        "solution": "ajouter l'attribut alt sur l'\u00e9l\u00e9ment. Exemple&nbsp;: &lt;area alt='...'&gt;&lt;/area&gt;", 
+        "thema": "HTML", 
+        "name": "36"
+    }, 
+    "19222": {
+        "goal": "Permettre aux utilisateurs de distinguer les liens qui m\u00e8nent \u00e0 des adresses diff\u00e9rentes.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Don't use the same value for alt attributes for multiple area elements with different href values", 
+        "solution": "Indiquer dans chaque attribut alt un contenu permettant de comprendre la destination du lien.", 
+        "thema": "HTML", 
+        "name": "44"
+    }, 
+    "19353": {
+        "goal": "", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Don't use a value other than ltr, rtl or empty for the dir attribute", 
+        "solution": "", 
+        "thema": "HTML", 
+        "name": "8"
+    }, 
+    "19224": {
+        "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Don't use the background attribute", 
+        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
+        "thema": "HTML", 
+        "name": "46"
+    }, 
+    "19225": {
+        "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Don't use the basefont element", 
+        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
+        "thema": "HTML", 
+        "name": "78"
+    }, 
+    "19226": {
+        "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Don't use the bgcolor attribute", 
+        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
+        "thema": "HTML", 
+        "name": "61"
+    }, 
+    "19227": {
+        "goal": "Permettre d'\u00e9viter la lecture automatique de son qu'il n'est pas possible d'arr\u00eater.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Don't use the bgsound element", 
+        "solution": "Utiliser un syst\u00e8me de lecture des sons que les utilisateurs peuvent contr\u00f4ler avec la souris et avec le clavier.", 
+        "thema": "HTML", 
+        "name": "47"
+    }, 
+    "19228": {
+        "goal": "Permettre d'\u00e9viter la pr\u00e9sence de clignotement qu'il n'est pas possible d'arr\u00eater.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Don't use the blink element", 
+        "solution": "Eviter les contenus clignotant ou utiliser un syst\u00e8me de clignotement des contenus que les utilisateurs peuvent contr\u00f4ler avec la souris et avec le clavier.", 
+        "thema": "HTML", 
+        "name": "79"
+    }, 
+    "19229": {
+        "goal": "Permettre l'identification et la restitution du titre principal de la page.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "When you provide a h1 element, do not leave it empty", 
+        "solution": "Baliser le titre principal de la page avec l'\u00e9l\u00e9ment h1.", 
+        "thema": "HTML", 
+        "name": "13"
+    }, 
+    "19230": {
+        "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Don't use the border attribute", 
+        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
+        "thema": "HTML", 
+        "name": "43"
+    }, 
+    "19231": {
+        "goal": "Eviter \u00e0 l'utilisateur d'avoir des \u00e9l\u00e9ments interactifs dont il ne peut connaitre la destination ou l'action", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "When you provide a button element, do not leave it empty", 
+        "solution": "Mettre du texte dans l'\u00e9l\u00e9ment button. Exemple&nbsp;: &lt;button&gt;Passer ma commande&lt;/button&gt;", 
+        "thema": "HTML", 
+        "name": "31"
+    }, 
+    "19233": {
+        "goal": "Permettre aux utilisateurs de distinguer le sujet d'un tableau de donn\u00e9es de la mani\u00e8re dont il est construit.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Don't use the same content for a caption element and a summary attribute", 
+        "solution": "Mettre dans l'\u00e9l\u00e9ment caption un contenu servant \u00e0 titrer le tableau et dans l'attribut summary un contenu pour d\u00e9crire l'organisation du tableau", 
+        "thema": "HTML", 
+        "name": "49"
+    }, 
+    "19234": {
+        "goal": "Permettre la restitution du sujet du tableau de donn\u00e9es.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "When you provide a caption element, do not leave it empty", 
+        "solution": "Mettre dans l'\u00e9l\u00e9ment caption le titre du tableau.", 
+        "thema": "HTML", 
+        "name": "50"
+    }, 
+    "19235": {
+        "goal": "Permettre la distinction entre les tableaux de donn\u00e9es et les tableaux de mise en page.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Don't use a caption element in a table element containing only td elements", 
+        "solution": "Ne pas utiliser d'\u00e9l\u00e9ment caption dans les tableau de mise en page. En revanche, dans le cas d'un tableau de donn\u00e9es o\u00f9 l'\u00e9l\u00e9ment caption serait justifi\u00e9, utiliser des \u00e9l\u00e9ments th pour signaler les ent\u00eates du tableau.", 
+        "thema": "HTML", 
+        "name": "51"
+    }, 
+    "19236": {
+        "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Don't use the center element", 
+        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
+        "thema": "HTML", 
+        "name": "80"
+    }, 
+    "19239": {
+        "goal": "Permettre la restitution de la nature des contenus (ici une liste de d\u00e9finition) aux  utilisateurs qui ne per\u00e7oivent pas la mise en page originale.\r\nEviter l'utilisation d'\u00e9l\u00e9ment en fonction de la mani\u00e8re dont ils sont restitu\u00e9s visuellement.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Use a dt element as the first child of a dl element<br>", 
+        "solution": "Utiliser les \u00e9l\u00e9ments dl et dt et dd pour baliser les listes de d\u00e9finition.", 
+        "thema": "HTML", 
+        "name": "25"
+    }, 
+    "19241": {
+        "goal": "Permettre la restitution d'un titre au groupe form\u00e9 par fieldset.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Use a legend element as a child of every fieldset element", 
+        "solution": "Utiliser l'\u00e9l\u00e9ment legend juste apr\u00e8s l'\u00e9l\u00e9ment fieldset ou remplacer l'\u00e9l\u00e9ment fieldset par un div", 
+        "thema": "HTML", 
+        "name": "69"
+    }, 
+    "19242": {
+        "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Don't use the font element", 
+        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
+        "thema": "HTML", 
+        "name": "81"
+    }, 
+    "19244": {
+        "goal": "Permettre la restitution d'un contenu d\u00e9crivant la fonction et/ou le contenu de l'\u00e9l\u00e9ment.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Use the title attribute for every frame element", 
+        "solution": "Ajouter un attribut title sur chaque \u00e9l\u00e9ment frame. Exemple&nbsp;: &lt;frame title='...' src='...'&gt;&lt;/frame&gt;", 
+        "thema": "HTML", 
+        "name": "9"
+    }, 
+    "19245": {
+        "goal": "Permettre la restitution d'un contenu d\u00e9crivant la fonction et/ou le contenu de l'\u00e9l\u00e9ment.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "When you provide a title attribute for a frame element, do not leave it empty", 
+        "solution": "Ajouter un contenu \u00e0 l'attribut title des \u00e9l\u00e9ments frame permettant de conna\u00eetre la fonction ou le contenu de la frame. Exemple&nbsp;: &lt;frame title='navigation src='...' principale'&gt;&lt;/frame&gt;", 
+        "thema": "HTML", 
+        "name": "10"
+    }, 
+    "19246": {
+        "goal": "Eviter \u00e0 l'utilisateur d'avoir une hi\u00e9rarchie de titre incompl\u00e8te ou incoh\u00e9rente", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "When you provide a h1 element, do not leave it empty", 
+        "solution": "Ajouter un contenu \u00e0 l'\u00e9l\u00e9ment.", 
+        "thema": "HTML", 
+        "name": "14"
+    }, 
+    "19247": {
+        "goal": "Eviter \u00e0 l'utilisateur d'avoir une hi\u00e9rarchie de titre incompl\u00e8te ou incoh\u00e9rente", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "When you provide a h2 element, do not leave it empty", 
+        "solution": "Ajouter un contenu \u00e0 l'\u00e9l\u00e9ment.", 
+        "thema": "HTML", 
+        "name": "15"
+    }, 
+    "19248": {
+        "goal": "Eviter les trous dans la hi\u00e9rarchie des titres.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Use&nbsp; a h1, h2, h3, h4, h5 or h6 element as a first heading before a h2 element in the source order", 
+        "solution": "Pr\u00e9c\u00e9der chaque \u00e9l\u00e9ment h2 d'un \u00e9l\u00e9ment h1, h2, h3, h4, h5 ou h6.", 
+        "thema": "HTML", 
+        "name": "20"
+    }, 
+    "19249": {
+        "goal": "Eviter \u00e0 l'utilisateur d'avoir une hi\u00e9rarchie de titre incompl\u00e8te ou incoh\u00e9rente", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "When you provide a h3 element, do not leave it empty", 
+        "solution": "Ajouter un contenu \u00e0 l'\u00e9l\u00e9ment.", 
+        "thema": "HTML", 
+        "name": "16"
+    }, 
+    "19250": {
+        "goal": "Eviter les trous dans la hi\u00e9rarchie des titres.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Use a h2, h3, h4, h5 or h6 element as a first heading before a h3 element in the source order", 
+        "solution": "Pr\u00e9c\u00e9der chaque \u00e9l\u00e9ment h3 d'un \u00e9l\u00e9ment h2, h3, h4, h5 ou h6.", 
+        "thema": "HTML", 
+        "name": "21"
+    }, 
+    "19251": {
+        "goal": "Eviter \u00e0 l'utilisateur d'avoir une hi\u00e9rarchie de titre incompl\u00e8te ou incoh\u00e9rente", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "When you provide a h4 element, do not leave it empty", 
+        "solution": "Ajouter un contenu \u00e0 l'\u00e9l\u00e9ment.", 
+        "thema": "HTML", 
+        "name": "17"
+    }, 
+    "19252": {
+        "goal": "Eviter les trous dans la hi\u00e9rarchie des titres.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Use a h3, h4, h5 or h6 element as a first heading before a h4 element in the source order", 
+        "solution": "Pr\u00e9c\u00e9der chaque \u00e9l\u00e9ment h4 d'un \u00e9l\u00e9ment h3, h4, h5 ou h6.", 
+        "thema": "HTML", 
+        "name": "22"
+    }, 
+    "19253": {
+        "goal": "Eviter \u00e0 l'utilisateur d'avoir une hi\u00e9rarchie de titre incompl\u00e8te ou incoh\u00e9rente", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "When you provide a h5 element, do not leave it empty", 
+        "solution": "Ajouter un contenu \u00e0 l'\u00e9l\u00e9ment.", 
+        "thema": "HTML", 
+        "name": "18"
+    }, 
+    "19254": {
+        "goal": "Eviter les trous dans la hi\u00e9rarchie des titres.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Use a h4, h5 or h6 element as a first heading before a h5 element in the source order", 
+        "solution": "Pr\u00e9c\u00e9der chaque \u00e9l\u00e9ment h5 d'un \u00e9l\u00e9ment h4, h5 ou h6.", 
+        "thema": "HTML", 
+        "name": "23"
+    }, 
+    "19255": {
+        "goal": "Eviter \u00e0 l'utilisateur d'avoir une hi\u00e9rarchie de titre incompl\u00e8te ou incoh\u00e9rente", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "When you provide a h6 element, do not leave it empty", 
+        "solution": "Ajouter un contenu \u00e0 l'\u00e9l\u00e9ment.", 
+        "thema": "HTML", 
+        "name": "19"
+    }, 
+    "19256": {
+        "goal": "Eviter les trous dans la hi\u00e9rarchie des titres.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Use a h5 or h6 element as a first heading before a h6 element in the source order", 
+        "solution": "Pr\u00e9c\u00e9der chaque \u00e9l\u00e9ment h6 d'un \u00e9l\u00e9ment h5 ou h6.", 
+        "thema": "HTML", 
+        "name": "24"
+    }, 
+    "19257": {
+        "goal": "Permettre la restitution d'un titre de page destin\u00e9 \u00e0 identifier le contenu du document.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Use a title element as a child of the head element", 
+        "solution": "Ajouter un \u00e9l\u00e9ment title dans l'\u00e9l\u00e9ment head.", 
+        "thema": "HTML", 
+        "name": "3"
+    }, 
+    "19258": {
+        "goal": "Permettre la d\u00e9claration de la langue du document et l'adaptation des aides techniques \u00e0 celle-ci.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Use the lang attribute for the html element", 
+        "solution": "Ajouter l'attribut lang sur l'\u00e9l\u00e9ment html.", 
+        "thema": "HTML", 
+        "name": "6"
+    }, 
+    "19259": {
+        "goal": "Permettre aux agents utilisateurs d'interpr\u00e9ter correctement le document.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Use a W3C-conforming DTD syntax before the html element", 
+        "solution": "Positionner comme premier \u00e9l\u00e9ment une dtd conforme. Choisir dans la liste suivante&nbsp;: http://www.w3.org/QA/2002/04/valid-dtd-list.html", 
+        "thema": "HTML", 
+        "name": "1"
+    }, 
+    "19260": {
+        "goal": "Eviter les erreurs d'interpr\u00e9tation et de restitution par les agents utilisateurs et les aides techniques", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Don't use wrong attribute syntax or non-conforming element hierarchy inside the html element", 
+        "solution": "Fermer toutes les balises ouvertes. Ne pas imbriquer de balise de type block dans les balises de type inline. Utiliser des syntaxes et des valeurs d'attribut conformes en fonction de la dtd d\u00e9clar\u00e9e.", 
+        "thema": "HTML", 
+        "name": "2"
+    }, 
+    "19261": {
+        "goal": "Permettre la restitution d'un contenu d\u00e9crivant la fonction et/ou le contenu de l'\u00e9l\u00e9ment.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Use the title attribute for every iframe element", 
+        "solution": "Ajouter un attribut title sur chaque \u00e9l\u00e9ment iframe.", 
+        "thema": "HTML", 
+        "name": "11"
+    }, 
+    "19262": {
+        "goal": "Permettre la restitution d'un contenu d\u00e9crivant la fonction et/ou le contenu de l'\u00e9l\u00e9ment.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "When you provide a title attribute for an iframe element, do not leave it empty", 
+        "solution": "Ajouter un contenu \u00e0 l'attribut title des \u00e9l\u00e9ments iframe.", 
+        "thema": "HTML", 
+        "name": "12"
+    }, 
+    "19263": {
+        "goal": "Permettre la restitution d'un contenu alternatif aux utilisateurs qui ne peuvent pas percevoir le contenu de l'\u00e9l\u00e9ment.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Use the alt attribute for every img element", 
+        "solution": "ajouter l'attribut alt sur l'\u00e9l\u00e9ment. Exemple&nbsp;: &lt;img src='...' alt='...' /&gt;", 
+        "thema": "HTML", 
+        "name": "35"
+    }, 
+    "19265": {
+        "goal": "Eviter \u00e0 l'utilisateur d'avoir des \u00e9l\u00e9ments interactifs dont il ne peut connaitre la destination ou l'action", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "If the img element is the only child of a button or an a element, do not leave its alt attribute empty", 
+        "solution": "Renseigner le contenu de l'attribut alt avec la destination du lien ou la fonction du bouton d'action.", 
+        "thema": "HTML", 
+        "name": "39"
+    }, 
+    "19266": {
+        "goal": "Permettre d'associer le contenu d'une description longue \u00e0 l'image \u00e0 laquelle il se rapporte.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Use a URI as the value for a longdesc attribute", 
+        "solution": "Ajouter une url dans l'attribut longdesc. Exemple&nbsp;: &lt;img longdesc=\"url-de-la-description.html\" \u2026 &gt;", 
+        "thema": "HTML", 
+        "name": "45"
+    }, 
+    "19269": {
+        "goal": "Permettre la restitution d'un contenu alternatif aux utilisateurs qui ne peuvent pas percevoir le contenu de l'\u00e9l\u00e9ment.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Use the alt attribute for every input type=image element", 
+        "solution": "ajouter l'attribut alt sur l'\u00e9l\u00e9ment. Exemple&nbsp;: &lt;input type='image' alt='...'/&gt;", 
+        "thema": "HTML", 
+        "name": "38"
+    }, 
+    "19270": {
+        "goal": "Eviter \u00e0 l'utilisateur d'avoir des \u00e9l\u00e9ments interactifs dont il ne peut connaitre la destination ou l'action", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "When you provide an alt attribute for an input type=image element, do not leave it empty", 
+        "solution": "Renseigner le contenu de l'attribut alt avec la destination ou la fonction du bouton d'action.", 
+        "thema": "HTML", 
+        "name": "40"
+    }, 
+    "19273": {
+        "goal": "Eviter \u00e0 l'utilisateur d'avoir des \u00e9l\u00e9ments interactifs dont il ne peut connaitre la destination ou l'action", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "When you provide an input type=submit, do not leave its value attribute empty", 
+        "solution": "Mettre le texte correspondant \u00e0 l'action associ\u00e9e dans l'attribut value. Exemple : &lt;input type=''submit'' value=''envoyer le message''&gt;", 
+        "thema": "HTML", 
+        "name": "67"
+    }, 
+    "19275": {
+        "goal": "Permettre l'association des \u00e9tiquettes avec les champs auxquelles elles se rapportent.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Use the for attribute for every label element", 
+        "solution": "Ajouter un attribut for sur l'\u00e9l\u00e9ment label. Exemple&nbsp;: &lt;label for='champ-xxx'&gt;xxx&lt;/label&gt;", 
+        "thema": "HTML", 
+        "name": "72"
+    }, 
+    "19276": {
+        "goal": "Eviter \u00e0 l'utilisateur la restitution d'\u00e9tiquette associ\u00e9e \u00e0 aucun champ de formulaire.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "When you provide a for attribute for a label element, do not leave it empty", 
+        "solution": "Mettre dans l'attribut for la valeur de l'identifiant du champ associ\u00e9 au label", 
+        "thema": "HTML", 
+        "name": "73"
+    }, 
+    "19277": {
+        "goal": "Eviter \u00e0 l'utilisateur la restitution d'\u00e9tiquette associ\u00e9e \u00e0 aucun champ de formulaire.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "A for attribute must have a value that matches an id attribute inside the form element", 
+        "solution": "Corriger la valeur de l'attribut for afin de la faire correspondre au champ associ\u00e9 au label", 
+        "thema": "HTML", 
+        "name": "74"
+    }, 
+    "19278": {
+        "goal": "Permettre la d\u00e9claration de la langue du document et l'adaptation des aides techniques \u00e0 celle-ci.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Use a valid language code for the lang attribute", 
+        "solution": "Donner une valeur conforme au code de langue dans l'attribut lang. Exemple&nbsp;: \u201cfr\u201c pour le fran\u00e7ais, \u201cen\u201c pour l'anglais. Voir http://www.loc.gov/standards/iso639-2/php/code_list.php pour la liste compl\u00e8te des codes de langue.", 
+        "thema": "HTML", 
+        "name": "7"
+    }, 
+    "19280": {
+        "goal": "Eviter \u00e0 l'utilisateur la pr\u00e9sence de groupement d'\u00e9l\u00e9ments de formulaire qu'il ne pourra pas identifier.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "When you provide a legend element, do not leave it empty", 
+        "solution": "Renseigner l'\u00e9l\u00e9ment legend avec le titre du groupe form\u00e9 d'\u00e9l\u00e9ments de formulaire.", 
+        "thema": "HTML", 
+        "name": "71"
+    }, 
+    "19281": {
+        "goal": "Permettre la restitution sans erreur du nombre d'\u00e9l\u00e9ments composant une liste.\r\nEviter l'utilisation d'\u00e9l\u00e9ments \u00e0 des fins de pr\u00e9sentation.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "When you provide a li element, do not leave it empty", 
+        "solution": "Supprimer les \u00e9l\u00e9ments &lt;li&gt; qui ne poss\u00e8dent pas de contenu. Utiliser les propri\u00e9t\u00e9s des feuilles de styles margin et padding pour d\u00e9terminer les \u00e9carts entres les diff\u00e9rents \u00e9l\u00e9ments.", 
+        "thema": "HTML", 
+        "name": "26"
+    }, 
+    "19282": {
+        "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Don't use the link attribute", 
+        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
+        "thema": "HTML", 
+        "name": "34"
+    }, 
+    "19283": {
+        "goal": "Eviter l'utilisation d'\u00e9l\u00e9ments obsol\u00e8tes que les agents utilisateurs de sauraient pas interpr\u00e9ter.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Don't use the listing element", 
+        "solution": "Utiliser l'\u00e9l\u00e9ment pre au lieu de listing.", 
+        "thema": "HTML", 
+        "name": "57"
+    }, 
+    "19284": {
+        "goal": "Permettre d'\u00e9viter la pr\u00e9sence de contenu d\u00e9filant qu'il n'est pas possible d'arr\u00eater.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Don't use the marquee element", 
+        "solution": "Eviter les contenus d\u00e9filant ou utiliser un syst\u00e8me de d\u00e9filement des contenus que les utilisateurs peuvent contr\u00f4ler avec la souris et avec le clavier.", 
+        "thema": "HTML", 
+        "name": "68"
+    }, 
+    "19285": {
+        "goal": "Eviter aux utilisateurs un rechargement de la page qu'il ne pourrait pas ma\u00eetriser. ", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Don't use a meta element with an http-equiv attribute and a value equal to refresh", 
+        "solution": "Eviter les rechargements automatiques des pages ou utiliser un syst\u00e8me de rechargement o\u00f9 les utilisateurs sont inform\u00e9s du fonctionnement et o\u00f9 ils peuvent d\u00e9sactiver ce rechargement avec la souris et avec le clavier.", 
+        "thema": "HTML", 
+        "name": "5"
+    }, 
+    "19287": {
+        "goal": "Permettre la restitution d'un titre au groupe form\u00e9 par optgroup.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Use the label attribute for every optgroup element", 
+        "solution": "Ajouter un attribut label aux \u00e9l\u00e9ments optgroup. Exemple&nbsp;: &lt;optgroup label='france'&gt;...&lt;/optgroup&gt;", 
+        "thema": "HTML", 
+        "name": "75"
+    }, 
+    "19288": {
+        "goal": "Permettre la distinction des diff\u00e9rents groupes form\u00e9s.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Don't use the same label attribute for different optgroup elements of the same select element", 
+        "solution": "D\u00e9terminer un titre diff\u00e9rent pour chaque groupe form\u00e9 par les \u00e9l\u00e9ments optgroup.", 
+        "thema": "HTML", 
+        "name": "76"
+    }, 
+    "19289": {
+        "goal": "Permettre la distinction des diff\u00e9rents groupes form\u00e9s.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "When you provide a label attribute for an optgroup element, do not leave it empty", 
+        "solution": "D\u00e9terminer le nom du groupe form\u00e9 par optgroup et renseigner l'attribut label avec ce nom.", 
+        "thema": "HTML", 
+        "name": "77"
+    }, 
+    "19290": {
+        "goal": "Eviter l'utilisation d'\u00e9l\u00e9ments \u00e0 des fins de pr\u00e9sentation.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "When you provide a p element, do not leave it empty", 
+        "solution": "Supprimer les \u00e9l\u00e9ments &lt;p&gt; qui ne poss\u00e8dent pas de contenu. Utiliser les propri\u00e9t\u00e9s des feuilles de styles margin et padding pour d\u00e9terminer les \u00e9carts entres les diff\u00e9rents \u00e9l\u00e9ments.", 
+        "thema": "HTML", 
+        "name": "29"
+    }, 
+    "19292": {
+        "goal": "Eviter l'utilisation d'\u00e9l\u00e9ments obsol\u00e8tes que les agents utilisateurs de sauraient pas interpr\u00e9ter.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Don't use the plaintext element", 
+        "solution": "Utiliser l'\u00e9l\u00e9ment pre au lieu de plaintext.", 
+        "thema": "HTML", 
+        "name": "64"
+    }, 
+    "19295": {
+        "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Don't use the strike element", 
+        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
+        "thema": "HTML", 
+        "name": "56"
+    }, 
+    "19296": {
+        "goal": "Permettre l'identification des tableaux de donn\u00e9es et la restitution des contenus permettant de les caract\u00e9riser.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Use a caption element as the first child of a table element containing at least one th element", 
+        "solution": "Positionner un \u00e9l\u00e9ment caption tout de suite apr\u00e8s l'\u00e9l\u00e9ment table lorsqu'il s'agit d'un tableau de donn\u00e9es.", 
+        "thema": "HTML", 
+        "name": "48"
+    }, 
+    "19298": {
+        "goal": "Permettre l'identification des tableaux de donn\u00e9es et la restitution des contenus permettant de les caract\u00e9riser.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Use at least one th element inside a table element with a caption element or a non-empty summary attribute", 
+        "solution": "Modifier le code de mani\u00e8re \u00e0 utiliser l'\u00e9l\u00e9ment th \u00e0 la place de l'\u00e9l\u00e9ment td afin de d\u00e9clarer les ent\u00eates des tableaux de donn\u00e9es. Si c'est un tableau de mise en forme supprimer le caption ou le summary non vide", 
+        "thema": "HTML", 
+        "name": "58"
+    }, 
+    "19300": {
+        "goal": "Permettre aux utilisateurs de distinguer le sujet d'un tableau de donn\u00e9es de la mani\u00e8re dont il est construit.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Don't use the same content for a summary attribute and a caption element", 
+        "solution": "Mettre dans l'\u00e9l\u00e9ment caption un contenu servant \u00e0 titrer le tableau et dans l'attribut summary un contenu pour d\u00e9crire l'organisation du tableau", 
+        "thema": "HTML", 
+        "name": "53"
+    }, 
+    "19301": {
+        "goal": "Permettre l'identification des tableaux de donn\u00e9es et la restitution des contenus permettant de les caract\u00e9riser.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "When you provide a summary attribute for a table element containing a th or a caption element, do not leave it empty", 
+        "solution": "Inclure un contenu \u00e0 l'attribut summary de l'\u00e9l\u00e9ment table lorsqu'il s'agit d'un tableau de donn\u00e9es.", 
+        "thema": "HTML", 
+        "name": "54"
+    }, 
+    "19302": {
+        "goal": "Permettre aux utilisateurs de diff\u00e9rencier les tableaux de donn\u00e9es des tableaux de mise en page en n'utilisant pas les caract\u00e9ristiques sp\u00e9cifiques aux premiers dans les seconds.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Don't use a summary attribute on a table element containg only td elements", 
+        "solution": "Ne pas utiliser d'attribut summary dans les tableaux de mis en page.", 
+        "thema": "HTML", 
+        "name": "55"
+    }, 
+    "19303": {
+        "goal": "Permettre l'association des cellules avec leurs ent\u00eates dans les tableaux de donn\u00e9es.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Use a headers attribute on every td element if the corresponding th element has an id attribute", 
+        "solution": "Utiliser un attribut headers sur les cellules td des tableaux de donn\u00e9es dont les ent\u00eates (th) contiennent un attribut id.", 
+        "thema": "HTML", 
+        "name": "63"
+    }, 
+    "19305": {
+        "goal": "Permettre l'association des cellules avec leurs ent\u00eates dans les tableaux de donn\u00e9es.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Don't use for a headers element a value which matches an id attribute used for a td of the table element", 
+        "solution": "Renseigner les attributs headers des \u00e9l\u00e9ments td avec les valeurs des attributs id des ent\u00eates associ\u00e9es. ", 
+        "thema": "HTML", 
+        "name": "65"
+    }, 
+    "19306": {
+        "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Don't use the text attribute", 
+        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
+        "thema": "HTML", 
+        "name": "33"
+    }, 
+    "19308": {
+        "goal": "Permettre l'association des cellules avec leurs ent\u00eates dans les tableaux de donn\u00e9es.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Use a scope or id attribute for every non-empty th element", 
+        "solution": "Utiliser un attribut scope ou id sur les ent\u00eates (th) des tableaux de donn\u00e9es.", 
+        "thema": "HTML", 
+        "name": "59"
+    }, 
+    "19309": {
+        "goal": "Permettre l'association des cellules avec leurs ent\u00eates dans les tableaux de donn\u00e9es.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Don't use a value other than row or col for the scope attribute", 
+        "solution": "Utiliser la valeur row sur l'attribut scope des ent\u00eates de ligne et la valeur col sur les ent\u00eates de colonnes.", 
+        "thema": "HTML", 
+        "name": "60"
+    }, 
+    "19310": {
+        "goal": "Permettre la restitution du titre de la page.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "When you provide a title element, do not leave it empty", 
+        "solution": "D\u00e9terminer le titre de la page et renseigner l'\u00e9l\u00e9ment title avec ce titre.", 
+        "thema": "HTML", 
+        "name": "4"
+    }, 
+    "19311": {
+        "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Don't use the tt element", 
+        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
+        "thema": "HTML", 
+        "name": "62"
+    }, 
+    "19313": {
+        "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Don't use the vlink attribute", 
+        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
+        "thema": "HTML", 
+        "name": "32"
+    }, 
+    "19314": {
+        "goal": "Eviter l'utilisation d'\u00e9l\u00e9ments obsol\u00e8tes que les agents utilisateurs de sauraient pas interpr\u00e9ter.", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Don't use the xmp element", 
+        "solution": "Utiliser l'\u00e9l\u00e9ment pre au lieu de xmp.", 
+        "thema": "HTML", 
+        "name": "28"
+    }, 
+    "19348": {
+        "goal": "", 
+        "checklist": {
+            "id": 568, 
+            "name": "First step V1"
+        }, 
+        "explanation": "", 
+        "description": "Use a button, or an input of type submit, image or button inside a form element", 
+        "solution": "", 
+        "thema": "HTML", 
+        "name": "66"
+    }
+}
