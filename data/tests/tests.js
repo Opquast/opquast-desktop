@@ -36,9 +36,10 @@
  * ***** END LICENSE BLOCK ***** */"use strict";
 
 /*global xhrMephisto, CSSParser*/
-var langs = ['aa', 'aa-DJ', 'aa-ER', 'aa-ER-SAAHO', 'aa-ET', 'af', 'af-NA', 'af-ZA', 'ak', 'ak-GH', 'am', 'am-ET', 'ar', 'ar-AE', 'ar-BH', 'ar-DZ', 'ar-EG', 'ar-IQ', 'ar-JO', 'ar-KW', 'ar-LB', 'ar-LY', 'ar-MA', 'ar-OM', 'ar-QA', 'ar-SA', 'ar-SD', 'ar-SY', 'ar-TN', 'ar-YE', 'as', 'as-IN', 'az', 'az-AZ', 'az-Cyrl', 'az-Cyrl-AZ', 'az-Latn', 'az-Latn-AZ', 'be', 'be-BY', 'bg', 'bg-BG', 'bn', 'bn-BD', 'bn-IN', 'bs', 'bs-BA', 'byn', 'byn-ER', 'ca', 'ca-ES', 'cch', 'cch-NG', 'cop', 'cs', 'cs-CZ', 'cy', 'cy-GB', 'da', 'da-DK', 'de', 'de-AT', 'de-BE', 'de-CH', 'de-DE', 'de-LI', 'de-LU', 'dv', 'dv-MV', 'dz', 'dz-BT', 'ee', 'ee-GH', 'ee-TG', 'el', 'el-CY', 'el-GR', 'el-POLYTON', 'en', 'en-AS', 'en-AU', 'en-BE', 'en-BW', 'en-BZ', 'en-CA', 'en-Dsrt', 'en-Dsrt-US', 'en-GB', 'en-GU', 'en-HK', 'en-IE', 'en-IN', 'en-JM', 'en-MH', 'en-MP', 'en-MT', 'en-NA', 'en-NZ', 'en-PH', 'en-PK', 'en-SG', 'en-Shaw', 'en-TT', 'en-UM', 'en-US', 'en-US-POSIX', 'en-VI', 'en-ZA', 'en-ZW', 'eo', 'es', 'es-AR', 'es-BO', 'es-CL', 'es-CO', 'es-CR', 'es-DO', 'es-EC', 'es-ES', 'es-GT', 'es-HN', 'es-MX', 'es-NI', 'es-PA', 'es-PE', 'es-PR', 'es-PY', 'es-SV', 'es-US', 'es-UY', 'es-VE', 'et', 'et-EE', 'eu', 'eu-ES', 'fa', 'fa-AF', 'fa-IR', 'fi', 'fi-FI', 'fil', 'fil-PH', 'fo', 'fo-FO', 'fr', 'fr-BE', 'fr-CA', 'fr-CH', 'fr-FR', 'fr-LU', 'fr-MC', 'fr-SN', 'fur', 'fur-IT', 'ga', 'ga-IE', 'gaa', 'gaa-GH', 'gez', 'gez-ER', 'gez-ET', 'gl', 'gl-ES', 'gu', 'gu-IN', 'gv', 'gv-GB', 'ha', 'ha-Arab', 'ha-Arab-NG', 'ha-Arab-SD', 'ha-GH', 'ha-Latn', 'ha-Latn-GH', 'ha-Latn-NE', 'ha-Latn-NG', 'ha-NE', 'ha-NG', 'ha-SD', 'haw', 'haw-US', 'he', 'he-IL', 'hi', 'hi-IN', 'hr', 'hr-HR', 'hu', 'hu-HU', 'hy', 'hy-AM', 'hy-AM-REVISED', 'ia', 'id', 'id-ID', 'ig', 'ig-NG', 'ii', 'ii-CN', 'in', 'is', 'is-IS', 'it', 'it-CH', 'it-IT', 'iu', 'iw', 'ja', 'ja-JP', 'ka', 'ka-GE', 'kaj', 'kaj-NG', 'kam', 'kam-KE', 'kcg', 'kcg-NG', 'kfo', 'kfo-CI', 'kk', 'kk-Cyrl', 'kk-Cyrl-KZ', 'kk-KZ', 'kl', 'kl-GL', 'km', 'km-KH', 'kn', 'kn-IN', 'ko', 'ko-KR', 'kok', 'kok-IN', 'kpe', 'kpe-GN', 'kpe-LR', 'ku', 'ku-Arab', 'ku-Latn', 'ku-Latn-TR', 'ku-TR', 'kw', 'kw-GB', 'ky', 'ky-KG', 'ln', 'ln-CD', 'ln-CG', 'lo', 'lo-LA', 'lt', 'lt-LT', 'lv', 'lv-LV', 'mk', 'mk-MK', 'ml', 'ml-IN', 'mn', 'mn-CN', 'mn-Cyrl', 'mn-Cyrl-MN', 'mn-MN', 'mn-Mong', 'mn-Mong-CN', 'mo', 'mr', 'mr-IN', 'ms', 'ms-BN', 'ms-MY', 'mt', 'mt-MT', 'my', 'my-MM', 'nb', 'nb-NO', 'ne', 'ne-IN', 'ne-NP', 'nl', 'nl-BE', 'nl-NL', 'nn', 'nn-NO', 'no', 'nr', 'nr-ZA', 'nso', 'nso-ZA', 'ny', 'ny-MW', 'om', 'om-ET', 'om-KE', 'or', 'or-IN', 'pa', 'pa-Arab', 'pa-Arab-PK', 'pa-Guru', 'pa-Guru-IN', 'pa-IN', 'pa-PK', 'pl', 'pl-PL', 'ps', 'ps-AF', 'pt', 'pt-BR', 'pt-PT', 'ro', 'ro-MD', 'ro-RO', 'ru', 'ru-RU', 'ru-UA', 'rw', 'rw-RW', 'sa', 'sa-IN', 'se', 'se-FI', 'se-NO', 'sh', 'sh-BA', 'sh-CS', 'sh-YU', 'si', 'si-LK', 'sid', 'sid-ET', 'sk', 'sk-SK', 'sl', 'sl-SI', 'so', 'so-DJ', 'so-ET', 'so-KE', 'so-SO', 'sq', 'sq-AL', 'sr', 'sr-BA', 'sr-CS', 'sr-Cyrl', 'sr-Cyrl-BA', 'sr-Cyrl-CS', 'sr-Cyrl-ME', 'sr-Cyrl-RS', 'sr-Cyrl-YU', 'sr-Latn', 'sr-Latn-BA', 'sr-Latn-CS', 'sr-Latn-ME', 'sr-Latn-RS', 'sr-Latn-YU', 'sr-ME', 'sr-RS', 'sr-YU', 'ss', 'ss-SZ', 'ss-ZA', 'st', 'st-LS', 'st-ZA', 'sv', 'sv-FI', 'sv-SE', 'sw', 'sw-KE', 'sw-TZ', 'syr', 'syr-SY', 'ta', 'ta-IN', 'te', 'te-IN', 'tg', 'tg-Cyrl', 'tg-Cyrl-TJ', 'tg-TJ', 'th', 'th-TH', 'ti', 'ti-ER', 'ti-ET', 'tig', 'tig-ER', 'tl', 'tn', 'tn-ZA', 'to', 'to-TO', 'tr', 'tr-TR', 'trv', 'ts', 'ts-ZA', 'tt', 'tt-RU', 'ug', 'ug-Arab', 'ug-Arab-CN', 'ug-CN', 'uk', 'uk-UA', 'ur', 'ur-IN', 'ur-PK', 'uz', 'uz-AF', 'uz-Arab', 'uz-Arab-AF', 'uz-Cyrl', 'uz-Cyrl-UZ', 'uz-Latn', 'uz-Latn-UZ', 'uz-UZ', 've', 've-ZA', 'vi', 'vi-VN', 'wal', 'wal-ET', 'wo', 'wo-Latn', 'wo-Latn-SN', 'wo-SN', 'xh', 'xh-ZA', 'yo', 'yo-NG', 'zh', 'zh-CN', 'zh-Hans', 'zh-Hans-CN', 'zh-Hans-HK', 'zh-Hans-MO', 'zh-Hans-SG', 'zh-Hant', 'zh-Hant-HK', 'zh-Hant-MO', 'zh-Hant-TW', 'zh-HK', 'zh-MO', 'zh-SG', 'zh-TW', 'zu', 'zu-ZA'];
+var langs = ['aa', 'aa-dj', 'aa-er', 'aa-er-saaho', 'aa-et', 'af', 'af-na', 'af-za', 'ak', 'ak-gh', 'am', 'am-et', 'ar', 'ar-ae', 'ar-bh', 'ar-dz', 'ar-eg', 'ar-iq', 'ar-jo', 'ar-kw', 'ar-lb', 'ar-ly', 'ar-ma', 'ar-om', 'ar-qa', 'ar-sa', 'ar-sd', 'ar-sy', 'ar-tn', 'ar-ye', 'as', 'as-in', 'az', 'az-az', 'az-cyrl', 'az-cyrl-az', 'az-latn', 'az-latn-az', 'be', 'be-by', 'bg', 'bg-bg', 'bn', 'bn-bd', 'bn-in', 'bs', 'bs-ba', 'byn', 'byn-er', 'ca', 'ca-es', 'cch', 'cch-ng', 'cop', 'cs', 'cs-cz', 'cy', 'cy-gb', 'da', 'da-dk', 'de', 'de-at', 'de-be', 'de-ch', 'de-de', 'de-li', 'de-lu', 'dv', 'dv-mv', 'dz', 'dz-bt', 'ee', 'ee-gh', 'ee-tg', 'el', 'el-cy', 'el-gr', 'el-polyton', 'en', 'en-as', 'en-au', 'en-be', 'en-bw', 'en-bz', 'en-ca', 'en-dsrt', 'en-dsrt-us', 'en-gb', 'en-gu', 'en-hk', 'en-ie', 'en-in', 'en-jm', 'en-mh', 'en-mp', 'en-mt', 'en-na', 'en-nz', 'en-ph', 'en-pk', 'en-sg', 'en-shaw', 'en-tt', 'en-um', 'en-us', 'en-us-posix', 'en-vi', 'en-za', 'en-zw', 'eo', 'es', 'es-ar', 'es-bo', 'es-cl', 'es-co', 'es-cr', 'es-do', 'es-ec', 'es-es', 'es-gt', 'es-hn', 'es-mx', 'es-ni', 'es-pa', 'es-pe', 'es-pr', 'es-py', 'es-sv', 'es-us', 'es-uy', 'es-ve', 'et', 'et-ee', 'eu', 'eu-es', 'fa', 'fa-af', 'fa-ir', 'fi', 'fi-fi', 'fil', 'fil-ph', 'fo', 'fo-fo', 'fr', 'fr-be', 'fr-ca', 'fr-ch', 'fr-fr', 'fr-lu', 'fr-mc', 'fr-sn', 'fur', 'fur-it', 'ga', 'ga-ie', 'gaa', 'gaa-gh', 'gez', 'gez-er', 'gez-et', 'gl', 'gl-es', 'gu', 'gu-in', 'gv', 'gv-gb', 'ha', 'ha-arab', 'ha-arab-ng', 'ha-arab-sd', 'ha-gh', 'ha-latn', 'ha-latn-gh', 'ha-latn-ne', 'ha-latn-ng', 'ha-ne', 'ha-ng', 'ha-sd', 'haw', 'haw-us', 'he', 'he-il', 'hi', 'hi-in', 'hr', 'hr-hr', 'hu', 'hu-hu', 'hy', 'hy-am', 'hy-am-revised', 'ia', 'id', 'id-id', 'ig', 'ig-ng', 'ii', 'ii-cn', 'in', 'is', 'is-is', 'it', 'it-ch', 'it-it', 'iu', 'iw', 'ja', 'ja-jp', 'ka', 'ka-ge', 'kaj', 'kaj-ng', 'kam', 'kam-ke', 'kcg', 'kcg-ng', 'kfo', 'kfo-ci', 'kk', 'kk-cyrl', 'kk-cyrl-kz', 'kk-kz', 'kl', 'kl-gl', 'km', 'km-kh', 'kn', 'kn-in', 'ko', 'ko-kr', 'kok', 'kok-in', 'kpe', 'kpe-gn', 'kpe-lr', 'ku', 'ku-arab', 'ku-latn', 'ku-latn-tr', 'ku-tr', 'kw', 'kw-gb', 'ky', 'ky-kg', 'ln', 'ln-cd', 'ln-cg', 'lo', 'lo-la', 'lt', 'lt-lt', 'lv', 'lv-lv', 'mk', 'mk-mk', 'ml', 'ml-in', 'mn', 'mn-cn', 'mn-cyrl', 'mn-cyrl-mn', 'mn-mn', 'mn-mong', 'mn-mong-cn', 'mo', 'mr', 'mr-in', 'ms', 'ms-bn', 'ms-my', 'mt', 'mt-mt', 'my', 'my-mm', 'nb', 'nb-no', 'ne', 'ne-in', 'ne-np', 'nl', 'nl-be', 'nl-nl', 'nn', 'nn-no', 'no', 'nr', 'nr-za', 'nso', 'nso-za', 'ny', 'ny-mw', 'om', 'om-et', 'om-ke', 'or', 'or-in', 'pa', 'pa-arab', 'pa-arab-pk', 'pa-guru', 'pa-guru-in', 'pa-in', 'pa-pk', 'pl', 'pl-pl', 'ps', 'ps-af', 'pt', 'pt-br', 'pt-pt', 'ro', 'ro-md', 'ro-ro', 'ru', 'ru-ru', 'ru-ua', 'rw', 'rw-rw', 'sa', 'sa-in', 'se', 'se-fi', 'se-no', 'sh', 'sh-ba', 'sh-cs', 'sh-yu', 'si', 'si-lk', 'sid', 'sid-et', 'sk', 'sk-sk', 'sl', 'sl-si', 'so', 'so-dj', 'so-et', 'so-ke', 'so-so', 'sq', 'sq-al', 'sr', 'sr-ba', 'sr-cs', 'sr-cyrl', 'sr-cyrl-ba', 'sr-cyrl-cs', 'sr-cyrl-me', 'sr-cyrl-rs', 'sr-cyrl-yu', 'sr-latn', 'sr-latn-ba', 'sr-latn-cs', 'sr-latn-me', 'sr-latn-rs', 'sr-latn-yu', 'sr-me', 'sr-rs', 'sr-yu', 'ss', 'ss-sz', 'ss-za', 'st', 'st-ls', 'st-za', 'sv', 'sv-fi', 'sv-se', 'sw', 'sw-ke', 'sw-tz', 'syr', 'syr-sy', 'ta', 'ta-in', 'te', 'te-in', 'tg', 'tg-cyrl', 'tg-cyrl-tj', 'tg-tj', 'th', 'th-th', 'ti', 'ti-er', 'ti-et', 'tig', 'tig-er', 'tl', 'tn', 'tn-za', 'to', 'to-to', 'tr', 'tr-tr', 'trv', 'ts', 'ts-za', 'tt', 'tt-ru', 'ug', 'ug-arab', 'ug-arab-cn', 'ug-cn', 'uk', 'uk-ua', 'ur', 'ur-in', 'ur-pk', 'uz', 'uz-af', 'uz-arab', 'uz-arab-af', 'uz-cyrl', 'uz-cyrl-uz', 'uz-latn', 'uz-latn-uz', 'uz-uz', 've', 've-za', 'vi', 'vi-vn', 'wal', 'wal-et', 'wo', 'wo-latn', 'wo-latn-sn', 'wo-sn', 'xh', 'xh-za', 'yo', 'yo-ng', 'zh', 'zh-cn', 'zh-hans', 'zh-hans-cn', 'zh-hans-hk', 'zh-hans-mo', 'zh-hans-sg', 'zh-hant', 'zh-hant-hk', 'zh-hant-mo', 'zh-hant-tw', 'zh-hk', 'zh-mo', 'zh-sg', 'zh-tw', 'zu', 'zu-za'];
 var mimeHTML = ["text/html", "application/xhtml+xml"], mimeSyndication = ["application/rss+xml", "application/atom+xml", "application/xml", "text/xml"];
 var mimeMultimedia = ["application/x-shockwave-flash", "application/octet-stream", "application/x-silverlight-app", "application/xaml+xml", "application/x-ms-xbap", "application/vnd.rn-realmedia", "application/ogg", "image/svg+xml"];
+var genericFontStyle = ["serif", "sans-serif", "cursive", "fantasy", "monospace", "inherit"];
 
 var regUnicode = new RegExp().compile("[\xC2-\xDF][\x80-\xBF]|\xE0[\xA0-\xBF][\x80-\xBF]|[\xE1-\xEC\xEE\xEF][\x80-\xBF]{2}|\xED[\x80-\x9F][\x80-\xBF]|\xF0[\x90-\xBF][\x80-\xBF]{2}|[\xF1-\xF3][\x80-\xBF]{3}|\xF4[\x80-\x8F][\x80-\xBF]{2}", "m");
 var regFunction = new RegExp().compile("([^\\s:{}&|]*)\\(", "i"), badLinks = ['cliquez ici', 'lire la suite', 'en savoir plus', "plus d'infos"];
@@ -154,7 +155,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
                                             var _type = "text";
 
                                             //
-                                            for each (attribute in _tmp["attributes"]) {
+                                            for each (var attribute in _tmp["attributes"]) {
                                                 if (attribute["name"] == "type") {
                                                     _type = attribute["value"];
                                                 }
@@ -407,7 +408,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
             });
 
             //
-            nodes = $.unique(nodes)
+            nodes = $.unique(nodes);
 
             //
             for (var node in nodes) {
@@ -1222,12 +1223,12 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
      */
     window.cssGenericFont = function cssGenericFont(doc) {
         //
-        var result = [], generics;
+        var result = [];
 
         //
         function callback(rule) {
             //
-            var result = [], generics = ["serif", "sans-serif", "cursive", "fantasy", "monospace", "inherit"];
+            var result = [];
 
             //
             if (rule && rule.parentStyleSheet && rule.declarations) {
@@ -1239,7 +1240,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
                         var fontFamily = rule.declarations[i]["valueText"].split(","), font = fontFamily[fontFamily.length - 1].replace(/['"]/g, "").trim();
 
                         //
-                        if ($.inArray(font, generics) == -1) {
+                        if ($.inArray(font, genericFontStyle) == -1) {
                             //
                             result.push(_getCssDetails(rule, i));
                         }
@@ -1254,7 +1255,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         try {
             //
-            result = _analyseStylesheets(doc, "screen", callback), generics = ["serif", "sans-serif", "cursive", "fantasy", "monospace", "inherit"];
+            result = _analyseStylesheets(doc, "screen", callback);
 
             // inline style walk
             inlineStyles.each(function() {
@@ -1282,7 +1283,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
                                 var fontFamily = rule.declarations[i]["valueText"].split(","), font = fontFamily[fontFamily.length - 1].replace(/['"]/g, "").trim();
 
                                 //
-                                if ($.inArray(font, generics) == -1) {
+                                if ($.inArray(font, genericFontStyle) == -1) {
                                     //
                                     result.push(_getInlineCssDetails(rule, i, item));
                                 }
@@ -1500,7 +1501,8 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
                             for (var l = 0; l < rule.media.length; l++) {
                                 //
                                 var _media = rule.media.item && rule.media.item(l) || rule.media[l];
-                                if (startsWith(_media, "handheld") || startsWith(_media, "only handheld")) {
+                                if (startsWith("handheld", _media) || startsWith("only handheld", _media)) {
+                                    //
                                     result.push(rule.parentStyleSheet.href);
                                 }
                             }
@@ -1514,7 +1516,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
                     for (var j = 0; j < sheet.media.length; j++) {
                         //
                         var _media = sheet.media.item && sheet.media.item(j) || sheet.media[j];
-                        if (_media.startsWith("handheld") || _media.startsWith("only handheld")) {
+                        if (startsWith("handheld", _media) || startsWith("only handheld", _media)) {
                             //
                             result.push(sheet.href);
                         }
@@ -1569,7 +1571,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
                             for (var l = 0; l < rule.media.length; l++) {
                                 //
                                 var _media = rule.media.item && rule.media.item(l) || rule.media[l];
-                                if (startsWith(_media, "print") || startsWith(_media, "only print")) {
+                                if (startsWith("print", _media) || startsWith("only print", _media)) {
                                     //
                                     result.push(rule.parentStyleSheet.href);
                                 }
@@ -1584,7 +1586,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
                     for (var j = 0; j < sheet.media.length; j++) {
                         //
                         var _media = sheet.media.item && sheet.media.item(j) || sheet.media[j];
-                        if (startsWith(_media, "print") || startsWith(_media, "only print")) {
+                        if (startsWith("print", _media) || startsWith("only print", _media)) {
                             //
                             result.push(sheet.href);
                         }
@@ -1623,15 +1625,9 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
                 //
                 for (var i = 0; i < rule.declarations.length; i++) {
                     //
-                    if (rule.declarations[i]["property"] == "font-family" && rule.declarations[i]["valueText"] != "inherit") {
+                    if (rule.declarations[i]["property"] == "font-family" && $.inArray(rule.declarations[i]["valueText"], genericFontStyle) == -1) {
                         //
-                        result.push({
-                            "href": rule.parentStyleSheet._extra["href"],
-                            "selector": rule.mSelectorText,
-                            "rule": rule.declarations[i]["parsedCssText"],
-                            "line": rule.currentLine,
-                            "value": rule.declarations[i]["valueText"]
-                        });
+                        result = result.concat(rule.declarations[i]["valueText"].split(","));
                     }
                 }
             }
@@ -1666,15 +1662,9 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
                         //
                         for (var i = 0; i < rule.declarations.length; i++) {
                             //
-                            if (rule.declarations[i]["property"] == "font-family" && rule.declarations[i]["valueText"] != "inherit") {
+                            if (rule.declarations[i]["property"] == "font-family" && $.inArray(rule.declarations[i]["valueText"], genericFontStyle) == -1) {
                                 //
-                                result.push({
-                                    "href": "inline",
-                                    "selector": _getXPath(item),
-                                    "rule": rule.declarations[i]["parsedCssText"],
-                                    "line": null,
-                                    "value": rule.declarations[i]["valueText"]
-                                });
+                                result = result.concat(rule.declarations[i]["valueText"].split(","));
                             }
                         }
                     }
@@ -1682,7 +1672,19 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
             });
 
             //
-            result = $.unique(result);
+            result = result.map(function(element){
+                return $.trim(element).toLowerCase().replace(/"/g, '').replace(/'/g, "");
+            }).filter(function(element) {
+                return $.inArray(element, genericFontStyle) == -1;
+            });
+            
+            var tmp = [];
+            for each(var item in result) {
+                if($.inArray(item, tmp) == -1) {
+                    tmp.push(item);
+                }
+            }
+            result = tmp;
 
             //
             if (result.length < 4) {
@@ -1977,7 +1979,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
                 //
                 for (var i = 0; i < rule.declarations.length; i++) {
                     //
-                    if (rule.mSelectorText.endsWith("\\*")) {
+                    if (endsWith("\\*", rule.mSelectorText)) {
                         //
                         result.push(_getCssDetails(rule, i));  
                     }
@@ -2014,7 +2016,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
                         //
                         for (var i = 0; i < rule.declarations.length; i++) {
                             //
-                            if (rule.mSelectorText.endsWith("\\*")) {
+                            if (endsWith("\\*", rule.mSelectorText)) {
                                 //
                                 result.push(_getCssDetails(rule, i));    
                             }
@@ -2195,6 +2197,42 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         catch (err) {
             // Error Logging
             logger.error("html404", err);
+            result = false;
+        }
+
+        //
+        return result;
+    }
+
+    /**
+     *
+     * @param doc
+     * @return
+     */
+    window.htmlAccessibilityLink = function htmlAccessibilityLink(doc) {
+        //
+        var result = [];
+
+        //
+        try {
+            //
+            $("a").each(function() {
+                //
+                var text = $(this).text().trim().toLowerCase();
+                var alt = $("img[alt]", this) && $.trim($("img[alt]", this).attr("alt")).toLowerCase();
+
+                //
+                if (text == "accessibilité" || alt == "accessibilité") {
+                    //
+                    result.push(_getDetails(this));
+                }
+            });
+        }
+
+        //
+        catch (err) {
+            // Error Logging
+            logger.error("htmlAccessibilityLink", err);
             result = false;
         }
 
@@ -2528,7 +2566,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
             //
             $("*[lang], *[xml\\:lang]").each(function() {
                 //
-                var _lang = $.trim($(this).attr("lang")).split("-")[0], _xml_lang = $.trim($(this).attr("xml:lang")).split("-")[0];
+                var _lang = $.trim($(this).attr("lang")).split("-")[0].toLowerCase(), _xml_lang = $.trim($(this).attr("xml:lang")).split("-")[0].toLowerCase();
 
                 //
                 if (($(this).attr("lang") != undefined && $.inArray(_lang, langs) == -1) || ($(this).attr("xml:lang") != undefined && $.inArray(_xml_lang, langs) == -1)) {
@@ -3243,9 +3281,18 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
             //
             $("img[alt!='']").each(function() {
                 //
-                var content = $.unique(_getAllTextWoAlt(doc.body).split(" "));
+                var content = _getAllTextWoAlt(doc.body).split(" ");
                 var terms = $.trim($(this).attr("alt")).toLowerCase().split(" ");
                 var found = false;
+                
+                //
+                var tmp = [];
+                for each(var item in content) {
+                    if($.inArray(item, tmp) == -1) {
+                        tmp.push(item);
+                    }
+                }
+                content = tmp;
 
                 //
                 terms.some(function(value) {
@@ -3831,10 +3878,11 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return result;
     }
-
+    
     /**
      *
      * @param doc
+     * @todo js -> xpath
      * @return
      */
     window.metaRefreshShort = function htmlMetaRefreshShort(doc) {
@@ -4350,7 +4398,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         try {
             //
-            var _lang = $.trim($("html").attr("lang")).split("-")[0], _xml_lang = $.trim($("html").attr("xml:lang")).split("-")[0];
+            var _lang = $.trim($("html").attr("lang")).split("-")[0].toLowerCase(), _xml_lang = $.trim($("html").attr("xml:lang")).split("-")[0].toLowerCase();
 
             //
             if ($.inArray(_lang, langs) != -1 || $.inArray(_xml_lang, langs) != -1) {
@@ -4454,7 +4502,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
             //
             if (charset.toLowerCase() == doc.characterSet.toLowerCase()) {
                 //
-                if (!(regUnicode.test($("body").text()))) {
+                if (!regUnicode.test($("body").text()) && RegExp.$1 != '') {
                     //
                     result.push(charset);
                 }
@@ -4610,7 +4658,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
 
                 // is text
                 if (content_type
-                        && (content_type == "application/json" || element.uri.endsWith(".json")) && element.headers["content-length"] > 300) {
+                        && (content_type == "application/json" || endsWith(".json", element.uri)) && element.headers["content-length"] > 300) {
                     //
                     var tmp = _getHttpDetails(element.uri, element.headers);
 
@@ -4740,7 +4788,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
 
                 // is text
                 if (content_type
-                        && (content_type == "application/json" || element.uri.endsWith(".json"))) {
+                        && (content_type == "application/json" || endsWith(".json", element.uri))) {
                     //
                     result.push(element.uri);
                 }
@@ -4776,7 +4824,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
             //
             if (resources[0]["headers"]["content-language"]) {
                 //
-                var lang = resources[0]["headers"]["content-language"];
+                var lang = resources[0]["headers"]["content-language"].toLowerCase();
 
                 //
                 if ($.inArray(lang, langs) != -1) {
@@ -4896,6 +4944,134 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         catch (err) {
             // Error Logging
             logger.error("httpRefresh", err);
+            result = false;
+        }
+
+        //
+        return result;
+    }
+    
+    /**
+     *
+     * @param doc
+     * @return
+     */
+    window.httpResource403 = function httpResource403(doc) {
+        //
+        var result = [];
+
+        //
+        try {
+            //
+            sidecar.resources.forEach(function(element, index, array) {
+                //
+                if (element.status == "403" && element.referrer == "") {
+                    //
+                    result.push(element.uri);
+                }
+            });
+        }
+
+        //
+        catch (err) {
+            // Error Logging
+            logger.error("httpResource403", err);
+            result = false;
+        }
+
+        //
+        return result;
+    }
+    
+    /**
+     *
+     * @param doc
+     * @return
+     */
+    window.httpResource403MoreThan3k = function httpResource403MoreThan3k(doc) {
+        //
+        var result = [];
+
+        //
+        try {
+            //
+            sidecar.resources.forEach(function(element, index, array) {
+                //
+                if (element.status == "403" && element.referrer == "" && parseInt(element["headers"]["content-length"], 10) > 3000) {
+                    //
+                    result.push(element.uri);
+                }
+            });
+        }
+
+        //
+        catch (err) {
+            // Error Logging
+            logger.error("httpResource403MoreThan3k", err);
+            result = false;
+        }
+
+        //
+        return result;
+    }
+    
+    /**
+     *
+     * @param doc
+     * @return
+     */
+    window.httpResource404 = function httpResource404(doc) {
+        //
+        var result = [];
+
+        //
+        try {
+            //
+            sidecar.resources.forEach(function(element, index, array) {
+                //
+                if (element.status == "404" && element.referrer == "") {
+                    //
+                    result.push(element.uri);
+                }
+            });
+        }
+
+        //
+        catch (err) {
+            // Error Logging
+            logger.error("httpResource404", err);
+            result = false;
+        }
+
+        //
+        return result;
+    }
+    
+    /**
+     *
+     * @param doc
+     * @return
+     */
+    window.httpResource404MoreThan3k = function httpResource404MoreThan3k(doc) {
+        //
+        var result = [];
+
+        //
+        try {
+            //
+            sidecar.resources.forEach(function(element, index, array) {
+                //
+                if (element.status == "404" && element.referrer == "" && parseInt(element["headers"]["content-length"], 10) > 3000) {
+                    //
+                    result.push(element.uri);
+                }
+            });
+        }
+
+        //
+        catch (err) {
+            // Error Logging
+            logger.error("httpResource404MoreThan3k", err);
             result = false;
         }
 
@@ -5262,7 +5438,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
                     //
                     var subdomain = element.uri.split("/")[2];
                     
-                    if (subdomain != domain && subdomain.endsWith(domain)) {
+                    if (subdomain != domain && endsWith(domain, subdomain)) {
                         //
                         result.push(subdomain);
                     }             
@@ -5270,7 +5446,13 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
             });
             
             //
-            result = $.unique(result);
+            var tmp = [];
+            for each(var item in result) {
+                if($.inArray(item, tmp) == -1) {
+                    tmp.push(item);
+                }
+            }
+            result = tmp;
             
             //
             if(result.length < 4) {
@@ -5630,7 +5812,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
             //
             sidecar.resources.forEach(function(element, index, array) {
                 // 
-                if ($.inArray(element.status, redirect) == -1) {
+                if ($.inArray(element.status, redirect) != -1) {
                     //
                     result.push(_getHttpDetails(element.uri, element.headers));
                 }

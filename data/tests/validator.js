@@ -225,7 +225,7 @@ var logger;
     }
     
     window.endsWith = function endsWith(search, target) {
-        if (typeof String.prototype.endsWith != 'function') {
+        if (typeof String.prototype.endsWith == 'function') {
             return target.endsWith(search);   
         } else {
             return target.slice(-search.length) == search;
@@ -365,7 +365,8 @@ var logger;
             }
         }
     }
-        /**
+
+    /**
      *
      * @param doc
      * @return
@@ -446,7 +447,7 @@ var logger;
             return result;
         }
     }
-    
+
     /**
      *
      * @param doc
@@ -478,7 +479,7 @@ var logger;
             for (var j = 0; j < sheet._extra["media"].length; j++) {
                 //
                 var _media = sheet._extra["media"].item && sheet._extra["media"].item(j) || sheet._extra["media"][j];
-                if (startsWith(_media, media) || startsWith(_media, "only " + media) || _media == "all") {
+                if (startsWith(media, _media) || startsWith("only " + media, _media) || _media == "all") {
                     //
                     var rules = sheet.cssRules;
 
@@ -520,7 +521,7 @@ var logger;
             for (var l = 0; l < rule.media.length; l++) {
                 //
                 var _media = rule.media.item && rule.media.item(l) || rule.media[l];
-                if (startsWith(_media, media) || startsWith(_media, "only " + media) || _media == "all") {
+                if (startsWith(media, _media) || startsWith("only " + media, _media) || _media == "all") {
                     //
                     var rules = rule.cssRules;
 
@@ -542,7 +543,7 @@ var logger;
             for (var l = 0; l < rule.media.length; l++) {
                 //
                 var _media = rule.media.item && rule.media.item(l) || rule.media[l];
-                if (startsWith(_media, media) || startsWith(_media, "only " + media) || _media == "all") {
+                if (startsWith(media, _media) || startsWith("only " + media, _media) || _media == "all") {
                     //
                     var re = new RegExp().compile("(url\\()?'?\"?([^'\"\\)]*)", "i");
                     re.test(rule.href);
@@ -688,7 +689,7 @@ var logger;
     window._getDetails = function _getDetails(node) {
         //
         if (node == undefined) {
-            return;
+            return {};
         }
 
         //
@@ -712,7 +713,7 @@ var logger;
             "text": text
         }
     }
-    
+
     /**
      *
      * @param doc
@@ -722,7 +723,8 @@ var logger;
         //
         return rule.parentStyleSheet._extra["href"] + " (ligne " + rule.currentLine + ") : " + rule.mSelectorText + " {" + rule.declarations[i]["parsedCssText"] + "}";
     }
-        /**
+
+    /**
      *
      * @param doc
      * @return
@@ -731,7 +733,7 @@ var logger;
         //
         return "style en ligne sur " + _getXPath(item) + " : " + rule.declarations[i]["parsedCssText"];
     }
-    
+
     /**
      *
      * @param doc
@@ -747,7 +749,7 @@ var logger;
         //
         return "entête HTTP de " + url + " :" + _headers;
     }
-    
+
     /**
      *
      * @param url
@@ -761,6 +763,7 @@ var logger;
         //
         return a.href;
     }
+
     /**
      *
      * @param node
@@ -860,7 +863,7 @@ var logger;
         //
         return tmp;
     }
-    
+
     /**
      * Get a page in the pages stack
      *
@@ -1154,6 +1157,7 @@ var logger;
         //
         return false;
     }
+
     /**
      * Analyse the page
      *
@@ -1186,6 +1190,7 @@ var logger;
         //
         return false;
     }
+
     /**
      * Test all the criteria
      *
@@ -1635,7 +1640,7 @@ var logger;
             //
             else if (language == "http") {
                 var _headers = "";
-				var resources = sidecar.resources.filter(
+                var resources = sidecar.resources.filter(
                     function(item){return item["content_type"] == "text/html" || item["content_type"] == "application/xhtml+xml";}
                 );
 
