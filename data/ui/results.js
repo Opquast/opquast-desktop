@@ -55,11 +55,11 @@ var table;
         try {
             var _date = new Date(tests.datetime), tbody = $('tbody');
             table = $('table');
-                
+
             window._showInfo(_("oqs.analyze_info",
                 _date.toLocaleFormat(_("oqs.date_format")), _date.toLocaleTimeString(), Math.round(tests.timer*10)/10
             ));
-            
+
             for each (var result in tests.oaa_results) {
                 var results = {
                     "c" : _("oqs.pass"),

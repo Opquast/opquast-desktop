@@ -40,4 +40,4 @@
     if (/^\?message\=/.test(document.location.search)) {
         $("body").append($('<p id="loader"></p>').text(decodeURIComponent(document.location.search.replace("?message=", ""))));
     }
-})(jQuery); 
+})(jQuery);

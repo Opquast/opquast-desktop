@@ -49,7 +49,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
 
 (function($) {
     "use strict";
-    
+
     /**
      *
      * @param doc
@@ -627,7 +627,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return result;
     }
-    
+
     /**
      *
      * @param doc
@@ -763,7 +763,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return result;
     }
-    
+
     /**
      *
      * @param doc
@@ -840,7 +840,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return result;
     }
-    
+
     /**
      *
      * @param doc
@@ -863,11 +863,11 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
                     if (rule.declarations[i]["property"] == "background-position" && rule.declarations[i]["valueText"] != "0 0") {
                         //
                         var node = $(rule.mSelectorText);
-                        
+
                         //
                         if(reg.test(node.css("background-image")) && node.css("background-repeat") == "no-repeat") {
-                            result.push(_getCssDetails(rule, i));  
-                        } 
+                            result.push(_getCssDetails(rule, i));
+                        }
                     }
                 }
             }
@@ -905,12 +905,12 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
                             if (rule.declarations[i]["property"] == "background-position" && rule.declarations[i]["valueText"] != "0 0") {
                                 //
                                 var node = $(rule.mSelectorText);
-                                
+
                                 //
                                 if(reg.test(node.css("background-image")) && node.css("background-repeat") == "no-repeat") {
                                     //
-                                    result.push(_getCssDetails(rule, i));    
-                                }                        
+                                    result.push(_getCssDetails(rule, i));
+                                }
                             }
                         }
                     }
@@ -1328,7 +1328,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
                     var selectors = rule.mSelectorText.split(",").map(function(element){
                         return $.trim(element);
                     });
-                    
+
                     //
                     for each (var selector in selectors) {
                         //
@@ -1677,7 +1677,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
             }).filter(function(element) {
                 return $.inArray(element, genericFontStyle) == -1;
             });
-            
+
             var tmp = [];
             for each(var item in result) {
                 if($.inArray(item, tmp) == -1) {
@@ -1781,7 +1781,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
     }
 
     /**
-     * 
+     *
      * @param doc
      * @return
      */
@@ -1959,7 +1959,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return result;
     }
-    
+
     /**
      *
      * @param doc
@@ -1981,7 +1981,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
                     //
                     if (endsWith("\\*", rule.mSelectorText)) {
                         //
-                        result.push(_getCssDetails(rule, i));  
+                        result.push(_getCssDetails(rule, i));
                     }
                 }
             }
@@ -2018,7 +2018,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
                             //
                             if (endsWith("\\*", rule.mSelectorText)) {
                                 //
-                                result.push(_getCssDetails(rule, i));    
+                                result.push(_getCssDetails(rule, i));
                             }
                         }
                     }
@@ -2055,12 +2055,12 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
                 acceptNode: function(_node) {
                     //
                     var node = $(_node);
-                    
+
                     //
                     if ($.inArray(_node.tagName.toUpperCase(), exclusions) == -1 && reg.test(node.text()) && node.css("text-decoration") != "uppercase") {
                         return NodeFilter.FILTER_ACCEPT;
                     }
-                    
+
                     return NodeFilter.FILTER_REJECT;
                 }
             }, false);
@@ -2809,7 +2809,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return result;
     }
-    
+
     /**
      *
      * @param doc
@@ -2881,7 +2881,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return _htmlHeaderWithTermsNotInContent("2");
     }
-    
+
     /**
      *
      * @param doc
@@ -2923,7 +2923,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return _htmlHeaderWithTermsInMetaKeywords("3");
     }
-    
+
     /**
      *
      * @param doc
@@ -2965,7 +2965,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return result;
     }
-    
+
     /**
      *
      * @param doc
@@ -2985,7 +2985,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return _htmlHeaderWithTermsNotInContent("4");
     }
-    
+
     /**
      *
      * @param doc
@@ -3037,7 +3037,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return _htmlHeaderWithTermsNotInContent("5");
     }
-    
+
     /**
      *
      * @param doc
@@ -3089,7 +3089,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return _htmlHeaderWithTermsNotInContent("6");
     }
-    
+
     /**
      *
      * @param doc
@@ -3284,7 +3284,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
                 var content = _getAllTextWoAlt(doc.body).split(" ");
                 var terms = $.trim($(this).attr("alt")).toLowerCase().split(" ");
                 var found = false;
-                
+
                 //
                 var tmp = [];
                 for each(var item in content) {
@@ -3332,7 +3332,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return _htmlSameLabelsTitles("checkbox");
     }
-    
+
     /**
      *
      * @param doc
@@ -3878,7 +3878,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return result;
     }
-    
+
     /**
      *
      * @param doc
@@ -3914,7 +3914,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return result;
     }
-    
+
     /**
      *
      * @param doc
@@ -4011,8 +4011,8 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
 
         //
         return result;
-    }    
-    
+    }
+
     /**
      *
      * @param doc
@@ -4072,8 +4072,8 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
 
         //
         return result;
-    }    
-    
+    }
+
     /**
      *
      * @param doc
@@ -4105,7 +4105,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return result;
     }
-    
+
     /**
      *
      * @param doc
@@ -4239,7 +4239,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
 
         //
         return result;
-    }    
+    }
 
     /**
      *
@@ -4259,8 +4259,8 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
     window.htmlTextareaWithoutTitleAndLabel = function htmlTextareaWithoutTitleAndLabel(doc) {
         //
         return _htmlFieldWithoutTitleAndLabel("textarea", false);
-    }    
-    
+    }
+
     /**
      *
      * @param doc
@@ -4277,7 +4277,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         try {
             //
             var title = $("title").text().trim().toLowerCase().split(reg2);
-            
+
             //
             terms = terms.filter(function(element) {
                 return element.length >= 3;
@@ -4341,7 +4341,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
 
         //
         return result;
-    }    
+    }
 
     /**
      *
@@ -4358,7 +4358,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
             sidecar.resources.forEach(function(element, index, array) {
                 //
                 var url = element.uri.split("?")[0];
-                
+
                 if($.inArray(url, urls) == -1) {
                     //
                     for each(var _url in urls) {
@@ -4384,7 +4384,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
 
         //
         return result;
-    }    
+    }
 
     /**
      *
@@ -4417,7 +4417,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return result;
     }
-    
+
     /**
      *
      * @param doc
@@ -4448,7 +4448,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return result;
     }
-    
+
     /**
      *
      * @param doc
@@ -4480,7 +4480,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return result;
     }
-    
+
     /**
      *
      * @param doc
@@ -4488,7 +4488,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
      */
     window.httpCharset = function httpCharset(doc) {
         //
-        var result = []; 
+        var result = [];
 
         //
         try {
@@ -4639,7 +4639,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return result;
     }
-    
+
     /**
      *
      * @param doc
@@ -4687,7 +4687,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return result;
     }
-    
+
     /**
      *
      * @param doc
@@ -4733,7 +4733,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return result;
     }
-    
+
     /**
      *
      * @param doc
@@ -4769,7 +4769,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return result;
     }
-    
+
     /**
      *
      * @param doc
@@ -4805,7 +4805,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return result;
     }
-    
+
     /**
      *
      * @param doc
@@ -4908,7 +4908,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
                     return $.inArray(item["content_type"], mimeHTML) != -1 && item['status'] == 200;
                 }
             );
-            
+
             //
             if (resources[0]["headers"]["refresh"]) {
                 //
@@ -4950,7 +4950,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return result;
     }
-    
+
     /**
      *
      * @param doc
@@ -4982,7 +4982,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return result;
     }
-    
+
     /**
      *
      * @param doc
@@ -5014,7 +5014,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return result;
     }
-    
+
     /**
      *
      * @param doc
@@ -5046,7 +5046,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return result;
     }
-    
+
     /**
      *
      * @param doc
@@ -5078,7 +5078,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return result;
     }
-    
+
     /**
      *
      * @param doc
@@ -5110,7 +5110,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return result;
     }
-    
+
     /**
      *
      * @param doc
@@ -5142,7 +5142,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return result;
     }
-    
+
     /**
      *
      * @param doc
@@ -5174,7 +5174,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return result;
     }
-    
+
     /**
      *
      * @param doc
@@ -5288,7 +5288,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return result;
     }
-    
+
     /**
      *
      * @param doc
@@ -5486,7 +5486,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return result;
     }
-    
+
     /**
      *
      * @param doc
@@ -5527,7 +5527,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
                     } else {
                         //
                         result.push(_getHttpDetails(element.uri, element.headers));
-                    }             
+                    }
                 }
             });
         }
@@ -5542,7 +5542,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return result;
     }
-    
+
     /**
      *
      * @param doc
@@ -5565,14 +5565,14 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
                         || $.inArray(content_type, ["application/javascript", "application/x-javascript"]) != -1)) {
                     //
                     var subdomain = element.uri.split("/")[2];
-                    
+
                     if (subdomain != domain && endsWith(domain, subdomain)) {
                         //
                         result.push(subdomain);
-                    }             
+                    }
                 }
             });
-            
+
             //
             var tmp = [];
             for each(var item in result) {
@@ -5581,7 +5581,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
                 }
             }
             result = tmp;
-            
+
             //
             if(result.length < 4) {
                 result = [];
@@ -5621,12 +5621,12 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
                         || $.inArray(content_type, ["application/javascript", "application/x-javascript"]) != -1)) {
                     //
                     var _aDomain = element.uri.split("/")[2].split("."), _domain = _aDomain.slice(_aDomain.length - 2, _aDomain.length).join(".");
-                    
+
                     //
                     if (doc.location.href != element.uri && _domain == domain) {
                         //
                         result.push(element.uri);
-                    }             
+                    }
                 }
             });
         }
@@ -5666,7 +5666,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
                     if (reg.test(element.uri)) {
                         //
                         result.push(_getHttpDetails(element.uri, element.headers));
-                    }             
+                    }
                 }
             });
         }
@@ -5706,7 +5706,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
                     if (reg.test(element.uri)) {
                         //
                         result.push(_getHttpDetails(element.uri, element.headers));
-                    }             
+                    }
                 }
             });
         }
@@ -5746,7 +5746,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
                     if (element.headers["set-cookie"]) {
                         //
                         result.push(_getHttpDetails(element.uri, element.headers));
-                    }             
+                    }
                 }
             });
         }
@@ -5761,7 +5761,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return result;
     }
-    
+
     /**
      *
      * @param doc
@@ -5786,7 +5786,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
                     if (reg.test(element.uri)) {
                         //
                         result.push(_getHttpDetails(element.uri, element.headers));
-                    }             
+                    }
                 }
             });
         }
@@ -5801,7 +5801,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return result;
     }
-    
+
     /**
      *
      * @param doc
@@ -5826,7 +5826,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
                     if (reg.test(element.uri)) {
                         //
                         result.push(_getHttpDetails(element.uri, element.headers));
-                    }             
+                    }
                 }
             });
         }
@@ -5866,7 +5866,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
                     if (cdns.test(element.uri)) {
                         //
                         result.push(element.uri);
-                    }             
+                    }
                 }
             });
         }
@@ -5881,7 +5881,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return result;
     }
-    
+
     /**
      *
      * @param doc
@@ -5925,7 +5925,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return result;
     }
-    
+
     /**
      *
      * @param doc
@@ -5939,7 +5939,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         try {
             //
             sidecar.resources.forEach(function(element, index, array) {
-                // 
+                //
                 if ($.inArray(element.status, redirect) != -1) {
                     //
                     result.push(_getHttpDetails(element.uri, element.headers));
@@ -5957,7 +5957,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return result;
     }
-    
+
     /**
      *
      * @param doc
@@ -5986,7 +5986,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return result;
     }
-    
+
     /**
      *
      * @param doc
@@ -7534,7 +7534,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return result;
     }
-    
+
     /**
      *
      * @param doc

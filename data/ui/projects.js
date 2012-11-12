@@ -45,7 +45,7 @@ var table;
             $("#projects thead th:eq(0)").text(_("oqs.project"));
             $("#projects thead th:eq(1)").text(_("oqs.project_url"));
             $("#projects thead th:eq(2)").text(_("oqs.project_choice"));
-        
+
             var tbody = $('tbody');
             table = $('table');
 

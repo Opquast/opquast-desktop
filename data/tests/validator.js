@@ -218,15 +218,15 @@ var logger;
     // prototypes
     window.startsWith = function startsWith(search, target) {
         if (typeof String.prototype.startsWith == 'function') {
-            return target.startsWith(search);   
+            return target.startsWith(search);
         } else {
             return target.slice(0, search.length) == search;
         }
     }
-    
+
     window.endsWith = function endsWith(search, target) {
         if (typeof String.prototype.endsWith == 'function') {
-            return target.endsWith(search);   
+            return target.endsWith(search);
         } else {
             return target.slice(-search.length) == search;
         }
@@ -696,9 +696,9 @@ var logger;
         if (node == String(document)) {
             node = $(document.body).get(0);
         }
-        
+
         var text = "";
-        
+
         try {
             text = node.outerHTML.replace(/</g, "&lt;").replace(/>/g, "&gt;").substr(0, 200);
         } catch(e) {
@@ -817,7 +817,7 @@ var logger;
         //
         return tmp;
     }
-    
+
     /**
      *
      * @param node
@@ -1761,7 +1761,7 @@ var logger;
         var _result = [], dt = "", reg1 = new RegExp().compile('<!DOCTYPE[^>]*>', "i"), reg2 = new RegExp().compile('^\\s*<!DOCTYPE[^>]*>', "i");
         //@formatter:off
         var doctypes = [
-            '<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN" "">', 
+            '<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN" "">',
             '<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN" "">',
             '<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">',
             '<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">',

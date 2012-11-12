@@ -11,7 +11,7 @@
         _activeSearch: "",
 
         _rowCount: {},
-        
+
         _create: function() {
             var self = this;
 
@@ -88,8 +88,8 @@
             // details
             $("tbody tr").each(function() {
                 var aOut = $('<tr class="details"><td colspan="1"></td></tr>'),
-                    aDetails = $('<ul></ul>'), 
-                    aFeedback = $('<a href="#">' + _("oqs.report_test_problem") + '</a>'), 
+                    aDetails = $('<ul></ul>'),
+                    aFeedback = $('<a href="#">' + _("oqs.report_test_problem") + '</a>'),
                     nodes = $(this).data("details"),
                     tr = this;
 
@@ -125,7 +125,7 @@
                 });
                 $("td", aOut).append('<h2>' + _("oqs.feedback") + "</h2>");
                 $("td", aOut).append($('<p></p>').append(aFeedback));
-                
+
                 var span = $('<span class="ui-icon ui-icon-triangle-1-e"></span>').click(function() {
                     if($(this).hasClass("ui-icon-triangle-1-e")) {
                         var _self = self, colspan = $("thead th:visible").size();
@@ -134,12 +134,12 @@
                         $(this).parent("td").parent("tr").after(aOut);
                     } else {
                         $(this).removeClass("ui-icon-triangle-1-s").addClass("ui-icon-triangle-1-e");
-                        $(this).parent("td").parent("tr").next("tr.details").remove();                                                   
+                        $(this).parent("td").parent("tr").next("tr.details").remove();
                     }
                 });
                 $('td[headers="hResult"]', this).prepend(span);
             });
-            
+
             //
             this._refreshCounts();
             this._refreshColours();
@@ -171,7 +171,7 @@
 
         _sortRows: function(header, order) {
             $("tr.details").remove();
-            
+
             $("tbody tr:not(.details)", this.element).detach().sort(function(a, b) {
                 var rowA = $("td[headers=" + header + "]", a).text();
                 var rowB = $("td[headers=" + header + "]", b).text();
@@ -180,7 +180,7 @@
                     rowA = parseInt(rowA);
                     rowB = parseInt(rowB);
                 }
-                
+
                 return order ? rowA < rowB : rowA > rowB;
             }).appendTo(this.element.find("tbody"));
 
@@ -198,17 +198,17 @@
                     span.addClass("ui-icon-carat-2-n-s");
                 }
             });
-            
+
             $("td.sorted").removeClass("sorted");
             $("td[headers=" + header + "]").addClass("sorted");
             $("span.ui-icon-triangle-1-s").click().click();
-            
+
             this._refreshColours();
         },
 
         _filterRows: function() {
             var self = this;
-            
+
             $("tr.details").remove();
 
             Object.keys(self._rowCount).forEach(function(element) {
@@ -240,7 +240,7 @@
                     }
                 });
             });
-            
+
             $("tr:visible span.ui-icon-triangle-1-s").click().click();
 
             this._refreshCounts();
@@ -260,7 +260,7 @@
 
             $("tfoot td", this.element).text($("tbody tr:not(.details):visible", this.element).size() + " éléments");
         },
-        
+
         _refreshColours: function() {
             $("tbody tr:visible:odd", this.element).removeClass("even").addClass("odd");
             $("tbody tr:visible:even", this.element).removeClass("odd").addClass("even");
