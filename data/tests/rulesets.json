@@ -5999,13 +5999,13 @@
             },
             "ontrue": {
                 "chain": {
-                    "APPLET_WO_FILLED_ALT_ATTR": {
+                    "APPLET_WO_ALT_ATTR": {
                         "onfalse": {
-                            "comment": "aucun \u00e9l\u00e9ment APPLET avec un attribut ALT vide n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                            "comment": "aucun \u00e9l\u00e9ment APPLET sans attribut ALT n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
                             "result": "c"
                         },
                         "ontrue": {
-                            "comment": "au moins un \u00e9l\u00e9ment APPLET sans attribut ALT rempli a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                            "comment": "au moins un \u00e9l\u00e9ment APPLET sans attribut ALT a \u00e9t\u00e9 d\u00e9tect\u00e9",
                             "result": "nc"
                         }
                     }
@@ -14034,14 +14034,24 @@
         }
     },
     "21708": {
-        "CSS_CONTENT": {
+        "CSS_DISPLAY_NONE": {
             "onfalse": {
-                "comment": "aucun contenu textuel ajout\u00e9 par CSS n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "comment": "aucun display none n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
                 "result": "i"
             },
             "ontrue": {
-                "comment": "au moins un contenu textuel ajout\u00e9 par CSS a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "nc"
+                "comment": "L'utilisation de la propri\u00e9t\u00e9 DISPLAY avec la valeur NONE constitue un risque. V\u00e9rifiez que cette utilisation n'enfreint pas les r\u00e8gles d'accessibilit\u00e9.",
+                "result": "i"
+            }
+        },
+        "CSS_VISIBILITY_HIDDEN": {
+            "onfalse": {
+                "comment": "aucun visibility hidden n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "result": "i"
+            },
+            "ontrue": {
+                "comment": "L'utilisation de la propri\u00e9t\u00e9 VISIBILITY avec la valeur HIDDEN constitue un risque. V\u00e9rifiez que cette utilisation n'enfreint pas les r\u00e8gles d'accessibilit\u00e9.",
+                "result": "i"
             }
         }
     },
@@ -14462,203 +14472,93 @@
         }
     },
     "21748": {
-        "AREA": {
+        "A_WO_TEXT": {
             "onfalse": {
-                "comment": "aucun \u00e9l\u00e9ment AREA n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "comment": "aucun \u00e9l\u00e9ment A vide n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
                 "result": "na"
             },
             "ontrue": {
                 "chain": {
-                    "AREA_W_INVALID_ALT_ATTR": {
+                    "A_NOT_ANCHOR_WO_TEXT": {
                         "onfalse": {
-                            "comment": "aucun \u00e9l\u00e9ment AREA avec un attribut ALT g\u00e9n\u00e9rique n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                            "comment": "aucun \u00e9l\u00e9ment A vide n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
                             "result": "i"
                         },
                         "ontrue": {
-                            "comment": "au moins un \u00e9l\u00e9ment AREA avec un attribut ALT g\u00e9n\u00e9rique a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                            "comment": "au moins un \u00e9l\u00e9ment A vide a \u00e9t\u00e9 d\u00e9tect\u00e9",
                             "result": "nc"
                         }
                     }
                 },
-                "comment": "au moins un \u00e9l\u00e9ment AREA a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "comment": "au moins un \u00e9l\u00e9ment A vide a \u00e9t\u00e9 d\u00e9tect\u00e9",
                 "result": "i"
             }
         },
-        "A_WO_TEXT_W_IMG": {
+        "A_W_IMG_W_EMPTY_ALT_ATTR": {
             "onfalse": {
-                "comment": "aucun \u00e9l\u00e9ment A vide et contenant un IMG n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "comment": "aucun \u00e9l\u00e9ment A avec un IMG ayant un attribut ALT vide n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
                 "result": "na"
             },
             "ontrue": {
                 "chain": {
-                    "A_WO_TEXT_W_IMG_W_INVALID_ALT_ATTR": {
+                    "A_WO_TEXT_W_IMG_W_EMPTY_ALT_ATTR": {
                         "onfalse": {
-                            "comment": "aucun \u00e9l\u00e9ment A vide, contenant un IMG et avec un attribut ALT g\u00e9n\u00e9rique n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                            "comment": "aucun \u00e9l\u00e9ment IMG seul enfant d'un \u00e9l\u00e9ment A et avec un attribut ALT vide n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
                             "result": "i"
                         },
                         "ontrue": {
-                            "comment": "au moins un \u00e9l\u00e9ment A vide, contenant un IMG et avec un attribut ALT g\u00e9n\u00e9rique a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                            "comment": "au moins un \u00e9l\u00e9ment IMG seul enfant d'un \u00e9l\u00e9ment A et avec un attribut ALT vide a \u00e9t\u00e9 d\u00e9tect\u00e9",
                             "result": "nc"
                         }
                     }
                 },
-                "comment": "au moins un \u00e9l\u00e9ment A vide et contenant un IMG a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "comment": "au moins un \u00e9l\u00e9ment A avec un IMG ayant un attribut ALT vide a \u00e9t\u00e9 d\u00e9tect\u00e9",
                 "result": "i"
             }
         },
-        "A_WO_TEXT_W_IMG_W_TITLE_ATTR": {
+        "BUTTON_W_IMG_W_EMPTY_ALT_ATTR": {
             "onfalse": {
-                "comment": "aucun \u00e9l\u00e9ment A vide, contenant un IMG et avec un attribut TITLE n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "comment": "aucun \u00e9l\u00e9ment BUTTON avec un IMG ayant un attribut ALT vide n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
                 "result": "na"
             },
             "ontrue": {
                 "chain": {
-                    "A_WO_TEXT_W_IMG_W_INVALID_TITLE_ATTR": {
+                    "BUTTON_WO_TEXT_W_IMG_W_EMPTY_ALT_ATTR": {
                         "onfalse": {
-                            "comment": "aucun \u00e9l\u00e9ment A vide, contenant un IMG et avec un attribut TITLE vide, identique au texte ou g\u00e9n\u00e9rique n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                            "comment": "aucun \u00e9l\u00e9ment IMG seul enfant d'un \u00e9l\u00e9ment BUTTON et avec un attribut ALT vide n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
                             "result": "i"
                         },
                         "ontrue": {
-                            "comment": "au moins un \u00e9l\u00e9ment A vide, contenant un IMG et avec un attribut TITLE vide, identique au texte ou g\u00e9n\u00e9rique a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                            "comment": "au moins un \u00e9l\u00e9ment IMG seul enfant d'un \u00e9l\u00e9ment BUTTON et avec un attribut ALT vide a \u00e9t\u00e9 d\u00e9tect\u00e9",
                             "result": "nc"
                         }
                     }
                 },
-                "comment": "au moins un \u00e9l\u00e9ment A vide, contenant un IMG et avec un attribut TITLE a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "i"
-            }
-        },
-        "A_W_TEXT_WO_IMG_W_TITLE_ATTR": {
-            "onfalse": {
-                "comment": "aucun \u00e9l\u00e9ment A avec texte, ne contenant aucun IMG et avec un attribut TITLE n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "na"
-            },
-            "ontrue": {
-                "chain": {
-                    "A_W_TEXT_WO_IMG_W_INVALID_TITLE_ATTR": {
-                        "onfalse": {
-                            "comment": "aucun \u00e9l\u00e9ment A avec texte, ne contenant aucun IMG et avec un attribut TITLE vide, identique au texte ou g\u00e9n\u00e9rique n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                            "result": "i"
-                        },
-                        "ontrue": {
-                            "comment": "au moins un \u00e9l\u00e9ment A avec texte, ne contenant aucun IMG et avec un attribut TITLE vide, identique au texte ou g\u00e9n\u00e9rique a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                            "result": "nc"
-                        }
-                    }
-                },
-                "comment": "au moins un \u00e9l\u00e9ment A avec texte, ne contenant aucun IMG et avec un attribut TITLE a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "i"
-            }
-        },
-        "A_W_TEXT_W_IMG": {
-            "onfalse": {
-                "comment": "aucun \u00e9l\u00e9ment A avec texte et contenant un IMG n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "na"
-            },
-            "ontrue": {
-                "chain": {
-                    "A_W_INVALID_TEXT_W_IMG_W_INVALID_ALT_ATTR": {
-                        "onfalse": {
-                            "comment": "aucun \u00e9l\u00e9ment A avec texte g\u00e9n\u00e9rique et contenant un IMG avec un attribut ALT g\u00e9n\u00e9rique n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                            "result": "i"
-                        },
-                        "ontrue": {
-                            "comment": "au moins un \u00e9l\u00e9ment A avec texte g\u00e9n\u00e9rique et contenant un IMG avec un attribut ALT g\u00e9n\u00e9rique a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                            "result": "nc"
-                        }
-                    }
-                },
-                "comment": "au moins un \u00e9l\u00e9ment A avec texte et contenant un IMG a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "comment": "au moins un \u00e9l\u00e9ment BUTTON avec un IMG ayant un attribut ALT vide a \u00e9t\u00e9 d\u00e9tect\u00e9",
                 "result": "i"
             }
         }
     },
     "21749": {
-        "AREA": {
+        "AREA_W_ALT_ATTR": {
             "onfalse": {
-                "comment": "aucun \u00e9l\u00e9ment AREA n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "comment": "aucun \u00e9l\u00e9ment AREA avec un attribut ALT n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
                 "result": "na"
             },
             "ontrue": {
                 "chain": {
-                    "AREA_NOT_UNIQUE": {
+                    "AREA_WO_FILLED_AND_UNIQUE_ALT_ATTR": {
                         "onfalse": {
-                            "comment": "aucun \u00e9l\u00e9ment AREA avec un intitul\u00e9 non unique n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                            "result": "c"
+                            "comment": "aucun \u00e9l\u00e9ment AREA sans attribut ALT rempli et unique n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                            "result": "i"
                         },
                         "ontrue": {
-                            "comment": "au moins un \u00e9l\u00e9ment AREA avec un intitul\u00e9 non unique a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                            "comment": "Plusieurs attributs ALT d'\u00e9l\u00e9ments AREA sont identiques alors qu'ils poss\u00e8dent un attribut HREF diff\u00e9rent",
                             "result": "nc"
                         }
                     }
                 },
-                "comment": "au moins un \u00e9l\u00e9ment AREA a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "i"
-            }
-        },
-        "A_WO_TEXT_W_IMG": {
-            "onfalse": {
-                "comment": "aucun \u00e9l\u00e9ment A vide et contenant un IMG n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "na"
-            },
-            "ontrue": {
-                "chain": {
-                    "A_WO_TEXT_W_IMG_NOT_UNIQUE": {
-                        "onfalse": {
-                            "comment": "aucun \u00e9l\u00e9ment A vide, contenant un IMG et avec un intitul\u00e9 non unique n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                            "result": "c"
-                        },
-                        "ontrue": {
-                            "comment": "au moins un \u00e9l\u00e9ment A vide, contenant un IMG et avec un intitul\u00e9 non unique a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                            "result": "nc"
-                        }
-                    }
-                },
-                "comment": "au moins un \u00e9l\u00e9ment A vide et contenant un IMG a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "i"
-            }
-        },
-        "A_W_TEXT_WO_IMG": {
-            "onfalse": {
-                "comment": "aucun \u00e9l\u00e9ment A avec texte et ne contenant aucun IMG n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "na"
-            },
-            "ontrue": {
-                "chain": {
-                    "A_W_TEXT_WO_IMG_NOT_UNIQUE": {
-                        "onfalse": {
-                            "comment": "aucun \u00e9l\u00e9ment A avec texte, ne contenant aucun IMG et avec un intitul\u00e9 non unique n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                            "result": "c"
-                        },
-                        "ontrue": {
-                            "comment": "au moins un \u00e9l\u00e9ment A avec texte, ne contenant aucun IMG et avec un intitul\u00e9 non unique a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                            "result": "nc"
-                        }
-                    }
-                },
-                "comment": "au moins un \u00e9l\u00e9ment A avec texte et ne contenant aucun IMG a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "i"
-            }
-        },
-        "A_W_TEXT_W_IMG": {
-            "onfalse": {
-                "comment": "aucun \u00e9l\u00e9ment A avec texte et contenant un IMG n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "na"
-            },
-            "ontrue": {
-                "chain": {
-                    "A_W_TEXT_W_IMG_NOT_UNIQUE": {
-                        "onfalse": {
-                            "comment": "aucun \u00e9l\u00e9ment A avec texte, contenant un IMG et avec un intitul\u00e9 non unique n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                            "result": "c"
-                        },
-                        "ontrue": {
-                            "comment": "au moins un \u00e9l\u00e9ment A avec texte, contenant un IMG et avec un intitul\u00e9 non unique a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                            "result": "nc"
-                        }
-                    }
-                },
-                "comment": "au moins un \u00e9l\u00e9ment A avec texte et contenant un IMG a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "comment": "au moins un \u00e9l\u00e9ment AREA avec un attribut ALT a \u00e9t\u00e9 d\u00e9tect\u00e9",
                 "result": "i"
             }
         }
@@ -14870,25 +14770,25 @@
         }
     },
     "21764": {
-        "IMG": {
+        "A_W_IMG_W_FILLED_ALT_ATTR": {
             "onfalse": {
-                "comment": "aucun \u00e9l\u00e9ment IMG n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "comment": "aucun \u00e9l\u00e9ment A contenant un \u00e9l\u00e9ment IMG ayant un attribut ALT non vide n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
                 "result": "na"
             },
             "ontrue": {
                 "chain": {
-                    "IMG_WO_ALT_ATTR": {
+                    "A_W_IMG_ALT_ATTR_EQUALS_TO_TEXT": {
                         "onfalse": {
-                            "comment": "aucun \u00e9l\u00e9ment IMG sans attribut ALT n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                            "comment": "aucun \u00e9l\u00e9ment A dont le texte et la valeur de l'attribut ALT d'un \u00e9l\u00e9ment IMG qu'il contient sont identiques n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
                             "result": "i"
                         },
                         "ontrue": {
-                            "comment": "au moins un \u00e9l\u00e9ment IMG sans attribut ALT a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                            "comment": "au moins un \u00e9l\u00e9ment A dont le texte et la valeur de l'attribut ALT d'un \u00e9l\u00e9ment IMG qu'il contient sont identiques a \u00e9t\u00e9 d\u00e9tect\u00e9",
                             "result": "nc"
                         }
                     }
                 },
-                "comment": "au moins un \u00e9l\u00e9ment IMG a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "comment": "au moins un \u00e9l\u00e9ment A contenant un \u00e9l\u00e9ment IMG ayant un attribut ALT non vide a \u00e9t\u00e9 d\u00e9tect\u00e9",
                 "result": "i"
             }
         }
@@ -15448,71 +15348,57 @@
         }
     },
     "21779": {
-        "TABLE_W_TH": {
+        "TD_W_EMPTY_HEADERS_ATTR": {
             "onfalse": {
-                "comment": "aucun \u00e9l\u00e9ment TABLE contenant des \u00e9l\u00e9ments TH n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "na"
+                "comment": "aucun \u00e9l\u00e9ment TD avec HEADERS vide n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "result": "c"
             },
             "ontrue": {
-                "chain": {
-                    "TH_WO_FILLED_AND_UNIQUE_ID_WO_SCOPE_ATTR": {
-                        "onfalse": {
-                            "chain": {
-                                "TD_WO_TH_OR_W_TH_WO_SCOPE_ATTR": {
-                                    "onfalse": {
-                                        "comment": "aucun \u00e9l\u00e9ment TD dont le HEADERS ne correspond \u00e0 aucun TH n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                                        "result": "i"
-                                    },
-                                    "ontrue": {
-                                        "comment": "au moins un \u00e9l\u00e9ment TD dont le HEADERS ne correspond \u00e0 aucun TH a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                                        "result": "nc"
-                                    }
-                                }
-                            },
-                            "comment": "aucun \u00e9l\u00e9ment TH sans ID unique ni SCOPE n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                            "result": "i"
-                        },
-                        "ontrue": {
-                            "comment": "au moins un \u00e9l\u00e9ment TH sans ID unique ni SCOPE a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                            "result": "nc"
-                        }
-                    }
-                },
-                "comment": "au moins un \u00e9l\u00e9ment TABLE contenant des \u00e9l\u00e9ments TH a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "comment": "L'utilisation d'\u00e9l\u00e9ments TD quand l'ensemble des cellules d'une colonne contient du texte en gras constitue un risque. V\u00e9rifiez que cette utilisation n'enfreint pas les r\u00e8gles d'accessibilit\u00e9.",
                 "result": "i"
             }
         },
-        "TABLE_W_TH_LINE_OR_COLUMN": {
+        "TD_W_HEADERS_ATTR": {
             "onfalse": {
-                "comment": "aucun \u00e9l\u00e9ment TABLE contenant des \u00e9l\u00e9ments TH n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "na"
+                "comment": "aucun \u00e9l\u00e9ment TD avec un attribut HEADERS n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "result": "i"
             },
             "ontrue": {
                 "chain": {
-                    "TH_W_FILLED_AND_UNIQUE_ID": {
+                    "TD_W_HEADERS_ATTR_UNKNOWN": {
                         "onfalse": {
-                            "chain": {
-                                "TD_WO_TH": {
-                                    "onfalse": {
-                                        "comment": "aucun \u00e9l\u00e9ment TD dont l'attribut HEADERS ne correspond \u00e0 aucun TH n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                                        "result": "c"
-                                    },
-                                    "ontrue": {
-                                        "comment": "au moins un \u00e9l\u00e9ment TD dont l'attribut HEADERS ne correspond \u00e0 aucun TH a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                                        "result": "nc"
-                                    }
-                                }
-                            },
-                            "comment": "aucun \u00e9l\u00e9ment TH sans attribut ID unique n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                            "result": "i"
+                            "comment": "aucun \u00e9l\u00e9ment TD avec un attribut HEADERS dont le contenu ne correspond \u00e0 aucune valeur d'attribut ID dans le m\u00eame \u00e9l\u00e9ment TABLE n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                            "result": "c"
                         },
                         "ontrue": {
-                            "comment": "au moins un \u00e9l\u00e9ment TH sans attribut ID unique a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                            "result": "nc"
+                            "comment": "au moins un \u00e9l\u00e9ment TD avec un attribut HEADERS dont le contenu ne correspond \u00e0 aucune valeur d'attribut ID dans le m\u00eame \u00e9l\u00e9ment TABLE a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                            "result": "i"
                         }
                     }
                 },
-                "comment": "au moins un \u00e9l\u00e9ment TABLE contenant des \u00e9l\u00e9ments TH a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "comment": "au moins un \u00e9l\u00e9ment TD avec un attribut HEADERS a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "result": "i"
+            }
+        },
+        "TH_W_ID": {
+            "onfalse": {
+                "comment": "aucun \u00e9l\u00e9ment TH avec un attribut ID n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "result": "i"
+            },
+            "ontrue": {
+                "chain": {
+                    "TD_WO_HEADERS_ATTR_W_TH_WITH_ID": {
+                        "onfalse": {
+                            "comment": "aucun \u00e9l\u00e9ment TD sans attribut HEADERS alors que l'\u00e9l\u00e9ment TH qui s'y rapporte poss\u00e8de un attribut ID n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                            "result": "c"
+                        },
+                        "ontrue": {
+                            "comment": "au moins un \u00e9l\u00e9ment TD sans attribut HEADERS alors que l'\u00e9l\u00e9ment TH qui s'y rapporte poss\u00e8de un attribut ID a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                            "result": "i"
+                        }
+                    }
+                },
+                "comment": "au moins un \u00e9l\u00e9ment TH avec un attribut ID a \u00e9t\u00e9 d\u00e9tect\u00e9",
                 "result": "i"
             }
         }
@@ -17789,6 +17675,64 @@
                     }
                 },
                 "comment": "un LINK avec l'attribut REL ayant la valeur STYLESHEET",
+                "result": "i"
+            }
+        }
+    },
+    "FORM": {
+        "FORM": {
+            "onfalse": {
+                "comment": "aucun \u00e9l\u00e9ment FORM n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "result": "na"
+            },
+            "ontrue": {
+                "comment": "au moins un \u00e9l\u00e9ment FORM a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "result": "i"
+            }
+        }
+    },
+    "IMG": {
+        "IMG": {
+            "onfalse": {
+                "comment": "aucun \u00e9l\u00e9ment IMG n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "result": "na"
+            },
+            "ontrue": {
+                "comment": "au moins un \u00e9l\u00e9ment IMG a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "result": "i"
+            }
+        }
+    },
+    "LIST": {
+        "ORDERED_LIST": {
+            "onfalse": {
+                "comment": "aucun \u00e9l\u00e9ment OL n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "result": "na"
+            },
+            "ontrue": {
+                "comment": "au moins un \u00e9l\u00e9ment OL a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "result": "i"
+            }
+        },
+        "UNORDERED_LIST": {
+            "onfalse": {
+                "comment": "aucun \u00e9l\u00e9ment UL n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "result": "na"
+            },
+            "ontrue": {
+                "comment": "au moins un \u00e9l\u00e9ment UL a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "result": "i"
+            }
+        }
+    },
+    "TABLE": {
+        "TABLE": {
+            "onfalse": {
+                "comment": "aucun \u00e9l\u00e9ment TABLE n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "result": "na"
+            },
+            "ontrue": {
+                "comment": "au moins un \u00e9l\u00e9ment TABLE a \u00e9t\u00e9 d\u00e9tect\u00e9",
                 "result": "i"
             }
         }
