@@ -14107,7 +14107,7 @@
         "CSS_FOCUS_STYLE": {
             "onfalse": {
                 "comment": "aucun outline supprim\u00e9",
-                "result": "i"
+                "result": "c"
             },
             "ontrue": {
                 "comment": "L'utilisation de la propri\u00e9t\u00e9 OUTLINE avec la valeur 0 ou NONE constitue un risque. V\u00e9rifiez que cette utilisation n'enfreint pas les r\u00e8gles d'accessibilit\u00e9.",
@@ -14119,7 +14119,7 @@
         "LIST_W_MORE_THAN_3_LEVELS": {
             "onfalse": {
                 "comment": "aucun \u00e9l\u00e9ment LI \u00e0 plus de trois niveaux d'imbrication n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "i"
+                "result": "c"
             },
             "ontrue": {
                 "comment": "au moins un \u00e9l\u00e9ment LI \u00e0 plus de trois niveaux d'imbrication a \u00e9t\u00e9 d\u00e9tect\u00e9",
@@ -14201,7 +14201,7 @@
         "H1_TO_H6_HIERACHICAL_ERROR": {
             "onfalse": {
                 "comment": "aucune interruption dans la hi\u00e9rarchie des titres n'a \u00e9t\u00e9 d\u00e9tect\u00e9e",
-                "result": "i"
+                "result": "c"
             },
             "ontrue": {
                 "comment": "au moins une interruption dans la hi\u00e9rarchie des titres a \u00e9t\u00e9 d\u00e9tect\u00e9e",
@@ -15336,14 +15336,26 @@
         }
     },
     "21778": {
-        "TABLE_FOR_DATA_WO_TH": {
+        "TABLE": {
             "onfalse": {
-                "comment": "aucun \u00e9l\u00e9ment TABLE sans \u00e9l\u00e9ment TH, alors qu'il contient un \u00e9l\u00e9ment CAPTION ou poss\u00e8de un attribut SUMMARY, n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "i"
+                "comment": "aucun \u00e9l\u00e9ment TABLE n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "result": "na"
             },
             "ontrue": {
-                "comment": "au moins un \u00e9l\u00e9ment TABLE sans \u00e9l\u00e9ment TH, alors qu'il contient un \u00e9l\u00e9ment CAPTION ou poss\u00e8de un attribut SUMMARY, a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "nc"
+                "chain": {
+                    "TABLE_FOR_DATA_WO_TH": {
+                        "onfalse": {
+                            "comment": "aucun \u00e9l\u00e9ment TABLE sans \u00e9l\u00e9ment TH, alors qu'il contient un \u00e9l\u00e9ment CAPTION ou poss\u00e8de un attribut SUMMARY, n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                            "result": "i"
+                        },
+                        "ontrue": {
+                            "comment": "au moins un \u00e9l\u00e9ment TABLE sans \u00e9l\u00e9ment TH, alors qu'il contient un \u00e9l\u00e9ment CAPTION ou poss\u00e8de un attribut SUMMARY, a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                            "result": "nc"
+                        }
+                    }
+                },
+                "comment": "au moins un \u00e9l\u00e9ment TABLE a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "result": "i"
             }
         }
     },
