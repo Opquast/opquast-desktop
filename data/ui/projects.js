@@ -46,7 +46,7 @@ var table;
             $("#projects thead th:eq(1)").text(_("oqs.project_url"));
             $("#projects thead th:eq(2)").text(_("oqs.project_choice"));
 
-            var tbody = $('tbody');
+            var tbody = $('tbody').empty();
             table = $('table');
 
             for each (var project in projects) {
@@ -76,7 +76,7 @@ var table;
                 filterable: []
             });
         } catch(e) {
-            console.error(e);
+            console.exception(e);
         };
     };
 })(jQuery);
