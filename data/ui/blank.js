@@ -34,10 +34,11 @@
  * the provisions above, a recipient may use your version of this file under
  * the terms of any one of the MPL, the GPL or the LGPL.
  *
- * ***** END LICENSE BLOCK ***** */"use strict";
+ * ***** END LICENSE BLOCK ***** */
+"use strict";
 
 (function($) {
-    if (/^\?message\=/.test(document.location.search)) {
-        $("body").append($('<p id="loader"></p>').text(decodeURIComponent(document.location.search.replace("?message=", ""))));
-    }
+    window.showMsg = function(aMessage) {
+        $("body").append($('<p id="loader"></p>').text(aMessage));
+    };
 })(jQuery);
