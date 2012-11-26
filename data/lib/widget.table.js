@@ -70,7 +70,7 @@
                     });
 
                     var select = $('<select style="float: left;"></select>');
-                    select.append($('<option class="optAll">' + $("div", this).text() + "</option>").click(function(evt) {
+                    select.append($('<option class="optAll">' + $("div", this).text() + "</option>").click(function() {
                         self._activeFilters[id] = "";
                         self._filterRows();
                     }));
@@ -216,12 +216,12 @@
                     self._rowCount[element][subElement] = 0;
                 });
             });
-
+            
             $("tbody tr:not(.details)", this.element).each(function() {
-                var tr = $(this), bFiltered = false, bMatch = false;
-
+                var tr = $(this), bFiltered = false, bMatch = false, _tmp = {};
+                
                 $("td", this).each(function() {
-                    var text = $(this).text(), id = $(this).attr("headers");
+                    var text = $(this).text().trim(), id = $(this).attr("headers");
 
                     if ($.inArray(id, Object.keys(self._activeFilters)) != -1 && $.inArray(self._activeFilters[id], ["", text]) == -1) {
                         bFiltered = true;
@@ -234,11 +234,22 @@
                     }
 
                     bFiltered || !bMatch ? tr.hide() : tr.show();
-
+                    
                     if ($.inArray(id, self.options.filterable) != -1) {
-                        self._rowCount[id][text] += 1;
+                        _tmp[id] = {};
+                        _tmp[id][text] = 1;
                     }
                 });
+                
+                if($(tr).is(':visible')) {
+                    for each(var id in Object.keys(_tmp)) {
+                        if($.inArray(id, self.options.filterable) != -1) {
+                            for each(var text in Object.keys(_tmp[id])) {
+                                self._rowCount[id][text] += _tmp[id][text];
+                            }                            
+                        }
+                    }
+                }
             });
 
             $("tr:visible span.ui-icon-triangle-1-s").click().click();
@@ -253,12 +264,12 @@
             $("thead option", this.element).each(function() {
                 var id = $(this).parents("th").attr("id"), text = $(this).text().split(" (")[0];
 
-                if ($.inArray(text, Object.keys(self._rowCount[id]) != -1) && $(this).hasClass("optAll") == false) {
+                if ($.inArray(text, Object.keys(self._rowCount[id]) != -1) && !$(this).hasClass("optAll")) {
                     $(this).text(text + " (" + self._rowCount[id][text] + ")");
                 }
             });
 
-            $("tfoot td", this.element).text($("tbody tr:not(.details):visible", this.element).size() + " éléments");
+            $("tfoot td", this.element).text($("tbody tr:not(.details):visible", this.element).size() + " éléments sur " + $("tbody tr:not(.details)", this.element).size());
         },
 
         _refreshColours: function() {
