@@ -35,6 +35,10 @@
  * the terms of any one of the MPL, the GPL or the LGPL.
  *
  * ***** END LICENSE BLOCK ***** */
+
+/*jshint globalstrict:true, jquery:true */
+/*globals self, _ */
+
 "use strict";
 
 self.port.emit("readyResults");
@@ -93,7 +97,7 @@ $.widget("ui.detailsViewer",{
         var _this = this;
         this.element.data('origin', targetRow);
 
-        $('.content', this.element)
+        $('#content', this.element)
         .empty()
         .append($.doT('tplResultDetails', $(targetRow).data()));
         this._trigger("content");
@@ -108,7 +112,7 @@ $.widget("ui.detailsViewer",{
                 'z-index': '200'
             })
             .show()
-            .animate({'bottom': '10px'}, 400);
+            .animate({'bottom': '5px', 'top': '5px'}, 400);
 
             this.element.promise().done(function() {
                 _this._trigger("open");
@@ -132,7 +136,7 @@ $.widget("ui.detailsViewer",{
             $('#resultDetails')
             .animate({'bottom': '100%'}, 200)
             .promise().done(function() {
-                $('.content', _this.element).empty();
+                $('#content', _this.element).empty();
                 $(this).hide();
             });
 
@@ -171,7 +175,7 @@ self.port.on("showResults", function(tests, tableOptions) {
 
     // Show result list
     $('body').doT('tplResults', {
-        'tests': tests,
+        'tests': tests
     });
 
     // Prepare modalizer
@@ -180,22 +184,13 @@ self.port.on("showResults", function(tests, tableOptions) {
             var _this = this,
                 row = $($(this).data('origin'));
 
-            $('a.feedback', this).click(function(evt) {
-                evt.preventDefault();
-                self.port.emit('feedback',
-                    row.data('test_id'),
-                    row.data('stTerms').hRef,
-                    row.data('stTerms').hChecklist
-                );
-            });
-
             $('a.inspect', this).click(function(evt) {
                 evt.preventDefault();
                 self.port.emit('inspectNode', $(evt.target).data('path'));
             });
 
-            $('a.prev', this).toggle($(this).detailsViewer('getSibling', row, -1).length > 0);
-            $('a.next', this).toggle($(this).detailsViewer('getSibling', row, 1).length > 0);
+            $('a.prev', this).parent().toggle($(this).detailsViewer('getSibling', row, -1).length > 0);
+            $('a.next', this).parent().toggle($(this).detailsViewer('getSibling', row, 1).length > 0);
         }
     });
     $('#resultDetails').on('click', 'a.close', function(evt) {
@@ -209,6 +204,15 @@ self.port.on("showResults", function(tests, tableOptions) {
             $(evt.target).hasClass('prev') ? -1 : 1
         );
     });
+    $('#resultDetails').on('click', 'a.feedback', function(evt) {
+        evt.preventDefault();
+        var row = $($('#resultDetails').data('origin'));
+        self.port.emit('feedback',
+            row.data('test_id'),
+            row.data('stTerms').hRef,
+            row.data('stTerms').hChecklist
+        );
+    });
 
     // Table events
     var display_counter = function(evt, data) {
@@ -220,7 +224,7 @@ self.port.on("showResults", function(tests, tableOptions) {
 
     var odd_even = function(evt) {
         $(evt.target).superTable('getRows').filter(':visible').each(function(i) {
-            $(this).removeClass('odd even').addClass(i%2 == 0 ? 'odd' : 'even');
+            $(this).removeClass('odd even').addClass(i%2 === 0 ? 'odd' : 'even');
         });
     };
 

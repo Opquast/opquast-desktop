@@ -1,8 +1,8 @@
 <h1>
   <img src="img/{{! it.result }}.png" alt="{{! it.stTerms['hResult'] }}" />
-  {{! it.stTerms['hChecklist'] }} - {{! it.stTerms['hRef']}}
+  <span>{{! it.stTerms['hLabel']}}</span>
 </h1>
-<p class="label">{{! it.stTerms['hLabel']}}</p>
+<p class="label">{{! it.stTerms['hChecklist'] }} - {{! it.stTerms['hRef']}}</p>
 
 <h2>{{! it.locales['oqs.comment'] }}</h2>
 <p>{{! it.comment }}</p>
@@ -20,6 +20,3 @@
     {{~}}
   </ul>
 {{?}}
-<h2>{{! it.locales['oqs.feedback'] }}</h2>
-<p><a href="#" class="feedback">{{! it.locales['oqs.report_test_problem'] }}</a>
-</p>

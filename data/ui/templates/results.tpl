@@ -32,10 +32,13 @@
 </table>
 
 <div id="resultDetails">
-  <div class="nav">
-    <a href="#" class="prev" title="{{! it.locales['oqs.previous_result'] }}">{{! it.locales['oqs.previous_result'] }}</a>
-    <a href="#" class="next" title="{{! it.locales['oqs.next_result'] }}">{{! it.locales['oqs.next_result'] }}</a>
-    <a href="#" class="close" title="{{! it.locales['oqs.close'] }}">{{! it.locales['oqs.close'] }}</a>
-  </div>
-  <div class="content"></div>
+  <ul id="ctx1" class="ctx">
+    <li><a href="#" class="prev" title="{{! it.locales['oqs.previous_result'] }}">{{! it.locales['oqs.previous_result'] }}</a></li>
+    <li><a href="#" class="next" title="{{! it.locales['oqs.next_result'] }}">{{! it.locales['oqs.next_result'] }}</a></li>
+    <li><a href="#" class="close" title="{{! it.locales['oqs.close'] }}">{{! it.locales['oqs.close'] }}</a></li>
+  </ul>
+  <div id="content"></div>
+  <ul id="ctx2" class="ctx">
+    <li><a href="#" class="feedback">{{! it.locales['oqs.report_test_problem'] }}</a></li>
+  </ul>
 </div>
