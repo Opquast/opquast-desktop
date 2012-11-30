@@ -35,9 +35,11 @@
  * the terms of any one of the MPL, the GPL or the LGPL.
  *
  * ***** END LICENSE BLOCK ***** */
-"use strict";
+/*jshint jquery:true */
 
 (function($) {
+    "use strict";
+
     $.widget("ui.superTable", {
         widgetEventPrefix: "supertable",
 
@@ -214,7 +216,7 @@
         _adjustColspan: function(delta) {
             $('tr', this.element).each(function() {
                 $('td[colspan], th[colspan]', this).eq(0).each(function() {
-                    $(this).attr('colspan', parseInt($(this).attr('colspan')) + delta);
+                    $(this).attr('colspan', parseInt($(this).attr('colspan'), 10) + delta);
                 });
             });
         },
@@ -287,7 +289,7 @@
                 $.each(items, function(k, v) {
                     var e = $('<option value="' + k + '">' + k + ' (' + v + ')</option>');
                     if (filters[_header.id] == k) {
-                        e.attr('selected', 'selected')
+                        e.attr('selected', 'selected');
                     }
 
                     $('select', _header).append(e);
@@ -340,16 +342,16 @@
             var header = this.getHeader(id);
             var dir = header.data('stSortdir');
 
-            dir = (dir == undefined || dir == -1) ? 1 : -1;
+            dir = (dir === undefined || dir == -1) ? 1 : -1;
             header.data('stSortdir', dir);
 
             this.getRows().detach().sort(function(a, b) {
                 var rowA = $(a).data('stTerms')[id];
                 var rowB = $(b).data('stTerms')[id];
 
-                if (parseFloat(rowA) == parseInt(rowA) && !isNaN(rowA) && parseFloat(rowB) == parseInt(rowB) && !isNaN(rowB)) {
-                    rowA = parseInt(rowA);
-                    rowB = parseInt(rowB);
+                if (parseFloat(rowA) == parseInt(rowA, 10) && !isNaN(rowA) && parseFloat(rowB) == parseInt(rowB, 10) && !isNaN(rowB)) {
+                    rowA = parseInt(rowA, 10);
+                    rowB = parseInt(rowB, 10);
                 }
 
                 return dir < 0 ? rowA < rowB : rowA > rowB;
@@ -401,7 +403,7 @@
                     hide_row = !query.test(_this._joinObject($(this).data('stTerms')));
                 }
 
-                hide_row ? $(this).hide() : $(this).show();
+                $(this).toggle(!hide_row);
             });
 
             this._setFilterControls();
