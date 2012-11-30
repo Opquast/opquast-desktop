@@ -35,93 +35,244 @@
  * the terms of any one of the MPL, the GPL or the LGPL.
  *
  * ***** END LICENSE BLOCK ***** */
+"use strict";
 
-var table;
+self.port.emit("readyResults");
 
 (function($) {
-    window.tests = null;
+//----
 
-    window.showResults = function(tests, prefs) {
-        window.tests = tests;
+$.widget("ui.detailsViewer",{
+    _create: function() {
+        this.element.hide();
+        this._modalizer = $('<div></div>').css({
+            'z-index': '100',
+            'background': '#000',
+            'position': 'fixed',
+            'top': '0',
+            'left': '0',
+            'right': '0',
+            'bottom': '0',
+            'opacity': '0.3'
+        }).hide().appendTo('body');
+    },
 
-        // Localize column titles
-        $("#test_result thead th:eq(0)").text(_("oqs.results"));
-        $("#test_result thead th:eq(1)").text(_("oqs.checklists"));
-        $("#test_result thead th:eq(2)").text(_("oqs.references"));
-        $("#test_result thead th:eq(3)").text(_("oqs.themas"));
-        $("#test_result thead th:eq(4)").text(_("oqs.test_label"));
-        $("#test_result thead th:eq(5)").text(_("oqs.test_duration"));
+    _handleKey: function(evt) {
+        if (evt.which == 27) {
+            this.close();
+            return;
+        }
 
-        try {
-            var _date = new Date(tests.datetime), tbody = $('tbody');
-            table = $('table');
+        var row = this.element.data('origin');
+        var sibling;
 
-            window._showInfo(_("oqs.analyze_info",
-                _date.toLocaleFormat(_("oqs.date_format")), _date.toLocaleTimeString(), Math.round(tests.timer*10)/10
-            ));
+        if (evt.which == 37) { // previous row
+            this.showSibling(row, -1);
+        } else if (evt.which == 39) { // next row
+            this.showSibling(row, 1);
+        }
+    },
 
-            for each (var result in tests.oaa_results) {
-                var results = {
-                    "c" : _("oqs.pass"),
-                    "nc" : _("oqs.fail"),
-                    "i" : _("oqs.cannot_tell"),
-                    "na" : _("oqs.not_applicable")
-                };
+    getSibling: function(row, dir) {
+        if (dir == -1) {
+            return $(row).prevAll(':visible');
+        } else {
+            return $(row).nextAll(':visible');
+        }
+    },
 
-                var tr = $('<tr></tr>');
-                tbody.append(tr);
+    showSibling: function(row, dir) {
+        var sibling = this.getSibling(row, dir);
+        if (sibling.length > 0) {
+            this.open(sibling[0]);
+            $(window).scrollTop($(sibling[0]).offset().top);
+        }
+    },
 
-                // @formatter:off
-                tr.append(
-                    $("<td></td>")
-                        .attr("headers", "hResult")
-                        .append(
-                            $("<img/>")
-                                .attr("src", "img/" + result.result + ".png")
-                                .attr("alt", results[result.result]),
-                            $("<span></span>")
-                                .attr("style", "display:none").text(results[result.result])
-                        ),
-                    $("<td></td>")
-                        .attr("headers", "hChecklist")
-                        .text(result.criterion.checklist.name),
-                    $("<td></td>")
-                        .attr("headers", "hRef")
-                        .text(result.criterion.name),
-                    $("<td></td>")
-                        .attr("headers", "hThema")
-                        .text($.trim(result.criterion.thema)),
-                    $("<td></td>")
-                        .attr("headers", "hLabel")
-                        .text(result.criterion.description),
-                    $("<td></td>")
-                        .attr("headers", "hDuration")
-                        .text(result.time)
-                );
-                // @formatter:on
+    open: function(targetRow) {
+        var _this = this;
+        this.element.data('origin', targetRow);
 
-                tr.data("test_id", result.id);
-                tr.data("details", result.details);
-                tr.data("comment", result.comment);
-                tr.data("is_open", false);
-            }
+        $('.content', this.element)
+        .empty()
+        .append($.doT('tplResultDetails', $(targetRow).data()));
+        this._trigger("content");
 
-            table.superTable({
-                visible: ["hResult", "hChecklist", "hRef", "hThema", "hLabel", "hDuration"].filter(function(element){
-                    if(element == "hRef" && !prefs.showRefs) {
-                        return false;
-                    } else if(element == "hThema" && !prefs.showThemas) {
-                        return false;
-                    } else if(element == "hDuration" && !prefs.showTimes) {
-                        return false;
+        if (!this.element.is(':visible')) {
+            this._modalizer.show();
+            $('body').css('overflow', 'hidden');
+
+            this.element
+            .css({
+                'bottom': '100%',
+                'z-index': '200'
+            })
+            .show()
+            .animate({'bottom': '10px'}, 400);
+
+            this.element.promise().done(function() {
+                _this._trigger("open");
+
+                $(document).on('keydown.detailsViewer', _this._handleKey.bind(_this));
+                $(document).on('click.detailsViewer', function(evt) {
+                    if (_this.element.has(evt.target).length === 0) {
+                        _this.close();
                     }
-                    return true;
-                }),
-                sortable: ["hResult", "hChecklist", "hRef", "hThema"],
-                filterable: ["hResult", "hChecklist", "hThema"]
+                });
             });
-        } catch(e) {
-            console.error(e);
-        };
+        }
+    },
+
+    close: function() {
+        var _this = this;
+        if (this.element.is(':visible')) {
+            this._modalizer.hide();
+            $('body').css('overflow', 'visible');
+
+            $('#resultDetails')
+            .animate({'bottom': '100%'}, 200)
+            .promise().done(function() {
+                $('.content', _this.element).empty();
+                $(this).hide();
+            });
+
+            this._trigger("close");
+
+            $(document).off('keydown.detailsViewer');
+            $(document).off('click.detailsViewer');
+        }
+    }
+});
+
+//
+// Display test results
+//
+self.port.on("showResults", function(tests, tableOptions) {
+    // Prepare results
+    tests.oaa_results.map(function(r) {
+        if (r.result == 'c') {
+            r.label = _('oqs.pass');
+        } else if (r.result == 'nc') {
+            r.label = _('oqs.fail');
+        } else if (r.result == 'i') {
+            r.label = _('oqs.cannot_tell');
+        } else if (r.result == 'na') {
+            r.label = _('oqs.not_applicable');
+        }
+
+        r.criterion.thema = $.trim(r.criterion.thema);
+    });
+
+    // Show date
+    var _date = new Date(tests.datetime);
+    self.port.emit("showInfo",
+        _date.toLocaleFormat(_("oqs.date_format")), _date.toLocaleTimeString(), Math.round(tests.timer*10)/10
+    );
+
+    // Show result list
+    $('body').doT('tplResults', {
+        'tests': tests,
+    });
+
+    // Prepare modalizer
+    $('#resultDetails').detailsViewer({
+        content: function(evt) {
+            var _this = this,
+                row = $($(this).data('origin'));
+
+            $('a.feedback', this).click(function(evt) {
+                evt.preventDefault();
+                self.port.emit('feedback',
+                    row.data('test_id'),
+                    row.data('stTerms').hRef,
+                    row.data('stTerms').hChecklist
+                );
+            });
+
+            $('a.inspect', this).click(function(evt) {
+                evt.preventDefault();
+                self.port.emit('inspectNode', $(evt.target).data('path'));
+            });
+
+            $('a.prev', this).toggle($(this).detailsViewer('getSibling', row, -1).length > 0);
+            $('a.next', this).toggle($(this).detailsViewer('getSibling', row, 1).length > 0);
+        }
+    });
+    $('#resultDetails').on('click', 'a.close', function(evt) {
+        evt.preventDefault();
+        $('#resultDetails').detailsViewer('close');
+    });
+    $('#resultDetails').on('click', 'a.prev, a.next', function(evt) {
+        evt.preventDefault();
+        $('#resultDetails').detailsViewer('showSibling',
+            $('#resultDetails').data('origin'),
+            $(evt.target).hasClass('prev') ? -1 : 1
+        );
+    });
+
+    // Table events
+    var display_counter = function(evt, data) {
+        self.port.emit("resultCounter",
+            $(evt.target).superTable('getRows').filter(':visible').length,
+            $(evt.target).superTable('getRows').length
+        );
     };
+
+    var odd_even = function(evt) {
+        $(evt.target).superTable('getRows').filter(':visible').each(function(i) {
+            $(this).removeClass('odd even').addClass(i%2 == 0 ? 'odd' : 'even');
+        });
+    };
+
+    var sorted_col = function(evt, data) {
+        $('td', evt.target).removeClass('sorted');
+        $(evt.target).superTable('getColumn', data.column).addClass('sorted');
+    };
+
+    var new_row = function(evt, data) {
+        var _r = tests.oaa_results[data.index];
+        $(data.row).data({
+            'comment': _r.comment,
+            'nodes': _r.details,
+            'result': _r.result,
+            'test_id': _r.id
+        });
+        $(data.row).click(show_details);
+    };
+
+    var show_details = function(evt) {
+        evt.preventDefault();
+        $('#resultDetails').detailsViewer('open', evt.delegateTarget);
+    };
+
+    // Common superTable events
+    $('#test_result')
+    .on('supertablecreate', display_counter)
+    .on('supertablefiltered', display_counter)
+    .on('supertablecreate', odd_even)
+    .on('supertablefiltered', odd_even)
+    .on('supertablesorted', odd_even)
+    .on('supertablesorted', sorted_col)
+    .on('supertablerownew', new_row);
+
+    // Table display
+    $('#test_result').superTable(tableOptions);
+
+    self.port.emit("resultLoaded");
+
+    // Various worker events
+    self.port.on("showResultCount", function(count_string) {
+        $('#test_result tfoot td').empty().append(count_string);
+    });
+
+    self.port.on("changeColVisibility", function(name, visible) {
+        $('#test_result').superTable(visible ? "showCol" : "hideCol", name);
+    });
+
+    self.port.on("resultSearch", function(q) {
+        $('#test_result').superTable('search', q);
+    });
+});
+
+//----
 })(jQuery);

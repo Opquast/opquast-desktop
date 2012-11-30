@@ -35,48 +35,27 @@
  * the terms of any one of the MPL, the GPL or the LGPL.
  *
  * ***** END LICENSE BLOCK ***** */
+"use strict";
 
-var table;
+self.port.emit("readyProjects");
 
 (function($) {
-    window.showProjects = function(projects) {
-        try {
-            // Localize column titles
-            $("#projects thead th:eq(0)").text(_("oqs.project"));
-            $("#projects thead th:eq(1)").text(_("oqs.project_url"));
-            $("#projects thead th:eq(2)").text(_("oqs.project_choice"));
+//----
 
-            var tbody = $('tbody').empty();
-            table = $('table');
+self.port.on("showProjects", function(projects) {
+    $('body').doT('tplProjectList', {
+        'projects': projects
+    });
 
-            for each (var project in projects) {
-                var tr = $('<tr></tr>');
-                tbody.append(tr);
+    $('#projects tbody td').on('click', 'button', function(evt) {
+        var row = $(evt.target).parents('tr');
 
-                // @formatter:off
-                tr.append(
-                    $("<td></td>")
-                        .attr("headers", "hName")
-                        .text(project.name),
-                    $("<td></td>")
-                        .attr("headers", "hUrl")
-                        .text(project.url),
-                    $("<td></td>")
-                        .attr("headers", "hAction")
-                        .append('<button onclick="_sendResults(' + project.id + ', \'' + escape(project.name) + '\')">' + _("oqs.project_choice") + '</button>')
-                );
-                // @formatter:on
+        self.port.emit("sendResults",
+            row.data('project_id'),
+            $('td[headers~="hName"]', row).text()
+        );
+    });
+});
 
-                tr.data("project_id", project.id);
-            }
-
-            table.superTable({
-                visible: ["hName", "hUrl", "hAction"],
-                sortable: ["hName", "hUrl"],
-                filterable: []
-            });
-        } catch(e) {
-            console.exception(e);
-        };
-    };
+//----
 })(jQuery);

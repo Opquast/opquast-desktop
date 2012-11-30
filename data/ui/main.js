@@ -37,8 +37,48 @@
  * ***** END LICENSE BLOCK ***** */
 "use strict";
 
+self.port.emit("ready");
+
 (function($) {
-    window.showMsg = function(aMessage) {
-        $("body").append($('<p id="loader"></p>').text(aMessage));
-    };
+//----
+
+// Translation function
+window._ = function(k) {
+    return k in self.options.locales ? self.options.locales[k] : null;
+};
+
+// jQuery util for doT
+$.doT = function(templateName, data) {
+    data = $.extend(data, {
+        'locales': self.options.locales
+    });
+    return doT.compile(self.options.templates[templateName])(data);
+};
+$.fn.doT = function(templateName, data) {
+    return this.each(function() {
+        $(this).empty().append($.doT(templateName, data));
+    });
+};
+
+
+//
+// Display a message on empty page
+//
+self.port.on("showMessage", function(aMessage) {
+    $('body').doT('tplLoader', {'message': aMessage});
+});
+
+
+//
+// Landing page (to launch tests)
+//
+self.port.on("showLandingUI", function() {
+    $('body').doT('tplLanding');
+
+    $('body button.launch').click(function() {
+        self.port.emit("launch");
+    });
+});
+
+//----
 })(jQuery);

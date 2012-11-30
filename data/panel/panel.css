@@ -66,14 +66,12 @@
     border-radius: 4px;
     border: 1px solid #555;
     background-color: transparent;
-    background-image: -moz-linear-gradient(hsl(209, 15%, 27%), hsl(210, 20%, 13%));
     background-image: linear-gradient(hsl(209, 15%, 27%), hsl(210, 20%, 13%));
     background-repeat: no-repeat;
     background-position: padding-box;
     color: #ddd;
 }
 .opquast-desktop-dock-toolbar .button:hover, .opquast-desktop-dock-toolbar .button:active {
-    background-image: -moz-linear-gradient(hsl(209, 10%, 28%), hsl(210, 14%, 8%));
     background-image: linear-gradient(hsl(209, 10%, 28%), hsl(210, 14%, 8%));
     color: #fff;
 }
@@ -104,7 +102,6 @@
 
 .opquast-desktop-dock-toolbar {
     padding: 0px 16px 3px 10px;
-    background: -moz-linear-gradient(hsl(209, 18%, 30%), hsl(210, 24%, 16%)) no-repeat padding-box;
     background: linear-gradient(hsl(209, 18%, 30%), hsl(210, 24%, 16%)) no-repeat padding-box;
     color: #ddd;
 }
