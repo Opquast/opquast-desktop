@@ -35,6 +35,8 @@
  * the terms of any one of the MPL, the GPL or the LGPL.
  *
  * ***** END LICENSE BLOCK ***** */
+/*jshint globalstrict:true, jquery:true */
+/*globals doT, self */
 "use strict";
 
 self.port.emit("ready");
