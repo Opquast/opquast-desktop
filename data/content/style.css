@@ -251,3 +251,17 @@ h1,h2,h3 {
 table tbody tr>td:nth-child(2) {
     white-space: nowrap;
 }
+
+ul.prefs {
+    margin: 1em 0;
+    padding: 0;
+    list-style: none;
+}
+ul.prefs li {
+    display: block;
+    margin: 0.5em 0;
+    padding: 0;
+}
+ul.prefs input {
+    vertical-align: top;
+}

@@ -37,66 +37,32 @@
  * ***** END LICENSE BLOCK ***** */
 "use strict";
 
-const self = require("self");
+$('head title').text(self.options.locales['oqs.preferences_title']);
 
-const contextMenu = require("context-menu");
-const {prefs} = require("simple-prefs");
+var cl_prefs = self.options.prefs.checklists.split(/\s*,\s*/);
+var checklists = self.options.checklists;
+var cl_array = [];
+for (var i in checklists) {
+    checklists[i].selected = cl_prefs.indexOf(i) != -1;
+    cl_array.push([i, checklists[i]]);
+}
 
-const {SplitDock} = require("app/dock");
-const {ButtonOptions, DockOptions, MenuOptions} = require("app/opquast-dock");
-const {configDebug} = require("tools/debug");
-const {TabRequestsLogger} = require("tools/net-log");
-const {ToolbarButton} = require("toolbarbutton/toolbarbutton");
+var tpl = doT.compile(self.options.template)({
+    'locales': self.options.locales,
+    'prefs': self.options.prefs,
+    'checklists': cl_array
+});
 
-exports.main = function(aOptions, aCallback) {
-    // Debug configuration
-    if (aOptions.staticArgs.debug) {
-        require("tools/debug").debugConf["obj"] = console;
-    }
+$('body').html(tpl);
 
-    // Init chrome map
-    const content = require("app/content");
+$('#prefgen input').change(function() {
+    self.port.emit("setPref", this.value, this.checked)
+});
 
-    // Some default preferences
-    // Note: checklists pref is set in tester.js
-    if (aOptions.staticArgs.api) {
-        prefs.api_url = aOptions.staticArgs.api;
-    } else {
-        prefs.api_url = prefs.api_url || 'https://reporting.opquast.com/api/';
-    }
-
-    if (prefs.debug === undefined) {
-        prefs.debug = false;
-    }
-
-    if (prefs.showRefs === undefined) {
-        prefs.showRefs = false;
-    }
-
-    if (prefs.showThemas === undefined) {
-        prefs.showThemas = false;
-    }
-
-
-    // Requests logger
-    TabRequestsLogger();
-
-    // Dock
-    SplitDock(DockOptions);
-
-    // Toolbar Button
-    ToolbarButton(ButtonOptions);
-
-    // Context menu
-    contextMenu.Item(MenuOptions);
-
-    // Open about page on install
-    if (self.loadReason == "install") {
-        content.openAbout();
-    }/* else if(self.loadReason == "upgrade") {
-        content.openChangelog();
-    }*/
-};
-
-exports.onUnload = function(aReason) {
-};
+$('#prefcl input').change(function() {
+    var values = [];
+    $('#prefcl input:checked').each(function() {
+        values.push(this.value);
+    });
+    self.port.emit("setPref", "checklists", values.join(","));
+});

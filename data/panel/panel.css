@@ -130,6 +130,18 @@
     -moz-image-region: rect(0, 48px, 16px, 32px);
 }
 
+.opquast-desktop-dock-toolbar .opquast-desktop-dock-prefbutton {
+    list-style-image: url("prefs.png");
+    -moz-image-region: rect(0, 16px, 16px, 0);
+    min-width: 24px;
+    width: 24px;
+    padding: 2px 0 0 14px;
+}
+.opquast-desktop-dock-toolbar .opquast-desktop-dock-prefbutton:hover {
+    -moz-image-region: rect(0, 32px, 16px, 16px);
+}
+
+
 .opquast-desktop-dock-oqslink {
     font-size: 0.9em;
     color: #999;
