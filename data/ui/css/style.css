@@ -46,7 +46,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: Lucida Grande, sans-serif;
+    font-family: "Lucida Grande", sans-serif;
     font-size: 12px;
 }
 
@@ -152,67 +152,99 @@ button.launch:hover span, button.launch:active span {
 #resultDetails {
     display: none;
     position: fixed;
-    top: 0;
-    bottom: 10px;
-    left: 40px;
-    right: 40px;
+    top: 5px;
+    bottom: 5px;
+    left: 10%;
+    right: 10%;
     background-color: #fff;
     color: #222;
-    border-radius: 0 0 6px 6px;
+    border-radius: 6px;
     box-shadow: 0 0 5px rgba(0,0,0, 0.8);
     overflow: hidden;
 }
 
-#resultDetails .nav {
+#resultDetails .ctx {
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
     padding: 0.5em 10px;
     line-height: 1;
     overflow: hidden;
 }
 
-#resultDetails .content {
+#resultDetails .ctx li {
+    display: inline-block;
+    margin: 0;
+}
+#resultDetails .ctx li:after {
+    content: "\00A0\00A0|\00A0";
+}
+#resultDetails .ctx li:last-child:after {
+    content: "";
+}
+
+#resultDetails #ctx1 {
+    top: 0;
+    text-align: right;
+}
+#resultDetails #ctx2 {
+    bottom: 0;
+    text-align: right;
+}
+
+#resultDetails #content {
     padding: 10px;
     position: absolute;
     top: 2em;
-    bottom: 0;
+    bottom: 2em;
     left: 0;
     right: 0;
     overflow: auto;
+    background-color: #fafaf9;
+    border-style: solid;
+    border-color: #d3cfc4;
+    border-width: 1px 0;
 }
 
-#resultDetails .nav a {
+#resultDetails .ctx a {
     text-decoration: none;
     text-transform: lowercase;
-    display: inline-block;
 }
-#resultDetails .nav a:hover {
+#resultDetails .ctx a:hover {
     text-decoration: underline;
 }
-#resultDetails .nav a:after, #resultDetails .nav a:before {
+#resultDetails .ctx a:after, #resultDetails #ctx1 a:before {
     opacity: 0.7;
 }
-#resultDetails .nav a.prev {
-    margin-right: 10px;
-}
-#resultDetails .nav a.close {
-    float: right;
-}
-#resultDetails .nav a.prev:before {
+#resultDetails .ctx a.prev:before {
     content: "(\2190) ";
 }
-#resultDetails .nav a.next:after {
+#resultDetails .ctx a.next:after {
     content: " (\2192)";
 }
-#resultDetails .nav a.close:after {
+#resultDetails .ctx a.close:after {
     content: " (esc)";
 }
 
 #resultDetails h1 {
-    font: bold 1.2em Helvetica, Arial, sans-serif;
+    font: bold 1.3em Helvetica, Arial, sans-serif;
     margin: 0;
 }
+#resultDetails h1 img {
+    float: right;
+    width: 30px;
+}
+#resultDetails h1 span {
+    display: block;
+    margin-right: 20px;
+}
 #resultDetails p.label {
-    font-size: 1.3em;
-    color: #000;
+    font-size: 1.2em;
+    color: #444;
 }
 
 #resultDetails h2 {
