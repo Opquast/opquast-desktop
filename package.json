@@ -14,5 +14,19 @@
         "vold-utils"
     ],
     "icon": "data/icon48.png",
-    "icon64": "data/icon64.png"
+    "icon64": "data/icon64.png",
+    "preferences": [
+        {
+            "name": "full_preferences",
+            "label": "All preferences",
+            "type": "control",
+            "title": ""
+        },
+        {
+            "name": "debug",
+            "title": "Debug Mode",
+            "type": "bool",
+            "value": false
+        }
+    ]
 }
