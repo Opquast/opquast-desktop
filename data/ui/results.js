@@ -41,8 +41,6 @@
 
 "use strict";
 
-self.port.emit("readyResults");
-
 (function($) {
 //----
 

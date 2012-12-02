@@ -66,8 +66,17 @@ $.fn.doT = function(templateName, data) {
 //
 // Display a message on empty page
 //
-self.port.on("showMessage", function(aMessage) {
-    $('body').doT('tplLoader', {'message': aMessage});
+self.port.on("showMessage", function(aMessage, aClass, aButton) {
+    aClass = aClass || "loader";
+    $('body').doT('tplMessage', {
+        'message': aMessage,
+        'class': aClass,
+        'button': aButton
+    });
+
+    $('button').click(function() {
+        self.port.emit("messageButton");
+    });
 });
 
 
@@ -75,9 +84,13 @@ self.port.on("showMessage", function(aMessage) {
 // Landing page (to launch tests)
 //
 self.port.on("showLandingUI", function() {
-    $('body').doT('tplLanding');
+    $('body').doT('tplMessage', {
+        'message': self.options.locales['oqs.no_result_yet'],
+        'class': '',
+        'button': self.options.locales['oqs.launch']
+    });
 
-    $('body button.launch').click(function() {
+    $('button').prepend('<span></span>').addClass('launch').click(function() {
         self.port.emit("launch");
     });
 });
