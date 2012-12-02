@@ -154,3 +154,8 @@
 .opquast-desktop-dock-main {
     min-width: 200px;
 }
+
+/* Platform specific hacks */
+#opquast-desktop-dock.winnt .opquast-desktop-dock-toolbar .opquast-desktop-dock-prefbutton {
+    padding: 2px 0 0 4px;
+}
