@@ -113,7 +113,7 @@ self.port.on("showProjects", function(projects) {
         $('body').append(confirm);
 
         var bt_ok = $('<button class="action">OK</button>');
-        var bt_cancel = $('<button class="action">Cancel</button>');
+        var bt_cancel = $('<button class="action">' + self.options.locales['oqs.cancel'] + '</button>');
 
         bt_cancel.click(function() {
             hidden.show();
