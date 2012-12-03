@@ -164,6 +164,9 @@ self.port.on("showResults", function(tests, tableOptions) {
         }
 
         r.criterion.thema = $.trim(r.criterion.thema);
+        if (r.criterion.thema === '') {
+            r.criterion.thema = r.criterion.checklist.name;
+        }
     });
 
     // Show date
