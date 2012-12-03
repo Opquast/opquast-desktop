@@ -35,61 +35,12 @@
  * the terms of any one of the MPL, the GPL or the LGPL.
  *
  * ***** END LICENSE BLOCK ***** */
-"use strict";
+/*jshint globalstrict:true, jquery:true */
+/*global doT, self */
 
-const {PageMod} = require("page-mod");
-const {prefs} = require("simple-prefs");
-const self = require("self");
-const tabs = require("tabs");
-
-const {checklists} = require("app/tester");
-
-const openAbout = exports.openAbout = function() {
-    tabs.open(self.data.url('content/about.html'));
-};
-
-const openChangelog = exports.openChangelog = function() {
-    tabs.open(self.data.url('content/changelog.html'));
-};
-
-const openPreferences = exports.openPreferences = function() {
-    tabs.open(self.data.url('content/preferences.html'));
-};
-
-// About pageMod
-PageMod({
-    include: self.data.url('content/about.html'),
-    contentScriptWhen: "ready",
-    contentScriptFile: [
-        self.data.url('lib/jquery-1.8.0.min.js'),
-        self.data.url('lib/doT.js'),
-        self.data.url('content/about.js')
-    ],
-    contentScriptOptions: {
-        "template": self.data.load("content/templates/about-fr.tpl"),
-        "version": self.version,
-        "platform": require("api-utils/system").platform
-    }
-})
-
-// Preferences pageMod
-PageMod({
-    include: self.data.url('content/preferences.html'),
-    contentScriptWhen: "ready",
-    contentScriptFile: [
-        self.data.url('lib/jquery-1.8.0.min.js'),
-        self.data.url('lib/doT.js'),
-        self.data.url('content/preferences.js')
-    ],
-    contentScriptOptions: {
-        "locales": require("@l10n/data").hash,
-        "prefs": prefs,
-        "checklists": checklists,
-        "template": self.data.load("content/templates/preferences.tpl")
-    },
-    onAttach: function(worker) {
-        worker.port.on("setPref", function(name, value) {
-            prefs[name] = value;
-        });
-    }
-});
+(function($) {
+    $('body').html(doT.compile(self.options.template)({
+        "version": self.options.version,
+        "platform": self.options.platform
+    }));
+})(jQuery);
