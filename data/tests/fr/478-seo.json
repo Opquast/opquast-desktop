@@ -379,7 +379,7 @@
         }, 
         "explanation": "", 
         "description": "Le site n'emploie pas la technique des jeux de cadres", 
-        "solution": "Ne pas utiliser les \u00e9l\u00e9ments FRAMESET, FRAME et NOFRAMES. ", 
+        "solution": "Ne pas utiliser les \u00e9l\u00e9ments FRAMESET, FRAME et NOFRAMES.", 
         "thema": "Cadres", 
         "name": "9"
     }, 
@@ -1027,7 +1027,7 @@
         }, 
         "explanation": "", 
         "description": "La page d'accueil expose la nature des contenus et services propos\u00e9s.", 
-        "solution": "Pr\u00e9voir sur la page d'accueil une information, une phrase, un contenu r\u00e9sumant les contenus et services propos\u00e9s sur le site. ", 
+        "solution": "Pr\u00e9voir sur la page d'accueil une information, une phrase, un contenu r\u00e9sumant les contenus et services propos\u00e9s sur le site.", 
         "thema": "Contenu", 
         "name": "18"
     }, 

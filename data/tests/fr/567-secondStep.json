@@ -3,7 +3,7 @@
         "goal": "", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser avec pr\u00e9caution un attribut title dont la valeur est plus courte que le contenu de l'\u00e9l\u00e9ment a", 
@@ -15,7 +15,7 @@
         "goal": "Permettre \u00e0 l'utilisateur de pr\u00e9voir le comportement des liens qui ouvrent une nouvelle fen\u00eatre.", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser avec pr\u00e9caution l'attribut target avec la valeur _blank pour l'\u00e9l\u00e9ment a", 
@@ -27,7 +27,7 @@
         "goal": "", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser avec pr\u00e9caution un contenu d'\u00e9l\u00e9ment label identique pour plusieurs \u00e9l\u00e9ments label dans le m\u00eame fieldset", 
@@ -39,7 +39,7 @@
         "goal": "Permettre \u00e0 l'utilisateur de pr\u00e9voir le comportement des liens qui ouvrent une nouvelle fen\u00eatre.", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser avec pr\u00e9caution l'attribut target avec la valeur _blank pour l'\u00e9l\u00e9ment area", 
@@ -51,7 +51,7 @@
         "goal": "", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser avec pr\u00e9caution les \u00e9l\u00e9ments td quand l'ensemble des cellules d'une colonne contient du texte en gras", 
@@ -63,7 +63,7 @@
         "goal": "", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser la propri\u00e9t\u00e9 direction avec pr\u00e9caution", 
@@ -75,7 +75,7 @@
         "goal": "Permettre aux utilisateurs de distinguer les diff\u00e9rents tableaux de donn\u00e9es pr\u00e9sents dans une page.", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser avec pr\u00e9caution des contenus identiques pour plusieurs \u00e9l\u00e9ments caption", 
@@ -87,7 +87,7 @@
         "goal": "Permettre la restitution de la nature des contenus (ici une liste) et de leurs caract\u00e9ristiques (ici le nombre d'item de cette liste) aux  utilisateurs qui ne per\u00e7oivent pas la mise en page originale.\r\nAinsi, la transmission uniquement visuelle d'une information s\u00e9mantique est \u00e9vit\u00e9e.", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser avec pr\u00e9caution des \u00e9l\u00e9ments div successifs commen\u00e7ant chacun leur contenu par -, \u2013, \u2014, * ou \u2022", 
@@ -99,7 +99,7 @@
         "goal": "Permettre la restitution des \u00e9l\u00e9ments multim\u00e9dia au aides techniques.", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser avec pr\u00e9caution l'attribut wmode avec la valeur transparent ou opaque pour l'\u00e9l\u00e9ment embed", 
@@ -111,7 +111,7 @@
         "goal": "Permettre \u00e0 l'utilisateur de pr\u00e9voir le comportement des formulaires qui ouvrent une nouvelle fen\u00eatre.", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser avec pr\u00e9caution l'attribut target avec la valeur _blank pour l'\u00e9l\u00e9ment form", 
@@ -123,7 +123,7 @@
         "goal": "Permettre d'\u00e9viter la redondance lorsqu'un lien est compos\u00e9 \u00e0 la fois de texte et d'une image.", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser avec pr\u00e9caution un attribut alt non vide sur les \u00e9l\u00e9ments img descendant d'\u00e9l\u00e9ments a qui contiennent \u00e9galement du texte", 
@@ -135,7 +135,7 @@
         "goal": "Permettre l'association des champs de formulaire avec les \u00e9tiquettes qui les d\u00e9crivent.", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser les \u00e9l\u00e9ments input de type checkbox sans attribut id avec pr\u00e9caution", 
@@ -147,7 +147,7 @@
         "goal": "Permettre l'association des champs de formulaire avec les \u00e9tiquettes qui les d\u00e9crivent.", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser les \u00e9l\u00e9ments input de type file sans attribut id avec pr\u00e9caution", 
@@ -159,7 +159,7 @@
         "goal": "Permettre l'association des champs de formulaire avec les \u00e9tiquettes qui les d\u00e9crivent.", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser les \u00e9l\u00e9ments input de type password sans attribut id avec pr\u00e9caution", 
@@ -171,7 +171,7 @@
         "goal": "Permettre l'association des champs de formulaire avec les \u00e9tiquettes qui les d\u00e9crivent.", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser les \u00e9l\u00e9ments input de type radio sans attribut id avec pr\u00e9caution", 
@@ -183,7 +183,7 @@
         "goal": "Permettre l'association des champs de formulaire avec les \u00e9tiquettes qui les d\u00e9crivent.", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser les \u00e9l\u00e9ments input de type text sans attribut id avec pr\u00e9caution", 
@@ -195,7 +195,7 @@
         "goal": "Permettre l'identification et la distinction des diff\u00e9rents groupes form\u00e9s dans les \u00e9l\u00e9ments de formulaire.", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser avec pr\u00e9caution un contenu identique pour plusieurs \u00e9l\u00e9ments legend", 
@@ -207,7 +207,7 @@
         "goal": "Permettre la restitution des \u00e9l\u00e9ments multim\u00e9dia au aides techniques.", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser avec pr\u00e9caution la valeur transparent ou opaque pour l'attribut param de l'\u00e9l\u00e9ment object", 
@@ -219,7 +219,7 @@
         "goal": "Permettre la restitution de la nature des contenus (ici une liste de d\u00e9finition) aux  utilisateurs qui ne per\u00e7oivent pas la mise en page originale.\r\nEviter l'utilisation d'\u00e9l\u00e9ment en fonction de la mani\u00e8re dont ils sont restitu\u00e9s visuellement.", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser avec pr\u00e9caution des \u00e9l\u00e9ments p successifs commen\u00e7ant chacun leur contenu par -, \u2013, \u2014, * ou \u2022", 
@@ -231,11 +231,11 @@
         "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser l'\u00e9l\u00e9ment s avec pr\u00e9caution", 
-        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
+        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.", 
         "thema": "HTML", 
         "name": "25"
     }, 
@@ -243,7 +243,7 @@
         "goal": "Permettre l'association des champs de formulaire avec les \u00e9tiquettes qui les d\u00e9crivent.", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser les \u00e9l\u00e9ments select sans attribut id avec pr\u00e9caution", 
@@ -255,7 +255,7 @@
         "goal": "Permettre l'identification des tableaux de donn\u00e9es et la restitution des contenus permettant de les caract\u00e9riser.", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser avec pr\u00e9caution les \u00e9l\u00e9ments table sans attribut summary et contenant au moins un \u00e9l\u00e9ment th ou un \u00e9l\u00e9ment caption", 
@@ -267,7 +267,7 @@
         "goal": "Permettre aux utilisateurs de distinguer les donn\u00e9es fournies et la mani\u00e8re avec laquelle chaque tableau de donn\u00e9es est construit.", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser avec pr\u00e9caution des contenus identiques pour plusieurs attribut summary", 
@@ -279,11 +279,11 @@
         "goal": "Permettre l'association des cellules avec leurs ent\u00eates dans les tableaux de donn\u00e9es.", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser l'attribut headers vide sur les \u00e9l\u00e9ments td avec pr\u00e9caution", 
-        "solution": "Renseigner les attributs headers des \u00e9l\u00e9ments td avec les valeurs des attributs id des ent\u00eates associ\u00e9es. ", 
+        "solution": "Renseigner les attributs headers des \u00e9l\u00e9ments td avec les valeurs des attributs id des ent\u00eates associ\u00e9es.", 
         "thema": "HTML", 
         "name": "14"
     }, 
@@ -291,7 +291,7 @@
         "goal": "Permettre l'association des champs de formulaire avec les \u00e9tiquettes qui les d\u00e9crivent.", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser les \u00e9l\u00e9ments textarea sans attribut id avec pr\u00e9caution", 
@@ -303,11 +303,11 @@
         "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser l'\u00e9l\u00e9ment u avec pr\u00e9caution", 
-        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
+        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.", 
         "thema": "HTML", 
         "name": "26"
     }, 
@@ -315,7 +315,7 @@
         "goal": "Permettre un comportement \u00e9quivalent et/ou l'acc\u00e8s \u00e0 une information \u00e9quivalente quel que soit le p\u00e9riph\u00e9rique d'entr\u00e9e des utilisateurs", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser avec pr\u00e9caution le gestionnaire d'\u00e9v\u00e9nement onblur lorsque vous n'utilisez pas le gestionnaire d'\u00e9v\u00e9nement onmouseout", 
@@ -327,7 +327,7 @@
         "goal": "Eviter aux utilisateurs un changement de contexte sans validation explicite de leur part.", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser avec pr\u00e9caution le gestionnaire d'\u00e9v\u00e9nement onblur pour d\u00e9clencher la m\u00e9thode submit", 
@@ -339,7 +339,7 @@
         "goal": "Eviter aux utilisateurs un changement de contexte sans validation explicite de leur part.", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser avec pr\u00e9caution le gestionnaire d'\u00e9v\u00e9nement onchange pour d\u00e9clencher la m\u00e9thode submit", 
@@ -351,7 +351,7 @@
         "goal": "Eviter aux utilisateurs un changement de contexte sans validation explicite de leur part.", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser avec pr\u00e9caution le gestionnaire d'\u00e9v\u00e9nement onchange avec l'objet location", 
@@ -360,10 +360,10 @@
         "name": "36"
     }, 
     "19175": {
-        "goal": "Permettre aux utilisateurs de percevoir la nature interactive des \u00e9l\u00e9ments et de d\u00e9clencher les interactions quel que soit leur p\u00e9riph\u00e9rique d'entr\u00e9e.  ", 
+        "goal": "Permettre aux utilisateurs de percevoir la nature interactive des \u00e9l\u00e9ments et de d\u00e9clencher les interactions quel que soit leur p\u00e9riph\u00e9rique d'entr\u00e9e.", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser avec pr\u00e9caution l'\u00e9v\u00e9nement onclick sur les \u00e9l\u00e9ments autre que a, area, button, select, textarea ou input", 
@@ -372,10 +372,10 @@
         "name": "37"
     }, 
     "19176": {
-        "goal": "Eviter aux utilisateurs l'obligation de poss\u00e9der un p\u00e9riph\u00e9rique de pointage tel que la souris et d'avoir la capacit\u00e9 \u00e0 double cliquer pour interagir avec le site. ", 
+        "goal": "Eviter aux utilisateurs l'obligation de poss\u00e9der un p\u00e9riph\u00e9rique de pointage tel que la souris et d'avoir la capacit\u00e9 \u00e0 double cliquer pour interagir avec le site.", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser le gestionnaire d'\u00e9v\u00e9nement ondblclick avec pr\u00e9caution", 
@@ -387,7 +387,7 @@
         "goal": "Permettre un comportement \u00e9quivalent et/ou l'acc\u00e8s \u00e0 une information \u00e9quivalente quel que soit le p\u00e9riph\u00e9rique d'entr\u00e9e des utilisateurs", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser avec pr\u00e9caution le gestionnaire d'\u00e9v\u00e9nement onfocus lorsque vous n'utilisez pas le gestionnaire d'\u00e9v\u00e9nement onmouseover", 
@@ -399,7 +399,7 @@
         "goal": "Conserver le focus sur les \u00e9l\u00e9ments le recevant.", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser avec pr\u00e9caution le gestionnaire d'\u00e9v\u00e9nement onfocus pour d\u00e9clencher la m\u00e9thode blur", 
@@ -411,7 +411,7 @@
         "goal": "Eviter aux utilisateurs un changement de contexte sans validation explicite de leur part.", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser avec pr\u00e9caution le gestionnaire d'\u00e9v\u00e9nement onfocus pour d\u00e9clencher la m\u00e9thode submit", 
@@ -423,7 +423,7 @@
         "goal": "Permettre un comportement \u00e9quivalent et/ou l'acc\u00e8s \u00e0 une information \u00e9quivalente quel que soit le p\u00e9riph\u00e9rique d'entr\u00e9e des utilisateurs", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser avec pr\u00e9caution le gestionnaire d'\u00e9v\u00e9nement onmouseout lorsque vous n'utilisez pas le gestionnaire d'\u00e9v\u00e9nement onblur", 
@@ -435,7 +435,7 @@
         "goal": "Eviter aux utilisateurs un changement de contexte sans validation explicite de leur part.", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser avec pr\u00e9caution le gestionnaire d'\u00e9v\u00e9nement onmouseout pour d\u00e9clencher la m\u00e9thode submit", 
@@ -447,7 +447,7 @@
         "goal": "Eviter aux utilisateurs un changement de contexte sans validation explicite de leur part.", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser avec pr\u00e9caution le gestionnaire d'\u00e9v\u00e9nement onmouseover pour d\u00e9clencher la m\u00e9thode submit", 
@@ -459,7 +459,7 @@
         "goal": "Permettre un comportement \u00e9quivalent et/ou l'acc\u00e8s \u00e0 une information \u00e9quivalente quel que soit le p\u00e9riph\u00e9rique d'entr\u00e9e des utilisateurs", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser avec pr\u00e9caution le gestionnaire d'\u00e9v\u00e9nement onmouseover lorsque vous n'utilisez pas le gestionnaire d'\u00e9v\u00e9nement onfocus", 
@@ -471,7 +471,7 @@
         "goal": "Eviter aux utilisateurs l'obligation de poss\u00e9der un p\u00e9riph\u00e9rique de pointage tel que la souris et d'avoir la capacit\u00e9 de scroller pour interagir avec le site ou avoir acc\u00e8s \u00e0 une information.", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser le gestionnaire d'\u00e9v\u00e9nement onscroll avec pr\u00e9caution", 
@@ -483,7 +483,7 @@
         "goal": "Eviter aux utilisateurs tout \u00e9v\u00e9nement d\u00e9clench\u00e9 automatiquement au bout d'un certain temps.", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser la m\u00e9thode setTimeout avec pr\u00e9caution", 
@@ -495,7 +495,7 @@
         "goal": "Eviter aux utilisateurs tout \u00e9v\u00e9nement r\u00e9p\u00e9t\u00e9 automatiquement.", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser la m\u00e9thode setInterval avec pr\u00e9caution", 
@@ -507,7 +507,7 @@
         "goal": "Permettre \u00e0 l'utilisateur de pr\u00e9voir le comportement des actions qui ouvrent une nouvelle fen\u00eatre.", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser la m\u00e9thode window.open avec pr\u00e9caution", 
@@ -519,7 +519,7 @@
         "goal": "Permettre aux utilisateurs d'agrandir le texte avec les zooms textuels des agents utilisateurs.", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser la propri\u00e9t\u00e9 font-size avec une valeur d\u00e9finie en pixel avec pr\u00e9caution", 
@@ -531,7 +531,7 @@
         "goal": "Ne pas supprimer le rep\u00e8re visuel que constitue l'encadr\u00e9 pris par les \u00e9l\u00e9ments interactifs lorsqu'ils re\u00e7oivent le focus.", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser la valeur 0 ou none pour la propri\u00e9t\u00e9 outline avec pr\u00e9caution", 
@@ -543,7 +543,7 @@
         "goal": "Favoriser le parcours oculaire des utilisateurs lorsque les yeux reviennent \u00e0 la ligne en conservant les diff\u00e9rences de longueur de ligne qui, de fait, serviront de rep\u00e8re visuel.", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser la valeur justify pour la propri\u00e9t\u00e9 text-align avec pr\u00e9caution", 
@@ -555,7 +555,7 @@
         "goal": "Eviter la perte d'information lorsque les images sont d\u00e9sactiv\u00e9s", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser avec pr\u00e9caution la propri\u00e9t\u00e9 text-indent avec une valeur n\u00e9gative pour un selecteur ayant \u00e9galement la propri\u00e9t\u00e9 background-image", 
@@ -567,7 +567,7 @@
         "goal": "", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser avec pr\u00e9caution les \u00e9l\u00e9ments td quand l'ensemble des cellules d'une ligne contient du texte en gras", 
@@ -579,7 +579,7 @@
         "goal": "", 
         "checklist": {
             "id": 567, 
-            "name": "Accessibility Second step : risk management"
+            "name": "Accessibility second step : risk management"
         }, 
         "explanation": "", 
         "description": "Utiliser les valeurs none et hidden des propri\u00e9t\u00e9s display et visibility avec pr\u00e9caution", 

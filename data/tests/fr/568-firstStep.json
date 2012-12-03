@@ -55,7 +55,7 @@
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser l'attribut align", 
-        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
+        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.", 
         "thema": "HTML", 
         "name": "27"
     }, 
@@ -67,7 +67,7 @@
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser l'attribut alink", 
-        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
+        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.", 
         "thema": "HTML", 
         "name": "52"
     }, 
@@ -127,7 +127,7 @@
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser l'attribut background", 
-        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
+        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.", 
         "thema": "HTML", 
         "name": "46"
     }, 
@@ -139,7 +139,7 @@
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser l'\u00e9l\u00e9ment basefont", 
-        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
+        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.", 
         "thema": "HTML", 
         "name": "78"
     }, 
@@ -151,7 +151,7 @@
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser l'attribut bgcolor", 
-        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
+        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.", 
         "thema": "HTML", 
         "name": "61"
     }, 
@@ -199,7 +199,7 @@
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser l'attribut border", 
-        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
+        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.", 
         "thema": "HTML", 
         "name": "43"
     }, 
@@ -259,7 +259,7 @@
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser l'\u00e9l\u00e9ment center", 
-        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
+        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.", 
         "thema": "HTML", 
         "name": "80"
     }, 
@@ -295,7 +295,7 @@
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser l'\u00e9l\u00e9ment font", 
-        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
+        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.", 
         "thema": "HTML", 
         "name": "81"
     }, 
@@ -679,7 +679,7 @@
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser l'attribut link", 
-        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
+        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.", 
         "thema": "HTML", 
         "name": "34"
     }, 
@@ -708,7 +708,7 @@
         "name": "68"
     }, 
     "19285": {
-        "goal": "Eviter aux utilisateurs un rechargement de la page qu'il ne pourrait pas ma\u00eetriser. ", 
+        "goal": "Eviter aux utilisateurs un rechargement de la page qu'il ne pourrait pas ma\u00eetriser.", 
         "checklist": {
             "id": 568, 
             "name": "Accessibility first step: error detection"
@@ -787,7 +787,7 @@
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser l'\u00e9l\u00e9ment strike", 
-        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
+        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.", 
         "thema": "HTML", 
         "name": "56"
     }, 
@@ -871,7 +871,7 @@
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser un contenu d'attribut headers qui ne correspond \u00e0 aucune valeur d'attribut id pr\u00e9sent dans le m\u00eame tableau", 
-        "solution": "Renseigner les attributs headers des \u00e9l\u00e9ments td avec les valeurs des attributs id des ent\u00eates associ\u00e9es. ", 
+        "solution": "Renseigner les attributs headers des \u00e9l\u00e9ments td avec les valeurs des attributs id des ent\u00eates associ\u00e9es.", 
         "thema": "HTML", 
         "name": "65"
     }, 
@@ -883,7 +883,7 @@
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser l'attribut text", 
-        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
+        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.", 
         "thema": "HTML", 
         "name": "33"
     }, 
@@ -931,7 +931,7 @@
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser l'\u00e9l\u00e9ment tt", 
-        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
+        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.", 
         "thema": "HTML", 
         "name": "62"
     }, 
@@ -943,7 +943,7 @@
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser l'attribut vlink", 
-        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
+        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.", 
         "thema": "HTML", 
         "name": "32"
     }, 

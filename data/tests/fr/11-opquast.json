@@ -7,8 +7,8 @@
         }, 
         "explanation": "", 
         "description": "Chaque image est dot\u00e9e d'une alternative textuelle appropri\u00e9e.", 
-        "solution": "<p>L'attribut <code>alt</code> est pr\u00e9sent pour chaque \u00e9l\u00e9ment <code>img</code> (ou <code>area</code> dans le cas des zones d'images MAP) sous la forme :</p><ul>\n<li>alt=&quot;&quot; (alt vide) pour les images qui ne v\u00e9hiculent pas d'information n\u00e9cessaire \u00e0 la compr\u00e9hension du texte. Par exemple : &lt;img src=&quot;spacer.gif&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot;&gt;. Attention&nbsp;: l'omission de l'attribut alt ou un attribut alt contenant simplement un espace ne correspond pas \u00e0 un attribut vide et ne sera donc pas conforme ;</li>\n\t\t\t\t\t<li>alt=&quot;_fonction_&quot; pour les images liens, avec comme contenu la fonction du lien. Par exemple : &lt;img src=&quot;\u2026&quot; alt=&quot;Accueil&quot;&gt; pour la traditionnelle ic\u00f4ne \u00ab home \u00bb ;</li>\n\t\t\t\t\t<li>alt=&quot;_description_&quot; pour les images dont la description est n\u00e9cessaire \u00e0 la compr\u00e9hension du contenu de la page.</li>\n\t\t\t\t</ul><h3>Contenu de l'alternative </h3><p>Le contenu de l'alternative d\u00e9pend \u00e9troitement de la fonction de l'image et du contexte pr\u00e9cis dans lequel elle est employ\u00e9e. </p><h3>Cas fr\u00e9quents</h3><p>Les images-liens ne doivent jamais avoir d'alternative vide. Leur alternative indiquera la cible du lien plut\u00f4t que la description de l'image proprement dite. </p><p>Les images illustrant un texte reprendront le plus souvent le texte concern\u00e9 dans leur alternative, \u00e9ventuellement r\u00e9sum\u00e9 pour rendre cette derni\u00e8re plus concise.</p><p>Les images complexes v\u00e9hiculant une information trop importante pour \u00eatre fournie par la seule alternative textuelle&nbsp;: l'alternative s'en tiendra \u00e0 un r\u00e9sum\u00e9 de l'essentiel, et une description \u00e9tendue accompagnera l'image, dans la m\u00eame page que celle-ci ou accessible \u00e0 partir du contexte de l'image.</p><p>Les images n\u00e9cessitant une mention de copyright : contrairement \u00e0 une pratique fr\u00e9quente, l'alternative ne doit en aucun cas servir \u00e0 faire mention des droits d'auteur ou de propri\u00e9t\u00e9 intellectuelle.</p><h3>Longueur de l'alternative</h3><p>La description de sa fonction ou de l'information v\u00e9hicul\u00e9e par l'image doit \u00eatre concise. Il n'y a pas de limite norm\u00e9e mais on admet g\u00e9n\u00e9ralement 120 &nbsp;caract\u00e8res comme maximum.</p>", 
-        "thema": "Alternatives                 ", 
+        "solution": "<p>L'attribut <code>alt</code> est pr\u00e9sent pour chaque \u00e9l\u00e9ment <code>img</code> (ou <code>area</code> dans le cas des zones d'images MAP) sous la forme :</p><ul>\r\n<li>alt=&quot;&quot; (alt vide) pour les images qui ne v\u00e9hiculent pas d'information n\u00e9cessaire \u00e0 la compr\u00e9hension du texte. Par exemple : &lt;img src=&quot;spacer.gif&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot;&gt;. Attention&nbsp;: l'omission de l'attribut alt ou un attribut alt contenant simplement un espace ne correspond pas \u00e0 un attribut vide et ne sera donc pas conforme ;</li>\r\n\t\t\t\t\t<li>alt=&quot;_fonction_&quot; pour les images liens, avec comme contenu la fonction du lien. Par exemple : &lt;img src=&quot;\u2026&quot; alt=&quot;Accueil&quot;&gt; pour la traditionnelle ic\u00f4ne \u00ab home \u00bb ;</li>\r\n\t\t\t\t\t<li>alt=&quot;_description_&quot; pour les images dont la description est n\u00e9cessaire \u00e0 la compr\u00e9hension du contenu de la page.</li>\r\n\t\t\t\t</ul><h3>Contenu de l'alternative </h3><p>Le contenu de l'alternative d\u00e9pend \u00e9troitement de la fonction de l'image et du contexte pr\u00e9cis dans lequel elle est employ\u00e9e. </p><h3>Cas fr\u00e9quents</h3><p>Les images-liens ne doivent jamais avoir d'alternative vide. Leur alternative indiquera la cible du lien plut\u00f4t que la description de l'image proprement dite. </p><p>Les images-texte reprendront le plus souvent le texte concern\u00e9 dans leur alternative, \u00e9ventuellement r\u00e9sum\u00e9 pour rendre cette derni\u00e8re plus concise.</p><p>Les images complexes v\u00e9hiculant une information trop importante pour \u00eatre fournie par la seule alternative textuelle&nbsp;: l'alternative s'en tiendra \u00e0 un r\u00e9sum\u00e9 de l'essentiel, et une description \u00e9tendue accompagnera l'image, dans la m\u00eame page que celle-ci ou accessible \u00e0 partir du contexte de l'image.</p><p>Les images n\u00e9cessitant une mention de copyright : contrairement \u00e0 une pratique fr\u00e9quente, l'alternative ne doit en aucun cas servir \u00e0 faire mention des droits d'auteur ou de propri\u00e9t\u00e9 intellectuelle.</p><h3>Longueur de l'alternative</h3><p>La description de sa fonction ou de l'information v\u00e9hicul\u00e9e par l'image doit \u00eatre concise. Il n'y a pas de limite norm\u00e9e mais on admet g\u00e9n\u00e9ralement 120 &nbsp;caract\u00e8res comme maximum.</p>", 
+        "thema": "Alternatives", 
         "name": "1"
     }, 
     "501": {
@@ -60,7 +60,7 @@
         "name": "5"
     }, 
     "505": {
-        "goal": "<p>\u00c9viter aux utilisateurs les risques de m\u00e9prises sur le sens d'une date.</p>", 
+        "goal": "<p>\u00c9viter aux utilisateurs les risques de m\u00e9prise sur le sens d'une date.</p>", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
@@ -80,7 +80,7 @@
         "explanation": "", 
         "description": "Le site propose au moins un moyen de contact.", 
         "solution": "<p>Indiquer, au minimum, l'adresse e-mail de l'auteur et/ou du webmestre ou mettre en place un formulaire permettant de les contacter.</p>", 
-        "thema": "Contact                      ", 
+        "thema": "Contact", 
         "name": "7"
     }, 
     "507": {
@@ -92,7 +92,7 @@
         "explanation": "", 
         "description": "Les coordonn\u00e9es postales et t\u00e9l\u00e9phoniques de la repr\u00e9sentation locale ou du si\u00e8ge social des soci\u00e9t\u00e9s et organisations sont indiqu\u00e9es.", 
         "solution": "<p>Les coordonn\u00e9es postales et t\u00e9l\u00e9phoniques peuvent \u00eatre indiqu\u00e9es tout aussi bien&nbsp;:</p><ul>\n<li>Sur une page unique de type Mentions l\u00e9gales, \u00c0 propos ou Contact ;</li>\n\t\t\t\t\t<li>De mani\u00e8re r\u00e9p\u00e9t\u00e9e et syst\u00e9matique dans les pieds de page du site.</li>\n\t\t\t\t</ul>", 
-        "thema": "Contact                      ", 
+        "thema": "Contact", 
         "name": "8"
     }, 
     "508": {
@@ -126,7 +126,7 @@
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
-        "description": "Les contenus publicitaires ou sponsoris\u00e9s sont identifi\u00e9scomme tels.", 
+        "description": "Les contenus publicitaires ou sponsoris\u00e9s sont identifi\u00e9s comme tels.", 
         "solution": "<p>Signaler les publicit\u00e9s par une mention permettant de les identifier (publicit\u00e9, pub, partenariats\u2026).</p><p>Dans la mesure du possible, s\u00e9parer graphiquement la publicit\u00e9 du reste du contenu.</p>", 
         "thema": "Contenus", 
         "name": "11"
@@ -152,7 +152,7 @@
         "explanation": "", 
         "description": "Les conditions de financement (taux global du cr\u00e9dit, conditions, r\u00e9serves et d\u00e9lais d'acceptation) sont indiqu\u00e9es.", 
         "solution": "<p>Indiquer dans le site les conditions de financement des cr\u00e9dits propos\u00e9s aux clients.</p>", 
-        "thema": "E-Commerce                   ", 
+        "thema": "E-Commerce", 
         "name": "13"
     }, 
     "513": {
@@ -164,7 +164,7 @@
         "explanation": "", 
         "description": "Le d\u00e9lai de livraison estim\u00e9 est indiqu\u00e9 avant la validation d\u00e9finitive de la commande.", 
         "solution": "<p>Indiquer, sur le r\u00e9capitulatif de la commande et avant validation d\u00e9finitive, les informations relatives aux d\u00e9lais de livraison estim\u00e9s.</p>", 
-        "thema": "E-Commerce                   ", 
+        "thema": "E-Commerce", 
         "name": "14"
     }, 
     "514": {
@@ -176,7 +176,7 @@
         "explanation": "", 
         "description": "Les conditions de vente ou d'utilisation sont accessibles depuis toutes les pages.", 
         "solution": "<p>Faire figurer sur toutes les pages un lien pointant vers la page sp\u00e9cifique pr\u00e9sentant les conditions de vente et/ou d'utilisation.</p>", 
-        "thema": "E-Commerce                   ", 
+        "thema": "E-Commerce", 
         "name": "15"
     }, 
     "515": {
@@ -188,7 +188,7 @@
         "explanation": "", 
         "description": "Le num\u00e9ro d'immatriculation d\u00e9livr\u00e9 aux soci\u00e9t\u00e9s ou organisations au terme des proc\u00e9dures l\u00e9gales d'enregistrement en vigueur dans leur pays est indiqu\u00e9.", 
         "solution": "<p>Indiquer le num\u00e9ro d'immatriculation d\u00e9livr\u00e9 \u00e0 la soci\u00e9t\u00e9 ou association au terme des proc\u00e9dures l\u00e9gales d'enregistrement en vigueur dans son pays. Cette bonne pratique ne s'applique pas aux personnes physiques, sauf si elles sont constitu\u00e9es en entit\u00e9 juridique (freelances, auto-entrepreneurs, etc.).</p>", 
-        "thema": "E-Commerce                   ", 
+        "thema": "E-Commerce", 
         "name": "16"
     }, 
     "516": {
@@ -200,7 +200,7 @@
         "explanation": "", 
         "description": "La nature et les caract\u00e9ristiques quantifiables des produits et services (dimensions, dur\u00e9e, contenance, etc.) sont indiqu\u00e9es.", 
         "solution": "<p>Indiquer sur le site les informations relatives \u00e0 la nature ainsi qu'aux caract\u00e9ristiques des produits et services propos\u00e9s.</p>", 
-        "thema": "E-Commerce                   ", 
+        "thema": "E-Commerce", 
         "name": "17"
     }, 
     "517": {
@@ -212,7 +212,7 @@
         "explanation": "", 
         "description": "La disponibilit\u00e9 des produits est indiqu\u00e9e avant la validation d\u00e9finitive de la commande.", 
         "solution": "<p>Indiquer avant la commande et sur le formulaire r\u00e9capitulatif la disponibilit\u00e9 des produits s\u00e9lectionn\u00e9s.</p>", 
-        "thema": "E-Commerce                   ", 
+        "thema": "E-Commerce", 
         "name": "18"
     }, 
     "518": {
@@ -224,7 +224,7 @@
         "explanation": "", 
         "description": "Les prix affich\u00e9s mentionnent le d\u00e9tail des taxes et suppl\u00e9ments \u00e9ventuels ainsi que le montant hors taxes.", 
         "solution": "<p>Indiquer sur le formulaire r\u00e9capitulatif de la commande, ainsi que sur la facture envoy\u00e9e au client, le d\u00e9tail de toutes les taxes int\u00e9gr\u00e9es au co\u00fbt des produits et services propos\u00e9s.</p>", 
-        "thema": "E-Commerce                   ", 
+        "thema": "E-Commerce", 
         "name": "19"
     }, 
     "519": {
@@ -236,7 +236,7 @@
         "explanation": "", 
         "description": "La p\u00e9riode et les conditions de validit\u00e9 des offres sp\u00e9ciales et promotions sont indiqu\u00e9es.", 
         "solution": "<p>Indiquer sur le site les informations relatives \u00e0 la p\u00e9riode et aux conditions de validit\u00e9 des offres sp\u00e9ciales et des promotions propos\u00e9es.</p>", 
-        "thema": "E-Commerce                   ", 
+        "thema": "E-Commerce", 
         "name": "20"
     }, 
     "520": {
@@ -248,7 +248,7 @@
         "explanation": "", 
         "description": "La modification de la quantit\u00e9 de chaque article, l'ajout et la suppression d'un ou plusieurs articles restent possibles avant la validation d\u00e9finitive de la commande.", 
         "solution": "<p>Proposer \u00e0 l'utilisateur une option sp\u00e9cifique sur le formulaire de commande lui permettant de modifier les quantit\u00e9s command\u00e9es mais aussi d'annuler ou d'ajouter un article avant validation de la commande.</p>", 
-        "thema": "E-Commerce                   ", 
+        "thema": "E-Commerce", 
         "name": "21"
     }, 
     "521": {
@@ -260,7 +260,7 @@
         "explanation": "", 
         "description": "Le sous-total d\u00e9taill\u00e9 (quantit\u00e9s, montants, frais, assurances, etc.) est indiqu\u00e9 avant la validation d\u00e9finitive de la commande.", 
         "solution": "<p>Indiquer sur le formulaire r\u00e9capitulatif de la commande et avant validation, le sous-total d\u00e9taill\u00e9 du co\u00fbt du produit ou service command\u00e9.</p>", 
-        "thema": "E-Commerce                   ", 
+        "thema": "E-Commerce", 
         "name": "22"
     }, 
     "522": {
@@ -272,7 +272,7 @@
         "explanation": "", 
         "description": "Les moyens de paiement accept\u00e9s et les proc\u00e9dures correspondantes sont indiqu\u00e9s.", 
         "solution": "<p>Indiquer dans le site les informations sur les modes de paiement accept\u00e9s ainsi que les proc\u00e9dures correspondantes.</p>", 
-        "thema": "E-Commerce                   ", 
+        "thema": "E-Commerce", 
         "name": "23"
     }, 
     "523": {
@@ -284,7 +284,7 @@
         "explanation": "", 
         "description": "Les conditions de garantie (dur\u00e9e, options, extensions, tarifs, restrictions, etc.) sont indiqu\u00e9es.", 
         "solution": "<p>Indiquer dans les conditions g\u00e9n\u00e9rales disponibles sur le site, les informations relatives aux conditions de garantie appliqu\u00e9es.</p>", 
-        "thema": "E-Commerce                   ", 
+        "thema": "E-Commerce", 
         "name": "24"
     }, 
     "524": {
@@ -296,7 +296,7 @@
         "explanation": "", 
         "description": "Les conditions de fonctionnement du service apr\u00e8s-vente (tarifs, horaires, moyens de contact, etc.) sont indiqu\u00e9es.", 
         "solution": "<p>Indiquer, dans les conditions g\u00e9n\u00e9rales, les informations relatives aux conditions de fonctionnement du service apr\u00e8s-vente.</p>", 
-        "thema": "E-Commerce                   ", 
+        "thema": "E-Commerce", 
         "name": "25"
     }, 
     "525": {
@@ -308,7 +308,7 @@
         "explanation": "", 
         "description": "Une adresse de livraison diff\u00e9rente de l'adresse de facturation peut \u00eatre sp\u00e9cifi\u00e9e.", 
         "solution": "<p>Proposer au client, sur le formulaire r\u00e9capitulatif de la commande, la possibilit\u00e9 d'indiquer une adresse de livraison diff\u00e9rente de l'adresse de facturation.</p>", 
-        "thema": "E-Commerce                   ", 
+        "thema": "E-Commerce", 
         "name": "26"
     }, 
     "526": {
@@ -320,7 +320,7 @@
         "explanation": "", 
         "description": "Les informations relatives \u00e0 la zone de livraison des produits ou de r\u00e9alisation des services sont indiqu\u00e9es.", 
         "solution": "<p>Les informations relatives \u00e0 la zone de livraison doivent \u00eatre les suivantes&nbsp;:</p><ul>\n<li>Lieu du \u00ab&nbsp;d\u00e9p\u00f4t final&nbsp;\u00bb ;</li>\n\t\t\t\t\t<li>Heure d'ouverture du \u00ab&nbsp;d\u00e9p\u00f4t final&nbsp;\u00bb ;</li>\n\t\t\t\t\t<li>Moyen de contact (t\u00e9l\u00e9phone, fax, e-mail). </li>\n\t\t\t\t</ul><p>Cette information doit \u00eatre pr\u00e9sente \u00e0 3 moments distincts : avant paiement, apr\u00e8s paiement et sur l'e-mail r\u00e9capitulatif de la commande.</p>", 
-        "thema": "E-Commerce                   ", 
+        "thema": "E-Commerce", 
         "name": "27"
     }, 
     "527": {
@@ -332,7 +332,7 @@
         "explanation": "", 
         "description": "Aucun produit ni service annexe n'est ajout\u00e9 au panier de commande sans que cette action soit d\u00e9clench\u00e9e par l'utilisateur.", 
         "solution": "<p>N'inclure dans le panier de l'utilisateur que des produits ou services qu'il a explicitement s\u00e9lectionn\u00e9s.</p>", 
-        "thema": "E-Commerce                   ", 
+        "thema": "E-Commerce", 
         "name": "28"
     }, 
     "528": {
@@ -344,7 +344,7 @@
         "explanation": "", 
         "description": "Le site propose au moins un moyen de contacter le mod\u00e9rateur des espaces publics.", 
         "solution": "<p>Par exemple, indiquer l'adresse e-mail du mod\u00e9rateur ou mettre en place un formulaire permettant de le contacter.</p>", 
-        "thema": "Espaces publics              ", 
+        "thema": "Espaces publics", 
         "name": "29"
     }, 
     "529": {
@@ -356,7 +356,7 @@
         "explanation": "", 
         "description": "La dur\u00e9e des contenus vid\u00e9o ou audio est indiqu\u00e9e.", 
         "solution": "<p>Accompagner chaque contenu vid\u00e9o ou audio, \u00e0 t\u00e9l\u00e9charger ou \u00e0 consulter en ligne, de la mention de sa dur\u00e9e. Celle-ci peut \u00eatre \u00e9ventuellement indiqu\u00e9e de mani\u00e8re g\u00e9n\u00e9rique, sous forme d'un ordre de grandeur commun \u00e0 un ensemble de contenus.</p>", 
-        "thema": "Fichiers et multim\u00e9dia       ", 
+        "thema": "Fichiers et multim\u00e9dia", 
         "name": "30"
     }, 
     "530": {
@@ -368,7 +368,7 @@
         "explanation": "", 
         "description": "Les sons et vid\u00e9os sont d\u00e9clench\u00e9s par l'utilisateur.", 
         "solution": "<p>Ne pas mettre en place des contenus audio ou vid\u00e9o dont le d\u00e9marrage est automatique et sans action explicite de l'utilisateur en ce sens.</p>", 
-        "thema": "Fichiers et multim\u00e9dia       ", 
+        "thema": "Fichiers et multim\u00e9dia", 
         "name": "31"
     }, 
     "531": {
@@ -392,7 +392,7 @@
         "explanation": "", 
         "description": "Le format des fichiers propos\u00e9s en t\u00e9l\u00e9chargement est indiqu\u00e9.", 
         "solution": "<p>Au minimum, pr\u00e9voir une page d'aide indiquant le format des fichiers propos\u00e9s s'il est unique.</p><p>Au mieux, indiquer le format pour chaque lien permettant de t\u00e9l\u00e9charger un fichier. </p>", 
-        "thema": "Fichiers et multim\u00e9dia       ", 
+        "thema": "Fichiers et multim\u00e9dia", 
         "name": "33"
     }, 
     "533": {
@@ -404,7 +404,7 @@
         "explanation": "", 
         "description": "Les animations, sons et clignotements peuvent \u00eatre mis en pause.", 
         "solution": "<p>D\u00e8s lors qu'une animation visuelle a une dur\u00e9e de plus de 5 secondes ou qu'un son a une dur\u00e9e de plus de 3 secondes, doter syst\u00e9matiquement l'objet multim\u00e9dia des moyens de contr\u00f4le n\u00e9cessaires&nbsp;: d\u00e9marrage, arr\u00eat, muet ou volume.</p><p>Ne pas utiliser de graphismes anim\u00e9s non contr\u00f4lables, ou encore partiellement contr\u00f4lables par l'utilisateur (images gif anim\u00e9es en particulier).</p><p>Ne pas incorporer dans la page d'\u00e9l\u00e9ments d\u00e9clenchant la lecture d'un son non contr\u00f4lable en arri\u00e8re-plan (<code>bgsound</code>).</p>", 
-        "thema": "Fichiers et multim\u00e9dia       ", 
+        "thema": "Fichiers et multim\u00e9dia", 
         "name": "34"
     }, 
     "534": {
@@ -415,7 +415,7 @@
         }, 
         "explanation": "", 
         "description": "Chaque champ de formulaire est associ\u00e9 dans le code source \u00e0 une \u00e9tiquette qui lui est propre.", 
-        "solution": "<p>Donner \u00e0 chaque champ de formulaire une \u00e9tiquette qui lui soit explicitement associ\u00e9e&nbsp;:</p><ul>\n<li>si l'\u00e9tiquette est visible sous la forme d'un \u00e9l\u00e9ment <code>label</code> dot\u00e9 d'un attribut <code>for</code> reprenant la valeur de l'attribut <code>id</code> affect\u00e9 au champ, par exemple :</li>\n\t\t\t\t</ul><p>&lt;label for=&quot;nom1&quot;&gt;Nom de famille&nbsp;:&lt;/label&gt;</p><p>&lt;input id=&quot;nom1&quot; type=&quot;text&quot; name=&quot;nom&quot;&gt;</p><ul>\n<li>si l'affichage de l'\u00e9tiquette n'est pas souhait\u00e9e, sous la forme d'un attribut <code>title</code> du champ lui-m\u00eame.</li>\n\t\t\t\t</ul><p>Le recours \u00e0 une \u00e9tiquette &lt;label for=&quot;\u2026&quot;&gt; masqu\u00e9e via les styles CSS est d\u00e9conseill\u00e9 au profit de l'attribut title du champ.</p>", 
+        "solution": "<p>Donner \u00e0 chaque champ de formulaire une \u00e9tiquette qui lui soit explicitement associ\u00e9e&nbsp;:</p><ul>\r\n<li>si l'\u00e9tiquette est visible, sous la forme d'un \u00e9l\u00e9ment <code>label</code> dot\u00e9 d'un attribut <code>for</code> reprenant la valeur de l'attribut <code>id</code> affect\u00e9 au champ, par exemple :</li>\r\n\t\t\t\t</ul><p>&lt;label for=&quot;nom1&quot;&gt;Nom de famille&nbsp;:&lt;/label&gt;</p><p>&lt;input id=&quot;nom1&quot; type=&quot;text&quot; name=&quot;nom&quot;&gt;</p><ul>\r\n<li>si l'affichage de l'\u00e9tiquette n'est pas souhait\u00e9e, sous la forme d'un attribut <code>title</code> du champ lui-m\u00eame.</li>\r\n\t\t\t\t</ul><p>Le recours \u00e0 une \u00e9tiquette &lt;label for=&quot;\u2026&quot;&gt; masqu\u00e9e via les styles CSS est d\u00e9conseill\u00e9 au profit de l'attribut title du champ.</p>", 
         "thema": "Formulaires", 
         "name": "35"
     }, 
@@ -462,7 +462,7 @@
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
-        "description": "L'\u00e9tiquette de chaque champ de formulaire indique si la saisieest obligatoire.", 
+        "description": "L'\u00e9tiquette de chaque champ de formulaire indique si la saisie est obligatoire.", 
         "solution": "<p>Indiquer le caract\u00e8re obligatoire de la saisie dans l'\u00e9tiquette associ\u00e9e au champ. Si l'indication est faite avec un symbole graphique (ast\u00e9risque par exemple), faire pr\u00e9c\u00e9der le formulaire d'une l\u00e9gende explicitant ce symbole.</p>", 
         "thema": "Formulaires", 
         "name": "39"
@@ -488,7 +488,7 @@
         "explanation": "", 
         "description": "Chaque lien est dot\u00e9 d'un intitul\u00e9 dans le code source.", 
         "solution": "<p>Donner \u00e0 chaque lien un libell\u00e9 textuel (entre les balises ouvrantes et fermantes de l'\u00e9l\u00e9ment <code>a</code>) ou, si n\u00e9cessaire, via l'alternative textuelle d'un \u00e9l\u00e9ment <code>img</code> ou <code>object</code>. </p><p>Ne pas masquer \u00e0 l'affichage le libell\u00e9 textuel de l'\u00e9l\u00e9ment <code>a</code> pour le remplacer par un effet de style CSS (image d'arri\u00e8re-plan).</p>", 
-        "thema": "Hyperliens                   ", 
+        "thema": "Hyperliens", 
         "name": "41"
     }, 
     "541": {
@@ -500,7 +500,7 @@
         "explanation": "", 
         "description": "Le soulignement est r\u00e9serv\u00e9 aux hyperliens.", 
         "solution": "<p>Ne pas utiliser le soulignement pour des textes simples ou des \u00e9l\u00e9ments qui ne constituent pas des liens.</p>", 
-        "thema": "Hyperliens                   ", 
+        "thema": "Hyperliens", 
         "name": "42"
     }, 
     "542": {
@@ -512,7 +512,7 @@
         "explanation": "", 
         "description": "Les hyperliens sont visuellement diff\u00e9renci\u00e9s du reste du contenu.", 
         "solution": "<p>Les hyperliens peuvent \u00eatre diff\u00e9renci\u00e9s \u00e0 l'aide des propri\u00e9t\u00e9s CSS de couleur de texte, de couleur d'arri\u00e8re-plan, de soulignement, de mise en gras, de bordures, de police de caract\u00e8res, etc.</p>", 
-        "thema": "Hyperliens                   ", 
+        "thema": "Hyperliens", 
         "name": "43"
     }, 
     "543": {
@@ -524,7 +524,7 @@
         "explanation": "", 
         "description": "L'identit\u00e9 de l'auteur, de la soci\u00e9t\u00e9 ou de l'organisation est indiqu\u00e9e.", 
         "solution": "<p>Indiquer, au moins sur une page et id\u00e9alement sur chaque page, le nom de l'auteur, de l'entit\u00e9 ou de la soci\u00e9t\u00e9 qui propose le service. </p><p>Si le nom du site est identique \u00e0 celui de l'entit\u00e9 qui le propose, ce qui est relativement fr\u00e9quent, notamment pour les entreprises, la mention de ce nom dans le logo ou la baseline suffit \u00e0 respecter la bonne pratique.</p>", 
-        "thema": "Identification               ", 
+        "thema": "Identification", 
         "name": "44"
     }, 
     "544": {
@@ -534,9 +534,9 @@
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
-        "description": "Le nom du site et/ou le nom de l'auteur sont indiqu\u00e9s surchaque page.", 
+        "description": "Le nom du site et/ou le nom de l'auteur sont indiqu\u00e9s sur chaque page.", 
         "solution": "<p>Indiquer le nom du site et/ou le nom de l'auteur clairement dans toutes les pages du site (logo, nom de l'entit\u00e9 responsable, nom du site, etc.).</p>", 
-        "thema": "Identification               ", 
+        "thema": "Identification", 
         "name": "45"
     }, 
     "545": {
@@ -546,9 +546,9 @@
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
-        "description": "L'identit\u00e9 de la personne ou du service responsable des contenusest indiqu\u00e9e.", 
+        "description": "L'identit\u00e9 de la personne ou du service responsable des contenus est indiqu\u00e9e.", 
         "solution": "<p>Indiquer le nom d'une personne physique responsable des contenus sur le site.</p>", 
-        "thema": "Identification               ", 
+        "thema": "Identification", 
         "name": "46"
     }, 
     "546": {
@@ -560,7 +560,7 @@
         "explanation": "", 
         "description": "La page d'accueil expose la nature des contenus et services propos\u00e9s.", 
         "solution": "<p>Pr\u00e9voir sur la page d'accueil une information, une phrase, un contenu r\u00e9sumant les contenus et services propos\u00e9s dans le site.</p>", 
-        "thema": "Identification               ", 
+        "thema": "Identification", 
         "name": "47"
     }, 
     "547": {
@@ -572,7 +572,7 @@
         "explanation": "", 
         "description": "Si le site est r\u00e9serv\u00e9 ou destin\u00e9 \u00e0 un public sp\u00e9cifique, ce public est mentionn\u00e9 au moins sur la page d'accueil.", 
         "solution": "<p>Faire figurer sur la page d'accueil un message d'avertissement explicite sur la nature des contenus et le public auquel ils sont destin\u00e9s ou r\u00e9serv\u00e9s.</p>", 
-        "thema": "Identification               ", 
+        "thema": "Identification", 
         "name": "48"
     }, 
     "548": {
@@ -582,9 +582,9 @@
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
-        "description": "Le code source de chaque page indique la langue principaledu contenu.", 
+        "description": "Le code source de chaque page indique la langue principale du contenu.", 
         "solution": "<p>Renseigner l'attribut <code>lang</code> de l'\u00e9l\u00e9ment racine <code>html</code> \u00e0 l'aide du code langue appropri\u00e9 (tel qu'indiqu\u00e9 par le registre tenu par l'IANA : <a href=\"http://www.iana.org/assignments/language-subtag-registry\">http://www.iana.org/assignments/language-subtag-registry</a>). En pratique, pour le fran\u00e7ais, cela donne : &lt;html lang=&quot;fr&quot;&gt; (en HTML) et &lt;html lang=&quot;fr&quot; xml:lang=&quot;fr&quot;&gt; (en XHTML).</p><p>\u00c0 d\u00e9faut, dans des cas plus complexes, la langue du contenu peut \u00eatre indiqu\u00e9e via les diff\u00e9rents \u00e9l\u00e9ments parents : <code>head</code>, <code>body</code>, <code>title</code>, etc.</p>", 
-        "thema": "Internationalisation         ", 
+        "thema": "Internationalisation", 
         "name": "49"
     }, 
     "549": {
@@ -596,7 +596,7 @@
         "explanation": "", 
         "description": "Le pays est pr\u00e9cis\u00e9 dans toutes les adresses postales.", 
         "solution": "<p>Indiquer explicitement le pays dans l'adresse postale sous forme textuelle.</p>", 
-        "thema": "Internationalisation         ", 
+        "thema": "Internationalisation", 
         "name": "50"
     }, 
     "550": {
@@ -608,7 +608,7 @@
         "explanation": "", 
         "description": "Chaque num\u00e9ro de t\u00e9l\u00e9phone est indiqu\u00e9 au format international.", 
         "solution": "<p>V\u00e9rifier que tous les num\u00e9ros de t\u00e9l\u00e9phone sont pr\u00e9c\u00e9d\u00e9s de l'indicatif du pays sous la forme +indicatif international - num\u00e9ro de t\u00e9l\u00e9phone. Exemple pour la France&nbsp;: +33 1 23 45 67 89.</p>", 
-        "thema": "Internationalisation         ", 
+        "thema": "Internationalisation", 
         "name": "51"
     }, 
     "551": {
@@ -763,8 +763,8 @@
         }, 
         "explanation": "", 
         "description": "Un lien de d\u00e9sinscription est pr\u00e9sent dans chaque newsletter.", 
-        "solution": "<p>Faire figurer dans chaque newsletter un hyperlien permettant dese d\u00e9sinscrire.</p>", 
-        "thema": "Newsletter                   ", 
+        "solution": "<p>Faire figurer dans chaque newsletter un hyperlien permettant de se d\u00e9sinscrire.</p>", 
+        "thema": "Newsletter", 
         "name": "64"
     }, 
     "564": {
@@ -774,9 +774,9 @@
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
-        "description": "Le champ \u00ab\u00a3nbsp;destinataire\u00a3nbsp;\u00bb de la newsletter ne comprend que le mail du destinataire (ou \u00e0 d\u00e9faut un mail g\u00e9n\u00e9rique cr\u00e9\u00e9 par l'exp\u00e9diteur).", 
+        "description": "Le champ \u00ab destinataire \u00bb de la newsletter ne comprend que le mail du destinataire (ou \u00e0 d\u00e9faut un mail g\u00e9n\u00e9rique cr\u00e9\u00e9 par l'exp\u00e9diteur).", 
         "solution": "<p>N'effectuer d'envoi group\u00e9 de newsletters qu'en mettant les destinataires dans le champ CCI.</p><p>Ou ne pas effectuer d'envoi group\u00e9.</p>", 
-        "thema": "Newsletter                   ", 
+        "thema": "Newsletter", 
         "name": "65"
     }, 
     "565": {
@@ -788,7 +788,7 @@
         "explanation": "", 
         "description": "L'inscription aux newsletters est soumise \u00e0 un processus de confirmation.", 
         "solution": "<p>Envoyer un e-mail permettant l'inscription d\u00e9finitive via la saisie d'un mot de passe, un clic sur un hyperlien, etc.</p>", 
-        "thema": "Newsletter                   ", 
+        "thema": "Newsletter", 
         "name": "66"
     }, 
     "566": {
@@ -800,7 +800,7 @@
         "explanation": "", 
         "description": "La charte graphique est coh\u00e9rente sur l'ensemble du site.", 
         "solution": "<p>Utiliser des feuilles de styles communes \u00e0 tout le site, ce qui par rebond am\u00e9liore la coh\u00e9rence globale de tout le site.</p>", 
-        "thema": "Pr\u00e9sentation                 ", 
+        "thema": "Pr\u00e9sentation", 
         "name": "67"
     }, 
     "567": {
@@ -812,7 +812,7 @@
         "explanation": "", 
         "description": "Le site propose une proc\u00e9dure de r\u00e9initialisation du mot de passe en cas de perte, de vol ou d'oubli.", 
         "solution": "<p>Fournir un lien permettant l'envoi d'un mail \u00e0 l'adresse associ\u00e9e au compte indiquant la proc\u00e9dure de r\u00e9initialisation.</p><p>Placer de pr\u00e9f\u00e9rence ce lien dans le formulaire de connexion.</p>", 
-        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9  ", 
+        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9", 
         "name": "68"
     }, 
     "568": {
@@ -822,9 +822,9 @@
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
-        "description": "Les \u00e9changes de donn\u00e9es sensibles sont s\u00e9curis\u00e9s et signal\u00e9scomme tels.", 
+        "description": "Les \u00e9changes de donn\u00e9es sensibles sont s\u00e9curis\u00e9s et signal\u00e9s comme tels.", 
         "solution": "<p>Recourir \u00e0 un certificat de s\u00e9curit\u00e9 informatique dans une version support\u00e9e par les versions r\u00e9centes des navigateurs.</p><p>Recourir \u00e0 un service tiers d'authentification d\u00e9centralis\u00e9 du type OpenID.</p>", 
-        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9  ", 
+        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9", 
         "name": "69"
     }, 
     "569": {
@@ -836,7 +836,7 @@
         "explanation": "", 
         "description": "Les donn\u00e9es sensibles ne sont pas transmises en clair dans les url.", 
         "solution": "<p>Envoyer les donn\u00e9es de formulaire sensibles par la m\u00e9thode <code>POST</code>.</p><p>Ne pas inscrire de donn\u00e9es sensibles dans l'URL d'un lien.</p>", 
-        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9  ", 
+        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9", 
         "name": "70"
     }, 
     "570": {
@@ -848,7 +848,7 @@
         "explanation": "", 
         "description": "Les informations sur la s\u00e9curit\u00e9 des transactions sont indiqu\u00e9es.", 
         "solution": "<p>Indiquer le mode (SSL, TLS) et le niveau de cryptage des donn\u00e9es (128 ou 256 bits, etc.) sur les pages concern\u00e9es. Il est aussi possible d'indiquer comment retrouver l'information par le biais de son navigateur dans la mesure o\u00f9 la plupart offrent cette possibilit\u00e9.</p>", 
-        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9  ", 
+        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9", 
         "name": "71"
     }, 
     "571": {
@@ -860,7 +860,7 @@
         "explanation": "", 
         "description": "L'identit\u00e9 des prestataires impliqu\u00e9s dans les transactions est pr\u00e9cis\u00e9e.", 
         "solution": "<p>Indiquer sur le site les informations relatives \u00e0 l'identit\u00e9 des prestataires bancaires et/ou des solutions de paiement utilis\u00e9es pour les transactions \u00e9lectroniques.</p>", 
-        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9  ", 
+        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9", 
         "name": "72"
     }, 
     "572": {
@@ -872,7 +872,7 @@
         "explanation": "", 
         "description": "Les certificats de s\u00e9curit\u00e9 sont sign\u00e9s et en cours de validit\u00e9.", 
         "solution": "<p>Faire un suivi rigoureux des certificats de s\u00e9curit\u00e9 utilis\u00e9s sur le site en anticipant les dates de renouvellement.</p>", 
-        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9  ", 
+        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9", 
         "name": "73"
     }, 
     "573": {
@@ -884,7 +884,7 @@
         "explanation": "", 
         "description": "La politique de confidentialit\u00e9 et de respect de la vie priv\u00e9e est accessible depuis toutes les pages.", 
         "solution": "<p>Indiquer sur chaque page du site la politique de confidentialit\u00e9 du site.</p>", 
-        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9  ", 
+        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9", 
         "name": "74"
     }, 
     "574": {
@@ -896,7 +896,7 @@
         "explanation": "", 
         "description": "Les en-t\u00eates envoy\u00e9s par le serveur contiennent les informations relatives au jeu de caract\u00e8res employ\u00e9.", 
         "solution": "<p>Le param\u00e8tre <code>charset</code> de l'en-t\u00eate HTTP content-type est renseign\u00e9 sous la forme : <code>Content-Type: text/html; charset=utf-8</code> (utf-8 \u00e9tant ici un exemple), en fonction du jeu de caract\u00e8res effectivement utilis\u00e9 par le document et de son type MIME.</p>", 
-        "thema": "Serveur et Performances      ", 
+        "thema": "Serveur et Performances", 
         "name": "75"
     }, 
     "575": {
@@ -906,9 +906,9 @@
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
-        "description": "Le serveur envoie les informations permettant la mise en cachedes contenus.", 
-        "solution": "<p>Configurer le serveur Web pour qu'il puisse g\u00e9rer la mise en cache des \u00e9l\u00e9ments statiques et g\u00e9rer \u2013 au niveau applicatif \u2013 la possible mise en cache des \u00e9l\u00e9ments dynamiques.</p><p>En pratique, et en accord avec les sp\u00e9cifications HTTP, le serveur devra envoyer les en-t\u00eates etag, date et last-modified correspondant respectivement \u00e0 l'identifiant de la ressource, \u00e0 la date de traitement de la requ\u00eate et \u00e0 la date de derni\u00e8re modification de la ressource demand\u00e9e. L'ensemble des dates \u00e9tant au format GMT. Ces informations pouvant \u00eatre compl\u00e9t\u00e9es par les champs content-length et expires si la taille en octets et la date d'expiration exacte du contenu sont connues.</p><p>Afin d'informer les proxys et les clients finaux sur le comportement \u00e0 adopter vis-\u00e0-vis des contenus mis en cache, les auteurs devront utiliser l'en-t\u00eate HTTP cache-control en accord avec les d\u00e9lais de r\u00e9actualisation n\u00e9cessaires et le caract\u00e8re priv\u00e9 de la diffusion.</p><p>La possible mise en cache pourra \u00eatre ainsi finalis\u00e9e par la soumission d'un message 304 Not Modified (sans la ressource demand\u00e9e dans le corps de la requ\u00eate) lorsque le serveur recevra un en-t\u00eate if-modified-since contenant une date ant\u00e9rieure \u00e0 la date de modification de ladite ressource.</p>", 
-        "thema": "Serveur et Performances      ", 
+        "description": "Le serveur envoie les informations permettant la mise en cache des contenus.", 
+        "solution": "<p>Configurer le serveur web pour qu'il puisse g\u00e9rer la mise en cache des \u00e9l\u00e9ments statiques et g\u00e9rer \u2013 au niveau applicatif \u2013 la possible mise en cache des \u00e9l\u00e9ments dynamiques.</p><p>En pratique, et en accord avec les sp\u00e9cifications HTTP, le serveur devra envoyer les en-t\u00eates etag, date et last-modified correspondant respectivement \u00e0 l'identifiant de la ressource, \u00e0 la date de traitement de la requ\u00eate et \u00e0 la date de derni\u00e8re modification de la ressource demand\u00e9e. L'ensemble des dates \u00e9tant au format GMT. Ces informations pouvant \u00eatre compl\u00e9t\u00e9es par les champs content-length et expires si la taille en octets et la date d'expiration exacte du contenu sont connues.</p><p>Afin d'informer les proxys et les clients finaux sur le comportement \u00e0 adopter vis-\u00e0-vis des contenus mis en cache, les auteurs devront utiliser l'en-t\u00eate HTTP cache-control en accord avec les d\u00e9lais de r\u00e9actualisation n\u00e9cessaires et le caract\u00e8re priv\u00e9 de la diffusion.</p><p>La possible mise en cache pourra \u00eatre ainsi finalis\u00e9e par la soumission d'un message 304 Not Modified (sans la ressource demand\u00e9e dans le corps de la requ\u00eate) lorsque le serveur recevra un en-t\u00eate if-modified-since contenant une date ant\u00e9rieure \u00e0 la date de modification de ladite ressource.</p>", 
+        "thema": "Serveur et Performances", 
         "name": "76"
     }, 
     "576": {
@@ -920,7 +920,7 @@
         "explanation": "", 
         "description": "L'adresse du site et de ses sous-domaines fonctionnent avec ou sans pr\u00e9fixe www.", 
         "solution": "<p>Configurer le serveur de fa\u00e7on \u00e0 ce qu'il g\u00e8re les adresses sans www (acheminement).</p>", 
-        "thema": "Serveur et Performances      ", 
+        "thema": "Serveur et Performances", 
         "name": "77"
     }, 
     "577": {
@@ -932,7 +932,7 @@
         "explanation": "", 
         "description": "Le serveur envoie une page d'erreur 404 personnalis\u00e9e.", 
         "solution": "<p>Modifier la configuration du serveur web pour renvoyer l'utilisateur vers une page personnalis\u00e9e lorsque la ressource demand\u00e9e n'existe pas.</p><p>Si la configuration principale du serveur n'est pas directement accessible et si l'environnement le permet, utiliser une configuration locale par r\u00e9pertoire. Par exemple, l'environnement Apache autorise la cr\u00e9ation d'un fichier <code>.htaccess</code> contenant des directives relatives aux traitements des erreurs : <code>ErrorDocument 404 /mapage.html</code>.</p>", 
-        "thema": "Serveur et Performances      ", 
+        "thema": "Serveur et Performances", 
         "name": "78"
     }, 
     "578": {
@@ -944,7 +944,7 @@
         "explanation": "", 
         "description": "Le serveur envoie un code http 404 pour les ressources non trouv\u00e9es.", 
         "solution": "<p>Modifier la configuration du serveur web pour renvoyer l'utilisateur vers une page personnalis\u00e9e lorsque la ressource demand\u00e9e n'existe pas.</p><p>Si la configuration principale du serveur n'est pas directement accessible et si l'environnement le permet, utiliser une configuration locale par r\u00e9pertoire. Par exemple, l'environnement Apache autorise la cr\u00e9ation d'un fichier <code>.htaccess</code> contenant des directives relatives aux traitements des erreurs : <code>ErrorDocument 404 /mapage.html</code>.</p>", 
-        "thema": "Serveur et Performances      ", 
+        "thema": "Serveur et Performances", 
         "name": "79"
     }, 
     "579": {
@@ -954,9 +954,9 @@
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
-        "description": "Le serveur transmet des contenus compress\u00e9s aux clients quiles acceptent.", 
+        "description": "Le serveur transmet des contenus compress\u00e9s aux clients qui les acceptent.", 
         "solution": "<p>Activer le module Gzip ou Deflate du serveur pour compresser les ressources Javascript, CSS et HTML.</p>", 
-        "thema": "Serveur et Performances      ", 
+        "thema": "Serveur et Performances", 
         "name": "80"
     }, 
     "580": {
@@ -968,7 +968,7 @@
         "explanation": "", 
         "description": "Le code source des fils de syndication indique leur fr\u00e9quence de mise \u00e0 jour.", 
         "solution": "<p>Pour RSS 0.91, pr\u00e9ciser les jours et heures durant lesquels il n'y a pas de publication \u00e0 l'aide des \u00e9l\u00e9ments <code>skipDays</code> et <code>skipHours</code>.</p><p>Pour RSS 2.0, pr\u00e9ciser la dur\u00e9e de vie du canal d'information \u00e0 l'aide de l'\u00e9l\u00e9ment <code>ttl</code>.</p><p>Pour RSS 1.0, indiquer la date de r\u00e9f\u00e9rence, la fr\u00e9quence et l'intervalle de mise \u00e0 jour \u00e0 l'aide du module Syndication. </p><p>Les formats des dates et heures sont indiqu\u00e9s par la note Date and Time Formats du W3C.</p>", 
-        "thema": "Syndication                  ", 
+        "thema": "Syndication", 
         "name": "81"
     }, 
     "581": {
@@ -980,7 +980,7 @@
         "explanation": "", 
         "description": "Les hyperliens contenus dans les fils de syndication sont absolus.", 
         "solution": "<p>N'utiliser que des hyperliens absolus dans les contenus faisant l'objet de syndication.</p>", 
-        "thema": "Syndication                  ", 
+        "thema": "Syndication", 
         "name": "82"
     }, 
     "582": {
@@ -992,7 +992,7 @@
         "explanation": "", 
         "description": "Les fils de syndication sont d\u00e9tectables par les agents utilisateurs.", 
         "solution": "<p>Indiquer les fils RSS dans la section <code>head</code> de la page, \u00e0 l'aide d'un \u00e9l\u00e9ment <code>link</code> du type&nbsp;:</p><p>&lt;link title=&quot;La bonne pratique du jour&quot; href=&quot;https://checklists.opquast.com/dailybp/feed&quot; type=&quot;application/rss+xml&quot; rel=&quot;alternate&quot;&gt;.</p>", 
-        "thema": "Syndication                  ", 
+        "thema": "Syndication", 
         "name": "83"
     }, 
     "583": {
@@ -1004,7 +1004,7 @@
         "explanation": "", 
         "description": "Les cellules des tableaux de donn\u00e9es sont reli\u00e9es \u00e0 leurs en-t\u00eates.", 
         "solution": "<p>Utiliser l'\u00e9l\u00e9ment HTML <code>th</code> et son attribut <code>scope</code> pour baliser les cellules d'en-t\u00eates et expliciter leur port\u00e9e (<code>scope</code> de valeur <code>col</code> pour un en-t\u00eate de colonne, de valeur <code>row</code> pour un en-t\u00eate de ligne).</p><p>Pour les en-t\u00eates qui ne s'appliquent qu'\u00e0 une partie d'une ligne ou d'une colonne, contr\u00f4ler la pr\u00e9sence syst\u00e9matique de l'attribut <code>id</code> pour l'\u00e9l\u00e9ment <code>th</code> et de l'attribut <code>headers</code> pour les \u00e9l\u00e9ments <code>td</code> avec les valeurs appropri\u00e9es&nbsp;:</p><ul>\n<li>Donner \u00e0 chaque en-t\u00eate (\u00e9l\u00e9ment <code>th</code>) un attribut <code>id</code> (par exemple, <code>id=&quot;foo&quot;</code>) ;</li>\n\t\t\t\t\t<li>Utiliser l'attribut <code>headers</code> dans chaque cellule (\u00e9l\u00e9ment <code>td</code>) pour indiquer les en-t\u00eates associ\u00e9es (par exemple, <code>headers=&quot;foo&quot;</code> pour chaque cellule rattach\u00e9e \u00e0 l'en-t\u00eate ayant l'attribut <code>id=&quot;foo&quot;</code>).</li>\n\t\t\t\t</ul>", 
-        "thema": "Tableaux                     ", 
+        "thema": "Tableaux", 
         "name": "84"
     }, 
     "584": {
@@ -1016,7 +1016,7 @@
         "explanation": "", 
         "description": "L'information n'est pas v\u00e9hicul\u00e9e uniquement par la couleur.", 
         "solution": "<p>Fournir un compl\u00e9ment \u00e0 la couleur pour v\u00e9hiculer l'information. Ce compl\u00e9ment, ind\u00e9pendant de la couche de mise en forme CSS, peut \u00eatre de plusieurs ordres&nbsp;:</p><ul>\n<li>Pr\u00e9voir un balisage s\u00e9mantique (<code>strong</code>, <code>em</code>, etc.) ;</li>\n\t\t\t\t\t<li>Ajouter des mentions textuelles (ast\u00e9risque signalant un champ obligatoire) ;</li>\n\t\t\t\t\t<li>Ajouter des hachures, motifs, bordures, etc. dans les cartes et les graphiques.</li>\n\t\t\t\t</ul>", 
-        "thema": "Alternatives                 ", 
+        "thema": "Alternatives", 
         "name": "85"
     }, 
     "585": {
@@ -1028,7 +1028,7 @@
         "explanation": "", 
         "description": "Les objets inclus sont dot\u00e9s d'une alternative appropri\u00e9e.", 
         "solution": "<p>Indiquer l'alternative des objets inclus via l'une des solutions suivantes :</p><ul>\n<li>Le contenu de l'\u00e9l\u00e9ment HTML <code>object</code> ;</li>\n\t\t\t\t\t<li>Le contenu de l'\u00e9l\u00e9ment HTML <code>noembed</code> ;</li>\n\t\t\t\t\t<li>Un contenu pr\u00e9sent imm\u00e9diatement avant ou apr\u00e8s l'objet ;</li>\n\t\t\t\t\t<li>Un lien vers une page fournissant le contenu alternatif, plac\u00e9 imm\u00e9diatement avant ou apr\u00e8s l'objet.</li>\n\t\t\t\t</ul>", 
-        "thema": "Alternatives                 ", 
+        "thema": "Alternatives", 
         "name": "86"
     }, 
     "586": {
@@ -1040,7 +1040,7 @@
         "explanation": "", 
         "description": "Les captchas audio peuvent \u00eatre r\u00e9\u00e9cout\u00e9s \u00e0 volont\u00e9.", 
         "solution": "<p>Fournir un lien permettant de t\u00e9l\u00e9charger le captcha audio. </p><p>Mettre \u00e0 disposition le captcha audio via un player permettant de le rejouer \u00e0 volont\u00e9.</p>", 
-        "thema": "Alternatives                 ", 
+        "thema": "Alternatives", 
         "name": "87"
     }, 
     "587": {
@@ -1063,7 +1063,7 @@
         }, 
         "explanation": "", 
         "description": "Le codage de caract\u00e8res utilis\u00e9 est UTF-8.", 
-        "solution": "<p>Configurer le serveur, les bases de donn\u00e9es pour l'utilisation d'UTF-8.</p><p>Choisir des outils (logiciels de d\u00e9veloppement, frameworks, CMS, outils de production de contenu) compatibles avec UTF-8.</p>", 
+        "solution": "<p>Configurer le serveur et les bases de donn\u00e9es de mani\u00e8re \u00e0 utiliser UTF-8.</p><p>Choisir des outils (logiciels de d\u00e9veloppement, frameworks, CMS, outils de production de contenu) compatibles avec UTF-8.</p>", 
         "thema": "Code", 
         "name": "89"
     }, 
@@ -1100,7 +1100,7 @@
         "explanation": "", 
         "description": "Le site propose au moins deux moyens de contact.", 
         "solution": "<p>Par exemple, indiquer l'adresse postale ou le num\u00e9ro de t\u00e9l\u00e9phone de l'auteur et/ou du webmestre et mettre en place un formulaire permettant de les contacter.</p>", 
-        "thema": "Contact                      ", 
+        "thema": "Contact", 
         "name": "92"
     }, 
     "592": {
@@ -1112,7 +1112,7 @@
         "explanation": "", 
         "description": "Chaque demande d'information fait l'objet d'un accus\u00e9 de r\u00e9ception.", 
         "solution": "<p>Faire en sorte que la validation de chaque formulaire de contact ou de demande d'information d\u00e9clenche l'envoi d'un accus\u00e9 de r\u00e9ception \u00e0 l'attention de l'envoyeur. Cela suppose bien entendu de rendre obligatoire le champ de saisie de l'adresse e-mail dans chaque formulaire.</p>", 
-        "thema": "Contact                      ", 
+        "thema": "Contact", 
         "name": "93"
     }, 
     "593": {
@@ -1124,7 +1124,7 @@
         "explanation": "", 
         "description": "Les d\u00e9lais de r\u00e9ponse aux demandes d'information sont indiqu\u00e9s.", 
         "solution": "<p>Indiquer le d\u00e9lai chiffr\u00e9 de r\u00e9ponse pr\u00e9vu pour chaque formulaire de demande d'information.</p>", 
-        "thema": "Contact                      ", 
+        "thema": "Contact", 
         "name": "94"
     }, 
     "594": {
@@ -1208,7 +1208,7 @@
         "explanation": "", 
         "description": "Les mentions d'appartenance \u00e0 un ordre ou groupe professionnel, d'un label ou d'une r\u00e9compense sont accompagn\u00e9es d'un lien vers la source.", 
         "solution": "<p>Fournir pour chaque mention concern\u00e9e un lien explicite vers la source de r\u00e9f\u00e9rence.</p>", 
-        "thema": "E-Commerce                   ", 
+        "thema": "E-Commerce", 
         "name": "101"
     }, 
     "601": {
@@ -1220,7 +1220,7 @@
         "explanation": "", 
         "description": "Les recours en cas de litige sont indiqu\u00e9s dans les conditions g\u00e9n\u00e9rales de vente ou d'utilisation.", 
         "solution": "<p>Indiquer les recours en cas de litige dans les conditions de vente et/ou d'utilisation.</p>", 
-        "thema": "E-Commerce                   ", 
+        "thema": "E-Commerce", 
         "name": "102"
     }, 
     "602": {
@@ -1232,7 +1232,7 @@
         "explanation": "", 
         "description": "Les produits indisponibles font l'objet d'une diff\u00e9renciation visuelle et textuelle.", 
         "solution": "<p>Pr\u00e9ciser, dans le contenu pr\u00e9sentant chaque produit, une mention textuelle ou graphique du type \u00ab&nbsp;indisponible&nbsp;\u00bb ou \u00ab&nbsp;disponible&nbsp;\u00bb.</p>", 
-        "thema": "E-Commerce                   ", 
+        "thema": "E-Commerce", 
         "name": "103"
     }, 
     "603": {
@@ -1244,7 +1244,7 @@
         "explanation": "", 
         "description": "Le site accepte au moins deux moyens de paiement.", 
         "solution": "<p>Informer le client le plus t\u00f4t possible, avant la fin de la commande, qu'il dispose de deux moyens de paiement.</p>", 
-        "thema": "E-Commerce                   ", 
+        "thema": "E-Commerce", 
         "name": "104"
     }, 
     "604": {
@@ -1256,7 +1256,7 @@
         "explanation": "", 
         "description": "Un courriel indiquant la r\u00e9f\u00e9rence de la transaction et les donn\u00e9es de la commande est envoy\u00e9 suite \u00e0 la validation.", 
         "solution": "<p>Utiliser ou d\u00e9velopper des outils de gestion du caddie qui envoient automatiquement une confirmation contenant le r\u00e9capitulatif des donn\u00e9es de la commande.</p>", 
-        "thema": "E-Commerce                   ", 
+        "thema": "E-Commerce", 
         "name": "105"
     }, 
     "605": {
@@ -1268,7 +1268,7 @@
         "explanation": "", 
         "description": "La r\u00e9f\u00e9rence de la transaction est affich\u00e9e au client apr\u00e8s la validation de sa commande.", 
         "solution": "<p>Indiquer la r\u00e9f\u00e9rence de la transaction sur l&apos;e-mail de confirmation de commande envoy\u00e9 au client apr\u00e8s validation d'un achat en ligne.</p>", 
-        "thema": "E-Commerce                   ", 
+        "thema": "E-Commerce", 
         "name": "106"
     }, 
     "606": {
@@ -1280,7 +1280,7 @@
         "explanation": "", 
         "description": "Les conditions de d\u00e9bit ou d'encaissement sont sp\u00e9cifi\u00e9es avant la validation d\u00e9finitive de la commande.", 
         "solution": "<p>Indiquer dans le processus de commande et de gestion du panier les conditions de d\u00e9bit ou d'encaissement avant la validation de celui-ci.</p>", 
-        "thema": "E-Commerce                   ", 
+        "thema": "E-Commerce", 
         "name": "107"
     }, 
     "607": {
@@ -1292,7 +1292,7 @@
         "explanation": "", 
         "description": "Les horaires et tarifs de fonctionnement des services mis \u00e0 la disposition des utilisateurs sont indiqu\u00e9s.", 
         "solution": "<p>Indiquer les horaires et tarifs de fonctionnement des services mis \u00e0 la disposition des utilisateurs.</p>", 
-        "thema": "E-Commerce                   ", 
+        "thema": "E-Commerce", 
         "name": "108"
     }, 
     "608": {
@@ -1304,7 +1304,7 @@
         "explanation": "", 
         "description": "Les contenus ou fichiers destin\u00e9s \u00e0 des espaces publics peuvent \u00eatre v\u00e9rifi\u00e9s avant leur envoi d\u00e9finitif.", 
         "solution": "<p>Mettre en place une pr\u00e9visualisation des informations saisies avant la soumission d\u00e9finitive du formulaire, avec possibilit\u00e9 de les modifier.</p>", 
-        "thema": "Espaces publics              ", 
+        "thema": "Espaces publics", 
         "name": "109"
     }, 
     "609": {
@@ -1316,19 +1316,19 @@
         "explanation": "", 
         "description": "Les conditions de mod\u00e9ration des espaces publics sont indiqu\u00e9es.", 
         "solution": "<p>Indiquer les conditions de mod\u00e9ration des espaces publics.</p>", 
-        "thema": "Espaces publics              ", 
+        "thema": "Espaces publics", 
         "name": "110"
     }, 
     "610": {
-        "goal": "<p>Faciliter le signalement de contenus ill\u00e9gaux ou inappropri\u00e9s.</p><p>Acc\u00e9l\u00e9rer la d\u00e9tection de ces contenus.</p><p>Limiter les risques de consultation de contenus ill\u00e9gaux ouinappropri\u00e9s.</p>", 
+        "goal": "<p>Faciliter le signalement de contenus ill\u00e9gaux ou inappropri\u00e9s.</p><p>Acc\u00e9l\u00e9rer la d\u00e9tection de ces contenus.</p><p>Limiter les risques de consultation de contenus ill\u00e9gaux ou inappropri\u00e9s.</p>", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
-        "description": "Les espaces publics proposent au moins un moyen de signalerles abus.", 
+        "description": "Les espaces publics proposent au moins un moyen de signaler les abus.", 
         "solution": "<p>Par exemple, faire figurer un lien \u00ab&nbsp;Signaler un abus&nbsp;\u00bb \u00e0 proximit\u00e9 de chaque contenu publi\u00e9 par les internautes, qui m\u00e8ne vers un formulaire permettant de pr\u00e9ciser les raisons du signalement. \u00c0 d\u00e9faut, indiquer l'adresse e-mail du mod\u00e9rateur.</p>", 
-        "thema": "Espaces publics              ", 
+        "thema": "Espaces publics", 
         "name": "111"
     }, 
     "611": {
@@ -1340,7 +1340,7 @@
         "explanation": "", 
         "description": "Le texte des documents PDF internes est s\u00e9lectionnable.", 
         "solution": "<p>Ne pas diffuser de PDF issus de la num\u00e9risation de documents initiaux mais uniquement des documents convertis au format num\u00e9rique (par OCR le cas \u00e9ch\u00e9ant).</p>", 
-        "thema": "Fichiers et multim\u00e9dia       ", 
+        "thema": "Fichiers et multim\u00e9dia", 
         "name": "112"
     }, 
     "612": {
@@ -1352,7 +1352,7 @@
         "explanation": "", 
         "description": "La taille des fichiers internes propos\u00e9s en t\u00e9l\u00e9chargement est indiqu\u00e9e.", 
         "solution": "<p>Au minimum, pr\u00e9voir une page d'aide indiquant le poids moyen ou maximum pour l'ensemble des fichiers propos\u00e9s.</p><p>Au mieux, indiquer le poids lors de chaque lien permettant de t\u00e9l\u00e9charger un fichier.</p>", 
-        "thema": "Fichiers et multim\u00e9dia       ", 
+        "thema": "Fichiers et multim\u00e9dia", 
         "name": "113"
     }, 
     "613": {
@@ -1364,7 +1364,7 @@
         "explanation": "", 
         "description": "Les vignettes ne sont pas des images de taille sup\u00e9rieure redimensionn\u00e9es c\u00f4t\u00e9 client.", 
         "solution": "<p>Utiliser, pour les vignettes de pr\u00e9visualisation d'images, des versions sp\u00e9cifiques de celles-ci et non les images originales redimensionn\u00e9es via leurs attributs HTML ou leurs propri\u00e9t\u00e9s CSS.</p>", 
-        "thema": "Fichiers et multim\u00e9dia       ", 
+        "thema": "Fichiers et multim\u00e9dia", 
         "name": "114"
     }, 
     "614": {
@@ -1436,7 +1436,7 @@
         "explanation": "", 
         "description": "Les hyperliens de m\u00eame nature ont des couleurs, des formes et des comportements identiques sur toutes les pages.", 
         "solution": "<p>Appliquer des propri\u00e9t\u00e9s communes de style, de couleur, de graisse, de casse, de soulignement aux ensembles de liens de m\u00eame nature.</p>", 
-        "thema": "Hyperliens                   ", 
+        "thema": "Hyperliens", 
         "name": "120"
     }, 
     "620": {
@@ -1446,9 +1446,9 @@
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
-        "description": "Le survol ou l'activation des hyperliens ne modifie pas la miseen page.", 
+        "description": "Le survol ou l'activation des hyperliens ne modifie pas la mise en page.", 
         "solution": "<p>Afin de ne pas perturber la mise en forme, il est recommand\u00e9 d'utiliser le m\u00eame m\u00e9canisme de mise en valeur, autre que par la couleur, \u00e0 tous les \u00e9tats possibles d'un lien : actif, visit\u00e9, non visit\u00e9, survol\u00e9. Il convient donc d'\u00e9viter par exemple au survol de mettre en gras ou d'encadrer d'une bordure un lien en graisse normale ou sans bordure par d\u00e9faut.</p>", 
-        "thema": "Hyperliens                   ", 
+        "thema": "Hyperliens", 
         "name": "121"
     }, 
     "621": {
@@ -1460,7 +1460,7 @@
         "explanation": "", 
         "description": "Le site n'interdit pas la mise en place de liens entrants.", 
         "solution": "<p>Ne pas publier de conditions restreignant ou interdisant la mise en place dans des sites externes de liens pointant vers le site.</p>", 
-        "thema": "Hyperliens                   ", 
+        "thema": "Hyperliens", 
         "name": "122"
     }, 
     "622": {
@@ -1472,7 +1472,7 @@
         "explanation": "", 
         "description": "Tous les hyperliens internes du site sont valides.", 
         "solution": "<p>S'assurer que l'outil utilis\u00e9 pour la r\u00e9daction des contenus poss\u00e8de une gestion satisfaisante et coh\u00e9rente des hyperliens internes.</p><p>Si ce n'est pas le cas, lancer r\u00e9guli\u00e8rement un contr\u00f4le de la validit\u00e9 de l'ensemble des liens du site.</p>", 
-        "thema": "Hyperliens                   ", 
+        "thema": "Hyperliens", 
         "name": "123"
     }, 
     "623": {
@@ -1484,7 +1484,7 @@
         "explanation": "", 
         "description": "Le site n'applique pas le m\u00eame style aux liens visit\u00e9s et non visit\u00e9s.", 
         "solution": "<p>En dehors des menus de navigation, ne pas appliquer les m\u00eames styles CSS par d\u00e9faut pour les liens non visit\u00e9s (s\u00e9lecteurs <code>a</code> ou <code>a:link</code>) et pour les liens visit\u00e9s (s\u00e9lecteur <code>a:visited</code>). Pour ce faire&nbsp;: soit pr\u00e9voir un rendu sp\u00e9cifique pour les liens visit\u00e9s, soit ne pas indiquer de r\u00e8gle de rendu pour ceux-ci (le style par d\u00e9faut du navigateur pourra alors s'appliquer sans difficult\u00e9).</p>", 
-        "thema": "Hyperliens                   ", 
+        "thema": "Hyperliens", 
         "name": "124"
     }, 
     "624": {
@@ -1496,7 +1496,7 @@
         "explanation": "", 
         "description": "La racine du site contient des instructions pour les robots d'indexation.", 
         "solution": "<p>Pour d\u00e9finir les r\u00e9pertoires, fichiers ou types de fichiers non indexables, utiliser les instructions <code>user-agent</code> et <code>disallow</code> dans un fichier texte unique appel\u00e9 <code>robots.txt</code>, plac\u00e9 dans le r\u00e9pertoire racine du site.</p><p>Alternativement, pour agir au niveau d'une page sp\u00e9cifique, utiliser dans celle-ci la balise &lt;meta name=&quot;robots&quot; content=&quot;attribut1, attribut2&quot; /&gt; o\u00f9&nbsp;:</p><ul>\n<li>attribut1 peut prendre les valeurs index (indexer cette page) ou noindex (ne pas indexer cette page) ;</li>\n\t\t\t\t\t<li>attribut2 peut prendre les valeurs follow (suivre les liens contenus dans cette page) ou nofollow (ne pas suivre les liens).</li>\n\t\t\t\t</ul>", 
-        "thema": "Identification               ", 
+        "thema": "Identification", 
         "name": "125"
     }, 
     "625": {
@@ -1508,7 +1508,7 @@
         "explanation": "", 
         "description": "Le code source de chaque page contient une m\u00e9tadonn\u00e9e qui en d\u00e9crit le contenu.", 
         "solution": "<p>Renseigner la balise &lt;meta name=&quot;description&quot; content=&quot;&quot; /&gt; avec une description du contenu de la page ou du site.</p>", 
-        "thema": "Identification               ", 
+        "thema": "Identification", 
         "name": "126"
     }, 
     "626": {
@@ -1520,7 +1520,7 @@
         "explanation": "", 
         "description": "L'adresse compl\u00e8te et le num\u00e9ro de t\u00e9l\u00e9phone des soci\u00e9t\u00e9s et organisations sont accessibles depuis toutes les pages du site.", 
         "solution": "<p>Indiquer l'adresse postale compl\u00e8te et le num\u00e9ro de t\u00e9l\u00e9phone de la soci\u00e9t\u00e9 ou de l'organisme&nbsp;:</p><ul>\n<li>Dans chaque page du site ;</li>\n\t\t\t\t\t<li>Ou dans une page Contact ou \u00c0 propos, accessible directement depuis chaque page du site. </li>\n\t\t\t\t</ul>", 
-        "thema": "Identification               ", 
+        "thema": "Identification", 
         "name": "127"
     }, 
     "627": {
@@ -1530,9 +1530,9 @@
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
-        "description": "Le code source des pages contient un appel valide \u00e0 un ic\u00f4nede favori.", 
+        "description": "Le code source des pages contient un appel valide \u00e0 un ic\u00f4ne de favori.", 
         "solution": "<p>Selon le format choisi pour l'ic\u00f4ne et son emplacement, utiliser un lien du type&nbsp;:</p><ul>\n<li>&lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;/img/favicon.png&quot;/&gt; (format png, mais aussi jpg, gif, etc.) ;</li>\n\t\t\t\t\t<li>&lt;link rel=&quot;shortcut icon&quot; type=&quot;image/x-icon&quot; href=&quot;/img/favicon.ico&quot; /&gt; (format ico Microsoft seul reconnu par Internet Explorer).</li>\n\t\t\t\t</ul>", 
-        "thema": "Identification               ", 
+        "thema": "Identification", 
         "name": "128"
     }, 
     "628": {
@@ -1544,7 +1544,7 @@
         "explanation": "", 
         "description": "La langue principale de la page cible d'un hyperlien est identifiable lorsqu'elle diff\u00e8re de celle de la page d'origine.", 
         "solution": "<p>La langue cible d'un lien peut \u00eatre indiqu\u00e9e&nbsp;:</p><ul>\n<li>Simplement via le libell\u00e9 du lien qui sera r\u00e9dig\u00e9 dans la langue cible ;</li>\n\t\t\t\t\t<li>\u00c9ventuellement \u00e0 l'aide d'une ic\u00f4ne appropri\u00e9e (drapeau) ;</li>\n\t\t\t\t\t<li>\u00c9ventuellement de mani\u00e8re explicite dans le libell\u00e9 du lien ou dans son contexte imm\u00e9diat, en mentionnant la langue directement.</li>\n\t\t\t\t</ul>", 
-        "thema": "Internationalisation         ", 
+        "thema": "Internationalisation", 
         "name": "129"
     }, 
     "629": {
@@ -1556,7 +1556,7 @@
         "explanation": "", 
         "description": "Chaque page permet d'acc\u00e9der \u00e0 ses traductions disponibles.", 
         "solution": "<p>Fournir sur chaque page dont le contenu a \u00e9t\u00e9 traduit, un lien ou un formulaire de navigation donnant acc\u00e8s \u00e0 la version traduite du site.</p>", 
-        "thema": "Internationalisation         ", 
+        "thema": "Internationalisation", 
         "name": "130"
     }, 
     "630": {
@@ -1578,7 +1578,7 @@
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
-        "description": "Chaque page contient des liens d'acc\u00e8s rapide plac\u00e9s au d\u00e9but ducode source.", 
+        "description": "Chaque page contient des liens d'acc\u00e8s rapide plac\u00e9s au d\u00e9but du code source.", 
         "solution": "<p>Fournir en d\u00e9but de code HTML, avant tout autre lien ou formulaire pr\u00e9sent dans la page, les liens visant des ancres correspondantes&nbsp;:</p><ul>\n<li>Vers le menu principal si celui-ci n'est pas imm\u00e9diatement plac\u00e9 apr\u00e8s l'en-t\u00eate de page ;</li>\n\t\t\t\t\t<li>Vers le contenu principal si celui-ci n'est pas imm\u00e9diatement plac\u00e9 apr\u00e8s l'en-t\u00eate de page ;</li>\n\t\t\t\t\t<li>Vers le formulaire du moteur de recherche si celui-ci n'est pas imm\u00e9diatement plac\u00e9 apr\u00e8s l'en-t\u00eate de page.</li>\n\t\t\t\t</ul><p>Le cas \u00e9ch\u00e9ant, ce menu d'acc\u00e8s rapide peut \u00eatre masqu\u00e9 au chargement de la page et s'afficher lors de la premi\u00e8re tabulation entrant dans celle-ci (via Javascript ou CSS).</p>", 
         "thema": "Navigation", 
         "name": "132"
@@ -1638,7 +1638,7 @@
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
-        "description": "Les liens provoquant l'ouverture d'un logiciel externe ont unlibell\u00e9 explicite.", 
+        "description": "Les liens provoquant l'ouverture d'un logiciel externe ont un libell\u00e9 explicite.", 
         "solution": "<p>R\u00e9diger les libell\u00e9s de liens concern\u00e9s de mani\u00e8re \u00e0 annoncer le comportement pour mieux l'anticiper. Par exemple, il est suffisant de r\u00e9diger les liens e-mails sous la forme \u00ab&nbsp;adresse e-mail&nbsp;\u00bb, \u00e0 d\u00e9faut de \u00ab&nbsp;Envoyer un mail \u00e0\u2026&nbsp;\u00bb.</p>", 
         "thema": "Navigation", 
         "name": "137"
@@ -1676,19 +1676,19 @@
         "explanation": "", 
         "description": "Le site propose au moins une feuille de styles d\u00e9di\u00e9e \u00e0 l'impression.", 
         "solution": "<p>Fournir une feuille de style sp\u00e9cifique pour le type de media print, par exemple sous la forme : &lt;<code>link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;print.css&quot; media=&quot;print&quot; /&gt;</code>.</p><p>Les styles d'impression peuvent corriger une feuille de style globale (feuille de style pour le media all ou sans mention du media) ou bien s'appliquer seuls pour le media print si la feuille de style d'affichage est appel\u00e9e en pr\u00e9cisant le media print.</p>", 
-        "thema": "Pr\u00e9sentation                 ", 
+        "thema": "Pr\u00e9sentation", 
         "name": "140"
     }, 
     "640": {
-        "goal": "<p>Dans chaque feuille de style CSS, indiquer la famille g\u00e9n\u00e9rique de police appropri\u00e9e dans les propri\u00e9t\u00e9s <code>font-family</code> ou <code>font</code>&nbsp;:</p><ul>\n<li>Pour les polices serif, ou \u00e0 empattements (du type Times Roman), sp\u00e9cifier en dernier la famille de police g\u00e9n\u00e9rique serif. Dans l'exemple suivant, le terme \u00ab&nbsp;serif&nbsp;\u00bb a \u00e9t\u00e9 correctement ajout\u00e9 comme dernier \u00e9l\u00e9ment de la liste des polices <code>font-family: Georgia, &quot;Bookman Old Style&quot;, serif</code>.</li>\n\t\t\t\t\t<li>Pour les polices sans serif, ou sans empattements (du type Arial), sp\u00e9cifier en dernier la famille de police g\u00e9n\u00e9rique sans-serif. Par exemple&nbsp;: <code>font-family: Optima, &quot;Trebuchet MS&quot;, sans-serif</code>; </li>\n\t\t\t\t\t<li>Pour les polices monospace (du type Courier), sp\u00e9cifier en dernier la famille de police g\u00e9n\u00e9rique monospace. Par exemple, <code>font-family: Courier, monospace </code>; </li>\n\t\t\t\t\t<li>De m\u00eame, utiliser les familles g\u00e9n\u00e9riques cursive et fantasy pour les polices manuscrites et fantaisies.</li>\n\t\t\t\t</ul>", 
+        "goal": "<p>Permettre aux contenus de s'afficher correctement, m\u00eame lorsque les polices pr\u00e9vues ne sont pas pr\u00e9sentes sur le syst\u00e8me de l'utilisateur.</p>", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "Une famille g\u00e9n\u00e9rique de police est indiqu\u00e9e comme dernier \u00e9l\u00e9ment de substitution.", 
-        "solution": "<p>Permettre aux contenus de s'afficher correctement, m\u00eame lorsque les polices pr\u00e9vues ne sont pas pr\u00e9sentes sur le syst\u00e8me de l'utilisateur.</p>", 
-        "thema": "Pr\u00e9sentation                 ", 
+        "solution": "<p>Dans chaque feuille de style CSS, indiquer la famille g\u00e9n\u00e9rique de police appropri\u00e9e dans les propri\u00e9t\u00e9s <code>font-family</code> ou <code>font</code>&nbsp;:</p><ul>\r\n<li>Pour les polices serif, ou \u00e0 empattements (du type Times Roman), sp\u00e9cifier en dernier la famille de police g\u00e9n\u00e9rique serif. Dans l'exemple suivant, le terme \u00ab&nbsp;serif&nbsp;\u00bb a \u00e9t\u00e9 correctement ajout\u00e9 comme dernier \u00e9l\u00e9ment de la liste des polices <code>font-family: Georgia, &quot;Bookman Old Style&quot;, serif</code>.</li>\r\n\t\t\t\t\t<li>Pour les polices sans serif, ou sans empattements (du type Arial), sp\u00e9cifier en dernier la famille de police g\u00e9n\u00e9rique sans-serif. Par exemple&nbsp;: <code>font-family: Optima, &quot;Trebuchet MS&quot;, sans-serif</code>; </li>\r\n\t\t\t\t\t<li>Pour les polices monospace (du type Courier), sp\u00e9cifier en dernier la famille de police g\u00e9n\u00e9rique monospace. Par exemple, <code>font-family: Courier, monospace </code>; </li>\r\n\t\t\t\t\t<li>De m\u00eame, utiliser les familles g\u00e9n\u00e9riques cursive et fantasy pour les polices manuscrites et fantaisies.</li>\r\n\t\t\t\t</ul>", 
+        "thema": "Pr\u00e9sentation", 
         "name": "141"
     }, 
     "641": {
@@ -1700,7 +1700,7 @@
         "explanation": "", 
         "description": "La taille des polices destin\u00e9es \u00e0 l'affichage \u00e9cran est exprim\u00e9e en taille variable et non en taille fixe.", 
         "solution": "<p>Ne pas modifier la taille de la police par d\u00e9faut ou l'indiquer en utilisant une unit\u00e9 proportionnelle aux r\u00e9glages de l'utilisateur (em, ex, %, mots-cl\u00e9s) et non avec une unit\u00e9 d\u00e9pendante du p\u00e9riph\u00e9rique de consultation (px, pt, cm, etc.).</p>", 
-        "thema": "Pr\u00e9sentation                 ", 
+        "thema": "Pr\u00e9sentation", 
         "name": "142"
     }, 
     "642": {
@@ -1712,7 +1712,7 @@
         "explanation": "", 
         "description": "Le serveur n'envoie pas la liste des fichiers des r\u00e9pertoires n'ayant pas de page d'index.", 
         "solution": "<p>Configurer le serveur pour qu'il ne renvoie pas la liste des fichiers pr\u00e9sents dans un r\u00e9pertoire. Pour Apache, ajouter par exemple <code>options \u2013indexes</code> dans le <code>.htaccess</code>.</p>", 
-        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9  ", 
+        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9", 
         "name": "143"
     }, 
     "643": {
@@ -1724,7 +1724,7 @@
         "explanation": "", 
         "description": "L'objectif des cookies et les limitations inh\u00e9rentes \u00e0 leur refus sont expliqu\u00e9s.", 
         "solution": "<p>Pr\u00e9ciser dans la politique de confidentialit\u00e9 du site si la navigation dans le site n\u00e9cessite l'acceptation des cookies. Si oui, expliquer la raison de leur utilisation, la nature des donn\u00e9es conserv\u00e9es et \u00e9ventuellement, fournir les liens permettant leur d\u00e9sactivation.</p>", 
-        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9  ", 
+        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9", 
         "name": "144"
     }, 
     "644": {
@@ -1736,7 +1736,7 @@
         "explanation": "", 
         "description": "Les comptes ou abonnements ouverts en ligne peuvent \u00eatre ferm\u00e9s par le m\u00eame moyen.", 
         "solution": "<p>Fournir dans le site une proc\u00e9dure (formulaire) de cl\u00f4ture de compte automatis\u00e9e si la cr\u00e9ation de compte est elle-m\u00eame automatis\u00e9e.</p><p>Fournir sur le site un formulaire de demande de cl\u00f4ture si la cr\u00e9ation de compte est diff\u00e9r\u00e9e.</p>", 
-        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9  ", 
+        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9", 
         "name": "145"
     }, 
     "645": {
@@ -1748,7 +1748,7 @@
         "explanation": "", 
         "description": "Un dispositif sensibilise l'utilisateur sur le degr\u00e9 de s\u00e9curisation du mot de passe qu'il choisit.", 
         "solution": "<p>La saisie du mot de passe donne lieu \u00e0 une validation et \u00e0 un retour indiquant son degr\u00e9 de s\u00e9curit\u00e9, avant soumission d\u00e9finitive du formulaire d'inscription ou de changement de mot de passe.</p>", 
-        "thema": "Serveur et Performances      ", 
+        "thema": "Serveur et Performances", 
         "name": "146"
     }, 
     "646": {
@@ -1760,7 +1760,7 @@
         "explanation": "", 
         "description": "Les titres des tableaux de donn\u00e9es sont renseign\u00e9s.", 
         "solution": "<p>Utiliser et renseigner l'\u00e9l\u00e9ment HTML <code>caption</code> pour chaque tableau de donn\u00e9es.</p><p>Le cas \u00e9ch\u00e9ant, recourir \u00e0 un \u00e9l\u00e9ment <code>caption</code> masqu\u00e9 \u00e0 l'affichage.</p>", 
-        "thema": "Tableaux                     ", 
+        "thema": "Tableaux", 
         "name": "147"
     }, 
     "647": {
@@ -1772,7 +1772,7 @@
         "explanation": "", 
         "description": "Les mots de passe peuvent \u00eatre choisis ou chang\u00e9s par l'utilisateur.", 
         "solution": "<p>Fournir une proc\u00e9dure en ligne permettant le choix d'un mot de passe personnalis\u00e9 d\u00e8s la cr\u00e9ation du compte ou la modification ult\u00e9rieure des mots de passe automatiquement g\u00e9n\u00e9r\u00e9s.</p><p>Fournir un acc\u00e8s \u00e0 la modification du mot de passe depuis la gestion du compte utilisateur ou \u00e0 d\u00e9faut dans le contexte du formulaire d'identification.</p>", 
-        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9  ", 
+        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9", 
         "name": "148"
     }, 
     "648": {
@@ -1782,9 +1782,9 @@
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
-        "description": "La proc\u00e9dure d'acc\u00e8s et de rectification des donn\u00e9es personnellesest d\u00e9crite.", 
+        "description": "La proc\u00e9dure d'acc\u00e8s et de rectification des donn\u00e9es personnelles est d\u00e9crite.", 
         "solution": "<p>Indiquer \u00e0 l'utilisateur dans une section de contenu d\u00e9di\u00e9e par quelles proc\u00e9dures ou moyens de contact il peut effectuer une demande d'acc\u00e8s, de suppression ou de rectification de ses donn\u00e9es personnelles.</p>", 
-        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9  ", 
+        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9", 
         "name": "149"
     }, 
     "649": {
@@ -1796,7 +1796,7 @@
         "explanation": "", 
         "description": "Le serveur envoie une page d'interdiction 403 personnalis\u00e9e.", 
         "solution": "<p>Modifier la configuration du serveur web pour renvoyer l'utilisateur vers une page personnalis\u00e9e lorsque l'acc\u00e8s \u00e0 la ressource demand\u00e9e n'est pas autoris\u00e9.</p><p>Si la configuration principale du serveur n'est pas directement accessible et si l'environnement le permet, utiliser une configuration locale par r\u00e9pertoire. Par exemple, l'environnement Apache autorise la cr\u00e9ation d'un fichier <code>.htaccess</code> contenant des directives relatives aux traitements des erreurs : <code>ErrorDocument 403 /mapage.html</code>.</p>", 
-        "thema": "Serveur et Performances      ", 
+        "thema": "Serveur et Performances", 
         "name": "150"
     }, 
     "650": {
@@ -1808,7 +1808,7 @@
         "explanation": "", 
         "description": "Le site propose au moins un lien vers chaque fil de syndication.", 
         "solution": "<p>Les URI des fils de syndication sont indiqu\u00e9s dans une page sp\u00e9cifique ou dans chaque page du site, sous forme de liens explicites : </p><p>&lt;a href=&quot;/fil.rss&quot; title=&quot;fil RSS&quot;&gt;RSS&lt;/a&gt;.</p>", 
-        "thema": "Syndication                  ", 
+        "thema": "Syndication", 
         "name": "151"
     }, 
     "651": {
@@ -1820,7 +1820,7 @@
         "explanation": "", 
         "description": "La lin\u00e9arisation des tableaux utilis\u00e9s pour la mise en page ne nuit pas \u00e0 la compr\u00e9hension des contenus.", 
         "solution": "<p>Regrouper dans une m\u00eame cellule les informations qui doivent \u00eatre verticalement associ\u00e9es (ne pas les r\u00e9partir dans des cellules plac\u00e9es dans des lignes successives du tableau).</p>", 
-        "thema": "Tableaux                     ", 
+        "thema": "Tableaux", 
         "name": "152"
     }, 
     "652": {
@@ -1832,7 +1832,7 @@
         "explanation": "", 
         "description": "Les tableaux de donn\u00e9es ne sont pas simul\u00e9s \u00e0 l'aide de texte mis en forme.", 
         "solution": "<p>Utiliser syst\u00e9matiquement l'\u00e9l\u00e9ment <code>table</code> et les \u00e9l\u00e9ments associ\u00e9s (<code>tr</code>, <code>td</code>, <code>th</code>, <code>caption</code>) pour baliser les tableaux de donn\u00e9es, et non des artifices reposant sur des accumulations d'espaces ins\u00e9cables ou de caract\u00e8res graphiques tels que les pipes (lignes verticales \u00ab&nbsp;|&nbsp;\u00bb).</p>", 
-        "thema": "Tableaux                     ", 
+        "thema": "Tableaux", 
         "name": "153"
     }, 
     "653": {
@@ -1843,8 +1843,8 @@
         }, 
         "explanation": "", 
         "description": "Les captchas sont accompagn\u00e9s d'une solution alternative d'acc\u00e8s.", 
-        "solution": "<p>Accompagner chaque captcha graphique :</p><ul>\n<li>D'un captcha logique (question du type \u00ab Quelle est la couleur du cheval blanc d'Henri IV ? \u00bb, op\u00e9ration arithm\u00e9tique dont il faut donner la solution, etc.) ;</li>\n\t\t\t\t\t<li>D'un captcha audio (fichier son \u00e0 t\u00e9l\u00e9charger \u00e9non\u00e7ant un mot que l'utilisateur doit alors saisir dans le champ correspondant du formulaire) ;</li>\n\t\t\t\t\t<li>Ou d'un moyen de contact (t\u00e9l\u00e9phone, mail, etc.) permettant de r\u00e9aliser diff\u00e9remment l'op\u00e9ration souhait\u00e9e (cr\u00e9ation de compte sur demande, etc.).</li>\n\t\t\t\t</ul>", 
-        "thema": "Alternatives                 ", 
+        "solution": "<p>Accompagner chaque captcha graphique :</p><ul>\r\n<li>D'un captcha logique (question du type \u00ab Quelle est la couleur du cheval blanc d'Henri IV ? \u00bb, op\u00e9ration arithm\u00e9tique dont il faut donner la solution, etc.) ;</li>\r\n\t\t\t\t\t<li>D'un captcha audio (fichier son \u00e9non\u00e7ant un mot que l'utilisateur doit alors saisir dans le champ correspondant du formulaire) ;</li>\r\n\t\t\t\t\t<li>Ou d'un moyen de contact (t\u00e9l\u00e9phone, mail, etc.) permettant de r\u00e9aliser diff\u00e9remment l'op\u00e9ration souhait\u00e9e (cr\u00e9ation de compte sur demande, etc.).</li>\r\n\t\t\t\t</ul>", 
+        "thema": "Alternatives", 
         "name": "154"
     }, 
     "654": {
@@ -1855,8 +1855,8 @@
         }, 
         "explanation": "", 
         "description": "Chaque contenu audio et vid\u00e9o est accompagn\u00e9 de sa transcription textuelle.", 
-        "solution": "<p>Accompagner chaque contenu audio ou vid\u00e9o d'une transcription :</p><ul>\n<li>Soit int\u00e9grale (paroles, description des sons et \u00e9l\u00e9ments visuels n\u00e9cessaire \u00e0 la compr\u00e9hension) ;</li>\n\t\t\t\t\t<li>Soit synth\u00e9tique (mais refl\u00e9tant la totalit\u00e9 de l'information).</li>\n\t\t\t\t</ul><p>La transcription peut :</p><ul>\n<li>Figurer dans la page o\u00f9 se trouve le contenu vid\u00e9o ou audio ;</li>\n\t\t\t\t\t<li>\u00catre imm\u00e9diatement accessible par un lien pr\u00e9sent dans la page o\u00f9 se trouve le contenu vid\u00e9o ou audio.</li>\n\t\t\t\t</ul>", 
-        "thema": "Alternatives                 ", 
+        "solution": "<p>Accompagner chaque contenu audio ou vid\u00e9o d'une transcription :</p><ul>\r\n<li>Soit int\u00e9grale (paroles, description des sons et \u00e9l\u00e9ments visuels n\u00e9cessaires \u00e0 la compr\u00e9hension) ;</li>\r\n\t\t\t\t\t<li>Soit synth\u00e9tique (mais refl\u00e9tant la totalit\u00e9 de l'information).</li>\r\n\t\t\t\t</ul><p>La transcription peut :</p><ul>\r\n<li>Figurer dans la page o\u00f9 se trouve le contenu vid\u00e9o ou audio ;</li>\r\n\t\t\t\t\t<li>\u00catre imm\u00e9diatement accessible par un lien pr\u00e9sent dans la page o\u00f9 se trouve le contenu vid\u00e9o ou audio.</li>\r\n\t\t\t\t</ul>", 
+        "thema": "Alternatives", 
         "name": "155"
     }, 
     "655": {
@@ -1926,7 +1926,7 @@
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
-        "description": "L'acc\u00e8s aux contenus et services est possible sans le supportdes scripts.", 
+        "description": "L'acc\u00e8s aux contenus et services est possible sans le support des scripts.", 
         "solution": "<p>Plusieurs d\u00e9marches sont possibles :</p><ul>\n<li>Concevoir les scripts de mani\u00e8re non obstructive, sur la base d'un contenu et de services ind\u00e9pendants du support Javascript et d'enrichissement des interfaces par la couche de scripts ;</li>\n\t\t\t\t\t<li>Fournir syst\u00e9matiquement des alternatives <code>noscript</code> ;</li>\n\t\t\t\t\t<li>Fournir des versions alternatives des pages concern\u00e9es.</li>\n\t\t\t\t</ul>", 
         "thema": "Code", 
         "name": "161"
@@ -1974,9 +1974,9 @@
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
-        "description": "Les donn\u00e9es contenus dans le Whois du site permettent de le relier directement \u00e0 son propri\u00e9taire.", 
+        "description": "Les donn\u00e9es contenues dans le Whois du site permettent de le relier directement \u00e0 son propri\u00e9taire.", 
         "solution": "<p>Solution 1&nbsp;: Lorsque cela est possible, modifier les donn\u00e9es contenues dans le Whois de fa\u00e7on \u00e0 ce qu'au moins l'un des contacts soit directement reli\u00e9 au propri\u00e9taire du site.</p><p>Solution 2&nbsp;: Modifier le site (les mentions l\u00e9gales, par exemple) de fa\u00e7on \u00e0 ce que l'un des contacts du Whois soit mentionn\u00e9.</p>", 
-        "thema": "Contact                      ", 
+        "thema": "Contact", 
         "name": "165"
     }, 
     "665": {
@@ -2048,7 +2048,7 @@
         "explanation": "", 
         "description": "Le site propose au moins un moyen de contacter le responsable des r\u00e9clamations.", 
         "solution": "<p>Indiquer dans la page d'accueil, ou au sein de la page des mentions l\u00e9gales, dans la page d'\u00e0 propos, d'aide, ou encore dans les conditions g\u00e9n\u00e9rales, un moyen de contacter (e-mail, t\u00e9l\u00e9phone, fax\u2026) le responsable des r\u00e9clamations.</p>", 
-        "thema": "E-Commerce                   ", 
+        "thema": "E-Commerce", 
         "name": "171"
     }, 
     "671": {
@@ -2060,7 +2060,7 @@
         "explanation": "", 
         "description": "Les conditions de remboursement (d\u00e9lais, frais et justificatifs exig\u00e9s) sont indiqu\u00e9es.", 
         "solution": "<p>Indiquer, au minimum dans les conditions g\u00e9n\u00e9rales de vente, les informations relatives aux conditions de remboursement&nbsp;: d\u00e9lais, frais et justificatifs exig\u00e9s.</p>", 
-        "thema": "E-Commerce                   ", 
+        "thema": "E-Commerce", 
         "name": "172"
     }, 
     "672": {
@@ -2070,9 +2070,9 @@
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
-        "description": "L'adresse et les conditions de retour des produits (sur site, \u00e0 l'atelier) sont indiqu\u00e9s.", 
+        "description": "L'adresse et les conditions de retour des produits (sur site, \u00e0 l'atelier) sont indiqu\u00e9es.", 
         "solution": "<p>Indiquer, au moins dans les conditions g\u00e9n\u00e9rales de vente, les informations relatives aux conditions de retour des produits vendus (adresse, prise en charge des frais d'envoi, type de colis attendu).</p>", 
-        "thema": "E-Commerce                   ", 
+        "thema": "E-Commerce", 
         "name": "173"
     }, 
     "673": {
@@ -2084,7 +2084,7 @@
         "explanation": "", 
         "description": "Chaque r\u00e9clamation fait l'objet d'un accus\u00e9 de r\u00e9ception.", 
         "solution": "<p>D\u00e9finir une proc\u00e9dure de gestion de l'envoi d'un e-mail accusant r\u00e9ception d'une r\u00e9clamation.</p>", 
-        "thema": "E-Commerce                   ", 
+        "thema": "E-Commerce", 
         "name": "174"
     }, 
     "674": {
@@ -2094,9 +2094,9 @@
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
-        "description": "Le mode de d\u00e9p\u00f4t et la proc\u00e9dure de traitement des r\u00e9clamationssont indiqu\u00e9s.", 
+        "description": "Le mode de d\u00e9p\u00f4t et la proc\u00e9dure de traitement des r\u00e9clamations sont indiqu\u00e9s.", 
         "solution": "<p>Indiquer, dans les conditions g\u00e9n\u00e9rales de vente, par exemple, la proc\u00e9dure de d\u00e9p\u00f4t et de traitement des r\u00e9clamations.</p>", 
-        "thema": "E-Commerce                   ", 
+        "thema": "E-Commerce", 
         "name": "175"
     }, 
     "675": {
@@ -2108,7 +2108,7 @@
         "explanation": "", 
         "description": "Les informations destin\u00e9es \u00e0 des espaces publics peuvent \u00eatre pr\u00e9visualis\u00e9es sous la forme o\u00f9 elles seront affich\u00e9es.", 
         "solution": "<p>Mettre en forme le contenu pr\u00e9visualis\u00e9 en utilisant la m\u00eame feuille de style que celle des espaces publics.</p>", 
-        "thema": "Espaces publics              ", 
+        "thema": "Espaces publics", 
         "name": "176"
     }, 
     "676": {
@@ -2120,7 +2120,7 @@
         "explanation": "", 
         "description": "Le d\u00e9roulement des animations ne bloque pas la navigation ou l'acc\u00e8s aux contenus.", 
         "solution": "<p>En cas d'animation propos\u00e9e dans un splash screen, celle-ci doit comporter un lien permettant d'acc\u00e9der directement aux contenus sans devoir attendre la fin de l'animation.</p>", 
-        "thema": "Fichiers et multim\u00e9dia       ", 
+        "thema": "Fichiers et multim\u00e9dia", 
         "name": "177"
     }, 
     "677": {
@@ -2132,7 +2132,7 @@
         "explanation": "", 
         "description": "Un lien d'information est propos\u00e9 pour chaque plugin n\u00e9cessaire \u00e0 la consultation du contenu.", 
         "solution": "<p>Fournir un lien vers une information permettant d'identifier et, par la suite, de t\u00e9l\u00e9charger chaque plugin n\u00e9cessaire \u00e0 la consultation ou l'utilisation des contenus&nbsp;:</p><ul>\n<li>Directement dans le contexte de ces contenus ;</li>\n\t\t\t\t\t<li>Ou bien dans une page d'aide accessible directement depuis chaque page o\u00f9 ces contenus sont pr\u00e9sents.</li>\n\t\t\t\t</ul>", 
-        "thema": "Fichiers et multim\u00e9dia       ", 
+        "thema": "Fichiers et multim\u00e9dia", 
         "name": "178"
     }, 
     "678": {
@@ -2144,7 +2144,7 @@
         "explanation": "", 
         "description": "Les documents PDF internes sont balis\u00e9s.", 
         "solution": "<p>Lorsque le document PDF est issu d'une suite bureautique type Word ou OpenOffice, il faut utiliser les styles et formatages propos\u00e9s par le logiciel de mani\u00e8re \u00e0 g\u00e9n\u00e9rer un PDF structur\u00e9, cela revient notamment \u00e0&nbsp;: </p><ul>\n<li>Appliquer les styles de texte tels que Titre 1, Titre 2, Titre 3 pour les diff\u00e9rents niveaux de titre.</li>\n\t\t\t\t\t<li>Utiliser les styles pour zones sp\u00e9ciales comme les en-t\u00eates de tableaux.</li>\n\t\t\t\t\t<li>Se servir des \u00e9num\u00e9rations structurelles (listes \u00e0 puces, listes num\u00e9rot\u00e9es) au lieu d'utiliser des tirets ou des \u00e9toiles pour simuler une liste \u00e0 puces, par exemple.</li>\n\t\t\t\t</ul><p>Ces styles peuvent ensuite \u00eatre modifi\u00e9s pour les adapter \u00e0 la pr\u00e9sentation souhait\u00e9e. Enfin, l'option Exporter en PDF balis\u00e9 ou tagu\u00e9 doit \u00eatre activ\u00e9e au moment de l'export PDF. Pour plus d'informations, consulter <a href=\"http://www.adobe.com/fr/accessibility/\">http://www.adobe.com/fr/accessibility/</a>.</p>", 
-        "thema": "Fichiers et multim\u00e9dia       ", 
+        "thema": "Fichiers et multim\u00e9dia", 
         "name": "179"
     }, 
     "679": {
@@ -2228,7 +2228,7 @@
         "explanation": "", 
         "description": "Les hyperliens cons\u00e9cutifs sont s\u00e9par\u00e9s visuellement.", 
         "solution": "<p>S\u00e9parer visuellement deux liens plac\u00e9s successivement dans un m\u00eame texte par un tiret, un espacement important ou une virgule, par exemple.</p><p>\u00c9viter autant que possible la succession imm\u00e9diate de liens au fil du texte, par exemple, sur les mots successifs d'une m\u00eame phrase.</p>", 
-        "thema": "Hyperliens                   ", 
+        "thema": "Hyperliens", 
         "name": "186"
     }, 
     "686": {
@@ -2240,7 +2240,7 @@
         "explanation": "", 
         "description": "Le libell\u00e9 de chaque hyperlien d\u00e9crit sa fonction ou la nature du contenu vers lequel il pointe.", 
         "solution": "<p>Indiquer sans ambigu\u00eft\u00e9 le contenu de la page cible du lien, la fonction du lien ou son comportement, le cas \u00e9ch\u00e9ant, dans le libell\u00e9 des liens (portion de texte situ\u00e9e entre les balises &lt;a href=&quot;URL&quot;&gt; et &lt;/a&gt; ou dans l'alternative textuelle de l'image plac\u00e9e entre ces balises, \u00e9ventuellement combin\u00e9e au libell\u00e9 textuel).</p><p>\u00c0 d\u00e9faut, reprendre et compl\u00e9ter le libell\u00e9 textuel via l'attribut <code>title</code> de l'\u00e9l\u00e9ment <code>a</code>.</p>", 
-        "thema": "Hyperliens                   ", 
+        "thema": "Hyperliens", 
         "name": "187"
     }, 
     "687": {
@@ -2252,7 +2252,7 @@
         "explanation": "", 
         "description": "Les hyperliens internes et externes sont diff\u00e9renci\u00e9s.", 
         "solution": "<p>Il est possible d'ajouter l'information \u00ab&nbsp;lien externe&nbsp;\u00bb dans le libell\u00e9 du lien (mention textuelle, ic\u00f4ne HTML sp\u00e9cifique), dans l'attribut <code>title</code> du lien en y reprenant et en y compl\u00e9tant le libell\u00e9, via la mise en forme du lien (ic\u00f4ne CSS) ou encore via le comportement du lien (ouverture dans une nouvelle fen\u00eatre r\u00e9serv\u00e9e aux liens externes, avec avertissement pr\u00e9alable via le libell\u00e9 ou le <code>title</code>).</p>", 
-        "thema": "Hyperliens                   ", 
+        "thema": "Hyperliens", 
         "name": "188"
     }, 
     "688": {
@@ -2263,8 +2263,8 @@
         }, 
         "explanation": "", 
         "description": "L'extension utilis\u00e9e est coh\u00e9rente avec l'identit\u00e9, l'activit\u00e9, la zone g\u00e9ographique couverte ou avec le nom de domaine.", 
-        "solution": "<p>Se reporter \u00e0 l'IANA (Internet Assigned Numbers Authority) :<a href=\"http://www.iana.org/domains/root/db/index.html\">http://www.iana.org/domains/root/db/index.html</a>.</p>", 
-        "thema": "Identification               ", 
+        "solution": "<p>Se reporter \u00e0 l'IANA (Internet Assigned Numbers Authority) : <a href=\"http://www.iana.org/domains/root/db/index.html\">http://www.iana.org/domains/root/db/index.html</a>.</p>", 
+        "thema": "Identification", 
         "name": "189"
     }, 
     "689": {
@@ -2276,7 +2276,7 @@
         "explanation": "", 
         "description": "Si le site d\u00e9clare respecter un ou plusieurs standards ou r\u00e9f\u00e9rentiels, un lien est propos\u00e9 vers chacun d'entre eux.", 
         "solution": "<p>Fournir un lien vers chaque standard ou r\u00e9f\u00e9rentiel concern\u00e9.</p>", 
-        "thema": "Identification               ", 
+        "thema": "Identification", 
         "name": "190"
     }, 
     "690": {
@@ -2288,7 +2288,7 @@
         "explanation": "", 
         "description": "Le site propose un fichier sitemap indiquant les contenus \u00e0 explorer.", 
         "solution": "<p>Cr\u00e9er un fichier <code>sitemap.xml</code> contenant la liste des pages du site \u00e0 la racine du site. \u00c0 d\u00e9faut de respecter le format XML, une simple liste d'URL est accept\u00e9e par les moteurs.</p>", 
-        "thema": "Identification               ", 
+        "thema": "Identification", 
         "name": "191"
     }, 
     "691": {
@@ -2300,7 +2300,7 @@
         "explanation": "", 
         "description": "Les liens vers les versions \u00e9quivalentes de la page ou du site sont r\u00e9dig\u00e9s dans leur langue cible.", 
         "solution": "<p>R\u00e9diger les liens et les alternatives textuelles d'images-liens concern\u00e9es dans la langue de chaque page cible. Par exemple, inscrire \u00ab&nbsp;English version&nbsp;\u00bb pour un lien menant vers une version anglaise de la page actuellement r\u00e9dig\u00e9e en fran\u00e7ais.</p>", 
-        "thema": "Internationalisation         ", 
+        "thema": "Internationalisation", 
         "name": "192"
     }, 
     "692": {
@@ -2312,7 +2312,7 @@
         "explanation": "", 
         "description": "Chaque changement de langue est signal\u00e9.", 
         "solution": "<p>Utiliser l'attribut <code>lang</code> et le code de langue adapt\u00e9 pour chaque contenu dont la langue diff\u00e8re de celle de la page courante. Par exemple : &lt;title lang=&quot;en&quot;&gt;<code>Open quality standards</code>&lt;/title&gt; </p><p>Si le contenu dont la langue diff\u00e8re n'est pas d\u00e9j\u00e0 balis\u00e9 par un \u00e9l\u00e9ment de la structure HTML existante (titre, lien, citation etc.), il est alors n\u00e9cessaire d'ajouter un \u00e9l\u00e9ment sp\u00e9cifique (<code>div</code> ou <code>span</code>) pour sp\u00e9cifier la langue de cet \u00e9l\u00e9ment (\u00e0 l'exception du contenu de l'\u00e9l\u00e9ment <code>title</code> qui ne peut comporter de balisage interne).</p>", 
-        "thema": "Internationalisation         ", 
+        "thema": "Internationalisation", 
         "name": "193"
     }, 
     "693": {
@@ -2324,7 +2324,7 @@
         "explanation": "", 
         "description": "Les liens d'acc\u00e8s aux versions traduites pointent directement vers la traduction de la page courante.", 
         "solution": "<p>Fournir sur chaque page dont le contenu a \u00e9t\u00e9 traduit un lien ou un formulaire de navigation donnant imm\u00e9diatement acc\u00e8s \u00e0 la version traduite de la page courante, sans retour \u00e0 la page d''accueil de la version linguistique concern\u00e9e.</p>", 
-        "thema": "Internationalisation         ", 
+        "thema": "Internationalisation", 
         "name": "194"
     }, 
     "694": {
@@ -2336,7 +2336,7 @@
         "explanation": "", 
         "description": "La langue des fichiers en t\u00e9l\u00e9chargement est pr\u00e9cis\u00e9e lorsqu'elle diff\u00e8re de celle de la page d'origine.", 
         "solution": "<p>Indiquer la langue du contenu du document&nbsp;:</p><ul>\n<li>Soit dans le libell\u00e9 du lien ;</li>\n\t\t\t\t\t<li>Soit via l'attribut <code>title</code> du lien.</li>\n\t\t\t\t</ul>", 
-        "thema": "Internationalisation         ", 
+        "thema": "Internationalisation", 
         "name": "195"
     }, 
     "695": {
@@ -2346,9 +2346,9 @@
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
-        "description": "Le sens de lecture du contenu est indiqu\u00e9 lorsqu'il diff\u00e8re de celuipar d\u00e9faut.", 
+        "description": "Le sens de lecture du contenu est indiqu\u00e9 lorsqu'il diff\u00e8re de celui par d\u00e9faut.", 
         "solution": "<p>Indiquer, outre le changement de langue du contenu via l'attribut <code>lang</code>, le changement de sens de lecture \u00e0 d'aide de l'attribut <code>dir</code> renseign\u00e9 avec la valeur appropri\u00e9e (<code>ltr</code> ou <code>rtl</code>).</p>", 
-        "thema": "Internationalisation         ", 
+        "thema": "Internationalisation", 
         "name": "196"
     }, 
     "696": {
@@ -2372,7 +2372,7 @@
         "explanation": "", 
         "description": "La d\u00e9sinscription aux newsletters est possible depuis le site.", 
         "solution": "<p>Fournir une page d\u00e9di\u00e9e \u00e0 la newsletter, dans laquelle le formulaire d'abonnement est accompagn\u00e9 d'un formulaire de d\u00e9sabonnement.</p><p>Faire figurer le lien de d\u00e9sabonnement dans les autres \u00e9ventuels formulaires d'inscription \u00ab&nbsp;rapides&nbsp;\u00bb int\u00e9gr\u00e9s \u00e0 d'autres pages du site.</p>", 
-        "thema": "Newsletter                   ", 
+        "thema": "Newsletter", 
         "name": "198"
     }, 
     "698": {
@@ -2384,7 +2384,7 @@
         "explanation": "", 
         "description": "La date de diffusion et/ou le num\u00e9ro des newsletters sont indiqu\u00e9s dans le sujet des messages.", 
         "solution": "<p>Indiquer la date de diffusion et/ou le num\u00e9ro des newsletters dans le sujet des messages.</p>", 
-        "thema": "Newsletter                   ", 
+        "thema": "Newsletter", 
         "name": "199"
     }, 
     "699": {
@@ -2396,7 +2396,7 @@
         "explanation": "", 
         "description": "La derni\u00e8re newsletter envoy\u00e9e est disponible en ligne.", 
         "solution": "<p>Rendre publique la derni\u00e8re newsletter envoy\u00e9e en rendant son contenu disponible sur le site et en faisant en sorte que l'acc\u00e8s \u00e0 ce contenu reste possible \u00e0 partir de la page d'accueil ou du plan de site.</p>", 
-        "thema": "Newsletter                   ", 
+        "thema": "Newsletter", 
         "name": "200"
     }, 
     "700": {
@@ -2408,7 +2408,7 @@
         "explanation": "", 
         "description": "La fr\u00e9quence d'envoi des newsletters est consultable avant l'abonnement.", 
         "solution": "<p>Indiquer la fr\u00e9quence d'envoi \u2013 si possible chiffr\u00e9e \u2013 des newsletters.</p>", 
-        "thema": "Newsletter                   ", 
+        "thema": "Newsletter", 
         "name": "201"
     }, 
     "701": {
@@ -2420,7 +2420,7 @@
         "explanation": "", 
         "description": "Les archives de newsletters sont disponibles en ligne.", 
         "solution": "<p>Rendre publique la totalit\u00e9 des newsletters envoy\u00e9es en rendant leur contenu disponible sur le site.</p>", 
-        "thema": "Newsletter                   ", 
+        "thema": "Newsletter", 
         "name": "202"
     }, 
     "702": {
@@ -2432,7 +2432,7 @@
         "explanation": "", 
         "description": "Le nombre de polices utilis\u00e9es sur le site est inf\u00e9rieur ou \u00e9gal \u00e0 trois (sauf pr\u00e9sentation de travaux ou produits graphiques).", 
         "solution": "<p>Limiter le nombre de polices de caract\u00e8res utilis\u00e9es \u00e0 trois.</p>", 
-        "thema": "Pr\u00e9sentation                 ", 
+        "thema": "Pr\u00e9sentation", 
         "name": "203"
     }, 
     "703": {
@@ -2444,7 +2444,7 @@
         "explanation": "", 
         "description": "Les contenus sont pr\u00e9sent\u00e9s avec un contraste suffisant par rapport \u00e0 leur arri\u00e8re-plan.", 
         "solution": "<p>Veiller \u00e0 conserver un ratio de contraste minimal de 3:1 entre le texte et son arri\u00e8re-plan, tel qu'il peut \u00eatre mesur\u00e9 via l'algorithme WCAG2.0.</p>", 
-        "thema": "Pr\u00e9sentation                 ", 
+        "thema": "Pr\u00e9sentation", 
         "name": "204"
     }, 
     "704": {
@@ -2456,7 +2456,7 @@
         "explanation": "", 
         "description": "Le contenu de chaque page est disponible \u00e0 l'impression sans blocs de navigation.", 
         "solution": "<p>Fournir une version HTML adapt\u00e9e pour l'impression.</p><p>Ou, dans l'id\u00e9al, fournir une feuille de style CSS pour le media print, qui masque les blocs de navigation via la propri\u00e9t\u00e9 <code>display</code>. </p>", 
-        "thema": "Pr\u00e9sentation                 ", 
+        "thema": "Pr\u00e9sentation", 
         "name": "205"
     }, 
     "705": {
@@ -2468,7 +2468,7 @@
         "explanation": "", 
         "description": "Le site propose une ou plusieurs feuilles de style d\u00e9di\u00e9es aux terminaux mobiles.", 
         "solution": "<p>Fournir une feuille de style sp\u00e9cifique pour le type de media handheld.</p>", 
-        "thema": "Pr\u00e9sentation                 ", 
+        "thema": "Pr\u00e9sentation", 
         "name": "206"
     }, 
     "706": {
@@ -2478,9 +2478,9 @@
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
-        "description": "Les phrases ou ensembles de mots mis en images ne sontpas divis\u00e9s.", 
+        "description": "Les phrases ou ensembles de mots mis en images ne sont pas divis\u00e9s.", 
         "solution": "<p>N'utiliser des images contenant du texte que dans le cas o\u00f9 ce texte n'aurait pas pu avoir un rendu ou un comportement \u00e9quivalent via les styles CSS. </p><p>Utiliser une image unique pour chaque texte mis en image.</p>", 
-        "thema": "Pr\u00e9sentation                 ", 
+        "thema": "Pr\u00e9sentation", 
         "name": "207"
     }, 
     "707": {
@@ -2492,7 +2492,7 @@
         "explanation": "", 
         "description": "Un contenu n'est pas d\u00e9sign\u00e9 uniquement par sa forme ou par sa position \u00e0 l'\u00e9cran.", 
         "solution": "<p>Lorsqu'un contenu est d\u00e9sign\u00e9 par une r\u00e9f\u00e9rence \u00e0 sa forme ou \u00e0 sa position \u00e0 l'\u00e9cran, l'information doit \u00eatre \u00e9galement disponible par un autre moyen (balisage, mention textuelle, etc.).</p>", 
-        "thema": "Pr\u00e9sentation                 ", 
+        "thema": "Pr\u00e9sentation", 
         "name": "208"
     }, 
     "708": {
@@ -2504,7 +2504,7 @@
         "explanation": "", 
         "description": "Le contenu textuel reste lisible avec une taille de caract\u00e8res augment\u00e9e d'un facteur 2 dans le navigateur.", 
         "solution": "<p>Privil\u00e9gier les propri\u00e9t\u00e9s de mise en page CSS qui permettent l'agrandissement des blocs de texte sans chevauchement de contenus (propri\u00e9t\u00e9 <code>float</code> par exemple), de pr\u00e9f\u00e9rence aux techniques limitant la hauteur des blocs ou reposant sur le positionnement absolu.</p>", 
-        "thema": "Pr\u00e9sentation                 ", 
+        "thema": "Pr\u00e9sentation", 
         "name": "209"
     }, 
     "709": {
@@ -2516,7 +2516,7 @@
         "explanation": "", 
         "description": "Les mises en majuscules \u00e0 des fins d\u00e9coratives sont effectu\u00e9es \u00e0 l'aide des styles", 
         "solution": "<p>Saisir les contenus HTML en respectant l'usage typographique pour les majuscules (d\u00e9but de phrase, noms propres, etc.).</p><p>Utiliser la propri\u00e9t\u00e9 CSS <code>text-transform</code> avec la valeur <code>uppercase</code> pour g\u00e9rer les mises en majuscules d\u00e9coratives.</p>", 
-        "thema": "Pr\u00e9sentation                 ", 
+        "thema": "Pr\u00e9sentation", 
         "name": "210"
     }, 
     "710": {
@@ -2528,7 +2528,7 @@
         "explanation": "", 
         "description": "Un dispositif sensibilise l'utilisateur sur le degr\u00e9 de s\u00e9curisation du mot de passe qu'il choisit", 
         "solution": "", 
-        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9  ", 
+        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9", 
         "name": "211"
     }, 
     "711": {
@@ -2538,9 +2538,9 @@
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
-        "description": "Le serveur respecte l'ordre pr\u00e9f\u00e9rentiel de langues des outilsde consultation.", 
+        "description": "Le serveur respecte l'ordre pr\u00e9f\u00e9rentiel de langues des outils de consultation.", 
         "solution": "<p>Utiliser la n\u00e9gociation de contenu disponible selon le serveur, en testant les valeurs de l'en-t\u00eate HTTP accept-language.</p>", 
-        "thema": "Serveur et Performances      ", 
+        "thema": "Serveur et Performances", 
         "name": "212"
     }, 
     "712": {
@@ -2552,7 +2552,7 @@
         "explanation": "", 
         "description": "Les appels aux scripts sont plac\u00e9s apr\u00e8s le contenu.", 
         "solution": "<p>Placer les appels de scripts en fin de code, juste avant la fermeture de l'\u00e9l\u00e9ment <code>body</code> (balise &lt;/body&gt;).</p>", 
-        "thema": "Serveur et Performances      ", 
+        "thema": "Serveur et Performances", 
         "name": "213"
     }, 
     "713": {
@@ -2564,7 +2564,7 @@
         "explanation": "", 
         "description": "Le menu principal de navigation figure sur les pages d'erreur personnalis\u00e9es.", 
         "solution": "<p>La page d'erreur 404 abord\u00e9e au sein de la bonne pratique 82 reprend soit de fa\u00e7on dynamique soit de fa\u00e7on statique l'ensemble de la navigation principale du site.</p>", 
-        "thema": "Serveur et Performances      ", 
+        "thema": "Serveur et Performances", 
         "name": "214"
     }, 
     "714": {
@@ -2576,7 +2576,7 @@
         "explanation": "", 
         "description": "Les fonctions de scripts sont plac\u00e9es dans des fichiers externes.", 
         "solution": "<p>N'utiliser le contenu de l'\u00e9l\u00e9ment <code>script</code> que pour renseigner des variables ou initialiser un script et d\u00e9porter les fonctions dans les fichiers Javascript externes.</p>", 
-        "thema": "Serveur et Performances      ", 
+        "thema": "Serveur et Performances", 
         "name": "215"
     }, 
     "715": {
@@ -2588,7 +2588,7 @@
         "explanation": "", 
         "description": "Les scripts sont minifi\u00e9s.", 
         "solution": "<p>Supprimer les espaces non n\u00e9cessaires ainsi que les commentaires dans les fichiers Javascript, en recourant par exemple \u00e0 des outils tels que Compressor (<a href=\"http://developer.yahoo.com/yui/compressor/\">http://developer.yahoo.com/yui/compressor/</a>) ou JSmin (<a href=\"http://crockford.com/javascript/jsmin\">http://crockford.com/javascript/jsmin</a>).</p>", 
-        "thema": "Serveur et Performances      ", 
+        "thema": "Serveur et Performances", 
         "name": "216"
     }, 
     "716": {
@@ -2600,7 +2600,7 @@
         "explanation": "", 
         "description": "Les informations de style sont minifi\u00e9es.", 
         "solution": "<p>Supprimer les espaces non n\u00e9cessaires et les commentaires dans les fichiers CSS, par exemple en recourant \u00e0 des outils tels que <a href=\"http://developer.yahoo.com/yui/compressor/\">http://developer.yahoo.com/yui/compressor/</a>.</p>", 
-        "thema": "Serveur et Performances      ", 
+        "thema": "Serveur et Performances", 
         "name": "217"
     }, 
     "15996": {
@@ -2612,7 +2612,7 @@
         "explanation": "", 
         "description": "La longueur du nom de domaine fonctionnel est inf\u00e9rieure ou \u00e9gale \u00e0 30 caract\u00e8res.", 
         "solution": "", 
-        "thema": "Identification               ", 
+        "thema": "Identification", 
         "name": ""
     }, 
     "15997": {
@@ -2624,7 +2624,7 @@
         "explanation": "", 
         "description": "La syntaxe des URL est homog\u00e8ne sur l'ensemble du site", 
         "solution": "", 
-        "thema": "Identification               ", 
+        "thema": "Identification", 
         "name": ""
     }, 
     "15998": {
@@ -2636,7 +2636,7 @@
         "explanation": "", 
         "description": "Les informations relatives \u00e0 l'audience et \u00e0 la fr\u00e9quentation du site sont accompagn\u00e9es de la p\u00e9riode couverte et du mode de mesure.", 
         "solution": "", 
-        "thema": "Identification               ", 
+        "thema": "Identification", 
         "name": ""
     }, 
     "15999": {
@@ -2648,7 +2648,7 @@
         "explanation": "", 
         "description": "La page d'accueil contient des \u00e9l\u00e9ments textuels facilitant le r\u00e9f\u00e9rencement par des moteurs.", 
         "solution": "", 
-        "thema": "Identification               ", 
+        "thema": "Identification", 
         "name": ""
     }, 
     "16000": {
@@ -2660,7 +2660,7 @@
         "explanation": "", 
         "description": "Le site ne propose pas de contenus dupliqu\u00e9s", 
         "solution": "", 
-        "thema": "Identification               ", 
+        "thema": "Identification", 
         "name": ""
     }, 
     "16001": {
@@ -2672,7 +2672,7 @@
         "explanation": "", 
         "description": "Les 65 premiers caract\u00e8res du titre de chaque page permettent d'en identifier le contenu.", 
         "solution": "", 
-        "thema": "Identification               ", 
+        "thema": "Identification", 
         "name": ""
     }, 
     "16002": {
@@ -2684,7 +2684,7 @@
         "explanation": "", 
         "description": "Le code source des pages contient des liens relatifs vers l'auteur, les droits de reproduction, l'accueil et le plan du site", 
         "solution": "", 
-        "thema": "Identification               ", 
+        "thema": "Identification", 
         "name": ""
     }, 
     "16003": {
@@ -2696,7 +2696,7 @@
         "explanation": "", 
         "description": "Les libell\u00e9s des \u00e9l\u00e9ments de formulaire sont coh\u00e9rents sur toutes les pages", 
         "solution": "", 
-        "thema": "Alternatives                 ", 
+        "thema": "Alternatives", 
         "name": ""
     }, 
     "16004": {
@@ -2708,7 +2708,7 @@
         "explanation": "", 
         "description": "Une alternative est propos\u00e9e aux iframes.", 
         "solution": "", 
-        "thema": "Alternatives                 ", 
+        "thema": "Alternatives", 
         "name": ""
     }, 
     "16005": {
@@ -2720,7 +2720,7 @@
         "explanation": "", 
         "description": "Une description \u00e9tendue correctement associ\u00e9e compl\u00e8te l'alternative textuelle des images complexes", 
         "solution": "", 
-        "thema": "Alternatives                 ", 
+        "thema": "Alternatives", 
         "name": ""
     }, 
     "16006": {
@@ -2732,7 +2732,7 @@
         "explanation": "", 
         "description": "Si un contenu est propos\u00e9 sous forme inaccessible, une version alternative accessible est mise \u00e0 disposition", 
         "solution": "", 
-        "thema": "Alternatives                 ", 
+        "thema": "Alternatives", 
         "name": ""
     }, 
     "16007": {
@@ -2744,7 +2744,7 @@
         "explanation": "", 
         "description": "La version alternative d'un contenu en donne une information \u00e9quivalente", 
         "solution": "", 
-        "thema": "Alternatives                 ", 
+        "thema": "Alternatives", 
         "name": ""
     }, 
     "16008": {
@@ -2756,7 +2756,7 @@
         "explanation": "", 
         "description": "Le site ne propose pas d'images cliquables c\u00f4t\u00e9 serveur", 
         "solution": "", 
-        "thema": "Alternatives                 ", 
+        "thema": "Alternatives", 
         "name": ""
     }, 
     "16009": {
@@ -2768,7 +2768,7 @@
         "explanation": "", 
         "description": "Les contenus vid\u00e9o sont dot\u00e9s d'une description audio synchronis\u00e9e", 
         "solution": "", 
-        "thema": "Alternatives                 ", 
+        "thema": "Alternatives", 
         "name": ""
     }, 
     "16010": {
@@ -2780,7 +2780,7 @@
         "explanation": "", 
         "description": "Une limite sup\u00e9rieure est d\u00e9finie, affich\u00e9e et respect\u00e9e pour la longueur des alternatives textuelles des images", 
         "solution": "", 
-        "thema": "Alternatives                 ", 
+        "thema": "Alternatives", 
         "name": ""
     }, 
     "16011": {
@@ -2828,7 +2828,7 @@
         "explanation": "", 
         "description": "Si les messages envoy\u00e9s \u00e0 postmaster@domaine.extension et webmaster@domaine.extension ne sont pas trait\u00e9s, le serveur de mails le signale \u00e0 l'exp\u00e9diteur [VERIFIABLE][FORMULATION][VALEUR AJOUTEE]", 
         "solution": "", 
-        "thema": "Contact                      ", 
+        "thema": "Contact", 
         "name": ""
     }, 
     "16015": {
@@ -2840,7 +2840,7 @@
         "explanation": "", 
         "description": "Une r\u00e9ponse \u00e0 une demande d'information est envoy\u00e9e sous 5 jours ouvr\u00e9s.", 
         "solution": "", 
-        "thema": "Contact                      ", 
+        "thema": "Contact", 
         "name": ""
     }, 
     "16016": {
@@ -2864,7 +2864,7 @@
         "explanation": "", 
         "description": "L'organisation de chaque tableau complexe est explicit\u00e9e", 
         "solution": "", 
-        "thema": "Tableaux                     ", 
+        "thema": "Tableaux", 
         "name": ""
     }, 
     "16018": {
@@ -2900,7 +2900,7 @@
         "explanation": "", 
         "description": "Les fichiers en t\u00e9l\u00e9chargement sont propos\u00e9s dans au moins un format dont les sp\u00e9cifications sont publiques.", 
         "solution": "", 
-        "thema": "Fichiers et multim\u00e9dia       ", 
+        "thema": "Fichiers et multim\u00e9dia", 
         "name": ""
     }, 
     "16021": {
@@ -2912,7 +2912,7 @@
         "explanation": "", 
         "description": "Les noms des fichiers propos\u00e9s sur le site ne comportent pas d'espaces ou de caract\u00e8res sp\u00e9ciaux", 
         "solution": "", 
-        "thema": "Fichiers et multim\u00e9dia       ", 
+        "thema": "Fichiers et multim\u00e9dia", 
         "name": ""
     }, 
     "16022": {
@@ -2924,7 +2924,7 @@
         "explanation": "", 
         "description": "Une limite sup\u00e9rieure est d\u00e9finie, affich\u00e9e et respect\u00e9e pour le poids des pages et les exceptions sont signal\u00e9es", 
         "solution": "", 
-        "thema": "Fichiers et multim\u00e9dia       ", 
+        "thema": "Fichiers et multim\u00e9dia", 
         "name": ""
     }, 
     "16023": {
@@ -2936,7 +2936,7 @@
         "explanation": "", 
         "description": "Les contenus multim\u00e9dias non diffus\u00e9s en direct comportent des sous-titres synchronis\u00e9s", 
         "solution": "", 
-        "thema": "Fichiers et multim\u00e9dia       ", 
+        "thema": "Fichiers et multim\u00e9dia", 
         "name": ""
     }, 
     "16024": {
@@ -2948,7 +2948,7 @@
         "explanation": "", 
         "description": "Les contenus multim\u00e9dias diffus\u00e9s en direct comportent des sous-titres synchronis\u00e9s", 
         "solution": "", 
-        "thema": "Fichiers et multim\u00e9dia       ", 
+        "thema": "Fichiers et multim\u00e9dia", 
         "name": ""
     }, 
     "16025": {
@@ -2960,7 +2960,7 @@
         "explanation": "", 
         "description": "Les pages proposent un acc\u00e8s \u00e0 une information synth\u00e9tique pour les contenus sonores, visuels, anim\u00e9s et m\u00e9dias synchronis\u00e9s", 
         "solution": "", 
-        "thema": "Fichiers et multim\u00e9dia       ", 
+        "thema": "Fichiers et multim\u00e9dia", 
         "name": ""
     }, 
     "16026": {
@@ -2984,7 +2984,7 @@
         "explanation": "", 
         "description": "Tous les hyperliens externes du site sont valides.", 
         "solution": "", 
-        "thema": "Hyperliens                   ", 
+        "thema": "Hyperliens", 
         "name": ""
     }, 
     "16028": {
@@ -2996,7 +2996,7 @@
         "explanation": "", 
         "description": "L'information principale est donn\u00e9e au d\u00e9but de chaque segment de texte.", 
         "solution": "", 
-        "thema": "Hyperliens                   ", 
+        "thema": "Hyperliens", 
         "name": ""
     }, 
     "16029": {
@@ -3008,7 +3008,7 @@
         "explanation": "", 
         "description": "Les hyperliens contenus dans les tableaux poss\u00e8dent un libell\u00e9 explicite.", 
         "solution": "", 
-        "thema": "Hyperliens                   ", 
+        "thema": "Hyperliens", 
         "name": ""
     }, 
     "16030": {
@@ -3020,7 +3020,7 @@
         "explanation": "", 
         "description": "La version originale des contenus traduits est indiqu\u00e9e", 
         "solution": "", 
-        "thema": "Internationalisation         ", 
+        "thema": "Internationalisation", 
         "name": ""
     }, 
     "16031": {
@@ -3092,7 +3092,7 @@
         "explanation": "", 
         "description": "Le code HTML ne contient pas de commentaires (hors commentaires conditionnels)", 
         "solution": "", 
-        "thema": "Serveur et Performances      ", 
+        "thema": "Serveur et Performances", 
         "name": ""
     }, 
     "16037": {
@@ -3128,7 +3128,7 @@
         "explanation": "", 
         "description": "Le fichier .htaccess n'est pas utilis\u00e9.", 
         "solution": "", 
-        "thema": "Serveur et Performances      ", 
+        "thema": "Serveur et Performances", 
         "name": ""
     }, 
     "16040": {
@@ -3164,7 +3164,7 @@
         "explanation": "", 
         "description": "Les coordonn\u00e9es du whois sont correctes.", 
         "solution": "", 
-        "thema": "Contact                      ", 
+        "thema": "Contact", 
         "name": ""
     }, 
     "16043": {
@@ -3188,7 +3188,7 @@
         "explanation": "", 
         "description": "G\u00e9rer convenablement la mise en cache de tout les composants de la page.", 
         "solution": "", 
-        "thema": "Serveur et Performances      ", 
+        "thema": "Serveur et Performances", 
         "name": ""
     }, 
     "16045": {
@@ -3224,7 +3224,7 @@
         "explanation": "", 
         "description": "Les images de fond sont doubl\u00e9es par une couleur garantie pour le Web.", 
         "solution": "", 
-        "thema": "Pr\u00e9sentation                 ", 
+        "thema": "Pr\u00e9sentation", 
         "name": ""
     }, 
     "16048": {
@@ -3236,7 +3236,7 @@
         "explanation": "", 
         "description": "La zone cliquable de l'hyperlien mesure au moins 2 caract\u00e8res (espaces compris, genre &nbsp;) ou 30px x 10px.", 
         "solution": "", 
-        "thema": "Hyperliens                   ", 
+        "thema": "Hyperliens", 
         "name": ""
     }, 
     "16049": {
@@ -3260,7 +3260,7 @@
         "explanation": "", 
         "description": "Proposer aux internautes de participer \u00e0 l'am\u00e9lioration du site en \u00e9tant pris en compte dans les statistiques d'audience", 
         "solution": "", 
-        "thema": "Identification               ", 
+        "thema": "Identification", 
         "name": ""
     }, 
     "16051": {
@@ -3272,7 +3272,7 @@
         "explanation": "", 
         "description": "Les mots de passe sont saisis sur des formulaires s\u00e9curis\u00e9s.", 
         "solution": "", 
-        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9  ", 
+        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9", 
         "name": ""
     }, 
     "16052": {
@@ -3284,7 +3284,7 @@
         "explanation": "", 
         "description": "Les majuscules sont correctement employ\u00e9es", 
         "solution": "", 
-        "thema": "Pr\u00e9sentation                 ", 
+        "thema": "Pr\u00e9sentation", 
         "name": ""
     }, 
     "16053": {
@@ -3296,7 +3296,7 @@
         "explanation": "", 
         "description": "Le site n'impose pas de changement brusque de luminosit\u00e9.", 
         "solution": "", 
-        "thema": "Pr\u00e9sentation                 ", 
+        "thema": "Pr\u00e9sentation", 
         "name": ""
     }, 
     "16054": {
@@ -3308,7 +3308,7 @@
         "explanation": "", 
         "description": "Les informations de pr\u00e9sentation sont regroup\u00e9es dans une ou plusieurs feuilles de style externes", 
         "solution": "", 
-        "thema": "Pr\u00e9sentation                 ", 
+        "thema": "Pr\u00e9sentation", 
         "name": ""
     }, 
     "16055": {
@@ -3320,7 +3320,7 @@
         "explanation": "", 
         "description": "Le mot de passe est envoy\u00e9 par mail apr\u00e8s sa cr\u00e9ation ou sa modification", 
         "solution": "", 
-        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9  ", 
+        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9", 
         "name": ""
     }, 
     "16056": {
@@ -3332,7 +3332,7 @@
         "explanation": "", 
         "description": "Le serveur est configur\u00e9 pour ne pas renvoyer d'informations sur les versions des logiciels et langages utilis\u00e9s.", 
         "solution": "", 
-        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9  ", 
+        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9", 
         "name": ""
     }, 
     "16057": {
@@ -3344,7 +3344,7 @@
         "explanation": "", 
         "description": "Le serveur est configur\u00e9 pour ne pas renvoyer d'erreurs syst\u00e8me", 
         "solution": "", 
-        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9  ", 
+        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9", 
         "name": ""
     }, 
     "16058": {
@@ -3356,7 +3356,7 @@
         "explanation": "", 
         "description": "La dur\u00e9e et le mode d'archivage des transactions sont sp\u00e9cifi\u00e9s", 
         "solution": "", 
-        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9  ", 
+        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9", 
         "name": ""
     }, 
     "16059": {
@@ -3368,7 +3368,7 @@
         "explanation": "", 
         "description": "Le serveur envoie les informations relatives \u00e0 la politique de confidentialit\u00e9 et de respect de la vie priv\u00e9e.", 
         "solution": "", 
-        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9  ", 
+        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9", 
         "name": ""
     }, 
     "16060": {
@@ -3380,7 +3380,7 @@
         "explanation": "", 
         "description": "La dur\u00e9e de vie des cookies est indiqu\u00e9e", 
         "solution": "", 
-        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9  ", 
+        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9", 
         "name": ""
     }, 
     "16061": {
@@ -3392,7 +3392,7 @@
         "explanation": "", 
         "description": "L'objectif des cookies utilis\u00e9s est signal\u00e9", 
         "solution": "", 
-        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9  ", 
+        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9", 
         "name": ""
     }, 
     "16062": {
@@ -3404,7 +3404,7 @@
         "explanation": "", 
         "description": "Le serveur ou le code des pages pr\u00e9cise la nature des contenus (pr\u00e9sence ou non de contenus \u00e0 caract\u00e8re sexuel, violent, etc).", 
         "solution": "", 
-        "thema": "Serveur et Performances      ", 
+        "thema": "Serveur et Performances", 
         "name": ""
     }, 
     "16063": {
@@ -3416,7 +3416,7 @@
         "explanation": "", 
         "description": "Le serveur envoie une page d'erreur interne 500 personnalis\u00e9e.", 
         "solution": "", 
-        "thema": "Serveur et Performances      ", 
+        "thema": "Serveur et Performances", 
         "name": ""
     }, 
     "16064": {
@@ -3428,7 +3428,7 @@
         "explanation": "", 
         "description": "Les appels aux feuilles de style sont plac\u00e9s avant les contenus", 
         "solution": "", 
-        "thema": "Serveur et Performances      ", 
+        "thema": "Serveur et Performances", 
         "name": ""
     }, 
     "16065": {
@@ -3440,7 +3440,7 @@
         "explanation": "", 
         "description": "Les informations de style sont plac\u00e9es dans des fichers externes aux pages", 
         "solution": "", 
-        "thema": "Serveur et Performances      ", 
+        "thema": "Serveur et Performances", 
         "name": ""
     }, 
     "16066": {
@@ -3452,7 +3452,7 @@
         "explanation": "", 
         "description": "Les appels de scripts ne sont pas dupliqu\u00e9s", 
         "solution": "", 
-        "thema": "Serveur et Performances      ", 
+        "thema": "Serveur et Performances", 
         "name": ""
     }, 
     "16067": {
@@ -3464,7 +3464,7 @@
         "explanation": "", 
         "description": "Les styles sont appel\u00e9s avec des liens et non via des imports", 
         "solution": "", 
-        "thema": "Serveur et Performances      ", 
+        "thema": "Serveur et Performances", 
         "name": ""
     }, 
     "16068": {
@@ -3476,7 +3476,7 @@
         "explanation": "", 
         "description": "La date limite de consommation des denr\u00e9es p\u00e9rissables est indiqu\u00e9e. [NON REALISTE]", 
         "solution": "", 
-        "thema": "E-Commerce                   ", 
+        "thema": "E-Commerce", 
         "name": ""
     }, 
     "16069": {
@@ -3488,7 +3488,7 @@
         "explanation": "", 
         "description": "La charge des frais de retour est indiqu\u00e9e.", 
         "solution": "", 
-        "thema": "E-Commerce                   ", 
+        "thema": "E-Commerce", 
         "name": ""
     }, 
     "16070": {
@@ -3500,7 +3500,7 @@
         "explanation": "", 
         "description": "Les archives de newsletter sont propos\u00e9es au format Web", 
         "solution": "", 
-        "thema": "Newsletter                   ", 
+        "thema": "Newsletter", 
         "name": ""
     }, 
     "16071": {
@@ -3512,7 +3512,7 @@
         "explanation": "", 
         "description": "Le libell\u00e9 des liens pointant vers les fils de syndication en pr\u00e9cise le format", 
         "solution": "", 
-        "thema": "Syndication                  ", 
+        "thema": "Syndication", 
         "name": ""
     }, 
     "16072": {
@@ -3524,7 +3524,7 @@
         "explanation": "", 
         "description": "Le format des fils de syndication est sp\u00e9cifi\u00e9", 
         "solution": "", 
-        "thema": "Syndication                  ", 
+        "thema": "Syndication", 
         "name": ""
     }, 
     "16073": {
@@ -3536,7 +3536,7 @@
         "explanation": "", 
         "description": "Le site ne comporte pas de tableau de donn\u00e9es complexe", 
         "solution": "", 
-        "thema": "Tableaux                     ", 
+        "thema": "Tableaux", 
         "name": ""
     }, 
     "16074": {
@@ -3548,7 +3548,7 @@
         "explanation": "", 
         "description": "Les contenus post\u00e9s via des formulaires sont filtr\u00e9s pour \u00e9viter les injections.", 
         "solution": "", 
-        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9  ", 
+        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9", 
         "name": ""
     }, 
     "16075": {
@@ -3584,7 +3584,7 @@
         "explanation": "", 
         "description": "Minimiser le nombre de requ\u00eates HTTP", 
         "solution": "", 
-        "thema": "Serveur et Performances      ", 
+        "thema": "Serveur et Performances", 
         "name": ""
     }, 
     "16078": {
@@ -3632,7 +3632,7 @@
         "explanation": "", 
         "description": "Les ETag sont d\u00e9sactiv\u00e9s pour tous les composants.", 
         "solution": "", 
-        "thema": "Serveur et Performances      ", 
+        "thema": "Serveur et Performances", 
         "name": ""
     }, 
     "16082": {
@@ -3656,7 +3656,7 @@
         "explanation": "", 
         "description": "Les images sont identifiables par les daltoniens", 
         "solution": "", 
-        "thema": "Alternatives                 ", 
+        "thema": "Alternatives", 
         "name": ""
     }, 
     "16084": {
@@ -3668,7 +3668,7 @@
         "explanation": "", 
         "description": "Les mots de passe g\u00e9n\u00e9r\u00e9s ne comportent que des caract\u00e8res alphanum\u00e9riques sans caract\u00e8res sp\u00e9ciaux.", 
         "solution": "", 
-        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9  ", 
+        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9", 
         "name": ""
     }, 
     "16085": {
@@ -3680,7 +3680,7 @@
         "explanation": "", 
         "description": "Un mot de passe envoy\u00e9 par email doit \u00eatre chang\u00e9 \u00e0 la premi\u00e8re connexion au service", 
         "solution": "", 
-        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9  ", 
+        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9", 
         "name": ""
     }, 
     "16086": {
@@ -3692,7 +3692,7 @@
         "explanation": "", 
         "description": "Le nom du ou des traducteurs est indiqu\u00e9", 
         "solution": "", 
-        "thema": "Internationalisation         ", 
+        "thema": "Internationalisation", 
         "name": ""
     }, 
     "16087": {
@@ -3704,7 +3704,7 @@
         "explanation": "", 
         "description": "Si des mots-cl\u00e9s ou une description sont pr\u00e9sents dans l'ent\u00eate du code de la page, ils sont coh\u00e9rents avec le contenu du site.", 
         "solution": "", 
-        "thema": "Identification               ", 
+        "thema": "Identification", 
         "name": ""
     }, 
     "16088": {
@@ -3728,7 +3728,7 @@
         "explanation": "", 
         "description": "Le site ne fait appel qu'\u00e0 une seule feuille de style provenant du domaine", 
         "solution": "", 
-        "thema": "Serveur et Performances      ", 
+        "thema": "Serveur et Performances", 
         "name": ""
     }, 
     "16090": {
@@ -3740,7 +3740,7 @@
         "explanation": "", 
         "description": "Les r\u00e9ponses AJAX peuvent \u00eatre mises en cache", 
         "solution": "", 
-        "thema": "Serveur et Performances      ", 
+        "thema": "Serveur et Performances", 
         "name": ""
     }, 
     "16091": {
@@ -3752,7 +3752,7 @@
         "explanation": "", 
         "description": "Minimiser les acc\u00e8s au DOM par les scripts", 
         "solution": "", 
-        "thema": "Serveur et Performances      ", 
+        "thema": "Serveur et Performances", 
         "name": ""
     }, 
     "16092": {
@@ -3764,7 +3764,7 @@
         "explanation": "", 
         "description": "Optimiser les s\u00e9lecteurs CSS", 
         "solution": "", 
-        "thema": "Serveur et Performances      ", 
+        "thema": "Serveur et Performances", 
         "name": ""
     }, 
     "16093": {
@@ -3776,7 +3776,7 @@
         "explanation": "", 
         "description": "La date du serveur est correcte", 
         "solution": "", 
-        "thema": "Serveur et Performances      ", 
+        "thema": "Serveur et Performances", 
         "name": ""
     }, 
     "16094": {
@@ -3812,7 +3812,7 @@
         "explanation": "", 
         "description": "L'attribut style n'est pas utilis\u00e9 par les scripts si des classes ou identifiants permettent d'appliquer un style externe.", 
         "solution": "", 
-        "thema": "Pr\u00e9sentation                 ", 
+        "thema": "Pr\u00e9sentation", 
         "name": ""
     }, 
     "16097": {
@@ -3824,7 +3824,7 @@
         "explanation": "", 
         "description": "L'interlignage et l'espacement vertical des paragraphes est au moins de de 1.5 fois la taille de caract\u00e8res.", 
         "solution": "", 
-        "thema": "Pr\u00e9sentation                 ", 
+        "thema": "Pr\u00e9sentation", 
         "name": ""
     }, 
     "16098": {
@@ -3836,7 +3836,7 @@
         "explanation": "", 
         "description": "Les images de fond sont surdimensionn\u00e9es par rapport \u00e0 la zone qu'elle d\u00e9core", 
         "solution": "", 
-        "thema": "Pr\u00e9sentation                 ", 
+        "thema": "Pr\u00e9sentation", 
         "name": ""
     }, 
     "16099": {
@@ -3860,7 +3860,7 @@
         "explanation": "", 
         "description": "Ne pas r\u00e9duire les BP au E-commerce lorsqu'elles sont valables dans un contexte de service public et/ou non marchand en ligne.", 
         "solution": "", 
-        "thema": "E-Commerce                   ", 
+        "thema": "E-Commerce", 
         "name": ""
     }, 
     "16101": {
@@ -3908,7 +3908,7 @@
         "explanation": "", 
         "description": "Les donn\u00e9es personnelles issues des APIs tierces (Facebook, Twitter...) ne sont pas enregistr\u00e9es en base.", 
         "solution": "", 
-        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9  ", 
+        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9", 
         "name": ""
     }, 
     "16105": {
@@ -3920,7 +3920,7 @@
         "explanation": "", 
         "description": "Les alternatives audio aux captchas sont audibles et compr\u00e9hensibles", 
         "solution": "", 
-        "thema": "Alternatives                 ", 
+        "thema": "Alternatives", 
         "name": ""
     }, 
     "16106": {
@@ -3932,7 +3932,7 @@
         "explanation": "", 
         "description": "Le libell\u00e9 d'un hyperlien n'est pas l'hyperlien lui-m\u00eame mais \"du vrai texte\"", 
         "solution": "", 
-        "thema": "Hyperliens                   ", 
+        "thema": "Hyperliens", 
         "name": ""
     }, 
     "16107": {
@@ -3968,7 +3968,7 @@
         "explanation": "", 
         "description": "Les courriels envoy\u00e9s par le site sont r\u00e9dig\u00e9s dans la langue de la page ayant d\u00e9clench\u00e9 l'envoi.", 
         "solution": "", 
-        "thema": "E-Commerce                   ", 
+        "thema": "E-Commerce", 
         "name": ""
     }, 
     "16110": {
@@ -3980,7 +3980,7 @@
         "explanation": "", 
         "description": "Une URL pointant vers un sous domaine ne doit pas commencer par \"www\"", 
         "solution": "", 
-        "thema": "Hyperliens                   ", 
+        "thema": "Hyperliens", 
         "name": ""
     }, 
     "16111": {
@@ -3992,7 +3992,7 @@
         "explanation": "", 
         "description": "L'envoi du mot de passe vers le serveur doit se faire de mani\u00e8re s\u00e9curis\u00e9e \u00e0 l'aide d'un grain de sel unique", 
         "solution": "", 
-        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9  ", 
+        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9", 
         "name": ""
     }, 
     "16112": {
@@ -4004,7 +4004,7 @@
         "explanation": "", 
         "description": "Un contenu upload\u00e9 n'est pas publi\u00e9 sans confirmation", 
         "solution": "", 
-        "thema": "Espaces publics              ", 
+        "thema": "Espaces publics", 
         "name": ""
     }, 
     "16113": {
@@ -4028,7 +4028,7 @@
         "explanation": "", 
         "description": "Les URL internes du site ne contiennent pas d'espaces.", 
         "solution": "", 
-        "thema": "Hyperliens                   ", 
+        "thema": "Hyperliens", 
         "name": ""
     }, 
     "16115": {
@@ -4040,7 +4040,7 @@
         "explanation": "", 
         "description": "Les styles d\u00e9di\u00e9s ne masquent pas \u00e0 l'impression le nom de l'auteur, l'URL, la date ou les droits de copie et de r\u00e9utilisation.", 
         "solution": "", 
-        "thema": "Pr\u00e9sentation                 ", 
+        "thema": "Pr\u00e9sentation", 
         "name": ""
     }, 
     "16116": {
@@ -4076,7 +4076,7 @@
         "explanation": "", 
         "description": "Les \u00e9l\u00e9ments contenu dans le fils de syndications ne sont pas une version tronqu\u00e9e des \u00e9l\u00e9ments associ\u00e9s en ligne.", 
         "solution": "", 
-        "thema": "Syndication                  ", 
+        "thema": "Syndication", 
         "name": ""
     }, 
     "16119": {
@@ -4088,7 +4088,7 @@
         "explanation": "", 
         "description": "Le site est compatible avec tous les navigateurs d\u00e9tenant au moins 5 % de part de march\u00e9", 
         "solution": "", 
-        "thema": "Pr\u00e9sentation                 ", 
+        "thema": "Pr\u00e9sentation", 
         "name": ""
     }, 
     "16120": {
@@ -4160,7 +4160,7 @@
         "explanation": "", 
         "description": "Les pages dont le contenu est issu d'une traduction automatique sont signal\u00e9es comme telles", 
         "solution": "", 
-        "thema": "Internationalisation         ", 
+        "thema": "Internationalisation", 
         "name": ""
     }, 
     "16126": {
@@ -4244,7 +4244,7 @@
         "explanation": "", 
         "description": "L'auteur de chaque article est identifiable", 
         "solution": "", 
-        "thema": "Contact                      ", 
+        "thema": "Contact", 
         "name": ""
     }, 
     "16133": {
@@ -4256,7 +4256,7 @@
         "explanation": "", 
         "description": "Le site ne change pas la page d'accueil par d\u00e9faut de l'utilisateur sans son consentement.", 
         "solution": "", 
-        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9  ", 
+        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9", 
         "name": ""
     }, 
     "16134": {
@@ -4268,7 +4268,7 @@
         "explanation": "", 
         "description": "Le site ne s'ajoute pas aux favoris de l'utilisateur sans son consentement.", 
         "solution": "", 
-        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9  ", 
+        "thema": "S\u00e9curit\u00e9 et confidentialit\u00e9", 
         "name": ""
     }, 
     "16135": {
@@ -4292,7 +4292,7 @@
         "explanation": "", 
         "description": "Le site se limite \u00e0 un seul fichier de script provenant du domaine", 
         "solution": "", 
-        "thema": "Serveur et Performances      ", 
+        "thema": "Serveur et Performances", 
         "name": ""
     }, 
     "16137": {
@@ -4316,7 +4316,7 @@
         "explanation": "", 
         "description": "Les styles et contenus d\u00e9di\u00e9s aux terminaux mobiles permettent un rendu sans double scroll", 
         "solution": "", 
-        "thema": "Pr\u00e9sentation                 ", 
+        "thema": "Pr\u00e9sentation", 
         "name": ""
     }, 
     "16139": {
@@ -4338,7 +4338,7 @@
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
-        "description": "Toutes les pages indiquent le lien entre le site et une organisation \u00ab&nbsp;m\u00e8re&nbsp;\u00bb au sein de laquelle travaillent des experts du domaine.", 
+        "description": "Toutes les pages indiquent le lien entre le site et une organisation \u00ab m\u00e8re \u00bb au sein de laquelle travaillent des experts du domaine.", 
         "solution": "", 
         "thema": "", 
         "name": ""
@@ -4484,7 +4484,7 @@
         "explanation": "", 
         "description": "Si le site propose une interface et/ou des contenus en plusieurs langues, l'utilisateur peut d\u00e9finir ses pr\u00e9f\u00e9rences linguistiques pour adapter le site \u00e0 ses comp\u00e9tences.", 
         "solution": "", 
-        "thema": "Internationalisation         ", 
+        "thema": "Internationalisation", 
         "name": ""
     }, 
     "16153": {
@@ -4496,7 +4496,7 @@
         "explanation": "", 
         "description": "La langue affich\u00e9e correspond \u00e0 celle mentionn\u00e9e par l'agent utilisateur [DOUBLON-218]", 
         "solution": "", 
-        "thema": "Internationalisation         ", 
+        "thema": "Internationalisation", 
         "name": ""
     }, 
     "16154": {
@@ -4508,7 +4508,7 @@
         "explanation": "", 
         "description": "Les titres, libell\u00e9s et contenus alternatifs sont traduits dans la langue de la page.", 
         "solution": "", 
-        "thema": "Internationalisation         ", 
+        "thema": "Internationalisation", 
         "name": ""
     }, 
     "16155": {
@@ -4520,7 +4520,7 @@
         "explanation": "", 
         "description": "La langue et le pays de l'utilisateur sont dissoci\u00e9s (ex: Suisse). Les langues ne sont pas affich\u00e9es par l'interm\u00e9diaire d'un drapeau.", 
         "solution": "", 
-        "thema": "Internationalisation         ", 
+        "thema": "Internationalisation", 
         "name": ""
     }, 
     "16156": {
@@ -4544,7 +4544,7 @@
         "explanation": "", 
         "description": "Lorsque plusieurs moyens de contact du m\u00eame type sont propos\u00e9s, une distinction est pr\u00e9cis\u00e9e", 
         "solution": "", 
-        "thema": "Contact                      ", 
+        "thema": "Contact", 
         "name": ""
     }, 
     "16158": {
@@ -4556,7 +4556,7 @@
         "explanation": "", 
         "description": "Le site propos\u00e9 une favicon adapt\u00e9e au p\u00e9riph\u00e9rique employ\u00e9.", 
         "solution": "", 
-        "thema": "Identification               ", 
+        "thema": "Identification", 
         "name": ""
     }, 
     "16159": {
@@ -4604,7 +4604,7 @@
         "explanation": "", 
         "description": "Les informations relatives \u00e0 la zone de livraison des produits ou de r\u00e9alisation des services sont envoy\u00e9s par e-mail dans les 60 minutes suivant la validation [DOUBLON-260]", 
         "solution": "", 
-        "thema": "E-Commerce                   ", 
+        "thema": "E-Commerce", 
         "name": ""
     }, 
     "16163": {
@@ -4616,7 +4616,7 @@
         "explanation": "", 
         "description": "La conversion d'une image au format \"jpeg\" vers le format \"png\" ne produit pas un fichier de poids inf\u00e9rieur.", 
         "solution": "", 
-        "thema": "Serveur et Performances      ", 
+        "thema": "Serveur et Performances", 
         "name": ""
     }, 
     "16164": {
@@ -4628,7 +4628,7 @@
         "explanation": "", 
         "description": "Le serveur envoie une page d'autorisation 401 personnalis\u00e9e.", 
         "solution": "", 
-        "thema": "Serveur et Performances      ", 
+        "thema": "Serveur et Performances", 
         "name": ""
     }, 
     "16165": {
@@ -4640,7 +4640,7 @@
         "explanation": "", 
         "description": "Les sprites css ne contiennent pas d'images non utilis\u00e9es", 
         "solution": "", 
-        "thema": "Serveur et Performances      ", 
+        "thema": "Serveur et Performances", 
         "name": ""
     }, 
     "16166": {
@@ -4676,7 +4676,7 @@
         "explanation": "", 
         "description": "Les liens affich\u00e9s sous forme d'url sont explicites", 
         "solution": "", 
-        "thema": "Hyperliens                   ", 
+        "thema": "Hyperliens", 
         "name": ""
     }, 
     "16169": {

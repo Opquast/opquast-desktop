@@ -1,13 +1,13 @@
 {
     "500": {
-        "goal": "    * Permettre la navigation et la consultation pour les utilisateurs plac\u00e9s dans des contextes o\u00f9 les images ne sont pas perceptibles (navigateurs texte, lecteur d'\u00e9cran, images d\u00e9sactiv\u00e9es)\n    * Permettre aux robots d'exploiter l'information v\u00e9hicul\u00e9e par les images (r\u00e9f\u00e9rencement, traduction automatique)\n    * Permettre l'affichage d'un texte pendant la chargement des images", 
+        "goal": "* Permettre la navigation et la consultation pour les utilisateurs plac\u00e9s dans des contextes o\u00f9 les images ne sont pas perceptibles (navigateurs texte, lecteur d'\u00e9cran, images d\u00e9sactiv\u00e9es)\n    * Permettre aux robots d'exploiter l'information v\u00e9hicul\u00e9e par les images (r\u00e9f\u00e9rencement, traduction automatique)\n    * Permettre l'affichage d'un texte pendant la chargement des images", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "Every image is provided with a proper alternative text", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Alternatives", 
         "name": "1"
     }, 
@@ -19,7 +19,7 @@
         }, 
         "explanation": "", 
         "description": "The page's source code begins with a Document Type Declaration (DTD) whose syntax is one of those recommended by the W3C", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Code", 
         "name": "2"
     }, 
@@ -31,7 +31,7 @@
         }, 
         "explanation": "", 
         "description": "Each page's content is organised according to a hierarchical heading and sub-heading structure", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Code", 
         "name": "3"
     }, 
@@ -43,7 +43,7 @@
         }, 
         "explanation": "", 
         "description": "The site forces no redirection or automatic refresh on the client side", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Code", 
         "name": "4"
     }, 
@@ -67,7 +67,7 @@
         }, 
         "explanation": "", 
         "description": "Dates are presented in an explicit format", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Code", 
         "name": "6"
     }, 
@@ -79,8 +79,8 @@
         }, 
         "explanation": "", 
         "description": "The site provides at least one means of contact", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Contact                      ", 
+        "solution": "[Cad]-01", 
+        "thema": "Contact", 
         "name": "7"
     }, 
     "507": {
@@ -92,7 +92,7 @@
         "explanation": "", 
         "description": "Mail and phone information about local agencies or headquarters of companies and organisations are provided", 
         "solution": "<p>Les coordonn\u00e9es postales et t\u00e9l\u00e9phoniques peuvent \u00eatre indiqu\u00e9es tout aussi bien&nbsp;:</p><ul>\n<li>Sur une page unique de type Mentions l\u00e9gales, \u00c0 propos ou Contact ;</li>\n\t\t\t\t\t<li>De mani\u00e8re r\u00e9p\u00e9t\u00e9e et syst\u00e9matique dans les pieds de page du site.</li>\n\t\t\t\t</ul>", 
-        "thema": "Contact                      ", 
+        "thema": "Contact", 
         "name": "8"
     }, 
     "508": {
@@ -103,7 +103,7 @@
         }, 
         "explanation": "", 
         "description": "Each page provides a title that enables one to identify its content", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Contents", 
         "name": "9"
     }, 
@@ -115,7 +115,7 @@
         }, 
         "explanation": "", 
         "description": "Information in regard to the right to copy and reuse are available from all pages", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Contents", 
         "name": "10"
     }, 
@@ -127,44 +127,44 @@
         }, 
         "explanation": "", 
         "description": "Advertisement or sponsored contents are identified as such", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Contents", 
         "name": "11"
     }, 
     "511": {
-        "goal": "Permettre aux utilisateurs d'identifier le site dans les onglets, dans les favoris, dans la fen\u00eatre du navigateur ou dans les lecteurs d'\u00e9cran.\r\n", 
+        "goal": "Permettre aux utilisateurs d'identifier le site dans les onglets, dans les favoris, dans la fen\u00eatre du navigateur ou dans les lecteurs d'\u00e9cran.", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "Each page provides a title that enables one to identify the site", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Contents", 
         "name": "12"
     }, 
     "512": {
-        "goal": "permet aux utilisateurs d'indentifier le montant total qu'il aura \u00e0 payer et les diff\u00e9rentes composantes de ce montant. ", 
+        "goal": "permet aux utilisateurs d'indentifier le montant total qu'il aura \u00e0 payer et les diff\u00e9rentes composantes de ce montant.", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "Financing conditions (global credit cost, conditions, reservations, agreement delays) are indicated", 
-        "solution": "[Cad]-01 ", 
-        "thema": "E-Commerce                   ", 
+        "solution": "[Cad]-01", 
+        "thema": "E-Commerce", 
         "name": "13"
     }, 
     "513": {
-        "goal": "permet aux utilisateurs d'identifier la date r\u00e9elle \u00e0 laquelle le bien command\u00e9 sera effectivement en leur possession ", 
+        "goal": "permet aux utilisateurs d'identifier la date r\u00e9elle \u00e0 laquelle le bien command\u00e9 sera effectivement en leur possession", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "Estimated delivery date is indicated before final order placement", 
-        "solution": "[Cad]-01 ", 
-        "thema": "E-Commerce                   ", 
+        "solution": "[Cad]-01", 
+        "thema": "E-Commerce", 
         "name": "14"
     }, 
     "514": {
@@ -175,8 +175,8 @@
         }, 
         "explanation": "", 
         "description": "Sale and use terms and conditions can be reached from every page", 
-        "solution": "[Cad]-01 ", 
-        "thema": "E-Commerce                   ", 
+        "solution": "[Cad]-01", 
+        "thema": "E-Commerce", 
         "name": "15"
     }, 
     "515": {
@@ -187,32 +187,32 @@
         }, 
         "explanation": "", 
         "description": "The legal registration number delivered to companies or organisations in their original country is indicated", 
-        "solution": "[Cad]-01 ", 
-        "thema": "E-Commerce                   ", 
+        "solution": "[Cad]-01", 
+        "thema": "E-Commerce", 
         "name": "16"
     }, 
     "516": {
-        "goal": "permet aux utilisateurs d'identifier pr\u00e9cis\u00e9ment la nature et les sp\u00e9cifications des produits propos\u00e9s ", 
+        "goal": "permet aux utilisateurs d'identifier pr\u00e9cis\u00e9ment la nature et les sp\u00e9cifications des produits propos\u00e9s", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "The nature and quantifiable characteristics of products and services (dimensions, duration, countenance, etc.) are indicated", 
-        "solution": "[Cad]-01 ", 
-        "thema": "E-Commerce                   ", 
+        "solution": "[Cad]-01", 
+        "thema": "E-Commerce", 
         "name": "17"
     }, 
     "517": {
-        "goal": "permet d'anticiper d'\u00e9ventuelles difficult\u00e9s et une augmentation du d\u00e9lai de livraison ", 
+        "goal": "permet d'anticiper d'\u00e9ventuelles difficult\u00e9s et une augmentation du d\u00e9lai de livraison", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "The availability of products is indicated before the final order submission", 
-        "solution": "[Cad]-01 ", 
-        "thema": "E-Commerce                   ", 
+        "solution": "[Cad]-01", 
+        "thema": "E-Commerce", 
         "name": "18"
     }, 
     "518": {
@@ -223,44 +223,44 @@
         }, 
         "explanation": "", 
         "description": "Prices displayed show the details of taxes and possible additional costs, as well as the price excluding taxes", 
-        "solution": "[Cad]-01 ", 
-        "thema": "E-Commerce                   ", 
+        "solution": "[Cad]-01", 
+        "thema": "E-Commerce", 
         "name": "19"
     }, 
     "519": {
-        "goal": "permet aux utilisateurs d'identifier la p\u00e9riode au cours de laquelle ils peuvent b\u00e9n\u00e9ficier des offres propos\u00e9es ", 
+        "goal": "permet aux utilisateurs d'identifier la p\u00e9riode au cours de laquelle ils peuvent b\u00e9n\u00e9ficier des offres propos\u00e9es", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "The period and conditions of availability for special offers are indicated", 
-        "solution": "[Cad]-01 ", 
-        "thema": "E-Commerce                   ", 
+        "solution": "[Cad]-01", 
+        "thema": "E-Commerce", 
         "name": "20"
     }, 
     "520": {
-        "goal": "permettre \u00e0 l'utilisateur de modifier facilement sa commande ", 
+        "goal": "permettre \u00e0 l'utilisateur de modifier facilement sa commande", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "Modifying each article's quantity, adding and deleting one or more articles is still possible as long as the order has not been definitely placed", 
-        "solution": "[Cad]-01 ", 
-        "thema": "E-Commerce                   ", 
+        "solution": "[Cad]-01", 
+        "thema": "E-Commerce", 
         "name": "21"
     }, 
     "521": {
-        "goal": "permettre \u00e0 l'utilisateur de conna\u00eetre le d\u00e9tail du montant de sa commande\nlever un frein \u00e0 la validation d'une commande ", 
+        "goal": "permettre \u00e0 l'utilisateur de conna\u00eetre le d\u00e9tail du montant de sa commande\nlever un frein \u00e0 la validation d'une commande", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "The detailed subtotal (quantities, amount, expenses, insurance, etc.) is indicated before final order placement", 
-        "solution": "[Cad]-01 ", 
-        "thema": "E-Commerce                   ", 
+        "solution": "[Cad]-01", 
+        "thema": "E-Commerce", 
         "name": "22"
     }, 
     "522": {
@@ -270,45 +270,45 @@
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
-        "description": "Accepted payment means are indicated, as well as procedures for each of them ", 
-        "solution": "[Cad]-01 ", 
-        "thema": "E-Commerce                   ", 
+        "description": "Accepted payment means are indicated, as well as procedures for each of them", 
+        "solution": "[Cad]-01", 
+        "thema": "E-Commerce", 
         "name": "23"
     }, 
     "523": {
-        "goal": "permet aux utilisateurs d'identifier pr\u00e9cis\u00e9ment la nature des services associ\u00e9s et leur co\u00fbt ", 
+        "goal": "permet aux utilisateurs d'identifier pr\u00e9cis\u00e9ment la nature des services associ\u00e9s et leur co\u00fbt", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "Conditions of guarantee (duration, options, extensions, prices, restrictions, etc.) are indicated", 
-        "solution": "[Cad]-01 ", 
-        "thema": "E-Commerce                   ", 
+        "solution": "[Cad]-01", 
+        "thema": "E-Commerce", 
         "name": "24"
     }, 
     "524": {
-        "goal": "permet aux utilisateurs de conna\u00eetre les conditions d'assistance en cas de difficult\u00e9 ", 
+        "goal": "permet aux utilisateurs de conna\u00eetre les conditions d'assistance en cas de difficult\u00e9", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "Customer support service conditions (prices, opening hours, means of contact, etc.) are indicated", 
-        "solution": "[Cad]-01 ", 
-        "thema": "E-Commerce                   ", 
+        "solution": "[Cad]-01", 
+        "thema": "E-Commerce", 
         "name": "25"
     }, 
     "525": {
-        "goal": "permet aux utilisateurs de faire livrer un achat sur le lieu de son choix ", 
+        "goal": "permet aux utilisateurs de faire livrer un achat sur le lieu de son choix", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "Different shipping and billing addresses can be specified", 
-        "solution": "[Cad]-01 ", 
-        "thema": "E-Commerce                   ", 
+        "solution": "[Cad]-01", 
+        "thema": "E-Commerce", 
         "name": "26"
     }, 
     "526": {
@@ -319,8 +319,8 @@
         }, 
         "explanation": "", 
         "description": "Information about zones of product or service delivery are indicated", 
-        "solution": "[Cad]-01 ", 
-        "thema": "E-Commerce                   ", 
+        "solution": "[Cad]-01", 
+        "thema": "E-Commerce", 
         "name": "27"
     }, 
     "527": {
@@ -332,19 +332,19 @@
         "explanation": "", 
         "description": "No additional product or service is added to the shopping cart without customer action", 
         "solution": "<p>N'inclure dans le panier de l'utilisateur que des produits ou services qu'il a explicitement s\u00e9lectionn\u00e9s.</p>", 
-        "thema": "E-Commerce                   ", 
+        "thema": "E-Commerce", 
         "name": "28"
     }, 
     "528": {
-        "goal": "permet aux utilisateurs de signaler des abus et de faire effectuer des corrections ", 
+        "goal": "permet aux utilisateurs de signaler des abus et de faire effectuer des corrections", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "The site provides at least one means of contacting the moderator of public spaces", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Public spaces          ", 
+        "solution": "[Cad]-01", 
+        "thema": "Public spaces", 
         "name": "29"
     }, 
     "529": {
@@ -391,7 +391,7 @@
         }, 
         "explanation": "", 
         "description": "The format of downloadable files is  indicated", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Files and multimedia", 
         "name": "33"
     }, 
@@ -408,14 +408,14 @@
         "name": "34"
     }, 
     "534": {
-        "goal": "    * faciliter la compr\u00e9hension des donn\u00e9es attendues dans les formulaires\n    * faciliter la saisie en permettant de s\u00e9lectionner l'\u00e9tiquette plut\u00f4t que la case \u00e0 cocher ou le bouton radio", 
+        "goal": "* faciliter la compr\u00e9hension des donn\u00e9es attendues dans les formulaires\n    * faciliter la saisie en permettant de s\u00e9lectionner l'\u00e9tiquette plut\u00f4t que la case \u00e0 cocher ou le bouton radio", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "Each form field is associated with its own label in the source code", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Forms", 
         "name": "35"
     }, 
@@ -427,19 +427,19 @@
         }, 
         "explanation": "", 
         "description": "In the case when data entered in a form were rejected, the fields containing the rejected data are indicated to the user", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Forms", 
         "name": "36"
     }, 
     "536": {
-        "goal": "    * Donner de la visibilit\u00e9 \u00e0 l'utilisateur (temps, informations n\u00e9cessaires, etc.)\n    * \u00c9viter que l'utilisateur ne se sente pi\u00e9g\u00e9 dans un processus qu'il n'avait pas pr\u00e9vu", 
+        "goal": "* Donner de la visibilit\u00e9 \u00e0 l'utilisateur (temps, informations n\u00e9cessaires, etc.)\n    * \u00c9viter que l'utilisateur ne se sente pi\u00e9g\u00e9 dans un processus qu'il n'avait pas pr\u00e9vu", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "Complex processes are provided with a list of steps", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Forms", 
         "name": "37"
     }, 
@@ -451,19 +451,19 @@
         }, 
         "explanation": "", 
         "description": "The current step in a process is indicated", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Forms", 
         "name": "38"
     }, 
     "538": {
-        "goal": "    * Permettre aux utilisateurs de savoir \u00e0 l'avance si un champ est obligatoire\n    * Pr\u00e9venir les erreurs avant qu'elles ne surviennent", 
+        "goal": "* Permettre aux utilisateurs de savoir \u00e0 l'avance si un champ est obligatoire\n    * Pr\u00e9venir les erreurs avant qu'elles ne surviennent", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "The label of each form field indicates if input is mandatory", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Forms", 
         "name": "39"
     }, 
@@ -475,56 +475,56 @@
         }, 
         "explanation": "", 
         "description": "The page displayed after form submission must enable the user to navigate straight away", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Forms", 
         "name": "40"
     }, 
     "540": {
-        "goal": "    * \u00c9viter aux utilisateurs d'avoir par exemple l'URL du lien en guise de libell\u00e9 dans une aide technique, celle-ci \u00e9tant contrainte \u00e0 trouver dans le code de la page une information \u00e0 donner en guise de libell\u00e9 vide\n    * \u00c9viter aux utilisateurs de ne pas acc\u00e9der au lien lorsque CSS est d\u00e9sactiv\u00e9 dans un navigateur graphique.", 
+        "goal": "* \u00c9viter aux utilisateurs d'avoir par exemple l'URL du lien en guise de libell\u00e9 dans une aide technique, celle-ci \u00e9tant contrainte \u00e0 trouver dans le code de la page une information \u00e0 donner en guise de libell\u00e9 vide\n    * \u00c9viter aux utilisateurs de ne pas acc\u00e9der au lien lorsque CSS est d\u00e9sactiv\u00e9 dans un navigateur graphique.", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "Each link has a proper label in the source code", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Hyperlinks                   ", 
+        "solution": "[Cad]-01", 
+        "thema": "Hyperlinks", 
         "name": "41"
     }, 
     "541": {
-        "goal": "    * Eviter les clics inutiles sur des contenus soulign\u00e9s per\u00e7us comme des hyperliens\n    * Faciliter l'identification des liens", 
+        "goal": "* Eviter les clics inutiles sur des contenus soulign\u00e9s per\u00e7us comme des hyperliens\n    * Faciliter l'identification des liens", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "Underlining cannot be used for other elements than hyperlinks", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Hyperlinks                   ", 
+        "solution": "[Cad]-01", 
+        "thema": "Hyperlinks", 
         "name": "42"
     }, 
     "542": {
-        "goal": "permet aux utilisateurs d'identifier facilement les liens ", 
+        "goal": "permet aux utilisateurs d'identifier facilement les liens", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "Hyperlinks are visually differentiated from the rest of the content", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Hyperlinks                   ", 
+        "solution": "[Cad]-01", 
+        "thema": "Hyperlinks", 
         "name": "43"
     }, 
     "543": {
-        "goal": "    * Permettre \u00e0 l'utilisateur d'identifier directement l'auteur (au sens large)\n    * Limiter les risques de d\u00e9fiance", 
+        "goal": "* Permettre \u00e0 l'utilisateur d'identifier directement l'auteur (au sens large)\n    * Limiter les risques de d\u00e9fiance", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "The identity of the person or of the service responsible for the contents is provided", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Identification               ", 
+        "solution": "[Cad]-01", 
+        "thema": "Identification", 
         "name": "44"
     }, 
     "544": {
@@ -535,8 +535,8 @@
         }, 
         "explanation": "", 
         "description": "The site's name and/or the author's name are provided on each page", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Identification               ", 
+        "solution": "[Cad]-01", 
+        "thema": "Identification", 
         "name": "45"
     }, 
     "545": {
@@ -547,8 +547,8 @@
         }, 
         "explanation": "", 
         "description": "The identity of the author, the company or the organisation is provided", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Identification               ", 
+        "solution": "[Cad]-01", 
+        "thema": "Identification", 
         "name": "46"
     }, 
     "546": {
@@ -559,8 +559,8 @@
         }, 
         "explanation": "", 
         "description": "The home page explains the nature of contents and services provided", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Identification               ", 
+        "solution": "[Cad]-01", 
+        "thema": "Identification", 
         "name": "47"
     }, 
     "547": {
@@ -571,8 +571,8 @@
         }, 
         "explanation": "", 
         "description": "If the site is restricted or destined to a specific public, this public is mentioned at least on the home page", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Identification               ", 
+        "solution": "[Cad]-01", 
+        "thema": "Identification", 
         "name": "48"
     }, 
     "548": {
@@ -583,8 +583,8 @@
         }, 
         "explanation": "", 
         "description": "Each page's source code specifies the content's main language", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Internationalization         ", 
+        "solution": "[Cad]-01", 
+        "thema": "Internationalization", 
         "name": "49"
     }, 
     "549": {
@@ -595,8 +595,8 @@
         }, 
         "explanation": "", 
         "description": "The country is mentioned in all post addresses", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Internationalization         ", 
+        "solution": "[Cad]-01", 
+        "thema": "Internationalization", 
         "name": "50"
     }, 
     "550": {
@@ -607,19 +607,19 @@
         }, 
         "explanation": "", 
         "description": "Each phone number is provided in an international format", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Internationalization         ", 
+        "solution": "[Cad]-01", 
+        "thema": "Internationalization", 
         "name": "51"
     }, 
     "551": {
-        "goal": "am\u00e9liorer la consultation et la navigation pour les personnes handicap\u00e9es\n\u00e9viter les probl\u00e8mes d'impression ou de mise en favoris\nam\u00e9liorer le r\u00e9f\u00e9rencement en \u00e9vitant l'indexation de pages orphelines ", 
+        "goal": "am\u00e9liorer la consultation et la navigation pour les personnes handicap\u00e9es\n\u00e9viter les probl\u00e8mes d'impression ou de mise en favoris\nam\u00e9liorer le r\u00e9f\u00e9rencement en \u00e9vitant l'indexation de pages orphelines", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "The site does not use framesets", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Navigation", 
         "name": "52"
     }, 
@@ -631,7 +631,7 @@
         }, 
         "explanation": "", 
         "description": "Iframes have an explicit title attribute", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Navigation", 
         "name": "53"
     }, 
@@ -643,31 +643,31 @@
         }, 
         "explanation": "", 
         "description": "If all the pages in a site cannot be reached directly from the home page, then a site map can be reached from each page", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Navigation", 
         "name": "54"
     }, 
     "554": {
-        "goal": "Permettre \u00e0 l'utilisateur de d\u00e9terminer ", 
+        "goal": "Permettre \u00e0 l'utilisateur de d\u00e9terminer", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "Each page gives information as to where it is located in the site's hierarchy", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Navigation", 
         "name": "55"
     }, 
     "555": {
-        "goal": "    * Permettre aux utilisateurs de revenir en page d'accueil en cas de d\u00e9sorientation\n    * Identifier le lien principal permettant d'acc\u00e9der au site", 
+        "goal": "* Permettre aux utilisateurs de revenir en page d'accueil en cas de d\u00e9sorientation\n    * Identifier le lien principal permettant d'acc\u00e9der au site", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "It is possible to go back to the home page from any page", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Navigation", 
         "name": "56"
     }, 
@@ -691,7 +691,7 @@
         }, 
         "explanation": "", 
         "description": "Keyboard focus is neither removed nor hidden", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Navigation", 
         "name": "58"
     }, 
@@ -708,26 +708,26 @@
         "name": "59"
     }, 
     "559": {
-        "goal": "permet \u00e0 l'utilisateur de naviguer sur le site sans avoir d'op\u00e9ration sp\u00e9cifique \u00e0 effectuer pendant la navigation ", 
+        "goal": "permet \u00e0 l'utilisateur de naviguer sur le site sans avoir d'op\u00e9ration sp\u00e9cifique \u00e0 effectuer pendant la navigation", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "Navigating the site does not open any popup window", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Navigation", 
         "name": "60"
     }, 
     "560": {
-        "goal": "Eviter des clics inutiles aux utilisateurs. Limiter la bande passante. proposer du contenu \u00e0 valeur ajout\u00e9e ", 
+        "goal": "Eviter des clics inutiles aux utilisateurs. Limiter la bande passante. proposer du contenu \u00e0 valeur ajout\u00e9e", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "The site does not contain any link to pages under construction", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Navigation", 
         "name": "61"
     }, 
@@ -756,15 +756,15 @@
         "name": "63"
     }, 
     "563": {
-        "goal": "permettre aux abonn\u00e9s de ne plus recevoir une newsletter ", 
+        "goal": "permettre aux abonn\u00e9s de ne plus recevoir une newsletter", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "An 'unsubscribe' link is provided in each newsletter", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Newsletter                   ", 
+        "solution": "[Cad]-01", 
+        "thema": "Newsletter", 
         "name": "64"
     }, 
     "564": {
@@ -776,19 +776,19 @@
         "explanation": "", 
         "description": "The \u201cto\u201d field in a newsletter shows only the recipient's address (or, alternatively, a generic email address created by the sender)", 
         "solution": "<p>N'effectuer d'envoi group\u00e9 de newsletters qu'en mettant les destinataires dans le champ CCI.</p><p>Ou ne pas effectuer d'envoi group\u00e9.</p>", 
-        "thema": "Newsletter                   ", 
+        "thema": "Newsletter", 
         "name": "65"
     }, 
     "565": {
-        "goal": "\u00e9viter l'inscription \u00e0 une newsletter par un tiers usurpant une identit\u00e9\nv\u00e9rifier que l'adresse e-mail a \u00e9t\u00e9 saisie sans erreur ", 
+        "goal": "\u00e9viter l'inscription \u00e0 une newsletter par un tiers usurpant une identit\u00e9\nv\u00e9rifier que l'adresse e-mail a \u00e9t\u00e9 saisie sans erreur", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "Subscribing to newsletters is subjected to a prior confirmation process", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Newsletter                   ", 
+        "solution": "[Cad]-01", 
+        "thema": "Newsletter", 
         "name": "66"
     }, 
     "566": {
@@ -799,8 +799,8 @@
         }, 
         "explanation": "", 
         "description": "The design is consistent all over the site", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Presentation              ", 
+        "solution": "[Cad]-01", 
+        "thema": "Presentation", 
         "name": "67"
     }, 
     "567": {
@@ -840,63 +840,63 @@
         "name": "70"
     }, 
     "570": {
-        "goal": "contribuer \u00e0 l'information des utilisateurs sur la s\u00e9curisation des \u00e9changes de donn\u00e9es sensibles ", 
+        "goal": "contribuer \u00e0 l'information des utilisateurs sur la s\u00e9curisation des \u00e9changes de donn\u00e9es sensibles", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "Information relative to transaction security are provided", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Security and privacy", 
         "name": "71"
     }, 
     "571": {
-        "goal": "permet de fournir aux utilisateurs des informations sur les partenaires tiers impliqu\u00e9s dans la transaction. ", 
+        "goal": "permet de fournir aux utilisateurs des informations sur les partenaires tiers impliqu\u00e9s dans la transaction.", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "The identity of third-parties involved in transactions is provided", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Security and privacy", 
         "name": "72"
     }, 
     "572": {
-        "goal": "permet aux utilisateurs de conna\u00eetre la validit\u00e9 du certificat et contribue \u00e0 la s\u00e9curisation de la transaction ", 
+        "goal": "permet aux utilisateurs de conna\u00eetre la validit\u00e9 du certificat et contribue \u00e0 la s\u00e9curisation de la transaction", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "Security certificates are signed and currently valid", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Security and privacy", 
         "name": "73"
     }, 
     "573": {
-        "goal": "permet aux utilisateurs de conna\u00eetre les conditions de conservation de leurs donn\u00e9es personnelles ", 
+        "goal": "permet aux utilisateurs de conna\u00eetre les conditions de conservation de leurs donn\u00e9es personnelles", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "The privacy policy can be reached from any page", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Security and privacy", 
         "name": "74"
     }, 
     "574": {
-        "goal": "Permet au navigateur de choisir le bon encodage des caract\u00e8res pour afficher la page. ", 
+        "goal": "Permet au navigateur de choisir le bon encodage des caract\u00e8res pour afficher la page.", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "Headers sent by the server contain information pertaining to the character set used", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Server and performance     ", 
+        "solution": "[Cad]-01", 
+        "thema": "Server and performance", 
         "name": "75"
     }, 
     "575": {
@@ -907,20 +907,20 @@
         }, 
         "explanation": "", 
         "description": "The server sends information to enable the caching of contents", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Server and performance     ", 
+        "solution": "[Cad]-01", 
+        "thema": "Server and performance", 
         "name": "76"
     }, 
     "576": {
-        "goal": "permet aux utilisateurs de rejoindre la page d'accueil du site m\u00eame lorsqu'il oublie de taper le pr\u00e9fixe WWW ", 
+        "goal": "permet aux utilisateurs de rejoindre la page d'accueil du site m\u00eame lorsqu'il oublie de taper le pr\u00e9fixe WWW", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "The address of the site and of its subdomains works with and without a www prefix", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Server and performance     ", 
+        "solution": "[Cad]-01", 
+        "thema": "Server and performance", 
         "name": "77"
     }, 
     "577": {
@@ -931,8 +931,8 @@
         }, 
         "explanation": "", 
         "description": "The server sends a personalised 404 Not found error page", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Server and performance     ", 
+        "solution": "[Cad]-01", 
+        "thema": "Server and performance", 
         "name": "78"
     }, 
     "578": {
@@ -944,7 +944,7 @@
         "explanation": "", 
         "description": "The server sends a 404 HTTP error code for resources not found", 
         "solution": "<p>Modifier la configuration du serveur web pour renvoyer l'utilisateur vers une page personnalis\u00e9e lorsque la ressource demand\u00e9e n'existe pas.</p><p>Si la configuration principale du serveur n'est pas directement accessible et si l'environnement le permet, utiliser une configuration locale par r\u00e9pertoire. Par exemple, l'environnement Apache autorise la cr\u00e9ation d'un fichier <code>.htaccess</code> contenant des directives relatives aux traitements des erreurs : <code>ErrorDocument 404 /mapage.html</code>.</p>", 
-        "thema": "Server and performance     ", 
+        "thema": "Server and performance", 
         "name": "79"
     }, 
     "579": {
@@ -956,19 +956,19 @@
         "explanation": "", 
         "description": "The server compresses contents if the client accepts compressed contents", 
         "solution": "<p>Activer le module Gzip ou Deflate du serveur pour compresser les ressources Javascript, CSS et HTML.</p>", 
-        "thema": "Server and performance     ", 
+        "thema": "Server and performance", 
         "name": "80"
     }, 
     "580": {
-        "goal": "permettre aux utilisateurs de configurer la fr\u00e9quence \u00e0 laquelle leurs outils consultent le fil de syndication\nr\u00e9duire la charge du serveur ", 
+        "goal": "permettre aux utilisateurs de configurer la fr\u00e9quence \u00e0 laquelle leurs outils consultent le fil de syndication\nr\u00e9duire la charge du serveur", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "The source code of syndication feeds indicates their update frequency", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Syndication                  ", 
+        "solution": "[Cad]-01", 
+        "thema": "Syndication", 
         "name": "81"
     }, 
     "581": {
@@ -979,8 +979,8 @@
         }, 
         "explanation": "", 
         "description": "Hyperlinks in syndication feeds are absolute", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Syndication                  ", 
+        "solution": "[Cad]-01", 
+        "thema": "Syndication", 
         "name": "82"
     }, 
     "582": {
@@ -992,7 +992,7 @@
         "explanation": "", 
         "description": "Syndication feeds can be detected by user agents", 
         "solution": "<p>Indiquer les fils RSS dans la section <code>head</code> de la page, \u00e0 l'aide d'un \u00e9l\u00e9ment <code>link</code> du type&nbsp;:</p><p>&lt;link title=&quot;La bonne pratique du jour&quot; href=&quot;https://checklists.opquast.com/dailybp/feed&quot; type=&quot;application/rss+xml&quot; rel=&quot;alternate&quot;&gt;.</p>", 
-        "thema": "Syndication                  ", 
+        "thema": "Syndication", 
         "name": "83"
     }, 
     "583": {
@@ -1003,8 +1003,8 @@
         }, 
         "explanation": "", 
         "description": "Cells in data tables are linked to their headers", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Tables                    ", 
+        "solution": "[Cad]-01", 
+        "thema": "Tables", 
         "name": "84"
     }, 
     "584": {
@@ -1015,7 +1015,7 @@
         }, 
         "explanation": "", 
         "description": "Information are not conveyed by colour alone", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Alternatives", 
         "name": "85"
     }, 
@@ -1027,7 +1027,7 @@
         }, 
         "explanation": "", 
         "description": "Embedded objects are provided with a proper alternative", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Alternatives", 
         "name": "86"
     }, 
@@ -1039,19 +1039,19 @@
         }, 
         "explanation": "", 
         "description": "Audio captchas can be played again at will", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Alternatives", 
         "name": "87"
     }, 
     "587": {
-        "goal": "    * Faciliter le traitement des pages par les aides techniques\n    * Favoriser la s\u00e9paration du contenu structur\u00e9 et de sa mise en forme\n    * All\u00e9ger le coe HTML", 
+        "goal": "* Faciliter le traitement des pages par les aides techniques\n    * Favoriser la s\u00e9paration du contenu structur\u00e9 et de sa mise en forme\n    * All\u00e9ger le coe HTML", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "The content does not include nested tables", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Code", 
         "name": "88"
     }, 
@@ -1063,7 +1063,7 @@
         }, 
         "explanation": "", 
         "description": "The character encoding used is UTF-8", 
-        "solution": "<p>Configurer le serveur, les bases de donn\u00e9es pour l'utilisation d'UTF-8.</p><p>Choisir des outils (logiciels de d\u00e9veloppement, frameworks, CMS, outils de production de contenu) compatibles avec UTF-8.</p>", 
+        "solution": "<p>Configurer le serveur et les bases de donn\u00e9es de mani\u00e8re \u00e0 utiliser UTF-8.</p><p>Choisir des outils (logiciels de d\u00e9veloppement, frameworks, CMS, outils de production de contenu) compatibles avec UTF-8.</p>", 
         "thema": "Code", 
         "name": "89"
     }, 
@@ -1075,7 +1075,7 @@
         }, 
         "explanation": "", 
         "description": "Text that can be designed through styles is not replaced by images", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Code", 
         "name": "90"
     }, 
@@ -1099,8 +1099,8 @@
         }, 
         "explanation": "", 
         "description": "The site provides at least two means of contact", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Contact                      ", 
+        "solution": "[Cad]-01", 
+        "thema": "Contact", 
         "name": "92"
     }, 
     "592": {
@@ -1111,20 +1111,20 @@
         }, 
         "explanation": "", 
         "description": "Every information request is met with an acknowledgement of receipt", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Contact                      ", 
+        "solution": "[Cad]-01", 
+        "thema": "Contact", 
         "name": "93"
     }, 
     "593": {
-        "goal": "    * Informer les utilisateurs sur les d\u00e9lais chiffr\u00e9s de r\u00e9ponse\n    * Limiter les risques de relance de la part des utilisateurs\n    * rassurer sur la capacit\u00e9 \u00e0 prendre en compte les demandes", 
+        "goal": "* Informer les utilisateurs sur les d\u00e9lais chiffr\u00e9s de r\u00e9ponse\n    * Limiter les risques de relance de la part des utilisateurs\n    * rassurer sur la capacit\u00e9 \u00e0 prendre en compte les demandes", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "Delays for replies to information requests are given", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Contact                      ", 
+        "solution": "[Cad]-01", 
+        "thema": "Contact", 
         "name": "94"
     }, 
     "594": {
@@ -1147,7 +1147,7 @@
         }, 
         "explanation": "", 
         "description": "Cryptic syntaxes (SMS language, ASCII art, etc.) are explained or translated", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Contents", 
         "name": "96"
     }, 
@@ -1159,7 +1159,7 @@
         }, 
         "explanation": "", 
         "description": "Elements which are presented visually as lists are tagged in an appropriate way in the source code", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Code", 
         "name": "97"
     }, 
@@ -1170,20 +1170,20 @@
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
-        "description": "Navigation blocks are in a consistent place in the source code of all pages ", 
-        "solution": "[Cad]-01 ", 
+        "description": "Navigation blocks are in a consistent place in the source code of all pages", 
+        "solution": "[Cad]-01", 
         "thema": "Code", 
         "name": "98"
     }, 
     "598": {
-        "goal": "    * Permettre une compr\u00e9hension des contenus pour les utilisateurs qui n'utilisent pas feuilles de style\n    * Am\u00e9liorer la s\u00e9paration des contenus et de la pr\u00e9sentation", 
+        "goal": "* Permettre une compr\u00e9hension des contenus pour les utilisateurs qui n'utilisent pas feuilles de style\n    * Am\u00e9liorer la s\u00e9paration des contenus et de la pr\u00e9sentation", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "The content and meaning of each page are not altered when styles are disabled", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Code", 
         "name": "99"
     }, 
@@ -1195,7 +1195,7 @@
         }, 
         "explanation": "", 
         "description": "Each page's source code contains a metadata defining the character set used", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Code", 
         "name": "100"
     }, 
@@ -1207,8 +1207,8 @@
         }, 
         "explanation": "", 
         "description": "Any affiliation to a professional association, endorsement of a label or an award features a link to its source", 
-        "solution": "[Cad]-01 ", 
-        "thema": "E-Commerce                   ", 
+        "solution": "[Cad]-01", 
+        "thema": "E-Commerce", 
         "name": "101"
     }, 
     "601": {
@@ -1219,8 +1219,8 @@
         }, 
         "explanation": "", 
         "description": "The way to solve litigations is indicated in the terms and conditions", 
-        "solution": "[Cad]-01 ", 
-        "thema": "E-Commerce                   ", 
+        "solution": "[Cad]-01", 
+        "thema": "E-Commerce", 
         "name": "102"
     }, 
     "602": {
@@ -1231,20 +1231,20 @@
         }, 
         "explanation": "", 
         "description": "Unavailable products are visually and textually differentiated", 
-        "solution": "[Cad]-01 ", 
-        "thema": "E-Commerce                   ", 
+        "solution": "[Cad]-01", 
+        "thema": "E-Commerce", 
         "name": "103"
     }, 
     "603": {
-        "goal": "Permet aux utilisateurs de choisir le mode de paiement qui leur convient le mieux dans leur contexte. ", 
+        "goal": "Permet aux utilisateurs de choisir le mode de paiement qui leur convient le mieux dans leur contexte.", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "The site accepts at least two means of payment", 
-        "solution": "[Cad]-01 ", 
-        "thema": "E-Commerce                   ", 
+        "solution": "[Cad]-01", 
+        "thema": "E-Commerce", 
         "name": "104"
     }, 
     "604": {
@@ -1255,20 +1255,20 @@
         }, 
         "explanation": "", 
         "description": "An email indicating the transaction's reference and the content of the order is sent following order placement", 
-        "solution": "[Cad]-01 ", 
-        "thema": "E-Commerce                   ", 
+        "solution": "[Cad]-01", 
+        "thema": "E-Commerce", 
         "name": "105"
     }, 
     "605": {
-        "goal": "permet aux utilisateurs d'afficher et \u00e9ventuellement d'imprimer une trace de sa commande ", 
+        "goal": "permet aux utilisateurs d'afficher et \u00e9ventuellement d'imprimer une trace de sa commande", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "The transaction reference is shown to the customer after the order has been placed", 
-        "solution": "[Cad]-01 ", 
-        "thema": "E-Commerce                   ", 
+        "solution": "[Cad]-01", 
+        "thema": "E-Commerce", 
         "name": "106"
     }, 
     "606": {
@@ -1280,23 +1280,23 @@
         "explanation": "", 
         "description": "Debiting or cashing conditions are specified before final order placement", 
         "solution": "<p>Indiquer dans le processus de commande et de gestion du panier les conditions de d\u00e9bit ou d'encaissement avant la validation de celui-ci.</p>", 
-        "thema": "E-Commerce                   ", 
+        "thema": "E-Commerce", 
         "name": "107"
     }, 
     "607": {
-        "goal": "permettre aux utilisateurs de conna\u00eetre les services mis \u00e0 leur disposition et leurs fonctionnements ", 
+        "goal": "permettre aux utilisateurs de conna\u00eetre les services mis \u00e0 leur disposition et leurs fonctionnements", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "Opening hours and prices for all services made available to customers are indicated", 
-        "solution": "[Cad]-01 ", 
-        "thema": "E-Commerce                   ", 
+        "solution": "[Cad]-01", 
+        "thema": "E-Commerce", 
         "name": "108"
     }, 
     "608": {
-        "goal": "Permettre \u00e0 l'utilisateur de v\u00e9rifier et de corriger si n\u00e9cessaire sa saisie. ", 
+        "goal": "Permettre \u00e0 l'utilisateur de v\u00e9rifier et de corriger si n\u00e9cessaire sa saisie.", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
@@ -1304,19 +1304,19 @@
         "explanation": "", 
         "description": "Contents and files destined to public spaces can be checked before final upload", 
         "solution": "<p>Mettre en place une pr\u00e9visualisation des informations saisies avant la soumission d\u00e9finitive du formulaire, avec possibilit\u00e9 de les modifier.</p>", 
-        "thema": "Public spaces          ", 
+        "thema": "Public spaces", 
         "name": "109"
     }, 
     "609": {
-        "goal": "expliquer aux utilisateurs pourquoi et dans quelles mesures leurs publications peuvent \u00eatre mod\u00e9r\u00e9es\nlimiter les demandes des utilisateurs ne voyant leurs publications appara\u00eetre ", 
+        "goal": "expliquer aux utilisateurs pourquoi et dans quelles mesures leurs publications peuvent \u00eatre mod\u00e9r\u00e9es\nlimiter les demandes des utilisateurs ne voyant leurs publications appara\u00eetre", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "Conditions of moderation in public spaces are indicated", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Public spaces          ", 
+        "solution": "[Cad]-01", 
+        "thema": "Public spaces", 
         "name": "110"
     }, 
     "610": {
@@ -1327,12 +1327,12 @@
         }, 
         "explanation": "", 
         "description": "Public spaces provide at least one means of reporting abuse", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Public spaces          ", 
+        "solution": "[Cad]-01", 
+        "thema": "Public spaces", 
         "name": "111"
     }, 
     "611": {
-        "goal": "Permettre un r\u00e9f\u00e9rencement des contenus des documents PDF\r\nFaciliter la manipulation de contenus des documents PDF\r\nGarantir la lisibilit\u00e9 des contenus des documents PDF ", 
+        "goal": "Permettre un r\u00e9f\u00e9rencement des contenus des documents PDF\r\nFaciliter la manipulation de contenus des documents PDF\r\nGarantir la lisibilit\u00e9 des contenus des documents PDF", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
@@ -1344,14 +1344,14 @@
         "name": "112"
     }, 
     "612": {
-        "goal": "Informer les utilisateurs sur la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger\nPermettre aux utilisateurs de diff\u00e9rer le t\u00e9l\u00e9chargement en connexion bas-d\u00e9bit ou mobile ", 
+        "goal": "Informer les utilisateurs sur la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger\nPermettre aux utilisateurs de diff\u00e9rer le t\u00e9l\u00e9chargement en connexion bas-d\u00e9bit ou mobile", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "The size of files that can be downloaded on the site itself is indicated", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Files and multimedia", 
         "name": "113"
     }, 
@@ -1363,7 +1363,7 @@
         }, 
         "explanation": "", 
         "description": "Thumbnails are not bigger images that were resized on the client side", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Files and multimedia", 
         "name": "114"
     }, 
@@ -1375,7 +1375,7 @@
         }, 
         "explanation": "", 
         "description": "In the case when data entered in a form was rejected, the reasons for the rejection are indicated to the user", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Forms", 
         "name": "115"
     }, 
@@ -1387,7 +1387,7 @@
         }, 
         "explanation": "", 
         "description": "When a form spans several pages, a global summary is displayed before the final form submission", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Forms", 
         "name": "116"
     }, 
@@ -1399,7 +1399,7 @@
         }, 
         "explanation": "", 
         "description": "In the case when data entered in a form was rejected, all the data entered can be modified by the user", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Forms", 
         "name": "117"
     }, 
@@ -1423,7 +1423,7 @@
         }, 
         "explanation": "", 
         "description": "The label of each form field indicates if need be what input format must be used", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Forms", 
         "name": "119"
     }, 
@@ -1435,8 +1435,8 @@
         }, 
         "explanation": "", 
         "description": "Hyperlinks of the same nature have identical colours, shapes and behaviours on all pages", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Hyperlinks                   ", 
+        "solution": "[Cad]-01", 
+        "thema": "Hyperlinks", 
         "name": "120"
     }, 
     "620": {
@@ -1447,32 +1447,32 @@
         }, 
         "explanation": "", 
         "description": "Hovering over, or activating, hyperlinks does not alter the layout", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Hyperlinks                   ", 
+        "solution": "[Cad]-01", 
+        "thema": "Hyperlinks", 
         "name": "121"
     }, 
     "621": {
-        "goal": " Faciliter le r\u00e9f\u00e9rencement \u00e0 travers l'obtention de backlinks\nAugmenter la visibilit\u00e9 pour les utilisateurs\n\n", 
+        "goal": "Faciliter le r\u00e9f\u00e9rencement \u00e0 travers l'obtention de backlinks\nAugmenter la visibilit\u00e9 pour les utilisateurs", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "The site does not forbid incoming links", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Hyperlinks                   ", 
+        "solution": "[Cad]-01", 
+        "thema": "Hyperlinks", 
         "name": "122"
     }, 
     "622": {
-        "goal": "Assurer une pr\u00e9vention contre les erreurs 404 en cours de navigation\nFaciliter un acc\u00e8s rapide \u00e0 tous les contenus\n\n", 
+        "goal": "Assurer une pr\u00e9vention contre les erreurs 404 en cours de navigation\nFaciliter un acc\u00e8s rapide \u00e0 tous les contenus", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "All hyperlinks internal to the site are valid", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Hyperlinks                   ", 
+        "solution": "[Cad]-01", 
+        "thema": "Hyperlinks", 
         "name": "123"
     }, 
     "623": {
@@ -1484,7 +1484,7 @@
         "explanation": "", 
         "description": "The site applies a different style to unvisited and visited links", 
         "solution": "<p>En dehors des menus de navigation, ne pas appliquer les m\u00eames styles CSS par d\u00e9faut pour les liens non visit\u00e9s (s\u00e9lecteurs <code>a</code> ou <code>a:link</code>) et pour les liens visit\u00e9s (s\u00e9lecteur <code>a:visited</code>). Pour ce faire&nbsp;: soit pr\u00e9voir un rendu sp\u00e9cifique pour les liens visit\u00e9s, soit ne pas indiquer de r\u00e8gle de rendu pour ceux-ci (le style par d\u00e9faut du navigateur pourra alors s'appliquer sans difficult\u00e9).</p>", 
-        "thema": "Hyperlinks                   ", 
+        "thema": "Hyperlinks", 
         "name": "124"
     }, 
     "624": {
@@ -1495,8 +1495,8 @@
         }, 
         "explanation": "", 
         "description": "The site's root contains instructions for spiders and robots", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Identification               ", 
+        "solution": "[Cad]-01", 
+        "thema": "Identification", 
         "name": "125"
     }, 
     "625": {
@@ -1507,8 +1507,8 @@
         }, 
         "explanation": "", 
         "description": "The source code for each page contains a metadata describing the page's content", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Identification               ", 
+        "solution": "[Cad]-01", 
+        "thema": "Identification", 
         "name": "126"
     }, 
     "626": {
@@ -1519,8 +1519,8 @@
         }, 
         "explanation": "", 
         "description": "The complete address and phone number of companies and organisations can be reached from each page of the site", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Identification               ", 
+        "solution": "[Cad]-01", 
+        "thema": "Identification", 
         "name": "127"
     }, 
     "627": {
@@ -1531,8 +1531,8 @@
         }, 
         "explanation": "", 
         "description": "The source code of the pages contains a valid call to a favourite icon (\u201cfavicon\u201d)", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Identification               ", 
+        "solution": "[Cad]-01", 
+        "thema": "Identification", 
         "name": "128"
     }, 
     "628": {
@@ -1544,7 +1544,7 @@
         "explanation": "", 
         "description": "The main language of a link's target page is provided if it differs from the original page", 
         "solution": "<p>La langue cible d'un lien peut \u00eatre indiqu\u00e9e&nbsp;:</p><ul>\n<li>Simplement via le libell\u00e9 du lien qui sera r\u00e9dig\u00e9 dans la langue cible ;</li>\n\t\t\t\t\t<li>\u00c9ventuellement \u00e0 l'aide d'une ic\u00f4ne appropri\u00e9e (drapeau) ;</li>\n\t\t\t\t\t<li>\u00c9ventuellement de mani\u00e8re explicite dans le libell\u00e9 du lien ou dans son contexte imm\u00e9diat, en mentionnant la langue directement.</li>\n\t\t\t\t</ul>", 
-        "thema": "Internationalization         ", 
+        "thema": "Internationalization", 
         "name": "129"
     }, 
     "629": {
@@ -1555,8 +1555,8 @@
         }, 
         "explanation": "", 
         "description": "Each page provides a link to available translations", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Internationalization         ", 
+        "solution": "[Cad]-01", 
+        "thema": "Internationalization", 
         "name": "130"
     }, 
     "630": {
@@ -1567,7 +1567,7 @@
         }, 
         "explanation": "", 
         "description": "Navigation icons are provided with an explicit legend", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Navigation", 
         "name": "131"
     }, 
@@ -1579,12 +1579,12 @@
         }, 
         "explanation": "", 
         "description": "Each page provides \u201cskip links\u201d at the beginning of its source code", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Navigation", 
         "name": "132"
     }, 
     "632": {
-        "goal": "Permettre aux utilisateurs d'avoir l'ensemble des informations essentielles relatives \u00e0 la recherche qu'ils ont effectu\u00e9e. ", 
+        "goal": "Permettre aux utilisateurs d'avoir l'ensemble des informations essentielles relatives \u00e0 la recherche qu'ils ont effectu\u00e9e.", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
@@ -1608,14 +1608,14 @@
         "name": "134"
     }, 
     "634": {
-        "goal": "Donner aux utilisateurs des indications explicites pour fermer une fen\u00eatre ou une bo\u00eete modale. ", 
+        "goal": "Donner aux utilisateurs des indications explicites pour fermer une fen\u00eatre ou une bo\u00eete modale.", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "New windows that are resized, as well as modal windows, are provided with an explicit close button", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Navigation", 
         "name": "135"
     }, 
@@ -1627,56 +1627,56 @@
         }, 
         "explanation": "", 
         "description": "Navigation blocks of the same nature are in a consistent place on every page", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Navigation", 
         "name": "136"
     }, 
     "636": {
-        "goal": "Eviter l'ouverture inopin\u00e9e sur le poste client d'un autre logiciel que le navigateur Web. ", 
+        "goal": "Eviter l'ouverture inopin\u00e9e sur le poste client d'un autre logiciel que le navigateur Web.", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "Links to an external software have an explicit label", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Navigation", 
         "name": "137"
     }, 
     "637": {
-        "goal": "Permettre aux utilisateurs de commencer imm\u00e9diatement leur navigation sur la ressource qu'ils ont demand\u00e9. ", 
+        "goal": "Permettre aux utilisateurs de commencer imm\u00e9diatement leur navigation sur la ressource qu'ils ont demand\u00e9.", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "If the site is not restricted to a specific public, content is available immediately", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Navigation", 
         "name": "138"
     }, 
     "638": {
-        "goal": "Permettre une restitution correcte des contenus masqu\u00e9s qui doivent \u00eatre lus par les lecteurs d'\u00e9cran ", 
+        "goal": "Permettre une restitution correcte des contenus masqu\u00e9s qui doivent \u00eatre lus par les lecteurs d'\u00e9cran", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "A content that must be read by a screen reader is not hidden from it", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Navigation", 
         "name": "139"
     }, 
     "639": {
-        "goal": "Permettre l'impression des contenus sous une forme sp\u00e9cifique. ", 
+        "goal": "Permettre l'impression des contenus sous une forme sp\u00e9cifique.", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "The site provides at least one print stylesheet", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Presentation              ", 
+        "solution": "[Cad]-01", 
+        "thema": "Presentation", 
         "name": "140"
     }, 
     "640": {
@@ -1687,8 +1687,8 @@
         }, 
         "explanation": "", 
         "description": "A generic font family is listed as the last alternative in font family lists", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Presentation              ", 
+        "solution": "[Cad]-01", 
+        "thema": "Presentation", 
         "name": "141"
     }, 
     "641": {
@@ -1699,31 +1699,31 @@
         }, 
         "explanation": "", 
         "description": "The display font size is set in variable units and not in fixed units", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Presentation              ", 
+        "solution": "[Cad]-01", 
+        "thema": "Presentation", 
         "name": "142"
     }, 
     "642": {
-        "goal": "Eviter l'affichage de listes de fichiers contenus dans un r\u00e9pertoire\nAm\u00e9liorer la s\u00e9curit\u00e9 du serveur\nLimiter les risques d'intrusion ", 
+        "goal": "Eviter l'affichage de listes de fichiers contenus dans un r\u00e9pertoire\nAm\u00e9liorer la s\u00e9curit\u00e9 du serveur\nLimiter les risques d'intrusion", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "The server does not list files in folders that do not have index files", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Security and privacy", 
         "name": "143"
     }, 
     "643": {
-        "goal": "Informer l'utilisateur sur les cookies\nExpliquer leur r\u00f4le et leur utilit\u00e9 ", 
+        "goal": "Informer l'utilisateur sur les cookies\nExpliquer leur r\u00f4le et leur utilit\u00e9", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "The aim of using cookies, as well as the consequences of refusing them, are explained", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Security and privacy", 
         "name": "144"
     }, 
@@ -1747,8 +1747,8 @@
         }, 
         "explanation": "", 
         "description": "The server sends the main language of contents as a header", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Server and performance     ", 
+        "solution": "[Cad]-01", 
+        "thema": "Server and performance", 
         "name": "146"
     }, 
     "646": {
@@ -1759,12 +1759,12 @@
         }, 
         "explanation": "", 
         "description": "Captions for data tables are provided", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Tables                    ", 
+        "solution": "[Cad]-01", 
+        "thema": "Tables", 
         "name": "147"
     }, 
     "647": {
-        "goal": "Permettre aux utilisateurs de choisir un mot de passe personnalis\u00e9\r\nEviter aux utilisateurs de rechercher leur mot de passe \u00e0 chaque connexion ", 
+        "goal": "Permettre aux utilisateurs de choisir un mot de passe personnalis\u00e9\r\nEviter aux utilisateurs de rechercher leur mot de passe \u00e0 chaque connexion", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
@@ -1776,7 +1776,7 @@
         "name": "148"
     }, 
     "648": {
-        "goal": "Informer l'utilisateur sur l'utilisation de ses donn\u00e9es personnelles ", 
+        "goal": "Informer l'utilisateur sur l'utilisation de ses donn\u00e9es personnelles", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
@@ -1795,32 +1795,32 @@
         }, 
         "explanation": "", 
         "description": "The server sends a personalised 403 Not allowed error page", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Server and performance     ", 
+        "solution": "[Cad]-01", 
+        "thema": "Server and performance", 
         "name": "150"
     }, 
     "650": {
-        "goal": "Permettre aux utilisateurs de s'abonner facilement aux fils de syndication ", 
+        "goal": "Permettre aux utilisateurs de s'abonner facilement aux fils de syndication", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "The site provides at least one link to each syndication feed", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Syndication                  ", 
+        "solution": "[Cad]-01", 
+        "thema": "Syndication", 
         "name": "151"
     }, 
     "651": {
-        "goal": "Fournir un contenu compr\u00e9hensible aux utilisateurs dont l'agent utilisateur ou l'aide technique (lecteur d'\u00e9cran) ne permet pas de restituer la mise en forme initialement pr\u00e9vue \u00e0 l'aide d'un tableau. ", 
+        "goal": "Fournir un contenu compr\u00e9hensible aux utilisateurs dont l'agent utilisateur ou l'aide technique (lecteur d'\u00e9cran) ne permet pas de restituer la mise en forme initialement pr\u00e9vue \u00e0 l'aide d'un tableau.", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "Linearising tables used for layout does not impede the understanding of contents", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Tables                    ", 
+        "solution": "[Cad]-01", 
+        "thema": "Tables", 
         "name": "152"
     }, 
     "652": {
@@ -1831,8 +1831,8 @@
         }, 
         "explanation": "", 
         "description": "Data tables are not simulated through styled text", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Tables                    ", 
+        "solution": "[Cad]-01", 
+        "thema": "Tables", 
         "name": "153"
     }, 
     "653": {
@@ -1843,7 +1843,7 @@
         }, 
         "explanation": "", 
         "description": "An alternative way is provided wherever captchas are used", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Alternatives", 
         "name": "154"
     }, 
@@ -1855,7 +1855,7 @@
         }, 
         "explanation": "", 
         "description": "Every audio or video content is provided with a text transcript", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Alternatives", 
         "name": "155"
     }, 
@@ -1872,14 +1872,14 @@
         "name": "156"
     }, 
     "656": {
-        "goal": "Permet de limiter les risques d'interpr\u00e9tation hasardeux du DOM d'un document par des agents utilisateurs diff\u00e9rents ", 
+        "goal": "Permet de limiter les risques d'interpr\u00e9tation hasardeux du DOM d'un document par des agents utilisateurs diff\u00e9rents", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "The page's source code includes no error in either the tree of the document or the syntax of tags and attributes", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Code", 
         "name": "157"
     }, 
@@ -1891,7 +1891,7 @@
         }, 
         "explanation": "", 
         "description": "Each page's source code does not contain any presentational tag or attribute", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Code", 
         "name": "158"
     }, 
@@ -1903,7 +1903,7 @@
         }, 
         "explanation": "", 
         "description": "Real dimensions of images are indicated in the source code", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Code", 
         "name": "159"
     }, 
@@ -1915,7 +1915,7 @@
         }, 
         "explanation": "", 
         "description": "The first occurrence of an abbreviation or of an acronym in the content of any page gives access to its meaning", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Code", 
         "name": "160"
     }, 
@@ -1927,7 +1927,7 @@
         }, 
         "explanation": "", 
         "description": "Contents and services are available even if scripts are disabled", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Code", 
         "name": "161"
     }, 
@@ -1939,7 +1939,7 @@
         }, 
         "explanation": "", 
         "description": "The page's source code is valid according to the chosen grammar", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Code", 
         "name": "162"
     }, 
@@ -1951,7 +1951,7 @@
         }, 
         "explanation": "", 
         "description": "Quotations are tagged in an appropriate way in the source code", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Code", 
         "name": "163"
     }, 
@@ -1963,7 +1963,7 @@
         }, 
         "explanation": "", 
         "description": "Each page's source code contains no element that was misused for presentational purposes", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Code", 
         "name": "164"
     }, 
@@ -1976,7 +1976,7 @@
         "explanation": "", 
         "description": "The data contained in the site's WHOIS information make it possible to get to the owner directly", 
         "solution": "<p>Solution 1&nbsp;: Lorsque cela est possible, modifier les donn\u00e9es contenues dans le Whois de fa\u00e7on \u00e0 ce qu'au moins l'un des contacts soit directement reli\u00e9 au propri\u00e9taire du site.</p><p>Solution 2&nbsp;: Modifier le site (les mentions l\u00e9gales, par exemple) de fa\u00e7on \u00e0 ce que l'un des contacts du Whois soit mentionn\u00e9.</p>", 
-        "thema": "Contact                      ", 
+        "thema": "Contact", 
         "name": "165"
     }, 
     "665": {
@@ -1987,31 +1987,31 @@
         }, 
         "explanation": "", 
         "description": "Graphical symbols are HTML images and not unicode characters", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Contents", 
         "name": "166"
     }, 
     "666": {
-        "goal": "Permettre aux utilisateurs de comprendre les contenus sectoriels ou techniques\nPermettre aux utilisateurs de se former en augmentant leurs connaissances\nAm\u00e9liorer le r\u00e9f\u00e9rencement sur des mots-cl\u00e9s ou expressions techniques ", 
+        "goal": "Permettre aux utilisateurs de comprendre les contenus sectoriels ou techniques\nPermettre aux utilisateurs de se former en augmentant leurs connaissances\nAm\u00e9liorer le r\u00e9f\u00e9rencement sur des mots-cl\u00e9s ou expressions techniques", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "A lexicon or a glossary adapted to the target audience explains the professional or technical vocabulary", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Contents", 
         "name": "167"
     }, 
     "667": {
-        "goal": "Eviter les difficult\u00e9s de compr\u00e9hension des contenus\r\nAm\u00e9liorer la perception des contenus et de l'auteur ", 
+        "goal": "Eviter les difficult\u00e9s de compr\u00e9hension des contenus\r\nAm\u00e9liorer la perception des contenus et de l'auteur", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "The content of each page of a site contains no spelling mistake", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Contents", 
         "name": "168"
     }, 
@@ -2040,27 +2040,27 @@
         "name": "170"
     }, 
     "670": {
-        "goal": "permet aux utilisateurs de s'adresser ou d'adresser directement leurs r\u00e9clamations au bon interlocuteur ", 
+        "goal": "permet aux utilisateurs de s'adresser ou d'adresser directement leurs r\u00e9clamations au bon interlocuteur", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "The site provides at least one means of contacting the person to whom complaints can be placed", 
-        "solution": "[Cad]-01 ", 
-        "thema": "E-Commerce                   ", 
+        "solution": "[Cad]-01", 
+        "thema": "E-Commerce", 
         "name": "171"
     }, 
     "671": {
-        "goal": "permet aux utilisateurs d'identifier pr\u00e9cis\u00e9ment les pi\u00e8ces n\u00e9cessaires en cas de n\u00e9cessit\u00e9 de retour du produit ", 
+        "goal": "permet aux utilisateurs d'identifier pr\u00e9cis\u00e9ment les pi\u00e8ces n\u00e9cessaires en cas de n\u00e9cessit\u00e9 de retour du produit", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "Refunding conditions (delays, expenses and vouchers needed) are indicated", 
-        "solution": "[Cad]-01 ", 
-        "thema": "E-Commerce                   ", 
+        "solution": "[Cad]-01", 
+        "thema": "E-Commerce", 
         "name": "172"
     }, 
     "672": {
@@ -2071,44 +2071,44 @@
         }, 
         "explanation": "", 
         "description": "The address and the conditions for returns (on site, to workshops) are indicated", 
-        "solution": "[Cad]-01 ", 
-        "thema": "E-Commerce                   ", 
+        "solution": "[Cad]-01", 
+        "thema": "E-Commerce", 
         "name": "173"
     }, 
     "673": {
-        "goal": "permet \u00e0 l'utilisateur d'obtenir une confirmation de sa demande en dehors du contexte de la navigation sur le site ", 
+        "goal": "permet \u00e0 l'utilisateur d'obtenir une confirmation de sa demande en dehors du contexte de la navigation sur le site", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "Each complaint is met with an acknowledgement of receipt", 
-        "solution": "[Cad]-01 ", 
-        "thema": "E-Commerce                   ", 
+        "solution": "[Cad]-01", 
+        "thema": "E-Commerce", 
         "name": "174"
     }, 
     "674": {
-        "goal": "permet aux utilisateurs de comprendre ou d'anticiper d'\u00e9ventuelles difficult\u00e9s sur le site ou lors de la transaction. ", 
+        "goal": "permet aux utilisateurs de comprendre ou d'anticiper d'\u00e9ventuelles difficult\u00e9s sur le site ou lors de la transaction.", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "The way to file complaints and the way they are processed are indicated", 
-        "solution": "[Cad]-01 ", 
-        "thema": "E-Commerce                   ", 
+        "solution": "[Cad]-01", 
+        "thema": "E-Commerce", 
         "name": "175"
     }, 
     "675": {
-        "goal": "Permettre \u00e0 l'utilisateur de v\u00e9rifier et de corriger si n\u00e9cessaire sa saisie. ", 
+        "goal": "Permettre \u00e0 l'utilisateur de v\u00e9rifier et de corriger si n\u00e9cessaire sa saisie.", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "Information destined to public spaces can be previewed in their final presentation", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Public spaces          ", 
+        "solution": "[Cad]-01", 
+        "thema": "Public spaces", 
         "name": "176"
     }, 
     "676": {
@@ -2124,14 +2124,14 @@
         "name": "177"
     }, 
     "677": {
-        "goal": "Donner aux utilisateurs la possibilit\u00e9 de s'\u00e9quiper du ou des plugins n\u00e9cessaires ", 
+        "goal": "Donner aux utilisateurs la possibilit\u00e9 de s'\u00e9quiper du ou des plugins n\u00e9cessaires", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "An information link is provided for each plugin necessary to access the content", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Files and multimedia", 
         "name": "178"
     }, 
@@ -2143,7 +2143,7 @@
         }, 
         "explanation": "", 
         "description": "Internal PDF documents are tagged", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Files and multimedia", 
         "name": "179"
     }, 
@@ -2155,7 +2155,7 @@
         }, 
         "explanation": "", 
         "description": "Form validation on the client side is also done on the server side", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Forms", 
         "name": "180"
     }, 
@@ -2167,7 +2167,7 @@
         }, 
         "explanation": "", 
         "description": "The user is told when a form input is case-sensitive", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Forms", 
         "name": "181"
     }, 
@@ -2179,7 +2179,7 @@
         }, 
         "explanation": "", 
         "description": "Each form label is visually linked to the form field it describes", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Forms", 
         "name": "182"
     }, 
@@ -2191,7 +2191,7 @@
         }, 
         "explanation": "", 
         "description": "Form fields that require a common information are grouped under a single legend", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Forms", 
         "name": "183"
     }, 
@@ -2203,7 +2203,7 @@
         }, 
         "explanation": "", 
         "description": "Elements of a drop-down list that can be grouped are indeed grouped in a proper way", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Forms", 
         "name": "184"
     }, 
@@ -2215,7 +2215,7 @@
         }, 
         "explanation": "", 
         "description": "Option lists in forms are presented in an understandable order", 
-        "solution": "[Cad]-01 ", 
+        "solution": "[Cad]-01", 
         "thema": "Forms", 
         "name": "185"
     }, 
@@ -2227,8 +2227,8 @@
         }, 
         "explanation": "", 
         "description": "Consecutive hyperlinks are separated visually", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Hyperlinks                   ", 
+        "solution": "[Cad]-01", 
+        "thema": "Hyperlinks", 
         "name": "186"
     }, 
     "686": {
@@ -2239,20 +2239,20 @@
         }, 
         "explanation": "", 
         "description": "Each hyperlink's label describes either its function or the nature of its target", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Hyperlinks                   ", 
+        "solution": "[Cad]-01", 
+        "thema": "Hyperlinks", 
         "name": "187"
     }, 
     "687": {
-        "goal": "Pr\u00e9venir clairement l'internaute des conditions dans lequel il va quitter le service en ligne qu'il visite. ", 
+        "goal": "Pr\u00e9venir clairement l'internaute des conditions dans lequel il va quitter le service en ligne qu'il visite.", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "Internal and external hyperlinks are differentiated", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Hyperlinks                   ", 
+        "solution": "[Cad]-01", 
+        "thema": "Hyperlinks", 
         "name": "188"
     }, 
     "688": {
@@ -2263,24 +2263,24 @@
         }, 
         "explanation": "", 
         "description": "The extension used is coherent with the identity, the activity, the geographical zone or with the domain name", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Identification               ", 
+        "solution": "[Cad]-01", 
+        "thema": "Identification", 
         "name": "189"
     }, 
     "689": {
-        "goal": "Faciliter la compr\u00e9hension par l'utilisateur des r\u00e8gles de qualit\u00e9, d'accessibilit\u00e9 ou autres appliqu\u00e9es sur le site ", 
+        "goal": "Faciliter la compr\u00e9hension par l'utilisateur des r\u00e8gles de qualit\u00e9, d'accessibilit\u00e9 ou autres appliqu\u00e9es sur le site", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "If the site claims to abide to on or more standards and guidelines, a link is provided to each of them", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Identification               ", 
+        "solution": "[Cad]-01", 
+        "thema": "Identification", 
         "name": "190"
     }, 
     "690": {
-        "goal": "Mettre \u00e0 disposition des informations synth\u00e9tiques et lisibles par les machines sur l'ensemble des contenus propos\u00e9s ", 
+        "goal": "Mettre \u00e0 disposition des informations synth\u00e9tiques et lisibles par les machines sur l'ensemble des contenus propos\u00e9s", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
@@ -2288,7 +2288,7 @@
         "explanation": "", 
         "description": "The site provides a sitemap file listing contents to be crawled", 
         "solution": "<p>Cr\u00e9er un fichier <code>sitemap.xml</code> contenant la liste des pages du site \u00e0 la racine du site. \u00c0 d\u00e9faut de respecter le format XML, une simple liste d'URL est accept\u00e9e par les moteurs.</p>", 
-        "thema": "Identification               ", 
+        "thema": "Identification", 
         "name": "191"
     }, 
     "691": {
@@ -2299,8 +2299,8 @@
         }, 
         "explanation": "", 
         "description": "Links to equivalent versions of a page or site are written in the target language", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Internationalization         ", 
+        "solution": "[Cad]-01", 
+        "thema": "Internationalization", 
         "name": "192"
     }, 
     "692": {
@@ -2311,8 +2311,8 @@
         }, 
         "explanation": "", 
         "description": "Each language change is signalled", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Internationalization         ", 
+        "solution": "[Cad]-01", 
+        "thema": "Internationalization", 
         "name": "193"
     }, 
     "693": {
@@ -2324,7 +2324,7 @@
         "explanation": "", 
         "description": "Links to translated versions directly target the current page's translation", 
         "solution": "<p>Fournir sur chaque page dont le contenu a \u00e9t\u00e9 traduit un lien ou un formulaire de navigation donnant imm\u00e9diatement acc\u00e8s \u00e0 la version traduite de la page courante, sans retour \u00e0 la page d''accueil de la version linguistique concern\u00e9e.</p>", 
-        "thema": "Internationalization         ", 
+        "thema": "Internationalization", 
         "name": "194"
     }, 
     "694": {
@@ -2336,7 +2336,7 @@
         "explanation": "", 
         "description": "The language of downloadable files is mentioned if it is not the same as the original page", 
         "solution": "<p>Indiquer la langue du contenu du document&nbsp;:</p><ul>\n<li>Soit dans le libell\u00e9 du lien ;</li>\n\t\t\t\t\t<li>Soit via l'attribut <code>title</code> du lien.</li>\n\t\t\t\t</ul>", 
-        "thema": "Internationalization         ", 
+        "thema": "Internationalization", 
         "name": "195"
     }, 
     "695": {
@@ -2348,11 +2348,11 @@
         "explanation": "", 
         "description": "The content's text direction is indicated when it differs from default", 
         "solution": "<p>Indiquer, outre le changement de langue du contenu via l'attribut <code>lang</code>, le changement de sens de lecture \u00e0 d'aide de l'attribut <code>dir</code> renseign\u00e9 avec la valeur appropri\u00e9e (<code>ltr</code> ou <code>rtl</code>).</p>", 
-        "thema": "Internationalization         ", 
+        "thema": "Internationalization", 
         "name": "196"
     }, 
     "696": {
-        "goal": "Fournir aux utilisateurs une continuit\u00e9 dans la navigation\r\nEviter les changements de contexte ", 
+        "goal": "Fournir aux utilisateurs une continuit\u00e9 dans la navigation\r\nEviter les changements de contexte", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
@@ -2372,7 +2372,7 @@
         "explanation": "", 
         "description": "It is possible to unsubscribe from newsletters from the site", 
         "solution": "<p>Fournir une page d\u00e9di\u00e9e \u00e0 la newsletter, dans laquelle le formulaire d'abonnement est accompagn\u00e9 d'un formulaire de d\u00e9sabonnement.</p><p>Faire figurer le lien de d\u00e9sabonnement dans les autres \u00e9ventuels formulaires d'inscription \u00ab&nbsp;rapides&nbsp;\u00bb int\u00e9gr\u00e9s \u00e0 d'autres pages du site.</p>", 
-        "thema": "Newsletter                   ", 
+        "thema": "Newsletter", 
         "name": "198"
     }, 
     "698": {
@@ -2383,8 +2383,8 @@
         }, 
         "explanation": "", 
         "description": "The publication date and/or the issue number of the newsletter are indicated in the subject of messages", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Newsletter                   ", 
+        "solution": "[Cad]-01", 
+        "thema": "Newsletter", 
         "name": "199"
     }, 
     "699": {
@@ -2395,20 +2395,20 @@
         }, 
         "explanation": "", 
         "description": "The latest newsletter sent is available online", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Newsletter                   ", 
+        "solution": "[Cad]-01", 
+        "thema": "Newsletter", 
         "name": "200"
     }, 
     "700": {
-        "goal": "permettre aux utilisateurs de conna\u00eetre avant leur inscription la fr\u00e9quence \u00e0 laquelle ils recevront la newsletter ", 
+        "goal": "permettre aux utilisateurs de conna\u00eetre avant leur inscription la fr\u00e9quence \u00e0 laquelle ils recevront la newsletter", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "The frequency of newsletters can be found before subscribing", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Newsletter                   ", 
+        "solution": "[Cad]-01", 
+        "thema": "Newsletter", 
         "name": "201"
     }, 
     "701": {
@@ -2419,8 +2419,8 @@
         }, 
         "explanation": "", 
         "description": "Newsletter archives are available online", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Newsletter                   ", 
+        "solution": "[Cad]-01", 
+        "thema": "Newsletter", 
         "name": "202"
     }, 
     "702": {
@@ -2431,44 +2431,44 @@
         }, 
         "explanation": "", 
         "description": "The amount of different fonts used on the site is less than or equal to three (except when showing works or graphic products)", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Presentation              ", 
+        "solution": "[Cad]-01", 
+        "thema": "Presentation", 
         "name": "203"
     }, 
     "703": {
-        "goal": "Faciliter une bonne lisibilit\u00e9\r\nLimiter la charge mentale \u00e0 la consultation. ", 
+        "goal": "Faciliter une bonne lisibilit\u00e9\r\nLimiter la charge mentale \u00e0 la consultation.", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "Contents are presented with a sufficient contrast with their background", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Presentation              ", 
+        "solution": "[Cad]-01", 
+        "thema": "Presentation", 
         "name": "204"
     }, 
     "704": {
-        "goal": "Am\u00e9liorer la lisibilit\u00e9 des contenus imprim\u00e9s ", 
+        "goal": "Am\u00e9liorer la lisibilit\u00e9 des contenus imprim\u00e9s", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "The content of each page can be printed without navigation blocks", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Presentation              ", 
+        "solution": "[Cad]-01", 
+        "thema": "Presentation", 
         "name": "205"
     }, 
     "705": {
-        "goal": "Permettre la consultation sur les t\u00e9l\u00e9phones portables et smartphones. Ce qui ne se limite pas \u00e0 l'iPhone. ", 
+        "goal": "Permettre la consultation sur les t\u00e9l\u00e9phones portables et smartphones. Ce qui ne se limite pas \u00e0 l'iPhone.", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "The site provides one or more style sheets for mobile browsers", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Presentation              ", 
+        "solution": "[Cad]-01", 
+        "thema": "Presentation", 
         "name": "206"
     }, 
     "706": {
@@ -2479,48 +2479,48 @@
         }, 
         "explanation": "", 
         "description": "Sentences or groups of words in text images are not cut up in several images", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Presentation              ", 
+        "solution": "[Cad]-01", 
+        "thema": "Presentation", 
         "name": "207"
     }, 
     "707": {
-        "goal": "Eviter les pertes de contenus lorsque la disposition originale des images est alt\u00e9r\u00e9e\nFaciliter la mise en accessibilit\u00e9 des images (contenus alternatifs) ", 
+        "goal": "Eviter les pertes de contenus lorsque la disposition originale des images est alt\u00e9r\u00e9e\nFaciliter la mise en accessibilit\u00e9 des images (contenus alternatifs)", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "A content is not mentioned only in reference to its shape or to its position on the screen", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Presentation              ", 
+        "solution": "[Cad]-01", 
+        "thema": "Presentation", 
         "name": "208"
     }, 
     "708": {
-        "goal": "Eviter les probl\u00e8mes de navigation ou d'acc\u00e8s aux contenus pour les personnes qui n'ont pas les informations de forme ou de position ", 
+        "goal": "Eviter les probl\u00e8mes de navigation ou d'acc\u00e8s aux contenus pour les personnes qui n'ont pas les informations de forme ou de position", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "Text content can still be read when text is increased twice in the browser", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Presentation              ", 
+        "solution": "[Cad]-01", 
+        "thema": "Presentation", 
         "name": "209"
     }, 
     "709": {
-        "goal": "Permettre un copier coller des contenus sans mise en forme en majuscules. ", 
+        "goal": "Permettre un copier coller des contenus sans mise en forme en majuscules.", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "Capitalisation of words for decorative purposes is achieved through styling", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Presentation              ", 
+        "solution": "[Cad]-01", 
+        "thema": "Presentation", 
         "name": "210"
     }, 
     "710": {
-        "goal": "Informer les utilisateurs sur le niveau de s\u00e9curit\u00e9 du mot de passe choisi et donc sur les risques de d\u00e9tournement ", 
+        "goal": "Informer les utilisateurs sur le niveau de s\u00e9curit\u00e9 du mot de passe choisi et donc sur les risques de d\u00e9tournement", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
@@ -2539,12 +2539,12 @@
         }, 
         "explanation": "", 
         "description": "The server respects the preferential order of languages specified in user agents", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Server and performance     ", 
+        "solution": "[Cad]-01", 
+        "thema": "Server and performance", 
         "name": "212"
     }, 
     "712": {
-        "goal": "Permettre le chargement prioritaire des contenus\r\nLimiter le d\u00e9lai d'affichage des contenus ", 
+        "goal": "Permettre le chargement prioritaire des contenus\r\nLimiter le d\u00e9lai d'affichage des contenus", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
@@ -2552,55 +2552,55 @@
         "explanation": "", 
         "description": "Calls to external scripts are put after the content", 
         "solution": "<p>Placer les appels de scripts en fin de code, juste avant la fermeture de l'\u00e9l\u00e9ment <code>body</code> (balise &lt;/body&gt;).</p>", 
-        "thema": "Server and performance     ", 
+        "thema": "Server and performance", 
         "name": "213"
     }, 
     "713": {
-        "goal": "\u00e9vite aux utisateurs les ruptures de navigation, l'arriv\u00e9e sur des\npages cul-de-sac, l'obligation d'utiliser le bouton pr\u00e9c\u00e9dent du\nnavigateur ", 
+        "goal": "\u00e9vite aux utisateurs les ruptures de navigation, l'arriv\u00e9e sur des\npages cul-de-sac, l'obligation d'utiliser le bouton pr\u00e9c\u00e9dent du\nnavigateur", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "The main navigation menu is featured on personalised error pages", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Server and performance     ", 
+        "solution": "[Cad]-01", 
+        "thema": "Server and performance", 
         "name": "214"
     }, 
     "714": {
-        "goal": "Minimiser la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger par l'utilisateur\nAm\u00e9liorer les performances ", 
+        "goal": "Minimiser la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger par l'utilisateur\nAm\u00e9liorer les performances", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "Script functions are put into external files", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Server and performance     ", 
+        "solution": "[Cad]-01", 
+        "thema": "Server and performance", 
         "name": "215"
     }, 
     "715": {
-        "goal": "Acc\u00e9l\u00e9rer la vitesse d'affichage des pages\nAm\u00e9liorer les performances\nDiminuer la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger ", 
+        "goal": "Acc\u00e9l\u00e9rer la vitesse d'affichage des pages\nAm\u00e9liorer les performances\nDiminuer la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "Scripts are minified", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Server and performance     ", 
+        "solution": "[Cad]-01", 
+        "thema": "Server and performance", 
         "name": "216"
     }, 
     "716": {
-        "goal": "Minimiser la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger par l'utilisateur\nAm\u00e9liorer les performances ", 
+        "goal": "Minimiser la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger par l'utilisateur\nAm\u00e9liorer les performances", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
         "description": "Style information are minified", 
-        "solution": "[Cad]-01 ", 
-        "thema": "Server and performance     ", 
+        "solution": "[Cad]-01", 
+        "thema": "Server and performance", 
         "name": "217"
     }, 
     "15996": {
@@ -2612,7 +2612,7 @@
         "explanation": "", 
         "description": "La longueur du nom de domaine fonctionnel est inf\u00e9rieure ou \u00e9gale \u00e0 30 caract\u00e8res.", 
         "solution": "", 
-        "thema": "Identification               ", 
+        "thema": "Identification", 
         "name": ""
     }, 
     "15997": {
@@ -2624,7 +2624,7 @@
         "explanation": "", 
         "description": "La syntaxe des URL est homog\u00e8ne sur l'ensemble du site", 
         "solution": "", 
-        "thema": "Identification               ", 
+        "thema": "Identification", 
         "name": ""
     }, 
     "15998": {
@@ -2636,7 +2636,7 @@
         "explanation": "", 
         "description": "Les informations relatives \u00e0 l'audience et \u00e0 la fr\u00e9quentation du site sont accompagn\u00e9es de la p\u00e9riode couverte et du mode de mesure.", 
         "solution": "", 
-        "thema": "Identification               ", 
+        "thema": "Identification", 
         "name": ""
     }, 
     "15999": {
@@ -2648,7 +2648,7 @@
         "explanation": "", 
         "description": "La page d'accueil contient des \u00e9l\u00e9ments textuels facilitant le r\u00e9f\u00e9rencement par des moteurs.", 
         "solution": "", 
-        "thema": "Identification               ", 
+        "thema": "Identification", 
         "name": ""
     }, 
     "16000": {
@@ -2660,7 +2660,7 @@
         "explanation": "", 
         "description": "Le site ne propose pas de contenus dupliqu\u00e9s", 
         "solution": "", 
-        "thema": "Identification               ", 
+        "thema": "Identification", 
         "name": ""
     }, 
     "16001": {
@@ -2672,7 +2672,7 @@
         "explanation": "", 
         "description": "Les 65 premiers caract\u00e8res du titre de chaque page permettent d'en identifier le contenu.", 
         "solution": "", 
-        "thema": "Identification               ", 
+        "thema": "Identification", 
         "name": ""
     }, 
     "16002": {
@@ -2684,7 +2684,7 @@
         "explanation": "", 
         "description": "Le code source des pages contient des liens relatifs vers l'auteur, les droits de reproduction, l'accueil et le plan du site", 
         "solution": "", 
-        "thema": "Identification               ", 
+        "thema": "Identification", 
         "name": ""
     }, 
     "16003": {
@@ -2828,7 +2828,7 @@
         "explanation": "", 
         "description": "Si les messages envoy\u00e9s \u00e0 postmaster@domaine.extension et webmaster@domaine.extension ne sont pas trait\u00e9s, le serveur de mails le signale \u00e0 l'exp\u00e9diteur [VERIFIABLE][FORMULATION][VALEUR AJOUTEE]", 
         "solution": "", 
-        "thema": "Contact                      ", 
+        "thema": "Contact", 
         "name": ""
     }, 
     "16015": {
@@ -2840,7 +2840,7 @@
         "explanation": "", 
         "description": "Une r\u00e9ponse \u00e0 une demande d'information est envoy\u00e9e sous 5 jours ouvr\u00e9s.", 
         "solution": "", 
-        "thema": "Contact                      ", 
+        "thema": "Contact", 
         "name": ""
     }, 
     "16016": {
@@ -2864,7 +2864,7 @@
         "explanation": "", 
         "description": "L'organisation de chaque tableau complexe est explicit\u00e9e", 
         "solution": "", 
-        "thema": "Tables                    ", 
+        "thema": "Tables", 
         "name": ""
     }, 
     "16018": {
@@ -2984,7 +2984,7 @@
         "explanation": "", 
         "description": "Tous les hyperliens externes du site sont valides.", 
         "solution": "", 
-        "thema": "Hyperlinks                   ", 
+        "thema": "Hyperlinks", 
         "name": ""
     }, 
     "16028": {
@@ -2996,7 +2996,7 @@
         "explanation": "", 
         "description": "L'information principale est donn\u00e9e au d\u00e9but de chaque segment de texte.", 
         "solution": "", 
-        "thema": "Hyperlinks                   ", 
+        "thema": "Hyperlinks", 
         "name": ""
     }, 
     "16029": {
@@ -3008,7 +3008,7 @@
         "explanation": "", 
         "description": "Les hyperliens contenus dans les tableaux poss\u00e8dent un libell\u00e9 explicite.", 
         "solution": "", 
-        "thema": "Hyperlinks                   ", 
+        "thema": "Hyperlinks", 
         "name": ""
     }, 
     "16030": {
@@ -3020,7 +3020,7 @@
         "explanation": "", 
         "description": "La version originale des contenus traduits est indiqu\u00e9e", 
         "solution": "", 
-        "thema": "Internationalization         ", 
+        "thema": "Internationalization", 
         "name": ""
     }, 
     "16031": {
@@ -3092,7 +3092,7 @@
         "explanation": "", 
         "description": "Le code HTML ne contient pas de commentaires (hors commentaires conditionnels)", 
         "solution": "", 
-        "thema": "Server and performance     ", 
+        "thema": "Server and performance", 
         "name": ""
     }, 
     "16037": {
@@ -3128,7 +3128,7 @@
         "explanation": "", 
         "description": "Le fichier .htaccess n'est pas utilis\u00e9.", 
         "solution": "", 
-        "thema": "Server and performance     ", 
+        "thema": "Server and performance", 
         "name": ""
     }, 
     "16040": {
@@ -3164,7 +3164,7 @@
         "explanation": "", 
         "description": "Les coordonn\u00e9es du whois sont correctes.", 
         "solution": "", 
-        "thema": "Contact                      ", 
+        "thema": "Contact", 
         "name": ""
     }, 
     "16043": {
@@ -3188,7 +3188,7 @@
         "explanation": "", 
         "description": "G\u00e9rer convenablement la mise en cache de tout les composants de la page.", 
         "solution": "", 
-        "thema": "Server and performance     ", 
+        "thema": "Server and performance", 
         "name": ""
     }, 
     "16045": {
@@ -3224,7 +3224,7 @@
         "explanation": "", 
         "description": "Les images de fond sont doubl\u00e9es par une couleur garantie pour le Web.", 
         "solution": "", 
-        "thema": "Presentation              ", 
+        "thema": "Presentation", 
         "name": ""
     }, 
     "16048": {
@@ -3236,7 +3236,7 @@
         "explanation": "", 
         "description": "La zone cliquable de l'hyperlien mesure au moins 2 caract\u00e8res (espaces compris, genre &nbsp;) ou 30px x 10px.", 
         "solution": "", 
-        "thema": "Hyperlinks                   ", 
+        "thema": "Hyperlinks", 
         "name": ""
     }, 
     "16049": {
@@ -3260,7 +3260,7 @@
         "explanation": "", 
         "description": "Proposer aux internautes de participer \u00e0 l'am\u00e9lioration du site en \u00e9tant pris en compte dans les statistiques d'audience", 
         "solution": "", 
-        "thema": "Identification               ", 
+        "thema": "Identification", 
         "name": ""
     }, 
     "16051": {
@@ -3284,7 +3284,7 @@
         "explanation": "", 
         "description": "Les majuscules sont correctement employ\u00e9es", 
         "solution": "", 
-        "thema": "Presentation              ", 
+        "thema": "Presentation", 
         "name": ""
     }, 
     "16053": {
@@ -3296,7 +3296,7 @@
         "explanation": "", 
         "description": "Le site n'impose pas de changement brusque de luminosit\u00e9.", 
         "solution": "", 
-        "thema": "Presentation              ", 
+        "thema": "Presentation", 
         "name": ""
     }, 
     "16054": {
@@ -3308,7 +3308,7 @@
         "explanation": "", 
         "description": "Les informations de pr\u00e9sentation sont regroup\u00e9es dans une ou plusieurs feuilles de style externes", 
         "solution": "", 
-        "thema": "Presentation              ", 
+        "thema": "Presentation", 
         "name": ""
     }, 
     "16055": {
@@ -3404,7 +3404,7 @@
         "explanation": "", 
         "description": "Le serveur ou le code des pages pr\u00e9cise la nature des contenus (pr\u00e9sence ou non de contenus \u00e0 caract\u00e8re sexuel, violent, etc).", 
         "solution": "", 
-        "thema": "Server and performance     ", 
+        "thema": "Server and performance", 
         "name": ""
     }, 
     "16063": {
@@ -3416,7 +3416,7 @@
         "explanation": "", 
         "description": "Le serveur envoie une page d'erreur interne 500 personnalis\u00e9e.", 
         "solution": "", 
-        "thema": "Server and performance     ", 
+        "thema": "Server and performance", 
         "name": ""
     }, 
     "16064": {
@@ -3428,7 +3428,7 @@
         "explanation": "", 
         "description": "Les appels aux feuilles de style sont plac\u00e9s avant les contenus", 
         "solution": "", 
-        "thema": "Server and performance     ", 
+        "thema": "Server and performance", 
         "name": ""
     }, 
     "16065": {
@@ -3440,7 +3440,7 @@
         "explanation": "", 
         "description": "Les informations de style sont plac\u00e9es dans des fichers externes aux pages", 
         "solution": "", 
-        "thema": "Server and performance     ", 
+        "thema": "Server and performance", 
         "name": ""
     }, 
     "16066": {
@@ -3452,7 +3452,7 @@
         "explanation": "", 
         "description": "Les appels de scripts ne sont pas dupliqu\u00e9s", 
         "solution": "", 
-        "thema": "Server and performance     ", 
+        "thema": "Server and performance", 
         "name": ""
     }, 
     "16067": {
@@ -3464,7 +3464,7 @@
         "explanation": "", 
         "description": "Les styles sont appel\u00e9s avec des liens et non via des imports", 
         "solution": "", 
-        "thema": "Server and performance     ", 
+        "thema": "Server and performance", 
         "name": ""
     }, 
     "16068": {
@@ -3476,7 +3476,7 @@
         "explanation": "", 
         "description": "La date limite de consommation des denr\u00e9es p\u00e9rissables est indiqu\u00e9e. [NON REALISTE]", 
         "solution": "", 
-        "thema": "E-Commerce                   ", 
+        "thema": "E-Commerce", 
         "name": ""
     }, 
     "16069": {
@@ -3488,7 +3488,7 @@
         "explanation": "", 
         "description": "La charge des frais de retour est indiqu\u00e9e.", 
         "solution": "", 
-        "thema": "E-Commerce                   ", 
+        "thema": "E-Commerce", 
         "name": ""
     }, 
     "16070": {
@@ -3500,7 +3500,7 @@
         "explanation": "", 
         "description": "Les archives de newsletter sont propos\u00e9es au format Web", 
         "solution": "", 
-        "thema": "Newsletter                   ", 
+        "thema": "Newsletter", 
         "name": ""
     }, 
     "16071": {
@@ -3512,7 +3512,7 @@
         "explanation": "", 
         "description": "Le libell\u00e9 des liens pointant vers les fils de syndication en pr\u00e9cise le format", 
         "solution": "", 
-        "thema": "Syndication                  ", 
+        "thema": "Syndication", 
         "name": ""
     }, 
     "16072": {
@@ -3524,7 +3524,7 @@
         "explanation": "", 
         "description": "Le format des fils de syndication est sp\u00e9cifi\u00e9", 
         "solution": "", 
-        "thema": "Syndication                  ", 
+        "thema": "Syndication", 
         "name": ""
     }, 
     "16073": {
@@ -3536,7 +3536,7 @@
         "explanation": "", 
         "description": "Le site ne comporte pas de tableau de donn\u00e9es complexe", 
         "solution": "", 
-        "thema": "Tables                    ", 
+        "thema": "Tables", 
         "name": ""
     }, 
     "16074": {
@@ -3584,7 +3584,7 @@
         "explanation": "", 
         "description": "Minimiser le nombre de requ\u00eates HTTP", 
         "solution": "", 
-        "thema": "Server and performance     ", 
+        "thema": "Server and performance", 
         "name": ""
     }, 
     "16078": {
@@ -3632,7 +3632,7 @@
         "explanation": "", 
         "description": "Les ETag sont d\u00e9sactiv\u00e9s pour tous les composants.", 
         "solution": "", 
-        "thema": "Server and performance     ", 
+        "thema": "Server and performance", 
         "name": ""
     }, 
     "16082": {
@@ -3692,7 +3692,7 @@
         "explanation": "", 
         "description": "Le nom du ou des traducteurs est indiqu\u00e9", 
         "solution": "", 
-        "thema": "Internationalization         ", 
+        "thema": "Internationalization", 
         "name": ""
     }, 
     "16087": {
@@ -3704,7 +3704,7 @@
         "explanation": "", 
         "description": "Si des mots-cl\u00e9s ou une description sont pr\u00e9sents dans l'ent\u00eate du code de la page, ils sont coh\u00e9rents avec le contenu du site.", 
         "solution": "", 
-        "thema": "Identification               ", 
+        "thema": "Identification", 
         "name": ""
     }, 
     "16088": {
@@ -3728,7 +3728,7 @@
         "explanation": "", 
         "description": "Le site ne fait appel qu'\u00e0 une seule feuille de style provenant du domaine", 
         "solution": "", 
-        "thema": "Server and performance     ", 
+        "thema": "Server and performance", 
         "name": ""
     }, 
     "16090": {
@@ -3740,7 +3740,7 @@
         "explanation": "", 
         "description": "Les r\u00e9ponses AJAX peuvent \u00eatre mises en cache", 
         "solution": "", 
-        "thema": "Server and performance     ", 
+        "thema": "Server and performance", 
         "name": ""
     }, 
     "16091": {
@@ -3752,7 +3752,7 @@
         "explanation": "", 
         "description": "Minimiser les acc\u00e8s au DOM par les scripts", 
         "solution": "", 
-        "thema": "Server and performance     ", 
+        "thema": "Server and performance", 
         "name": ""
     }, 
     "16092": {
@@ -3764,7 +3764,7 @@
         "explanation": "", 
         "description": "Optimiser les s\u00e9lecteurs CSS", 
         "solution": "", 
-        "thema": "Server and performance     ", 
+        "thema": "Server and performance", 
         "name": ""
     }, 
     "16093": {
@@ -3776,7 +3776,7 @@
         "explanation": "", 
         "description": "La date du serveur est correcte", 
         "solution": "", 
-        "thema": "Server and performance     ", 
+        "thema": "Server and performance", 
         "name": ""
     }, 
     "16094": {
@@ -3812,7 +3812,7 @@
         "explanation": "", 
         "description": "L'attribut style n'est pas utilis\u00e9 par les scripts si des classes ou identifiants permettent d'appliquer un style externe.", 
         "solution": "", 
-        "thema": "Presentation              ", 
+        "thema": "Presentation", 
         "name": ""
     }, 
     "16097": {
@@ -3824,7 +3824,7 @@
         "explanation": "", 
         "description": "L'interlignage et l'espacement vertical des paragraphes est au moins de de 1.5 fois la taille de caract\u00e8res.", 
         "solution": "", 
-        "thema": "Presentation              ", 
+        "thema": "Presentation", 
         "name": ""
     }, 
     "16098": {
@@ -3836,7 +3836,7 @@
         "explanation": "", 
         "description": "Les images de fond sont surdimensionn\u00e9es par rapport \u00e0 la zone qu'elle d\u00e9core", 
         "solution": "", 
-        "thema": "Presentation              ", 
+        "thema": "Presentation", 
         "name": ""
     }, 
     "16099": {
@@ -3860,7 +3860,7 @@
         "explanation": "", 
         "description": "Ne pas r\u00e9duire les BP au E-commerce lorsqu'elles sont valables dans un contexte de service public et/ou non marchand en ligne.", 
         "solution": "", 
-        "thema": "E-Commerce                   ", 
+        "thema": "E-Commerce", 
         "name": ""
     }, 
     "16101": {
@@ -3932,7 +3932,7 @@
         "explanation": "", 
         "description": "Le libell\u00e9 d'un hyperlien n'est pas l'hyperlien lui-m\u00eame mais \"du vrai texte\"", 
         "solution": "", 
-        "thema": "Hyperlinks                   ", 
+        "thema": "Hyperlinks", 
         "name": ""
     }, 
     "16107": {
@@ -3968,7 +3968,7 @@
         "explanation": "", 
         "description": "Les courriels envoy\u00e9s par le site sont r\u00e9dig\u00e9s dans la langue de la page ayant d\u00e9clench\u00e9 l'envoi.", 
         "solution": "", 
-        "thema": "E-Commerce                   ", 
+        "thema": "E-Commerce", 
         "name": ""
     }, 
     "16110": {
@@ -3980,7 +3980,7 @@
         "explanation": "", 
         "description": "Une URL pointant vers un sous domaine ne doit pas commencer par \"www\"", 
         "solution": "", 
-        "thema": "Hyperlinks                   ", 
+        "thema": "Hyperlinks", 
         "name": ""
     }, 
     "16111": {
@@ -4004,7 +4004,7 @@
         "explanation": "", 
         "description": "Un contenu upload\u00e9 n'est pas publi\u00e9 sans confirmation", 
         "solution": "", 
-        "thema": "Public spaces          ", 
+        "thema": "Public spaces", 
         "name": ""
     }, 
     "16113": {
@@ -4028,7 +4028,7 @@
         "explanation": "", 
         "description": "Les URL internes du site ne contiennent pas d'espaces.", 
         "solution": "", 
-        "thema": "Hyperlinks                   ", 
+        "thema": "Hyperlinks", 
         "name": ""
     }, 
     "16115": {
@@ -4040,7 +4040,7 @@
         "explanation": "", 
         "description": "Les styles d\u00e9di\u00e9s ne masquent pas \u00e0 l'impression le nom de l'auteur, l'URL, la date ou les droits de copie et de r\u00e9utilisation.", 
         "solution": "", 
-        "thema": "Presentation              ", 
+        "thema": "Presentation", 
         "name": ""
     }, 
     "16116": {
@@ -4076,7 +4076,7 @@
         "explanation": "", 
         "description": "Les \u00e9l\u00e9ments contenu dans le fils de syndications ne sont pas une version tronqu\u00e9e des \u00e9l\u00e9ments associ\u00e9s en ligne.", 
         "solution": "", 
-        "thema": "Syndication                  ", 
+        "thema": "Syndication", 
         "name": ""
     }, 
     "16119": {
@@ -4088,7 +4088,7 @@
         "explanation": "", 
         "description": "Le site est compatible avec tous les navigateurs d\u00e9tenant au moins 5 % de part de march\u00e9", 
         "solution": "", 
-        "thema": "Presentation              ", 
+        "thema": "Presentation", 
         "name": ""
     }, 
     "16120": {
@@ -4160,7 +4160,7 @@
         "explanation": "", 
         "description": "Les pages dont le contenu est issu d'une traduction automatique sont signal\u00e9es comme telles", 
         "solution": "", 
-        "thema": "Internationalization         ", 
+        "thema": "Internationalization", 
         "name": ""
     }, 
     "16126": {
@@ -4244,7 +4244,7 @@
         "explanation": "", 
         "description": "L'auteur de chaque article est identifiable", 
         "solution": "", 
-        "thema": "Contact                      ", 
+        "thema": "Contact", 
         "name": ""
     }, 
     "16133": {
@@ -4292,7 +4292,7 @@
         "explanation": "", 
         "description": "Le site se limite \u00e0 un seul fichier de script provenant du domaine", 
         "solution": "", 
-        "thema": "Server and performance     ", 
+        "thema": "Server and performance", 
         "name": ""
     }, 
     "16137": {
@@ -4316,7 +4316,7 @@
         "explanation": "", 
         "description": "Les styles et contenus d\u00e9di\u00e9s aux terminaux mobiles permettent un rendu sans double scroll", 
         "solution": "", 
-        "thema": "Presentation              ", 
+        "thema": "Presentation", 
         "name": ""
     }, 
     "16139": {
@@ -4338,7 +4338,7 @@
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
-        "description": "Toutes les pages indiquent le lien entre le site et une organisation \u00ab&nbsp;m\u00e8re&nbsp;\u00bb au sein de laquelle travaillent des experts du domaine.", 
+        "description": "Toutes les pages indiquent le lien entre le site et une organisation \u00ab m\u00e8re \u00bb au sein de laquelle travaillent des experts du domaine.", 
         "solution": "", 
         "thema": "", 
         "name": ""
@@ -4484,7 +4484,7 @@
         "explanation": "", 
         "description": "Si le site propose une interface et/ou des contenus en plusieurs langues, l'utilisateur peut d\u00e9finir ses pr\u00e9f\u00e9rences linguistiques pour adapter le site \u00e0 ses comp\u00e9tences.", 
         "solution": "", 
-        "thema": "Internationalization         ", 
+        "thema": "Internationalization", 
         "name": ""
     }, 
     "16153": {
@@ -4496,7 +4496,7 @@
         "explanation": "", 
         "description": "La langue affich\u00e9e correspond \u00e0 celle mentionn\u00e9e par l'agent utilisateur [DOUBLON-218]", 
         "solution": "", 
-        "thema": "Internationalization         ", 
+        "thema": "Internationalization", 
         "name": ""
     }, 
     "16154": {
@@ -4508,7 +4508,7 @@
         "explanation": "", 
         "description": "Les titres, libell\u00e9s et contenus alternatifs sont traduits dans la langue de la page.", 
         "solution": "", 
-        "thema": "Internationalization         ", 
+        "thema": "Internationalization", 
         "name": ""
     }, 
     "16155": {
@@ -4520,7 +4520,7 @@
         "explanation": "", 
         "description": "La langue et le pays de l'utilisateur sont dissoci\u00e9s (ex: Suisse). Les langues ne sont pas affich\u00e9es par l'interm\u00e9diaire d'un drapeau.", 
         "solution": "", 
-        "thema": "Internationalization         ", 
+        "thema": "Internationalization", 
         "name": ""
     }, 
     "16156": {
@@ -4544,7 +4544,7 @@
         "explanation": "", 
         "description": "Lorsque plusieurs moyens de contact du m\u00eame type sont propos\u00e9s, une distinction est pr\u00e9cis\u00e9e", 
         "solution": "", 
-        "thema": "Contact                      ", 
+        "thema": "Contact", 
         "name": ""
     }, 
     "16158": {
@@ -4556,7 +4556,7 @@
         "explanation": "", 
         "description": "Le site propos\u00e9 une favicon adapt\u00e9e au p\u00e9riph\u00e9rique employ\u00e9.", 
         "solution": "", 
-        "thema": "Identification               ", 
+        "thema": "Identification", 
         "name": ""
     }, 
     "16159": {
@@ -4604,7 +4604,7 @@
         "explanation": "", 
         "description": "Les informations relatives \u00e0 la zone de livraison des produits ou de r\u00e9alisation des services sont envoy\u00e9s par e-mail dans les 60 minutes suivant la validation [DOUBLON-260]", 
         "solution": "", 
-        "thema": "E-Commerce                   ", 
+        "thema": "E-Commerce", 
         "name": ""
     }, 
     "16163": {
@@ -4616,7 +4616,7 @@
         "explanation": "", 
         "description": "La conversion d'une image au format \"jpeg\" vers le format \"png\" ne produit pas un fichier de poids inf\u00e9rieur.", 
         "solution": "", 
-        "thema": "Server and performance     ", 
+        "thema": "Server and performance", 
         "name": ""
     }, 
     "16164": {
@@ -4628,7 +4628,7 @@
         "explanation": "", 
         "description": "Le serveur envoie une page d'autorisation 401 personnalis\u00e9e.", 
         "solution": "", 
-        "thema": "Server and performance     ", 
+        "thema": "Server and performance", 
         "name": ""
     }, 
     "16165": {
@@ -4640,7 +4640,7 @@
         "explanation": "", 
         "description": "Les sprites css ne contiennent pas d'images non utilis\u00e9es", 
         "solution": "", 
-        "thema": "Server and performance     ", 
+        "thema": "Server and performance", 
         "name": ""
     }, 
     "16166": {
@@ -4676,7 +4676,7 @@
         "explanation": "", 
         "description": "Les liens affich\u00e9s sous forme d'url sont explicites", 
         "solution": "", 
-        "thema": "Hyperlinks                   ", 
+        "thema": "Hyperlinks", 
         "name": ""
     }, 
     "16169": {

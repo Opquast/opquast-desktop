@@ -90,7 +90,7 @@
             "name": "Second step V1 : risks"
         }, 
         "explanation": "", 
-        "description": "Use with caution successive div elements whose contents start with -, \u2013, \u2014, * ou \u2022 ", 
+        "description": "Use with caution successive div elements whose contents start with -, \u2013, \u2014, * ou \u2022", 
         "solution": "Utiliser les \u00e9l\u00e9ments ul et li pour baliser les listes.", 
         "thema": "HTML", 
         "name": "1"
@@ -126,7 +126,7 @@
             "name": "Second step V1 : risks"
         }, 
         "explanation": "", 
-        "description": "Use with caution a non-empty alt attribute on an img element which is a descendant of a element containing text ", 
+        "description": "Use with caution a non-empty alt attribute on an img element which is a descendant of a element containing text", 
         "solution": "Mettre un alt=\"\" sur l'\u00e9l\u00e9ment img lorsque ce dernier est inclus dans un lien textuel dont le libell\u00e9 permet d\u00e9j\u00e0 de conna\u00eetre la destination du lien.", 
         "thema": "HTML", 
         "name": "6"
@@ -222,7 +222,7 @@
             "name": "Second step V1 : risks"
         }, 
         "explanation": "", 
-        "description": "Use with caution successive p elements whose contents start with -, \u2013, \u2014, * ou \u2022 ", 
+        "description": "Use with caution successive p elements whose contents start with -, \u2013, \u2014, * ou \u2022", 
         "solution": "Utiliser les \u00e9l\u00e9ments ul et li pour baliser les listes.", 
         "thema": "HTML", 
         "name": "2"
@@ -234,8 +234,8 @@
             "name": "Second step V1 : risks"
         }, 
         "explanation": "", 
-        "description": "Use with caution the s element<br>\r\n", 
-        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
+        "description": "Use with caution the s element<br>", 
+        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.", 
         "thema": "HTML", 
         "name": "25"
     }, 
@@ -283,7 +283,7 @@
         }, 
         "explanation": "", 
         "description": "Use with caution an empty headers attribute on a td element", 
-        "solution": "Renseigner les attributs headers des \u00e9l\u00e9ments td avec les valeurs des attributs id des ent\u00eates associ\u00e9es. ", 
+        "solution": "Renseigner les attributs headers des \u00e9l\u00e9ments td avec les valeurs des attributs id des ent\u00eates associ\u00e9es.", 
         "thema": "HTML", 
         "name": "14"
     }, 
@@ -307,7 +307,7 @@
         }, 
         "explanation": "", 
         "description": "Use with caution the u element", 
-        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments. ", 
+        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.", 
         "thema": "HTML", 
         "name": "26"
     }, 
@@ -360,7 +360,7 @@
         "name": "36"
     }, 
     "19175": {
-        "goal": "Permettre aux utilisateurs de percevoir la nature interactive des \u00e9l\u00e9ments et de d\u00e9clencher les interactions quel que soit leur p\u00e9riph\u00e9rique d'entr\u00e9e.  ", 
+        "goal": "Permettre aux utilisateurs de percevoir la nature interactive des \u00e9l\u00e9ments et de d\u00e9clencher les interactions quel que soit leur p\u00e9riph\u00e9rique d'entr\u00e9e.", 
         "checklist": {
             "id": 567, 
             "name": "Second step V1 : risks"
@@ -372,7 +372,7 @@
         "name": "37"
     }, 
     "19176": {
-        "goal": "Eviter aux utilisateurs l'obligation de poss\u00e9der un p\u00e9riph\u00e9rique de pointage tel que la souris et d'avoir la capacit\u00e9 \u00e0 double cliquer pour interagir avec le site. ", 
+        "goal": "Eviter aux utilisateurs l'obligation de poss\u00e9der un p\u00e9riph\u00e9rique de pointage tel que la souris et d'avoir la capacit\u00e9 \u00e0 double cliquer pour interagir avec le site.", 
         "checklist": {
             "id": 567, 
             "name": "Second step V1 : risks"
@@ -546,7 +546,7 @@
             "name": "Second step V1 : risks"
         }, 
         "explanation": "", 
-        "description": "Use with caution a justify value for the text-align property<br>\r\n", 
+        "description": "Use with caution a justify value for the text-align property<br>", 
         "solution": "Remplacer la valeur justify par left, right ou center", 
         "thema": "CSS", 
         "name": "31"

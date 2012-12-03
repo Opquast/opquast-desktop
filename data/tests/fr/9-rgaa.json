@@ -7,7 +7,7 @@
         }, 
         "explanation": "Une couleur de texte a \u00e9t\u00e9 d\u00e9fini sans qu'une couleur de fond soit \u00e9galement d\u00e9fini pour l'\u00e9l\u00e9ment ou un de ses parents.", 
         "description": "Absence de d\u00e9finition d'une couleur de texte sans d\u00e9finition d'une couleur de fond et inversement", 
-        "solution": "Toute propri\u00e9t\u00e9s CSS :<br><br>\r\n<ul><li>background,\r\n    </li><li>background-color,\r\n    </li><li>font,\r\n    </li><li>color,\r\n    </li><li>list,\r\n    </li><li>list-style-image\r\n</li></ul>\r\n<br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si l'\u00e9l\u00e9ment est utilis\u00e9 pour d\u00e9finir une couleur de texte ou une couleur de fond (\u00e9ventuellement via une image de fond), poursuivre le test, sinon le test est non applicable.</li>\r\n", 
+        "solution": "Toute propri\u00e9t\u00e9s CSS :<br><br>\r\n<ul><li>background,\r\n    </li><li>background-color,\r\n    </li><li>font,\r\n    </li><li>color,\r\n    </li><li>list,\r\n    </li><li>list-style-image\r\n</li></ul>\r\n<br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si l'\u00e9l\u00e9ment est utilis\u00e9 pour d\u00e9finir une couleur de texte ou une couleur de fond (\u00e9ventuellement via une image de fond), poursuivre le test, sinon le test est non applicable.</li>", 
         "thema": "Pr\u00e9sentation", 
         "name": "[PR\u00e9]-05"
     }, 
@@ -17,7 +17,7 @@
             "id": 9, 
             "name": "RGAA v2.2.1"
         }, 
-        "explanation": "Certains textes sont des textes mis en image : ces textes ne sont pas agrandissables via le zoom typographique d'un navigateur, et leur rendu ne peut pas \u00eatre adapt\u00e9 aux besoin d'un utilisateur ayant par exemple des difficult\u00e9s avec les couleurs utilis\u00e9es (sans passer par une aide technique sp\u00e9cifique du type loupe d'\u00e9cran adaptative). Or, l'absence de contraintes typographiques fortes devrait rendre possible leur remplacement par des textes HTML styl\u00e9s via CSS.\r\n", 
+        "explanation": "Certains textes sont des textes mis en image : ces textes ne sont pas agrandissables via le zoom typographique d'un navigateur, et leur rendu ne peut pas \u00eatre adapt\u00e9 aux besoin d'un utilisateur ayant par exemple des difficult\u00e9s avec les couleurs utilis\u00e9es (sans passer par une aide technique sp\u00e9cifique du type loupe d'\u00e9cran adaptative). Or, l'absence de contraintes typographiques fortes devrait rendre possible leur remplacement par des textes HTML styl\u00e9s via CSS.", 
         "description": "Possibilit\u00e9 de remplacer les \u00e9l\u00e9ments non textuels par une mise en forme effectu\u00e9e gr\u00e2ce aux styles CSS. (sans exceptions)", 
         "solution": "<p>Tout \u00e9l\u00e9ment : </p><ul><li> <code>img</code>, </li><li> <code>object</code>, </li><li> <code>embed</code>, </li><li> <code>applet</code>. </li></ul><br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est\r\npr\u00e9sent dans la page, poursuivre le test, sinon le test est non\r\napplicable.</li>\r\n<li>Si l'\u00e9l\u00e9ment contient du texte, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si l'\u00e9l\u00e9ment n'est pas un logotype ou purement d\u00e9coratif, poursuivre le test, sinon le test est non applicable.</li>", 
         "thema": "Pr\u00e9sentation", 
@@ -89,7 +89,7 @@
             "id": 9, 
             "name": "RGAA v2.2.1"
         }, 
-        "explanation": "Certaines alternatives de boutons graphiques ou de zones cliquables d'image MAP ont une alternative ALT qui ne permet pas de comprendre pr\u00e9cis\u00e9ment l'action ou d'identifier la destination du lien. ", 
+        "explanation": "Certaines alternatives de boutons graphiques ou de zones cliquables d'image MAP ont une alternative ALT qui ne permet pas de comprendre pr\u00e9cis\u00e9ment l'action ou d'identifier la destination du lien.", 
         "description": "Pertinence de l'alternative textuelle aux zones cliquables ou aux boutons graphiques.", 
         "solution": "<p> Tout \u00e9l\u00e9ment : </p><ul> <li> <code>area</code>, </li> <li> <code>input type='image'</code>, </li> <li>tout code javascript g\u00e9n\u00e9rant un des \u00e9l\u00e9ments pr\u00e9c\u00e9dant. </li> </ul><br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable. </li>\r\n<li>Si l'\u00e9l\u00e9ment n'est pas utilis\u00e9 comme captcha ou ne fait pas partie d'un test qui deviendrait inutile si l'alternative textuelle \u00e9tait pr\u00e9sente, poursuivre le test, sinon le test est non applicable, poursuivre le test, sinon le test est non applicable. </li>\r\n<li>Si l'\u00e9l\u00e9ment poss\u00e8de un attribut <code>alt</code>, poursuivre le test, sinon le test non applicable. </li>", 
         "thema": "Images", 
@@ -161,9 +161,9 @@
             "id": 9, 
             "name": "RGAA v2.2.1"
         }, 
-        "explanation": "Certaines images n\u00e9cessitant une description longue n'ont pas d'attribut LONGDESC donnant l'URL de celle-ci.\r\n", 
+        "explanation": "Certaines images n\u00e9cessitant une description longue n'ont pas d'attribut LONGDESC donnant l'URL de celle-ci.", 
         "description": "Pr\u00e9sence de l'attribut longdesc pour \u00e9tablir une relation entre une image et sa description longue.", 
-        "solution": "<p> Tout \u00e9l\u00e9ment <code>img</code> ou tout code javascript g\u00e9n\u00e9rant un \u00e9l\u00e9ment <code>img</code>. </p><br /><br /><li>Si l'\u00e9l\u00e9ment mentionn\u00e9 dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable.</li><li>Si l'\u00e9l\u00e9ment n\u00e9cessite l'utilisation d'une description longue pour \u00eatre compris, poursuivre le test, sinon le test est non applicable.</li><li>Si le contenu imm\u00e9diatement adjacent \u00e0 l'\u00e9l\u00e9ment ne contient pas un lien\r\npermettant d'avoir acc\u00e8s \u00e0 la description longue de l'\u00e9l\u00e9ment, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>\r\nSi l'\u00e9l\u00e9ment poss\u00e8de au moins un des m\u00e9canismes suivant : \r\n<ul><li>attribut longdesc </li>\r\n<li>attribut alt,</li></ul> \r\npoursuivre le test, sinon le test est non applicable.\r\n</li>\r\n", 
+        "solution": "<p> Tout \u00e9l\u00e9ment <code>img</code> ou tout code javascript g\u00e9n\u00e9rant un \u00e9l\u00e9ment <code>img</code>. </p><br /><br /><li>Si l'\u00e9l\u00e9ment mentionn\u00e9 dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable.</li><li>Si l'\u00e9l\u00e9ment n\u00e9cessite l'utilisation d'une description longue pour \u00eatre compris, poursuivre le test, sinon le test est non applicable.</li><li>Si le contenu imm\u00e9diatement adjacent \u00e0 l'\u00e9l\u00e9ment ne contient pas un lien\r\npermettant d'avoir acc\u00e8s \u00e0 la description longue de l'\u00e9l\u00e9ment, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>\r\nSi l'\u00e9l\u00e9ment poss\u00e8de au moins un des m\u00e9canismes suivant : \r\n<ul><li>attribut longdesc </li>\r\n<li>attribut alt,</li></ul> \r\npoursuivre le test, sinon le test est non applicable.\r\n</li>", 
         "thema": "Images", 
         "name": "[IMA]-09"
     }, 
@@ -211,7 +211,7 @@
         }, 
         "explanation": "Aucune information sur l'existance du captcha n'est pr\u00e9sente et aucune solution d'acc\u00e8s alternative n'est propos\u00e9e", 
         "description": "Pr\u00e9sence d'une information de contexte et d'une solution d'acc\u00e8s pour les captcha lorsque l'alternative ne peut pas \u00eatre communiqu\u00e9e", 
-        "solution": "Tout \u00e9l\u00e9ment : <ul> <li> <code>img</code>, </li> <li> <code>applet</code>, </li> <li> <code>embed</code>, </li> <li> <code>object</code>,</li><li><code>input type='image'</code>, </li><li>tout code javascript g\u00e9n\u00e9rant un des \u00e9l\u00e9ments pr\u00e9c\u00e9dant. </li> </ul><br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable.</li>\r\n\r\n<li>Si l'\u00e9l\u00e9ment est utilis\u00e9 comme captcha ou fait partie d'un test qui deviendrait inutile si l'alternative textuelle \u00e9tait pr\u00e9sente, poursuivre le test, sinon le test est non applicable.</li>\r\n", 
+        "solution": "Tout \u00e9l\u00e9ment : <ul> <li> <code>img</code>, </li> <li> <code>applet</code>, </li> <li> <code>embed</code>, </li> <li> <code>object</code>,</li><li><code>input type='image'</code>, </li><li>tout code javascript g\u00e9n\u00e9rant un des \u00e9l\u00e9ments pr\u00e9c\u00e9dant. </li> </ul><br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable.</li>\r\n\r\n<li>Si l'\u00e9l\u00e9ment est utilis\u00e9 comme captcha ou fait partie d'un test qui deviendrait inutile si l'alternative textuelle \u00e9tait pr\u00e9sente, poursuivre le test, sinon le test est non applicable.</li>", 
         "thema": "Images", 
         "name": "[IMA]-10"
     }, 
@@ -319,7 +319,7 @@
         }, 
         "explanation": "Un \u00e9l\u00e9ment non textuel fait r\u00e9f\u00e9rence a un \u00e9l\u00e9ment uniquement en l'identifiant gr\u00e2ce \u00e0 sa couleur ce qui le rend impossible \u00e0 identifier pour les personnes ne percevant pas les couleurs.", 
         "description": "Pr\u00e9sence d'un autre moyen que la couleur pour identifier un contenu auquel il est fait r\u00e9f\u00e9rence dans un \u00e9l\u00e9ment non textuel.", 
-        "solution": "<p> Tout \u00e9l\u00e9ment : </p><ul> <li> <code>img</code>, </li> <li> <code>input</code> de type image, </li> <li> <code>applet</code>, </li> <li> <code>object</code>, </li> <li> <code>embed</code>, </li> </ul><p> ou code javascript g\u00e9n\u00e9rant un des \u00e9l\u00e9ments pr\u00e9c\u00e9dents. </p><br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est pr\u00e9sent ou utilis\u00e9 dans la page, poursuivre le test, sinon le test est non applicable. </li>\r\n<li>Si l'\u00e9l\u00e9ment permet d'afficher un texte de fa\u00e7on graphique ou poss\u00e8de un attribut <code>alt</code> non vide, poursuivre le test, sinon le test est non applicable. </li> \r\n<li>Si le texte graphique ou son alternative mentionne une couleur et fait r\u00e9f\u00e9rence \u00e0 un contenu de la page ou du site, poursuivre le test, sinon le test est non applicable. </li> ", 
+        "solution": "<p> Tout \u00e9l\u00e9ment : </p><ul> <li> <code>img</code>, </li> <li> <code>input</code> de type image, </li> <li> <code>applet</code>, </li> <li> <code>object</code>, </li> <li> <code>embed</code>, </li> </ul><p> ou code javascript g\u00e9n\u00e9rant un des \u00e9l\u00e9ments pr\u00e9c\u00e9dents. </p><br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est pr\u00e9sent ou utilis\u00e9 dans la page, poursuivre le test, sinon le test est non applicable. </li>\r\n<li>Si l'\u00e9l\u00e9ment permet d'afficher un texte de fa\u00e7on graphique ou poss\u00e8de un attribut <code>alt</code> non vide, poursuivre le test, sinon le test est non applicable. </li> \r\n<li>Si le texte graphique ou son alternative mentionne une couleur et fait r\u00e9f\u00e9rence \u00e0 un contenu de la page ou du site, poursuivre le test, sinon le test est non applicable. </li>", 
         "thema": "Couleurs", 
         "name": "[COU]-02"
     }, 
@@ -425,7 +425,7 @@
             "id": 9, 
             "name": "RGAA v2.2.1"
         }, 
-        "explanation": "Certains textes sont des textes mis en image : ces textes ne sont pas agrandissables via le zoom typographique d'un navigateur, et leur rendu ne peut pas \u00eatre adapt\u00e9 aux besoin d'un utilisateur ayant par exemple des difficult\u00e9s avec les couleurs utilis\u00e9es (sans passer par une aide technique sp\u00e9cifique du type loupe d'\u00e9cran adaptative). Or, l'absence de contraintes typographiques fortes devrait rendre possible leur remplacement par des textes HTML styl\u00e9s via CSS.\r\n", 
+        "explanation": "Certains textes sont des textes mis en image : ces textes ne sont pas agrandissables via le zoom typographique d'un navigateur, et leur rendu ne peut pas \u00eatre adapt\u00e9 aux besoin d'un utilisateur ayant par exemple des difficult\u00e9s avec les couleurs utilis\u00e9es (sans passer par une aide technique sp\u00e9cifique du type loupe d'\u00e9cran adaptative). Or, l'absence de contraintes typographiques fortes devrait rendre possible leur remplacement par des textes HTML styl\u00e9s via CSS.", 
         "description": "Possibilit\u00e9 de remplacer les \u00e9l\u00e9ments non textuels par une mise en forme effectu\u00e9e gr\u00e2ce aux styles CSS.", 
         "solution": "<p>Tout \u00e9l\u00e9ment : </p><ul> <li> <code>img</code>, </li> <li> <code>object</code>, </li> <li> <code>embed</code>, </li> <li> <code>applet</code>. </li> </ul><br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si l'\u00e9l\u00e9ment contient du texte, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si l'\u00e9l\u00e9ment a \u00e9t\u00e9 d\u00e9fini par la charte graphique du service de communication publique en ligne, et que cette d\u00e9finition est ult\u00e9rieure \u00e0 publication du RGAA, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si l'\u00e9l\u00e9ment n'est pas un logotype ou purement d\u00e9coratif, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si la page ne comporte aucun m\u00e9canisme de remplacer les \u00e9l\u00e9ments non textuels par une mise en forme effectu\u00e9e gr\u00e2ce aux styles CSS, poursuivre le test, sinon le test est non applicable.</li>", 
         "thema": "Pr\u00e9sentation", 
@@ -701,7 +701,7 @@
             "id": 9, 
             "name": "RGAA v2.2.1"
         }, 
-        "explanation": "Les cellules de donn\u00e9es ne sont pas explicitement associ\u00e9es aux cellules d'en-t\u00eate \u00e0 l'aide des attributs SCOPE ou HEADERS : les lecteurs d'\u00e9cran ne seront pas n\u00e9cessairement en mesure d'effectuer cette association de mani\u00e8re pertinente. ", 
+        "explanation": "Les cellules de donn\u00e9es ne sont pas explicitement associ\u00e9es aux cellules d'en-t\u00eate \u00e0 l'aide des attributs SCOPE ou HEADERS : les lecteurs d'\u00e9cran ne seront pas n\u00e9cessairement en mesure d'effectuer cette association de mani\u00e8re pertinente.", 
         "description": "Pr\u00e9sence d'une relation entre les en-t\u00eates (th) et les cellules (td) qui s'y rattachent dans un tableau de donn\u00e9es simple gr\u00e2ce aux attributs id et headers ou scope.", 
         "solution": "<p> Tout \u00e9l\u00e9ment <code>table</code> identifi\u00e9 comme tableau de donn\u00e9es et ayant une seule ligne ou colonne d'en-t\u00eate (<code>th</code>) ou une ligne et une colonne d'en-t\u00eate. </p><br /><br /><li>Si l'\u00e9l\u00e9ment mentionn\u00e9 dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable. </li>", 
         "thema": "Tableaux", 
@@ -713,7 +713,7 @@
             "id": 9, 
             "name": "RGAA v2.2.1"
         }, 
-        "explanation": "Les cellules de donn\u00e9es ne sont pas explicitement associ\u00e9es aux cellules d'en-t\u00eate \u00e0 l'aide des attributs HEADERS : les lecteurs d'\u00e9cran ne seront pas n\u00e9cessairement en mesure d'effectuer cette association de mani\u00e8re pertinente. ", 
+        "explanation": "Les cellules de donn\u00e9es ne sont pas explicitement associ\u00e9es aux cellules d'en-t\u00eate \u00e0 l'aide des attributs HEADERS : les lecteurs d'\u00e9cran ne seront pas n\u00e9cessairement en mesure d'effectuer cette association de mani\u00e8re pertinente.", 
         "description": "Pr\u00e9sence d'une relation entre les en-t\u00eates (th) et les cellules (td) qui s'y rattachent dans un tableau de donn\u00e9es complexe gr\u00e2ce aux attributs id et headers.", 
         "solution": "<p> Tout \u00e9l\u00e9ment <code>table</code> identifi\u00e9 comme tableau de donn\u00e9es, ayant au moins deux lignes d'en-t\u00eate (<code>th</code>) ou deux colonnes d'en-t\u00eate (<code>th</code>) s\u00e9par\u00e9es par des lignes ou des colonnes de contenu. </p><br /><br /><li>Si l'\u00e9l\u00e9ment mentionn\u00e9 dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable. </li>", 
         "thema": "Tableaux", 
@@ -895,7 +895,7 @@
         }, 
         "explanation": "Certains scripts n'ont pas d'alternatives en cas de non support de javascript.", 
         "description": "Pr\u00e9sence d'une alternative au code javascript.", 
-        "solution": "<p> Tout code javascript utilis\u00e9 dans la page. </p><br /><br /><li>Si du code javascript est utilis\u00e9 dans la page, poursuivre le test, sinon le test est non applicable. </li>\r\n<li>Si le code javascript est n\u00e9cessaire pour acc\u00e9der \u00e0 des informations, poursuivre le test, sinon le test est non applicable. </li>\r\n<li>Si le contenu mis \u00e0 disposition gr\u00e2ce au javascript ne permet pas d'avoir acc\u00e8s au m\u00eame niveau d'information qu'un contenu textuel pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable.</li><li>Si le contenu n'est pas consult\u00e9 dans un environnement informatique maitris\u00e9 dans lequel javascript est obligatoirement activ\u00e9, poursuivre le test, sinon le test est non applicable<br></li> ", 
+        "solution": "<p> Tout code javascript utilis\u00e9 dans la page. </p><br /><br /><li>Si du code javascript est utilis\u00e9 dans la page, poursuivre le test, sinon le test est non applicable. </li>\r\n<li>Si le code javascript est n\u00e9cessaire pour acc\u00e9der \u00e0 des informations, poursuivre le test, sinon le test est non applicable. </li>\r\n<li>Si le contenu mis \u00e0 disposition gr\u00e2ce au javascript ne permet pas d'avoir acc\u00e8s au m\u00eame niveau d'information qu'un contenu textuel pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable.</li><li>Si le contenu n'est pas consult\u00e9 dans un environnement informatique maitris\u00e9 dans lequel javascript est obligatoirement activ\u00e9, poursuivre le test, sinon le test est non applicable<br></li>", 
         "thema": "Scripts", 
         "name": "[SCR]-12"
     }, 
@@ -1013,7 +1013,7 @@
             "id": 9, 
             "name": "RGAA v2.2.1"
         }, 
-        "explanation": "Du code javascript provoquent des changements brusques de luminosit\u00e9 ou des effets de flash rouge \u00e0 fr\u00e9quence \u00e9lev\u00e9e. ", 
+        "explanation": "Du code javascript provoquent des changements brusques de luminosit\u00e9 ou des effets de flash rouge \u00e0 fr\u00e9quence \u00e9lev\u00e9e.", 
         "description": "Absence de code javascript provoquant des changements brusques de luminosit\u00e9 ou des effets de flash rouge \u00e0 fr\u00e9quence \u00e9lev\u00e9e.", 
         "solution": "<p> Tout code javascript utilis\u00e9 dans la page. </p><br /><br /><li>Si du code javascript est utilis\u00e9 dans la page, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si le code javascript provoque des changements brusques de luminosit\u00e9 ou des effets de flash rouge, poursuivre le test, sinon le test est non applicable.</li>", 
         "thema": "Multim\u00e9dia", 
@@ -1063,7 +1063,7 @@
         }, 
         "explanation": "Du code javascript provoque des clignotements d\u00e9clench\u00e9s automatiquement ne pouvant pas \u00eatre arr\u00eat\u00e9s.", 
         "description": "Absence de code javascript provoquant des clignotements d\u00e9clench\u00e9s automatiquement ne pouvant pas \u00eatre arr\u00eat\u00e9s.", 
-        "solution": "<p> Tout code javascript utilis\u00e9 dans la page. </p><br /><br /><li>Si du code javascript est utilis\u00e9 dans la page, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si le code javascript provoque des clignotements qui se d\u00e9clenchent sans action pr\u00e9alable de l'utilisateur, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si le clignotements n'apporte en lui m\u00eame aucune information ou qu'il s'agit d'une fonctionnalit\u00e9 qu'il serait possible \u00e0 reproduire sans clignotement, poursuivre le test, sinon le test est non applicable.</li> ", 
+        "solution": "<p> Tout code javascript utilis\u00e9 dans la page. </p><br /><br /><li>Si du code javascript est utilis\u00e9 dans la page, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si le code javascript provoque des clignotements qui se d\u00e9clenchent sans action pr\u00e9alable de l'utilisateur, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si le clignotements n'apporte en lui m\u00eame aucune information ou qu'il s'agit d'une fonctionnalit\u00e9 qu'il serait possible \u00e0 reproduire sans clignotement, poursuivre le test, sinon le test est non applicable.</li>", 
         "thema": "Multim\u00e9dia", 
         "name": "[MUL]-21"
     }, 
@@ -1075,7 +1075,7 @@
         }, 
         "explanation": "Une mise en forme provoque des clignotements d\u00e9clench\u00e9s automatiquement ne pouvant pas \u00eatre arr\u00eat\u00e9s.", 
         "description": "Absence de mise en forme provoquant des clignotements d\u00e9clench\u00e9s automatiquement ne pouvant pas \u00eatre arr\u00eat\u00e9s.", 
-        "solution": "<p> Tout \u00e9l\u00e9ment mis en forme par des styles utilisant au moins une des propri\u00e9t\u00e9s suivantes :<br> </p><ul> <li> <code>background</code>, </li> <li> <code>background-image</code>, </li> <li> <code>content</code>, </li> <li> <code>text-decoration</code> avec la valeur <code>blink</code>.</li></ul><br /><br /><li>Si la mise en forme de l'\u00e9l\u00e9ment provoque des clignotements qui se d\u00e9clenche sans action pr\u00e9alable de l'utilisateur, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si le clignotements n'apporte en lui m\u00eame aucune information ou qu'il s'agit d'une fonctionnalit\u00e9 qu'il serait possible \u00e0 reproduire sans clignotement, poursuivre le test, sinon le test est non applicable.</li> ", 
+        "solution": "<p> Tout \u00e9l\u00e9ment mis en forme par des styles utilisant au moins une des propri\u00e9t\u00e9s suivantes :<br> </p><ul> <li> <code>background</code>, </li> <li> <code>background-image</code>, </li> <li> <code>content</code>, </li> <li> <code>text-decoration</code> avec la valeur <code>blink</code>.</li></ul><br /><br /><li>Si la mise en forme de l'\u00e9l\u00e9ment provoque des clignotements qui se d\u00e9clenche sans action pr\u00e9alable de l'utilisateur, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si le clignotements n'apporte en lui m\u00eame aucune information ou qu'il s'agit d'une fonctionnalit\u00e9 qu'il serait possible \u00e0 reproduire sans clignotement, poursuivre le test, sinon le test est non applicable.</li>", 
         "thema": "Multim\u00e9dia", 
         "name": "[MUL]-22"
     }, 
@@ -1099,7 +1099,7 @@
         }, 
         "explanation": "Un \u00e9l\u00e9ment provoque des mouvements d\u00e9clench\u00e9s automatiquement ne pouvant pas \u00eatre arr\u00eat\u00e9s.", 
         "description": "Absence d'\u00e9l\u00e9ments affichant des mouvements d\u00e9clench\u00e9s automatiquement ne pouvant pas \u00eatre arr\u00eat\u00e9s.", 
-        "solution": "<p> Tout \u00e9l\u00e9ment :<br> </p><ul> <li> <code>object</code>, </li> <li> <code>embed</code>, </li> <li> <code>applet</code>, </li> <li> <code>img</code> au format <acronym title=\"Graphics Interchange Format\" xml:lang=\"en\" lang=\"en\">gif</acronym> , <abbr title=\"Animated Portable Network Graphics\" xml:lang=\"en\" lang=\"en\">apng</abbr> ou <abbr title=\"Multiple-image Network Graphics\" xml:lang=\"en\" lang=\"en\">mng</abbr>. </li> </ul><br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si l'\u00e9l\u00e9ment affiche des mouvements qui se d\u00e9clenchent sans action pr\u00e9alable de l'utilisateur, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si le mouvement n'apporte en lui m\u00eame aucune information ou qu'il s'agit d'une fonctionnalit\u00e9 qu'il serait possible de reproduire sans mouvement, poursuivre le test, sinon le test est non applicable.</li> ", 
+        "solution": "<p> Tout \u00e9l\u00e9ment :<br> </p><ul> <li> <code>object</code>, </li> <li> <code>embed</code>, </li> <li> <code>applet</code>, </li> <li> <code>img</code> au format <acronym title=\"Graphics Interchange Format\" xml:lang=\"en\" lang=\"en\">gif</acronym> , <abbr title=\"Animated Portable Network Graphics\" xml:lang=\"en\" lang=\"en\">apng</abbr> ou <abbr title=\"Multiple-image Network Graphics\" xml:lang=\"en\" lang=\"en\">mng</abbr>. </li> </ul><br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si l'\u00e9l\u00e9ment affiche des mouvements qui se d\u00e9clenchent sans action pr\u00e9alable de l'utilisateur, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si le mouvement n'apporte en lui m\u00eame aucune information ou qu'il s'agit d'une fonctionnalit\u00e9 qu'il serait possible de reproduire sans mouvement, poursuivre le test, sinon le test est non applicable.</li>", 
         "thema": "Multim\u00e9dia", 
         "name": "[MUL]-24"
     }, 
@@ -1171,7 +1171,7 @@
         }, 
         "explanation": "Du code javascript d\u00e9clenchant une redirection automatique de la page est pr\u00e9sent.", 
         "description": "Absence de code javascript provoquant une redirection automatique de la page ne pouvant pas \u00eatre arr\u00eat\u00e9e.", 
-        "solution": "<p> Tout code javascript utilis\u00e9 dans la page. </p><br /><br /><li>Si du code javascript est utilis\u00e9 dans la page, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si le code javascript provoque une redirection automatique, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si la redirection automatique ne pourrait \u00eatre supprim\u00e9e sans changer fondamentalement l'information ou les fonctionnalit\u00e9s du contenu, poursuivre le test, sinon le test est non applicable.</li> ", 
+        "solution": "<p> Tout code javascript utilis\u00e9 dans la page. </p><br /><br /><li>Si du code javascript est utilis\u00e9 dans la page, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si le code javascript provoque une redirection automatique, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si la redirection automatique ne pourrait \u00eatre supprim\u00e9e sans changer fondamentalement l'information ou les fonctionnalit\u00e9s du contenu, poursuivre le test, sinon le test est non applicable.</li>", 
         "thema": "Navigation", 
         "name": "[NAV]-11"
     }, 
@@ -1291,7 +1291,7 @@
         }, 
         "explanation": "Des liens ouvrent une nouvelle fen\u00eatre via l'attribut target blank sans que cela soit signal\u00e9 \u00e0 l'utilisateur au pr\u00e9alable.", 
         "description": "Pr\u00e9sence d'un avertissement pr\u00e9alable \u00e0 l'ouverture de nouvelle fen\u00eatre lors de l'utilisation de l'attribut target sur les liens textuels et les formulaires.", 
-        "solution": "<p> Tout \u00e9l\u00e9ment :<br> </p><ul> <li> <code>a</code> </li> <li> <code>form</code> </li> </ul><br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si l'\u00e9l\u00e9ment poss\u00e8de un attribut target, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si le contenu de l'attribut target est diff\u00e9rent de _top, _parent, _self, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si l'\u00e9l\u00e9ment n'a pas pour unique enfant un \u00e9l\u00e9ment img, poursuivre le test sinon le test est non applicable.</li>\r\n", 
+        "solution": "<p> Tout \u00e9l\u00e9ment :<br> </p><ul> <li> <code>a</code> </li> <li> <code>form</code> </li> </ul><br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si l'\u00e9l\u00e9ment poss\u00e8de un attribut target, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si le contenu de l'attribut target est diff\u00e9rent de _top, _parent, _self, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si l'\u00e9l\u00e9ment n'a pas pour unique enfant un \u00e9l\u00e9ment img, poursuivre le test sinon le test est non applicable.</li>", 
         "thema": "Navigation", 
         "name": "[NAV]-02"
     }, 
@@ -1411,7 +1411,7 @@
         }, 
         "explanation": "Des images ou des \u00e9tiquettes de formulaires identiques sont utilis\u00e9es dans des pages diff\u00e9rentes en ayant les m\u00eames fonctions ou le m\u00eame r\u00f4le alors qu'elles pr\u00e9sentent une alternative textuelles ou un contenu diff\u00e9rent.", 
         "description": "Coh\u00e9rence dans l'identification des alternatives textuelles et des \u00e9tiquettes de formulaires.", 
-        "solution": "<p>Toute barre de navigation.</p> \r\n\r\n<p>Tout \u00e9l\u00e9ment :</p>\r\n<ul>\r\n<li><code>applet</code>,</li>\r\n<li><code>object</code>,</li>\r\n<li><code>img</code>,</li>\r\n<li><code>input type=\"image\"</code>,</li>\r\n<li><code>input type=\"text\"</code>,</li>\r\n<li><code>input type=\"checkbox\"</code>,</li>\r\n<li><code>input type=\"file\"</code>,</li>\r\n<li><code>input type=\"radio\"</code>,</li>\r\n<li><code>input type=\"password\"</code>,</li>\r\n<li><code>select</code>,</li>\r\n<li><code>textarea</code>,</li>\r\n</ul><br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si l'\u00e9l\u00e9ment est pr\u00e9sent sur plusieurs pages ou plusieurs fois dans une page, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si le r\u00f4le de l'\u00e9l\u00e9ment est identique d'une page \u00e0 l'autre ou plusieurs fois dans la m\u00eame page, poursuivre le test, sinon le test est non applicable.</li> ", 
+        "solution": "<p>Toute barre de navigation.</p> \r\n\r\n<p>Tout \u00e9l\u00e9ment :</p>\r\n<ul>\r\n<li><code>applet</code>,</li>\r\n<li><code>object</code>,</li>\r\n<li><code>img</code>,</li>\r\n<li><code>input type=\"image\"</code>,</li>\r\n<li><code>input type=\"text\"</code>,</li>\r\n<li><code>input type=\"checkbox\"</code>,</li>\r\n<li><code>input type=\"file\"</code>,</li>\r\n<li><code>input type=\"radio\"</code>,</li>\r\n<li><code>input type=\"password\"</code>,</li>\r\n<li><code>select</code>,</li>\r\n<li><code>textarea</code>,</li>\r\n</ul><br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si l'\u00e9l\u00e9ment est pr\u00e9sent sur plusieurs pages ou plusieurs fois dans une page, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si le r\u00f4le de l'\u00e9l\u00e9ment est identique d'une page \u00e0 l'autre ou plusieurs fois dans la m\u00eame page, poursuivre le test, sinon le test est non applicable.</li>", 
         "thema": "Images", 
         "name": "[IMA]-11"
     }, 
@@ -1447,7 +1447,7 @@
         }, 
         "explanation": "Le format des documents en t\u00e9l\u00e9chargements n'est pas indiqu\u00e9 dans le libell\u00e9 du lien (ou via son attribut TITLE) ou dans son contexte. Les utilisateurs consultant les liens hors contexte (liste de liens extraite par un lecteur d'\u00e9cran par exemple) n'auront pas acc\u00e8s \u00e0 ces informations.", 
         "description": "Pr\u00e9sence des informations de format pour les documents en t\u00e9l\u00e9chargement.", 
-        "solution": "<p> Tout \u00e9l\u00e9ment :<br> </p><ul> <li> <code>a</code>, </li> <li> <code>area</code>, </li> </ul><p> ou tout code javascript utilis\u00e9 dans la page. </p><br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est pr\u00e9sent ou utilis\u00e9 dans la page, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si l'\u00e9l\u00e9ment provoque le t\u00e9l\u00e9chargement d'un document, poursuivre le test, sinon le test est non applicable.</li>\r\n", 
+        "solution": "<p> Tout \u00e9l\u00e9ment :<br> </p><ul> <li> <code>a</code>, </li> <li> <code>area</code>, </li> </ul><p> ou tout code javascript utilis\u00e9 dans la page. </p><br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est pr\u00e9sent ou utilis\u00e9 dans la page, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si l'\u00e9l\u00e9ment provoque le t\u00e9l\u00e9chargement d'un document, poursuivre le test, sinon le test est non applicable.</li>", 
         "thema": "Navigation", 
         "name": "[NAV]-26"
     }, 
@@ -1495,7 +1495,7 @@
         }, 
         "explanation": "La langue des documents en t\u00e9l\u00e9chargements n'est pas syst\u00e9matiquement indiqu\u00e9 dans le libell\u00e9 du lien (ou via son attribut TITLE ou son contexte). Les utilisateurs consultant les liens hors contexte (liste de liens extraite par un lecteur d'\u00e9cran par exemple) n'auront pas acc\u00e8s \u00e0 ces informations.", 
         "description": "Pr\u00e9sence des informations de langue pour les documents en t\u00e9l\u00e9chargement.", 
-        "solution": "<p> Tout \u00e9l\u00e9ment :<br> </p><ul> <li> <code>a</code>, </li> <li> <code>area</code>, </li> </ul><p> ou tout code javascript utilis\u00e9 dans la page. </p><br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est pr\u00e9sent ou utilis\u00e9 dans la page, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si l'\u00e9l\u00e9ment provoque le t\u00e9l\u00e9chargement d'un document, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si la langue du document est diff\u00e9rente de la langue de l'intitul\u00e9 de l'\u00e9l\u00e9ment d\u00e9clenchant le t\u00e9l\u00e9chargement, poursuivre le test, sinon le test est non applicable.</li>\r\n", 
+        "solution": "<p> Tout \u00e9l\u00e9ment :<br> </p><ul> <li> <code>a</code>, </li> <li> <code>area</code>, </li> </ul><p> ou tout code javascript utilis\u00e9 dans la page. </p><br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est pr\u00e9sent ou utilis\u00e9 dans la page, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si l'\u00e9l\u00e9ment provoque le t\u00e9l\u00e9chargement d'un document, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si la langue du document est diff\u00e9rente de la langue de l'intitul\u00e9 de l'\u00e9l\u00e9ment d\u00e9clenchant le t\u00e9l\u00e9chargement, poursuivre le test, sinon le test est non applicable.</li>", 
         "thema": "Navigation", 
         "name": "[NAV]-28"
     }, 
@@ -1687,7 +1687,7 @@
         }, 
         "explanation": "Certains champs de formulaires ne sont pas dot\u00e9s d'une \u00e9tiquette pertinente qui en explicite le r\u00f4le.", 
         "description": "Pertinence des \u00e9tiquettes d'\u00e9l\u00e9ment de formulaire.", 
-        "solution": "<p> Tout \u00e9l\u00e9ment <code>label</code>. </p><br /><br /><li>Si l'\u00e9l\u00e9ment mentionn\u00e9 dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable. </li>\r\n", 
+        "solution": "<p> Tout \u00e9l\u00e9ment <code>label</code>. </p><br /><br /><li>Si l'\u00e9l\u00e9ment mentionn\u00e9 dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable. </li>", 
         "thema": "Formulaires", 
         "name": "[FOR]-12"
     }, 
@@ -1699,7 +1699,7 @@
         }, 
         "explanation": "La lecture des intitul\u00e9s de liens seul ou avec leur contexte ne permet pas d'identifier quelle est la destination ou l'action des liens.", 
         "description": "Possibilit\u00e9 d'identifier la destination ou l'action des liens et des boutons.", 
-        "solution": "<p> Tout \u00e9l\u00e9ment :<br> </p><ul> <li> <code>a</code>, </li> <li> <code>area</code>, </li> <li> <code>button</code>, </li> <li> <code>input type=\"image\"</code>, </li> <li> <code>input type=\"submit\"</code>, </li> <li> <code>input type=\"button\"</code>, </li><li> <code>input type=\"reset\"</code>. </li> </ul><br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si la lecture de l'intitul\u00e9 du lien seul en dehors de son contexte permet \u00e0 une personne n'ayant aucun handicap de comprendre l'action ou d'identifier la destination du lien, poursuivre le test, sinon le test est non applicable</li>\r\n", 
+        "solution": "<p> Tout \u00e9l\u00e9ment :<br> </p><ul> <li> <code>a</code>, </li> <li> <code>area</code>, </li> <li> <code>button</code>, </li> <li> <code>input type=\"image\"</code>, </li> <li> <code>input type=\"submit\"</code>, </li> <li> <code>input type=\"button\"</code>, </li><li> <code>input type=\"reset\"</code>. </li> </ul><br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si la lecture de l'intitul\u00e9 du lien seul en dehors de son contexte permet \u00e0 une personne n'ayant aucun handicap de comprendre l'action ou d'identifier la destination du lien, poursuivre le test, sinon le test est non applicable</li>", 
         "thema": "Navigation", 
         "name": "[NAV]-13"
     }, 
@@ -1759,7 +1759,7 @@
         }, 
         "explanation": "Les titres TITLE de page ne fournissent pas syst\u00e9matiquement toutes les informations n\u00e9cessaires pour identifier pr\u00e9cis\u00e9ment le contenu de la page.", 
         "description": "Pertinence du titre de la page.", 
-        "solution": "<p> Tout \u00e9l\u00e9ment <code>title</code>. </p><br /><br /><li>Si l'\u00e9l\u00e9ment mentionn\u00e9 dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable. </li>\r\n", 
+        "solution": "<p> Tout \u00e9l\u00e9ment <code>title</code>. </p><br /><br /><li>Si l'\u00e9l\u00e9ment mentionn\u00e9 dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable. </li>", 
         "thema": "Standards", 
         "name": "[STA]-07"
     }, 
@@ -1855,7 +1855,7 @@
         }, 
         "explanation": "Les menus ou barres de navigation pr\u00e9sente une pr\u00e9sentation visuelles totalement diff\u00e9rentes d'une page \u00e0 l'autre.", 
         "description": "Coh\u00e9rence de la pr\u00e9sentation des menus et barres de navigation.", 
-        "solution": "<p> Groupe d'\u00e9l\u00e9ments <code>a</code> permettant la navigation dans le site ou dans une page. </p><br /><br /><li>Si le groupe d'\u00e9l\u00e9ments mentionn\u00e9 dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable. </li>\r\n<li>Si le groupe d'\u00e9l\u00e9ments est pr\u00e9sent sur au moins une autre page du site, poursuivre le test, sinon le test est non applicable. </li>\r\n<li>Si la page en cours d'analyse n'est pas la page d'accueil, poursuivre le test, sinon le test est non applicable.</li>\r\n", 
+        "solution": "<p> Groupe d'\u00e9l\u00e9ments <code>a</code> permettant la navigation dans le site ou dans une page. </p><br /><br /><li>Si le groupe d'\u00e9l\u00e9ments mentionn\u00e9 dans le champ d'application est pr\u00e9sent dans la page, poursuivre le test, sinon le test est non applicable. </li>\r\n<li>Si le groupe d'\u00e9l\u00e9ments est pr\u00e9sent sur au moins une autre page du site, poursuivre le test, sinon le test est non applicable. </li>\r\n<li>Si la page en cours d'analyse n'est pas la page d'accueil, poursuivre le test, sinon le test est non applicable.</li>", 
         "thema": "Navigation", 
         "name": "[NAV]-23"
     }, 
@@ -2071,7 +2071,7 @@
         }, 
         "explanation": "Des \u00e9l\u00e9ments non textuels restituent de l'information par le biais de formes ou par la position d'\u00e9l\u00e9ment dans les \u00e9l\u00e9ments non textuels.", 
         "description": "Pr\u00e9sence d'un moyen de transmission de l'information autre qu'une utilisation de la forme ou la position dans les \u00e9l\u00e9ments non textuels.", 
-        "solution": "    Tout \u00e9l\u00e9ment :\r\n<ul>\r\n<li><code>img</code>,</li>\r\n<li><code>input</code> de type image,</li>\r\n<li><code>applet</code>,</li>\r\n<li><code>object</code>,</li>\r\n<li><code>embed</code>,</li>\r\n</ul>\r\nou code javascript g\u00e9n\u00e9rant un des \u00e9l\u00e9ments pr\u00e9c\u00e9dents.<br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est pr\u00e9sent ou utilis\u00e9 dans la page, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si l'\u00e9l\u00e9ment affiche des zones dont leur forme ou leur position donne de l'information, poursuivre le test, sinon le test est non applicable.</li>", 
+        "solution": "Tout \u00e9l\u00e9ment :\r\n<ul>\r\n<li><code>img</code>,</li>\r\n<li><code>input</code> de type image,</li>\r\n<li><code>applet</code>,</li>\r\n<li><code>object</code>,</li>\r\n<li><code>embed</code>,</li>\r\n</ul>\r\nou code javascript g\u00e9n\u00e9rant un des \u00e9l\u00e9ments pr\u00e9c\u00e9dents.<br /><br /><li>Si l'un des \u00e9l\u00e9ments mentionn\u00e9s dans le champ d'application est pr\u00e9sent ou utilis\u00e9 dans la page, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si l'\u00e9l\u00e9ment affiche des zones dont leur forme ou leur position donne de l'information, poursuivre le test, sinon le test est non applicable.</li>", 
         "thema": "Textes", 
         "name": "[TEX]-07"
     }, 
@@ -2239,7 +2239,7 @@
         }, 
         "explanation": "Des unit\u00e9s absolues qui ne sont pas destin\u00e9es au rendu \u00e0 l'\u00e9cran sont pr\u00e9sentes dans certains styles CSS.", 
         "description": "Absence d'unit\u00e9s absolues ou de pixel dans les feuilles de styles pour la taille de caract\u00e8re des \u00e9l\u00e9ments de formulaire.", 
-        "solution": "Toute propri\u00e9t\u00e9 CSS contenant une\r\nvaleur non nulle exprim\u00e9e en :<br><br> \r\n<ul><li>pt (point), \r\n\r\n    </li><li>pc (pica), \r\n    \r\n    </li><li>px\r\n    (pixel), \r\n    </li><li>cm (centim\u00e8tre), \r\n\r\n    </li><li>mm (millim\u00e8tre), \r\n    \r\n    </li><li>in (pouce). \r\n    \r\n</li></ul>\r\n<br /><br /><li>Si l'une des valeurs mentionn\u00e9es dans le champ d'application est pr\u00e9sente dans la feuille de style, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si la propri\u00e9t\u00e9 CSS utilisant cette valeur est la propri\u00e9t\u00e9 font-size ou font, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si cette propri\u00e9t\u00e9 est utilis\u00e9e pour styler un \u00e9l\u00e9ment de formulaire (input, textarea, select, button), poursuivre le test, sinon le test est non applicable.</li>\r\n", 
+        "solution": "Toute propri\u00e9t\u00e9 CSS contenant une\r\nvaleur non nulle exprim\u00e9e en :<br><br> \r\n<ul><li>pt (point), \r\n\r\n    </li><li>pc (pica), \r\n    \r\n    </li><li>px\r\n    (pixel), \r\n    </li><li>cm (centim\u00e8tre), \r\n\r\n    </li><li>mm (millim\u00e8tre), \r\n    \r\n    </li><li>in (pouce). \r\n    \r\n</li></ul>\r\n<br /><br /><li>Si l'une des valeurs mentionn\u00e9es dans le champ d'application est pr\u00e9sente dans la feuille de style, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si la propri\u00e9t\u00e9 CSS utilisant cette valeur est la propri\u00e9t\u00e9 font-size ou font, poursuivre le test, sinon le test est non applicable.</li>\r\n<li>Si cette propri\u00e9t\u00e9 est utilis\u00e9e pour styler un \u00e9l\u00e9ment de formulaire (input, textarea, select, button), poursuivre le test, sinon le test est non applicable.</li>", 
         "thema": "Pr\u00e9sentation", 
         "name": "[PR\u00e9]-14"
     }
