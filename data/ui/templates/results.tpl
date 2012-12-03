@@ -1,4 +1,4 @@
-<table id="test_result">
+<table id="test_result" class="data">
   <thead>
     <tr>
       <th id="hChecklist">{{! it.locales['oqs.checklists'] }}</th>

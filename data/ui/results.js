@@ -146,6 +146,7 @@ $.widget("ui.detailsViewer",{
     }
 });
 
+
 //
 // Display test results
 //
@@ -237,6 +238,7 @@ self.port.on("showResults", function(tests, tableOptions) {
             'comment': _r.comment,
             'nodes': _r.details,
             'result': _r.result,
+            'label': _r.label,
             'test_id': _r.id
         });
         $(data.row).click(show_details);
@@ -273,6 +275,22 @@ self.port.on("showResults", function(tests, tableOptions) {
 
     self.port.on("resultSearch", function(q) {
         $('#test_result').superTable('search', q);
+    });
+});
+
+
+//
+// Landing page (to launch tests)
+//
+self.port.on("showLandingUI", function() {
+    $('body').doT('tplMessage', {
+        'message': self.options.locales['oqs.no_result_yet'],
+        'class': '',
+        'button': self.options.locales['oqs.launch']
+    });
+
+    $('button').prepend('<span></span>').addClass('launch').click(function() {
+        self.port.emit("launch");
     });
 });
 

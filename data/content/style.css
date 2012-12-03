@@ -208,6 +208,9 @@ h1,h2,h3 {
     max-width: 720px;
     margin: 0 auto;
 }
+#main {
+    position: relative;
+}
 
 #header-wrap {
     background: -moz-linear-gradient(hsl(209, 18%, 30%), hsl(210, 24%, 16%)) no-repeat padding-box;
@@ -247,6 +250,16 @@ h1,h2,h3 {
     text-align: center;
 }
 
+#pref_saved {
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 0;
+    background: #ffcc66;
+    color: #000;
+    padding: 0.5em;
+    border-radius: 0 0 6px 6px;
+}
 
 table tbody tr>td:nth-child(2) {
     white-space: nowrap;

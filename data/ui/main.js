@@ -80,20 +80,5 @@ self.port.on("showMessage", function(aMessage, aClass, aButton) {
 });
 
 
-//
-// Landing page (to launch tests)
-//
-self.port.on("showLandingUI", function() {
-    $('body').doT('tplMessage', {
-        'message': self.options.locales['oqs.no_result_yet'],
-        'class': '',
-        'button': self.options.locales['oqs.launch']
-    });
-
-    $('button').prepend('<span></span>').addClass('launch').click(function() {
-        self.port.emit("launch");
-    });
-});
-
 //----
 })(jQuery);

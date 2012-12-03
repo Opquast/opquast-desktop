@@ -35,34 +35,51 @@
  * the terms of any one of the MPL, the GPL or the LGPL.
  *
  * ***** END LICENSE BLOCK ***** */
+/*jshint globalstrict:true, jquery:true */
+/*global doT, self */
+
 "use strict";
 
-$('head title').text(self.options.locales['oqs.preferences_title']);
+(function($) {
+    function showSaved() {
+        $('#pref_saved').stop().show();
+        setTimeout(function() {
+            $('#pref_saved').fadeOut(500);
+        }, 1000);
+    }
 
-var cl_prefs = self.options.prefs.checklists.split(/\s*,\s*/);
-var checklists = self.options.checklists;
-var cl_array = [];
-for (var i in checklists) {
-    checklists[i].selected = cl_prefs.indexOf(i) != -1;
-    cl_array.push([i, checklists[i]]);
-}
+    $('head title').text(self.options.locales['oqs.preferences_title']);
 
-var tpl = doT.compile(self.options.template)({
-    'locales': self.options.locales,
-    'prefs': self.options.prefs,
-    'checklists': cl_array
-});
+    var cl_prefs = self.options.prefs.checklists.split(/\s*,\s*/);
+    var checklists = self.options.checklists;
+    var cl_array = [];
+    for (var i in checklists) {
+        checklists[i].selected = cl_prefs.indexOf(i) != -1;
+        checklists[i].langs = checklists[i].langs.map(function(l) {
+            return l.split('-')[0];
+        });
+        cl_array.push([i, checklists[i]]);
+    }
 
-$('body').html(tpl);
-
-$('#prefgen input').change(function() {
-    self.port.emit("setPref", this.value, this.checked)
-});
-
-$('#prefcl input').change(function() {
-    var values = [];
-    $('#prefcl input:checked').each(function() {
-        values.push(this.value);
+    var tpl = doT.compile(self.options.template)({
+        'locales': self.options.locales,
+        'prefs': self.options.prefs,
+        'checklists': cl_array
     });
-    self.port.emit("setPref", "checklists", values.join(","));
-});
+
+    $('body').html(tpl);
+
+    $('#prefgen input').change(function() {
+        self.port.emit("setPref", this.value, this.checked);
+        showSaved();
+    });
+
+    $('#prefcl input').change(function() {
+        var values = [];
+        $('#prefcl input:checked').each(function() {
+            values.push(this.value);
+        });
+        self.port.emit("setPref", "checklists", values.join(","));
+        showSaved();
+    });
+})(jQuery);
