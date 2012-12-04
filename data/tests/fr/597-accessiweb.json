@@ -1,0 +1,3674 @@
+{
+    "21504": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, le fil d'Ariane est-il repr\u00e9sentatif de la position de la page dans l'arborescence du site ?", 
+        "solution": "", 
+        "thema": "Navigation", 
+        "name": "12.9.1"
+    }, 
+    "21505": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, chaque groupe de liens importants est-il impl\u00e9ment\u00e9 dans un \u00e9l\u00e9ment commun ?", 
+        "solution": "", 
+        "thema": "Navigation", 
+        "name": "12.10.1"
+    }, 
+    "21506": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, chaque groupe de liens importants v\u00e9rifie-t-il une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Navigation", 
+        "name": "12.10.2"
+    }, 
+    "21507": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, la zone de contenu v\u00e9rifie-t-elle une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Navigation", 
+        "name": "12.10.3"
+    }, 
+    "21508": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, un lien permet-il d'\u00e9viter chaque groupe de liens importants identifi\u00e9 ou d'y acc\u00e9der ?", 
+        "solution": "", 
+        "thema": "Navigation", 
+        "name": "12.11.1"
+    }, 
+    "21509": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, un lien permet-il d'\u00e9viter la zone de contenu identifi\u00e9e ou d'y acc\u00e9der ?", 
+        "solution": "", 
+        "thema": "Navigation", 
+        "name": "12.11.2"
+    }, 
+    "21510": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, chaque lien d'\u00e9vitement ou d'acc\u00e8s rapide est-il fonctionnel ?", 
+        "solution": "", 
+        "thema": "Navigation", 
+        "name": "12.11.3"
+    }, 
+    "21511": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque ensemble de pages, les liens d'\u00e9vitements ou d'acc\u00e8s rapide v\u00e9rifient-t-ils ces conditions ?", 
+        "solution": "", 
+        "thema": "Navigation", 
+        "name": "12.11.4"
+    }, 
+    "21512": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, la page en cours de consultation est-elle indiqu\u00e9e dans le menu de navigation ?", 
+        "solution": "", 
+        "thema": "Navigation", 
+        "name": "12.12.1"
+    }, 
+    "21513": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, l'ordre de tabulation dans le contenu est-il coh\u00e9rent ?", 
+        "solution": "", 
+        "thema": "Navigation", 
+        "name": "12.13.1"
+    }, 
+    "21514": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque script qui met \u00e0 jour ou ins\u00e8re un contenu, l'ordre de tabulation reste-t-il coh\u00e9rent ?", 
+        "solution": "", 
+        "thema": "Navigation", 
+        "name": "12.13.2"
+    }, 
+    "21515": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, chaque \u00e9l\u00e9ment recevant le focus v\u00e9rifie-t-il une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Navigation", 
+        "name": "12.14.1"
+    }, 
+    "21516": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque page Web, chaque proc\u00e9d\u00e9 de rafra\u00eechissement ou de redirection automatique (code, script, balise object, balise applet, balise meta) v\u00e9rifie-t-il une de ces conditions (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Consultation", 
+        "name": "13.1.1"
+    }, 
+    "21517": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque page Web, chaque proc\u00e9d\u00e9 de redirection effectu\u00e9 via une balise m\u00e9ta est-il imm\u00e9diat (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Consultation", 
+        "name": "13.1.2"
+    }, 
+    "21518": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque page Web, chaque proc\u00e9d\u00e9 de redirection effectu\u00e9 via un script v\u00e9rifie-t-il une de ces conditions (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Consultation", 
+        "name": "13.1.3"
+    }, 
+    "21519": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque page Web, chaque proc\u00e9d\u00e9 de redirection effectu\u00e9 cot\u00e9 serveur v\u00e9rifie-t-il une de ces conditions (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Consultation", 
+        "name": "13.1.4"
+    }, 
+    "21520": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque page Web, chaque proc\u00e9d\u00e9 limitant le temps d'une session v\u00e9rifie-t-il une de ces conditions (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Consultation", 
+        "name": "13.1.5"
+    }, 
+    "21521": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, pour chaque ouverture d'une nouvelle fen\u00eatre effectu\u00e9e via un lien (attribut target=\"_blank\") ou une commande javascript, l'utilisateur est-il averti ?", 
+        "solution": "", 
+        "thema": "Consultation", 
+        "name": "13.2.1"
+    }, 
+    "21522": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, pour chaque ouverture d'une nouvelle fen\u00eatre effectu\u00e9e via une balise object, applet ou embed, l'utilisateur est-il averti ?", 
+        "solution": "", 
+        "thema": "Consultation", 
+        "name": "13.2.2"
+    }, 
+    "21523": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, pour chaque ouverture d'une nouvelle fen\u00eatre effectu\u00e9e via un contr\u00f4le de formulaire, l'utilisateur est-il averti ?", 
+        "solution": "", 
+        "thema": "Consultation", 
+        "name": "13.2.3"
+    }, 
+    "21524": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, l'ouverture d'une nouvelle fen\u00eatre ne doit pas \u00eatre d\u00e9clench\u00e9e sans action de l'utilisateur. Cette r\u00e8gle est-elle respect\u00e9e ?", 
+        "solution": "", 
+        "thema": "Consultation", 
+        "name": "13.3.1"
+    }, 
+    "21525": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, chaque t\u00e2che limit\u00e9e dans le temps v\u00e9rifie-t-elle une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Consultation", 
+        "name": "13.4.1"
+    }, 
+    "21526": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, lors d'une interruption de session authentifi\u00e9e, les donn\u00e9es saisies par l'utilisateur sont-elles r\u00e9cup\u00e9r\u00e9es apr\u00e8s r\u00e9-authentification ?", 
+        "solution": "", 
+        "thema": "Consultation", 
+        "name": "13.5.1"
+    }, 
+    "21527": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, chaque fichier en t\u00e9l\u00e9chargement via un lien ou un formulaire a-t-il des informations relatives \u00e0 son format ?", 
+        "solution": "", 
+        "thema": "Consultation", 
+        "name": "13.6.1"
+    }, 
+    "21528": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, chaque fichier en t\u00e9l\u00e9chargement via un lien ou un formulaire a-t-il des informations relatives \u00e0 son poids ?", 
+        "solution": "", 
+        "thema": "Consultation", 
+        "name": "13.6.2"
+    }, 
+    "21529": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, chaque fichier en t\u00e9l\u00e9chargement via un lien ou un formulaire a-t-il, si n\u00e9cessaire, des informations relatives \u00e0 sa langue ?", 
+        "solution": "", 
+        "thema": "Consultation", 
+        "name": "13.6.3"
+    }, 
+    "21530": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, chaque fonctionnalit\u00e9 de t\u00e9l\u00e9chargement d'un document bureautique v\u00e9rifie-t-elle une de ces conditions (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Consultation", 
+        "name": "13.7.1"
+    }, 
+    "21531": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque document bureautique ayant une version accessible v\u00e9rifie-t-il une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Consultation", 
+        "name": "13.8.1"
+    }, 
+    "21532": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, chaque expression inhabituelle ou limit\u00e9e, chaque \r\nexpression idiomatique ou le jargon v\u00e9rifie-t-il une des conditions \r\nsuivantes ?", 
+        "solution": "", 
+        "thema": "Consultation", 
+        "name": "13.9.1"
+    }, 
+    "21533": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, chaque contenu cryptique (art ascii, \u00e9moticon, syntaxe cryptique) v\u00e9rifie-t-il une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Consultation", 
+        "name": "13.11.1"
+    }, 
+    "21534": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, chaque mot dont le sens ne peut \u00eatre compris sans en conna\u00eetre la prononciation, v\u00e9rifie-t-il une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Consultation", 
+        "name": "13.13.1"
+    }, 
+    "21535": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, chaque texte qui n\u00e9cessite un niveau de lecture \r\nplus avanc\u00e9 que le premier cycle de l'enseignement secondaire (hors nom \r\npropre et titre) v\u00e9rifie-t-il une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Consultation", 
+        "name": "13.14.1"
+    }, 
+    "21536": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, chaque image anim\u00e9e (balise img ou balise object) qui provoque un changement brusque de luminosit\u00e9 ou un effet de flash v\u00e9rifie-t-elle une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Consultation", 
+        "name": "13.15.1"
+    }, 
+    "21537": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, chaque script  qui provoque un changement brusque de luminosit\u00e9 ou un effet de flash v\u00e9rifie-t-il une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Consultation", 
+        "name": "13.15.2"
+    }, 
+    "21538": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, chaque mise en forme CSS qui provoque un changement brusque de luminosit\u00e9 ou un effet de flash v\u00e9rifie-t-elle une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Consultation", 
+        "name": "13.15.3"
+    }, 
+    "21539": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, chaque applet java qui provoque un changement brusque de luminosit\u00e9 ou un effet de flash v\u00e9rifie-t-elle les une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Consultation", 
+        "name": "13.15.4"
+    }, 
+    "21540": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, chaque changement brusque de luminosit\u00e9 ou un effet de flash provoqu\u00e9 par une image anim\u00e9e (balise img ou balise object) a-t-il une fr\u00e9quence inf\u00e9rieure ou \u00e9gale \u00e0 3 par seconde ?", 
+        "solution": "", 
+        "thema": "Consultation", 
+        "name": "13.16.1"
+    }, 
+    "21541": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web chaque changement brusque de luminosit\u00e9 ou un effet de flash provoqu\u00e9 par un script a-t-il une fr\u00e9quence inf\u00e9rieure ou \u00e9gale \u00e0 3 par seconde ?", 
+        "solution": "", 
+        "thema": "Consultation", 
+        "name": "13.16.2"
+    }, 
+    "21542": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, chaque changement brusque de luminosit\u00e9 ou un effet de flash provoqu\u00e9 par une mise en forme CSS a-t-il une fr\u00e9quence inf\u00e9rieure ou \u00e9gale \u00e0 3 par seconde ?", 
+        "solution": "", 
+        "thema": "Consultation", 
+        "name": "13.16.3"
+    }, 
+    "21543": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, chaque changement brusque de luminosit\u00e9 ou un effet de flash provoqu\u00e9 par une applet java a-t-il une fr\u00e9quence inf\u00e9rieure ou \u00e9gale \u00e0 3 par seconde ?", 
+        "solution": "", 
+        "thema": "Consultation", 
+        "name": "13.16.4"
+    }, 
+    "21544": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, chaque contenu en mouvement, d\u00e9clench\u00e9 automatiquement, v\u00e9rifie-t-il une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Consultation", 
+        "name": "13.17.1"
+    }, 
+    "21545": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, chaque contenu clignotant, d\u00e9clench\u00e9 automatiquement, v\u00e9rifie-t-il une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Consultation", 
+        "name": "13.17.2"
+    }, 
+    "21546": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque media temporel pr\u00e9-enregistr\u00e9, ins\u00e9r\u00e9 via &lt;object&gt; ou &lt;embed&gt; et qui n\u00e9cessite une transcription textuelle v\u00e9rifie-t-il une de ces conditions (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.1.4"
+    }, 
+    "21547": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque media temporel synchronis\u00e9 ou seulement audio, ins\u00e9r\u00e9 via &lt;object&gt; ou &lt;embed&gt; et qui n\u00e9cessite une transcription textuelle v\u00e9rifie-t-il une de ces conditions (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.5.3"
+    }, 
+    "21548": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque media temporel synchronis\u00e9 ou seulement vid\u00e9o, ins\u00e9r\u00e9 via &lt;object&gt; ou &lt;embed&gt; et qui n\u00e9cessite une transcription textuelle v\u00e9rifie-t-il une de ces conditions (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.13.3"
+    }, 
+    "21549": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, pour chaque texte ou ensemble de textes, \r\nl'information ne doit pas \u00eatre donn\u00e9e uniquement par la forme, taille ou\r\n position. Cette r\u00e8gle est-elle impl\u00e9ment\u00e9e de fa\u00e7on pertinente ?", 
+        "solution": "", 
+        "thema": "Pr\u00e9sentation de l'information", 
+        "name": "10.15.1"
+    }, 
+    "21550": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, pour chaque image ou ensemble d'images, \r\nl'information ne doit pas \u00eatre donn\u00e9e par la forme, taille ou position \r\nuniquement. Cette r\u00e8gle est-elle impl\u00e9ment\u00e9e de fa\u00e7on pertinente ?", 
+        "solution": "", 
+        "thema": "Pr\u00e9sentation de l'information", 
+        "name": "10.15.2"
+    }, 
+    "21551": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, pour chaque m\u00e9dia temporel, l'information ne doit \r\npas \u00eatre donn\u00e9e par la forme, taille ou position uniquement. Cette r\u00e8gle\r\n est-elle impl\u00e9ment\u00e9e de fa\u00e7on pertinente ?", 
+        "solution": "", 
+        "thema": "Pr\u00e9sentation de l'information", 
+        "name": "10.15.3"
+    }, 
+    "21552": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, pour chaque m\u00e9dia non temporel, l'information ne \r\ndoit pas \u00eatre donn\u00e9e par la forme, taille ou position uniquement. Cette \r\nr\u00e8gle est-elle impl\u00e9ment\u00e9e de fa\u00e7on pertinente ?", 
+        "solution": "", 
+        "thema": "Pr\u00e9sentation de l'information", 
+        "name": "10.15.4"
+    }, 
+    "21553": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque champ de type texte v\u00e9rifie-t-il, si n\u00e9cessaire, l'une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Formulaire", 
+        "name": "11.14.2"
+    }, 
+    "21554": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, pour chaque expression inhabituelle ou limit\u00e9e, \r\nidiomatique ou de jargon ayant une d\u00e9finition, cette d\u00e9finition \r\nv\u00e9rifie-t-elle l\u2019une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Consultation", 
+        "name": "13.10.1"
+    }, 
+    "21555": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, chaque contenu cryptique (art ascii, \u00e9moticon, syntaxe cryptique) v\u00e9rifie-t-il une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Consultation", 
+        "name": "13.12.1"
+    }, 
+    "21556": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque m\u00e9dia temporel pr\u00e9-enregistr\u00e9 seulement vid\u00e9o v\u00e9rifie-t-il, si n\u00e9cessaire, une de ces conditions  ?", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.7.1"
+    }, 
+    "21251": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque image (balise img) a-t-elle un attribut alt ?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.1.1"
+    }, 
+    "21252": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque zone (balise area) d'une image r\u00e9active a-t-elle un attribut alt ?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.1.2"
+    }, 
+    "21253": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque bouton de formulaire (balise input avec l'attribut type=\"image\") a-t-il un attribut alt ?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.1.3"
+    }, 
+    "21254": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque image applet (balise applet) a-t-elle un attribut alt ?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.1.4"
+    }, 
+    "21255": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque image de d\u00e9coration (balise img) ayant un attribut alt, le contenu de cet attribut est-il vide (alt=\"\") ?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.2.1"
+    }, 
+    "21256": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque zone non cliquable (balise area sans attribut href), non \r\nporteuse d'information et ayant un attribut alt, le contenu de cet \r\nattribut est-il vide (alt=\"\") ?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.2.2"
+    }, 
+    "21257": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque image applet (balise applet) non porteuse d'information et ayant un attribut alt, le contenu de cet attribut est-il vide (alt=\"\") ?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.2.3"
+    }, 
+    "21258": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque image objet (balise object avec l'attribut type=\"image/...\") non porteuse d'information, l'alternative textuelle entre &lt;object&gt; et &lt;/object&gt; est-elle vide ?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.2.4"
+    }, 
+    "21259": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque image embarqu\u00e9e (balise embed avec l'attribut type=\"image/...\") non porteuse d'information v\u00e9rifie-t-elle une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.2.5"
+    }, 
+    "21260": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque image porteuse d'information (balise img) ayant un attribut alt, le contenu de cet attribut est-il pertinent (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.3.1"
+    }, 
+    "21261": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque zone (balise area) d'une image r\u00e9active, porteuse d'information et ayant un attribut alt, le contenu de cet attribut est-il pertinent (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.3.2"
+    }, 
+    "21262": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque bouton associ\u00e9 \u00e0 une image (balise input avec l'attribut type=\"image\") ayant un attribut alt, le contenu de cet attribut est-il pertinent (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.3.3"
+    }, 
+    "21263": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque image applet (balise applet) porteuse d'information et ayant un attribut alt, le contenu de cet attribut est-il pertinent (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.3.4"
+    }, 
+    "21264": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque image objet (balise object avec l'attribut type=\"image/...\") porteuse d'information et ayant une alternative textuelle, l'alternative textuelle entre &lt;object&gt; et &lt;/object&gt; est-elle pertinente (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.3.5"
+    }, 
+    "21265": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque image embarqu\u00e9e (balise embed avec l'attribut type=\"image/...\") porteuse d'information et ayant une alternative textuelle, l'alternative textuelle entre &lt;noembed&gt; et &lt;/noembed&gt; est-elle pertinente (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.3.6"
+    }, 
+    "21266": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque image porteuse d'information et ayant une alternative textuelle, l'alternative textuelle est-elle courte et concise (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.3.7"
+    }, 
+    "21267": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque image (balise img) utilis\u00e9e comme CAPTCHA ou comme image-test, ayant un attribut alt, le contenu de cet attribut permet-il d'identifier la nature et la fonction de l'image ?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.4.1"
+    }, 
+    "21268": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque zone (balise area) d'une image r\u00e9active, utilis\u00e9e comme CAPTCHA ou comme image-test, et ayant un attribut alt, le contenu de cet attribut permet-il d'identifier la nature et la fonction de l'image ?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.4.2"
+    }, 
+    "21269": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque image (balise applet) utilis\u00e9e comme CAPTCHA ou comme image-test, ayant un attribut alt, le contenu de cet attribut permet-il d'identifier la nature et la fonction de l'image ?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.4.3"
+    }, 
+    "21270": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque bouton associ\u00e9 \u00e0 une image (balise input avec l'attribut type=\"image\") utilis\u00e9e comme CAPTCHA ou comme image-test, ayant un attribut alt, le contenu de cet attribut permet-il d'identifier la nature et la fonction de l'image ?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.4.4"
+    }, 
+    "21271": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque image objet (balise object avec l'attribut type=\"image/...\") utilis\u00e9e comme CAPTCHA ou comme image-test, et ayant une alternative textuelle, l'alternative textuelle entre &lt;object&gt; et &lt;/object&gt; permet-elle d'identifier la nature et la fonction de l'image ?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.4.5"
+    }, 
+    "21272": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque image embarqu\u00e9e (balise embed avec l'attribut type=\"image/...\") utilis\u00e9e comme CAPTCHA ou comme image-test et ayant une alternative textuelle, l'alternative textuelle entre &lt;noembed&gt; et &lt;/noembed&gt; permet-elle d'identifier la nature et la fonction de l'image ?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.4.6"
+    }, 
+    "21273": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque image (balises img, area, applet, object, embed) utilis\u00e9e comme CAPTCHA v\u00e9rifie-t-elle une des ces conditions ?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.5.1"
+    }, 
+    "21274": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque bouton associ\u00e9 \u00e0 une image (balise input avec l'attribut type=\"image\") utilis\u00e9e comme CAPTCHA v\u00e9rifie-t-il une des ces conditions ?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.5.2"
+    }, 
+    "21275": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque image porteuse d'information (balise img) qui n\u00e9cessite une description d\u00e9taill\u00e9e, v\u00e9rifie-t-elle une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.6.1"
+    }, 
+    "21276": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque image object porteuse d'information (balise object avec l'attribut type=\"image/...\"), qui n\u00e9cessite une description d\u00e9taill\u00e9e, v\u00e9rifie-t-elle une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.6.2"
+    }, 
+    "21277": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque image applet porteuse d'information (balise applet), qui n\u00e9cessite une description d\u00e9taill\u00e9e, v\u00e9rifie-t-elle une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.6.3"
+    }, 
+    "21278": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque image embarqu\u00e9e porteuse d'information (balise embed), qui n\u00e9cessite une description d\u00e9taill\u00e9e, v\u00e9rifie-t-elle une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.6.4"
+    }, 
+    "21279": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque bouton de formulaire de type image (balise input avec l'attribut type=\"image\", qui n\u00e9cessite une description d\u00e9taill\u00e9e, v\u00e9rifie-t-elle une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.6.5"
+    }, 
+    "21280": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque image porteuse d'information (balise img ou input de type image) ayant une description d\u00e9taill\u00e9e v\u00e9rifie-t-elle une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.7.1"
+    }, 
+    "21281": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque image objet (balise object avec l'attribut type=\"image/...\") ayant une description d\u00e9taill\u00e9e v\u00e9rifie-t-elle une des ces conditions ?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.7.2"
+    }, 
+    "21282": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque image embarqu\u00e9e (balise embed avec l'attribut type=\"image/...\") ayant une description d\u00e9taill\u00e9e v\u00e9rifie-t-elle une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.7.3"
+    }, 
+    "21283": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque image applet (balise applet) ayant une description d\u00e9taill\u00e9e v\u00e9rifie-t-elle une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.7.4"
+    }, 
+    "21284": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque image texte (balise img), en l'absence d'un m\u00e9canisme de remplacement, doit si possible \u00eatre remplac\u00e9e par du texte styl\u00e9. Cette r\u00e8gle est-elle respect\u00e9e (hors cas particuliers)?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.8.1"
+    }, 
+    "21285": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque image r\u00e9active (balise img ou object avec l'attribut usemap), chaque zone texte (balise area), en l'absence d'un m\u00e9canisme de remplacement, doit si possible \u00eatre remplac\u00e9e par du texte styl\u00e9. Cette r\u00e8gle est-elle respect\u00e9e (hors cas particuliers)?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.8.2"
+    }, 
+    "21286": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque balise form, chacun de ses boutons \"image texte\" (balise input avec l'attribut type=\"image\"), en l'absence d'un m\u00e9canisme de remplacement, doit si possible \u00eatre remplac\u00e9e par du texte styl\u00e9. Cette r\u00e8gle est-elle respect\u00e9e (hors cas particuliers)?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.8.3"
+    }, 
+    "21287": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque image texte applet (balise applet), en l'absence d'un m\u00e9canisme de remplacement, doit si possible \u00eatre remplac\u00e9e par du texte styl\u00e9. Cette r\u00e8gle est-elle respect\u00e9e (hors cas particuliers)?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.8.4"
+    }, 
+    "21288": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque image texte objet (balise object avec l'attribut type=\"image/...\"), en l'absence d'un m\u00e9canisme de remplacement, doit si possible \u00eatre remplac\u00e9e par du texte styl\u00e9. Cette r\u00e8gle est-elle respect\u00e9e (hors cas particuliers)?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.8.5"
+    }, 
+    "21289": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque image texte embarqu\u00e9e (balise embed avec l'attribut type=\"image/...\"), en l'absence d'un m\u00e9canisme de remplacement, doit si possible \u00eatre remplac\u00e9e par du texte styl\u00e9. Cette r\u00e8gle est-elle respect\u00e9e (hors cas particuliers)?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.8.6"
+    }, 
+    "21290": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque image texte (balise img) doit si possible \u00eatre remplac\u00e9e par du texte styl\u00e9. Cette r\u00e8gle est-elle respect\u00e9e ?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.9.1"
+    }, 
+    "21291": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque image r\u00e9active (balise img ou object avec l'attribut usemap), chaque zone texte (balise area) doit si possible \u00eatre remplac\u00e9e par du texte styl\u00e9. Cette r\u00e8gle est-elle respect\u00e9e ?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.9.2"
+    }, 
+    "21292": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque balise form, chacun de ses boutons \"image texte\" (balise input avec l'attribut type=\"image\") doit si possible \u00eatre remplac\u00e9 par du texte styl\u00e9. Cette r\u00e8gle est-elle respect\u00e9e ?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.9.3"
+    }, 
+    "21293": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque image texte applet (balise applet) doit si possible \u00eatre remplac\u00e9e par du texte styl\u00e9. Cette r\u00e8gle est-elle respect\u00e9e ?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.9.4"
+    }, 
+    "21294": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque image texte objet (balise object avec l'attribut type=\"image/...\") doit si possible \u00eatre remplac\u00e9e par du texte styl\u00e9. Cette r\u00e8gle est-elle respect\u00e9e ?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.9.5"
+    }, 
+    "21295": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque image texte embarqu\u00e9e (balise embed avec l'attribut type=\"image/...\") doit si possible \u00eatre remplac\u00e9e par du texte styl\u00e9. Cette r\u00e8gle est-elle respect\u00e9e ?", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "1.9.6"
+    }, 
+    "21296": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque cadre (balise frame) a-t-il un attribut title ?", 
+        "solution": "", 
+        "thema": "Cadres", 
+        "name": "2.1.1"
+    }, 
+    "21297": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque cadre en ligne (balise iframe) a-t-il un attribut title ?", 
+        "solution": "", 
+        "thema": "Cadres", 
+        "name": "2.1.2"
+    }, 
+    "21298": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque cadre (balise frame) ayant un attribut title, le contenu de cet attribut est-il pertinent ?", 
+        "solution": "", 
+        "thema": "Cadres", 
+        "name": "2.2.1"
+    }, 
+    "21299": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque cadre en ligne (balise iframe) ayant un attribut title, le contenu de cet attribut est-il pertinent ?", 
+        "solution": "", 
+        "thema": "Cadres", 
+        "name": "2.2.2"
+    }, 
+    "21300": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque mot ou ensemble de mots dont la mise en couleur est porteuse d'information, l'information ne doit pas \u00eatre donn\u00e9e uniquement par la couleur. Cette r\u00e8gle est-elle respect\u00e9e ?", 
+        "solution": "", 
+        "thema": "Couleurs", 
+        "name": "3.1.1"
+    }, 
+    "21301": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque indication de couleur donn\u00e9e par un texte, l'information ne doit pas \u00eatre donn\u00e9e uniquement par la couleur. Cette r\u00e8gle est-elle respect\u00e9e ?", 
+        "solution": "", 
+        "thema": "Couleurs", 
+        "name": "3.1.2"
+    }, 
+    "21302": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque image pr\u00e9sente dans le code source v\u00e9hiculant une information, l'information ne doit pas \u00eatre donn\u00e9e uniquement par la couleur. Cette r\u00e8gle est-elle respect\u00e9e ?", 
+        "solution": "", 
+        "thema": "Couleurs", 
+        "name": "3.1.3"
+    }, 
+    "21303": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque propri\u00e9t\u00e9 CSS d\u00e9terminant une couleur et v\u00e9hiculant une information, l'information ne doit pas \u00eatre donn\u00e9e par la couleur uniquement. Cette r\u00e8gle est-elle respect\u00e9e ?", 
+        "solution": "", 
+        "thema": "Couleurs", 
+        "name": "3.1.4"
+    }, 
+    "21304": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque m\u00e9dia temporel v\u00e9hiculant une information, l'information ne doit pas \u00eatre donn\u00e9e uniquement par la couleur. Cette r\u00e8gle est-elle respect\u00e9e ?", 
+        "solution": "", 
+        "thema": "Couleurs", 
+        "name": "3.1.5"
+    }, 
+    "21305": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque m\u00e9dia non temporel v\u00e9hiculant une information, l'information ne doit pas \u00eatre donn\u00e9e uniquement par la couleur. Cette r\u00e8gle est-elle respect\u00e9e ?", 
+        "solution": "", 
+        "thema": "Couleurs", 
+        "name": "3.1.6"
+    }, 
+    "21306": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque information v\u00e9hicul\u00e9e par la couleur d'un mot ou ensemble de mots, l'information ne doit pas \u00eatre donn\u00e9e uniquement par la couleur. Cette r\u00e8gle est-elle impl\u00e9ment\u00e9e de fa\u00e7on pertinente ?", 
+        "solution": "", 
+        "thema": "Couleurs", 
+        "name": "3.2.1"
+    }, 
+    "21307": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque information v\u00e9hicul\u00e9e par la couleur et indiqu\u00e9e par un mot ou un ensemble de mots, l'information ne doit pas \u00eatre donn\u00e9e uniquement par la couleur. Cette r\u00e8gle est-elle impl\u00e9ment\u00e9e de fa\u00e7on pertinente ?", 
+        "solution": "", 
+        "thema": "Couleurs", 
+        "name": "3.2.2"
+    }, 
+    "21308": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque image v\u00e9hiculant une information, l'information ne doit pas \u00eatre donn\u00e9e uniquement par la couleur. Cette r\u00e8gle est-elle impl\u00e9ment\u00e9e de fa\u00e7on pertinente ?", 
+        "solution": "", 
+        "thema": "Couleurs", 
+        "name": "3.2.3"
+    }, 
+    "21309": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque propri\u00e9t\u00e9 de fond d'\u00e9l\u00e9ment CSS v\u00e9hiculant une information, l'information ne doit pas \u00eatre donn\u00e9e uniquement par la couleur. Cette r\u00e8gle est-elle impl\u00e9ment\u00e9e de fa\u00e7on pertinente ?", 
+        "solution": "", 
+        "thema": "Couleurs", 
+        "name": "3.2.4"
+    }, 
+    "21310": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque m\u00e9dia temporel v\u00e9hiculant une information, l'information ne doit pas \u00eatre donn\u00e9e uniquement par la couleur. Cette r\u00e8gle est-elle impl\u00e9ment\u00e9e de fa\u00e7on pertinente ?", 
+        "solution": "", 
+        "thema": "Couleurs", 
+        "name": "3.2.5"
+    }, 
+    "21311": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque m\u00e9dia non temporel v\u00e9hiculant une information, l'information ne doit pas \u00eatre donn\u00e9e uniquement par la couleur. Cette r\u00e8gle est-elle impl\u00e9ment\u00e9e de fa\u00e7on pertinente ?", 
+        "solution": "", 
+        "thema": "Couleurs", 
+        "name": "3.2.6"
+    }, 
+    "21312": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, jusqu'\u00e0 150% de la taille de police par d\u00e9faut (ou 1.5em), le texte et le texte en image sans effet de graisse v\u00e9rifie-t-il une de ces conditions (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Couleurs", 
+        "name": "3.3.1"
+    }, 
+    "21313": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, jusqu'\u00e0 120% de la taille de police par d\u00e9faut (ou 1.2em), le texte  et le texte en image en gras v\u00e9rifie-t-il une de ces conditions (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Couleurs", 
+        "name": "3.3.2"
+    }, 
+    "21314": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, \u00e0 partir de 150% de la taille de police par d\u00e9faut (ou 1.5em), le texte  et le texte en image sans effet de graisse v\u00e9rifie-t-il une de ces conditions (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Couleurs", 
+        "name": "3.3.3"
+    }, 
+    "21315": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, \u00e0 partir de 120% de la taille de police par d\u00e9faut (ou 1.2em), le texte  et le texte en image en gras v\u00e9rifie-t-il une de ces conditions (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Couleurs", 
+        "name": "3.3.4"
+    }, 
+    "21316": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, jusqu'\u00e0 150% de la taille de police par d\u00e9faut (ou 1.5em), le texte  et le texte en image sans effet de graisse v\u00e9rifie-t-il une de ces conditions (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Couleurs", 
+        "name": "3.4.1"
+    }, 
+    "21317": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, jusqu'\u00e0 120% de la taille de police par d\u00e9faut (ou 1.2em), le texte  et le texte en image en gras v\u00e9rifie-t-il une de ces conditions (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Couleurs", 
+        "name": "3.4.2"
+    }, 
+    "21318": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, \u00e0 partir de 150% de la taille de police par d\u00e9faut (ou 1.5em), le texte  et le texte en image sans effet de graisse v\u00e9rifie-t-il une de ces conditions (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Couleurs", 
+        "name": "3.4.3"
+    }, 
+    "21319": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, \u00e0 partir de 120% de la taille de police par d\u00e9faut (ou 1.2em), le texte  et le texte en image en gras v\u00e9rifie-t-il une de ces conditions (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Couleurs", 
+        "name": "3.4.4"
+    }, 
+    "21320": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque m\u00e9dia temporel pr\u00e9-enregistr\u00e9 seulement audio a-t-il, si n\u00e9cessaire, une transcription textuelle (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.1.1"
+    }, 
+    "21321": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque m\u00e9dia temporel pr\u00e9-enregistr\u00e9 seulement vid\u00e9o v\u00e9rifie-t-il une de ces conditions (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.1.2"
+    }, 
+    "21322": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque m\u00e9dia temporel synchronis\u00e9 pr\u00e9-enregistr\u00e9 v\u00e9rifie-t-il une de ces conditions (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.1.3"
+    }, 
+    "21323": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque m\u00e9dia temporel pr\u00e9-enregistr\u00e9 seulement audio, ayant une transcription textuelle, celle-ci est-elle pertinente (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.2.1"
+    }, 
+    "21324": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque m\u00e9dia temporel pr\u00e9-enregistr\u00e9 seulement vid\u00e9o v\u00e9rifie-t-il une de ces conditions (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.2.2"
+    }, 
+    "21325": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque m\u00e9dia temporel synchronis\u00e9 pr\u00e9-enregistr\u00e9 v\u00e9rifie-t-il une de ces conditions (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.2.3"
+    }, 
+    "21326": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque m\u00e9dia temporel synchronis\u00e9 pr\u00e9-enregistr\u00e9 v\u00e9rifie-t-il l'une de ces conditions (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.3.1"
+    }, 
+    "21327": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque m\u00e9dia temporel synchronis\u00e9 pr\u00e9-enregistr\u00e9 ayant des sous-titres synchronis\u00e9s, ces sous-titres sont-ils pertinents ?", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.4.1"
+    }, 
+    "21328": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque m\u00e9dia temporel seulement audio en direct v\u00e9rifie-t-il une de ces conditions (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.5.1"
+    }, 
+    "21329": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque m\u00e9dia temporel synchronis\u00e9 en direct v\u00e9rifie-t-il une de ces conditions (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.5.2"
+    }, 
+    "21330": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque m\u00e9dia temporel seulement audio en direct v\u00e9rifie-t-il une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.6.1"
+    }, 
+    "21331": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque m\u00e9dia temporel synchronis\u00e9 en direct v\u00e9rifie-t-il une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.6.2"
+    }, 
+    "21332": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque m\u00e9dia temporel synchronis\u00e9 pr\u00e9-enregistr\u00e9 v\u00e9rifie-t-il une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.7.2"
+    }, 
+    "21333": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque m\u00e9dia temporel pr\u00e9-enregistr\u00e9 seulement vid\u00e9o ayant une audio-description synchronis\u00e9e, celle-ci est-elle pertinente ?", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.8.1"
+    }, 
+    "21334": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque m\u00e9dia temporel synchronis\u00e9 ayant une audio-description synchronis\u00e9e, celle-ci est-elle pertinente ?", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.8.2"
+    }, 
+    "21335": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque m\u00e9dia temporel pr\u00e9-enregistr\u00e9 seulement audio a-t-il, si n\u00e9cessaire, une interpr\u00e9tation en langue des signes adapt\u00e9e \u00e0 la langue du m\u00e9dia (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.9.1"
+    }, 
+    "21336": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque m\u00e9dia temporel synchronis\u00e9 pr\u00e9-enregistr\u00e9 a-t-il, si n\u00e9cessaire, une interpr\u00e9tation en langue des signes adapt\u00e9e \u00e0 la langue du m\u00e9dia (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.9.2"
+    }, 
+    "21337": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque m\u00e9dia temporel pr\u00e9-enregistr\u00e9 seulement audio ayant une \r\ninterpr\u00e9tation en langue des signes, celle-ci est-elle pertinente ?", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.10.1"
+    }, 
+    "21338": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque m\u00e9dia temporel synchronis\u00e9 pr\u00e9-enregistr\u00e9 ayant une \r\ninterpr\u00e9tation en langue des signes, celle-ci est-elle pertinente ?", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.10.2"
+    }, 
+    "21339": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque m\u00e9dia temporel synchronis\u00e9 pr\u00e9-enregistr\u00e9 v\u00e9rifie-t-il, si n\u00e9cessaire, une de ces conditions ? (hors cas particuliers)", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.11.1"
+    }, 
+    "21340": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque m\u00e9dia temporel pr\u00e9-enregistr\u00e9 seulement vid\u00e9o v\u00e9rifie-t-il, si n\u00e9cessaire, une de ces conditions ? (hors cas particuliers)", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.11.2"
+    }, 
+    "21341": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque m\u00e9dia temporel synchronis\u00e9 pr\u00e9-enregistr\u00e9 ayant une audio-description \u00e9tendue synchronis\u00e9e, celle-ci est-elle pertinente ?", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.12.1"
+    }, 
+    "21342": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque m\u00e9dia temporel pr\u00e9-enregistr\u00e9 seulement vid\u00e9o ayant une audio-description \u00e9tendue synchronis\u00e9e, celle-ci est-elle pertinente ?", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.12.2"
+    }, 
+    "21343": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque m\u00e9dia temporel synchronis\u00e9 a-t-il, si n\u00e9cessaire, une transcription textuelle (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.13.1"
+    }, 
+    "21344": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque m\u00e9dia temporel seulement vid\u00e9o a-t-il, si n\u00e9cessaire, une transcription textuelle (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.13.2"
+    }, 
+    "21345": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque m\u00e9dia temporel seulement vid\u00e9o ayant une transcription textuelle, celle-ci est-elle pertinente ?", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.14.1"
+    }, 
+    "21346": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque m\u00e9dia temporel synchronis\u00e9 ayant une transcription textuelle, celle-ci est-elle pertinente ?", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.14.2"
+    }, 
+    "21347": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque m\u00e9dia temporel seulement son, seulement vid\u00e9o ou synchronis\u00e9, v\u00e9rifie-t-il une de ces conditions (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.15.1"
+    }, 
+    "21348": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque m\u00e9dia temporel seulement son en direct, seulement vid\u00e9o en direct ou synchronis\u00e9 en direct, v\u00e9rifie-t-il une de ces conditions (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.15.2"
+    }, 
+    "21349": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque m\u00e9dia non temporel v\u00e9rifie-t-il une de ces conditions (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.16.1"
+    }, 
+    "21350": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque m\u00e9dia m\u00e9dia non temporel associ\u00e9 \u00e0 une alternative v\u00e9rifie-t-il une de ces conditions (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.16.2"
+    }, 
+    "21351": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque m\u00e9dia non temporel ayant une alternative v\u00e9rifie-t-il une des ces conditions ?", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.17.1"
+    }, 
+    "21352": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque s\u00e9quence sonore d\u00e9clench\u00e9e automatiquement via une balise object, applet, embed, un code javascript ou une propri\u00e9t\u00e9 bgsound v\u00e9rifie-t-il une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.18.1"
+    }, 
+    "21353": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque m\u00e9dia temporel audio pr\u00e9-enregistr\u00e9 et diffus\u00e9 via une balise Object, Applet, Embed ou propos\u00e9 en t\u00e9l\u00e9chargement v\u00e9rifie-t-il une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.19.1"
+    }, 
+    "21354": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque m\u00e9dia temporel a-t-il, si n\u00e9cessaire, les fonctionnalit\u00e9s de contr\u00f4le de sa consultation ?", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.20.1"
+    }, 
+    "21355": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque m\u00e9dia temporel, chaque fonctionnalit\u00e9 est-elle accessible par le clavier et la souris ?", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.20.2"
+    }, 
+    "21356": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque m\u00e9dia temporel, chaque fonctionnalit\u00e9 est-elle activable par le clavier et la souris ?", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.20.3"
+    }, 
+    "21357": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque m\u00e9dia non temporel, chaque fonctionnalit\u00e9 est-elle accessible par le clavier et la souris ?", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.21.1"
+    }, 
+    "21358": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque m\u00e9dia non temporel, chaque fonctionnalit\u00e9 est-elle activable par le clavier et la souris ?", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.21.2"
+    }, 
+    "21359": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque m\u00e9dia temporel et non temporel ins\u00e9r\u00e9 via une balise Object, Applet ou Embed v\u00e9rifie-t-il une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia", 
+        "name": "4.22.1"
+    }, 
+    "21360": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque tableau de donn\u00e9es (balise table) a-t-il un attribut summary ?", 
+        "solution": "", 
+        "thema": "Tableaux", 
+        "name": "5.1.1"
+    }, 
+    "21361": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque tableau de donn\u00e9es (balise table) ayant un attribut summary, le contenu de cet attribut est-il pertinent ?", 
+        "solution": "", 
+        "thema": "Tableaux", 
+        "name": "5.2.1"
+    }, 
+    "21362": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque tableau de mise en forme (balise table) ayant un attribut summary, le contenu de cet attribut est-il vide (summary=\"\") ?", 
+        "solution": "", 
+        "thema": "Tableaux", 
+        "name": "5.2.2"
+    }, 
+    "21363": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque tableau de mise en forme, le contenu lin\u00e9aris\u00e9 reste-t-il compr\u00e9hensible ?", 
+        "solution": "", 
+        "thema": "Tableaux", 
+        "name": "5.3.1"
+    }, 
+    "21364": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque tableau de donn\u00e9es (balise table) a-t-il une balise caption ?", 
+        "solution": "", 
+        "thema": "Tableaux", 
+        "name": "5.4.1"
+    }, 
+    "21365": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque tableau de donn\u00e9es (balise table) ayant une balise caption, le contenu de cette balise donne-t-il le titre du tableau ?", 
+        "solution": "", 
+        "thema": "Tableaux", 
+        "name": "5.5.1"
+    }, 
+    "21366": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque tableau de donn\u00e9es (balise table), chaque en-t\u00eate de colonnes a-t-il une balise th ?", 
+        "solution": "", 
+        "thema": "Tableaux", 
+        "name": "5.6.1"
+    }, 
+    "21367": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque tableau de donn\u00e9es (balise table), chaque en-t\u00eate de lignes a-t-il une balise th ?", 
+        "solution": "", 
+        "thema": "Tableaux", 
+        "name": "5.6.2"
+    }, 
+    "21368": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque en-t\u00eate (balise th) s'appliquant \u00e0 la totalit\u00e9 de la ligne ou de la colonne poss\u00e8de-t-elle un attribut id unique ou un attribut scope ?", 
+        "solution": "", 
+        "thema": "Tableaux", 
+        "name": "5.7.1"
+    }, 
+    "21369": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque en-t\u00eate (balise th) s'appliquant \u00e0 la totalit\u00e9 de la ligne ou de la colonne et poss\u00e9dant un attribut scope v\u00e9rifie-t-elle une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Tableaux", 
+        "name": "5.7.2"
+    }, 
+    "21370": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque en-t\u00eate (balise th) ne s'appliquant pas \u00e0 la totalit\u00e9 de la ligne ou de la colonne v\u00e9rifie-t-il ces conditions ?", 
+        "solution": "", 
+        "thema": "Tableaux", 
+        "name": "5.7.3"
+    }, 
+    "21371": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque cellule (balise td ou th) associ\u00e9e \u00e0 un ou plusieurs en-t\u00eates poss\u00e9dant un attribut id v\u00e9rifie-t-elle ces conditions ?", 
+        "solution": "", 
+        "thema": "Tableaux", 
+        "name": "5.7.4"
+    }, 
+    "21372": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque tableau de mise en forme (balise table) v\u00e9rifie-t-il ces conditions ?", 
+        "solution": "", 
+        "thema": "Tableaux", 
+        "name": "5.8.1"
+    }, 
+    "21373": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque lien texte v\u00e9rifie-t-il une de ces conditions (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Liens", 
+        "name": "6.1.1"
+    }, 
+    "21374": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque lien image (contenu de l'attribut alt ou texte entre  et ) v\u00e9rifie-t-il une de ces conditions (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Liens", 
+        "name": "6.1.2"
+    }, 
+    "21375": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque lien de type zone cliquable (contenu de l'attribut alt d'une \r\nbalise area) v\u00e9rifie-t-il une de ces conditions (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Liens", 
+        "name": "6.1.3"
+    }, 
+    "21376": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque lien composite v\u00e9rifie-t-il une de ces conditions (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Liens", 
+        "name": "6.1.4"
+    }, 
+    "21377": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque lien texte ayant un titre de lien (attribut title), le contenu de cet attribut est-il pertinent ?", 
+        "solution": "", 
+        "thema": "Liens", 
+        "name": "6.2.1"
+    }, 
+    "21378": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque lien image ayant un titre de lien (attribut title), le contenu de cet attribut est-il pertinent ?", 
+        "solution": "", 
+        "thema": "Liens", 
+        "name": "6.2.2"
+    }, 
+    "21379": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "pour chaque zone cliquable (balise area) ayant un titre de lien (attribut title), le contenu de cet attribut est-il pertinent ?", 
+        "solution": "", 
+        "thema": "Liens", 
+        "name": "6.2.3"
+    }, 
+    "21380": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque lien composite ayant un titre de lien (attribut title), le contenu de cet attribut est-il pertinent ?", 
+        "solution": "", 
+        "thema": "Liens", 
+        "name": "6.2.4"
+    }, 
+    "21381": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque lien texte v\u00e9rifie-t-il une de ces conditions (hors cas particulier) ?", 
+        "solution": "", 
+        "thema": "Liens", 
+        "name": "6.3.1"
+    }, 
+    "21382": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque intitul\u00e9 de lien image (contenu de l'attribut alt ou contenu entre &lt;object&gt;&lt;/object&gt;) est-il explicite hors contexte (hors cas particulier) ?", 
+        "solution": "", 
+        "thema": "Liens", 
+        "name": "6.3.2"
+    }, 
+    "21383": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque intitul\u00e9 de lien de type zone cliquable (contenu de l'attribut alt d'une balise area) est-il explicite hors contexte (hors cas particulier) ?", 
+        "solution": "", 
+        "thema": "Liens", 
+        "name": "6.3.3"
+    }, 
+    "21384": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque lien composite (contenu texte et de l'attribut alt) est-il explicite hors contexte (hors cas particuliers)", 
+        "solution": "", 
+        "thema": "Liens", 
+        "name": "6.3.4"
+    }, 
+    "21385": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque lien identique de type texte a-t-il les m\u00eames fonction et destination ?", 
+        "solution": "", 
+        "thema": "Liens", 
+        "name": "6.4.1"
+    }, 
+    "21386": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque lien identique de type image a-t-il les m\u00eames fonction et destination ?", 
+        "solution": "", 
+        "thema": "Liens", 
+        "name": "6.4.2"
+    }, 
+    "21387": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque lien identique de type zone cliquable a-t-il les m\u00eames fonction et destination ?", 
+        "solution": "", 
+        "thema": "Liens", 
+        "name": "6.4.3"
+    }, 
+    "21388": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque lien identique de type composite a-t-il les m\u00eames fonction et destination ?", 
+        "solution": "", 
+        "thema": "Liens", 
+        "name": "6.4.4"
+    }, 
+    "21389": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque image r\u00e9active cot\u00e9 serveur (balise img ou balise input de type image avec l'attribut ismap) v\u00e9rifie-t-elle une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Liens", 
+        "name": "6.5.1"
+    }, 
+    "21390": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque image r\u00e9active cot\u00e9 serveur (balise img ou balise input de type image avec l'attribut ismap) v\u00e9rifie-t-elle une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Liens", 
+        "name": "6.5.2"
+    }, 
+    "21391": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque image r\u00e9active cot\u00e9 serveur (balise img ou balise input de type image avec l'attribut ismap) v\u00e9rifie-t-elle une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Liens", 
+        "name": "6.5.3"
+    }, 
+    "21392": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, chaque lien (balise a), \u00e0 l'exception des ancres nomm\u00e9es, a-t-il un intitul\u00e9 entre &lt;a&gt; et &lt;/a&gt; ?", 
+        "solution": "", 
+        "thema": "Liens", 
+        "name": "6.6.1"
+    }, 
+    "21393": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque script v\u00e9rifie-t-il, si n\u00e9cessaire, une de ces conditions (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Script", 
+        "name": "7.1.1"
+    }, 
+    "21394": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque script d\u00e9clenchant l'ouverture d'une nouvelle fen\u00eatre a-t-il une alternative ?", 
+        "solution": "", 
+        "thema": "Script", 
+        "name": "7.1.2"
+    }, 
+    "21395": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque script d\u00e9butant par la balise script et ayant une alternative v\u00e9rifie-t-il une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Script", 
+        "name": "7.2.1"
+    }, 
+    "21396": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque \u00e9l\u00e9ment non textuel mis \u00e0 jour par un script (dans la page, un cadre ou un cadre en ligne) et ayant une alternative v\u00e9rifie-t-il ces conditions ?", 
+        "solution": "", 
+        "thema": "Script", 
+        "name": "7.2.2"
+    }, 
+    "21397": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque \u00e9l\u00e9ment poss\u00e9dant un gestionnaire d'\u00e9v\u00e9nement contr\u00f4l\u00e9 par un script v\u00e9rifie-t-il une de ces conditions (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Script", 
+        "name": "7.3.1"
+    }, 
+    "21398": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque \u00e9l\u00e9ment poss\u00e9dant un gestionnaire d'\u00e9v\u00e9nement contr\u00f4l\u00e9 par un script v\u00e9rifie-t-il une de ces conditions (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Script", 
+        "name": "7.3.2"
+    }, 
+    "21399": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Un script ne doit pas supprimer le focus d'un \u00e9l\u00e9ment qui le re\u00e7oit. Cette r\u00e8gle est-elle respect\u00e9e (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Script", 
+        "name": "7.3.3"
+    }, 
+    "21400": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque script qui g\u00e9n\u00e8re ou contr\u00f4le un composant d'interface v\u00e9rifie-t-il, si n\u00e9cessaire, une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Script", 
+        "name": "7.4.1"
+    }, 
+    "21401": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque fonctionnalit\u00e9 d'insertion de contenu contr\u00f4l\u00e9 par un script utilise-t-elle, si possible, des propri\u00e9t\u00e9s et m\u00e9thodes conformes \u00e0 la sp\u00e9cification DOM (Document Object Model) ?", 
+        "solution": "", 
+        "thema": "Script", 
+        "name": "7.4.2"
+    }, 
+    "21402": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque script qui initie un changement de contexte v\u00e9rifie-t-il une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Script", 
+        "name": "7.5.1"
+    }, 
+    "21403": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque script qui provoque une alerte non sollicit\u00e9e est-il contr\u00f4lable par l'utilisateur (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Script", 
+        "name": "7.6.1"
+    }, 
+    "21404": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque page Web, le type de document (balise doctype) est-il pr\u00e9sent ?", 
+        "solution": "", 
+        "thema": "\u00c9l\u00e9ments Obligatoires", 
+        "name": "8.1.1"
+    }, 
+    "21405": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque page Web, le type de document (balise doctype) est-il valide ?", 
+        "solution": "", 
+        "thema": "\u00c9l\u00e9ments Obligatoires", 
+        "name": "8.1.2"
+    }, 
+    "21406": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque page Web poss\u00e9dant une d\u00e9claration de type de document, celle-ci est-elle situ\u00e9e avant la balise HTML dans le code source ?", 
+        "solution": "", 
+        "thema": "\u00c9l\u00e9ments Obligatoires", 
+        "name": "8.1.3"
+    }, 
+    "21407": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque d\u00e9claration de type de document, le code source de la page v\u00e9rifie-t-il ces conditions ?", 
+        "solution": "", 
+        "thema": "\u00c9l\u00e9ments Obligatoires", 
+        "name": "8.2.1"
+    }, 
+    "21408": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque d\u00e9claration de type de document, le code source de la page ne doit pas utilis\u00e9 d'\u00e9l\u00e9ments obsol\u00e8tes. Cette r\u00e8gle est-elle respect\u00e9e ?", 
+        "solution": "", 
+        "thema": "\u00c9l\u00e9ments Obligatoires", 
+        "name": "8.2.2"
+    }, 
+    "21409": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque page Web, l'indication de langue par d\u00e9faut v\u00e9rifie-t-elle une de ces conditions ?", 
+        "solution": "", 
+        "thema": "\u00c9l\u00e9ments Obligatoires", 
+        "name": "8.3.1"
+    }, 
+    "21410": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque page Web ayant une langue par d\u00e9faut, le code de langue v\u00e9rifie-t-il ces conditions ?", 
+        "solution": "", 
+        "thema": "\u00c9l\u00e9ments Obligatoires", 
+        "name": "8.4.1"
+    }, 
+    "21411": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque page Web a-t-elle un titre de page (balise title) ?", 
+        "solution": "", 
+        "thema": "\u00c9l\u00e9ments Obligatoires", 
+        "name": "8.5.1"
+    }, 
+    "21412": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque page Web ayant un titre de page (balise title), le contenu de cette balise est-il pertinent ?", 
+        "solution": "", 
+        "thema": "\u00c9l\u00e9ments Obligatoires", 
+        "name": "8.6.1"
+    }, 
+    "21413": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, chaque texte \u00e9crit dans une langue diff\u00e9rente de la langue par d\u00e9faut v\u00e9rifie-t-il une de ces conditions (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "\u00c9l\u00e9ments Obligatoires", 
+        "name": "8.7.1"
+    }, 
+    "21414": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, chaque changement de langue (attribut lang et/ou xml:lang) est-t-il valide ?", 
+        "solution": "", 
+        "thema": "\u00c9l\u00e9ments Obligatoires", 
+        "name": "8.8.1"
+    }, 
+    "21415": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, chaque changement de langue (attribut lang et/ou xml:lang) est-t-il pertinent ?", 
+        "solution": "", 
+        "thema": "\u00c9l\u00e9ments Obligatoires", 
+        "name": "8.8.2"
+    }, 
+    "21416": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web les balises (\u00e0 l'exception de div, span et table) ne doivent pas \u00eatre utilis\u00e9es uniquement \u00e0 des fins de pr\u00e9sentation. Cette r\u00e8gle est-elle respect\u00e9e ?", 
+        "solution": "", 
+        "thema": "\u00c9l\u00e9ments Obligatoires", 
+        "name": "8.9.1"
+    }, 
+    "21417": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, chaque texte dont le sens de lecture est diff\u00e9rent du sens de lecture par d\u00e9faut v\u00e9rifie-t-il ces conditions ?", 
+        "solution": "", 
+        "thema": "\u00c9l\u00e9ments Obligatoires", 
+        "name": "8.10.1"
+    }, 
+    "21418": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, y a-t-il un titre de niveau 1 (balise h1) ?", 
+        "solution": "", 
+        "thema": "Structuration de l'information", 
+        "name": "9.1.1"
+    }, 
+    "21419": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, la hi\u00e9rarchie entre les titres (balises h) est-elle pertinente ?", 
+        "solution": "", 
+        "thema": "Structuration de l'information", 
+        "name": "9.1.2"
+    }, 
+    "21420": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, chaque titre (balise h) n\u00e9cessaire \u00e0 la structure de l'information est-il pr\u00e9sent ?", 
+        "solution": "", 
+        "thema": "Structuration de l'information", 
+        "name": "9.1.3"
+    }, 
+    "21421": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, chaque titre (balise h) est-il pertinent ?", 
+        "solution": "", 
+        "thema": "Structuration de l'information", 
+        "name": "9.1.4"
+    }, 
+    "21422": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, les informations regroup\u00e9es sous forme de listes non ordonn\u00e9es utilisent-elles les balises ul et li ?", 
+        "solution": "", 
+        "thema": "Structuration de l'information", 
+        "name": "9.2.1"
+    }, 
+    "21423": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, les informations regroup\u00e9es sous forme de listes ordonn\u00e9es utilisent-elles les balises ol et li ?", 
+        "solution": "", 
+        "thema": "Structuration de l'information", 
+        "name": "9.2.2"
+    }, 
+    "21424": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, les informations regroup\u00e9es sous forme de listes de d\u00e9finitions utilisent-elles les balises dl et dt/dd ?", 
+        "solution": "", 
+        "thema": "Structuration de l'information", 
+        "name": "9.2.3"
+    }, 
+    "21425": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, la premi\u00e8re occurrence de chaque acronyme v\u00e9rifie-t-elle une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Structuration de l'information", 
+        "name": "9.3.1"
+    }, 
+    "21426": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, la premi\u00e8re occurrence de chaque abr\u00e9viation v\u00e9rifie-t-elle une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Structuration de l'information", 
+        "name": "9.3.2"
+    }, 
+    "21427": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, la signification de chaque acronyme est-elle pertinente ?", 
+        "solution": "", 
+        "thema": "Structuration de l'information", 
+        "name": "9.4.1"
+    }, 
+    "21428": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, la signification de chaque abr\u00e9viation est-elle pertinente ?", 
+        "solution": "", 
+        "thema": "Structuration de l'information", 
+        "name": "9.4.2"
+    }, 
+    "21429": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, chaque citation courte utilise-t-elle une balise q ?", 
+        "solution": "", 
+        "thema": "Structuration de l'information", 
+        "name": "9.5.1"
+    }, 
+    "21430": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, chaque bloc de citation utilise-t-il une balise blockquote ?", 
+        "solution": "", 
+        "thema": "Structuration de l'information", 
+        "name": "9.5.2"
+    }, 
+    "21431": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, les balises servant \u00e0 la pr\u00e9sentation de l'information ne doivent pas \u00eatre pr\u00e9sentes dans le code source des pages. Cette r\u00e8gle est-elle respect\u00e9e ?", 
+        "solution": "", 
+        "thema": "Pr\u00e9sentation de l'information", 
+        "name": "10.1.1"
+    }, 
+    "21432": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, les attributs servant \u00e0 la pr\u00e9sentation de l'information ne doivent pas \u00eatre pr\u00e9sents dans le code source des pages. Cette r\u00e8gle est-elle respect\u00e9e ?", 
+        "solution": "", 
+        "thema": "Pr\u00e9sentation de l'information", 
+        "name": "10.1.2"
+    }, 
+    "21433": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, l'utilisation des espaces v\u00e9rifie-t-elle ces conditions ?", 
+        "solution": "", 
+        "thema": "Pr\u00e9sentation de l'information", 
+        "name": "10.1.3"
+    }, 
+    "21434": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, l'information reste-t-elle pr\u00e9sente lorsque les feuilles de styles sont d\u00e9sactiv\u00e9es ?", 
+        "solution": "", 
+        "thema": "Pr\u00e9sentation de l'information", 
+        "name": "10.2.1"
+    }, 
+    "21435": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, l'information reste-t-elle visible lorsque les images sont d\u00e9sactiv\u00e9es ?", 
+        "solution": "", 
+        "thema": "Pr\u00e9sentation de l'information", 
+        "name": "10.2.2"
+    }, 
+    "21436": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, l'information reste-t-elle visible lorsque les couleurs sont d\u00e9sactiv\u00e9es ?", 
+        "solution": "", 
+        "thema": "Pr\u00e9sentation de l'information", 
+        "name": "10.2.3"
+    }, 
+    "21437": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, l'information reste-t-elle compr\u00e9hensible lorsque les feuilles de styles sont d\u00e9sactiv\u00e9es ?", 
+        "solution": "", 
+        "thema": "Pr\u00e9sentation de l'information", 
+        "name": "10.3.1"
+    }, 
+    "21438": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans les feuilles de styles du site Web, les unit\u00e9s non relatives (pt, pc, mm, cm, in) ne doivent pas \u00eatre utilis\u00e9es pour les types de m\u00e9dia screen, tv, handheld, projection. Cette r\u00e8gle est-elle respect\u00e9e ?", 
+        "solution": "", 
+        "thema": "Pr\u00e9sentation de l'information", 
+        "name": "10.4.1"
+    }, 
+    "21439": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans les feuilles de styles du site Web, les tailles de polices utilisent-elles uniquement des unit\u00e9s relatives ?", 
+        "solution": "", 
+        "thema": "Pr\u00e9sentation de l'information", 
+        "name": "10.4.2"
+    }, 
+    "21440": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, l'augmentation de la taille des caract\u00e8res jusqu'\u00e0 200%, au moins, ne doit pas provoquer de perte d'information. Cette r\u00e8gle est-elle respect\u00e9e ?", 
+        "solution": "", 
+        "thema": "Pr\u00e9sentation de l'information", 
+        "name": "10.4.3"
+    }, 
+    "21441": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, chaque d\u00e9claration CSS de couleurs de police (color), d'un \u00e9l\u00e9ment susceptible de contenir du texte, est-elle accompagn\u00e9e d'une d\u00e9claration de couleur de fond (background, background-color), au moins, h\u00e9rit\u00e9e d'un parent ?", 
+        "solution": "", 
+        "thema": "Pr\u00e9sentation de l'information", 
+        "name": "10.5.1"
+    }, 
+    "21442": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, chaque d\u00e9claration de couleur de fond (background, background-color), d'un \u00e9l\u00e9ment susceptible de contenir du texte, est-elle accompagn\u00e9e d'une d\u00e9claration de couleur de police (color) au moins, h\u00e9rit\u00e9e d'un parent ?", 
+        "solution": "", 
+        "thema": "Pr\u00e9sentation de l'information", 
+        "name": "10.5.2"
+    }, 
+    "21443": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, chaque utilisation d'une image pour cr\u00e9er une couleur de fond d'un \u00e9l\u00e9ment susceptible de contenir du texte, via CSS (background, background-image), est-elle accompagn\u00e9e d'une d\u00e9claration de couleur de fond (background, background-color), au moins, h\u00e9rit\u00e9e d'un parent ?", 
+        "solution": "", 
+        "thema": "Pr\u00e9sentation de l'information", 
+        "name": "10.5.3"
+    }, 
+    "21444": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, chaque lien texte signal\u00e9 uniquement par la couleur et dont la nature n'est pas \u00e9vidente a-t-il un rapport de contraste sup\u00e9rieur ou \u00e9gal \u00e0 3:1 par rapport au texte environnant ?", 
+        "solution": "", 
+        "thema": "Pr\u00e9sentation de l'information", 
+        "name": "10.6.1"
+    }, 
+    "21445": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque \u00e9l\u00e9ment recevant le focus, l'indication visuelle du navigateur ne doit pas \u00eatre supprim\u00e9e (propri\u00e9t\u00e9 CSS outline, outline-color, outline-width, outline-style). Cette r\u00e8gle est-elle respect\u00e9e ?", 
+        "solution": "", 
+        "thema": "Pr\u00e9sentation de l'information", 
+        "name": "10.7.1"
+    }, 
+    "21446": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque \u00e9l\u00e9ment recevant le focus, l'indication visuelle du navigateur ne doit pas \u00eatre d\u00e9grad\u00e9e (propri\u00e9t\u00e9 CSS outline-color). Cette r\u00e8gle est-elle respect\u00e9e ?", 
+        "solution": "", 
+        "thema": "Pr\u00e9sentation de l'information", 
+        "name": "10.7.2"
+    }, 
+    "21447": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque lien dans un texte signal\u00e9 par la couleur uniquement v\u00e9rifie-t-il ces conditions ?", 
+        "solution": "", 
+        "thema": "Pr\u00e9sentation de l'information", 
+        "name": "10.7.3"
+    }, 
+    "21448": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque bloc de texte contenu dans un \u00e9l\u00e9ment HTML, la couleur de fond est-elle contr\u00f4lable par l'utilisateur ?", 
+        "solution": "", 
+        "thema": "Pr\u00e9sentation de l'information", 
+        "name": "10.8.1"
+    }, 
+    "21449": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque bloc de texte contenu dans un \u00e9l\u00e9ment HTML, la couleur de police est-elle contr\u00f4lable par l'utilisateur ?", 
+        "solution": "", 
+        "thema": "Pr\u00e9sentation de l'information", 
+        "name": "10.8.2"
+    }, 
+    "21450": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque bloc de texte contenu dans un \u00e9l\u00e9ment object, applet ou embed, la couleur de fond est-elle contr\u00f4lable par l'utilisateur ?", 
+        "solution": "", 
+        "thema": "Pr\u00e9sentation de l'information", 
+        "name": "10.8.3"
+    }, 
+    "21451": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque bloc de texte contenu dans un \u00e9l\u00e9ment object, applet ou embed, la couleur de police est-elle contr\u00f4lable par l'utilisateur ?", 
+        "solution": "", 
+        "thema": "Pr\u00e9sentation de l'information", 
+        "name": "10.8.4"
+    }, 
+    "21452": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque page Web v\u00e9rifie-t-elle une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Pr\u00e9sentation de l'information", 
+        "name": "10.9.1"
+    }, 
+    "21453": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, l'augmentation de la taille des caract\u00e8res \u00e0 200% v\u00e9rifie-t-elle une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Pr\u00e9sentation de l'information", 
+        "name": "10.10.1"
+    }, 
+    "21454": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque page Web, chaque bloc de texte v\u00e9rifie-t-il une de ces conditions (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Pr\u00e9sentation de l'information", 
+        "name": "10.11.1"
+    }, 
+    "21455": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque page Web, chaque bloc de texte v\u00e9rifie-t-il une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Pr\u00e9sentation de l'information", 
+        "name": "10.12.1"
+    }, 
+    "21456": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque page Web, chaque bloc de texte v\u00e9rifie-t-il une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Pr\u00e9sentation de l'information", 
+        "name": "10.12.2"
+    }, 
+    "21457": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, chaque texte cach\u00e9 (propri\u00e9t\u00e9 display:none ou visibility:hidden) v\u00e9rifie-t-il une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Pr\u00e9sentation de l'information", 
+        "name": "10.13.1"
+    }, 
+    "21458": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, pour chaque texte ou ensemble de texte, \r\nl'information ne doit pas \u00eatre donn\u00e9e uniquement par forme, taille ou \r\nposition. Cette r\u00e8gle est-elle respect\u00e9e ?", 
+        "solution": "", 
+        "thema": "Pr\u00e9sentation de l'information", 
+        "name": "10.14.1"
+    }, 
+    "21459": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, pour chaque image ou ensemble d'image, \r\nl'information ne doit pas \u00eatre donn\u00e9e uniquement par la forme, taille ou\r\n position. Cette r\u00e8gle est-elle respect\u00e9e ?", 
+        "solution": "", 
+        "thema": "Pr\u00e9sentation de l'information", 
+        "name": "10.14.2"
+    }, 
+    "21460": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, pour chaque m\u00e9dia temporel, l'information ne doit \r\npas \u00eatre donn\u00e9e uniquement par forme, taille ou position. Cette r\u00e8gle \r\nest-elle respect\u00e9e ?", 
+        "solution": "", 
+        "thema": "Pr\u00e9sentation de l'information", 
+        "name": "10.14.3"
+    }, 
+    "21461": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page Web, pour chaque m\u00e9dia non temporel, l'information ne \r\ndoit pas \u00eatre donn\u00e9e uniquement par la forme, taille ou position. Cette \r\nr\u00e8gle est-elle respect\u00e9e ?", 
+        "solution": "", 
+        "thema": "Pr\u00e9sentation de l'information", 
+        "name": "10.14.4"
+    }, 
+    "21462": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque champ de formulaire (balise input de type text, password, checkbox, radio, file ou balises textarea et select), v\u00e9rifie-t-il une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Formulaire", 
+        "name": "11.1.1"
+    }, 
+    "21463": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque champ de formulaire (balise input de type text, password, checkbox, radio, file ou balises textarea et select), associ\u00e9 \u00e0 une \u00e9tiquette (balise label), v\u00e9rifie-t-il ces conditions ?", 
+        "solution": "", 
+        "thema": "Formulaire", 
+        "name": "11.1.2"
+    }, 
+    "21464": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque \u00e9tiquette (balise label) associ\u00e9e \u00e0 un champ de formulaire (balise input de type text, password, checkbox, radio, file ou balises textarea et select) v\u00e9rifie-t-elle ces conditions ?", 
+        "solution": "", 
+        "thema": "Formulaire", 
+        "name": "11.1.3"
+    }, 
+    "21465": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque \u00e9tiquette (balise label) permet-elle de conna\u00eetre la fonction exacte du champ de formulaire (balise input de type text, password, checkbox, radio, file ou balises textarea et select) auquel elle est associ\u00e9e ?", 
+        "solution": "", 
+        "thema": "Formulaire", 
+        "name": "11.2.1"
+    }, 
+    "21466": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque attribut title permet-il de conna\u00eetre la fonction exacte du champ de formulaire (balise input de type text, password, checkbox, radio, file ou balises textarea et select) auquel il est associ\u00e9 ?", 
+        "solution": "", 
+        "thema": "Formulaire", 
+        "name": "11.2.2"
+    }, 
+    "21467": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque \u00e9tiquette associ\u00e9e \u00e0 un champ de formulaire ayant la m\u00eame fonction et r\u00e9p\u00e9t\u00e9s plusieurs fois dans une m\u00eame page est-elle coh\u00e9rente ?", 
+        "solution": "", 
+        "thema": "Formulaire", 
+        "name": "11.3.1"
+    }, 
+    "21468": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque \u00e9tiquette associ\u00e9e \u00e0 un champ de formulaire ayant la m\u00eame fonction et r\u00e9p\u00e9t\u00e9s dans un ensemble de page est-elle coh\u00e9rente ?", 
+        "solution": "", 
+        "thema": "Formulaire", 
+        "name": "11.3.2"
+    }, 
+    "21469": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque formulaire, chaque \u00e9tiquette de champ et son champ associ\u00e9 sont-ils accol\u00e9s ?", 
+        "solution": "", 
+        "thema": "Formulaire", 
+        "name": "11.4.1"
+    }, 
+    "21470": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque formulaire, les informations de m\u00eame nature sont-elles regroup\u00e9es via une balise fieldset, si n\u00e9cessaire ?", 
+        "solution": "", 
+        "thema": "Formulaire", 
+        "name": "11.5.1"
+    }, 
+    "21471": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque regroupement de champs de formulaire (balise fieldset) est-elle suivie dans le code source par une l\u00e9gende (balise legend) ?", 
+        "solution": "", 
+        "thema": "Formulaire", 
+        "name": "11.6.1"
+    }, 
+    "21472": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque formulaire, chaque l\u00e9gende (balise legend) associ\u00e9e \u00e0 un groupement de champs de formulaire (balise fieldset) est-elle pertinente ?", 
+        "solution": "", 
+        "thema": "Formulaire", 
+        "name": "11.7.1"
+    }, 
+    "21473": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque formulaire, pour chaque liste de choix (balise select), les items sont-ils regroup\u00e9s avec une balise optgroup, si n\u00e9cessaire ?", 
+        "solution": "", 
+        "thema": "Formulaire", 
+        "name": "11.8.1"
+    }, 
+    "21474": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque liste de choix (balise select), chaque regroupement d'items de liste (balise optgroup) poss\u00e8de-t-il un attribut label ?", 
+        "solution": "", 
+        "thema": "Formulaire", 
+        "name": "11.8.2"
+    }, 
+    "21475": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque regroupement d'items de liste (balise optgroup) ayant un attribut label, le contenu de l'attribut label est-il pertinent ?", 
+        "solution": "", 
+        "thema": "Formulaire", 
+        "name": "11.8.3"
+    }, 
+    "21476": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque formulaire, l'intitul\u00e9 de chaque bouton v\u00e9rifie-t-il une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Formulaire", 
+        "name": "11.9.1"
+    }, 
+    "21477": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque formulaire, les champs obligatoires sont-ils signal\u00e9s de mani\u00e8re pertinente ?", 
+        "solution": "", 
+        "thema": "Formulaire", 
+        "name": "11.10.1"
+    }, 
+    "21478": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque formulaire, les erreurs de saisie sont-elles indiqu\u00e9es de mani\u00e8re pertinente ?", 
+        "solution": "", 
+        "thema": "Formulaire", 
+        "name": "11.10.2"
+    }, 
+    "21479": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque formulaire, pour chaque champ obligatoire, le type de donn\u00e9e et/ou de format est-il indiqu\u00e9, si n\u00e9cessaire ?", 
+        "solution": "", 
+        "thema": "Formulaire", 
+        "name": "11.10.3"
+    }, 
+    "21480": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque formulaire, pour chaque erreur de saisie, les types et les formats de donn\u00e9es sont-ils sugg\u00e9r\u00e9s, si n\u00e9cessaire ?", 
+        "solution": "", 
+        "thema": "Formulaire", 
+        "name": "11.11.1"
+    }, 
+    "21481": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque formulaire, pour chaque erreur de saisie, des exemples de valeurs attendues sont-ils sugg\u00e9r\u00e9s, lorsque c'est possible ?", 
+        "solution": "", 
+        "thema": "Formulaire", 
+        "name": "11.11.2"
+    }, 
+    "21482": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque formulaire, la saisie des donn\u00e9es \u00e0 caract\u00e8re financier, juridique ou personnelle v\u00e9rifie-t-elle une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Formulaire", 
+        "name": "11.12.1"
+    }, 
+    "21483": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque formulaire, la suppression des donn\u00e9es \u00e0 caract\u00e8re financier, juridique ou personnelle v\u00e9rifie-t-elle une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Formulaire", 
+        "name": "11.12.2"
+    }, 
+    "21484": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque formulaire, la saisie des donn\u00e9es v\u00e9rifie-t-elle une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Formulaire", 
+        "name": "11.13.1"
+    }, 
+    "21485": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque formulaire, la suppression des donn\u00e9es v\u00e9rifie-t-elle une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Formulaire", 
+        "name": "11.13.2"
+    }, 
+    "21486": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque formulaire v\u00e9rifie-t-il, si n\u00e9cessaire, l'une de ces conditions ?", 
+        "solution": "", 
+        "thema": "Formulaire", 
+        "name": "11.14.1"
+    }, 
+    "21487": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Pour chaque formulaire, chaque aide \u00e0 la saisie est-elle pertinente ?", 
+        "solution": "", 
+        "thema": "Formulaire", 
+        "name": "11.15.1"
+    }, 
+    "21488": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque ensemble de pages v\u00e9rifie-t-il une de ces conditions (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Navigation", 
+        "name": "12.1.1"
+    }, 
+    "21489": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque ensemble de pages, chaque page ayant un menu de navigation v\u00e9rifie-t-elle ces conditions (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Navigation", 
+        "name": "12.2.1"
+    }, 
+    "21490": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque barre de navigation r\u00e9p\u00e9t\u00e9e dans un ensemble de page v\u00e9rifie-t-elle ces conditions (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Navigation", 
+        "name": "12.2.2"
+    }, 
+    "21491": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque ensemble de pages, le menu de navigation principal a-t-il une pr\u00e9sentation coh\u00e9rente (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Navigation", 
+        "name": "12.3.1"
+    }, 
+    "21492": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque ensemble de pages, les barres de navigation r\u00e9p\u00e9t\u00e9es ont-elles une pr\u00e9sentation coh\u00e9rente (hors cas particuliers) ?", 
+        "solution": "", 
+        "thema": "Navigation", 
+        "name": "12.3.2"
+    }, 
+    "21493": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "La page \"plan du site\" est-elle repr\u00e9sentative de l'architecture g\u00e9n\u00e9rale du site ?", 
+        "solution": "", 
+        "thema": "Navigation", 
+        "name": "12.4.1"
+    }, 
+    "21494": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Les liens du plan du site sont-ils fonctionnels ?", 
+        "solution": "", 
+        "thema": "Navigation", 
+        "name": "12.4.2"
+    }, 
+    "21495": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Les liens du plan du site renvoient-ils bien vers les pages indiqu\u00e9es par l'intitul\u00e9 ?", 
+        "solution": "", 
+        "thema": "Navigation", 
+        "name": "12.4.3"
+    }, 
+    "21496": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque ensemble de pages, la page \"plan du site\" est-elle accessible \u00e0 partir d'une fonctionnalit\u00e9 identique ?", 
+        "solution": "", 
+        "thema": "Navigation", 
+        "name": "12.5.1"
+    }, 
+    "21497": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque ensemble de pages, la fonctionnalit\u00e9 vers la page \"plan du site\" est-elle situ\u00e9e \u00e0 la m\u00eame place dans la pr\u00e9sentation ?", 
+        "solution": "", 
+        "thema": "Navigation", 
+        "name": "12.5.2"
+    }, 
+    "21498": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque ensemble de pages, la fonctionnalit\u00e9 vers la page \"plan du site\" se pr\u00e9sente-t-elle toujours dans le m\u00eame ordre relatif dans le code source ?", 
+        "solution": "", 
+        "thema": "Navigation", 
+        "name": "12.5.3"
+    }, 
+    "21499": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque ensemble de pages, le moteur de recherche est-il accessible \u00e0 partir d'une fonctionnalit\u00e9 identique ?", 
+        "solution": "", 
+        "thema": "Navigation", 
+        "name": "12.6.1"
+    }, 
+    "21500": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque ensemble de pages, la fonctionnalit\u00e9 vers le moteur de recherche est-elle situ\u00e9e \u00e0 la m\u00eame place dans la pr\u00e9sentation ?", 
+        "solution": "", 
+        "thema": "Navigation", 
+        "name": "12.6.2"
+    }, 
+    "21501": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque ensemble de pages, la fonctionnalit\u00e9 vers le moteur de recherche se pr\u00e9sente-t-elle toujours dans le m\u00eame ordre relatif dans le code source ?", 
+        "solution": "", 
+        "thema": "Navigation", 
+        "name": "12.6.3"
+    }, 
+    "21502": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Chaque page d'une collection de pages v\u00e9rifie-t-elle ces conditions :", 
+        "solution": "", 
+        "thema": "Navigation", 
+        "name": "12.7.1"
+    }, 
+    "21503": {
+        "goal": "", 
+        "checklist": {
+            "id": 597, 
+            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
+        }, 
+        "explanation": "", 
+        "description": "Dans chaque page web, un fil d'Ariane est-il pr\u00e9sent?", 
+        "solution": "", 
+        "thema": "Navigation", 
+        "name": "12.8.1"
+    }
+}

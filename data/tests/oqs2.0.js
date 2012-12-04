@@ -39,7 +39,7 @@
 "use strict";
 
 (function() {
-	tests = rules;
+    tests = rules;
     criteria = rulesets;
     results = analyze(criteria);
     var _results = synthesize_results(results);

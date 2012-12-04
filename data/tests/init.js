@@ -1,3 +1,3 @@
 (function(window) {
-	window.jQueryMephisto = window.$.noConflict(true);
+    window.jQueryMephisto = window.$.noConflict(true);
 })(window);

@@ -216,17 +216,17 @@ var logger;
     // ------------------------------------------
 
     // prototypes
-    function startsWith(search, target) {
-        if (typeof String.prototype.startsWith != 'function') {
-            return target.startsWith(search);   
+    window.startsWith = function startsWith(search, target) {
+        if (typeof String.prototype.startsWith == 'function') {
+            return target.startsWith(search);
         } else {
             return target.slice(0, search.length) == search;
         }
     }
-    
-    function endsWith(search, target) {
-        if (typeof String.prototype.endsWith != 'function') {
-            return target.endsWith(search);   
+
+    window.endsWith = function endsWith(search, target) {
+        if (typeof String.prototype.endsWith == 'function') {
+            return target.endsWith(search);
         } else {
             return target.slice(-search.length) == search;
         }
@@ -364,7 +364,9 @@ var logger;
                 "contentType": ""
             }
         }
-    }    /**
+    }
+
+    /**
      *
      * @param doc
      * @return
@@ -445,6 +447,7 @@ var logger;
             return result;
         }
     }
+
     /**
      *
      * @param doc
@@ -476,7 +479,7 @@ var logger;
             for (var j = 0; j < sheet._extra["media"].length; j++) {
                 //
                 var _media = sheet._extra["media"].item && sheet._extra["media"].item(j) || sheet._extra["media"][j];
-                if (startsWith(_media, media) || startsWith(_media, "only " + media) || _media == "all") {
+                if (startsWith(media, _media) || startsWith("only " + media, _media) || _media == "all") {
                     //
                     var rules = sheet.cssRules;
 
@@ -518,7 +521,7 @@ var logger;
             for (var l = 0; l < rule.media.length; l++) {
                 //
                 var _media = rule.media.item && rule.media.item(l) || rule.media[l];
-                if (startsWith(_media, media) || startsWith(_media, "only " + media) || _media == "all") {
+                if (startsWith(media, _media) || startsWith("only " + media, _media) || _media == "all") {
                     //
                     var rules = rule.cssRules;
 
@@ -540,7 +543,7 @@ var logger;
             for (var l = 0; l < rule.media.length; l++) {
                 //
                 var _media = rule.media.item && rule.media.item(l) || rule.media[l];
-                if (startsWith(_media, media) || startsWith(_media, "only " + media) || _media == "all") {
+                if (startsWith(media, _media) || startsWith("only " + media, _media) || _media == "all") {
                     //
                     var re = new RegExp().compile("(url\\()?'?\"?([^'\"\\)]*)", "i");
                     re.test(rule.href);
@@ -686,7 +689,7 @@ var logger;
     window._getDetails = function _getDetails(node) {
         //
         if (node == undefined) {
-            return;
+            return {};
         }
 
         //
@@ -694,12 +697,23 @@ var logger;
             node = $(document.body).get(0);
         }
 
+        var text = "";
+
+        try {
+            text = node.outerHTML.replace(/</g, "&lt;").replace(/>/g, "&gt;").substr(0, 200);
+        } catch(e) {
+            try {
+                text = (new XMLSerializer()).serializeToString(node).replace(/</g, "&lt;").replace(/>/g, "&gt;").substr(0, 200);
+            } catch(e) {}
+        }
+
         //
         return {
             "path": _getSelector(node),
-            "text": node.outerHTML.replace(/</g, "&lt;").replace(/>/g, "&gt;").substr(0, 200)
+            "text": text
         }
     }
+
     /**
      *
      * @param doc
@@ -708,7 +722,9 @@ var logger;
     window._getCssDetails = function _getCssDetails(rule, i) {
         //
         return rule.parentStyleSheet._extra["href"] + " (ligne " + rule.currentLine + ") : " + rule.mSelectorText + " {" + rule.declarations[i]["parsedCssText"] + "}";
-    }    /**
+    }
+
+    /**
      *
      * @param doc
      * @return
@@ -717,6 +733,7 @@ var logger;
         //
         return "style en ligne sur " + _getXPath(item) + " : " + rule.declarations[i]["parsedCssText"];
     }
+
     /**
      *
      * @param doc
@@ -732,6 +749,7 @@ var logger;
         //
         return "entête HTTP de " + url + " :" + _headers;
     }
+
     /**
      *
      * @param url
@@ -745,6 +763,7 @@ var logger;
         //
         return a.href;
     }
+
     /**
      *
      * @param node
@@ -798,6 +817,7 @@ var logger;
         //
         return tmp;
     }
+
     /**
      *
      * @param node
@@ -843,6 +863,7 @@ var logger;
         //
         return tmp;
     }
+
     /**
      * Get a page in the pages stack
      *
@@ -1136,6 +1157,7 @@ var logger;
         //
         return false;
     }
+
     /**
      * Analyse the page
      *
@@ -1168,6 +1190,7 @@ var logger;
         //
         return false;
     }
+
     /**
      * Test all the criteria
      *
@@ -1617,10 +1640,13 @@ var logger;
             //
             else if (language == "http") {
                 var _headers = "";
+                var resources = sidecar.resources.filter(
+                    function(item){return item["content_type"] == "text/html" || item["content_type"] == "application/xhtml+xml";}
+                );
 
                 //
-                for (var i in sidecar.resources[0]["headers"]) {
-                    _headers += i + ": " + sidecar.resources[0]["headers"][i] + "\n";
+                for (var i in resources[0]["headers"]) {
+                    _headers += i + ": " + resources[0]["headers"][i] + "\n";
                 }
 
                 //
@@ -1732,24 +1758,25 @@ var logger;
      */
     function apply_doctype_test(doc, test, language) {
         //
-        var _result = [], dt = "", reg1 = RegExp().compile('<!DOCTYPE[^>]*>', "i"), reg2 = RegExp().compile('^\\s*<!DOCTYPE[^>]*>', "i");
+        var _result = [], dt = "", reg1 = new RegExp().compile('<!DOCTYPE[^>]*>', "i"), reg2 = new RegExp().compile('^\\s*<!DOCTYPE[^>]*>', "i");
         //@formatter:off
-    var doctypes = [
-        '<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">',
-        '<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">',
-        '<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">',
-        '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">',
-        '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">',
-        '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">',
-        '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">',
-        '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN" "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">',
-        '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG 1.1//EN" "http://www.w3.org/2002/04/xhtml-math-svg/xhtml-math-svg.dtd">',
-        '<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN" "">', '<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN" "">',
-        '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.0//EN" "http://www.w3.org/TR/xhtml-basic/xhtml-basic10.dtd">',
-        '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">',
-        '<!DOCTYPE html PUBLIC>'
-    ];
-    //@formatter:on
+        var doctypes = [
+            '<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN" "">',
+            '<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN" "">',
+            '<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">',
+            '<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">',
+            '<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">',
+            '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">',
+            '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">',
+            '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">',
+            '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">',
+            '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN" "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">',
+            '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG 1.1//EN" "http://www.w3.org/2002/04/xhtml-math-svg/xhtml-math-svg.dtd">',
+            '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.0//EN" "http://www.w3.org/TR/xhtml-basic/xhtml-basic10.dtd">',
+            '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">',
+            '<!DOCTYPE html PUBLIC>'
+        ];
+        //@formatter:on
 
         //
         try {
@@ -1849,7 +1876,7 @@ var logger;
                         //
                         for (var i in doctypes) {
                             //
-                            var reg = RegExp().compile(doctypes[i], "i");
+                            var reg = new RegExp().compile(doctypes[i], "i");
 
                             //
                             if (reg.test(_tmp.responseText)) {

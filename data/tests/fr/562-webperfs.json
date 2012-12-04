@@ -1,0 +1,890 @@
+{
+    "21003": {
+        "goal": "", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "L'acc\u00e8s \u00e0 une page externe se fait avec un maximum d'une redirection sur le m\u00eame domaine.", 
+        "solution": "", 
+        "thema": "Serveur", 
+        "name": "815"
+    }, 
+    "21004": {
+        "goal": "<p class=\"p1\">Diminuer le nombre de requ\u00eates serveur</p>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "L'URL d'une ressource statique est unique sur le site", 
+        "solution": "", 
+        "thema": "Serveur", 
+        "name": "36"
+    }, 
+    "19918": {
+        "goal": "<p class=\"p1\"><span style=\"font-family: arial, sans, sans-serif; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255); \">Diminuer la charge de traitement par le serveur</span><br></p>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "L'acc\u00e8s \u00e0 une page interne se fait sans redirection pr\u00e9alable.", 
+        "solution": "", 
+        "thema": "Serveur", 
+        "name": "35"
+    }, 
+    "19916": {
+        "goal": "", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "L'utilisation de window.setTimeout() est limit\u00e9e \u00e0 une occurence par page.", 
+        "solution": "", 
+        "thema": "Scripts", 
+        "name": "814"
+    }, 
+    "19910": {
+        "goal": "", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Le nombre de scripts internes charg\u00e9s en m\u00eame temps que le HTML est limit\u00e9 \u00e0 3.", 
+        "solution": "", 
+        "thema": "Scripts", 
+        "name": "812"
+    }, 
+    "19932": {
+        "goal": "<p class=\"p1\"><span style=\"font-family: arial, sans, sans-serif; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255); \">Acc\u00e9lerer le rendu</span><br></p>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les dimensions des images sont d\u00e9clar\u00e9es dans le code source", 
+        "solution": "<span class=\"Apple-style-span\" style=\"font-family: 'Lucida Grande', Corbel, 'Luxi Sans', 'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; \">Pr\u00e9ciser dans le code HTML les valeurs des attributs&nbsp;<code style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; font-size: 11px; font: normal normal normal 0.9em/normal monaco, 'andale mono', 'lucida console', monospace; vertical-align: baseline; line-height: 1.5; \">width</code>&nbsp;et&nbsp;<code style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; font-size: 11px; font: normal normal normal 0.9em/normal monaco, 'andale mono', 'lucida console', monospace; vertical-align: baseline; line-height: 1.5; \">height</code>&nbsp;des \u00e9l\u00e9ments&nbsp;<code style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; font-size: 11px; font: normal normal normal 0.9em/normal monaco, 'andale mono', 'lucida console', monospace; vertical-align: baseline; line-height: 1.5; \">&lt;img&gt;</code></span>", 
+        "thema": "Images", 
+        "name": "10"
+    }, 
+    "19911": {
+        "goal": "", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Le nombre de CSS internes charg\u00e9s en m\u00eame temps que le HTML est limit\u00e9 \u00e0 3.", 
+        "solution": "", 
+        "thema": "CSS", 
+        "name": "813"
+    }, 
+    "19912": {
+        "goal": "", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Chaque cookie est limit\u00e9 \u00e0 4 Ko", 
+        "solution": "", 
+        "thema": "Serveur", 
+        "name": "110"
+    }, 
+    "19919": {
+        "goal": "<p class=\"p1\"><span style=\"font-family: arial, sans, sans-serif; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255); \">Diminuer le volume de donn\u00e9es \u00e0 t\u00e9l\u00e9charger</span><br></p>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les fichiers propos\u00e9s au t\u00e9l\u00e9chargement en haute qualit\u00e9 le sont \u00e9galement en basse qualit\u00e9", 
+        "solution": "", 
+        "thema": "Serveur", 
+        "name": "28"
+    }, 
+    "19913": {
+        "goal": "", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Le nombre de cookies est limit\u00e9 \u00e0 20 par domaine", 
+        "solution": "", 
+        "thema": "Serveur", 
+        "name": "111"
+    }, 
+    "19920": {
+        "goal": "", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les JPEG ne contiennent pas de meta-donn\u00e9es sonores", 
+        "solution": "", 
+        "thema": "Serveur", 
+        "name": "100"
+    }, 
+    "19914": {
+        "goal": "<p class=\"p1\"><span style=\"font-family: arial, sans, sans-serif; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255); \">Diminuer le nombre de requ\u00eates serveur</span><br></p>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "L'URL d'une ressource ne pr\u00e9sente pas de variantes li\u00e9es \u00e0 la casse", 
+        "solution": "", 
+        "thema": "Serveur", 
+        "name": "27"
+    }, 
+    "19915": {
+        "goal": "<p class=\"p1\"><span style=\"font-family: arial, sans, sans-serif; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255); \">Acc\u00e9lerer le rendu</span><br></p>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les tableaux utilisent le mode de rendu CSS fixe.", 
+        "solution": "", 
+        "thema": "CSS", 
+        "name": "3"
+    }, 
+    "19011": {
+        "goal": "<ul><li>Diminuer le volume de donn\u00e9es \u00e0 t\u00e9l\u00e9charger<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Le serveur envoie les informations permettant la mise en cache des contenus.", 
+        "solution": "<span class=\"Apple-style-span\" style=\"font-family: 'Lucida Grande', Corbel, 'Luxi Sans', 'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; \"><p style=\"margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; font-size: 12px; font: inherit; vertical-align: baseline; \">Configurer le serveur Web pour qu'il puisse g\u00e9rer la mise en cache des \u00e9l\u00e9ments statiques et g\u00e9rer - au niveau applicatif - la possible mise en cache des \u00e9l\u00e9ments dynamiques.</p><p style=\"margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; font-size: 12px; font: inherit; vertical-align: baseline; \">En pratique, et en accord avec les sp\u00e9cifications HTTP le serveur devra envoyer les champs&nbsp;<code style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; font-size: 11px; font: normal normal normal 0.9em/normal monaco, 'andale mono', 'lucida console', monospace; vertical-align: baseline; line-height: 1.5; \">ETag</code>,&nbsp;<code style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; font-size: 11px; font: normal normal normal 0.9em/normal monaco, 'andale mono', 'lucida console', monospace; vertical-align: baseline; line-height: 1.5; \">Date</code>&nbsp;et&nbsp;<code style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; font-size: 11px; font: normal normal normal 0.9em/normal monaco, 'andale mono', 'lucida console', monospace; vertical-align: baseline; line-height: 1.5; \">Last-Modified</code>&nbsp;correspondant respectivement \u00e0 l'identifiant de la ressource, \u00e0 la date de traitement de la requ\u00eate et \u00e0 la date de derni\u00e8re modification de la ressource demand\u00e9e. L'ensemble des dates \u00e9tant au format GMT. Ces informations pouvant \u00eatre compl\u00e9t\u00e9es par les champs&nbsp;<code style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; font-size: 11px; font: normal normal normal 0.9em/normal monaco, 'andale mono', 'lucida console', monospace; vertical-align: baseline; line-height: 1.5; \">Content-Length</code>&nbsp;et&nbsp;<code style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; font-size: 11px; font: normal normal normal 0.9em/normal monaco, 'andale mono', 'lucida console', monospace; vertical-align: baseline; line-height: 1.5; \">Expires</code>&nbsp;si la taille en octets et la date d'expiration exacte du contenu sont connues.</p><p style=\"margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; font-size: 12px; font: inherit; vertical-align: baseline; \">Afin d'informer les proxys et les clients finaux sur le comportement \u00e0 adopter vis \u00e0 vis des contenus mis en cache, les auteurs devront utiliser les directives HTTP&nbsp;<code style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; font-size: 11px; font: normal normal normal 0.9em/normal monaco, 'andale mono', 'lucida console', monospace; vertical-align: baseline; line-height: 1.5; \">Cache-Control</code>&nbsp;et&nbsp;<code style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; font-size: 11px; font: normal normal normal 0.9em/normal monaco, 'andale mono', 'lucida console', monospace; vertical-align: baseline; line-height: 1.5; \">Pragma</code>&nbsp;en accord avec les d\u00e9lais de r\u00e9actualisation n\u00e9cessaires et le caract\u00e8re priv\u00e9 de la diffusion.</p><p style=\"margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; font-size: 12px; font: inherit; vertical-align: baseline; \">La possible mise en cache pourra \u00eatre ainsi finalis\u00e9e par la soumission d'un message 304 Not Modified (sans la ressource demand\u00e9e dans le corps de la requ\u00eate) lorsque le serveur recevra un ent\u00eate&nbsp;<code style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; font-size: 11px; font: normal normal normal 0.9em/normal monaco, 'andale mono', 'lucida console', monospace; vertical-align: baseline; line-height: 1.5; \">If-Modified-Since</code>contenant une date ant\u00e9rieure \u00e0 la date de modification de la dite ressource.</p></span>", 
+        "thema": "Serveur", 
+        "name": "19"
+    }, 
+    "19012": {
+        "goal": "<div class=\"lastUnit size2of3\">\r\n        \r\n            \r\n                \r\n                    \r\n                        \r\n                            <div class=\"lastUnit size2of3\"><ul><li>Diminuer le volume de donn\u00e9es \u00e0 t\u00e9l\u00e9charger\r\n                        \r\n                    \r\n                \r\n            \r\n        \r\n    </li></ul></div>\r\n                        \r\n                    \r\n                \r\n            \r\n        \r\n    </div>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Le serveur transmet des contenus compress\u00e9s aux clients qui les acceptent.", 
+        "solution": "Activer le module Gzip ou Deflate du serveur pour les ressources textuelles (Javascript, CSS, HTML).", 
+        "thema": "Serveur", 
+        "name": "21"
+    }, 
+    "19013": {
+        "goal": "<ul><li>Diminuer la charge de traitement par le serveur</li><li>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<style>\r\n<!--table\r\n\t{mso-displayed-decimal-separator:\"\\.\";\r\n\tmso-displayed-thousand-separator:\\00A0;}\r\n@page\r\n\t{margin:1.0in .75in 1.0in .75in;\r\n\tmso-header-margin:.5in;\r\n\tmso-footer-margin:.5in;}\r\ntd\r\n\t{padding-top:1px;\r\n\tpadding-right:1px;\r\n\tpadding-left:1px;\r\n\tmso-ignore:padding;\r\n\tcolor:black;\r\n\tfont-size:12.0pt;\r\n\tfont-weight:400;\r\n\tfont-style:normal;\r\n\ttext-decoration:none;\r\n\tfont-family:Calibri, sans-serif;\r\n\tmso-font-charset:0;\r\n\tmso-number-format:General;\r\n\ttext-align:general;\r\n\tvertical-align:bottom;\r\n\tborder:none;\r\n\tmso-background-source:auto;\r\n\tmso-pattern:auto;\r\n\tmso-protection:locked visible;\r\n\twhite-space:nowrap;\r\n\tmso-rotate:0;}\r\n.xl63\r\n\t{text-align:left;\r\n\tvertical-align:middle;\r\n\tpadding-left:12px;\r\n\tmso-char-indent-count:1;}\r\n--></style>Diminuer la charge de traitement par le client<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "La compression est r\u00e9serv\u00e9e aux ressources qui ne le sont pas nativement.", 
+        "solution": "", 
+        "thema": "Serveur", 
+        "name": "30"
+    }, 
+    "19014": {
+        "goal": "<div class=\"lastUnit size2of3\"><ul><li>Diminuer le volume de donn\u00e9es \u00e0 t\u00e9l\u00e9charger\r\n                        \r\n                    \r\n                \r\n            \r\n        \r\n    </li></ul></div>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les scripts sont minifi\u00e9s.", 
+        "solution": "Supprimer les espaces non n\u00e9cessaires et les commentaires dans les \r\nfichiers Javascript, par exemple en recourant \u00e0 des outils tels que <a href=\"http://crockford.com/javascript/jsmin\">crockford.com/javascript/jsmin</a> ou <a href=\"http://developer.yahoo.com/yui/compressor/\">developer.yahoo.com/yui/compressor/</a>", 
+        "thema": "Scripts", 
+        "name": "13"
+    }, 
+    "19015": {
+        "goal": "<div class=\"lastUnit size2of3\">\r\n        \r\n            \r\n                \r\n                    \r\n                        \r\n                            <div class=\"lastUnit size2of3\"><ul><li>Diminuer le volume de donn\u00e9es \u00e0 t\u00e9l\u00e9charger\r\n                        \r\n                    \r\n                \r\n            \r\n        \r\n    </li></ul></div>\r\n                        \r\n                    \r\n                \r\n            \r\n        \r\n    </div>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les feuilles de style sont minifi\u00e9es.", 
+        "solution": "<div class=\"couple line\"><div class=\"lastUnit size2of3\">\r\n                        \r\n                    \r\n                \r\n            \r\n        \r\n    </div>Supprimer les espaces non n\u00e9cessaires et les commentaires dans les fichiers CSS, par exemple en recourant \u00e0 des outils tels que <a href=\"http://developer.yahoo.com/yui/compressor/\">developer.yahoo.com/yui/compressor/</a></div>", 
+        "thema": "CSS", 
+        "name": "1"
+    }, 
+    "19016": {
+        "goal": "<ul><li><span style=\"font-family: arial, sans, sans-serif; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255); \">Diminuer le volume de donn\u00e9es \u00e0 t\u00e9l\u00e9charger</span><br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Le code HTML est minifi\u00e9.", 
+        "solution": "", 
+        "thema": "HTML", 
+        "name": "9"
+    }, 
+    "19017": {
+        "goal": "<ul><li><span style=\"font-family: arial, sans, sans-serif; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255); \">Acc\u00e9lerer le rendu</span><br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les images n\u00e9cessaires \u00e0 une interaction font l'objet d'un pr\u00e9chargement", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "12"
+    }, 
+    "19018": {
+        "goal": "<span style=\"font-family: arial, sans, sans-serif; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255); \">Acc\u00e9lerer le rendu</span>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les ressources statiques sont h\u00e9berg\u00e9es sur un autre domaine.", 
+        "solution": "", 
+        "thema": "Serveur", 
+        "name": "34"
+    }, 
+    "19019": {
+        "goal": "<ul><li>Diminuer la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les images sont propos\u00e9es dans des formats appropri\u00e9s", 
+        "solution": "png, jpg, webp, .ico, .gif .svg", 
+        "thema": "Images", 
+        "name": "104"
+    }, 
+    "19020": {
+        "goal": "<ul><li>Diminuer la charge de traitement par le client<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "La largeur et la hauteur des images sont indiqu\u00e9es dans le code HTML.", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "807"
+    }, 
+    "19021": {
+        "goal": "<ul><li><span style=\"font-family: arial, sans, sans-serif; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255); \">Acc\u00e9lerer le rendu</span><br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les dimensions d\u00e9clar\u00e9es d'une image sont ses dimensions r\u00e9elles.", 
+        "solution": "<span class=\"Apple-style-span\" style=\"font-family: 'Lucida Grande', Corbel, 'Luxi Sans', 'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; \">Pr\u00e9ciser dans le code HTML les valeurs r\u00e9elles des attributs&nbsp;<code style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; font-size: 11px; font: normal normal normal 0.9em/normal monaco, 'andale mono', 'lucida console', monospace; vertical-align: baseline; line-height: 1.5; \">width</code>&nbsp;et&nbsp;<code style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; font-size: 11px; font: normal normal normal 0.9em/normal monaco, 'andale mono', 'lucida console', monospace; vertical-align: baseline; line-height: 1.5; \">height</code>&nbsp;des \u00e9l\u00e9ments&nbsp;<code style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; font-size: 11px; font: normal normal normal 0.9em/normal monaco, 'andale mono', 'lucida console', monospace; vertical-align: baseline; line-height: 1.5; \">&lt;img&gt;</code></span>", 
+        "thema": "Images", 
+        "name": "11"
+    }, 
+    "19022": {
+        "goal": "<ul><li>Diminuer la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger</li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les images ne comportent que les m\u00e9ta-donn\u00e9es n\u00e9cessaires \u00e0 la pr\u00e9visualisation.", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "105"
+    }, 
+    "19023": {
+        "goal": "<ul><li>Diminuer la charge de traitement par le client</li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les dimensions d\u00e9clar\u00e9es d'une image respectent le ratio de l'image r\u00e9elle.", 
+        "solution": "", 
+        "thema": "Images", 
+        "name": "808"
+    }, 
+    "19024": {
+        "goal": "<ul><li>Assurer \u00e0 l'utilisateur la perception du chargement de la page<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les scripts sont inclus de mani\u00e8re \u00e0 ne pas interrompre le rendu navigateur.", 
+        "solution": "", 
+        "thema": "Scripts", 
+        "name": "101"
+    }, 
+    "19025": {
+        "goal": "", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les scripts non utiles imm\u00e9diatement sont charg\u00e9s juste avant leur utilisation.", 
+        "solution": "", 
+        "thema": "Scripts", 
+        "name": "800"
+    }, 
+    "19026": {
+        "goal": "", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Toutes les instructions CSS sont utilis\u00e9es dans le site.", 
+        "solution": "", 
+        "thema": "CSS", 
+        "name": "806"
+    }, 
+    "19027": {
+        "goal": "<ul><li>Diminuer la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger</li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les ressources audio sont compress\u00e9es dans la limite d'une qualit\u00e9 sonore acceptable.", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia et animations", 
+        "name": "106"
+    }, 
+    "19028": {
+        "goal": "<ul><li>Diminuer la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger</li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les ressources vid\u00e9o sont compress\u00e9es dans la limite d'une qualit\u00e9 visuelle acceptable.", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia et animations", 
+        "name": "107"
+    }, 
+    "19029": {
+        "goal": "<ul><li>Diminuer la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger</li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Seule la pr\u00e9visualisation d'une vid\u00e9o est pr\u00e9-charg\u00e9e au chargement de la page.", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia et animations", 
+        "name": "108"
+    }, 
+    "19030": {
+        "goal": "<ul><li><span style=\"background-color: rgb(255, 255, 255); font-family: arial, sans, sans-serif; font-size: 13px; white-space: pre-wrap; \">Acc\u00e9lerer le rendu</span><br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les ent\u00eates envoy\u00e9s par le serveur contiennent les informations relatives au jeu de caract\u00e8res employ\u00e9.", 
+        "solution": "<span class=\"Apple-style-span\" style=\"font-family: 'Lucida Grande', Corbel, 'Luxi Sans', 'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; \">Le param\u00e8tre&nbsp;<code style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; font-size: 11px; font: normal normal normal 0.9em/normal monaco, 'andale mono', 'lucida console', monospace; vertical-align: baseline; line-height: 1.5; \">charset</code>&nbsp;de l'ent\u00eate HTTP&nbsp;<code style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; font-size: 11px; font: normal normal normal 0.9em/normal monaco, 'andale mono', 'lucida console', monospace; vertical-align: baseline; line-height: 1.5; \">content-type</code>&nbsp;est renseign\u00e9 sous la forme&nbsp;:&nbsp;<code style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; font-size: 11px; font: normal normal normal 0.9em/normal monaco, 'andale mono', 'lucida console', monospace; vertical-align: baseline; line-height: 1.5; \">Content-Type: text/html; charset=iso-8859-1</code>, en fonction du jeu de caract\u00e8re effectivement utilis\u00e9 par le document et de son type MIME.</span>", 
+        "thema": "Serveur", 
+        "name": "22"
+    }, 
+    "19031": {
+        "goal": "<ul><li>Diminuer la charge de traitement par le client<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "La section head commence par un \u00e9l\u00e9ment meta indiquant le jeu de caract\u00e8res employ\u00e9.", 
+        "solution": "", 
+        "thema": "HTML", 
+        "name": "809"
+    }, 
+    "19032": {
+        "goal": "<ul><li>Diminuer la charge de traitement par le client<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Seules les animations visibles sont actives.", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia et animations", 
+        "name": "810"
+    }, 
+    "19033": {
+        "goal": "<ul><li>Assurer \u00e0 l'utilisateur la perception du chargement de la page<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Une image statique remplace une animation au chargement.", 
+        "solution": "", 
+        "thema": "Multim\u00e9dia et animations", 
+        "name": "811"
+    }, 
+    "19034": {
+        "goal": "<ul><li>Diminuer le volume de donn\u00e9es \u00e0 t\u00e9l\u00e9charger</li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les fontes charg\u00e9es ne contiennent que le jeu de caract\u00e8res utile \u00e0 l'affichage du site.", 
+        "solution": "", 
+        "thema": "CSS", 
+        "name": "4"
+    }, 
+    "19035": {
+        "goal": "<ul><li>Diminuer le volume de donn\u00e9es \u00e0 t\u00e9l\u00e9charger</li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les fontes charg\u00e9es ne contiennent que les variantes utiles \u00e0 l'affichage du site.", 
+        "solution": "", 
+        "thema": "CSS", 
+        "name": "5"
+    }, 
+    "19036": {
+        "goal": "<ul><li>Diminuer la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Sauf besoin sp\u00e9cifique (impression), les PDF sont propos\u00e9s en basse r\u00e9solution.", 
+        "solution": "", 
+        "thema": "PDF", 
+        "name": "109"
+    }, 
+    "19037": {
+        "goal": "<ul><li>Diminuer la charge de traitement par le client<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les ressources statiques sont servies sans cookies.", 
+        "solution": "", 
+        "thema": "Serveur", 
+        "name": "24"
+    }, 
+    "19038": {
+        "goal": "<p>Diminuer le nombre de requ\u00eates serveur</p>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "L'URL d'une ressource statique est unique dans chaque page.", 
+        "solution": "", 
+        "thema": "Serveur", 
+        "name": "29"
+    }, 
+    "19039": {
+        "goal": "<ul><li>Diminuer la charge de traitement par le serveur</li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Le code HTML envoy\u00e9 par le serveur n'appelle que des ressources accessibles sans redirection.", 
+        "solution": "", 
+        "thema": "Serveur", 
+        "name": "31"
+    }, 
+    "19040": {
+        "goal": "<ul><li>Diminuer la charge de traitement par le client<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les \u00e9v\u00e9nements sont port\u00e9s par un \u00e9l\u00e9ment parent plut\u00f4t que par de multiples enfants.", 
+        "solution": "", 
+        "thema": "Scripts", 
+        "name": "102"
+    }, 
+    "19041": {
+        "goal": "<ul><li>Diminuer la charge de traitement par le client<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les requ\u00eates sur le DOM sont cibl\u00e9es \u00e0 l'aide d'un identifiant.", 
+        "solution": "", 
+        "thema": "Scripts", 
+        "name": "502"
+    }, 
+    "19042": {
+        "goal": "<ul><li><span style=\"font-family: arial, sans, sans-serif; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255); \">Acc\u00e9lerer le rendu</span><br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les scripts manipulent des classes plut\u00f4t que les styles en ligne.", 
+        "solution": "", 
+        "thema": "Scripts", 
+        "name": "16"
+    }, 
+    "19043": {
+        "goal": "<ul><li>Diminuer le volume de donn\u00e9es \u00e0 t\u00e9l\u00e9charger<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les fonctions de scripts sont plac\u00e9es dans des fichiers externes.", 
+        "solution": "<span class=\"Apple-style-span\" style=\"font-family: 'Lucida Grande', Corbel, 'Luxi Sans', 'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; \">N'utiliser le contenu de l'\u00e9l\u00e9ment&nbsp;<code style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; font-size: 11px; font: normal normal normal 0.9em/normal monaco, 'andale mono', 'lucida console', monospace; vertical-align: baseline; line-height: 1.5; \">&lt;script&gt;</code>&nbsp;que pour renseigner des variables ou initialiser un script et d\u00e9porter les fonctions dans les fichiers Javascript externes</span>", 
+        "thema": "Scripts", 
+        "name": "17"
+    }, 
+    "19044": {
+        "goal": "<ul><li><span style=\"font-family: arial, sans, sans-serif; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255); \">Acc\u00e9lerer le rendu</span><br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Un s\u00e9lecteur ne se termine jamais par le s\u00e9lecteur universel.", 
+        "solution": "", 
+        "thema": "CSS", 
+        "name": "7"
+    }, 
+    "19045": {
+        "goal": "<ul><li>Assurer \u00e0 l'utilisateur la perception du chargement de la page<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Le serveur envoie la section head de la page d\u00e8s qu'elle est disponible.", 
+        "solution": "", 
+        "thema": "Serveur", 
+        "name": "112"
+    }, 
+    "19046": {
+        "goal": "<ul><li>Diminuer le nombre de requ\u00eates serveur\r\n                        \r\n                    \r\n                \r\n            \r\n        \r\n    </li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Le changement d'images d'arri\u00e8re-plan lors d'un rollover est g\u00e9r\u00e9 \u00e0 l'aide d'un sprite CSS.", 
+        "solution": "", 
+        "thema": "CSS", 
+        "name": "2"
+    }, 
+    "19047": {
+        "goal": "<ul><li>Diminuer le nombre de requ\u00eates serveur\r\n                        \r\n                    \r\n                \r\n            \r\n        \r\n    </li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les arri\u00e8res-plan sont combin\u00e9s dans un sprite CSS.", 
+        "solution": "", 
+        "thema": "CSS", 
+        "name": "6"
+    }, 
+    "19048": {
+        "goal": "<ul><li>Diminuer la charge de traitement par le serveur<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Le versionning de ressources statiques se fait via un param\u00e8tre ajout\u00e9 apr\u00e8s le nom du fichier ou directement dans le nom du fichier.", 
+        "solution": "", 
+        "thema": "Serveur", 
+        "name": "25"
+    }, 
+    "19049": {
+        "goal": "<ul><li>Diminuer la charge de traitement par le serveur</li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Le versionning de ressources statiques se fait directement dans le nom du fichier.", 
+        "solution": "", 
+        "thema": "Serveur", 
+        "name": "33"
+    }, 
+    "19050": {
+        "goal": "<ul><li>Diminuer le nombre de requ\u00eates serveur<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "L'indication de mise en cache des ressources statiques est d'au moins un mois.", 
+        "solution": "", 
+        "thema": "Serveur", 
+        "name": "20"
+    }, 
+    "19051": {
+        "goal": "<ul><li>Diminuer la charge de traitement par le serveur<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les param\u00e8tres d'URL de ressources statiques ne sont utilis\u00e9s que pour le versioning.", 
+        "solution": "", 
+        "thema": "Serveur", 
+        "name": "26"
+    }, 
+    "19052": {
+        "goal": "<ul><li>Diminuer le nombre de requ\u00eates serveur<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Le serveur respecte l'ordre pr\u00e9f\u00e9rentiel de langues des outils de consultation.", 
+        "solution": "<span class=\"Apple-style-span\" style=\"font-family: 'Lucida Grande', Corbel, 'Luxi Sans', 'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; \">Utiliser la n\u00e9gociation de contenu disponible selon le serveur, en testant les valeurs de l'en-t\u00eate HTTP<code style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; font-size: 11px; font: normal normal normal 0.9em/normal monaco, 'andale mono', 'lucida console', monospace; vertical-align: baseline; line-height: 1.5; \">Accept-Language</code>.</span>", 
+        "thema": "Serveur", 
+        "name": "37"
+    }, 
+    "19053": {
+        "goal": "<ul><li>Diminuer le volume de donn\u00e9es \u00e0 t\u00e9l\u00e9charger</li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Le poids des pages d'erreur 404 des ressources non adress\u00e9es directement \u00e0 l'utilisateur est au maximum de 3Ko", 
+        "solution": "", 
+        "thema": "Serveur", 
+        "name": "38"
+    }, 
+    "19054": {
+        "goal": "<ul><li>Diminuer le volume de donn\u00e9es \u00e0 t\u00e9l\u00e9charger</li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Le poids des pages d'erreur 403 des ressources non adress\u00e9es directement \u00e0 l'utilisateur est au maximum de 3Ko", 
+        "solution": "", 
+        "thema": "Serveur", 
+        "name": "39"
+    }, 
+    "19055": {
+        "goal": "<ul><li>Diminuer le nombre de requ\u00eates serveur<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Le serveur envoie l'indication de la langue principale du contenu.", 
+        "solution": "", 
+        "thema": "Serveur", 
+        "name": "802"
+    }, 
+    "19056": {
+        "goal": "<span style=\"font-family: arial, sans, sans-serif; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255); \">Acc\u00e9lerer le rendu</span>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Un commentaire conditionnel vide pr\u00e9c\u00e8de l'\u00e9l\u00e9ment racine si les commentaires conditionnels sont utilis\u00e9s.", 
+        "solution": "", 
+        "thema": "HTML", 
+        "name": "114"
+    }, 
+    "19057": {
+        "goal": "<ul><li><span style=\"font-family: arial, sans, sans-serif; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255); \">Diminuer le nombre de requ\u00eates serveur</span><br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les ressources statiques ne sont pas h\u00e9berg\u00e9es sur plus de 3 sous-domaines diff\u00e9rents.", 
+        "solution": "", 
+        "thema": "Serveur", 
+        "name": "32"
+    }, 
+    "19058": {
+        "goal": "<ul><li><span style=\"font-family: arial, sans, sans-serif; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255); \">Acc\u00e9lerer le rendu</span><br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Toutes les balises HTML sont ferm\u00e9es", 
+        "solution": "", 
+        "thema": "HTML", 
+        "name": "8"
+    }, 
+    "19059": {
+        "goal": "<ul><li>Diminuer le nombre de requ\u00eates serveur\r\n                        \r\n                    \r\n                \r\n            \r\n        \r\n    </li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Tous les hyperliens internes du site sont valides.", 
+        "solution": "<span class=\"Apple-style-span\" style=\"font-family: 'Lucida Grande', Corbel, 'Luxi Sans', 'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; \"><ul style=\"margin-top: 0px; margin-right: 1.5em; margin-bottom: 1.5em; margin-left: 1em; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; font-size: 12px; font: inherit; vertical-align: baseline; list-style-type: disc; list-style-position: initial; list-style-image: initial; \"><li style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; font-size: 12px; font: inherit; vertical-align: baseline; list-style-type: disc; \">S'assurer que l'outil utilis\u00e9 pour la r\u00e9daction des contenus poss\u00e8de une gestion satisfaisante et coh\u00e9rente des hyperliens internes.</li><li style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; font-size: 12px; font: inherit; vertical-align: baseline; list-style-type: disc; \">Si ce n'est pas le cas, lancer r\u00e9guli\u00e8rement un contr\u00f4le de la validit\u00e9 de l'ensemble des liens du site.</li></ul></span>", 
+        "thema": "Serveur", 
+        "name": "23"
+    }, 
+    "19060": {
+        "goal": "<ul><li>Diminuer le nombre de requ\u00eates serveur<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "La saisie utilisateur est valid\u00e9e c\u00f4t\u00e9 client pour r\u00e9duire les requ\u00eates comportant des donn\u00e9es erron\u00e9es.", 
+        "solution": "", 
+        "thema": "Scripts", 
+        "name": "15"
+    }, 
+    "19061": {
+        "goal": "<ul><li>Diminuer le nombre de requ\u00eates serveur<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Si l'audience vis\u00e9e du site est g\u00e9ographiquement dispers\u00e9e, le site utilise un CDN.", 
+        "solution": "", 
+        "thema": "Serveur", 
+        "name": "40"
+    }, 
+    "19062": {
+        "goal": "<ul><li>Diminuer la charge de traitement par le client<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les scripts manipulent les styles en ligne par blocs plut\u00f4t qu'un par un.", 
+        "solution": "", 
+        "thema": "Scripts", 
+        "name": "801"
+    }, 
+    "19063": {
+        "goal": "<ul><li>Diminuer la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger</li><li>Diminuer le nombre de requ\u00eates serveur<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les requ\u00eates JSON utilisent GET pour b\u00e9n\u00e9ficier du cache.", 
+        "solution": "", 
+        "thema": "Serveur", 
+        "name": "113"
+    }, 
+    "19064": {
+        "goal": "<ul><li><span style=\"font-family: arial, sans, sans-serif; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255); \">Acc\u00e9lerer le rendu</span><br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les scripts n'utilisent pas document.write.", 
+        "solution": "", 
+        "thema": "Scripts", 
+        "name": "14"
+    }, 
+    "19065": {
+        "goal": "<ul><li>Diminuer le volume de donn\u00e9es \u00e0 t\u00e9l\u00e9charger</li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les requ\u00eates JSON sont minifi\u00e9es.", 
+        "solution": "", 
+        "thema": "Serveur", 
+        "name": "41"
+    }, 
+    "19066": {
+        "goal": "<ul><li>Diminuer la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger</li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les requ\u00eates JSON sont compress\u00e9es.", 
+        "solution": "", 
+        "thema": "Serveur", 
+        "name": "803"
+    }, 
+    "19067": {
+        "goal": "", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les styles ne comportent pas de reset CSS", 
+        "solution": "", 
+        "thema": "Serveur", 
+        "name": "805"
+    }, 
+    "19068": {
+        "goal": "<ul><li>Diminuer la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger</li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Le code source de chaque page ne contient pas d'\u00e9l\u00e9ments ou d'attributs de pr\u00e9sentation.", 
+        "solution": "", 
+        "thema": "HTML", 
+        "name": "501"
+    }, 
+    "19069": {
+        "goal": "<ul><li>Assurer \u00e0 l'utilisateur la perception du chargement de la page<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Un feedback pr\u00e9-charg\u00e9 est fourni \u00e0 l'utilisateur pendant le traitement d'une requ\u00eate dynamique.", 
+        "solution": "", 
+        "thema": "Scripts", 
+        "name": "804"
+    }, 
+    "19070": {
+        "goal": "<ul><li>Diminuer la charge de traitement par le client<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Le stockage local est utilis\u00e9 quand les cookies ne sont pas n\u00e9cessaires.", 
+        "solution": "", 
+        "thema": "Scripts", 
+        "name": "103"
+    }, 
+    "19071": {
+        "goal": "<ul><li>Diminuer le nombre de requ\u00eates serveur<br></li></ul>", 
+        "checklist": {
+            "id": 562, 
+            "name": "Webperf"
+        }, 
+        "explanation": "", 
+        "description": "Les formulaires comportent une aide \u00e0 la saisie pour \u00e9viter des requ\u00eates comportant des donn\u00e9es erron\u00e9es.", 
+        "solution": "", 
+        "thema": "Scripts", 
+        "name": "18"
+    }
+}
