@@ -247,34 +247,22 @@ table.data th, table.data td {
 #resultDetails p.status {
     float: right;
     margin: 0 0 0 1em;
-    padding: 5px 5px 5px 26px;
+    padding: 0 0 0 26px;
     font-size: 1.2em;
-    /*color: #fff;
-    background-color: #000;
-    */
     background-repeat: no-repeat;
     background-position: 5px 50%;
-    border-radius: 4px;
-    border: 1px solid #000;
+    color: #444;
 }
 #resultDetails p.status.c {
-    color: #390;
-    border-color: #390;
     background-image: url(../img/c-tr.png);
 }
 #resultDetails p.status.nc {
-    color: #c00;
-    border-color: #c00;
     background-image: url(../img/nc-tr.png);
 }
 #resultDetails p.status.na {
-    color: #666;
-    border-color: #666;
     background-image: url(../img/na-tr.png);
 }
 #resultDetails p.status.i {
-    color: #777;
-    border-color: #999;
     background-image: url(../img/i-tr.png);
 }
 
