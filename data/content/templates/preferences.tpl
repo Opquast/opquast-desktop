@@ -28,7 +28,7 @@
         <li>
           <input id="p_{{! cl[0] }}" value="{{! cl[0] }}" type="checkbox" name="checklist"
           {{? cl[1].selected }}checked="checked"{{?}} />
-          <label for="p_{{! cl[0] }}">{{! cl[1].name }}
+          <label for="p_{{! cl[0] }}">{{? cl[1].html }}{{= cl[1].html }}{{??}}{{! cl[1].name }}{{?}}
           - {{! cl[1].category }}
           ({{! cl[1].langs.join(', ') }})</label>
         </li>
