@@ -39,7 +39,7 @@
         <label for="keep">{{! it.locales['oqs.account_save'] }}</label>
       </p>
 
-      <p class="submit"><input type="submit" value="Show projects" /></p>
+      <p class="submit"><input type="submit" value="{{! it.locales['oqs.show_projects'] }}" /></p>
     </form>
   </div>
 </div>

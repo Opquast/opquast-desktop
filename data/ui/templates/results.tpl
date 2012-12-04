@@ -33,9 +33,9 @@
 
 <div id="resultDetails">
   <ul id="ctx1" class="ctx">
-    <li><a href="#" class="prev" title="{{! it.locales['oqs.previous_result'] }}">{{! it.locales['oqs.previous_result'] }}</a></li>
-    <li><a href="#" class="next" title="{{! it.locales['oqs.next_result'] }}">{{! it.locales['oqs.next_result'] }}</a></li>
-    <li><a href="#" class="close" title="{{! it.locales['oqs.close'] }}">{{! it.locales['oqs.close'] }}</a></li>
+    <li><a href="#" class="prev" title="{{! it.locales['oqs.previous_result'] }}"><span class="key">&#x2190; </span>{{! it.locales['oqs.previous_result'] }}</a> | </li>
+    <li><a href="#" class="next" title="{{! it.locales['oqs.next_result'] }}">{{! it.locales['oqs.next_result'] }}<span class="key"> &#x2192;</span></a> | </li>
+    <li><a href="#" class="close" title="{{! it.locales['oqs.close'] }}">{{! it.locales['oqs.close'] }}<span class="key"> esc</span></a></li>
   </ul>
   <div id="content"></div>
   <ul id="ctx2" class="ctx">

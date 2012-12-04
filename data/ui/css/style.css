@@ -190,11 +190,13 @@ table.data th, table.data td {
     display: inline-block;
     margin: 0;
 }
-#resultDetails .ctx li:after {
-    content: "\00A0\00A0|\00A0";
+
+#resultDetails .ctx a {
+    text-decoration: none;
+    text-transform: lowercase;
 }
-#resultDetails .ctx li:last-child:after {
-    content: "";
+#resultDetails .ctx a:hover {
+    text-decoration: underline;
 }
 
 #resultDetails #ctx1 {
@@ -220,24 +222,17 @@ table.data th, table.data td {
     border-width: 1px 0;
 }
 
-#resultDetails .ctx a {
-    text-decoration: none;
-    text-transform: lowercase;
+#resultDetails .key {
+    display: inline-block;
+    background: rgba(0,102,204, 0.3);
+    color: #fff;
+    border-radius: 2px;
+    padding: 2px 4px;
+    margin: 0 4px;
 }
-#resultDetails .ctx a:hover {
-    text-decoration: underline;
-}
-#resultDetails .ctx a:after, #resultDetails #ctx1 a:before {
-    opacity: 0.7;
-}
-#resultDetails .ctx a.prev:before {
-    content: "(\2190) ";
-}
-#resultDetails .ctx a.next:after {
-    content: " (\2192)";
-}
-#resultDetails .ctx a.close:after {
-    content: " (esc)";
+
+#resultDetails .ctx a.close {
+    font-weight: bold;
 }
 
 #resultDetails h1 {
@@ -253,28 +248,33 @@ table.data th, table.data td {
     float: right;
     margin: 0 0 0 1em;
     padding: 5px 5px 5px 26px;
-    font-weight: bold;
     font-size: 1.2em;
-    color: #fff;
+    /*color: #fff;
     background-color: #000;
+    */
     background-repeat: no-repeat;
     background-position: 5px 50%;
     border-radius: 4px;
+    border: 1px solid #000;
 }
 #resultDetails p.status.c {
-    background-color: #390;
+    color: #390;
+    border-color: #390;
     background-image: url(../img/c-tr.png);
 }
 #resultDetails p.status.nc {
-    background-color: #c00;
+    color: #c00;
+    border-color: #c00;
     background-image: url(../img/nc-tr.png);
 }
 #resultDetails p.status.na {
-    background-color: #666;
+    color: #666;
+    border-color: #666;
     background-image: url(../img/na-tr.png);
 }
 #resultDetails p.status.i {
-    background-color: #999;
+    color: #777;
+    border-color: #999;
     background-image: url(../img/i-tr.png);
 }
 
