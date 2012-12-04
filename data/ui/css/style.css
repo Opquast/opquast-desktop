@@ -82,13 +82,11 @@ button.action, input[type=submit] {
     padding: 4px 12px;
     border-radius: 4px;
     border: 1px solid #555;
-    background: -moz-linear-gradient(hsl(209, 15%, 27%), hsl(210, 20%, 13%)) no-repeat padding-box;
     background: linear-gradient(hsl(209, 15%, 27%), hsl(210, 20%, 13%)) no-repeat padding-box;
     color: #ddd;
 }
 button.action:hover, button.action:active,
 input[type=submit]:hover, input[type=submit]:active {
-    background: -moz-linear-gradient(hsl(209, 10%, 28%), hsl(210, 14%, 8%)) no-repeat padding-box;
     background: linear-gradient(hsl(209, 10%, 28%), hsl(210, 14%, 8%)) no-repeat padding-box;
     color: #fff;
 }

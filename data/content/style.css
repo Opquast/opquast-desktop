@@ -213,7 +213,6 @@ h1,h2,h3 {
 }
 
 #header-wrap {
-    background: -moz-linear-gradient(hsl(209, 18%, 30%), hsl(210, 24%, 16%)) no-repeat padding-box;
     background: linear-gradient(hsl(209, 18%, 30%), hsl(210, 24%, 16%)) no-repeat padding-box;
     min-height: 140px;
 }
