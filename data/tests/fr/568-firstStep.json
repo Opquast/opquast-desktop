@@ -3,7 +3,7 @@
         "goal": "", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser un contenu d'attribut alt identique au texte pr\u00e9sent dans un lien si l'\u00e9l\u00e9ment img est un descendant d'\u00e9l\u00e9ment a contenant \u00e9galement du texte", 
@@ -15,7 +15,7 @@
         "goal": "", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser d'attribut alt vide sur un \u00e9l\u00e9ment area dot\u00e9 d'un attribut href", 
@@ -27,7 +27,7 @@
         "goal": "", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser l'\u00e9l\u00e9ment fieldset en dehors d'un \u00e9l\u00e9ment form", 
@@ -39,7 +39,7 @@
         "goal": "\u00c9viter \u00e0 l'utilisateur d'avoir des \u00e9l\u00e9ments interactifs dont il ne peut connaitre la destination ou l'action", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser d'\u00e9l\u00e9ment a vide \u00e0 l'exception des ancres", 
@@ -51,7 +51,7 @@
         "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser l'attribut align", 
@@ -63,7 +63,7 @@
         "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser l'attribut alink", 
@@ -75,7 +75,7 @@
         "goal": "Permettre la restitution d'un contenu alternatif aux utilisateurs qui ne peuvent pas percevoir le contenu de l'\u00e9l\u00e9ment.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Utiliser un attribut alt pour l'\u00e9l\u00e9ment applet", 
@@ -87,7 +87,7 @@
         "goal": "Permettre aux utilisateurs de distinguer les liens qui m\u00e8nent \u00e0 des adresses diff\u00e9rentes.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Utiliser un attribut alt pour l'\u00e9l\u00e9ment area", 
@@ -99,7 +99,7 @@
         "goal": "Permettre aux utilisateurs de distinguer les liens qui m\u00e8nent \u00e0 des adresses diff\u00e9rentes.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser un contenu d'attribut alt identique pour plusieurs \u00e9l\u00e9ments area ayant un attribut href diff\u00e9rent", 
@@ -111,7 +111,7 @@
         "goal": "", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser une valeur d'attribut dir autre que ltr, rtl ou vide", 
@@ -123,7 +123,7 @@
         "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser l'attribut background", 
@@ -135,7 +135,7 @@
         "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser l'\u00e9l\u00e9ment basefont", 
@@ -147,7 +147,7 @@
         "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser l'attribut bgcolor", 
@@ -159,7 +159,7 @@
         "goal": "Permettre d'\u00e9viter la lecture automatique de son qu'il n'est pas possible d'arr\u00eater.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser l'\u00e9l\u00e9ment bgsound", 
@@ -171,7 +171,7 @@
         "goal": "Permettre d'\u00e9viter la pr\u00e9sence de clignotement qu'il n'est pas possible d'arr\u00eater.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser l'\u00e9l\u00e9ment blink", 
@@ -183,7 +183,7 @@
         "goal": "Permettre l'identification et la restitution du titre principal de la page.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Utiliser au moins un \u00e9l\u00e9ment h1 descendant de l'\u00e9l\u00e9ment body", 
@@ -195,7 +195,7 @@
         "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser l'attribut border", 
@@ -207,7 +207,7 @@
         "goal": "Eviter \u00e0 l'utilisateur d'avoir des \u00e9l\u00e9ments interactifs dont il ne peut connaitre la destination ou l'action", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser d'\u00e9l\u00e9ment button vide", 
@@ -219,7 +219,7 @@
         "goal": "Permettre aux utilisateurs de distinguer le sujet d'un tableau de donn\u00e9es de la mani\u00e8re dont il est construit.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser un contenu d'\u00e9l\u00e9ment caption identique au contenu de l'attribut summary", 
@@ -231,7 +231,7 @@
         "goal": "Permettre la restitution du sujet du tableau de donn\u00e9es.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser d'\u00e9l\u00e9ment caption vide", 
@@ -243,7 +243,7 @@
         "goal": "Permettre la distinction entre les tableaux de donn\u00e9es et les tableaux de mise en page.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser d'\u00e9l\u00e9ment caption dans un \u00e9l\u00e9ment table contenant uniquement des cellules td", 
@@ -255,7 +255,7 @@
         "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser l'\u00e9l\u00e9ment center", 
@@ -267,7 +267,7 @@
         "goal": "Permettre la restitution de la nature des contenus (ici une liste de d\u00e9finition) aux  utilisateurs qui ne per\u00e7oivent pas la mise en page originale.\r\nEviter l'utilisation d'\u00e9l\u00e9ment en fonction de la mani\u00e8re dont ils sont restitu\u00e9s visuellement.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Utiliser un \u00e9l\u00e9ment dt comme premier enfant de l'\u00e9l\u00e9ment dl", 
@@ -279,7 +279,7 @@
         "goal": "Permettre la restitution d'un titre au groupe form\u00e9 par fieldset.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Utiliser un \u00e9l\u00e9ment legend enfant de l'\u00e9l\u00e9ment fieldset", 
@@ -291,7 +291,7 @@
         "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser l'\u00e9l\u00e9ment font", 
@@ -303,7 +303,7 @@
         "goal": "Permettre la restitution d'un contenu d\u00e9crivant la fonction et/ou le contenu de l'\u00e9l\u00e9ment.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Utiliser un attribut title pour chaque \u00e9l\u00e9ment frame", 
@@ -315,7 +315,7 @@
         "goal": "Permettre la restitution d'un contenu d\u00e9crivant la fonction et/ou le contenu de l'\u00e9l\u00e9ment.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser un attribut title vide pour l'\u00e9l\u00e9ment frame", 
@@ -327,7 +327,7 @@
         "goal": "Eviter \u00e0 l'utilisateur d'avoir une hi\u00e9rarchie de titre incompl\u00e8te ou incoh\u00e9rente", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser d'\u00e9l\u00e9ment h1 vide", 
@@ -339,7 +339,7 @@
         "goal": "Eviter \u00e0 l'utilisateur d'avoir une hi\u00e9rarchie de titre incompl\u00e8te ou incoh\u00e9rente", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser d'\u00e9l\u00e9ment h2 vide", 
@@ -351,7 +351,7 @@
         "goal": "Eviter les trous dans la hi\u00e9rarchie des titres.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Utiliser un \u00e9l\u00e9ment h1, h2, h3, h4, h5 ou h6 comme premier \u00e9l\u00e9ment de titrage pr\u00e9c\u00e9dant l'\u00e9l\u00e9ment h2 dans l'ordre du code source", 
@@ -363,7 +363,7 @@
         "goal": "Eviter \u00e0 l'utilisateur d'avoir une hi\u00e9rarchie de titre incompl\u00e8te ou incoh\u00e9rente", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser d'\u00e9l\u00e9ment h3 vide", 
@@ -375,7 +375,7 @@
         "goal": "Eviter les trous dans la hi\u00e9rarchie des titres.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Utiliser un \u00e9l\u00e9ment h2, h3, h4, h5 ou h6 comme premier \u00e9l\u00e9ment de titrage pr\u00e9c\u00e9dant l'\u00e9l\u00e9ment h3 dans l'ordre du code source", 
@@ -387,7 +387,7 @@
         "goal": "Eviter \u00e0 l'utilisateur d'avoir une hi\u00e9rarchie de titre incompl\u00e8te ou incoh\u00e9rente", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser d'\u00e9l\u00e9ment h4 vide", 
@@ -399,7 +399,7 @@
         "goal": "Eviter les trous dans la hi\u00e9rarchie des titres.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Utiliser un \u00e9l\u00e9ment h3, h4, h5 ou h6 comme premier \u00e9l\u00e9ment de titrage pr\u00e9c\u00e9dant l'\u00e9l\u00e9ment h4 dans l'ordre du code source", 
@@ -411,7 +411,7 @@
         "goal": "Eviter \u00e0 l'utilisateur d'avoir une hi\u00e9rarchie de titre incompl\u00e8te ou incoh\u00e9rente", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser d'\u00e9l\u00e9ment h5 vide", 
@@ -423,7 +423,7 @@
         "goal": "Eviter les trous dans la hi\u00e9rarchie des titres.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Utiliser un \u00e9l\u00e9ment h4, h5 ou h6 comme premier \u00e9l\u00e9ment de titrage pr\u00e9c\u00e9dant l'\u00e9l\u00e9ment h5 dans l'ordre du code source", 
@@ -435,7 +435,7 @@
         "goal": "Eviter \u00e0 l'utilisateur d'avoir une hi\u00e9rarchie de titre incompl\u00e8te ou incoh\u00e9rente", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser d'\u00e9l\u00e9ment h6 vide", 
@@ -447,7 +447,7 @@
         "goal": "Eviter les trous dans la hi\u00e9rarchie des titres.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Utiliser un \u00e9l\u00e9ment h5 ou h6 comme premier \u00e9l\u00e9ment de titrage pr\u00e9c\u00e9dant l'\u00e9l\u00e9ment h6 dans l'ordre du code source", 
@@ -459,7 +459,7 @@
         "goal": "Permettre la restitution d'un titre de page destin\u00e9 \u00e0 identifier le contenu du document.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Utiliser un \u00e9l\u00e9ment title enfant de l'\u00e9l\u00e9ment head", 
@@ -471,7 +471,7 @@
         "goal": "Permettre la d\u00e9claration de la langue du document et l'adaptation des aides techniques \u00e0 celle-ci.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Utiliser un attribut lang pour l'\u00e9l\u00e9ment html", 
@@ -483,7 +483,7 @@
         "goal": "Permettre aux agents utilisateurs d'interpr\u00e9ter correctement le document.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Utiliser une dtd conforme aux recommandations du W3C avant l'\u00e9l\u00e9ment html", 
@@ -495,7 +495,7 @@
         "goal": "Eviter les erreurs d'interpr\u00e9tation et de restitution par les agents utilisateurs et les aides techniques", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser de syntaxes d'attribut erron\u00e9es ni d'imbrications d'\u00e9l\u00e9ments non conformes dans l'\u00e9l\u00e9ment html", 
@@ -507,7 +507,7 @@
         "goal": "Permettre la restitution d'un contenu d\u00e9crivant la fonction et/ou le contenu de l'\u00e9l\u00e9ment.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Utiliser un attribut title pour l'\u00e9l\u00e9ment iframe", 
@@ -519,7 +519,7 @@
         "goal": "Permettre la restitution d'un contenu d\u00e9crivant la fonction et/ou le contenu de l'\u00e9l\u00e9ment.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser un attribut title vide sur l'\u00e9l\u00e9ment iframe", 
@@ -531,7 +531,7 @@
         "goal": "Permettre la restitution d'un contenu alternatif aux utilisateurs qui ne peuvent pas percevoir le contenu de l'\u00e9l\u00e9ment.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Utiliser un attribut alt pour l'\u00e9l\u00e9ment img", 
@@ -543,7 +543,7 @@
         "goal": "Eviter \u00e0 l'utilisateur d'avoir des \u00e9l\u00e9ments interactifs dont il ne peut connaitre la destination ou l'action", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser d'attribut alt vide si l'\u00e9l\u00e9ment img est le seul enfant d'un \u00e9l\u00e9ment a ou button", 
@@ -555,7 +555,7 @@
         "goal": "Permettre d'associer le contenu d'une description longue \u00e0 l'image \u00e0 laquelle il se rapporte.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Utiliser une URI comme valeur de l'attribut longdesc", 
@@ -567,7 +567,7 @@
         "goal": "Permettre la restitution d'un contenu alternatif aux utilisateurs qui ne peuvent pas percevoir le contenu de l'\u00e9l\u00e9ment.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Utiliser un attribut alt pour chaque \u00e9l\u00e9ment input de type image", 
@@ -579,7 +579,7 @@
         "goal": "Eviter \u00e0 l'utilisateur d'avoir des \u00e9l\u00e9ments interactifs dont il ne peut connaitre la destination ou l'action", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser d'attribut alt vide pour un \u00e9l\u00e9ment input de type image", 
@@ -591,7 +591,7 @@
         "goal": "Eviter \u00e0 l'utilisateur d'avoir des \u00e9l\u00e9ments interactifs dont il ne peut connaitre la destination ou l'action", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser d'attribut value vide pour un \u00e9l\u00e9ment input de type submit", 
@@ -603,7 +603,7 @@
         "goal": "Permettre l'association des \u00e9tiquettes avec les champs auxquelles elles se rapportent.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Utiliser l'attribut for pour l'\u00e9l\u00e9ment label", 
@@ -615,7 +615,7 @@
         "goal": "Eviter \u00e0 l'utilisateur la restitution d'\u00e9tiquette associ\u00e9e \u00e0 aucun champ de formulaire.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser d'attribut for vide pour l'\u00e9l\u00e9ment label", 
@@ -627,7 +627,7 @@
         "goal": "Eviter \u00e0 l'utilisateur la restitution d'\u00e9tiquette associ\u00e9e \u00e0 aucun champ de formulaire.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser un contenu d'attribut for qui ne correspond \u00e0 aucune valeur d'attribut id existant dans le m\u00eame \u00e9l\u00e9ment form", 
@@ -639,7 +639,7 @@
         "goal": "Permettre la d\u00e9claration de la langue du document et l'adaptation des aides techniques \u00e0 celle-ci.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Utiliser un code de langue conforme dans l'attribut lang", 
@@ -651,7 +651,7 @@
         "goal": "Eviter \u00e0 l'utilisateur la pr\u00e9sence de groupement d'\u00e9l\u00e9ments de formulaire qu'il ne pourra pas identifier.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser d'\u00e9l\u00e9ment legend vide", 
@@ -663,7 +663,7 @@
         "goal": "Permettre la restitution sans erreur du nombre d'\u00e9l\u00e9ments composant une liste.\r\nEviter l'utilisation d'\u00e9l\u00e9ments \u00e0 des fins de pr\u00e9sentation.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser d'\u00e9l\u00e9ment li vide", 
@@ -675,7 +675,7 @@
         "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser l'attribut link", 
@@ -687,7 +687,7 @@
         "goal": "Eviter l'utilisation d'\u00e9l\u00e9ments obsol\u00e8tes que les agents utilisateurs de sauraient pas interpr\u00e9ter.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser l'\u00e9l\u00e9ment listing", 
@@ -699,7 +699,7 @@
         "goal": "Permettre d'\u00e9viter la pr\u00e9sence de contenu d\u00e9filant qu'il n'est pas possible d'arr\u00eater.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser l'\u00e9l\u00e9ment marquee", 
@@ -711,7 +711,7 @@
         "goal": "Eviter aux utilisateurs un rechargement de la page qu'il ne pourrait pas ma\u00eetriser.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser l'\u00e9l\u00e9ment meta avec un attribut http-equiv ayant la valeur refresh", 
@@ -723,7 +723,7 @@
         "goal": "Permettre la restitution d'un titre au groupe form\u00e9 par optgroup.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Utiliser un attribut label pour chaque \u00e9l\u00e9ment optgroup", 
@@ -735,7 +735,7 @@
         "goal": "Permettre la distinction des diff\u00e9rents groupes form\u00e9s.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser un contenu d'attribut label identique pour plusieurs \u00e9l\u00e9ment optgroup d'un m\u00eame \u00e9l\u00e9ment select", 
@@ -747,7 +747,7 @@
         "goal": "Permettre la distinction des diff\u00e9rents groupes form\u00e9s.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser d'attribut label vide sur l'\u00e9l\u00e9ment optgroup", 
@@ -759,7 +759,7 @@
         "goal": "Eviter l'utilisation d'\u00e9l\u00e9ments \u00e0 des fins de pr\u00e9sentation.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser d'\u00e9l\u00e9ment p vide", 
@@ -771,7 +771,7 @@
         "goal": "Eviter l'utilisation d'\u00e9l\u00e9ments obsol\u00e8tes que les agents utilisateurs de sauraient pas interpr\u00e9ter.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser l'\u00e9l\u00e9ment plaintext", 
@@ -783,7 +783,7 @@
         "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser l'\u00e9l\u00e9ment strike", 
@@ -795,7 +795,7 @@
         "goal": "Permettre l'identification des tableaux de donn\u00e9es et la restitution des contenus permettant de les caract\u00e9riser.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Utiliser un \u00e9l\u00e9ment caption comme premier enfant de l'\u00e9l\u00e9ment table si le tableau contient au moins un \u00e9l\u00e9ment th", 
@@ -807,7 +807,7 @@
         "goal": "Permettre l'identification des tableaux de donn\u00e9es et la restitution des contenus permettant de les caract\u00e9riser.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Utiliser au moins un \u00e9l\u00e9ment th dans l'\u00e9l\u00e9ment table contenant un \u00e9l\u00e9ment caption ou ayant un attribut summary non vide", 
@@ -819,7 +819,7 @@
         "goal": "Permettre aux utilisateurs de distinguer le sujet d'un tableau de donn\u00e9es de la mani\u00e8re dont il est construit.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser un contenu d'attribut summary identique au contenu de l'\u00e9l\u00e9ment caption", 
@@ -831,7 +831,7 @@
         "goal": "Permettre l'identification des tableaux de donn\u00e9es et la restitution des contenus permettant de les caract\u00e9riser.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser d'attribut summary vide sur l'\u00e9l\u00e9ment table si le tableau contient un \u00e9l\u00e9ment th ou caption", 
@@ -843,7 +843,7 @@
         "goal": "Permettre aux utilisateurs de diff\u00e9rencier les tableaux de donn\u00e9es des tableaux de mise en page en n'utilisant pas les caract\u00e9ristiques sp\u00e9cifiques aux premiers dans les seconds.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser d'attribut summary sur un \u00e9l\u00e9ment table contenant uniquement des cellules td", 
@@ -855,7 +855,7 @@
         "goal": "Permettre l'association des cellules avec leurs ent\u00eates dans les tableaux de donn\u00e9es.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Utiliser l'attribut headers sur l'\u00e9l\u00e9ment td s'il se rapporte \u00e0 un \u00e9l\u00e9ment th ayant un attribut id", 
@@ -867,7 +867,7 @@
         "goal": "Permettre l'association des cellules avec leurs ent\u00eates dans les tableaux de donn\u00e9es.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser un contenu d'attribut headers qui ne correspond \u00e0 aucune valeur d'attribut id pr\u00e9sent dans le m\u00eame tableau", 
@@ -879,7 +879,7 @@
         "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser l'attribut text", 
@@ -891,7 +891,7 @@
         "goal": "Permettre l'association des cellules avec leurs ent\u00eates dans les tableaux de donn\u00e9es.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Utiliser un attribut scope ou id pour chaque \u00e9l\u00e9ment th non vide", 
@@ -903,7 +903,7 @@
         "goal": "Permettre l'association des cellules avec leurs ent\u00eates dans les tableaux de donn\u00e9es.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser une valeur d'attribut scope autre que row ou col", 
@@ -915,7 +915,7 @@
         "goal": "Permettre la restitution du titre de la page.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser d'\u00e9l\u00e9ment title vide", 
@@ -927,7 +927,7 @@
         "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser l'\u00e9l\u00e9ment tt", 
@@ -939,7 +939,7 @@
         "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser l'attribut vlink", 
@@ -951,7 +951,7 @@
         "goal": "Eviter l'utilisation d'\u00e9l\u00e9ments obsol\u00e8tes que les agents utilisateurs de sauraient pas interpr\u00e9ter.", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Ne pas utiliser l'\u00e9l\u00e9ment xmp", 
@@ -963,7 +963,7 @@
         "goal": "", 
         "checklist": {
             "id": 568, 
-            "name": "Accessibility first step: error detection"
+            "name": "Premier pas vers WCAG 2.0 : erreurs"
         }, 
         "explanation": "", 
         "description": "Utiliser un \u00e9l\u00e9ment button ou un \u00e9l\u00e9ment input de type submit, image ou button dans chaque \u00e9l\u00e9ment form", 

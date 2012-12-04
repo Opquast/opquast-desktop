@@ -3,7 +3,7 @@
         "goal": "", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "If an img element is a child of an a element with text, do not use the same text for its alt attribute as the text inside the a element", 
@@ -15,7 +15,7 @@
         "goal": "", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "When you provide an alt attribute for an area element, do not leave it empty", 
@@ -27,7 +27,7 @@
         "goal": "", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Don't use a fieldset element without a form element", 
@@ -39,7 +39,7 @@
         "goal": "\u00c9viter \u00e0 l'utilisateur d'avoir des \u00e9l\u00e9ments interactifs dont il ne peut connaitre la destination ou l'action", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "When you provide an a element, do not leave it empty except if it is used as an anchor", 
@@ -51,7 +51,7 @@
         "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Don't use the align attribute", 
@@ -63,7 +63,7 @@
         "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Don't use an alink attribute", 
@@ -75,7 +75,7 @@
         "goal": "Permettre la restitution d'un contenu alternatif aux utilisateurs qui ne peuvent pas percevoir le contenu de l'\u00e9l\u00e9ment.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Use the alt attribute for every applet element", 
@@ -87,7 +87,7 @@
         "goal": "Permettre aux utilisateurs de distinguer les liens qui m\u00e8nent \u00e0 des adresses diff\u00e9rentes.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Use the alt attribute for every area element", 
@@ -99,7 +99,7 @@
         "goal": "Permettre aux utilisateurs de distinguer les liens qui m\u00e8nent \u00e0 des adresses diff\u00e9rentes.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Don't use the same value for alt attributes for multiple area elements with different href values", 
@@ -111,7 +111,7 @@
         "goal": "", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Don't use a value other than ltr, rtl or empty for the dir attribute", 
@@ -123,7 +123,7 @@
         "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Don't use the background attribute", 
@@ -135,7 +135,7 @@
         "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Don't use the basefont element", 
@@ -147,7 +147,7 @@
         "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Don't use the bgcolor attribute", 
@@ -159,7 +159,7 @@
         "goal": "Permettre d'\u00e9viter la lecture automatique de son qu'il n'est pas possible d'arr\u00eater.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Don't use the bgsound element", 
@@ -171,7 +171,7 @@
         "goal": "Permettre d'\u00e9viter la pr\u00e9sence de clignotement qu'il n'est pas possible d'arr\u00eater.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Don't use the blink element", 
@@ -183,7 +183,7 @@
         "goal": "Permettre l'identification et la restitution du titre principal de la page.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "When you provide a h1 element, do not leave it empty", 
@@ -195,7 +195,7 @@
         "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Don't use the border attribute", 
@@ -207,7 +207,7 @@
         "goal": "Eviter \u00e0 l'utilisateur d'avoir des \u00e9l\u00e9ments interactifs dont il ne peut connaitre la destination ou l'action", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "When you provide a button element, do not leave it empty", 
@@ -219,7 +219,7 @@
         "goal": "Permettre aux utilisateurs de distinguer le sujet d'un tableau de donn\u00e9es de la mani\u00e8re dont il est construit.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Don't use the same content for a caption element and a summary attribute", 
@@ -231,7 +231,7 @@
         "goal": "Permettre la restitution du sujet du tableau de donn\u00e9es.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "When you provide a caption element, do not leave it empty", 
@@ -243,7 +243,7 @@
         "goal": "Permettre la distinction entre les tableaux de donn\u00e9es et les tableaux de mise en page.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Don't use a caption element in a table element containing only td elements", 
@@ -255,7 +255,7 @@
         "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Don't use the center element", 
@@ -267,7 +267,7 @@
         "goal": "Permettre la restitution de la nature des contenus (ici une liste de d\u00e9finition) aux  utilisateurs qui ne per\u00e7oivent pas la mise en page originale.\r\nEviter l'utilisation d'\u00e9l\u00e9ment en fonction de la mani\u00e8re dont ils sont restitu\u00e9s visuellement.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Use a dt element as the first child of a dl element<br>", 
@@ -279,7 +279,7 @@
         "goal": "Permettre la restitution d'un titre au groupe form\u00e9 par fieldset.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Use a legend element as a child of every fieldset element", 
@@ -291,7 +291,7 @@
         "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Don't use the font element", 
@@ -303,7 +303,7 @@
         "goal": "Permettre la restitution d'un contenu d\u00e9crivant la fonction et/ou le contenu de l'\u00e9l\u00e9ment.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Use the title attribute for every frame element", 
@@ -315,7 +315,7 @@
         "goal": "Permettre la restitution d'un contenu d\u00e9crivant la fonction et/ou le contenu de l'\u00e9l\u00e9ment.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "When you provide a title attribute for a frame element, do not leave it empty", 
@@ -327,7 +327,7 @@
         "goal": "Eviter \u00e0 l'utilisateur d'avoir une hi\u00e9rarchie de titre incompl\u00e8te ou incoh\u00e9rente", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "When you provide a h1 element, do not leave it empty", 
@@ -339,7 +339,7 @@
         "goal": "Eviter \u00e0 l'utilisateur d'avoir une hi\u00e9rarchie de titre incompl\u00e8te ou incoh\u00e9rente", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "When you provide a h2 element, do not leave it empty", 
@@ -351,7 +351,7 @@
         "goal": "Eviter les trous dans la hi\u00e9rarchie des titres.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Use&nbsp; a h1, h2, h3, h4, h5 or h6 element as a first heading before a h2 element in the source order", 
@@ -363,7 +363,7 @@
         "goal": "Eviter \u00e0 l'utilisateur d'avoir une hi\u00e9rarchie de titre incompl\u00e8te ou incoh\u00e9rente", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "When you provide a h3 element, do not leave it empty", 
@@ -375,7 +375,7 @@
         "goal": "Eviter les trous dans la hi\u00e9rarchie des titres.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Use a h2, h3, h4, h5 or h6 element as a first heading before a h3 element in the source order", 
@@ -387,7 +387,7 @@
         "goal": "Eviter \u00e0 l'utilisateur d'avoir une hi\u00e9rarchie de titre incompl\u00e8te ou incoh\u00e9rente", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "When you provide a h4 element, do not leave it empty", 
@@ -399,7 +399,7 @@
         "goal": "Eviter les trous dans la hi\u00e9rarchie des titres.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Use a h3, h4, h5 or h6 element as a first heading before a h4 element in the source order", 
@@ -411,7 +411,7 @@
         "goal": "Eviter \u00e0 l'utilisateur d'avoir une hi\u00e9rarchie de titre incompl\u00e8te ou incoh\u00e9rente", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "When you provide a h5 element, do not leave it empty", 
@@ -423,7 +423,7 @@
         "goal": "Eviter les trous dans la hi\u00e9rarchie des titres.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Use a h4, h5 or h6 element as a first heading before a h5 element in the source order", 
@@ -435,7 +435,7 @@
         "goal": "Eviter \u00e0 l'utilisateur d'avoir une hi\u00e9rarchie de titre incompl\u00e8te ou incoh\u00e9rente", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "When you provide a h6 element, do not leave it empty", 
@@ -447,7 +447,7 @@
         "goal": "Eviter les trous dans la hi\u00e9rarchie des titres.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Use a h5 or h6 element as a first heading before a h6 element in the source order", 
@@ -459,7 +459,7 @@
         "goal": "Permettre la restitution d'un titre de page destin\u00e9 \u00e0 identifier le contenu du document.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Use a title element as a child of the head element", 
@@ -471,7 +471,7 @@
         "goal": "Permettre la d\u00e9claration de la langue du document et l'adaptation des aides techniques \u00e0 celle-ci.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Use the lang attribute for the html element", 
@@ -483,7 +483,7 @@
         "goal": "Permettre aux agents utilisateurs d'interpr\u00e9ter correctement le document.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Use a W3C-conforming DTD syntax before the html element", 
@@ -495,7 +495,7 @@
         "goal": "Eviter les erreurs d'interpr\u00e9tation et de restitution par les agents utilisateurs et les aides techniques", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Don't use wrong attribute syntax or non-conforming element hierarchy inside the html element", 
@@ -507,7 +507,7 @@
         "goal": "Permettre la restitution d'un contenu d\u00e9crivant la fonction et/ou le contenu de l'\u00e9l\u00e9ment.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Use the title attribute for every iframe element", 
@@ -519,7 +519,7 @@
         "goal": "Permettre la restitution d'un contenu d\u00e9crivant la fonction et/ou le contenu de l'\u00e9l\u00e9ment.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "When you provide a title attribute for an iframe element, do not leave it empty", 
@@ -531,7 +531,7 @@
         "goal": "Permettre la restitution d'un contenu alternatif aux utilisateurs qui ne peuvent pas percevoir le contenu de l'\u00e9l\u00e9ment.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Use the alt attribute for every img element", 
@@ -543,7 +543,7 @@
         "goal": "Eviter \u00e0 l'utilisateur d'avoir des \u00e9l\u00e9ments interactifs dont il ne peut connaitre la destination ou l'action", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "If the img element is the only child of a button or an a element, do not leave its alt attribute empty", 
@@ -555,7 +555,7 @@
         "goal": "Permettre d'associer le contenu d'une description longue \u00e0 l'image \u00e0 laquelle il se rapporte.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Use a URI as the value for a longdesc attribute", 
@@ -567,7 +567,7 @@
         "goal": "Permettre la restitution d'un contenu alternatif aux utilisateurs qui ne peuvent pas percevoir le contenu de l'\u00e9l\u00e9ment.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Use the alt attribute for every input type=image element", 
@@ -579,7 +579,7 @@
         "goal": "Eviter \u00e0 l'utilisateur d'avoir des \u00e9l\u00e9ments interactifs dont il ne peut connaitre la destination ou l'action", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "When you provide an alt attribute for an input type=image element, do not leave it empty", 
@@ -591,7 +591,7 @@
         "goal": "Eviter \u00e0 l'utilisateur d'avoir des \u00e9l\u00e9ments interactifs dont il ne peut connaitre la destination ou l'action", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "When you provide an input type=submit, do not leave its value attribute empty", 
@@ -603,7 +603,7 @@
         "goal": "Permettre l'association des \u00e9tiquettes avec les champs auxquelles elles se rapportent.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Use the for attribute for every label element", 
@@ -615,7 +615,7 @@
         "goal": "Eviter \u00e0 l'utilisateur la restitution d'\u00e9tiquette associ\u00e9e \u00e0 aucun champ de formulaire.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "When you provide a for attribute for a label element, do not leave it empty", 
@@ -627,7 +627,7 @@
         "goal": "Eviter \u00e0 l'utilisateur la restitution d'\u00e9tiquette associ\u00e9e \u00e0 aucun champ de formulaire.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "A for attribute must have a value that matches an id attribute inside the form element", 
@@ -639,7 +639,7 @@
         "goal": "Permettre la d\u00e9claration de la langue du document et l'adaptation des aides techniques \u00e0 celle-ci.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Use a valid language code for the lang attribute", 
@@ -651,7 +651,7 @@
         "goal": "Eviter \u00e0 l'utilisateur la pr\u00e9sence de groupement d'\u00e9l\u00e9ments de formulaire qu'il ne pourra pas identifier.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "When you provide a legend element, do not leave it empty", 
@@ -663,7 +663,7 @@
         "goal": "Permettre la restitution sans erreur du nombre d'\u00e9l\u00e9ments composant une liste.\r\nEviter l'utilisation d'\u00e9l\u00e9ments \u00e0 des fins de pr\u00e9sentation.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "When you provide a li element, do not leave it empty", 
@@ -675,7 +675,7 @@
         "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Don't use the link attribute", 
@@ -687,7 +687,7 @@
         "goal": "Eviter l'utilisation d'\u00e9l\u00e9ments obsol\u00e8tes que les agents utilisateurs de sauraient pas interpr\u00e9ter.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Don't use the listing element", 
@@ -699,7 +699,7 @@
         "goal": "Permettre d'\u00e9viter la pr\u00e9sence de contenu d\u00e9filant qu'il n'est pas possible d'arr\u00eater.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Don't use the marquee element", 
@@ -711,7 +711,7 @@
         "goal": "Eviter aux utilisateurs un rechargement de la page qu'il ne pourrait pas ma\u00eetriser.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Don't use a meta element with an http-equiv attribute and a value equal to refresh", 
@@ -723,7 +723,7 @@
         "goal": "Permettre la restitution d'un titre au groupe form\u00e9 par optgroup.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Use the label attribute for every optgroup element", 
@@ -735,7 +735,7 @@
         "goal": "Permettre la distinction des diff\u00e9rents groupes form\u00e9s.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Don't use the same label attribute for different optgroup elements of the same select element", 
@@ -747,7 +747,7 @@
         "goal": "Permettre la distinction des diff\u00e9rents groupes form\u00e9s.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "When you provide a label attribute for an optgroup element, do not leave it empty", 
@@ -759,7 +759,7 @@
         "goal": "Eviter l'utilisation d'\u00e9l\u00e9ments \u00e0 des fins de pr\u00e9sentation.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "When you provide a p element, do not leave it empty", 
@@ -771,7 +771,7 @@
         "goal": "Eviter l'utilisation d'\u00e9l\u00e9ments obsol\u00e8tes que les agents utilisateurs de sauraient pas interpr\u00e9ter.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Don't use the plaintext element", 
@@ -783,7 +783,7 @@
         "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Don't use the strike element", 
@@ -795,7 +795,7 @@
         "goal": "Permettre l'identification des tableaux de donn\u00e9es et la restitution des contenus permettant de les caract\u00e9riser.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Use a caption element as the first child of a table element containing at least one th element", 
@@ -807,7 +807,7 @@
         "goal": "Permettre l'identification des tableaux de donn\u00e9es et la restitution des contenus permettant de les caract\u00e9riser.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Use at least one th element inside a table element with a caption element or a non-empty summary attribute", 
@@ -819,7 +819,7 @@
         "goal": "Permettre aux utilisateurs de distinguer le sujet d'un tableau de donn\u00e9es de la mani\u00e8re dont il est construit.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Don't use the same content for a summary attribute and a caption element", 
@@ -831,7 +831,7 @@
         "goal": "Permettre l'identification des tableaux de donn\u00e9es et la restitution des contenus permettant de les caract\u00e9riser.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "When you provide a summary attribute for a table element containing a th or a caption element, do not leave it empty", 
@@ -843,7 +843,7 @@
         "goal": "Permettre aux utilisateurs de diff\u00e9rencier les tableaux de donn\u00e9es des tableaux de mise en page en n'utilisant pas les caract\u00e9ristiques sp\u00e9cifiques aux premiers dans les seconds.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Don't use a summary attribute on a table element containg only td elements", 
@@ -855,7 +855,7 @@
         "goal": "Permettre l'association des cellules avec leurs ent\u00eates dans les tableaux de donn\u00e9es.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Use a headers attribute on every td element if the corresponding th element has an id attribute", 
@@ -867,7 +867,7 @@
         "goal": "Permettre l'association des cellules avec leurs ent\u00eates dans les tableaux de donn\u00e9es.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Don't use for a headers attribute a value which matches an id attribute used for a td of the table element", 
@@ -879,7 +879,7 @@
         "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Don't use the text attribute", 
@@ -891,7 +891,7 @@
         "goal": "Permettre l'association des cellules avec leurs ent\u00eates dans les tableaux de donn\u00e9es.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Use a scope or id attribute for every non-empty th element", 
@@ -903,7 +903,7 @@
         "goal": "Permettre l'association des cellules avec leurs ent\u00eates dans les tableaux de donn\u00e9es.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Don't use a value other than row or col for the scope attribute", 
@@ -915,7 +915,7 @@
         "goal": "Permettre la restitution du titre de la page.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "When you provide a title element, do not leave it empty", 
@@ -927,7 +927,7 @@
         "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Don't use the tt element", 
@@ -939,7 +939,7 @@
         "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Don't use the vlink attribute", 
@@ -951,7 +951,7 @@
         "goal": "Eviter l'utilisation d'\u00e9l\u00e9ments obsol\u00e8tes que les agents utilisateurs de sauraient pas interpr\u00e9ter.", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Don't use the xmp element", 
@@ -963,7 +963,7 @@
         "goal": "", 
         "checklist": {
             "id": 568, 
-            "name": "First step V1"
+            "name": "First step to WCAG 2.0: errors"
         }, 
         "explanation": "", 
         "description": "Use a button, or an input of type submit, image or button inside a form element", 
