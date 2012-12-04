@@ -787,18 +787,6 @@
             }
         }
     },
-    "10092": {
-        "DOCTYPE_HTML_VALID": {
-            "onfalse": {
-                "comment": "le code est conforme au DOCTYPE",
-                "result": "nc"
-            },
-            "ontrue": {
-                "comment": "le code n'est pas conforme au DOCTYPE",
-                "result": "c"
-            }
-        }
-    },
     "10093": {
         "ALIGN_ATTR": {
             "onfalse": {
@@ -5091,18 +5079,6 @@
             }
         }
     },
-    "19058": {
-        "DOCTYPE_TAGS_CLOSED": {
-            "onfalse": {
-                "comment": "Les balises HTML sont bien ferm\u00e9es",
-                "result": "nc"
-            },
-            "ontrue": {
-                "comment": "Les balises HTML sont mal ferm\u00e9es",
-                "result": "c"
-            }
-        }
-    },
     "19059": {
         "RESOURCE_404": {
             "onfalse": {
@@ -6659,18 +6635,6 @@
             },
             "ontrue": {
                 "comment": "une DTD plac\u00e9e avant l'\u00e9l\u00e9ment HTML et conforme aux recommandations du W3C a \u00e9t\u00e9 d\u00e9tect\u00e9e",
-                "result": "c"
-            }
-        }
-    },
-    "19260": {
-        "DOCTYPE_DOM_VALID": {
-            "onfalse": {
-                "comment": "au moins une syntaxe d'attribut erron\u00e9e ou une imbrication d'\u00e9l\u00e9ments non conforme a \u00e9t\u00e9 d\u00e9tect\u00e9e",
-                "result": "nc"
-            },
-            "ontrue": {
-                "comment": "aucune syntaxe d'attribut erron\u00e9e ni imbrication d'\u00e9l\u00e9ments non conforme n'a \u00e9t\u00e9 d\u00e9tect\u00e9e",
                 "result": "c"
             }
         }
@@ -13005,18 +12969,6 @@
             }
         }
     },
-    "21615": {
-        "DOCTYPE_HTML_VALID": {
-            "onfalse": {
-                "comment": "le code est conforme au DOCTYPE",
-                "result": "nc"
-            },
-            "ontrue": {
-                "comment": "le code n'est pas conforme au DOCTYPE",
-                "result": "c"
-            }
-        }
-    },
     "21616": {
         "HTML_W_LANG_ATTR": {
             "onfalse": {
@@ -13788,30 +13740,6 @@
             "ontrue": {
                 "comment": "au moins un \u00e9l\u00e9ment SCRIPT a \u00e9t\u00e9 d\u00e9tect\u00e9",
                 "result": "i"
-            }
-        }
-    },
-    "21701": {
-        "DOCTYPE_DOM_VALID": {
-            "onfalse": {
-                "comment": "au moins une syntaxe d'attribut erron\u00e9e ou une imbrication d'\u00e9l\u00e9ments non conforme a \u00e9t\u00e9 d\u00e9tect\u00e9e",
-                "result": "nc"
-            },
-            "ontrue": {
-                "comment": "aucune syntaxe d'attribut erron\u00e9e ni imbrication d'\u00e9l\u00e9ments non conforme n'a \u00e9t\u00e9 d\u00e9tect\u00e9e",
-                "result": "c"
-            }
-        }
-    },
-    "21702": {
-        "DOCTYPE_TAGS_CLOSED": {
-            "onfalse": {
-                "comment": "Les balises HTML sont bien ferm\u00e9es",
-                "result": "nc"
-            },
-            "ontrue": {
-                "comment": "Les balises HTML sont mal ferm\u00e9es",
-                "result": "c"
             }
         }
     },
@@ -17073,18 +17001,6 @@
             }
         }
     },
-    "656": {
-        "DOCTYPE_DOM_VALID": {
-            "onfalse": {
-                "comment": "au moins une syntaxe d'attribut erron\u00e9e ou une imbrication d'\u00e9l\u00e9ments non conforme a \u00e9t\u00e9 d\u00e9tect\u00e9e",
-                "result": "nc"
-            },
-            "ontrue": {
-                "comment": "aucune syntaxe d'attribut erron\u00e9e ni imbrication d'\u00e9l\u00e9ments non conforme n'a \u00e9t\u00e9 d\u00e9tect\u00e9e",
-                "result": "c"
-            }
-        }
-    },
     "657": {
         "ALIGN_ATTR": {
             "onfalse": {
@@ -17300,18 +17216,6 @@
             "ontrue": {
                 "comment": "au moins un \u00e9l\u00e9ment SCRIPT a \u00e9t\u00e9 d\u00e9tect\u00e9",
                 "result": "i"
-            }
-        }
-    },
-    "661": {
-        "DOCTYPE_HTML_VALID": {
-            "onfalse": {
-                "comment": "le code est conforme au DOCTYPE",
-                "result": "nc"
-            },
-            "ontrue": {
-                "comment": "le code n'est pas conforme au DOCTYPE",
-                "result": "c"
             }
         }
     },
