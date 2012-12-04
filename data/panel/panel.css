@@ -39,7 +39,6 @@
 #opquast-desktop-dock {
     border-top: 1px solid hsla(210, 8%, 5%, .65);
     min-height: 120px;
-    height: 300px;
 }
 
 #opquast-desktop-dock[hidden=true] {
@@ -50,7 +49,7 @@
     -moz-appearance: none;
     cursor: n-resize;
     background: none;
-    height: 3px;
+    height: 5px;
 }
 
 .opquast-desktop-dock-toolbar toolbarbutton {
