@@ -4477,18 +4477,6 @@
             }
         }
     },
-    "16258": {
-        "ROBOTS_W_VALID_SITEMAP": {
-            "onfalse": {
-                "comment": "le robots.txt est absent ou n'indique pas de sitemap",
-                "result": "nc"
-            },
-            "ontrue": {
-                "comment": "le robots.txt est pr\u00e9sent et indique un sitemap",
-                "result": "c"
-            }
-        }
-    },
     "16259": {
         "ROBOTS_W_VALID_SITEMAP": {
             "onfalse": {
@@ -4522,68 +4510,6 @@
             "ontrue": {
                 "comment": "le serveur renvoie un ent\u00eate HTTP 404",
                 "result": "c"
-            }
-        }
-    },
-    "16657": {
-        "APPLET": {
-            "onfalse": {
-                "comment": "aucun \u00e9l\u00e9ment APPLET n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "na"
-            },
-            "ontrue": {
-                "comment": "au moins un \u00e9l\u00e9ment APPLET a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "i"
-            }
-        },
-        "AUDIO": {
-            "onfalse": {
-                "comment": "aucun \u00e9l\u00e9ment AUDIO n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "na"
-            },
-            "ontrue": {
-                "comment": "au moins un \u00e9l\u00e9ment AUDIO a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "i"
-            }
-        },
-        "CANVAS": {
-            "onfalse": {
-                "comment": "aucun \u00e9l\u00e9ment CANVAS n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "na"
-            },
-            "ontrue": {
-                "comment": "au moins un \u00e9l\u00e9ment CANVAS a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "i"
-            }
-        },
-        "EMBED": {
-            "onfalse": {
-                "comment": "aucun \u00e9l\u00e9ment EMBED n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "na"
-            },
-            "ontrue": {
-                "comment": "au moins un \u00e9l\u00e9ment EMBED a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "i"
-            }
-        },
-        "OBJECT": {
-            "onfalse": {
-                "comment": "aucun \u00e9l\u00e9ment OBJECT n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "na"
-            },
-            "ontrue": {
-                "comment": "au moins un \u00e9l\u00e9ment OBJECT a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "i"
-            }
-        },
-        "VIDEO": {
-            "onfalse": {
-                "comment": "aucun \u00e9l\u00e9ment VIDEO n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "na"
-            },
-            "ontrue": {
-                "comment": "au moins un \u00e9l\u00e9ment VIDEO a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "i"
             }
         }
     },
