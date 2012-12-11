@@ -41,7 +41,6 @@ var mimeHTML = ["text/html", "application/xhtml+xml"], mimeSyndication = ["appli
 var mimeMultimedia = ["application/x-shockwave-flash", "application/octet-stream", "application/x-silverlight-app", "application/xaml+xml", "application/x-ms-xbap", "application/vnd.rn-realmedia", "application/ogg", "image/svg+xml"];
 var genericFontStyle = ["serif", "sans-serif", "cursive", "fantasy", "monospace", "inherit"];
 
-var regUnicode = new RegExp().compile("[\xC2-\xDF][\x80-\xBF]|\xE0[\xA0-\xBF][\x80-\xBF]|[\xE1-\xEC\xEE\xEF][\x80-\xBF]{2}|\xED[\x80-\x9F][\x80-\xBF]|\xF0[\x90-\xBF][\x80-\xBF]{2}|[\xF1-\xF3][\x80-\xBF]{3}|\xF4[\x80-\x8F][\x80-\xBF]{2}", "m");
 var regFunction = new RegExp().compile("([^\\s:{}&|]*)\\(", "i"), badLinks = ['cliquez ici', 'lire la suite', 'en savoir plus', "plus d'infos"];
 var cdns = new RegExp().compile("^https?://[^/]+\\.(googleapis|aspnetcdn|yahooapis|amazonaws)\\.com/", "i");
 var analytics = new RegExp().compile("^https?://[^/]+\\.(google-analytics|xiti|cybermonitor|estat)\\.com/", "i");
@@ -203,24 +202,24 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         try {
             //
+            var keywords = [];
+            try {
+                keywords = $("meta[name='keywords']").attr("content").trim().toLowerCase().split(" ");
+            } catch (e) {}
+
+            //
+            if (keywords.length == 0) {
+                return result;
+            }
+
+            //
             $("h" + level).each(function() {
                 //
-                var keywords = [];
-                try {
-                    keywords = $("meta[name='keywords']").attr("content").trim().toLowerCase().split(" ");
-                } catch (e) {
-                }
+                var found = false;
                 var terms = $(this).text().trim().split(" ");
                 try {
                     terms = $.merge(terms, $.trim($("img", this).attr("alt")).toLowerCase().split(" "));
-                } catch(e) {
-                }
-                var found = false;
-
-                //
-                if (keywords.length == 0) {
-                    return result;
-                }
+                } catch(e) {}
 
                 //
                 terms.some(function(value) {
@@ -262,15 +261,16 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         try {
             //
+            var content = $("body :not(h1, h2, h3, h4, h5, h6)").text().trim().toLowerCase().split(" ");
+
+            //
             $("h" + level).each(function() {
                 //
-                var content = $("body :not(h1, h2, h3, h4, h5, h6)").text().trim().toLowerCase().split(" ");
+                var found = false;
                 var terms = $(this).text().trim().split(" ");
                 try {
                     terms = $.merge(terms, $.trim($("img", this).attr("alt")).toLowerCase().split(" "));
-                } catch(e) {
-                }
-                var found = false;
+                } catch(e) {}
 
                 //
                 terms.some(function(value) {
@@ -581,9 +581,12 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
                     var item = result[i];
                     if (element.line == item.line && element.href == item.href && element.rule == item.rule && element.selector == item.selector) {
                         occurences++;
+                        if (occurrences >= 2) {
+                            return false;
+                        }
                     }
                 }
-                return occurences < 2;
+                return true;
             });
 
             // inline style walk
@@ -668,9 +671,12 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
                     var item = result[i];
                     if (element.line == item.line && element.href == item.href && element.rule == item.rule && element.selector == item.selector) {
                         occurences++;
+                        if (occurrences >= 2) {
+                            return false;
+                        }
                     }
                 }
-                return occurences < 2;
+                return true;
             });
 
             // inline style walk
@@ -867,7 +873,9 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
                         //
                         if(reg.test(node.css("background-image")) && node.css("background-repeat") == "no-repeat") {
                             result.push(_getCssDetails(rule, i));
+
                         }
+
                     }
                 }
             }
@@ -910,7 +918,9 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
                                 if(reg.test(node.css("background-image")) && node.css("background-repeat") == "no-repeat") {
                                     //
                                     result.push(_getCssDetails(rule, i));
+
                                 }
+
                             }
                         }
                     }
@@ -2252,9 +2262,11 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         try {
             //
+            var content = $("body").text().trim().toLowerCase().split(" ");
+
+            //
             $("applet[alt!='']").each(function() {
                 //
-                var content = $("body").text().trim().toLowerCase().split(" ");
                 var terms = $.trim($(this).attr("alt")).toLowerCase().split(" ");
                 var found = false;
 
@@ -2342,9 +2354,11 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         try {
             //
+            var content = $("body").text().trim().toLowerCase().split(" ");
+
+            //
             $("area[alt!='']").each(function() {
                 //
-                var content = $("body").text().trim().toLowerCase().split(" ");
                 var terms = $.trim($(this).attr("alt")).toLowerCase().split(" ");
                 var found = false;
 
@@ -2466,6 +2480,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
                 $("img[alt]", this).each(function() {
                     _text += " " + $.trim($(this).attr("alt"));
                 });
+
                 //
                 if ($.trim($(this).attr("title")).length < $.trim(_text).length) {
                     //
@@ -3150,9 +3165,12 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
                     }
                 }
             });
+
             //
             $("img").each(function() {
+                //
                 if ($.inArray(this.src, animated) != -1) {
+                    //
                     if ($(this).parents("a:not([href^='#'])").size() == 0 && $(this).parents("button:not([href^='#'])").size() == 0) {
                         //
                         result.push(_getDetails(this));
@@ -3228,7 +3246,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
      */
     window.htmlImageSize = function htmlImageSize(doc) {
         //
-        var result = [], images = {};
+        var result = [], images = {}, keys;
 
         //
         try {
@@ -3243,10 +3261,14 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
                     };
                 }
             });
+
+            //
+            keys = Object.keys(images);
+
             //
             $("img[width][height]").each(function() {
                 //
-                var src = this.src, keys = Object.keys(images);
+                var src = this.src;
 
                 //
                 if ($.inArray(src, keys) != -1 && (images[src]["width"] != $.trim($(this).attr("width")) || images[src]["height"] != $.trim($(this).attr("height")))) {
@@ -3279,9 +3301,11 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         try {
             //
+            var content = _getAllTextWoAlt(doc.body).split(" ");
+
+            //
             $("img[alt!='']").each(function() {
                 //
-                var content = _getAllTextWoAlt(doc.body).split(" ");
                 var terms = $.trim($(this).attr("alt")).toLowerCase().split(" ");
                 var found = false;
 
@@ -3588,7 +3612,10 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
             $("a[title]").has("img").filter(function() {
                 return $.trim($(this).text()) == "";
             }).each(function() {
+                //
                 var title = $.trim($(this).attr("title")).toLowerCase();
+
+                //
                 if (title == '' || $.inArray(title, badLinks) != -1) {
                     //
                     result.push(_getDetails(this));
@@ -4497,15 +4524,12 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
             });
 
             //
-            var charset = resources[0]["charset"] == undefined && "undefined" || resources[0]["charset"];
+            var charset = resources[0]["charset"] == undefined && "undefined" || resources[0]["charset"].toLowerCase();
 
             //
-            if (charset.toLowerCase() == doc.characterSet.toLowerCase()) {
+            if (charset == doc.characterSet.toLowerCase()) {
                 //
-                if (!regUnicode.test($("body").text()) && RegExp.$1 != '') {
-                    //
-                    result.push(charset);
-                }
+                result.push(charset);
             }
         }
 
@@ -5331,12 +5355,16 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
      */
     window.rightCharset = function httpRightCharset(doc) {
         //
+        var regUnicode = new RegExp().compile("[\xC2-\xDF][\x80-\xBF]|\xE0[\xA0-\xBF][\x80-\xBF]|[\xE1-\xEC\xEE\xEF][\x80-\xBF]{2}|\xED[\x80-\x9F][\x80-\xBF]|\xF0[\x90-\xBF][\x80-\xBF]{2}|[\xF1-\xF3][\x80-\xBF]{3}|\xF4[\x80-\x8F][\x80-\xBF]{2}", "m");
         var result = [];
 
         //
         try {
             //
-            if (!(regUnicode.test($("body").text()))) {
+            var encoding = regUnicode.test($("body").text());
+            
+            //
+            if (!encoding || (encoding && RegExp.$1 != '')) {
                 //
                 result.push(doc.characterSet);
             }
@@ -6002,6 +6030,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
             for (var idx in sidecar.events) {
                 //
                 sidecar.events[idx].events.forEach(function(element, index, array) {
+                    //
                     if (element.type == "focus") {
                         //
                         result.push(_getDetails(sidecar.events[idx].node));
@@ -6176,6 +6205,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
             for (var idx in sidecar.events) {
                 //
                 sidecar.events[idx].events.forEach(function(element, index, array) {
+                    //
                     if ($.inArray(element.type, ["mousedown", "mouseup", "mouseover", "mouseout", "focus", "blur", "keyup", "keydown"]) != -1) {
                         //
                         result.push(_getDetails(sidecar.events[idx].node));
@@ -6211,6 +6241,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
             for (var idx in sidecar.events) {
                 //
                 sidecar.events[idx].events.forEach(function(element, index, array) {
+                    //
                     if ($.inArray(element.type, ["click", "mouseover", "mouseout", "focus", "blur"]) != -1) {
                         //
                         result.push(_getDetails(sidecar.events[idx].node));
@@ -6314,7 +6345,9 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
 
                 //
                 sidecar.events[idx].events.forEach(function(element, index, array) {
+                    //
                     if ($.inArray(element.type, ["blur", "mouseout"]) != -1) {
+                        //
                         events.push(element.type);
                     }
                 });
@@ -6705,6 +6738,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
 
                 //
                 sidecar.events[idx].events.forEach(function(element, index, array) {
+                    //
                     if ($.inArray(element.type, ["focus", "mouseover"]) != -1) {
                         //
                         events.push(element.type);
@@ -6813,11 +6847,14 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
 
                 //
                 sidecar.events[idx].events.forEach(function(element, index, array) {
+                    //
                     if ($.inArray(element.type, ["blur", "mouseout"]) != -1) {
                         //
                         events.push(element.type);
                     }
                 });
+
+                //
                 if ($.inArray("mouseout", events) != -1 && events.length == 1) {
                     //
                     result.push(_getDetails(sidecar.events[idx].node));
@@ -6921,11 +6958,14 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
 
                 //
                 sidecar.events[idx].events.forEach(function(element, index, array) {
+                    //
                     if ($.inArray(element.type, ["focus", "mouseover"]) != -1) {
                         //
                         events.push(element.type);
                     }
                 });
+
+                //
                 if ($.inArray("mouseover", events) != -1 && events.length == 1) {
                     //
                     result.push(_getDetails(sidecar.events[idx].node));
@@ -6959,6 +6999,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
             for (var idx in sidecar.events) {
                 //
                 sidecar.events[idx].events.forEach(function(element, index, array) {
+                    //
                     if (element.type == "scroll") {
                         //
                         result.push(_getDetails(sidecar.events[idx].node));
@@ -7247,6 +7288,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
             $("script:not([src])").each(function() {
                 //
                 if (reg.test($(this).text())) {
+                    //
                     result.push(_getDetails(this));
                 }
             });
@@ -7306,6 +7348,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
             for (var idx in sidecar.events) {
                 //
                 sidecar.events[idx].events.forEach(function(element, index, array) {
+                    //
                     if ($.inArray(element.type, ["dblclick", "change", "scroll"]) != -1) {
                         //
                         result.push(_getDetails(sidecar.events[idx].node));
