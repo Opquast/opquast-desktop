@@ -37,10 +37,13 @@
  * ***** END LICENSE BLOCK ***** */
 /*jshint globalstrict:true, jquery:true */
 /*global doT, self */
+"use strict";
 
 (function($) {
-    $('body').html(doT.compile(self.options.template)({
-        "version": self.options.version,
-        "platform": self.options.platform
-    }));
+    self.port.on("attached", function(template) {
+        $('body').html(doT.compile(template)({
+            "version": self.options.version,
+            "platform": self.options.platform
+        }));
+    });
 })(jQuery);
