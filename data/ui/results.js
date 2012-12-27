@@ -179,10 +179,6 @@ self.port.on("showResults", function(tests, tableOptions) {
     $('body').doT('tplResults', {
         'tests': tests
     });
-    
-    //
-    $('#test_result').css("width", parseInt($('#test_result').css("width"), 10) - 15 + "px");
-    $('#test_result').tableScroll({height: window.innerHeight - 50});
 
     // Prepare modalizer
     $('#resultDetails').detailsViewer({
