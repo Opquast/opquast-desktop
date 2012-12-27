@@ -25,36 +25,18 @@
     <p>Opquast Desktop est une application qui vous permet d'analyser votre site au regard de
     différentes check-lists qualité ou accessibilité.</p>
 
-    <h2>Démarrage</h2>
-
-    <h3>Installation du bouton</h3>
-
-    <ol>
-      <li>Ouvrir la barre personnaliser (Affichage &gt; Barre d'outils &gt; Personnaliser)
-
-        <p><img src="img/{{? it.platform == "darwin" }}cap1-darwin.png{{??}}cap1.png{{?}}"
-          alt="Capture du menu personnaliser" /></p>
-      </li>
-
-      <li>Prendre le bouton opquast et le placer où vous le souhaitez dans l'interface
-
-        <p><img src="img/{{? it.platform == "darwin" }}cap2-darwin.png{{??}}cap2.png{{?}}"
-          alt="Capture de la fenêtre de personnalisation" /></p>
-      </li>
-    </ol>
-
     <h2>Analyser une page</h2>
 
     <h3>Analyse rapide</h3>
 
     <ul>
-      <li>Appuyer sur le bouton <img src="img/button.png" alt="Capture du menu personnaliser" /> pour
+      <li>Appuyer sur le bouton <img src="img/button.png" alt="Capture du button" /> pour
       ouvrir le panneau Opquast Desktop. Ce bouton sert également à refermer le panneau ;</li>
 
       <li>Si l'URl courante a déjà été analysée, l'application affichera directement les résultats de
       la dernière analyse ;</li>
 
-      <li>Dans le cas contraire, l'outil vous proposera de lancer l'analyser ;</li>
+      <li>Dans le cas contraire, l'outil vous proposera de lancer l'analyse ;</li>
 
       <li>Pour lancer ou relancer, cliquer sur le bouton correspondant ;</li>
 
@@ -66,19 +48,22 @@
     <h3>Manipulation des résultats</h3>
 
     <ul>
-      <li>Recherche : tapez une chaîne de caractères que vous recherchez dans les critères et la
+      <li>Recherche : tapez une chaîne de caractères que vous recherchez dans les critères et la
       liste de critères et de résultats sera automatiquement filtrée en fonction de votre
       requête.</li>
 
-      <li>Filtres : vous pouvez demander à afficher uniquement les critères issus d'une check-list ou
+      <li>Filtres : vous pouvez demander à afficher uniquement les critères issus d'une check-list ou
       pour un type de résultats. Pour ceci, utilisez les zones de sélection situées dans les en-tête
       de colonnes.</li>
 
-      <li>Détails : La flêche située en début de ligne vous permet d'accéder aux détails de
-      l'analyse. Pour chaque test, Opquast Desktop vous fournit un commentaire global et lorsque
-      cela est pertinent la liste et un lien vers les nœuds concernés.</li>
+      <li>Détails : Vous pouvez accéder aux détails de l'analyse en cliquant sur chacune
+      des lignes. Pour chaque test, Opquast Desktop vous fournit un commentaire global et lorsque
+      cela est pertinent la liste et un lien vers les nœuds concernés. La fenêtre de détails peut
+      être fermée via le lien correspondant ou avec la touche ESC. Il est possible d'afficher les
+      fenêtres de détails précédentes / suivantes via le lien ou avec les flèches de votre
+      clavier.</li>
 
-      <li>Exporter : le bouton exporter vous permet d'exporter vos résultats au format CSV
+      <li>Exporter : le bouton exporter vous permet d'exporter vos résultats au format CSV
       ou vers Opquast Reporting.</li>
     </ul>
 
@@ -129,18 +114,21 @@
       <tbody>
         <tr>
           <td><a href="http://checklists.opquast.com/fr/opquastv2">Opquast Qualité Web</a></td>
-
           <td>Version 2 (2010)</td>
-
           <td><a href="http://creativecommons.org/licenses/by-sa/2.0/fr/">Creative commons
           BY-SA</a></td>
         </tr>
 
         <tr>
           <td><a href="http://checklists.opquast.com/fr/seo">Opquast SEO</a></td>
-
           <td>Version 1 (2011)</td>
+          <td><a href="http://creativecommons.org/licenses/by-sa/2.0/fr/">Creative commons
+          BY-SA</a></td>
+        </tr>
 
+        <tr>
+          <td><a href="">Opquast Webperf</a></td>
+          <td>Version 1 (2012)</td>
           <td><a href="http://creativecommons.org/licenses/by-sa/2.0/fr/">Creative commons
           BY-SA</a></td>
         </tr>
@@ -148,9 +136,7 @@
         <tr>
           <td><a href="http://checklists.opquast.com/fr/accessibilityfirststep">Opquast Accessibility
           First Step</a></td>
-
           <td>Version 1 (2012)</td>
-
           <td><a href="http://creativecommons.org/licenses/by-sa/2.0/fr/">Creative commons
           BY-SA</a></td>
         </tr>
@@ -158,32 +144,42 @@
         <tr>
           <td><a href="http://checklists.opquast.com/fr/accessibilitysecondstep">Opquast Accessibility
           Second Step</a></td>
-
           <td>Version 1 (2012)</td>
-
           <td><a href="http://creativecommons.org/licenses/by-sa/2.0/fr/">Creative commons
           BY-SA</a></td>
         </tr>
 
         <tr>
+          <td><a href="http://references.modernisation.gouv.fr/rgaa-accessibilite">RGAA (Référentiel
+          Général d'accessibilité pour les administrations)</a></td>
+          <td>Version 2.2.1 (2009)</td>
+          <td><a href="http://references.modernisation.gouv.fr/rgaa-accessibilite">À préciser</a></td>
+        </tr>
+
+        <tr>
           <td><a href=
           "http://www.accessiweb.org/index.php/accessiweb_2.1_liste_deployee.html">Accessiweb
-          Déployé</a></td>
-
+          Liste déployée</a></td>
           <td>Version 2.1 (2009)</td>
-
           <td><a href=
           "http://www.accessiweb.org/fr/Label_Accessibilite/criteres_accessiweb/#conditions">Copyright
           © 2010 Association BrailleNet. Tous droits Réservés.</a></td>
         </tr>
 
         <tr>
-          <td><a href="http://references.modernisation.gouv.fr/rgaa-accessibilite">RGAA (Référentiel
-          Général d'accessibilité pour les administrations)</a></td>
+          <td><a href=
+          "http://www.accessiweb.org/index.php/accessiweb_2.1_liste_generale.html">Accessiweb
+          Liste générale</a></td>
+          <td>Version 2.1 (2009)</td>
+          <td><a href=
+          "http://www.accessiweb.org/fr/Label_Accessibilite/criteres_accessiweb/#conditions">Copyright
+          © 2010 Association BrailleNet. Tous droits Réservés.</a></td>
+        </tr>
 
-          <td>Version 2.2.1 (2009)</td>
-
-          <td><a href="http://references.modernisation.gouv.fr/rgaa-accessibilite">À préciser</a></td>
+        <tr>
+          <td><a href="http://www.tresor.gouv.qc.ca/ressources-informationnelles/standards-sur-laccessibilite-du-web/">SGQRI</a></td>
+          <td>Version 1.0 (2012)</td>
+          <td>Voir document</td>
         </tr>
       </tbody>
     </table>
@@ -193,6 +189,7 @@
     <ul>
       <li><a href="http://jquery.com/">jQuery</a></li>
       <li><a href="http://glazman.org/JSCSSP/">JSCSSP</a></li>
+      <li><a href="http://olado.github.com/doT/">doT.js</a></li>
     </ul>
   </div>
 </div>
