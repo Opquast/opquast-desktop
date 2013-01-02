@@ -3,8 +3,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 "use strict";
 
-const { Class } = require("heritage");
-const unloadNS = require("namespace").ns();
+const { Class } = require("sdk/core/heritage");
+const unloadNS = require("sdk/core/namespace").ns();
 
 var Unloader = exports.Unloader = Class({
   initialize: function Unloader() {
