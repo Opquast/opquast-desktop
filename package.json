@@ -7,9 +7,6 @@
     "id": "opquast-desktop@temesis.com",
     "description": "Opquast Reporting and testing in your browser",
     "dependencies": [
-        "addon-kit",
-        "api-utils",
-        "test-harness",
         "toolbarbutton",
         "vold-utils"
     ],
