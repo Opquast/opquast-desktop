@@ -1,29 +1,24 @@
-<!-- contributed by Erik Vold [erikvvold@gmail.com]  -->
-
-
 The `toolbarbutton` API provides a simple way to create
 [toolbar buttons](https://developer.mozilla.org/en/XUL/toolbarbutton), which
 can perform an action when clicked.
 
 ## Example ##
 
-    exports.main = function(options) {
-      // create toolbarbutton
-      var tbb = require("toolbarbutton").ToolbarButton({
-        id: "TBB-TEST",
-        label: "TBB TEST",
-        onCommand: function () {
-          tbb.destroy(); 
-        }
-      });
-    
-      if (options.loadReason == "install") {
-        tbb.moveTo({
-          toolbarID: "nav-bar",
-          forceMove: false // only move from palette
-        });
+    // create toolbarbutton
+    var tbb = require("toolbarbutton").ToolbarButton({
+      id: "TBB-TEST",
+      label: "TBB TEST",
+      onCommand: function () {
+        tbb.destroy(); // kills the toolbar button
       }
-    };
+    });
+
+    if (require('self').loadReason == "install") {
+      tbb.moveTo({
+        toolbarID: "nav-bar",
+        forceMove: false // only move from palette
+      });
+    }
 
 <api name="ToolbarButton">
 @class

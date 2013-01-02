@@ -6,7 +6,7 @@
 var timer = require("timer");
 var {Cc,Ci} = require("chrome");
 const windowUtils = require("window-utils");
-const { Loader } = require('test-harness/loader');
+const { Loader } = require('test/loader');
 
 function makeEmptyWindow() {
   var xulNs = "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
