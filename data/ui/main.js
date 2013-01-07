@@ -79,6 +79,13 @@ self.port.on("showMessage", function(aMessage, aClass, aButton) {
     });
 });
 
+//
+// Open external links in tabs
+//
+$('body').on('click', 'a.external', function(evt) {
+    evt.preventDefault();
+    self.port.emit('openLink', evt.target.href);
+});
 
 //----
 })(jQuery);
