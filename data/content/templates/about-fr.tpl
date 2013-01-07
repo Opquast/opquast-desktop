@@ -85,7 +85,7 @@
     <p>Olivier Meunier, Elie Sloïm, Fabrice Bonny et Aurélien Levy pour <a href=
     "http://www.temesis.com">Temesis SAS</a> - 18, rue Lucien Granet 33150 Cenon - France</p>
 
-    <p>Avec l'assistance du pôle Aquitain en logiciels libre <a
+    <p>Avec l'assistance du pôle Aquitain en logiciels libres <a
     href="http://pole-aquinetic.fr/">Aquinetic</a> et avec le soutien de la
     <a href="http://aquitaine.fr/">Région Aquitaine</a>.</p>
 
@@ -127,7 +127,7 @@
         </tr>
 
         <tr>
-          <td><a href="">Opquast Webperf</a></td>
+          <td><a href="http://checklists.opquast.com/webperf">Opquast Webperf</a></td>
           <td>Version 1 (2012)</td>
           <td><a href="http://creativecommons.org/licenses/by-sa/2.0/fr/">Creative commons
           BY-SA</a></td>
