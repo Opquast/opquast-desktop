@@ -48,6 +48,8 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
 
 (function($) {
     "use strict";
+    
+    var content = $("body").text().trim(), aContent = $.unique(content.toLowerCase().split(" "));
 
     /**
      *
@@ -2262,9 +2264,6 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         try {
             //
-            var content = $("body").text().trim().toLowerCase().split(" ");
-
-            //
             $("applet[alt!='']").each(function() {
                 //
                 var terms = $.trim($(this).attr("alt")).toLowerCase().split(" ");
@@ -2273,7 +2272,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
                 //
                 terms.some(function(value) {
                     //
-                    if ($.inArray(value, content) != -1) {
+                    if ($.inArray(value, aContent) != -1) {
                         found = true;
                         return true;
                     } else {
@@ -2354,9 +2353,6 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         try {
             //
-            var content = $("body").text().trim().toLowerCase().split(" ");
-
-            //
             $("area[alt!='']").each(function() {
                 //
                 var terms = $.trim($(this).attr("alt")).toLowerCase().split(" ");
@@ -2365,7 +2361,7 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
                 //
                 terms.some(function(value) {
                     //
-                    if ($.inArray(value, content) != -1) {
+                    if ($.inArray(value, aContent) != -1) {
                         found = true;
                         return true;
                     } else {
@@ -3301,27 +3297,15 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         try {
             //
-            var content = _getAllTextWoAlt(doc.body).split(" ");
-
-            //
             $("img[alt!='']").each(function() {
                 //
                 var terms = $.trim($(this).attr("alt")).toLowerCase().split(" ");
                 var found = false;
 
                 //
-                var tmp = [];
-                for each(var item in content) {
-                    if($.inArray(item, tmp) == -1) {
-                        tmp.push(item);
-                    }
-                }
-                content = tmp;
-
-                //
                 terms.some(function(value) {
                     //
-                    if ($.inArray(value, content) != -1) {
+                    if ($.inArray(value, aContent) != -1) {
                         found = true;
                         return true;
                     } else {

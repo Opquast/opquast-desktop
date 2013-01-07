@@ -1463,28 +1463,6 @@
             }
         }
     },
-    "10119": {
-        "CSS_BACKGROUND_IMAGE": {
-            "onfalse": {
-                "comment": "aucune image ajout\u00e9e par CSS n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "c"
-            },
-            "ontrue": {
-                "comment": "au moins une image ajout\u00e9e par CSS a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "i"
-            }
-        },
-        "CSS_CONTENT": {
-            "onfalse": {
-                "comment": "aucun contenu textuel ajout\u00e9 par CSS n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "c"
-            },
-            "ontrue": {
-                "comment": "au moins un contenu textuel ajout\u00e9 par CSS a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "i"
-            }
-        }
-    },
     "10124": {
         "APPLET": {
             "onfalse": {
@@ -1887,18 +1865,6 @@
                     }
                 },
                 "comment": "un META avec un attribut HTTP-EQUIV ayant la valeur refresh avec une dur\u00e9e courte est pr\u00e9sent",
-                "result": "i"
-            }
-        }
-    },
-    "10148": {
-        "JS_REFRESH": {
-            "onfalse": {
-                "comment": "la page n'est pas rafra\u00eechie ou redirig\u00e9e automatiquement",
-                "result": "na"
-            },
-            "ontrue": {
-                "comment": "la page est rafra\u00eechie ou redirig\u00e9e automatiquement",
                 "result": "i"
             }
         }
@@ -3487,18 +3453,6 @@
             }
         }
     },
-    "10239": {
-        "CSS_FONT_SIZE_W_ABSOLUTE_VALUE_IN_FORM": {
-            "onfalse": {
-                "comment": "aucune police dont la taille est absolue dans les formulaires",
-                "result": "c"
-            },
-            "ontrue": {
-                "comment": "au moins une police dont la taille est absolue dans les formulaires",
-                "result": "nc"
-            }
-        }
-    },
     "10242": {
         "APPLET": {
             "onfalse": {
@@ -4335,18 +4289,6 @@
             }
         }
     },
-    "16221": {
-        "INLINKS": {
-            "onfalse": {
-                "comment": "moins de 3 liens entrants vers le domaine",
-                "result": "nc"
-            },
-            "ontrue": {
-                "comment": "au moins 3 liens entrants vers le domaine",
-                "result": "c"
-            }
-        }
-    },
     "16229": {
         "RSS_PRESENCE": {
             "onfalse": {
@@ -4391,28 +4333,6 @@
                     }
                 },
                 "comment": "le META CONTENT-TYPE pr\u00e9cisant le CHARSET est pr\u00e9sent",
-                "result": "i"
-            }
-        }
-    },
-    "16240": {
-        "CSS_BACKGROUND_IMAGE": {
-            "onfalse": {
-                "comment": "aucune image ajout\u00e9e par CSS n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "c"
-            },
-            "ontrue": {
-                "comment": "au moins une image ajout\u00e9e par CSS a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "i"
-            }
-        },
-        "CSS_CONTENT": {
-            "onfalse": {
-                "comment": "aucun contenu textuel ajout\u00e9 par CSS n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "c"
-            },
-            "ontrue": {
-                "comment": "au moins un contenu textuel ajout\u00e9 par CSS a \u00e9t\u00e9 d\u00e9tect\u00e9",
                 "result": "i"
             }
         }
@@ -4501,18 +4421,6 @@
             }
         }
     },
-    "16267": {
-        "HTTP_404": {
-            "onfalse": {
-                "comment": "le serveur ne renvoie pas d'ent\u00eate HTTP 404",
-                "result": "nc"
-            },
-            "ontrue": {
-                "comment": "le serveur renvoie un ent\u00eate HTTP 404",
-                "result": "c"
-            }
-        }
-    },
     "19011": {
         "HTTP_CACHE": {
             "onfalse": {
@@ -4546,114 +4454,6 @@
             "ontrue": {
                 "comment": "le serveur recompresse au moins un contenu d\u00e9j\u00e0 compress\u00e9 nativement",
                 "result": "nc"
-            }
-        }
-    },
-    "19014": {
-        "SCRIPT": {
-            "onfalse": {
-                "comment": "aucun \u00e9l\u00e9ment SCRIPT n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "na"
-            },
-            "ontrue": {
-                "chain": {
-                    "JS_W_CR": {
-                        "onfalse": {
-                            "chain": {
-                                "JS_W_REDUDANT_SPACES": {
-                                    "onfalse": {
-                                        "comment": "aucun JS avec des espaces inutiles n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                                        "result": "c"
-                                    },
-                                    "ontrue": {
-                                        "comment": "au moins un JS avec des espaces inutiles a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                                        "result": "nc"
-                                    }
-                                }
-                            },
-                            "comment": "aucun JS avec des retours \u00e0 la ligne inutiles n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                            "result": "c"
-                        },
-                        "ontrue": {
-                            "comment": "au moins un JS avec des retours \u00e0 la ligne inutiles a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                            "result": "nc"
-                        }
-                    }
-                },
-                "comment": "au moins un \u00e9l\u00e9ment SCRIPT a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "i"
-            }
-        }
-    },
-    "19015": {
-        "LINK_STYLESHEET": {
-            "onfalse": {
-                "chain": {
-                    "STYLE": {
-                        "onfalse": {
-                            "comment": "aucun \u00e9l\u00e9ment STYLE n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                            "result": "na"
-                        },
-                        "ontrue": {
-                            "chain": {
-                                "CSS_W_CR": {
-                                    "onfalse": {
-                                        "chain": {
-                                            "CSS_W_REDUDANT_SPACES": {
-                                                "onfalse": {
-                                                    "comment": "aucune CSS avec des espaces inutiles n'a \u00e9t\u00e9 d\u00e9tect\u00e9e",
-                                                    "result": "c"
-                                                },
-                                                "ontrue": {
-                                                    "comment": "au moins une CSS avec des espaces inutiles a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                                                    "result": "nc"
-                                                }
-                                            }
-                                        },
-                                        "comment": "aucune CSS avec des retours \u00e0 la ligne inutiles n'a \u00e9t\u00e9 d\u00e9tect\u00e9e",
-                                        "result": "c"
-                                    },
-                                    "ontrue": {
-                                        "comment": "au moins une CSS avec des retours \u00e0 la ligne inutiles a \u00e9t\u00e9 d\u00e9tect\u00e9e",
-                                        "result": "nc"
-                                    }
-                                }
-                            },
-                            "comment": "au moins un \u00e9l\u00e9ment STYLE a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                            "result": "i"
-                        }
-                    }
-                },
-                "comment": "aucun \u00e9l\u00e9ment LINK avec l'attribut REL ayant la valeur STYLESHEET n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "i"
-            },
-            "ontrue": {
-                "chain": {
-                    "CSS_W_CR": {
-                        "onfalse": {
-                            "chain": {
-                                "CSS_W_REDUDANT_SPACES": {
-                                    "onfalse": {
-                                        "comment": "aucune CSS avec des espaces inutiles n'a \u00e9t\u00e9 d\u00e9tect\u00e9e",
-                                        "result": "c"
-                                    },
-                                    "ontrue": {
-                                        "comment": "au moins une CSS avec des espaces inutiles a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                                        "result": "nc"
-                                    }
-                                }
-                            },
-                            "comment": "aucune CSS avec des retours \u00e0 la ligne inutiles n'a \u00e9t\u00e9 d\u00e9tect\u00e9e",
-                            "result": "c"
-                        },
-                        "ontrue": {
-                            "comment": "au moins une CSS avec des retours \u00e0 la ligne inutiles a \u00e9t\u00e9 d\u00e9tect\u00e9e",
-                            "result": "nc"
-                        }
-                    }
-                },
-                "comment": "un LINK avec l'attribut REL ayant la valeur STYLESHEET",
-                "result": "i"
             }
         }
     },
@@ -4797,66 +4597,6 @@
                     }
                 },
                 "comment": "au moins un \u00e9l\u00e9ment SCRIPT a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "i"
-            }
-        }
-    },
-    "19044": {
-        "CSS_UNIVERSAL_SELECTOR": {
-            "onfalse": {
-                "comment": "aucun s\u00e9lecteur CSS se terminant par le s\u00e9lecteur universel n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "c"
-            },
-            "ontrue": {
-                "comment": "au moins un s\u00e9lecteur CSS se terminant par le s\u00e9lecteur universel a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "nc"
-            }
-        }
-    },
-    "19046": {
-        "CSS_BACKGROUND_IMAGE": {
-            "onfalse": {
-                "comment": "aucune image ajout\u00e9e par CSS n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "na"
-            },
-            "ontrue": {
-                "chain": {
-                    "CSS_BACKGROUND_IMAGE_IN_SPRITE": {
-                        "onfalse": {
-                            "comment": "aucune sprite n'a \u00e9t\u00e9 d\u00e9tect\u00e9e",
-                            "result": "i"
-                        },
-                        "ontrue": {
-                            "comment": "au moins une sprite a \u00e9t\u00e9 d\u00e9tect\u00e9e",
-                            "result": "c"
-                        }
-                    }
-                },
-                "comment": "au moins une image ajout\u00e9e par CSS a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "i"
-            }
-        }
-    },
-    "19047": {
-        "CSS_BACKGROUND_IMAGE": {
-            "onfalse": {
-                "comment": "aucune image ajout\u00e9e par CSS n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "na"
-            },
-            "ontrue": {
-                "chain": {
-                    "CSS_BACKGROUND_IMAGE_IN_SPRITE": {
-                        "onfalse": {
-                            "comment": "aucune sprite n'a \u00e9t\u00e9 d\u00e9tect\u00e9e",
-                            "result": "i"
-                        },
-                        "ontrue": {
-                            "comment": "au moins une sprite a \u00e9t\u00e9 d\u00e9tect\u00e9e",
-                            "result": "c"
-                        }
-                    }
-                },
-                "comment": "au moins une image ajout\u00e9e par CSS a \u00e9t\u00e9 d\u00e9tect\u00e9",
                 "result": "i"
             }
         }
@@ -5026,18 +4766,6 @@
             "ontrue": {
                 "comment": "au moins un CDN d\u00e9tect\u00e9",
                 "result": "c"
-            }
-        }
-    },
-    "19064": {
-        "JS_DOCUMENT_WRITE": {
-            "onfalse": {
-                "comment": "aucun script utilisant document.write n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "c"
-            },
-            "ontrue": {
-                "comment": "au moins un script utilisant document.write a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "nc"
             }
         }
     },
@@ -5679,90 +5407,6 @@
             }
         }
     },
-    "19185": {
-        "JS_SET_TIMEOUT": {
-            "onfalse": {
-                "comment": "aucun JS contenant un setTimeout() n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "c"
-            },
-            "ontrue": {
-                "comment": "L'utilisation de la m\u00e9thode SETTIMEOUT constitue un risque. V\u00e9rifiez que cette utilisation n'enfreint pas les r\u00e8gles d'accessibilit\u00e9.",
-                "result": "nc"
-            }
-        }
-    },
-    "19186": {
-        "JS_SET_INTERVAL": {
-            "onfalse": {
-                "comment": "aucun JS contenant un setInterval() n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "c"
-            },
-            "ontrue": {
-                "comment": "L'utilisation de la m\u00e9thode SETINTERVAL constitue un risque. V\u00e9rifiez que cette utilisation n'enfreint pas les r\u00e8gles d'accessibilit\u00e9.",
-                "result": "nc"
-            }
-        }
-    },
-    "19187": {
-        "JS_WINDOW_OPEN": {
-            "onfalse": {
-                "comment": "aucun JS contenant un window.open() n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "c"
-            },
-            "ontrue": {
-                "comment": "L'utilisation de la m\u00e9thode WINDOW.OPEN constitue un risque. V\u00e9rifiez que cette utilisation n'enfreint pas les r\u00e8gles d'accessibilit\u00e9.",
-                "result": "nc"
-            }
-        }
-    },
-    "19190": {
-        "CSS_FONT_SIZE_W_PIXEL_VALUE": {
-            "onfalse": {
-                "comment": "aucun FONT-SIZE d\u00e9finie en px n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "c"
-            },
-            "ontrue": {
-                "comment": "L'utilisation de la propri\u00e9t\u00e9 FONT-SIZE avec une valeur d\u00e9finie en pixel constitue un risque. V\u00e9rifiez que cette utilisation n'enfreint pas les r\u00e8gles d'accessibilit\u00e9.",
-                "result": "nc"
-            }
-        }
-    },
-    "19191": {
-        "CSS_FOCUS_STYLE": {
-            "onfalse": {
-                "comment": "aucun outline supprim\u00e9",
-                "result": "c"
-            },
-            "ontrue": {
-                "comment": "L'utilisation de la propri\u00e9t\u00e9 OUTLINE avec la valeur 0 ou NONE constitue un risque. V\u00e9rifiez que cette utilisation n'enfreint pas les r\u00e8gles d'accessibilit\u00e9.",
-                "result": "nc"
-            }
-        }
-    },
-    "19192": {
-        "CSS_TEXT_ALIGN_JUSTIFY": {
-            "onfalse": {
-                "comment": "aucun texte justifi\u00e9",
-                "result": "c"
-            },
-            "ontrue": {
-                "comment": "L'utilisation de la propri\u00e9t\u00e9 TEXT-ALIGN avec la valeur JUSTIFY constitue un risque. V\u00e9rifiez que cette utilisation n'enfreint pas les r\u00e8gles d'accessibilit\u00e9.",
-                "result": "nc"
-            }
-        }
-    },
-    "19193": {
-        "CSS_TEXT_INDENT_NEGATIVE": {
-            "onfalse": {
-                "comment": "aucun texte avec une image de fond indent\u00e9 n\u00e9gativement n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "c"
-            },
-            "ontrue": {
-                "comment": "L'utilisation de la propri\u00e9t\u00e9 TEXT-INDENT avec une valeur n\u00e9gative pour un selecteur ayant \u00e9galement la propri\u00e9t\u00e9 BACKGROUND-IMAGE constitue un risque. V\u00e9rifiez que cette utilisation n'enfreint pas les r\u00e8gles d'accessibilit\u00e9.",
-                "result": "nc"
-            }
-        }
-    },
     "19195": {
         "TABLE_W_FAKE_TH_LINE": {
             "onfalse": {
@@ -5771,28 +5415,6 @@
             },
             "ontrue": {
                 "comment": "L'utilisation d'\u00e9l\u00e9ments TD quand l'ensemble des cellules d'une ligne contient du texte en gras constitue un risque. V\u00e9rifiez que cette utilisation n'enfreint pas les r\u00e8gles d'accessibilit\u00e9.",
-                "result": "nc"
-            }
-        }
-    },
-    "19197": {
-        "CSS_DISPLAY_NONE": {
-            "onfalse": {
-                "comment": "aucun display none n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "c"
-            },
-            "ontrue": {
-                "comment": "L'utilisation de la propri\u00e9t\u00e9 DISPLAY avec la valeur NONE constitue un risque. V\u00e9rifiez que cette utilisation n'enfreint pas les r\u00e8gles d'accessibilit\u00e9.",
-                "result": "nc"
-            }
-        },
-        "CSS_VISIBILITY_HIDDEN": {
-            "onfalse": {
-                "comment": "aucun visibility hidden n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "c"
-            },
-            "ontrue": {
-                "comment": "L'utilisation de la propri\u00e9t\u00e9 VISIBILITY avec la valeur HIDDEN constitue un risque. V\u00e9rifiez que cette utilisation n'enfreint pas les r\u00e8gles d'accessibilit\u00e9.",
                 "result": "nc"
             }
         }
@@ -5829,18 +5451,6 @@
             },
             "ontrue": {
                 "comment": "L'utilisation d'\u00e9l\u00e9ments TD quand l'ensemble des cellules d'une colonne contient du texte en gras constitue un risque. V\u00e9rifiez que cette utilisation n'enfreint pas les r\u00e8gles d'accessibilit\u00e9.",
-                "result": "nc"
-            }
-        }
-    },
-    "19214": {
-        "CSS_DIRECTION": {
-            "onfalse": {
-                "comment": "aucune direction indiqu\u00e9e par CSS n'a \u00e9t\u00e9 d\u00e9tect\u00e9e",
-                "result": "c"
-            },
-            "ontrue": {
-                "comment": "L'utilisation de la propri\u00e9t\u00e9 DIRECTION constitue un risque. V\u00e9rifiez que cette utilisation n'enfreint pas les r\u00e8gles d'accessibilit\u00e9.",
                 "result": "nc"
             }
         }
@@ -10327,42 +9937,6 @@
             }
         }
     },
-    "21435": {
-        "CSS_BACKGROUND_IMAGE": {
-            "onfalse": {
-                "comment": "aucune image ajout\u00e9e par CSS n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "c"
-            },
-            "ontrue": {
-                "comment": "au moins une image ajout\u00e9e par CSS a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "i"
-            }
-        }
-    },
-    "21438": {
-        "CSS_FONT_SIZE_W_ABSOLUTE_VALUE_ON_SCREEN": {
-            "onfalse": {
-                "comment": "aucun FONT-SIZE d\u00e9fini en taille absolue n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "c"
-            },
-            "ontrue": {
-                "comment": "au moins un FONT-SIZE d\u00e9fini en taille absolue a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "nc"
-            }
-        }
-    },
-    "21452": {
-        "CSS_TEXT_ALIGN_JUSTIFY": {
-            "onfalse": {
-                "comment": "aucun texte justifi\u00e9",
-                "result": "c"
-            },
-            "ontrue": {
-                "comment": "L'utilisation de la propri\u00e9t\u00e9 TEXT-ALIGN avec la valeur JUSTIFY constitue un risque. V\u00e9rifiez que cette utilisation n'enfreint pas les r\u00e8gles d'accessibilit\u00e9.",
-                "result": "nc"
-            }
-        }
-    },
     "21462": {
         "INPUT_W_TYPE_CHECKBOX": {
             "onfalse": {
@@ -11389,68 +10963,6 @@
             }
         }
     },
-    "21516": {
-        "APPLET": {
-            "onfalse": {
-                "comment": "aucun \u00e9l\u00e9ment APPLET n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "na"
-            },
-            "ontrue": {
-                "comment": "au moins un \u00e9l\u00e9ment APPLET a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "i"
-            }
-        },
-        "EMBED": {
-            "onfalse": {
-                "comment": "aucun \u00e9l\u00e9ment EMBED n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "na"
-            },
-            "ontrue": {
-                "comment": "au moins un \u00e9l\u00e9ment EMBED a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "i"
-            }
-        },
-        "HTTP_REFRESH": {
-            "onfalse": {
-                "comment": "le serveur n'envoie pas de commande de rafra\u00eechissement de la page",
-                "result": "na"
-            },
-            "ontrue": {
-                "comment": "le serveur envoie une commande de rafra\u00eechissement de la page",
-                "result": "nc"
-            }
-        },
-        "JS_REFRESH": {
-            "onfalse": {
-                "comment": "la page n'est pas rafra\u00eechie ou redirig\u00e9e automatiquement",
-                "result": "na"
-            },
-            "ontrue": {
-                "comment": "la page est rafra\u00eechie ou redirig\u00e9e automatiquement",
-                "result": "nc"
-            }
-        },
-        "META_REFRESH_SHORT": {
-            "onfalse": {
-                "comment": "aucun \u00e9l\u00e9ment META avec un attribut HTTP-EQUIV ayant la valeur refresh avec une dur\u00e9e courte n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "na"
-            },
-            "ontrue": {
-                "comment": "un META avec un attribut HTTP-EQUIV ayant la valeur refresh avec une dur\u00e9e courte est pr\u00e9sent",
-                "result": "nc"
-            }
-        },
-        "OBJECT": {
-            "onfalse": {
-                "comment": "aucun \u00e9l\u00e9ment OBJECT n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "na"
-            },
-            "ontrue": {
-                "comment": "au moins un \u00e9l\u00e9ment OBJECT a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "i"
-            }
-        }
-    },
     "21517": {
         "META_REFRESH_URL": {
             "onfalse": {
@@ -11459,18 +10971,6 @@
             },
             "ontrue": {
                 "comment": "un META avec un attribut HTTP-EQUIV ayant la valeur refresh avec une URL est pr\u00e9sent",
-                "result": "i"
-            }
-        }
-    },
-    "21518": {
-        "JS_REFRESH": {
-            "onfalse": {
-                "comment": "la page n'est pas rafra\u00eechie ou redirig\u00e9e automatiquement",
-                "result": "na"
-            },
-            "ontrue": {
-                "comment": "la page est rafra\u00eechie ou redirig\u00e9e automatiquement",
                 "result": "i"
             }
         }
@@ -13215,28 +12715,6 @@
             }
         }
     },
-    "21630": {
-        "CSS_BACKGROUND_IMAGE": {
-            "onfalse": {
-                "comment": "aucune image ajout\u00e9e par CSS n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "c"
-            },
-            "ontrue": {
-                "comment": "au moins une image ajout\u00e9e par CSS a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "i"
-            }
-        },
-        "CSS_CONTENT": {
-            "onfalse": {
-                "comment": "aucun contenu textuel ajout\u00e9 par CSS n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "i"
-            },
-            "ontrue": {
-                "comment": "au moins un contenu textuel ajout\u00e9 par CSS a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "nc"
-            }
-        }
-    },
     "21644": {
         "INPUT_W_TYPE_CHECKBOX": {
             "onfalse": {
@@ -13887,28 +13365,6 @@
             }
         }
     },
-    "21708": {
-        "CSS_DISPLAY_NONE": {
-            "onfalse": {
-                "comment": "aucun display none n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "i"
-            },
-            "ontrue": {
-                "comment": "L'utilisation de la propri\u00e9t\u00e9 DISPLAY avec la valeur NONE constitue un risque. V\u00e9rifiez que cette utilisation n'enfreint pas les r\u00e8gles d'accessibilit\u00e9.",
-                "result": "i"
-            }
-        },
-        "CSS_VISIBILITY_HIDDEN": {
-            "onfalse": {
-                "comment": "aucun visibility hidden n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "i"
-            },
-            "ontrue": {
-                "comment": "L'utilisation de la propri\u00e9t\u00e9 VISIBILITY avec la valeur HIDDEN constitue un risque. V\u00e9rifiez que cette utilisation n'enfreint pas les r\u00e8gles d'accessibilit\u00e9.",
-                "result": "i"
-            }
-        }
-    },
     "21710": {
         "ACCESSIBILITY_LINK": {
             "onfalse": {
@@ -13918,18 +13374,6 @@
             "ontrue": {
                 "comment": "le lien accessibilit\u00e9 est pr\u00e9sent",
                 "result": "c"
-            }
-        }
-    },
-    "21714": {
-        "CSS_TEXT_ALIGN_JUSTIFY": {
-            "onfalse": {
-                "comment": "aucun texte justifi\u00e9",
-                "result": "i"
-            },
-            "ontrue": {
-                "comment": "L'utilisation de la propri\u00e9t\u00e9 TEXT-ALIGN avec la valeur JUSTIFY constitue un risque. V\u00e9rifiez que cette utilisation n'enfreint pas les r\u00e8gles d'accessibilit\u00e9.",
-                "result": "nc"
             }
         }
     },
@@ -13954,18 +13398,6 @@
                 },
                 "comment": "un META avec un attribut HTTP-EQUIV ayant la valeur refresh est pr\u00e9sent",
                 "result": "i"
-            }
-        }
-    },
-    "21719": {
-        "CSS_FOCUS_STYLE": {
-            "onfalse": {
-                "comment": "aucun outline supprim\u00e9",
-                "result": "c"
-            },
-            "ontrue": {
-                "comment": "L'utilisation de la propri\u00e9t\u00e9 OUTLINE avec la valeur 0 ou NONE constitue un risque. V\u00e9rifiez que cette utilisation n'enfreint pas les r\u00e8gles d'accessibilit\u00e9.",
-                "result": "nc"
             }
         }
     },
@@ -14310,18 +13742,6 @@
             "ontrue": {
                 "comment": "au moins un \u00e9l\u00e9ment VIDEO a \u00e9t\u00e9 d\u00e9tect\u00e9",
                 "result": "i"
-            }
-        }
-    },
-    "21743": {
-        "CSS_FONT_SIZE_W_ABSOLUTE_VALUE_ON_SCREEN": {
-            "onfalse": {
-                "comment": "aucun FONT-SIZE d\u00e9fini en taille absolue n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "c"
-            },
-            "ontrue": {
-                "comment": "au moins un FONT-SIZE d\u00e9fini en taille absolue a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "nc"
             }
         }
     },
@@ -15377,90 +14797,6 @@
             }
         }
     },
-    "503": {
-        "APPLET": {
-            "onfalse": {
-                "comment": "aucun \u00e9l\u00e9ment APPLET n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "c"
-            },
-            "ontrue": {
-                "comment": "au moins un \u00e9l\u00e9ment APPLET a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "i"
-            }
-        },
-        "EMBED": {
-            "onfalse": {
-                "comment": "aucun \u00e9l\u00e9ment EMBED n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "c"
-            },
-            "ontrue": {
-                "comment": "au moins un \u00e9l\u00e9ment EMBED a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "i"
-            }
-        },
-        "HTTP_REFRESH": {
-            "onfalse": {
-                "comment": "le serveur n'envoie pas de commande de rafra\u00eechissement de la page",
-                "result": "c"
-            },
-            "ontrue": {
-                "comment": "le serveur envoie une commande de rafra\u00eechissement de la page",
-                "result": "i"
-            }
-        },
-        "JS_REFRESH": {
-            "onfalse": {
-                "comment": "la page n'est pas rafra\u00eechie ou redirig\u00e9e automatiquement",
-                "result": "c"
-            },
-            "ontrue": {
-                "comment": "la page est rafra\u00eechie ou redirig\u00e9e automatiquement",
-                "result": "i"
-            }
-        },
-        "META_REFRESH_SHORT": {
-            "onfalse": {
-                "comment": "aucun \u00e9l\u00e9ment META avec un attribut HTTP-EQUIV ayant la valeur refresh avec une dur\u00e9e courte n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "c"
-            },
-            "ontrue": {
-                "comment": "un META avec un attribut HTTP-EQUIV ayant la valeur refresh avec une dur\u00e9e courte est pr\u00e9sent",
-                "result": "i"
-            }
-        },
-        "OBJECT": {
-            "onfalse": {
-                "comment": "aucun \u00e9l\u00e9ment OBJECT n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "c"
-            },
-            "ontrue": {
-                "comment": "au moins un \u00e9l\u00e9ment OBJECT a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "i"
-            }
-        }
-    },
-    "504": {
-        "CSS_BACKGROUND_IMAGE": {
-            "onfalse": {
-                "comment": "aucune image ajout\u00e9e par CSS n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "c"
-            },
-            "ontrue": {
-                "comment": "au moins une image ajout\u00e9e par CSS a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "i"
-            }
-        },
-        "CSS_CONTENT": {
-            "onfalse": {
-                "comment": "aucun contenu textuel ajout\u00e9 par CSS n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "c"
-            },
-            "ontrue": {
-                "comment": "au moins un contenu textuel ajout\u00e9 par CSS a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "i"
-            }
-        }
-    },
     "508": {
         "TITLE": {
             "onfalse": {
@@ -16073,18 +15409,6 @@
             }
         }
     },
-    "557": {
-        "CSS_FOCUS_STYLE": {
-            "onfalse": {
-                "comment": "aucun outline supprim\u00e9",
-                "result": "c"
-            },
-            "ontrue": {
-                "comment": "L'utilisation de la propri\u00e9t\u00e9 OUTLINE avec la valeur 0 ou NONE constitue un risque. V\u00e9rifiez que cette utilisation n'enfreint pas les r\u00e8gles d'accessibilit\u00e9.",
-                "result": "i"
-            }
-        }
-    },
     "558": {
         "TARGET_BLANK": {
             "onfalse": {
@@ -16145,18 +15469,6 @@
             }
         }
     },
-    "576": {
-        "HTTP_WWW": {
-            "onfalse": {
-                "comment": "le site ne fonctionne pas avec et sans www.",
-                "result": "nc"
-            },
-            "ontrue": {
-                "comment": "le site fonctionne avec et sans www.",
-                "result": "c"
-            }
-        }
-    },
     "577": {
         "404_DEFAULT": {
             "onfalse": {
@@ -16166,18 +15478,6 @@
             "ontrue": {
                 "comment": "au moins une page 404 par d\u00e9faut a \u00e9t\u00e9 d\u00e9tect\u00e9",
                 "result": "nc"
-            }
-        }
-    },
-    "578": {
-        "HTTP_404": {
-            "onfalse": {
-                "comment": "le serveur ne renvoie pas d'ent\u00eate HTTP 404",
-                "result": "nc"
-            },
-            "ontrue": {
-                "comment": "le serveur renvoie un ent\u00eate HTTP 404",
-                "result": "c"
             }
         }
     },
@@ -16687,18 +15987,6 @@
             }
         }
     },
-    "620": {
-        "CSS_HOVER_LINKS": {
-            "onfalse": {
-                "comment": "aucun style pouvant changer la mise en page des liens au survol n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "i"
-            },
-            "ontrue": {
-                "comment": "au moins un style pouvant changer la mise en page des liens au survol a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "nc"
-            }
-        }
-    },
     "622": {
         "RESOURCE_404": {
             "onfalse": {
@@ -16778,30 +16066,6 @@
             "ontrue": {
                 "comment": "au moins une CSS pour l'impression (media print) a \u00e9t\u00e9 d\u00e9tect\u00e9e",
                 "result": "c"
-            }
-        }
-    },
-    "640": {
-        "CSS_GENERIC_FONT": {
-            "onfalse": {
-                "comment": "aucune CSS ne se terminant par une police non g\u00e9n\u00e9rique n'a \u00e9t\u00e9 d\u00e9tect\u00e9e",
-                "result": "c"
-            },
-            "ontrue": {
-                "comment": "au moins une CSS se terminant par une police non g\u00e9n\u00e9rique a \u00e9t\u00e9 d\u00e9tect\u00e9e",
-                "result": "nc"
-            }
-        }
-    },
-    "641": {
-        "CSS_FONT_SIZE_W_ABSOLUTE_VALUE": {
-            "onfalse": {
-                "comment": "aucun FONT-SIZE d\u00e9finie en taille absolue n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "c"
-            },
-            "ontrue": {
-                "comment": "au moins un FONT-SIZE d\u00e9finie en taille absolue a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "nc"
             }
         }
     },
@@ -17317,18 +16581,6 @@
             }
         }
     },
-    "702": {
-        "CSS_FONTS_NUMBER": {
-            "onfalse": {
-                "comment": "pas plus de 3 polices d\u00e9finies",
-                "result": "c"
-            },
-            "ontrue": {
-                "comment": "plus de 3 polices d\u00e9finies",
-                "result": "nc"
-            }
-        }
-    },
     "705": {
         "CSS_MEDIA_HANDHELD": {
             "onfalse": {
@@ -17409,114 +16661,6 @@
                     }
                 },
                 "comment": "au moins un \u00e9l\u00e9ment SCRIPT a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "i"
-            }
-        }
-    },
-    "715": {
-        "SCRIPT": {
-            "onfalse": {
-                "comment": "aucun \u00e9l\u00e9ment SCRIPT n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "na"
-            },
-            "ontrue": {
-                "chain": {
-                    "JS_W_CR": {
-                        "onfalse": {
-                            "chain": {
-                                "JS_W_REDUDANT_SPACES": {
-                                    "onfalse": {
-                                        "comment": "aucun JS avec des espaces inutiles n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                                        "result": "c"
-                                    },
-                                    "ontrue": {
-                                        "comment": "au moins un JS avec des espaces inutiles a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                                        "result": "nc"
-                                    }
-                                }
-                            },
-                            "comment": "aucun JS avec des retours \u00e0 la ligne inutiles n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                            "result": "c"
-                        },
-                        "ontrue": {
-                            "comment": "au moins un JS avec des retours \u00e0 la ligne inutiles a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                            "result": "nc"
-                        }
-                    }
-                },
-                "comment": "au moins un \u00e9l\u00e9ment SCRIPT a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "i"
-            }
-        }
-    },
-    "716": {
-        "LINK_STYLESHEET": {
-            "onfalse": {
-                "chain": {
-                    "STYLE": {
-                        "onfalse": {
-                            "comment": "aucun \u00e9l\u00e9ment STYLE n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                            "result": "na"
-                        },
-                        "ontrue": {
-                            "chain": {
-                                "CSS_W_CR": {
-                                    "onfalse": {
-                                        "chain": {
-                                            "CSS_W_REDUDANT_SPACES": {
-                                                "onfalse": {
-                                                    "comment": "aucune CSS avec des espaces inutiles n'a \u00e9t\u00e9 d\u00e9tect\u00e9e",
-                                                    "result": "c"
-                                                },
-                                                "ontrue": {
-                                                    "comment": "au moins une CSS avec des espaces inutiles a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                                                    "result": "nc"
-                                                }
-                                            }
-                                        },
-                                        "comment": "aucune CSS avec des retours \u00e0 la ligne inutiles n'a \u00e9t\u00e9 d\u00e9tect\u00e9e",
-                                        "result": "c"
-                                    },
-                                    "ontrue": {
-                                        "comment": "au moins une CSS avec des retours \u00e0 la ligne inutiles a \u00e9t\u00e9 d\u00e9tect\u00e9e",
-                                        "result": "nc"
-                                    }
-                                }
-                            },
-                            "comment": "au moins un \u00e9l\u00e9ment STYLE a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                            "result": "i"
-                        }
-                    }
-                },
-                "comment": "aucun \u00e9l\u00e9ment LINK avec l'attribut REL ayant la valeur STYLESHEET n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                "result": "i"
-            },
-            "ontrue": {
-                "chain": {
-                    "CSS_W_CR": {
-                        "onfalse": {
-                            "chain": {
-                                "CSS_W_REDUDANT_SPACES": {
-                                    "onfalse": {
-                                        "comment": "aucune CSS avec des espaces inutiles n'a \u00e9t\u00e9 d\u00e9tect\u00e9e",
-                                        "result": "c"
-                                    },
-                                    "ontrue": {
-                                        "comment": "au moins une CSS avec des espaces inutiles a \u00e9t\u00e9 d\u00e9tect\u00e9",
-                                        "result": "nc"
-                                    }
-                                }
-                            },
-                            "comment": "aucune CSS avec des retours \u00e0 la ligne inutiles n'a \u00e9t\u00e9 d\u00e9tect\u00e9e",
-                            "result": "c"
-                        },
-                        "ontrue": {
-                            "comment": "au moins une CSS avec des retours \u00e0 la ligne inutiles a \u00e9t\u00e9 d\u00e9tect\u00e9e",
-                            "result": "nc"
-                        }
-                    }
-                },
-                "comment": "un LINK avec l'attribut REL ayant la valeur STYLESHEET",
                 "result": "i"
             }
         }
