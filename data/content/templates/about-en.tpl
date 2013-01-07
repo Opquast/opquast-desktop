@@ -81,7 +81,7 @@
     <p>Olivier Meunier, Elie Sloïm, Fabrice Bonny and Aurélien Levy for <a href=
     "http://www.temesis.com">Temesis SAS</a> - 18, rue Lucien Granet 33150 Cenon - France</p>
 
-    <p>With the assistance of <em>pôle Aquitain en logiciels libre <a
+    <p>With the assistance of <em>pôle Aquitain en logiciels libres <a
     href="http://pole-aquinetic.fr/">Aquinetic</a></em> and with support from
     <em><a href="http://aquitaine.fr/">Région Aquitaine</a></em>.</p>
 
@@ -109,28 +109,28 @@
 
       <tbody>
         <tr>
-          <td><a href="http://checklists.opquast.com/fr/opquastv2">Opquast Qualité Web</a></td>
+          <td><a href="http://checklists.opquast.com/en/opquastv2">Opquast UX</a></td>
           <td>Version 2 (2010)</td>
           <td><a href="http://creativecommons.org/licenses/by-sa/2.0/fr/">Creative commons
           BY-SA</a></td>
         </tr>
 
         <tr>
-          <td><a href="http://checklists.opquast.com/fr/seo">Opquast SEO</a></td>
+          <td><a href="http://checklists.opquast.com/seo">Opquast SEO</a></td>
           <td>Version 1 (2011)</td>
           <td><a href="http://creativecommons.org/licenses/by-sa/2.0/fr/">Creative commons
           BY-SA</a></td>
         </tr>
 
         <tr>
-          <td><a href="">Opquast Webperf</a></td>
+          <td><a href="http://checklists.opquast.com/webperf">Opquast Webperf</a></td>
           <td>Version 1 (2012)</td>
           <td><a href="http://creativecommons.org/licenses/by-sa/2.0/fr/">Creative commons
           BY-SA</a></td>
         </tr>
 
         <tr>
-          <td><a href="http://checklists.opquast.com/fr/accessibilityfirststep">Opquast Accessibility
+          <td><a href="http://checklists.opquast.com/en/accessibilityfirststep">Opquast Accessibility
           First Step</a></td>
           <td>Version 1 (2012)</td>
           <td><a href="http://creativecommons.org/licenses/by-sa/2.0/fr/">Creative commons
@@ -138,7 +138,7 @@
         </tr>
 
         <tr>
-          <td><a href="http://checklists.opquast.com/fr/accessibilitysecondstep">Opquast Accessibility
+          <td><a href="http://checklists.opquast.com/en/accessibilitysecondstep">Opquast Accessibility
           Second Step</a></td>
           <td>Version 1 (2012)</td>
           <td><a href="http://creativecommons.org/licenses/by-sa/2.0/fr/">Creative commons
