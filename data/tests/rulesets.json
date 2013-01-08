@@ -3960,7 +3960,7 @@
                 "result": "na"
             },
             "ontrue": {
-                "comment": "le META DESCRIPTION est non vide",
+                "comment": "un \u00e9l\u00e9ment  META DESCRIPTION non vide a \u00e9t\u00e9 d\u00e9tect\u00e9",
                 "result": "i"
             }
         }
@@ -3972,7 +3972,7 @@
                 "result": "nc"
             },
             "ontrue": {
-                "comment": "le META DESCRIPTION est non vide",
+                "comment": "un \u00e9l\u00e9ment  META DESCRIPTION non vide a \u00e9t\u00e9 d\u00e9tect\u00e9",
                 "result": "i"
             }
         }
@@ -3996,7 +3996,7 @@
                         }
                     }
                 },
-                "comment": "le META DESCRIPTION est non vide",
+                "comment": "un \u00e9l\u00e9ment  META DESCRIPTION non vide a \u00e9t\u00e9 d\u00e9tect\u00e9",
                 "result": "i"
             }
         }
@@ -4244,7 +4244,7 @@
     "16212": {
         "META_KEYWORDS_FILLED": {
             "onfalse": {
-                "comment": "aucun \u00e9l\u00e9ment META KEYWORDS ou META KEYWORDS vide n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "comment": "aucun \u00e9l\u00e9ment META KEYWORDS non vide n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
                 "result": "na"
             },
             "ontrue": {
@@ -4260,7 +4260,7 @@
                         }
                     }
                 },
-                "comment": "le META KEYWORDS est non vide",
+                "comment": "un \u00e9l\u00e9ment META KEYWORDS non vide a \u00e9t\u00e9 d\u00e9tect\u00e9",
                 "result": "i"
             }
         }
@@ -4268,11 +4268,11 @@
     "16213": {
         "META_KEYWORDS_FILLED": {
             "onfalse": {
-                "comment": "aucun \u00e9l\u00e9ment META KEYWORDS ou META KEYWORDS vide n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "comment": "aucun \u00e9l\u00e9ment META KEYWORDS non vide n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
                 "result": "na"
             },
             "ontrue": {
-                "comment": "le META KEYWORDS est non vide",
+                "comment": "un \u00e9l\u00e9ment META KEYWORDS non vide a \u00e9t\u00e9 d\u00e9tect\u00e9",
                 "result": "i"
             }
         }
@@ -4397,6 +4397,18 @@
             }
         }
     },
+    "16258": {
+        "ROBOTS_W_VALID_SITEMAP": {
+            "onfalse": {
+                "comment": "le robots.txt est absent ou n'indique pas de sitemap",
+                "result": "nc"
+            },
+            "ontrue": {
+                "comment": "le robots.txt est pr\u00e9sent et indique un sitemap",
+                "result": "c"
+            }
+        }
+    },
     "16259": {
         "ROBOTS_W_VALID_SITEMAP": {
             "onfalse": {
@@ -4418,6 +4430,68 @@
             "ontrue": {
                 "comment": "au moins une URL avec un caract\u00e8re consid\u00e9r\u00e9 comme non s\u00fbr a \u00e9t\u00e9 d\u00e9tect\u00e9",
                 "result": "nc"
+            }
+        }
+    },
+    "16657": {
+        "APPLET": {
+            "onfalse": {
+                "comment": "aucun \u00e9l\u00e9ment APPLET n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "result": "na"
+            },
+            "ontrue": {
+                "comment": "au moins un \u00e9l\u00e9ment APPLET a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "result": "i"
+            }
+        },
+        "AUDIO": {
+            "onfalse": {
+                "comment": "aucun \u00e9l\u00e9ment AUDIO n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "result": "na"
+            },
+            "ontrue": {
+                "comment": "au moins un \u00e9l\u00e9ment AUDIO a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "result": "i"
+            }
+        },
+        "CANVAS": {
+            "onfalse": {
+                "comment": "aucun \u00e9l\u00e9ment CANVAS n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "result": "na"
+            },
+            "ontrue": {
+                "comment": "au moins un \u00e9l\u00e9ment CANVAS a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "result": "i"
+            }
+        },
+        "EMBED": {
+            "onfalse": {
+                "comment": "aucun \u00e9l\u00e9ment EMBED n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "result": "na"
+            },
+            "ontrue": {
+                "comment": "au moins un \u00e9l\u00e9ment EMBED a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "result": "i"
+            }
+        },
+        "OBJECT": {
+            "onfalse": {
+                "comment": "aucun \u00e9l\u00e9ment OBJECT n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "result": "na"
+            },
+            "ontrue": {
+                "comment": "au moins un \u00e9l\u00e9ment OBJECT a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "result": "i"
+            }
+        },
+        "VIDEO": {
+            "onfalse": {
+                "comment": "aucun \u00e9l\u00e9ment VIDEO n'a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "result": "na"
+            },
+            "ontrue": {
+                "comment": "au moins un \u00e9l\u00e9ment VIDEO a \u00e9t\u00e9 d\u00e9tect\u00e9",
+                "result": "i"
             }
         }
     },
@@ -16018,7 +16092,7 @@
                 "result": "nc"
             },
             "ontrue": {
-                "comment": "le META DESCRIPTION est non vide",
+                "comment": "un \u00e9l\u00e9ment  META DESCRIPTION non vide a \u00e9t\u00e9 d\u00e9tect\u00e9",
                 "result": "i"
             }
         }

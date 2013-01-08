@@ -4598,6 +4598,35 @@ var jsFrameworks = new RegExp().compile("/(dojo|ext-core|jquery|jquery-ui|mootoo
         //
         return result;
     }
+    
+    /**
+     *
+     * @param doc
+     * @return
+     */
+    window.httpDomainMoreThan30Caracters = function httpDomainMoreThan30Caracters(doc) {
+        //
+        var result = [];
+
+        //
+        try {
+            //
+            if (doc.location.host.length > 30) {
+                //
+                result.push(true);
+            }
+        }
+
+        //
+        catch (err) {
+            // Error Logging
+            logger.error("httpDomainMoreThan30Caracters", err);
+            result = false;
+        }
+
+        //
+        return result;
+    }
 
     /**
      *
