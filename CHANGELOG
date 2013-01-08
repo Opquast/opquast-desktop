@@ -1,3 +1,12 @@
+2013-01-07 - Version 0.6
+
+- Addon-SDK 1.12
+- Added button in toolbar after install
+- English "About" page
+- Better filename for CSV export
+- Removed 39 slow tests
+- Now works on Iceweseal
+
 2012-12-07 - Version 0.5.1
 
 - Fixed some tests
