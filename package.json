@@ -7,7 +7,7 @@
     "id": "opquast-desktop@temesis.com",
     "description": "Opquast Reporting and testing in your browser",
     "dependencies": [
-        "toolbarbutton",
+        "tbb",
         "vold-utils"
     ],
     "icon": "data/icon48.png",
