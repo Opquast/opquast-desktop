@@ -8,7 +8,7 @@
   </thead>
   <tbody>
   {{~ it.projects :project }}
-    <tr data-project_id="{{= project.id }}">
+    <tr data-project_id="{{! project.id }}">
       <td headers="hName">{{! project.name }}</td>
       <td headers="hUrl">{{! project.url }}</td>
       <td headers="hAction" class="min nowrap"><button>{{! it.locales['oqs.project_choice'] }}</button></td>

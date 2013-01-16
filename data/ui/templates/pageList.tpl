@@ -5,7 +5,7 @@
 <table id="pages" class="data">
   <tbody>
   {{~ it.pages :page }}
-    <tr data-resource_uri="{{= page.resource_uri }}">
+    <tr data-resource_uri="{{! page.resource_uri }}">
       <td>{{! page.title }}</td>
       <td>{{! page.uri }}</td>
       <td class="min nowrap"><button>{{! it.locales['oqs.replace_page'] }}</button></td>
