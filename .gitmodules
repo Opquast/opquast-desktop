@@ -1,0 +1,9 @@
+[submodule "packages/jetpack-net-log"]
+	path = packages/jetpack-net-log
+	url = git://github.com/olivier-m/jetpack-net-log.git
+[submodule "packages/vold-utils"]
+	path = packages/vold-utils
+	url = git://github.com/erikvold/vold-utils-jplib.git
+[submodule "packages/opquast-test-runner"]
+	path = packages/opquast-test-runner
+	url = git://github.com/Opquast/opquast-test-runner.git
