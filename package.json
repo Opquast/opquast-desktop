@@ -2,7 +2,7 @@
     "name": "opquast-desktop",
     "license": "MPL 1.1/GPL 2.0/LGPL 2.1",
     "author": "Temesis SAS",
-    "version": "0.6.4",
+    "version": "0.7.0",
     "fullName": "Opquast Desktop",
     "id": "opquast-desktop@temesis.com",
     "description": "Opquast Reporting and testing in your browser",

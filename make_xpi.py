@@ -3,6 +3,7 @@
 
 import os
 from subprocess import call
+import sys
 from zipfile import ZipFile, ZIP_DEFLATED
 
 
@@ -22,5 +23,8 @@ def tamper_xpi(src, dest, xpi):
 
 
 if __name__ == '__main__':
-    call(["cfx", "xpi", "--templatedir=./app-extension"])
+    args = list(sys.argv)[1:]
+    cmd = ["cfx", "xpi", "--templatedir=./app-extension"]
+    cmd.extend(args)
+    call(cmd)
     tamper_xpi("packages/opquast-test-runner/data", "resources/opquast-tests/data", "opquast-desktop.xpi")
