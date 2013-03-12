@@ -1,49 +1,13 @@
 {
-    "640": {
-        "goal": "<p>Permettre aux contenus de s'afficher correctement, m\u00eame lorsque les polices pr\u00e9vues ne sont pas pr\u00e9sentes sur le syst\u00e8me de l'utilisateur.</p>", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Une famille g\u00e9n\u00e9rique de police est indiqu\u00e9e comme dernier \u00e9l\u00e9ment de substitution.", 
-        "solution": "<p>Dans chaque feuille de style CSS, indiquer la famille g\u00e9n\u00e9rique de police appropri\u00e9e dans les propri\u00e9t\u00e9s <code>font-family</code> ou <code>font</code>&nbsp;:</p><ul>\r\n<li>Pour les polices serif, ou \u00e0 empattements (du type Times Roman), sp\u00e9cifier en dernier la famille de police g\u00e9n\u00e9rique serif. Dans l'exemple suivant, le terme \u00ab&nbsp;serif&nbsp;\u00bb a \u00e9t\u00e9 correctement ajout\u00e9 comme dernier \u00e9l\u00e9ment de la liste des polices <code>font-family: Georgia, &quot;Bookman Old Style&quot;, serif</code>.</li>\r\n\t\t\t\t\t<li>Pour les polices sans serif, ou sans empattements (du type Arial), sp\u00e9cifier en dernier la famille de police g\u00e9n\u00e9rique sans-serif. Par exemple&nbsp;: <code>font-family: Optima, &quot;Trebuchet MS&quot;, sans-serif</code>; </li>\r\n\t\t\t\t\t<li>Pour les polices monospace (du type Courier), sp\u00e9cifier en dernier la famille de police g\u00e9n\u00e9rique monospace. Par exemple, <code>font-family: Courier, monospace </code>; </li>\r\n\t\t\t\t\t<li>De m\u00eame, utiliser les familles g\u00e9n\u00e9riques cursive et fantasy pour les polices manuscrites et fantaisies.</li>\r\n\t\t\t\t</ul>", 
-        "thema": "Pr\u00e9sentation", 
-        "name": "141"
-    }, 
-    "641": {
-        "goal": "<p>Permettre aux utilisateurs \u00e9quip\u00e9s de navigateurs qui ne g\u00e8rent pas l'agrandissement des polices en taille fixe d'agrandir les polices sans difficult\u00e9.</p>", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "La taille des polices destin\u00e9es \u00e0 l'affichage \u00e9cran est exprim\u00e9e en taille variable et non en taille fixe.", 
-        "solution": "<p>Ne pas modifier la taille de la police par d\u00e9faut ou l'indiquer en utilisant une unit\u00e9 proportionnelle aux r\u00e9glages de l'utilisateur (em, ex, %, mots-cl\u00e9s) et non avec une unit\u00e9 d\u00e9pendante du p\u00e9riph\u00e9rique de consultation (px, pt, cm, etc.).</p>", 
-        "thema": "Pr\u00e9sentation", 
-        "name": "142"
-    }, 
-    "716": {
-        "goal": "<p>Minimiser la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger par l'utilisateur.</p><p>Am\u00e9liorer les performances.</p>", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Les informations de style sont minifi\u00e9es.", 
-        "solution": "<p>Supprimer les espaces non n\u00e9cessaires et les commentaires dans les fichiers CSS, par exemple en recourant \u00e0 des outils tels que <a href=\"http://developer.yahoo.com/yui/compressor/\">http://developer.yahoo.com/yui/compressor/</a>.</p>", 
-        "thema": "Serveur et Performances", 
-        "name": "217"
-    }, 
     "645": {
-        "goal": "<p>Informer les utilisateurs sur le niveau de s\u00e9curit\u00e9 du mot de passe choisi et donc sur les risques de d\u00e9tournement.</p>", 
+        "goal": "<p>Permettre aux outils d\u2019indexation et aux moteurs de recherche de connai\u0302tre la ou les langues du public auquel est destine\u0301e la page et d\u2019adresser aux utilisateurs le contenu re\u0301pondant par exemple a\u0300 leurs choix de langue exprime\u0301s dans les parame\u0300tres d\u2019une recherche.</p>", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
-        "description": "Un dispositif sensibilise l'utilisateur sur le degr\u00e9 de s\u00e9curisation du mot de passe qu'il choisit.", 
-        "solution": "<p>La saisie du mot de passe donne lieu \u00e0 une validation et \u00e0 un retour indiquant son degr\u00e9 de s\u00e9curit\u00e9, avant soumission d\u00e9finitive du formulaire d'inscription ou de changement de mot de passe.</p>", 
+        "description": "Le serveur envoie l\u2019indication de la langue principale du contenu.", 
+        "solution": "<p>L\u2019en-te\u0302te content-language est renseigne\u0301 selon la ou les langues du public cible du document sous la forme content-language : fr, en<br>La syntaxe utilise\u0301e est de\u0301finie par la norme RFC3066 sous la forme :<br>D\u2019un code de langue ISO639,<br>Suivi si ne\u0301cessaire, apre\u0300s un tiret, par un code de pays ISO3166 tel que : fr-CA.</p>", 
         "thema": "Serveur et Performances", 
         "name": "146"
     }, 
@@ -58,18 +22,6 @@
         "solution": "<p>Utiliser et renseigner l'\u00e9l\u00e9ment HTML <code>caption</code> pour chaque tableau de donn\u00e9es.</p><p>Le cas \u00e9ch\u00e9ant, recourir \u00e0 un \u00e9l\u00e9ment <code>caption</code> masqu\u00e9 \u00e0 l'affichage.</p>", 
         "thema": "Tableaux", 
         "name": "147"
-    }, 
-    "705": {
-        "goal": "<p>Permettre la consultation sur les t\u00e9l\u00e9phones mobiles et smartphones (ce qui ne se limite pas \u00e0 l'iPhone).</p>", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Le site propose une ou plusieurs feuilles de style d\u00e9di\u00e9es aux terminaux mobiles.", 
-        "solution": "<p>Fournir une feuille de style sp\u00e9cifique pour le type de media handheld.</p>", 
-        "thema": "Pr\u00e9sentation", 
-        "name": "206"
     }, 
     "651": {
         "goal": "<p>Fournir un contenu compr\u00e9hensible aux utilisateurs dont l'agent utilisateur ou l'aide technique (lecteur d'\u00e9cran) ne permet pas de restituer la mise en forme initialement pr\u00e9vue \u00e0 l'aide d'un tableau.</p>", 
@@ -359,17 +311,17 @@
         "thema": "Formulaires", 
         "name": "185"
     }, 
-    "557": {
-        "goal": "<p>Permettre la navigation au clavier ou via des p\u00e9riph\u00e9riques d'entr\u00e9es ou des dispositifs qui ne reposent pas sur la souris.</p>", 
+    "690": {
+        "goal": "<p>Mettre \u00e0 disposition des informations synth\u00e9tiques et lisibles par les machines sur l'ensemble des contenus propos\u00e9s.</p><p>Le fichier sitemap permet d'indiquer aux moteurs majeurs l'int\u00e9gralit\u00e9 des contenus \u00e0 indexer. L'int\u00e9r\u00eat premier est pour les sites tr\u00e8s profonds comme les catalogues en ligne avec plusieurs milliers de produits ou encore des sites dont le contenu est difficilement accessible lin\u00e9airement comme des encyclop\u00e9dies.</p><p>L'int\u00e9r\u00eat pour un site de quelques pages est faible voire inexistant, mais la pr\u00e9sence du fichier ne sera pas p\u00e9nalisante.</p>", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
-        "description": "Le focus clavier n'est ni supprim\u00e9 ni masqu\u00e9.", 
-        "solution": "<p>Veiller \u00e0 ne pas masquer ou supprimer l'effet visuel de prise de focus qui indique quel est l'\u00e9l\u00e9ment atteint lors de la navigation au clavier. En particulier, ne pas annuler la valeur par d\u00e9faut de la propri\u00e9t\u00e9 CSS <code>outline</code>.</p><p>Ne pas supprimer via Javascript la prise de focus clavier (exploitation de l'\u00e9v\u00e9nement <code>onblur</code>).</p>", 
-        "thema": "Navigation", 
-        "name": "58"
+        "description": "Le site propose un fichier sitemap indiquant les contenus \u00e0 explorer.", 
+        "solution": "<p>Cr\u00e9er un fichier <code>sitemap.xml</code> contenant la liste des pages du site \u00e0 la racine du site. \u00c0 d\u00e9faut de respecter le format XML, une simple liste d'URL est accept\u00e9e par les moteurs.</p>", 
+        "thema": "Identification", 
+        "name": "191"
     }, 
     "558": {
         "goal": "<p>Permettre \u00e0 l&apos;utilisateur d'anticiper le r\u00e9sultat de l'activation d'un lien.</p><p>\u00c9viter aux utilisateurs d'aides techniques d'\u00eatre d\u00e9sorient\u00e9s par l'ouverture d'une nouvelle fen\u00eatre qui n'est pas toujours perceptible et perturbe notamment l'utilisation de l'historique de navigation.</p>", 
@@ -419,18 +371,6 @@
         "thema": "Navigation", 
         "name": "197"
     }, 
-    "690": {
-        "goal": "<p>Mettre \u00e0 disposition des informations synth\u00e9tiques et lisibles par les machines sur l'ensemble des contenus propos\u00e9s.</p><p>Le fichier sitemap permet d'indiquer aux moteurs majeurs l'int\u00e9gralit\u00e9 des contenus \u00e0 indexer. L'int\u00e9r\u00eat premier est pour les sites tr\u00e8s profonds comme les catalogues en ligne avec plusieurs milliers de produits ou encore des sites dont le contenu est difficilement accessible lin\u00e9airement comme des encyclop\u00e9dies.</p><p>L'int\u00e9r\u00eat pour un site de quelques pages est faible voire inexistant, mais la pr\u00e9sence du fichier ne sera pas p\u00e9nalisante.</p>", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Le site propose un fichier sitemap indiquant les contenus \u00e0 explorer.", 
-        "solution": "<p>Cr\u00e9er un fichier <code>sitemap.xml</code> contenant la liste des pages du site \u00e0 la racine du site. \u00c0 d\u00e9faut de respecter le format XML, une simple liste d'URL est accept\u00e9e par les moteurs.</p>", 
-        "thema": "Identification", 
-        "name": "191"
-    }, 
     "574": {
         "goal": "<p>Permettre au navigateur de choisir le bon encodage des caract\u00e8res pour afficher la page.</p>", 
         "checklist": {
@@ -455,18 +395,6 @@
         "thema": "Serveur et Performances", 
         "name": "76"
     }, 
-    "576": {
-        "goal": "<p>Permettre aux utilisateurs de rejoindre la page d'accueil du site m\u00eame lorsqu'ils oublient de taper le pr\u00e9fixe www.</p>", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "L'adresse du site et de ses sous-domaines fonctionnent avec ou sans pr\u00e9fixe www.", 
-        "solution": "<p>Configurer le serveur de fa\u00e7on \u00e0 ce qu'il g\u00e8re les adresses sans www (acheminement).</p>", 
-        "thema": "Serveur et Performances", 
-        "name": "77"
-    }, 
     "577": {
         "goal": "<p>Informer l'utilisateur sur l'erreur rencontr\u00e9e, sur la continuit\u00e9 de fonctionnement du serveur et lever le doute sur un \u00e9ventuel probl\u00e8me li\u00e9 \u00e0 sa connexion.</p>", 
         "checklist": {
@@ -478,18 +406,6 @@
         "solution": "<p>Modifier la configuration du serveur web pour renvoyer l'utilisateur vers une page personnalis\u00e9e lorsque la ressource demand\u00e9e n'existe pas.</p><p>Si la configuration principale du serveur n'est pas directement accessible et si l'environnement le permet, utiliser une configuration locale par r\u00e9pertoire. Par exemple, l'environnement Apache autorise la cr\u00e9ation d'un fichier <code>.htaccess</code> contenant des directives relatives aux traitements des erreurs : <code>ErrorDocument 404 /mapage.html</code>.</p>", 
         "thema": "Serveur et Performances", 
         "name": "78"
-    }, 
-    "578": {
-        "goal": "<p>Permettre la d\u00e9tection automatis\u00e9e des URL erron\u00e9es.</p><p>Transmettre au navigateur une information s\u00fbre.</p>", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Le serveur envoie un code http 404 pour les ressources non trouv\u00e9es.", 
-        "solution": "<p>Modifier la configuration du serveur web pour renvoyer l'utilisateur vers une page personnalis\u00e9e lorsque la ressource demand\u00e9e n'existe pas.</p><p>Si la configuration principale du serveur n'est pas directement accessible et si l'environnement le permet, utiliser une configuration locale par r\u00e9pertoire. Par exemple, l'environnement Apache autorise la cr\u00e9ation d'un fichier <code>.htaccess</code> contenant des directives relatives aux traitements des erreurs : <code>ErrorDocument 404 /mapage.html</code>.</p>", 
-        "thema": "Serveur et Performances", 
-        "name": "79"
     }, 
     "579": {
         "goal": "<p>Am\u00e9liorer la vitesse de rendu de la page.</p><p>Diminuer les co\u00fbts de bande passante.</p>", 
@@ -659,18 +575,6 @@
         "thema": "Fichiers et multim\u00e9dia", 
         "name": "177"
     }, 
-    "702": {
-        "goal": "<p>Am\u00e9liorer la lisibilit\u00e9 des contenus.</p><p>Limiter la charge mentale demand\u00e9e aux utilisateurs du site.</p>", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Le nombre de polices utilis\u00e9es sur le site est inf\u00e9rieur ou \u00e9gal \u00e0 trois (sauf pr\u00e9sentation de travaux ou produits graphiques).", 
-        "solution": "<p>Limiter le nombre de polices de caract\u00e8res utilis\u00e9es \u00e0 trois.</p>", 
-        "thema": "Pr\u00e9sentation", 
-        "name": "203"
-    }, 
     "613": {
         "goal": "<p>\u00c9viter le t\u00e9l\u00e9chargement de donn\u00e9es inutiles pour permettre la consultation imm\u00e9diate du contenu.</p><p>Am\u00e9liorer les performances.</p>", 
         "checklist": {
@@ -755,30 +659,6 @@
         "thema": "Formulaires", 
         "name": "180"
     }, 
-    "620": {
-        "goal": "<p>Limiter les difficult\u00e9s \u00e0 cliquer sur un lien lorsque celui-ci occupe plus d'espace en mode survol\u00e9 ou activ\u00e9.</p><p>Limiter les effets de clignotement ou de d\u00e9placement de contenus lors du survol d'un lien ou de sa prise de focus clavier.</p>", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Le survol ou l'activation des hyperliens ne modifie pas la mise en page.", 
-        "solution": "<p>Afin de ne pas perturber la mise en forme, il est recommand\u00e9 d'utiliser le m\u00eame m\u00e9canisme de mise en valeur, autre que par la couleur, \u00e0 tous les \u00e9tats possibles d'un lien : actif, visit\u00e9, non visit\u00e9, survol\u00e9. Il convient donc d'\u00e9viter par exemple au survol de mettre en gras ou d'encadrer d'une bordure un lien en graisse normale ou sans bordure par d\u00e9faut.</p>", 
-        "thema": "Hyperliens", 
-        "name": "121"
-    }, 
-    "715": {
-        "goal": "<p>Acc\u00e9l\u00e9rer la vitesse d'affichage des pages.</p><p>Am\u00e9liorer les performances.</p><p>Diminuer la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger.</p>", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Les scripts sont minifi\u00e9s.", 
-        "solution": "<p>Supprimer les espaces non n\u00e9cessaires ainsi que les commentaires dans les fichiers Javascript, en recourant par exemple \u00e0 des outils tels que Compressor (<a href=\"http://developer.yahoo.com/yui/compressor/\">http://developer.yahoo.com/yui/compressor/</a>) ou JSmin (<a href=\"http://crockford.com/javascript/jsmin\">http://crockford.com/javascript/jsmin</a>).</p>", 
-        "thema": "Serveur et Performances", 
-        "name": "216"
-    }, 
     "622": {
         "goal": "<p>\u00c9viter les erreurs 404 en cours de navigation.</p><p>Faciliter un acc\u00e8s rapide \u00e0 tous les contenus.</p>", 
         "checklist": {
@@ -862,42 +742,6 @@
         "solution": "<p>Structurer le document en titres et sous-titres \u00e0 l'aide des \u00e9l\u00e9ments HTML H1 \u00e0 H6. </p><p>Veiller \u00e0 ce que la structure ne comporte pas de \u00ab trous \u00bb&nbsp;: un titre de niveau H2 ne doit pas \u00eatre suivi d'un titre H4, H5 ou H6, par exemple.</p><p>Veiller \u00e0 ce que chaque page comporte au moins un titre de niveau&nbsp;1 avec l'\u00e9l\u00e9ment H1.</p>", 
         "thema": "Code", 
         "name": "3"
-    }, 
-    "503": {
-        "goal": "<p>Permettre aux utilisateurs de conserver la ma\u00eetrise de leur environnement de travail.</p><p>\u00c9viter des coupures ou des pertes d'information en cours de lecture, notamment pour les utilisateurs \u00e9quip\u00e9s de lecteurs d'\u00e9cran qu'un rafra\u00eechissement ou une redirection temporis\u00e9e interromprait lors de la consultation.</p>", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Le site n'impose pas de redirection ou de rafra\u00eechissement automatique c\u00f4t\u00e9 client.", 
-        "solution": "<p>Ne pas utiliser l'\u00e9l\u00e9ment META <code>http-equiv=&quot;refresh&quot;</code>.</p><p>Fournir \u00e0 l'utilisateur un moyen de d\u00e9sactiver les \u00e9ventuels rafra\u00eechissements automatiques et les redirections cr\u00e9\u00e9es&nbsp;: </p><ul>\n<li>En Javascript ;</li>\n\t\t\t\t\t<li>Via un \u00e9l\u00e9ment <code>object</code>, <code>embed</code> ou <code>applet</code> ;</li>\n\t\t\t\t\t<li>Via un en-t\u00eate HTTP refresh.</li>\n\t\t\t\t</ul>", 
-        "thema": "Code", 
-        "name": "4"
-    }, 
-    "504": {
-        "goal": "<p>Garantir l'acc\u00e8s au contenu ind\u00e9pendamment de la prise en compte de la couche de mise en forme CSS.</p><p>Permettre la r\u00e9utilisation du contenu sur des m\u00e9dias ou des supports qui ne prennent pas en charge la mise en forme pour l'affichage \u00e0 l'\u00e9cran.</p><p>Assurer une s\u00e9mantique des contenus suffisante pour favoriser notamment leur indexation.</p>", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Les styles ne sont pas utilis\u00e9s pour g\u00e9n\u00e9rer du contenu.", 
-        "solution": "<p>Ne pas utiliser les propri\u00e9t\u00e9s CSS <code>background</code>, <code>background-image</code> ou <code>content</code> ni les pseudos-\u00e9l\u00e9ments <code>:before</code> et <code>:after</code> pour g\u00e9n\u00e9rer une information qui est absente du contenu HTML.</p>", 
-        "thema": "Code", 
-        "name": "5"
-    }, 
-    "639": {
-        "goal": "<p>Permettre l'impression des contenus sous une forme appropri\u00e9eau support.</p>", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Le site propose au moins une feuille de styles d\u00e9di\u00e9e \u00e0 l'impression.", 
-        "solution": "<p>Fournir une feuille de style sp\u00e9cifique pour le type de media print, par exemple sous la forme : &lt;<code>link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;print.css&quot; media=&quot;print&quot; /&gt;</code>.</p><p>Les styles d'impression peuvent corriger une feuille de style globale (feuille de style pour le media all ou sans mention du media) ou bien s'appliquer seuls pour le media print si la feuille de style d'affichage est appel\u00e9e en pr\u00e9cisant le media print.</p>", 
-        "thema": "Pr\u00e9sentation", 
-        "name": "140"
     }, 
     "508": {
         "goal": "<p>Permettre aux utilisateurs d'identifier imm\u00e9diatement la nature des contenus de chaque page dans les onglets, les favoris, dans la fen\u00eatre du navigateur ou encore dans les lecteurs d'\u00e9cran. </p><p>Am\u00e9liorer le r\u00e9f\u00e9rencement des pages et leur pr\u00e9sentation dans les moteurs de recherche.</p>", 

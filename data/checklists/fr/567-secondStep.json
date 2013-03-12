@@ -3,10 +3,10 @@
         "goal": "", 
         "checklist": {
             "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
+            "name": "Second pas vers WCAG 2.0 : risques"
         }, 
         "explanation": "", 
-        "description": "Use with caution a shorter title attribute than the textual content of an a element", 
+        "description": "Utiliser avec pr\u00e9caution un attribut title dont la valeur est plus courte que le contenu de l'\u00e9l\u00e9ment a", 
         "solution": "", 
         "thema": "HTML", 
         "name": "5"
@@ -15,10 +15,10 @@
         "goal": "Permettre \u00e0 l'utilisateur de pr\u00e9voir le comportement des liens qui ouvrent une nouvelle fen\u00eatre.", 
         "checklist": {
             "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
+            "name": "Second pas vers WCAG 2.0 : risques"
         }, 
         "explanation": "", 
-        "description": "Use with caution the target attribute with a _blank value for an a element", 
+        "description": "Utiliser avec pr\u00e9caution l'attribut target avec la valeur _blank pour l'\u00e9l\u00e9ment a", 
         "solution": "Ne pas utiliser l'attribut target ou&nbsp;: \r\nIndiquer le comportement du lien dans le libell\u00e9 du lien (contenu de l'\u00e9l\u00e9ment &lt;a&gt;) ou dans l'attribut title.\r\nExemple : &lt;a href=\"http://www.google.fr\" target=\"_blank\"&gt;Site de google (nouvelle fen\u00eatre)&lt;/a&gt;\r\nExemple : &lt;a href=\" http://www.google.fr\" target=\"_blank\" title=\"Site de google (nouvelle fen\u00eatre)\"&gt;Site de google&lt;/a&gt;\r\nAvertissement&nbsp;: le contenu de l'attribut title doit reprendre \u00e9galement le libell\u00e9 du lien. (exemple incorrect&nbsp;: &lt;a href=\" http://www.google.fr\" target=\"_blank\" title=\"nouvelle fen\u00eatre\"&gt;Site de google&lt;/a&gt;)", 
         "thema": "HTML", 
         "name": "3"
@@ -27,10 +27,10 @@
         "goal": "", 
         "checklist": {
             "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
+            "name": "Second pas vers WCAG 2.0 : risques"
         }, 
         "explanation": "", 
-        "description": "Use with caution the same content for different label elements in the same fieldset element", 
+        "description": "Utiliser avec pr\u00e9caution un contenu d'\u00e9l\u00e9ment label identique pour plusieurs \u00e9l\u00e9ments label dans le m\u00eame fieldset", 
         "solution": "", 
         "thema": "HTML", 
         "name": "24"
@@ -39,10 +39,10 @@
         "goal": "Permettre \u00e0 l'utilisateur de pr\u00e9voir le comportement des liens qui ouvrent une nouvelle fen\u00eatre.", 
         "checklist": {
             "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
+            "name": "Second pas vers WCAG 2.0 : risques"
         }, 
         "explanation": "", 
-        "description": "Use with caution the target attribute with a _blank value for an area element", 
+        "description": "Utiliser avec pr\u00e9caution l'attribut target avec la valeur _blank pour l'\u00e9l\u00e9ment area", 
         "solution": "Ne pas utiliser l'attribut target _blank ou&nbsp;indiquer l'ouverture dans une nouvelle fen\u00eatre dans le contenu de l'attribut alt associ\u00e9 \u00e0 l'\u00e9l\u00e9ment area. Exemple : &lt;area alt='France \u2013 nouvelle fen\u00eatre'&gt;&lt;/area&gt;", 
         "thema": "HTML", 
         "name": "4"
@@ -51,34 +51,22 @@
         "goal": "", 
         "checklist": {
             "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
+            "name": "Second pas vers WCAG 2.0 : risques"
         }, 
         "explanation": "", 
-        "description": "Use with caution the td element when all the cells in a column contain bold text", 
+        "description": "Utiliser avec pr\u00e9caution les \u00e9l\u00e9ments td quand l'ensemble des cellules d'une colonne contient du texte en gras", 
         "solution": "", 
         "thema": "HTML", 
         "name": "13"
-    }, 
-    "19214": {
-        "goal": "", 
-        "checklist": {
-            "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
-        }, 
-        "explanation": "", 
-        "description": "Use with caution the direction property", 
-        "solution": "", 
-        "thema": "CSS", 
-        "name": "27"
     }, 
     "19088": {
         "goal": "Permettre aux utilisateurs de distinguer les diff\u00e9rents tableaux de donn\u00e9es pr\u00e9sents dans une page.", 
         "checklist": {
             "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
+            "name": "Second pas vers WCAG 2.0 : risques"
         }, 
         "explanation": "", 
-        "description": "Use with caution the same content for multiple caption elements", 
+        "description": "Utiliser avec pr\u00e9caution des contenus identiques pour plusieurs \u00e9l\u00e9ments caption", 
         "solution": "Mettre un contenu diff\u00e9rent pour chaque \u00e9l\u00e9ment caption d'un tableau de donn\u00e9es.", 
         "thema": "HTML", 
         "name": "9"
@@ -87,10 +75,10 @@
         "goal": "Permettre la restitution de la nature des contenus (ici une liste) et de leurs caract\u00e9ristiques (ici le nombre d'item de cette liste) aux  utilisateurs qui ne per\u00e7oivent pas la mise en page originale.\r\nAinsi, la transmission uniquement visuelle d'une information s\u00e9mantique est \u00e9vit\u00e9e.", 
         "checklist": {
             "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
+            "name": "Second pas vers WCAG 2.0 : risques"
         }, 
         "explanation": "", 
-        "description": "Use with caution successive div elements whose contents start with -, \u2013, \u2014, * ou \u2022", 
+        "description": "Utiliser avec pr\u00e9caution des \u00e9l\u00e9ments div successifs commen\u00e7ant chacun leur contenu par -, \u2013, \u2014, * ou \u2022", 
         "solution": "Utiliser les \u00e9l\u00e9ments ul et li pour baliser les listes.", 
         "thema": "HTML", 
         "name": "1"
@@ -99,10 +87,10 @@
         "goal": "Permettre la restitution des \u00e9l\u00e9ments multim\u00e9dia au aides techniques.", 
         "checklist": {
             "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
+            "name": "Second pas vers WCAG 2.0 : risques"
         }, 
         "explanation": "", 
-        "description": "Use with caution a wmode attribute with a transparent or opaque value on an embed element", 
+        "description": "Utiliser avec pr\u00e9caution l'attribut wmode avec la valeur transparent ou opaque pour l'\u00e9l\u00e9ment embed", 
         "solution": "Lorsque le contenu de l'\u00e9l\u00e9ment embed doit pouvoir \u00eatre lu par une aide technique, utiliser la valeur \u201cwindow\u201c pour l'attribut wmode ou le supprimer. Lorsque le contenu est uniquement d\u00e9coratif vous pouvez laisser l'attribut wmode transparent ou opaque", 
         "thema": "HTML", 
         "name": "8"
@@ -111,10 +99,10 @@
         "goal": "Permettre \u00e0 l'utilisateur de pr\u00e9voir le comportement des formulaires qui ouvrent une nouvelle fen\u00eatre.", 
         "checklist": {
             "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
+            "name": "Second pas vers WCAG 2.0 : risques"
         }, 
         "explanation": "", 
-        "description": "Use with caution a target attribute with a _blank value for a form element", 
+        "description": "Utiliser avec pr\u00e9caution l'attribut target avec la valeur _blank pour l'\u00e9l\u00e9ment form", 
         "solution": "Ne pas utiliser l'attribut target _blank ou&nbsp;indiquer textuellement l'ouverture dans une nouvelle fen\u00eatre dans le formulaire ou sur le bouton permettant de valider le formulaire. Exemple&nbsp;: &lt;input type='submit' value='ok' title='Valider la recherche \u2013 nouvelle fen\u00eatre' /&gt;", 
         "thema": "HTML", 
         "name": "15"
@@ -123,10 +111,10 @@
         "goal": "Permettre d'\u00e9viter la redondance lorsqu'un lien est compos\u00e9 \u00e0 la fois de texte et d'une image.", 
         "checklist": {
             "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
+            "name": "Second pas vers WCAG 2.0 : risques"
         }, 
         "explanation": "", 
-        "description": "Use with caution a non-empty alt attribute on an img element which is a descendant of a element containing text", 
+        "description": "Utiliser avec pr\u00e9caution un attribut alt non vide sur les \u00e9l\u00e9ments img descendant d'\u00e9l\u00e9ments a qui contiennent \u00e9galement du texte", 
         "solution": "Mettre un alt=\"\" sur l'\u00e9l\u00e9ment img lorsque ce dernier est inclus dans un lien textuel dont le libell\u00e9 permet d\u00e9j\u00e0 de conna\u00eetre la destination du lien.", 
         "thema": "HTML", 
         "name": "6"
@@ -135,10 +123,10 @@
         "goal": "Permettre l'association des champs de formulaire avec les \u00e9tiquettes qui les d\u00e9crivent.", 
         "checklist": {
             "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
+            "name": "Second pas vers WCAG 2.0 : risques"
         }, 
         "explanation": "", 
-        "description": "Use with caution the input type=checkbox element without an id attribute", 
+        "description": "Utiliser les \u00e9l\u00e9ments input de type checkbox sans attribut id avec pr\u00e9caution", 
         "solution": "Ajouter un attribut id sur l'\u00e9l\u00e9ment.", 
         "thema": "HTML", 
         "name": "17"
@@ -147,10 +135,10 @@
         "goal": "Permettre l'association des champs de formulaire avec les \u00e9tiquettes qui les d\u00e9crivent.", 
         "checklist": {
             "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
+            "name": "Second pas vers WCAG 2.0 : risques"
         }, 
         "explanation": "", 
-        "description": "Use with caution the input type=file element without an id attribute", 
+        "description": "Utiliser les \u00e9l\u00e9ments input de type file sans attribut id avec pr\u00e9caution", 
         "solution": "Ajouter un attribut id sur l'\u00e9l\u00e9ment.", 
         "thema": "HTML", 
         "name": "18"
@@ -159,10 +147,10 @@
         "goal": "Permettre l'association des champs de formulaire avec les \u00e9tiquettes qui les d\u00e9crivent.", 
         "checklist": {
             "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
+            "name": "Second pas vers WCAG 2.0 : risques"
         }, 
         "explanation": "", 
-        "description": "Use with caution the input type=password element without an id attribute", 
+        "description": "Utiliser les \u00e9l\u00e9ments input de type password sans attribut id avec pr\u00e9caution", 
         "solution": "Ajouter un attribut id sur l'\u00e9l\u00e9ment.", 
         "thema": "HTML", 
         "name": "19"
@@ -171,10 +159,10 @@
         "goal": "Permettre l'association des champs de formulaire avec les \u00e9tiquettes qui les d\u00e9crivent.", 
         "checklist": {
             "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
+            "name": "Second pas vers WCAG 2.0 : risques"
         }, 
         "explanation": "", 
-        "description": "Use with caution the input type=radio element without an id attribute", 
+        "description": "Utiliser les \u00e9l\u00e9ments input de type radio sans attribut id avec pr\u00e9caution", 
         "solution": "Ajouter un attribut id sur l'\u00e9l\u00e9ment.", 
         "thema": "HTML", 
         "name": "20"
@@ -183,10 +171,10 @@
         "goal": "Permettre l'association des champs de formulaire avec les \u00e9tiquettes qui les d\u00e9crivent.", 
         "checklist": {
             "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
+            "name": "Second pas vers WCAG 2.0 : risques"
         }, 
         "explanation": "", 
-        "description": "Use with caution the input type=text element without an id attribute", 
+        "description": "Utiliser les \u00e9l\u00e9ments input de type text sans attribut id avec pr\u00e9caution", 
         "solution": "Ajouter un attribut id sur l'\u00e9l\u00e9ment.", 
         "thema": "HTML", 
         "name": "21"
@@ -195,10 +183,10 @@
         "goal": "Permettre l'identification et la distinction des diff\u00e9rents groupes form\u00e9s dans les \u00e9l\u00e9ments de formulaire.", 
         "checklist": {
             "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
+            "name": "Second pas vers WCAG 2.0 : risques"
         }, 
         "explanation": "", 
-        "description": "Use with caution the same content for multiple legend elements", 
+        "description": "Utiliser avec pr\u00e9caution un contenu identique pour plusieurs \u00e9l\u00e9ments legend", 
         "solution": "D\u00e9terminer un titre diff\u00e9rent pour chaque groupe form\u00e9 dans les \u00e9l\u00e9ments de formulaire.", 
         "thema": "HTML", 
         "name": "16"
@@ -207,10 +195,10 @@
         "goal": "Permettre la restitution des \u00e9l\u00e9ments multim\u00e9dia au aides techniques.", 
         "checklist": {
             "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
+            "name": "Second pas vers WCAG 2.0 : risques"
         }, 
         "explanation": "", 
-        "description": "Use with caution a param element with a transparent or opaque value inside an object element", 
+        "description": "Utiliser avec pr\u00e9caution la valeur transparent ou opaque pour l'attribut param de l'\u00e9l\u00e9ment object", 
         "solution": "Lorsque le contenu de l'\u00e9l\u00e9ment object doit pouvoir \u00eatre lu par une aide technique, utiliser la valeur \u201cwindow\u201c pour le param\u00e8tre wmode ou le supprimer. Lorsque le contenu est uniquement d\u00e9coratif vous pouvez laisser l'attribut wmode transparent ou opaque", 
         "thema": "HTML", 
         "name": "7"
@@ -219,10 +207,10 @@
         "goal": "Permettre la restitution de la nature des contenus (ici une liste de d\u00e9finition) aux  utilisateurs qui ne per\u00e7oivent pas la mise en page originale.\r\nEviter l'utilisation d'\u00e9l\u00e9ment en fonction de la mani\u00e8re dont ils sont restitu\u00e9s visuellement.", 
         "checklist": {
             "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
+            "name": "Second pas vers WCAG 2.0 : risques"
         }, 
         "explanation": "", 
-        "description": "Use with caution successive p elements whose contents start with -, \u2013, \u2014, * ou \u2022", 
+        "description": "Utiliser avec pr\u00e9caution des \u00e9l\u00e9ments p successifs commen\u00e7ant chacun leur contenu par -, \u2013, \u2014, * ou \u2022", 
         "solution": "Utiliser les \u00e9l\u00e9ments ul et li pour baliser les listes.", 
         "thema": "HTML", 
         "name": "2"
@@ -231,10 +219,10 @@
         "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
         "checklist": {
             "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
+            "name": "Second pas vers WCAG 2.0 : risques"
         }, 
         "explanation": "", 
-        "description": "Use with caution the s element<br>", 
+        "description": "Utiliser l'\u00e9l\u00e9ment s avec pr\u00e9caution", 
         "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.", 
         "thema": "HTML", 
         "name": "25"
@@ -243,10 +231,10 @@
         "goal": "Permettre l'association des champs de formulaire avec les \u00e9tiquettes qui les d\u00e9crivent.", 
         "checklist": {
             "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
+            "name": "Second pas vers WCAG 2.0 : risques"
         }, 
         "explanation": "", 
-        "description": "Use with caution a select element without an id attribute", 
+        "description": "Utiliser les \u00e9l\u00e9ments select sans attribut id avec pr\u00e9caution", 
         "solution": "Ajouter un attribut id sur l'\u00e9l\u00e9ment.", 
         "thema": "HTML", 
         "name": "23"
@@ -255,10 +243,10 @@
         "goal": "Permettre l'identification des tableaux de donn\u00e9es et la restitution des contenus permettant de les caract\u00e9riser.", 
         "checklist": {
             "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
+            "name": "Second pas vers WCAG 2.0 : risques"
         }, 
         "explanation": "", 
-        "description": "Use with caution a table without a summary attribute when it contains a th or a caption element", 
+        "description": "Utiliser avec pr\u00e9caution les \u00e9l\u00e9ments table sans attribut summary et contenant au moins un \u00e9l\u00e9ment th ou un \u00e9l\u00e9ment caption", 
         "solution": "Ajouter l'attribut summary sur l'\u00e9l\u00e9ment table lorsqu'il s'agit d'un tableau de donn\u00e9es. Exemple&nbsp;: &lt;table summary='...&nbsp;'&gt;", 
         "thema": "HTML", 
         "name": "10"
@@ -267,10 +255,10 @@
         "goal": "Permettre aux utilisateurs de distinguer les donn\u00e9es fournies et la mani\u00e8re avec laquelle chaque tableau de donn\u00e9es est construit.", 
         "checklist": {
             "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
+            "name": "Second pas vers WCAG 2.0 : risques"
         }, 
         "explanation": "", 
-        "description": "Use with caution the same content for multiple summary attributes", 
+        "description": "Utiliser avec pr\u00e9caution des contenus identiques pour plusieurs attribut summary", 
         "solution": "D\u00e9crire les donn\u00e9es et la mani\u00e8re dont est construit chaque tableau de donn\u00e9es et ajouter cette description \u00e0 l'attribut summary des tableaux.", 
         "thema": "HTML", 
         "name": "11"
@@ -279,10 +267,10 @@
         "goal": "Permettre l'association des cellules avec leurs ent\u00eates dans les tableaux de donn\u00e9es.", 
         "checklist": {
             "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
+            "name": "Second pas vers WCAG 2.0 : risques"
         }, 
         "explanation": "", 
-        "description": "Use with caution an empty headers attribute on a td element", 
+        "description": "Utiliser l'attribut headers vide sur les \u00e9l\u00e9ments td avec pr\u00e9caution", 
         "solution": "Renseigner les attributs headers des \u00e9l\u00e9ments td avec les valeurs des attributs id des ent\u00eates associ\u00e9es.", 
         "thema": "HTML", 
         "name": "14"
@@ -291,10 +279,10 @@
         "goal": "Permettre l'association des champs de formulaire avec les \u00e9tiquettes qui les d\u00e9crivent.", 
         "checklist": {
             "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
+            "name": "Second pas vers WCAG 2.0 : risques"
         }, 
         "explanation": "", 
-        "description": "Use with caution a textarea element without an id attribute", 
+        "description": "Utiliser les \u00e9l\u00e9ments textarea sans attribut id avec pr\u00e9caution", 
         "solution": "Ajouter un attribut id sur l'\u00e9l\u00e9ment.", 
         "thema": "HTML", 
         "name": "22"
@@ -303,10 +291,10 @@
         "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
         "checklist": {
             "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
+            "name": "Second pas vers WCAG 2.0 : risques"
         }, 
         "explanation": "", 
-        "description": "Use with caution the u element", 
+        "description": "Utiliser l'\u00e9l\u00e9ment u avec pr\u00e9caution", 
         "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.", 
         "thema": "HTML", 
         "name": "26"
@@ -315,10 +303,10 @@
         "goal": "Permettre un comportement \u00e9quivalent et/ou l'acc\u00e8s \u00e0 une information \u00e9quivalente quel que soit le p\u00e9riph\u00e9rique d'entr\u00e9e des utilisateurs", 
         "checklist": {
             "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
+            "name": "Second pas vers WCAG 2.0 : risques"
         }, 
         "explanation": "", 
-        "description": "Use with caution the onblur event handler when you don't use the onmouseout event handler", 
+        "description": "Utiliser avec pr\u00e9caution le gestionnaire d'\u00e9v\u00e9nement onblur lorsque vous n'utilisez pas le gestionnaire d'\u00e9v\u00e9nement onmouseout", 
         "solution": "Lors de l'utilisation de l'\u00e9v\u00e9nement onblur, inclure un comportement \u00e9quivalent sur l'\u00e9v\u00e9nement onmouseout ou pr\u00e9voir un autre \u00e9l\u00e9ment permettant de r\u00e9aliser la m\u00eame action via la souris", 
         "thema": "JS", 
         "name": "33"
@@ -327,10 +315,10 @@
         "goal": "Eviter aux utilisateurs un changement de contexte sans validation explicite de leur part.", 
         "checklist": {
             "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
+            "name": "Second pas vers WCAG 2.0 : risques"
         }, 
         "explanation": "", 
-        "description": "Use with caution the onblur event handler to trigger the submit method", 
+        "description": "Utiliser avec pr\u00e9caution le gestionnaire d'\u00e9v\u00e9nement onblur pour d\u00e9clencher la m\u00e9thode submit", 
         "solution": "Pr\u00e9voir un bouton de validation explicite que l'utilisateur devra d\u00e9clencher \u00e0 cette fin pour soumettre un formulaire.\r\nAlternativement, il est possible d'informer au pr\u00e9alable les utilisateurs de ce comportement.", 
         "thema": "JS", 
         "name": "34"
@@ -339,10 +327,10 @@
         "goal": "Eviter aux utilisateurs un changement de contexte sans validation explicite de leur part.", 
         "checklist": {
             "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
+            "name": "Second pas vers WCAG 2.0 : risques"
         }, 
         "explanation": "", 
-        "description": "Use with caution the onchange event handler to trigger the submit method", 
+        "description": "Utiliser avec pr\u00e9caution le gestionnaire d'\u00e9v\u00e9nement onchange pour d\u00e9clencher la m\u00e9thode submit", 
         "solution": "Pr\u00e9voir un bouton de validation explicite que l'utilisateur devra d\u00e9clencher \u00e0 cette fin pour soumettre un formulaire.\r\nAlternativement, il est possible d'informer au pr\u00e9alable les utilisateurs de ce comportement.", 
         "thema": "JS", 
         "name": "35"
@@ -351,10 +339,10 @@
         "goal": "Eviter aux utilisateurs un changement de contexte sans validation explicite de leur part.", 
         "checklist": {
             "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
+            "name": "Second pas vers WCAG 2.0 : risques"
         }, 
         "explanation": "", 
-        "description": "Use with caution the onchange event handler with the location object", 
+        "description": "Utiliser avec pr\u00e9caution le gestionnaire d'\u00e9v\u00e9nement onchange avec l'objet location", 
         "solution": "Pr\u00e9voir un bouton de validation explicite que l'utilisateur devra d\u00e9clencher \u00e0 cette fin pour valider le changement de contexte.\r\nAlternativement, il est possible d'informer au pr\u00e9alable les utilisateurs de ce comportement", 
         "thema": "JS", 
         "name": "36"
@@ -363,10 +351,10 @@
         "goal": "Permettre aux utilisateurs de percevoir la nature interactive des \u00e9l\u00e9ments et de d\u00e9clencher les interactions quel que soit leur p\u00e9riph\u00e9rique d'entr\u00e9e.", 
         "checklist": {
             "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
+            "name": "Second pas vers WCAG 2.0 : risques"
         }, 
         "explanation": "", 
-        "description": "Use with caution the onclick event handler on elements other than a, area, button, select, textarea or input", 
+        "description": "Utiliser avec pr\u00e9caution l'\u00e9v\u00e9nement onclick sur les \u00e9l\u00e9ments autre que a, area, button, select, textarea ou input", 
         "solution": "Ne pas utiliser d'\u00e9v\u00e9nement onclick ou alors seulement sur les \u00e9l\u00e9ments a, button, select, textarea ou input.", 
         "thema": "JS", 
         "name": "37"
@@ -375,10 +363,10 @@
         "goal": "Eviter aux utilisateurs l'obligation de poss\u00e9der un p\u00e9riph\u00e9rique de pointage tel que la souris et d'avoir la capacit\u00e9 \u00e0 double cliquer pour interagir avec le site.", 
         "checklist": {
             "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
+            "name": "Second pas vers WCAG 2.0 : risques"
         }, 
         "explanation": "", 
-        "description": "Use with caution the ondblclick event handler", 
+        "description": "Utiliser le gestionnaire d'\u00e9v\u00e9nement ondblclick avec pr\u00e9caution", 
         "solution": "Ne pas utiliser l'\u00e9v\u00e8nement ondbclick ou fournir un moyen d'effectuer la m\u00eame action d'une mani\u00e8re ind\u00e9pendante du p\u00e9riph\u00e9rique d'entr\u00e9e.", 
         "thema": "JS", 
         "name": "38"
@@ -387,10 +375,10 @@
         "goal": "Permettre un comportement \u00e9quivalent et/ou l'acc\u00e8s \u00e0 une information \u00e9quivalente quel que soit le p\u00e9riph\u00e9rique d'entr\u00e9e des utilisateurs", 
         "checklist": {
             "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
+            "name": "Second pas vers WCAG 2.0 : risques"
         }, 
         "explanation": "", 
-        "description": "Use with caution the onfocus event handler when you don't use the onmouseover event handler", 
+        "description": "Utiliser avec pr\u00e9caution le gestionnaire d'\u00e9v\u00e9nement onfocus lorsque vous n'utilisez pas le gestionnaire d'\u00e9v\u00e9nement onmouseover", 
         "solution": "Lors de l'utilisation de l'\u00e9v\u00e9nement onfocus, inclure un comportement \u00e9quivalent sur l'\u00e9v\u00e9nement onmouseover ou pr\u00e9voir un autre \u00e9l\u00e9ment permettant de r\u00e9aliser la m\u00eame action via la souris", 
         "thema": "JS", 
         "name": "39"
@@ -399,10 +387,10 @@
         "goal": "Conserver le focus sur les \u00e9l\u00e9ments le recevant.", 
         "checklist": {
             "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
+            "name": "Second pas vers WCAG 2.0 : risques"
         }, 
         "explanation": "", 
-        "description": "Use with caution the onfocus event handler to trigger the blur method", 
+        "description": "Utiliser avec pr\u00e9caution le gestionnaire d'\u00e9v\u00e9nement onfocus pour d\u00e9clencher la m\u00e9thode blur", 
         "solution": "Supprimer l'appel \u00e0 la m\u00e9thode blur().", 
         "thema": "JS", 
         "name": "40"
@@ -411,10 +399,10 @@
         "goal": "Eviter aux utilisateurs un changement de contexte sans validation explicite de leur part.", 
         "checklist": {
             "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
+            "name": "Second pas vers WCAG 2.0 : risques"
         }, 
         "explanation": "", 
-        "description": "Use with caution the onfocus event handler to trigger the submit method", 
+        "description": "Utiliser avec pr\u00e9caution le gestionnaire d'\u00e9v\u00e9nement onfocus pour d\u00e9clencher la m\u00e9thode submit", 
         "solution": "Pr\u00e9voir un bouton de validation explicite que l'utilisateur devra d\u00e9clencher \u00e0 cette fin pour soumettre un formulaire.\r\nAlternativement, il est possible d'informer au pr\u00e9alable les utilisateurs de ce comportement.", 
         "thema": "JS", 
         "name": "41"
@@ -423,10 +411,10 @@
         "goal": "Permettre un comportement \u00e9quivalent et/ou l'acc\u00e8s \u00e0 une information \u00e9quivalente quel que soit le p\u00e9riph\u00e9rique d'entr\u00e9e des utilisateurs", 
         "checklist": {
             "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
+            "name": "Second pas vers WCAG 2.0 : risques"
         }, 
         "explanation": "", 
-        "description": "Use with caution the onmouseout event handler when you don't use the onblur event handler", 
+        "description": "Utiliser avec pr\u00e9caution le gestionnaire d'\u00e9v\u00e9nement onmouseout lorsque vous n'utilisez pas le gestionnaire d'\u00e9v\u00e9nement onblur", 
         "solution": "Lors de l'utilisation de l'\u00e9v\u00e9nement onmouseout, inclure un comportement \u00e9quivalent sur l'\u00e9v\u00e9nement onblur  ou pr\u00e9voir un autre \u00e9l\u00e9ment permettant de r\u00e9aliser la m\u00eame action via le clavier", 
         "thema": "JS", 
         "name": "42"
@@ -435,10 +423,10 @@
         "goal": "Eviter aux utilisateurs un changement de contexte sans validation explicite de leur part.", 
         "checklist": {
             "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
+            "name": "Second pas vers WCAG 2.0 : risques"
         }, 
         "explanation": "", 
-        "description": "Use with caution the onmouseout event handler to trigger the submit method", 
+        "description": "Utiliser avec pr\u00e9caution le gestionnaire d'\u00e9v\u00e9nement onmouseout pour d\u00e9clencher la m\u00e9thode submit", 
         "solution": "Pr\u00e9voir un bouton de validation explicite que l'utilisateur devra d\u00e9clencher \u00e0 cette fin pour soumettre un formulaire.\r\nAlternativement, il est possible d'informer au pr\u00e9alable les utilisateurs de ce comportement.", 
         "thema": "JS", 
         "name": "43"
@@ -447,10 +435,10 @@
         "goal": "Eviter aux utilisateurs un changement de contexte sans validation explicite de leur part.", 
         "checklist": {
             "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
+            "name": "Second pas vers WCAG 2.0 : risques"
         }, 
         "explanation": "", 
-        "description": "Use with caution the onmouseover event handler to trigger the submit method", 
+        "description": "Utiliser avec pr\u00e9caution le gestionnaire d'\u00e9v\u00e9nement onmouseover pour d\u00e9clencher la m\u00e9thode submit", 
         "solution": "Pr\u00e9voir un bouton de validation explicite que l'utilisateur devra d\u00e9clencher \u00e0 cette fin pour soumettre un formulaire.\r\nAlternativement, il est possible d'informer au pr\u00e9alable les utilisateurs de ce comportement.", 
         "thema": "JS", 
         "name": "44"
@@ -459,10 +447,10 @@
         "goal": "Permettre un comportement \u00e9quivalent et/ou l'acc\u00e8s \u00e0 une information \u00e9quivalente quel que soit le p\u00e9riph\u00e9rique d'entr\u00e9e des utilisateurs", 
         "checklist": {
             "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
+            "name": "Second pas vers WCAG 2.0 : risques"
         }, 
         "explanation": "", 
-        "description": "Use with caution the onmouseover event handler when you don't use the onfocus event handler", 
+        "description": "Utiliser avec pr\u00e9caution le gestionnaire d'\u00e9v\u00e9nement onmouseover lorsque vous n'utilisez pas le gestionnaire d'\u00e9v\u00e9nement onfocus", 
         "solution": "Lors de l'utilisation de l'\u00e9v\u00e9nement onmouseover, inclure un comportement \u00e9quivalent sur l'\u00e9v\u00e9nement onfocus ou pr\u00e9voir un autre \u00e9l\u00e9ment permettant de r\u00e9aliser la m\u00eame action via le clavier", 
         "thema": "JS", 
         "name": "45"
@@ -471,120 +459,24 @@
         "goal": "Eviter aux utilisateurs l'obligation de poss\u00e9der un p\u00e9riph\u00e9rique de pointage tel que la souris et d'avoir la capacit\u00e9 de scroller pour interagir avec le site ou avoir acc\u00e8s \u00e0 une information.", 
         "checklist": {
             "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
+            "name": "Second pas vers WCAG 2.0 : risques"
         }, 
         "explanation": "", 
-        "description": "Use with caution the onscroll event handler", 
+        "description": "Utiliser le gestionnaire d'\u00e9v\u00e9nement onscroll avec pr\u00e9caution", 
         "solution": "Ne pas utiliser l'\u00e9v\u00e8nement onscroll ou fournir un moyen d'effectuer la m\u00eame action d'une mani\u00e8re ind\u00e9pendante du p\u00e9riph\u00e9rique d'entr\u00e9e.", 
         "thema": "JS", 
         "name": "46"
-    }, 
-    "19185": {
-        "goal": "Eviter aux utilisateurs tout \u00e9v\u00e9nement d\u00e9clench\u00e9 automatiquement au bout d'un certain temps.", 
-        "checklist": {
-            "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
-        }, 
-        "explanation": "", 
-        "description": "Use with caution the setTimeout method", 
-        "solution": "Ne pas utiliser cette m\u00e9thode ou lui laisser la possibilit\u00e9 de mettre en pause ou de d\u00e9terminer le temps au bout duquel l'\u00e9v\u00e9nement sera d\u00e9clench\u00e9.", 
-        "thema": "JS", 
-        "name": "47"
-    }, 
-    "19186": {
-        "goal": "Eviter aux utilisateurs tout \u00e9v\u00e9nement r\u00e9p\u00e9t\u00e9 automatiquement.", 
-        "checklist": {
-            "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
-        }, 
-        "explanation": "", 
-        "description": "Use with caution the setInterval method", 
-        "solution": "Ne pas utiliser cette m\u00e9thode ou  lui laisser la possibilit\u00e9 de mettre en pause ou de d\u00e9terminer le temps au bout duquel l'\u00e9v\u00e9nement sera r\u00e9p\u00e9t\u00e9.", 
-        "thema": "JS", 
-        "name": "48"
-    }, 
-    "19187": {
-        "goal": "Permettre \u00e0 l'utilisateur de pr\u00e9voir le comportement des actions qui ouvrent une nouvelle fen\u00eatre.", 
-        "checklist": {
-            "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
-        }, 
-        "explanation": "", 
-        "description": "Use with caution the window.open method", 
-        "solution": "Ne pas utiliser cette m\u00e9thode ou alors pr\u00e9venir au pr\u00e9alable l'utilisateur de ce comportement.", 
-        "thema": "JS", 
-        "name": "49"
-    }, 
-    "19190": {
-        "goal": "Permettre aux utilisateurs d'agrandir le texte avec les zooms textuels des agents utilisateurs.", 
-        "checklist": {
-            "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
-        }, 
-        "explanation": "", 
-        "description": "Use with caution pixel values for the font-size property", 
-        "solution": "Utiliser les unit\u00e9s em, %, ou les mots-cl\u00e9s (large, medium, small, etc.) pour d\u00e9finir les valeurs de la propri\u00e9t\u00e9 font-size pour tous les \u00e9l\u00e9ments ou, au minimum, sur les \u00e9l\u00e9ments de formulaire.", 
-        "thema": "CSS", 
-        "name": "29"
-    }, 
-    "19191": {
-        "goal": "Ne pas supprimer le rep\u00e8re visuel que constitue l'encadr\u00e9 pris par les \u00e9l\u00e9ments interactifs lorsqu'ils re\u00e7oivent le focus.", 
-        "checklist": {
-            "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
-        }, 
-        "explanation": "", 
-        "description": "Use with caution a 0 or none value for the outline property", 
-        "solution": "Ne pas utiliser la propri\u00e9t\u00e9 outline ou alors, seulement pour accentuer la mani\u00e8re dont sont restitu\u00e9s les \u00e9l\u00e9ments interactifs lorsqu'ils re\u00e7oivent le focus.\r\nExemple&nbsp;:\r\na:focus, input:focus, select:focus, textarea:focus {\r\noutline: 3px solid red !important;\r\n}", 
-        "thema": "CSS", 
-        "name": "30"
-    }, 
-    "19192": {
-        "goal": "Favoriser le parcours oculaire des utilisateurs lorsque les yeux reviennent \u00e0 la ligne en conservant les diff\u00e9rences de longueur de ligne qui, de fait, serviront de rep\u00e8re visuel.", 
-        "checklist": {
-            "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
-        }, 
-        "explanation": "", 
-        "description": "Use with caution a justify value for the text-align property<br>", 
-        "solution": "Remplacer la valeur justify par left, right ou center", 
-        "thema": "CSS", 
-        "name": "31"
-    }, 
-    "19193": {
-        "goal": "Eviter la perte d'information lorsque les images sont d\u00e9sactiv\u00e9s", 
-        "checklist": {
-            "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
-        }, 
-        "explanation": "", 
-        "description": "Use with caution a negative value for the text-indent property used together with the background-image property on the same selector", 
-        "solution": "Ne pas associer ces deux propri\u00e9t\u00e9s sur le m\u00eame s\u00e9lecteur.", 
-        "thema": "CSS", 
-        "name": "32"
     }, 
     "19195": {
         "goal": "", 
         "checklist": {
             "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
+            "name": "Second pas vers WCAG 2.0 : risques"
         }, 
         "explanation": "", 
-        "description": "Use with caution the td element when all the cells in a row contain bold text", 
+        "description": "Utiliser avec pr\u00e9caution les \u00e9l\u00e9ments td quand l'ensemble des cellules d'une ligne contient du texte en gras", 
         "solution": "", 
         "thema": "HTML", 
         "name": "12"
-    }, 
-    "19197": {
-        "goal": "", 
-        "checklist": {
-            "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
-        }, 
-        "explanation": "", 
-        "description": "Use with caution a none or hidden value for the display and visibility properties", 
-        "solution": "", 
-        "thema": "CSS", 
-        "name": "28"
     }
 }

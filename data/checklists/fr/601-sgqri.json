@@ -191,18 +191,6 @@
         "thema": "Pr\u00e9sentation", 
         "name": "14"
     }, 
-    "21708": {
-        "goal": "", 
-        "checklist": {
-            "id": 601, 
-            "name": "SGQRI 008-01"
-        }, 
-        "explanation": "", 
-        "description": "<p class=\"p1\"><span class=\"s1\">En d\u00e9sactivant le code CSS, l'ordre d'affichage du </span>contenu demeure-t-il logique ? Le sens du contenu est-t-il conserver ? Y-a-t-il une perte d'informations pertinentes ?&nbsp; Y-a-t-il un ajout&nbsp; d'informations pertinentes ?</p>", 
-        "solution": "<p class=\"p1\"><span class=\"s1\">Selon 11, en d\u00e9sactivant le code CSS, l'ordre d'affichage du contenu </span>doit demeurer logique et le sens du contenu doit \u00eatre conserv\u00e9. Il faut aussi \u00e9viter la perte ou l'ajout d'informations pertinentes</p>", 
-        "thema": "Pr\u00e9sentation", 
-        "name": "15"
-    }, 
     "21710": {
         "goal": "", 
         "checklist": {
@@ -215,18 +203,6 @@
         "thema": "Assujettissement", 
         "name": "17"
     }, 
-    "21714": {
-        "goal": "", 
-        "checklist": {
-            "id": 601, 
-            "name": "SGQRI 008-01"
-        }, 
-        "explanation": "", 
-        "description": "Compte tenu de sa nature, le contenu est-il formul\u00e9 de fa\u00e7on compr\u00e9hensible pour les personnes auxquelles il est destin\u00e9 ?", 
-        "solution": "Selon 13, tout contenu dans une page Web doit \u00eatre formul\u00e9 de fa\u00e7on compr\u00e9hensible pour les personnes auxquelles il est destin\u00e9, compte tenu de sa nature.\n\nRecommandations : Les paragraphes ne devraient pas \u00eatre justifi\u00e9s. Les blocs de textes justifi\u00e9s peuvent repr\u00e9senter une difficult\u00e9 cognitive. (Source\u00a0: http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F88)", 
-        "thema": "Compr\u00e9hension", 
-        "name": "21"
-    }, 
     "21717": {
         "goal": "", 
         "checklist": {
@@ -238,18 +214,6 @@
         "solution": "Selon 15 c), il faut g\u00e9rer toute redirection automatique de fa\u00e7on instantan\u00e9e.", 
         "thema": "Navigation", 
         "name": "24"
-    }, 
-    "21719": {
-        "goal": "", 
-        "checklist": {
-            "id": 601, 
-            "name": "SGQRI 008-01"
-        }, 
-        "explanation": "", 
-        "description": "Le d\u00e9placement du focus au clavier est-il toujours visible ?", 
-        "solution": "Selon 15 e), la page doit comporter un mode d'utilisation o\u00f9 la zone active est visible pour toute interface utilisable au clavier. Les navigateurs comportent un indice visuel marquant l\u2019emplacement de la zone active (un encadr\u00e9 pointill\u00e9, par exemple). Il est recommand\u00e9 d'accentuer les \u00e9l\u00e9ments au focus par clavier.", 
-        "thema": "Pr\u00e9sentation", 
-        "name": "26"
     }, 
     "21722": {
         "goal": "", 
@@ -370,18 +334,6 @@
         "solution": "<p class=\"p1\">\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<p class=\"p1\">Selon 17 d), d\u00e8s l'entr\u00e9e dans une page Web, un fond sonore qui <span class=\"s1\">dure plus de trois secondes doit \u00eatre facile \u00e0 arr\u00eater.</span></p></p>", 
         "thema": "Pr\u00e9sentation", 
         "name": "47"
-    }, 
-    "21743": {
-        "goal": "", 
-        "checklist": {
-            "id": 601, 
-            "name": "SGQRI 008-01"
-        }, 
-        "explanation": "", 
-        "description": "<p class=\"p1\"><span class=\"s1\">\u00c0 l'exception de la feuille de style pour </span>l'impression, la taille d\u2019une police de caract\u00e8res est-elle sp\u00e9cifi\u00e9e avec une unit\u00e9 de mesure en em, en pourcentage ou au moyen des valeurs xx-small, x-small, small, medium, large, x-large et xx-large ?</p>", 
-        "solution": "Selon 17 g), la taille d'une police doit \u00eatre exprim\u00e9e en unit\u00e9 de mesure relative, \u00ab&nbsp;em&nbsp;\u00bb ou pourcentage.", 
-        "thema": "Pr\u00e9sentation", 
-        "name": "50"
     }, 
     "21748": {
         "goal": "", 

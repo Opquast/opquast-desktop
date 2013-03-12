@@ -1,9 +1,4 @@
-.project
-.settings
-
-.DS_Store
-
 *.xpi
 
 /user
-test.rdf
+/test.rdf

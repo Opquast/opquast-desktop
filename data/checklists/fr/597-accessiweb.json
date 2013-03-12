@@ -1,16 +1,4 @@
 {
-    "21516": {
-        "goal": "", 
-        "checklist": {
-            "id": 597, 
-            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
-        }, 
-        "explanation": "", 
-        "description": "Pour chaque page Web, chaque proc\u00e9d\u00e9 de rafra\u00eechissement ou de redirection automatique (code, script, balise object, balise applet, balise meta) v\u00e9rifie-t-il une de ces conditions (hors cas particuliers) ?", 
-        "solution": "", 
-        "thema": "Consultation", 
-        "name": "13.1.1"
-    }, 
     "21517": {
         "goal": "", 
         "checklist": {
@@ -22,18 +10,6 @@
         "solution": "", 
         "thema": "Consultation", 
         "name": "13.1.2"
-    }, 
-    "21518": {
-        "goal": "", 
-        "checklist": {
-            "id": 597, 
-            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
-        }, 
-        "explanation": "", 
-        "description": "Pour chaque page Web, chaque proc\u00e9d\u00e9 de redirection effectu\u00e9 via un script v\u00e9rifie-t-il une de ces conditions (hors cas particuliers) ?", 
-        "solution": "", 
-        "thema": "Consultation", 
-        "name": "13.1.3"
     }, 
     "21521": {
         "goal": "", 
@@ -1522,42 +1498,6 @@
         "solution": "", 
         "thema": "Pr\u00e9sentation de l'information", 
         "name": "10.2.1"
-    }, 
-    "21435": {
-        "goal": "", 
-        "checklist": {
-            "id": 597, 
-            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
-        }, 
-        "explanation": "", 
-        "description": "Dans chaque page Web, l'information reste-t-elle visible lorsque les images sont d\u00e9sactiv\u00e9es ?", 
-        "solution": "", 
-        "thema": "Pr\u00e9sentation de l'information", 
-        "name": "10.2.2"
-    }, 
-    "21438": {
-        "goal": "", 
-        "checklist": {
-            "id": 597, 
-            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
-        }, 
-        "explanation": "", 
-        "description": "Dans les feuilles de styles du site Web, les unit\u00e9s non relatives (pt, pc, mm, cm, in) ne doivent pas \u00eatre utilis\u00e9es pour les types de m\u00e9dia screen, tv, handheld, projection. Cette r\u00e8gle est-elle respect\u00e9e ?", 
-        "solution": "", 
-        "thema": "Pr\u00e9sentation de l'information", 
-        "name": "10.4.1"
-    }, 
-    "21452": {
-        "goal": "", 
-        "checklist": {
-            "id": 597, 
-            "name": "Accessiweb 2.2 d\u00e9ploy\u00e9e"
-        }, 
-        "explanation": "", 
-        "description": "Chaque page Web v\u00e9rifie-t-elle une de ces conditions ?", 
-        "solution": "", 
-        "thema": "Pr\u00e9sentation de l'information", 
-        "name": "10.9.1"
     }, 
     "21462": {
         "goal": "", 

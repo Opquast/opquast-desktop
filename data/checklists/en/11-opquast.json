@@ -1,42 +1,6 @@
 {
-    "640": {
-        "goal": "Permettre aux contenus de s'afficher correctement, m\u00eame lorsque les polices pr\u00e9vues ne sont pas pr\u00e9sentes sur le syst\u00e8me de l'utilisateur.", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "A generic font family is listed as the last alternative in font family lists", 
-        "solution": "[Cad]-01", 
-        "thema": "Presentation", 
-        "name": "141"
-    }, 
-    "641": {
-        "goal": "Permettre aux utilisateurs \u00e9quip\u00e9s de navigateurs qui ne g\u00e8rent pas l'agrandissement des polices en taille fixe d'agrandir les polices sans difficult\u00e9.", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "The display font size is set in variable units and not in fixed units", 
-        "solution": "[Cad]-01", 
-        "thema": "Presentation", 
-        "name": "142"
-    }, 
-    "716": {
-        "goal": "Minimiser la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger par l'utilisateur\nAm\u00e9liorer les performances", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Style information are minified", 
-        "solution": "[Cad]-01", 
-        "thema": "Server and performance", 
-        "name": "217"
-    }, 
     "645": {
-        "goal": "Permettre aux agents utilisateurs d'opter pour le traitement linguistique appropri\u00e9, et notamment :\n    * la prononciation correcte du contenu par les synth\u00e8ses vocales (lecteurs d'\u00e9cran)\n    * la traduction pertinente du contenu par les outils de traduction automatis\u00e9s.", 
+        "goal": "Permettre aux agents utilisateurs d'opter pour le traitement linguistique appropri\u00e9, et notamment :\r\n    * la prononciation correcte du contenu par les synth\u00e8ses vocales (lecteurs d'\u00e9cran)\r\n    * la traduction pertinente du contenu par les outils de traduction automatis\u00e9s.", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
@@ -58,18 +22,6 @@
         "solution": "[Cad]-01", 
         "thema": "Tables", 
         "name": "147"
-    }, 
-    "705": {
-        "goal": "Permettre la consultation sur les t\u00e9l\u00e9phones portables et smartphones. Ce qui ne se limite pas \u00e0 l'iPhone.", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "The site provides one or more style sheets for mobile browsers", 
-        "solution": "[Cad]-01", 
-        "thema": "Presentation", 
-        "name": "206"
     }, 
     "651": {
         "goal": "Fournir un contenu compr\u00e9hensible aux utilisateurs dont l'agent utilisateur ou l'aide technique (lecteur d'\u00e9cran) ne permet pas de restituer la mise en forme initialement pr\u00e9vue \u00e0 l'aide d'un tableau.", 
@@ -359,17 +311,17 @@
         "thema": "Forms", 
         "name": "185"
     }, 
-    "557": {
-        "goal": "Permettre la navigation au clavier", 
+    "690": {
+        "goal": "Mettre \u00e0 disposition des informations synth\u00e9tiques et lisibles par les machines sur l'ensemble des contenus propos\u00e9s", 
         "checklist": {
             "id": 11, 
             "name": "Qualit\u00e9 Web - Opquast V2"
         }, 
         "explanation": "", 
-        "description": "Keyboard focus is neither removed nor hidden", 
-        "solution": "[Cad]-01", 
-        "thema": "Navigation", 
-        "name": "58"
+        "description": "The site provides a sitemap file listing contents to be crawled", 
+        "solution": "<p>Cr\u00e9er un fichier <code>sitemap.xml</code> contenant la liste des pages du site \u00e0 la racine du site. \u00c0 d\u00e9faut de respecter le format XML, une simple liste d'URL est accept\u00e9e par les moteurs.</p>", 
+        "thema": "Identification", 
+        "name": "191"
     }, 
     "558": {
         "goal": "<p>Permettre \u00e0 l&apos;utilisateur d'anticiper le r\u00e9sultat de l'activation d'un lien.</p><p>\u00c9viter aux utilisateurs d'aides techniques d'\u00eatre d\u00e9sorient\u00e9s par l'ouverture d'une nouvelle fen\u00eatre qui n'est pas toujours perceptible et perturbe notamment l'utilisation de l'historique de navigation.</p>", 
@@ -419,18 +371,6 @@
         "thema": "Navigation", 
         "name": "197"
     }, 
-    "690": {
-        "goal": "Mettre \u00e0 disposition des informations synth\u00e9tiques et lisibles par les machines sur l'ensemble des contenus propos\u00e9s", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "The site provides a sitemap file listing contents to be crawled", 
-        "solution": "<p>Cr\u00e9er un fichier <code>sitemap.xml</code> contenant la liste des pages du site \u00e0 la racine du site. \u00c0 d\u00e9faut de respecter le format XML, une simple liste d'URL est accept\u00e9e par les moteurs.</p>", 
-        "thema": "Identification", 
-        "name": "191"
-    }, 
     "574": {
         "goal": "Permet au navigateur de choisir le bon encodage des caract\u00e8res pour afficher la page.", 
         "checklist": {
@@ -455,18 +395,6 @@
         "thema": "Server and performance", 
         "name": "76"
     }, 
-    "576": {
-        "goal": "permet aux utilisateurs de rejoindre la page d'accueil du site m\u00eame lorsqu'il oublie de taper le pr\u00e9fixe WWW", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "The address of the site and of its subdomains works with and without a www prefix", 
-        "solution": "[Cad]-01", 
-        "thema": "Server and performance", 
-        "name": "77"
-    }, 
     "577": {
         "goal": "informe l'utilisateur sur l'erreur rencontr\u00e9e, sur la continuit\u00e9 de fonctionnement du serveur, et met hors de cause la connection de l'utilisateur", 
         "checklist": {
@@ -478,18 +406,6 @@
         "solution": "[Cad]-01", 
         "thema": "Server and performance", 
         "name": "78"
-    }, 
-    "578": {
-        "goal": "<p>Permettre la d\u00e9tection automatis\u00e9e des URL erron\u00e9es.</p><p>Transmettre au navigateur une information s\u00fbre.</p>", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "The server sends a 404 HTTP error code for resources not found", 
-        "solution": "<p>Modifier la configuration du serveur web pour renvoyer l'utilisateur vers une page personnalis\u00e9e lorsque la ressource demand\u00e9e n'existe pas.</p><p>Si la configuration principale du serveur n'est pas directement accessible et si l'environnement le permet, utiliser une configuration locale par r\u00e9pertoire. Par exemple, l'environnement Apache autorise la cr\u00e9ation d'un fichier <code>.htaccess</code> contenant des directives relatives aux traitements des erreurs : <code>ErrorDocument 404 /mapage.html</code>.</p>", 
-        "thema": "Server and performance", 
-        "name": "79"
     }, 
     "579": {
         "goal": "<p>Am\u00e9liorer la vitesse de rendu de la page.</p><p>Diminuer les co\u00fbts de bande passante.</p>", 
@@ -659,18 +575,6 @@
         "thema": "Files and multimedia", 
         "name": "177"
     }, 
-    "702": {
-        "goal": "am\u00e9liorer la lisibilit\u00e9 des contenus", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "The amount of different fonts used on the site is less than or equal to three (except when showing works or graphic products)", 
-        "solution": "[Cad]-01", 
-        "thema": "Presentation", 
-        "name": "203"
-    }, 
     "613": {
         "goal": "Eviter le t\u00e9l\u00e9chargement de donn\u00e9es inutiles\nAm\u00e9liorer les performances", 
         "checklist": {
@@ -755,30 +659,6 @@
         "thema": "Forms", 
         "name": "180"
     }, 
-    "620": {
-        "goal": "Limiter les difficult\u00e9s \u00e0 cliquer sur un lien lorsque celui ci occupe plus d'espace en mode survol\u00e9 ou activ\u00e9\nLimiter les effets de clignotements ou de d\u00e9placement de contenus.", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Hovering over, or activating, hyperlinks does not alter the layout", 
-        "solution": "[Cad]-01", 
-        "thema": "Hyperlinks", 
-        "name": "121"
-    }, 
-    "715": {
-        "goal": "Acc\u00e9l\u00e9rer la vitesse d'affichage des pages\nAm\u00e9liorer les performances\nDiminuer la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Scripts are minified", 
-        "solution": "[Cad]-01", 
-        "thema": "Server and performance", 
-        "name": "216"
-    }, 
     "622": {
         "goal": "Assurer une pr\u00e9vention contre les erreurs 404 en cours de navigation\nFaciliter un acc\u00e8s rapide \u00e0 tous les contenus", 
         "checklist": {
@@ -862,42 +742,6 @@
         "solution": "[Cad]-01", 
         "thema": "Code", 
         "name": "3"
-    }, 
-    "503": {
-        "goal": "Permettre aux utilisateurs de conserver la maitrise de leur environnement de travail\nEviter des interruptions ou des pertes d'information en cours de lecture, notamment pour les utilisateurs \u00e9quip\u00e9s de lecteurs d'\u00e9cran", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "The site forces no redirection or automatic refresh on the client side", 
-        "solution": "[Cad]-01", 
-        "thema": "Code", 
-        "name": "4"
-    }, 
-    "504": {
-        "goal": "<p>Garantir l'acc\u00e8s au contenu ind\u00e9pendamment de la prise en compte de la couche de mise en forme CSS.</p><p>Permettre la r\u00e9utilisation du contenu sur des m\u00e9dias ou des supports qui ne prennent pas en charge la mise en forme pour l'affichage \u00e0 l'\u00e9cran.</p><p>Assurer une s\u00e9mantique des contenus suffisante pour favoriser notamment leur indexation.</p>", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Styling is not used to generate content", 
-        "solution": "<p>Ne pas utiliser les propri\u00e9t\u00e9s CSS <code>background</code>, <code>background-image</code> ou <code>content</code> ni les pseudos-\u00e9l\u00e9ments <code>:before</code> et <code>:after</code> pour g\u00e9n\u00e9rer une information qui est absente du contenu HTML.</p>", 
-        "thema": "Code", 
-        "name": "5"
-    }, 
-    "639": {
-        "goal": "Permettre l'impression des contenus sous une forme sp\u00e9cifique.", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "The site provides at least one print stylesheet", 
-        "solution": "[Cad]-01", 
-        "thema": "Presentation", 
-        "name": "140"
     }, 
     "508": {
         "goal": "Permettre aux utilisateurs d'identifier la nature des contenus de chaque page dans les onglets, dans les favoris, dans la fen\u00eatre du navigateur ou dans les lecteurs d'\u00e9cran.", 

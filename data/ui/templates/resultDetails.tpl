@@ -15,8 +15,8 @@
   <ul>
     {{~ it.nodes :node }}
       <li>
-      {{? node.path }}
-        <a href="#" class="inspect" data-path="{{! node.path }}">{{! node.text }}</a>
+      {{? node.selector }}
+        <a href="#" class="inspect" data-path="{{! node.selector }}">{{! node.text }}</a>
       {{??}}
         <pre>{{! node }}</pre>
       {{?}}
