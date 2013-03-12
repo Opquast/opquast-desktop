@@ -1,3 +1,9 @@
+2013-03-12 - Version 0.7.0
+
+- New lib for test-runner and net-log
+- Async where needed
+- Enhanced test runner speed
+
 2013-01-16 - Version 0.6.4
 
 - Fixed a critical bug
