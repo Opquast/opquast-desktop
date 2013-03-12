@@ -35,18 +35,6 @@
         "thema": "Hyperliens", 
         "name": "35"
     }, 
-    "16267": {
-        "goal": "Simplifier l'indexation.", 
-        "checklist": {
-            "id": 478, 
-            "name": "SEO"
-        }, 
-        "explanation": "", 
-        "description": "Le serveur envoie un code HTTP 404 pour les ressources non trouv\u00e9es.", 
-        "solution": "Configurer vos CMS, framework, serveur pour qu'il renvoie un code HTTP 404 pour les ressources non trouv\u00e9es.", 
-        "thema": "Serveur", 
-        "name": "76"
-    }, 
     "16170": {
         "goal": "<div>Permettre aux moteurs de comprendre le contenu des images.&nbsp;Placer des mots-clefs dans la page en dehors du texte directement visible par les visiteurs.</div>", 
         "checklist": {
@@ -335,18 +323,6 @@
         "thema": "Hyperliens", 
         "name": "37"
     }, 
-    "16221": {
-        "goal": "Am\u00e9liorer la popularit\u00e9 du site.", 
-        "checklist": {
-            "id": 478, 
-            "name": "SEO"
-        }, 
-        "explanation": "", 
-        "description": "Le site fait l'objet de liens entrants.", 
-        "solution": "", 
-        "thema": "Navigation", 
-        "name": "61"
-    }, 
     "16229": {
         "goal": "Fournir des contenus indexables aux moteurs.", 
         "checklist": {
@@ -370,18 +346,6 @@
         "solution": "Utiliser dans la section HEAD de la page l'\u00e9l\u00e9ment META http-equiv=\"Content-Type\" et pr\u00e9ciser le jeu de caract\u00e8re utilis\u00e9 dans son attribut content.", 
         "thema": "M\u00e9tadonn\u00e9es", 
         "name": "47"
-    }, 
-    "16240": {
-        "goal": "Permettre aux moteurs d'acc\u00e9der \u00e0 tous les contenus.", 
-        "checklist": {
-            "id": 478, 
-            "name": "SEO"
-        }, 
-        "explanation": "", 
-        "description": "Les styles ne sont pas utilis\u00e9s pour g\u00e9n\u00e9rer du contenu.", 
-        "solution": "Ne pas utiliser la propri\u00e9t\u00e9 CSS content ainsi que les images d'arri\u00e8re-plan CSS pour afficher dans la page un contenu absent de la source HTML.", 
-        "thema": "Pr\u00e9sentation", 
-        "name": "71"
     }, 
     "16243": {
         "goal": "<div>Optimiser la vitesse d'acc\u00e8s.&nbsp;Simplifier la compr\u00e9hension de la cible par les moteurs.</div>", 

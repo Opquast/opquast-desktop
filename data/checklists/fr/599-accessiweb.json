@@ -502,17 +502,5 @@
         "solution": "", 
         "thema": "Structuration de l'information", 
         "name": "9.4"
-    }, 
-    "21630": {
-        "goal": "", 
-        "checklist": {
-            "id": 599, 
-            "name": "Accessiweb 2.2 non d\u00e9ploy\u00e9e"
-        }, 
-        "explanation": "", 
-        "description": "Dans chaque page Web, le contenu visible reste-t-il pr\u00e9sent lorsque les feuilles de styles ou les images sont d\u00e9sactiv\u00e9es ?", 
-        "solution": "", 
-        "thema": "Pr\u00e9sentation de l'information", 
-        "name": "10.2"
     }
 }

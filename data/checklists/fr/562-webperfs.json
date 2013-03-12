@@ -1,15 +1,15 @@
 {
-    "19914": {
-        "goal": "<p class=\"p1\"><span style=\"font-family: arial, sans, sans-serif; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255); \">Diminuer le nombre de requ\u00eates serveur</span><br></p>", 
+    "19018": {
+        "goal": "<span style=\"font-family: arial, sans, sans-serif; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255); \">Acc\u00e9lerer le rendu</span>", 
         "checklist": {
             "id": 562, 
             "name": "Webperf"
         }, 
         "explanation": "", 
-        "description": "L'URL d'une ressource ne pr\u00e9sente pas de variantes li\u00e9es \u00e0 la casse", 
+        "description": "Les ressources statiques sont h\u00e9berg\u00e9es sur un autre domaine.", 
         "solution": "", 
         "thema": "Serveur", 
-        "name": "27"
+        "name": "34"
     }, 
     "19011": {
         "goal": "<ul><li>Diminuer le volume de donn\u00e9es \u00e0 t\u00e9l\u00e9charger<br></li></ul>", 
@@ -47,30 +47,6 @@
         "thema": "Serveur", 
         "name": "30"
     }, 
-    "19014": {
-        "goal": "<div class=\"lastUnit size2of3\"><ul><li>Diminuer le volume de donn\u00e9es \u00e0 t\u00e9l\u00e9charger\r\n                        \r\n                    \r\n                \r\n            \r\n        \r\n    </li></ul></div>", 
-        "checklist": {
-            "id": 562, 
-            "name": "Webperf"
-        }, 
-        "explanation": "", 
-        "description": "Les scripts sont minifi\u00e9s.", 
-        "solution": "Supprimer les espaces non n\u00e9cessaires et les commentaires dans les \r\nfichiers Javascript, par exemple en recourant \u00e0 des outils tels que <a href=\"http://crockford.com/javascript/jsmin\">crockford.com/javascript/jsmin</a> ou <a href=\"http://developer.yahoo.com/yui/compressor/\">developer.yahoo.com/yui/compressor/</a>", 
-        "thema": "Scripts", 
-        "name": "13"
-    }, 
-    "19015": {
-        "goal": "<div class=\"lastUnit size2of3\">\r\n        \r\n            \r\n                \r\n                    \r\n                        \r\n                            <div class=\"lastUnit size2of3\"><ul><li>Diminuer le volume de donn\u00e9es \u00e0 t\u00e9l\u00e9charger\r\n                        \r\n                    \r\n                \r\n            \r\n        \r\n    </li></ul></div>\r\n                        \r\n                    \r\n                \r\n            \r\n        \r\n    </div>", 
-        "checklist": {
-            "id": 562, 
-            "name": "Webperf"
-        }, 
-        "explanation": "", 
-        "description": "Les feuilles de style sont minifi\u00e9es.", 
-        "solution": "<div class=\"couple line\"><div class=\"lastUnit size2of3\">\r\n                        \r\n                    \r\n                \r\n            \r\n        \r\n    </div>Supprimer les espaces non n\u00e9cessaires et les commentaires dans les fichiers CSS, par exemple en recourant \u00e0 des outils tels que <a href=\"http://developer.yahoo.com/yui/compressor/\">developer.yahoo.com/yui/compressor/</a></div>", 
-        "thema": "CSS", 
-        "name": "1"
-    }, 
     "19016": {
         "goal": "<ul><li><span style=\"font-family: arial, sans, sans-serif; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255); \">Diminuer le volume de donn\u00e9es \u00e0 t\u00e9l\u00e9charger</span><br></li></ul>", 
         "checklist": {
@@ -83,17 +59,17 @@
         "thema": "HTML", 
         "name": "9"
     }, 
-    "19018": {
-        "goal": "<span style=\"font-family: arial, sans, sans-serif; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255); \">Acc\u00e9lerer le rendu</span>", 
+    "19914": {
+        "goal": "<p class=\"p1\"><span style=\"font-family: arial, sans, sans-serif; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255); \">Diminuer le nombre de requ\u00eates serveur</span><br></p>", 
         "checklist": {
             "id": 562, 
             "name": "Webperf"
         }, 
         "explanation": "", 
-        "description": "Les ressources statiques sont h\u00e9berg\u00e9es sur un autre domaine.", 
+        "description": "L'URL d'une ressource ne pr\u00e9sente pas de variantes li\u00e9es \u00e0 la casse", 
         "solution": "", 
         "thema": "Serveur", 
-        "name": "34"
+        "name": "27"
     }, 
     "19915": {
         "goal": "<p class=\"p1\"><span style=\"font-family: arial, sans, sans-serif; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255); \">Acc\u00e9lerer le rendu</span><br></p>", 
@@ -178,42 +154,6 @@
         "solution": "<span class=\"Apple-style-span\" style=\"font-family: 'Lucida Grande', Corbel, 'Luxi Sans', 'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; \">N'utiliser le contenu de l'\u00e9l\u00e9ment&nbsp;<code style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; font-size: 11px; font: normal normal normal 0.9em/normal monaco, 'andale mono', 'lucida console', monospace; vertical-align: baseline; line-height: 1.5; \">&lt;script&gt;</code>&nbsp;que pour renseigner des variables ou initialiser un script et d\u00e9porter les fonctions dans les fichiers Javascript externes</span>", 
         "thema": "Scripts", 
         "name": "17"
-    }, 
-    "19044": {
-        "goal": "<ul><li><span style=\"font-family: arial, sans, sans-serif; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255); \">Acc\u00e9lerer le rendu</span><br></li></ul>", 
-        "checklist": {
-            "id": 562, 
-            "name": "Webperf"
-        }, 
-        "explanation": "", 
-        "description": "Un s\u00e9lecteur ne se termine jamais par le s\u00e9lecteur universel.", 
-        "solution": "", 
-        "thema": "CSS", 
-        "name": "7"
-    }, 
-    "19046": {
-        "goal": "<ul><li>Diminuer le nombre de requ\u00eates serveur\r\n                        \r\n                    \r\n                \r\n            \r\n        \r\n    </li></ul>", 
-        "checklist": {
-            "id": 562, 
-            "name": "Webperf"
-        }, 
-        "explanation": "", 
-        "description": "Le changement d'images d'arri\u00e8re-plan lors d'un rollover est g\u00e9r\u00e9 \u00e0 l'aide d'un sprite CSS.", 
-        "solution": "", 
-        "thema": "CSS", 
-        "name": "2"
-    }, 
-    "19047": {
-        "goal": "<ul><li>Diminuer le nombre de requ\u00eates serveur\r\n                        \r\n                    \r\n                \r\n            \r\n        \r\n    </li></ul>", 
-        "checklist": {
-            "id": 562, 
-            "name": "Webperf"
-        }, 
-        "explanation": "", 
-        "description": "Les arri\u00e8res-plan sont combin\u00e9s dans un sprite CSS.", 
-        "solution": "", 
-        "thema": "CSS", 
-        "name": "6"
     }, 
     "19048": {
         "goal": "<ul><li>Diminuer la charge de traitement par le serveur<br></li></ul>", 
@@ -334,18 +274,6 @@
         "solution": "", 
         "thema": "Serveur", 
         "name": "40"
-    }, 
-    "19064": {
-        "goal": "<ul><li><span style=\"font-family: arial, sans, sans-serif; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255); \">Acc\u00e9lerer le rendu</span><br></li></ul>", 
-        "checklist": {
-            "id": 562, 
-            "name": "Webperf"
-        }, 
-        "explanation": "", 
-        "description": "Les scripts n'utilisent pas document.write.", 
-        "solution": "", 
-        "thema": "Scripts", 
-        "name": "14"
     }, 
     "19065": {
         "goal": "<ul><li>Diminuer le volume de donn\u00e9es \u00e0 t\u00e9l\u00e9charger</li></ul>", 

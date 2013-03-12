@@ -59,18 +59,6 @@
         "thema": "HTML", 
         "name": "13"
     }, 
-    "19214": {
-        "goal": "", 
-        "checklist": {
-            "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
-        }, 
-        "explanation": "", 
-        "description": "Use with caution the direction property", 
-        "solution": "", 
-        "thema": "CSS", 
-        "name": "27"
-    }, 
     "19088": {
         "goal": "Permettre aux utilisateurs de distinguer les diff\u00e9rents tableaux de donn\u00e9es pr\u00e9sents dans une page.", 
         "checklist": {
@@ -479,90 +467,6 @@
         "thema": "JS", 
         "name": "46"
     }, 
-    "19185": {
-        "goal": "Eviter aux utilisateurs tout \u00e9v\u00e9nement d\u00e9clench\u00e9 automatiquement au bout d'un certain temps.", 
-        "checklist": {
-            "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
-        }, 
-        "explanation": "", 
-        "description": "Use with caution the setTimeout method", 
-        "solution": "Ne pas utiliser cette m\u00e9thode ou lui laisser la possibilit\u00e9 de mettre en pause ou de d\u00e9terminer le temps au bout duquel l'\u00e9v\u00e9nement sera d\u00e9clench\u00e9.", 
-        "thema": "JS", 
-        "name": "47"
-    }, 
-    "19186": {
-        "goal": "Eviter aux utilisateurs tout \u00e9v\u00e9nement r\u00e9p\u00e9t\u00e9 automatiquement.", 
-        "checklist": {
-            "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
-        }, 
-        "explanation": "", 
-        "description": "Use with caution the setInterval method", 
-        "solution": "Ne pas utiliser cette m\u00e9thode ou  lui laisser la possibilit\u00e9 de mettre en pause ou de d\u00e9terminer le temps au bout duquel l'\u00e9v\u00e9nement sera r\u00e9p\u00e9t\u00e9.", 
-        "thema": "JS", 
-        "name": "48"
-    }, 
-    "19187": {
-        "goal": "Permettre \u00e0 l'utilisateur de pr\u00e9voir le comportement des actions qui ouvrent une nouvelle fen\u00eatre.", 
-        "checklist": {
-            "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
-        }, 
-        "explanation": "", 
-        "description": "Use with caution the window.open method", 
-        "solution": "Ne pas utiliser cette m\u00e9thode ou alors pr\u00e9venir au pr\u00e9alable l'utilisateur de ce comportement.", 
-        "thema": "JS", 
-        "name": "49"
-    }, 
-    "19190": {
-        "goal": "Permettre aux utilisateurs d'agrandir le texte avec les zooms textuels des agents utilisateurs.", 
-        "checklist": {
-            "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
-        }, 
-        "explanation": "", 
-        "description": "Use with caution pixel values for the font-size property", 
-        "solution": "Utiliser les unit\u00e9s em, %, ou les mots-cl\u00e9s (large, medium, small, etc.) pour d\u00e9finir les valeurs de la propri\u00e9t\u00e9 font-size pour tous les \u00e9l\u00e9ments ou, au minimum, sur les \u00e9l\u00e9ments de formulaire.", 
-        "thema": "CSS", 
-        "name": "29"
-    }, 
-    "19191": {
-        "goal": "Ne pas supprimer le rep\u00e8re visuel que constitue l'encadr\u00e9 pris par les \u00e9l\u00e9ments interactifs lorsqu'ils re\u00e7oivent le focus.", 
-        "checklist": {
-            "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
-        }, 
-        "explanation": "", 
-        "description": "Use with caution a 0 or none value for the outline property", 
-        "solution": "Ne pas utiliser la propri\u00e9t\u00e9 outline ou alors, seulement pour accentuer la mani\u00e8re dont sont restitu\u00e9s les \u00e9l\u00e9ments interactifs lorsqu'ils re\u00e7oivent le focus.\r\nExemple&nbsp;:\r\na:focus, input:focus, select:focus, textarea:focus {\r\noutline: 3px solid red !important;\r\n}", 
-        "thema": "CSS", 
-        "name": "30"
-    }, 
-    "19192": {
-        "goal": "Favoriser le parcours oculaire des utilisateurs lorsque les yeux reviennent \u00e0 la ligne en conservant les diff\u00e9rences de longueur de ligne qui, de fait, serviront de rep\u00e8re visuel.", 
-        "checklist": {
-            "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
-        }, 
-        "explanation": "", 
-        "description": "Use with caution a justify value for the text-align property<br>", 
-        "solution": "Remplacer la valeur justify par left, right ou center", 
-        "thema": "CSS", 
-        "name": "31"
-    }, 
-    "19193": {
-        "goal": "Eviter la perte d'information lorsque les images sont d\u00e9sactiv\u00e9s", 
-        "checklist": {
-            "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
-        }, 
-        "explanation": "", 
-        "description": "Use with caution a negative value for the text-indent property used together with the background-image property on the same selector", 
-        "solution": "Ne pas associer ces deux propri\u00e9t\u00e9s sur le m\u00eame s\u00e9lecteur.", 
-        "thema": "CSS", 
-        "name": "32"
-    }, 
     "19195": {
         "goal": "", 
         "checklist": {
@@ -574,17 +478,5 @@
         "solution": "", 
         "thema": "HTML", 
         "name": "12"
-    }, 
-    "19197": {
-        "goal": "", 
-        "checklist": {
-            "id": 567, 
-            "name": "Second step to WCAG 2.0: risks"
-        }, 
-        "explanation": "", 
-        "description": "Use with caution a none or hidden value for the display and visibility properties", 
-        "solution": "", 
-        "thema": "CSS", 
-        "name": "28"
     }
 }
