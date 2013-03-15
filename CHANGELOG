@@ -1,3 +1,7 @@
+2013-03-15 - Version 0.7.1
+
+- Fixed a bug with request logger
+
 2013-03-12 - Version 0.7.0
 
 - New lib for test-runner and net-log
