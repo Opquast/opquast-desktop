@@ -52,19 +52,22 @@
 
     var cl_prefs = self.options.prefs.checklists.split(/\s*,\s*/);
     var checklists = self.options.checklists;
-    var cl_array = [];
+    var cl_sorted = {};
     for (var i in checklists) {
         checklists[i].selected = cl_prefs.indexOf(i) != -1;
         checklists[i].langs = checklists[i].langs.map(function(l) {
             return l.split('-')[0];
         });
-        cl_array.push([i, checklists[i]]);
+        if (cl_sorted[checklists[i].category] === undefined) {
+            cl_sorted[checklists[i].category] = [];
+        }
+        cl_sorted[checklists[i].category].push([i, checklists[i]]);
     }
 
     var tpl = doT.compile(self.options.template)({
         'locales': self.options.locales,
         'prefs': self.options.prefs,
-        'checklists': cl_array
+        'checklists': cl_sorted
     });
 
     $('body').html(tpl);
