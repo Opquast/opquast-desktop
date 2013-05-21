@@ -152,6 +152,7 @@ $.widget("ui.detailsViewer",{
 //
 self.port.on("showResults", function(tests, tableOptions) {
     // Prepare results
+    let allCL = [];
     tests.oaa_results.map(function(r) {
         if (r.result == 'c') {
             r.label = _('oqs.pass');
@@ -167,7 +168,16 @@ self.port.on("showResults", function(tests, tableOptions) {
         if (r.criterion.thema === '') {
             r.criterion.thema = r.criterion.checklist.name;
         }
+        if (allCL.indexOf(r.criterion.checklist.name) === -1) {
+            allCL.push(r.criterion.checklist.name);
+        }
     });
+
+    if (allCL.length <= 1) {
+        // Show checklist choice if more than one
+        tableOptions.filterable.splice(tableOptions.filterable.indexOf('hChecklist'), 1);
+        tableOptions.sortable.splice(tableOptions.sortable.indexOf('hChecklist'), 1);
+    }
 
     // Show date
     var _date = new Date(tests.datetime);
