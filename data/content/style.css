@@ -260,17 +260,13 @@ h1,h2,h3 {
     border-radius: 0 0 6px 6px;
 }
 
-#prefcl {
-    padding-left: 1em;
-}
-
 table tbody tr>td:nth-child(2) {
     white-space: nowrap;
 }
 
 ul.prefs {
     margin: 1em 0;
-    padding: 0;
+    padding: 0 0 1em 1em;
     list-style: none;
 }
 ul.prefs li {
