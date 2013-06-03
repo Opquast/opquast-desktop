@@ -1,3 +1,7 @@
+2013-05-31 - Version 0.7.4
+
+- Added an API reachable by other addons to add checklists, tests, etc.
+
 2013-05-07 - Version 0.7.3
 
 - Fixed a bug with Firefox 20
