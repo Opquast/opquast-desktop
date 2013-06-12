@@ -1,0 +1,146 @@
+{
+    "29981": {
+        "goal": "Chaque jeu de données fait référence à des vocabulaires identifiés et documentés",
+        "checklist": {
+            "id": 658,
+            "name": "OpenData"
+        },
+        "explanation": "",
+        "description": "",
+        "solution": "",
+        "thema": "Linkeddata",
+        "name": "52"
+    },
+    "29982": {
+        "goal": "La licence mentionne les conditions de paternité, de réutilisation, de redistribution et de commercialisation",
+        "checklist": {
+            "id": 658,
+            "name": "OpenData"
+        },
+        "explanation": "",
+        "description": "",
+        "solution": "",
+        "thema": "Licence",
+        "name": "48"
+    },
+    "29986": {
+        "goal": "Le ou les jeux de données sont accompagnés d'au moins un moyen de contact avec le producteur (ou le mainteneur)",
+        "checklist": {
+            "id": 658,
+            "name": "OpenData"
+        },
+        "explanation": "",
+        "description": "",
+        "solution": "",
+        "thema": "Identification",
+        "name": "46"
+    },
+    "29989": {
+        "goal": "Chaque jeu de données est accompagné d'un identifiant unique",
+        "checklist": {
+            "id": 658,
+            "name": "OpenData"
+        },
+        "explanation": "",
+        "description": "",
+        "solution": "",
+        "thema": "Identification",
+        "name": "44"
+    },
+    "29990": {
+        "goal": "Il est possible d'accéder aux différentes versions des jeux de données",
+        "checklist": {
+            "id": 658,
+            "name": "OpenData"
+        },
+        "explanation": "",
+        "description": "",
+        "solution": "",
+        "thema": "Historique",
+        "name": "42"
+    },
+    "29997": {
+        "goal": "Si le jeu de données correspond à une zone géographique délimitée, il est possible de connaître la localisation",
+        "checklist": {
+            "id": 658,
+            "name": "OpenData"
+        },
+        "explanation": "",
+        "description": "",
+        "solution": "",
+        "thema": "Catalogage",
+        "name": "31"
+    },
+    "29998": {
+        "goal": "Chaque jeu de données est accompagné d'une mention de la langue",
+        "checklist": {
+            "id": 658,
+            "name": "OpenData"
+        },
+        "explanation": "",
+        "description": "",
+        "solution": "",
+        "thema": "Catalogage",
+        "name": "29"
+    },
+    "29999": {
+        "goal": "L'identité et la qualité du responsable de chaque jeu de donnée est précisée",
+        "checklist": {
+            "id": 658,
+            "name": "OpenData"
+        },
+        "explanation": "",
+        "description": "",
+        "solution": "",
+        "thema": "Catalogage",
+        "name": "22"
+    },
+    "30000": {
+        "goal": "Chaque jeu de données est accompagné d'une date de mise à jour",
+        "checklist": {
+            "id": 658,
+            "name": "OpenData"
+        },
+        "explanation": "",
+        "description": "",
+        "solution": "",
+        "thema": "Catalogage",
+        "name": "26"
+    },
+    "30001": {
+        "goal": "Chaque jeu de données est accompagné d'une date de création",
+        "checklist": {
+            "id": 658,
+            "name": "OpenData"
+        },
+        "explanation": "",
+        "description": "",
+        "solution": "",
+        "thema": "Catalogage",
+        "name": "25"
+    },
+    "30002": {
+        "goal": "Le jeu de données comporte au moins un titre et une description",
+        "checklist": {
+            "id": 658,
+            "name": "OpenData"
+        },
+        "explanation": "",
+        "description": "",
+        "solution": "",
+        "thema": "Catalogage",
+        "name": "24"
+    },
+    "30028": {
+        "goal": "Chaque jeu de donnée est accompagné d'une fréquence de mise à jour",
+        "checklist": {
+            "id": 658,
+            "name": "OpenData"
+        },
+        "explanation": "",
+        "description": "",
+        "solution": "",
+        "thema": "Transparence",
+        "name": "62"
+    }
+}
