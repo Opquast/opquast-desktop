@@ -6,7 +6,7 @@
             "name": "OpenData"
         },
         "explanation": "",
-        "description": "Chaque jeu de données fait référence à des vocabulaires identifiés et documentés",
+        "description": "Any vocabularies used within the dataset are identified and documented",
         "solution": "",
         "thema": "Linkeddata",
         "name": "52"
@@ -18,9 +18,9 @@
             "name": "OpenData"
         },
         "explanation": "",
-        "description": "La licence mentionne les conditions de paternité, de réutilisation, de redistribution et de commercialisation",
+        "description": "The licence sets out the conditions of attribution, reuse, redistribution and commercialisation",
         "solution": "",
-        "thema": "Licence",
+        "thema": "License",
         "name": "48"
     },
     "29986": {
@@ -30,7 +30,7 @@
             "name": "OpenData"
         },
         "explanation": "",
-        "description": "Le ou les jeux de données sont accompagnés d'au moins un moyen de contact avec le producteur (ou le mainteneur)",
+        "description": "Datasets are accompanied by at least one means of contact for the producer (or maintainer)",
         "solution": "",
         "thema": "Identification",
         "name": "46"
@@ -42,7 +42,7 @@
             "name": "OpenData"
         },
         "explanation": "",
-        "description": "Chaque jeu de données est accompagné d'un identifiant unique",
+        "description": "Each dataset is given a unique identifier",
         "solution": "",
         "thema": "Identification",
         "name": "44"
@@ -54,9 +54,9 @@
             "name": "OpenData"
         },
         "explanation": "",
-        "description": "Il est possible d'accéder aux différentes versions des jeux de données",
+        "description": "One can access different versions of datasets",
         "solution": "",
-        "thema": "Historique",
+        "thema": "Versions",
         "name": "42"
     },
     "29997": {
@@ -66,9 +66,9 @@
             "name": "OpenData"
         },
         "explanation": "",
-        "description": "Si le jeu de données correspond à une zone géographique délimitée, il est possible de connaître la localisation",
+        "description": "If a dataset refers to a specific geographical area, its spatial coverage is specified",
         "solution": "",
-        "thema": "Catalogage",
+        "thema": "Metadata",
         "name": "31"
     },
     "29998": {
@@ -78,9 +78,9 @@
             "name": "OpenData"
         },
         "explanation": "",
-        "description": "Chaque jeu de données est accompagné d'une mention de la langue",
+        "description": "Each dataset is accompanied by a reference to the language used",
         "solution": "",
-        "thema": "Catalogage",
+        "thema": "Metadata",
         "name": "29"
     },
     "29999": {
@@ -90,9 +90,9 @@
             "name": "OpenData"
         },
         "explanation": "",
-        "description": "L'identité et la qualité du responsable de chaque jeu de donnée est précisée",
+        "description": "The identity and role of the person responsible for each dataset is specified",
         "solution": "",
-        "thema": "Catalogage",
+        "thema": "Metadata",
         "name": "22"
     },
     "30000": {
@@ -102,9 +102,9 @@
             "name": "OpenData"
         },
         "explanation": "",
-        "description": "Chaque jeu de données est accompagné d'une date de mise à jour",
+        "description": "A last-updated date is given for each dataset",
         "solution": "",
-        "thema": "Catalogage",
+        "thema": "Metadata",
         "name": "26"
     },
     "30001": {
@@ -114,9 +114,9 @@
             "name": "OpenData"
         },
         "explanation": "",
-        "description": "Chaque jeu de données est accompagné d'une date de création",
+        "description": "A creation date is given for each dataset",
         "solution": "",
-        "thema": "Catalogage",
+        "thema": "Metadata",
         "name": "25"
     },
     "30002": {
@@ -126,9 +126,9 @@
             "name": "OpenData"
         },
         "explanation": "",
-        "description": "Le jeu de données comporte au moins un titre et une description",
+        "description": "Each dataset includes at least a title and a description",
         "solution": "",
-        "thema": "Catalogage",
+        "thema": "Metadata",
         "name": "24"
     },
     "30028": {
@@ -138,9 +138,9 @@
             "name": "OpenData"
         },
         "explanation": "",
-        "description": "Chaque jeu de donnée est accompagné d'une fréquence de mise à jour",
+        "description": "An update frequency is given for each dataset",
         "solution": "",
-        "thema": "Transparence",
+        "thema": "Transparency",
         "name": "62"
     }
 }
