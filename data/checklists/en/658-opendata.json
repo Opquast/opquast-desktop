@@ -1,0 +1,146 @@
+{
+    "29981": {
+        "goal": "",
+        "checklist": {
+            "id": 658,
+            "name": "OpenData"
+        },
+        "explanation": "",
+        "description": "Any vocabularies used within the dataset are identified and documented",
+        "solution": "",
+        "thema": "Linkeddata",
+        "name": "52"
+    },
+    "29982": {
+        "goal": "",
+        "checklist": {
+            "id": 658,
+            "name": "OpenData"
+        },
+        "explanation": "",
+        "description": "The licence sets out the conditions of attribution, reuse, redistribution and commercialisation",
+        "solution": "",
+        "thema": "License",
+        "name": "48"
+    },
+    "29986": {
+        "goal": "",
+        "checklist": {
+            "id": 658,
+            "name": "OpenData"
+        },
+        "explanation": "",
+        "description": "Datasets are accompanied by at least one means of contact for the producer (or maintainer)",
+        "solution": "",
+        "thema": "Identification",
+        "name": "46"
+    },
+    "29989": {
+        "goal": "",
+        "checklist": {
+            "id": 658,
+            "name": "OpenData"
+        },
+        "explanation": "",
+        "description": "Each dataset is given a unique identifier",
+        "solution": "",
+        "thema": "Identification",
+        "name": "44"
+    },
+    "29990": {
+        "goal": "",
+        "checklist": {
+            "id": 658,
+            "name": "OpenData"
+        },
+        "explanation": "",
+        "description": "One can access different versions of datasets",
+        "solution": "",
+        "thema": "Versions",
+        "name": "42"
+    },
+    "29997": {
+        "goal": "",
+        "checklist": {
+            "id": 658,
+            "name": "OpenData"
+        },
+        "explanation": "",
+        "description": "If a dataset refers to a specific geographical area, its spatial coverage is specified",
+        "solution": "",
+        "thema": "Metadata",
+        "name": "31"
+    },
+    "29998": {
+        "goal": "",
+        "checklist": {
+            "id": 658,
+            "name": "OpenData"
+        },
+        "explanation": "",
+        "description": "Each dataset is accompanied by a reference to the language used",
+        "solution": "",
+        "thema": "Metadata",
+        "name": "29"
+    },
+    "29999": {
+        "goal": "",
+        "checklist": {
+            "id": 658,
+            "name": "OpenData"
+        },
+        "explanation": "",
+        "description": "The identity and role of the person responsible for each dataset is specified",
+        "solution": "",
+        "thema": "Metadata",
+        "name": "22"
+    },
+    "30000": {
+        "goal": "",
+        "checklist": {
+            "id": 658,
+            "name": "OpenData"
+        },
+        "explanation": "",
+        "description": "A last-updated date is given for each dataset",
+        "solution": "",
+        "thema": "Metadata",
+        "name": "26"
+    },
+    "30001": {
+        "goal": "",
+        "checklist": {
+            "id": 658,
+            "name": "OpenData"
+        },
+        "explanation": "",
+        "description": "A creation date is given for each dataset",
+        "solution": "",
+        "thema": "Metadata",
+        "name": "25"
+    },
+    "30002": {
+        "goal": "",
+        "checklist": {
+            "id": 658,
+            "name": "OpenData"
+        },
+        "explanation": "",
+        "description": "Each dataset includes at least a title and a description",
+        "solution": "",
+        "thema": "Metadata",
+        "name": "24"
+    },
+    "30028": {
+        "goal": "",
+        "checklist": {
+            "id": 658,
+            "name": "OpenData"
+        },
+        "explanation": "",
+        "description": "An update frequency is given for each dataset",
+        "solution": "",
+        "thema": "Transparency",
+        "name": "62"
+    }
+}

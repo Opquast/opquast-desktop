@@ -1,0 +1,146 @@
+{
+    "29981": {
+        "goal": "",
+        "checklist": {
+            "id": 658,
+            "name": "OpenData"
+        },
+        "explanation": "",
+        "description": "Chaque jeu de données fait référence à des vocabulaires identifiés et documentés",
+        "solution": "",
+        "thema": "Linkeddata",
+        "name": "52"
+    },
+    "29982": {
+        "goal": "",
+        "checklist": {
+            "id": 658,
+            "name": "OpenData"
+        },
+        "explanation": "",
+        "description": "La licence mentionne les conditions de paternité, de réutilisation, de redistribution et de commercialisation",
+        "solution": "",
+        "thema": "Licence",
+        "name": "48"
+    },
+    "29986": {
+        "goal": "",
+        "checklist": {
+            "id": 658,
+            "name": "OpenData"
+        },
+        "explanation": "",
+        "description": "Le ou les jeux de données sont accompagnés d'au moins un moyen de contact avec le producteur (ou le mainteneur)",
+        "solution": "",
+        "thema": "Identification",
+        "name": "46"
+    },
+    "29989": {
+        "goal": "",
+        "checklist": {
+            "id": 658,
+            "name": "OpenData"
+        },
+        "explanation": "",
+        "description": "Chaque jeu de données est accompagné d'un identifiant unique",
+        "solution": "",
+        "thema": "Identification",
+        "name": "44"
+    },
+    "29990": {
+        "goal": "",
+        "checklist": {
+            "id": 658,
+            "name": "OpenData"
+        },
+        "explanation": "",
+        "description": "Il est possible d'accéder aux différentes versions des jeux de données",
+        "solution": "",
+        "thema": "Historique",
+        "name": "42"
+    },
+    "29997": {
+        "goal": "",
+        "checklist": {
+            "id": 658,
+            "name": "OpenData"
+        },
+        "explanation": "",
+        "description": "Si le jeu de données correspond à une zone géographique délimitée, il est possible de connaître la localisation",
+        "solution": "",
+        "thema": "Catalogage",
+        "name": "31"
+    },
+    "29998": {
+        "goal": "",
+        "checklist": {
+            "id": 658,
+            "name": "OpenData"
+        },
+        "explanation": "",
+        "description": "Chaque jeu de données est accompagné d'une mention de la langue",
+        "solution": "",
+        "thema": "Catalogage",
+        "name": "29"
+    },
+    "29999": {
+        "goal": "",
+        "checklist": {
+            "id": 658,
+            "name": "OpenData"
+        },
+        "explanation": "",
+        "description": "L'identité et la qualité du responsable de chaque jeu de donnée est précisée",
+        "solution": "",
+        "thema": "Catalogage",
+        "name": "22"
+    },
+    "30000": {
+        "goal": "",
+        "checklist": {
+            "id": 658,
+            "name": "OpenData"
+        },
+        "explanation": "",
+        "description": "Chaque jeu de données est accompagné d'une date de mise à jour",
+        "solution": "",
+        "thema": "Catalogage",
+        "name": "26"
+    },
+    "30001": {
+        "goal": "",
+        "checklist": {
+            "id": 658,
+            "name": "OpenData"
+        },
+        "explanation": "",
+        "description": "Chaque jeu de données est accompagné d'une date de création",
+        "solution": "",
+        "thema": "Catalogage",
+        "name": "25"
+    },
+    "30002": {
+        "goal": "",
+        "checklist": {
+            "id": 658,
+            "name": "OpenData"
+        },
+        "explanation": "",
+        "description": "Le jeu de données comporte au moins un titre et une description",
+        "solution": "",
+        "thema": "Catalogage",
+        "name": "24"
+    },
+    "30028": {
+        "goal": "",
+        "checklist": {
+            "id": 658,
+            "name": "OpenData"
+        },
+        "explanation": "",
+        "description": "Chaque jeu de donnée est accompagné d'une fréquence de mise à jour",
+        "solution": "",
+        "thema": "Transparence",
+        "name": "62"
+    }
+}

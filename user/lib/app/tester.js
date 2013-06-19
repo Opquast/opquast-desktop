@@ -110,12 +110,6 @@ const checklists = {
         category: _("oqs.check_others"),
         sub: _("oqs.sub_perf")
     },
-    "658-opendata": {
-        name: "OpenData",
-        langs: ["fr", "en"],
-        category: _("oqs.check_others"),
-        sub: _("oqs.sub_od")
-    }
 };
 exports.checklists = checklists;
 
