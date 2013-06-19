@@ -1,3 +1,9 @@
+2013-06-19 - Version 0.7.5
+
+- Fixed bug with Firefox 22
+- New checklist: OpenData
+- Tests improvements
+
 2013-05-31 - Version 0.7.4
 
 - Added an API reachable by other addons to add checklists, tests, etc.
