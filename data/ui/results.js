@@ -266,6 +266,8 @@ self.port.on("showResults", function(tests, tableOptions) {
     $('#test_result')
     .on('supertablecreate', display_counter)
     .on('supertablefiltered', display_counter)
+    .on('supertablerowsdisabled', display_counter)
+    .on('supertablerowsenabled', display_counter)
     .on('supertablecreate', odd_even)
     .on('supertablefiltered', odd_even)
     .on('supertablesorted', odd_even)
@@ -284,6 +286,14 @@ self.port.on("showResults", function(tests, tableOptions) {
 
     self.port.on("changeColVisibility", function(name, visible) {
         $('#test_result').superTable(visible ? "showCol" : "hideCol", name);
+    });
+
+    self.port.on("toggleResults", function(value, visible) {
+        let rows = $("#test_result tbody tr").filter(function() {
+            return $(this).data("result") == value;
+        });
+        let func = visible && "enableRows" || "disableRows";
+        $('#test_result').superTable(func, rows);
     });
 
     self.port.on("resultSearch", function(q) {

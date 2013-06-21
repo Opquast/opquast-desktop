@@ -44,7 +44,7 @@
         widgetEventPrefix: "supertable",
 
         options: {
-            visible: [],
+            visible: null,
             sortable: [],
             filterable: [],
 
@@ -129,6 +129,12 @@
 
         _setVisible: function() {
             var _this = this;
+            if (this.options.visible === null || this.options.visible === undefined) {
+                this.options.visible = $.map(this.getHeaders(), function(v) {
+                    return v.getAttribute('id');
+                });
+            }
+
             this.getHeaders().each(function() {
                 // Visible?
                 if ($.inArray(this.id, _this.options.visible) == -1) {
@@ -141,6 +147,11 @@
 
         _setFilterable: function() {
             var _this = this;
+
+            // Reset all filters
+            this.resetFilters();
+
+            // Set controls
             this.getHeaders().each(function() {
                 $('span.stHeader', this).empty().append($(this).data('stOrigin').clone());
 
@@ -315,8 +326,40 @@
         // Get all data rows
         getRows: function() {
             return $('tbody tr', this.element).filter(function() {
-                return $(this).data('stTerms') !== undefined;
+                return $(this).data('stTerms') !== undefined && $(this).data('stDisabled') !== true;
             });
+        },
+
+        findRows: function(index, value) {
+            return $('tbody tr', this.element).filter(function() {
+                return $(this).data('stTerms') !== undefined && $(this).data('stTerms')[index] == value;
+            });
+        },
+
+        disableRows: function(rows) {
+            $(rows).data('stDisabled', true).hide();
+
+            this.element.on(this.widgetEventPrefix + "rowsdisabled", function(evt) {
+                // Reset filters
+                this.resetFilters();
+                //$('thead select option:first', this.element).prop('selected', true).change();
+                this._setFilterControls();
+            }.bind(this));
+
+            this._trigger("rowsdisabled", null, {"rows": rows});
+        },
+
+        enableRows: function(rows) {
+            $(rows).data('stDisabled', false).show();
+
+            this.element.on(this.widgetEventPrefix + "rowsenabled", function(evt) {
+                // Reset filters
+                this.resetFilters();
+                //$('thead select option:first', this.element).prop('selected', true).change();
+                this._setFilterControls();
+            }.bind(this));
+
+            this._trigger("rowsenabled", null, {"rows": rows});
         },
 
         // Hide column
@@ -376,6 +419,7 @@
             this._trigger("sorted", null, {"column": id, "dir": dir});
         },
 
+        // Fitler column
         setFilters: function(filters, query) {
             filters = filters || {};
             query = query ? new RegExp(query, "i") : false;
@@ -407,6 +451,15 @@
             });
 
             this._setFilterControls();
+        },
+
+        resetFilters: function() {
+            this.getHeaders().each(function() {
+                var el = $('span.stHeader select option:first', this);
+                if (!el.prop('selected')) {
+                    el.prop('selected', true).change();
+                }
+            });
         },
 
         search: function(query) {
