@@ -72,11 +72,6 @@
 
     $('body').html(tpl);
 
-    $('#prefgen input').change(function() {
-        self.port.emit("setPref", this.value, this.checked);
-        showSaved();
-    });
-
     $('#prefcl input').change(function() {
         var values = [];
         $('#prefcl input:checked').each(function() {
