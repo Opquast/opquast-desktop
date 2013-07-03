@@ -1,6 +1,7 @@
 <table id="test_result" class="data">
   <thead>
     <tr>
+      <th id="hID">ID</th>
       <th id="hChecklist">{{! it.locales['oqs.checklists'] }}</th>
       <th id="hRef">{{! it.locales['oqs.references'] }}</th>
       <th id="hThema">{{! it.locales['oqs.themas'] }}</th>
@@ -11,12 +12,13 @@
   </thead>
   <tfoot>
     <tr>
-      <td colspan="6"></td>
+      <td colspan="7"></td>
     </tr>
   </tfoot>
   <tbody>
     {{~ it.tests['oaa_results'] :result }}
       <tr>
+        <td headers="hID">{{! result.id }}</td>
         <td headers="hChecklist">{{! result.criterion.checklist.name}}</td>
         <td headers="hRef">{{! result.criterion.name }}</td>
         <td headers="hThema">{{! result.criterion.thema }}</td>
