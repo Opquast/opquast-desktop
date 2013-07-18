@@ -156,7 +156,7 @@ dd {
 
 table {
     font-size:inherit;
-    font:100%;
+    font-size:100%;
     margin-bottom: 1.5em;
 }
 th {
@@ -194,14 +194,39 @@ table thead tr {
 
 /* Style
 -------------------------------------------------------- */
+@font-face {
+  font-family: 'Aller';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/Aller_Rg.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Aller';
+  font-style: normal;
+  font-weight: 700;
+  src: url('fonts/Aller_Bd.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Aller';
+  font-style: italic;
+  font-weight: 400;
+  src: url('fonts/Aller_It.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Aller';
+  font-style: italic;
+  font-weight: 700;
+  src: url('fonts/Aller_BdIt.ttf') format('truetype');
+}
+
 body {
-    font: normal 14px/1.5 "Lucida Grande",Corbel,"Luxi Sans","Trebuchet MS","Helvetica Neue",Arial,Helvetica,sans-serif;
+    font: normal 14px/1.5 Aller,sans-serif;
     background: #f4f3f1;
     color: #222;
 }
 
 h1,h2,h3 {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Aller,sans-serif;
 }
 
 #header, #main, #footer {
@@ -213,14 +238,19 @@ h1,h2,h3 {
 }
 
 #header-wrap {
-    background: linear-gradient(hsl(209, 18%, 30%), hsl(210, 24%, 16%)) no-repeat padding-box;
-    min-height: 140px;
+    background: #254356;
+    color: #fff;
+    min-height: 100px;
 }
 #header-wrap h1 {
-    padding-top: 40px;
-    color: #fff;
+    padding-top: 20px;
+    color: inherit;
     font-weight: bold;
     text-shadow: 2px 2px 2px #000;
+}
+#header-wrap span {
+    display: block;
+    font-size: 1.2em;
 }
 
 #main {
