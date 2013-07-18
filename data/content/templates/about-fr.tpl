@@ -134,6 +134,13 @@
         </tr>
 
         <tr>
+          <td><a href="http://checklists.opquast.com/opendata">OpenData Dataset quality</a></td>
+          <td>Version 1 (2013)</td>
+          <td><a href="http://creativecommons.org/licenses/by-sa/2.0/fr/">Creative commons
+          BY-SA</a></td>
+        </tr>
+
+        <tr>
           <td><a href="http://checklists.opquast.com/fr/accessibilityfirststep">Opquast Accessibility
           First Step</a></td>
           <td>Version 1 (2012)</td>
