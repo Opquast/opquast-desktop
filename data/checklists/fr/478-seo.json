@@ -1,410 +1,374 @@
 {
-  "16257": {
-    "goal": "Simplifier la compr\u00e9hension du contenu par les moteurs.",
-    "checklist": {
-      "id": 478,
-      "name": "SEO"
-    },
-    "explanation": "",
-    "description": "Les mises en majuscules \u00e0 des fins d\u00e9coratives sont effectu\u00e9es \u00e0 l'aide des styles CSS.",
-    "solution": "Utiliser la propri\u00e9t\u00e9 CSS text-decoration pour r\u00e9aliser les mises en majuscules d\u00e9coratives (mises en majuscules autres que celles des sigles ou contenus commun\u00e9ment mis en majuscule).",
-    "thema": "Pr\u00e9sentation",
-    "name": "72"
-  },
-  "16259": {
-    "goal": "Simplifier le crawl.",
-    "checklist": {
-      "id": 478,
-      "name": "SEO"
-    },
-    "explanation": "",
-    "description": "Le fichier robots.txt propose une r\u00e9f\u00e9rence valide \u00e0 un fichier sitemap.",
-    "solution": "Faire figurer dans le fichier robots.txt une indication du type : Sitemap: http://www.example.com/sitemap.xml",
-    "thema": "Navigation",
-    "name": "69"
-  },
-  "16263": {
-    "goal": "Simplifier l'indexation et le crawl.",
-    "checklist": {
-      "id": 478,
-      "name": "SEO"
-    },
-    "explanation": "",
-    "description": "Les URL des liens internes contiennent exclusivement des caract\u00e8res alphanum\u00e9riques ou consid\u00e9r\u00e9s comme s\u00fbrs.",
-    "solution": "<div>N'utiliser dans les URL de liens internes que les caract\u00e8res suivants :&nbsp;</div><div>chiffres de 0 \u00e0 9&nbsp;</div><div>Lettres de a \u00e0 z et de&nbsp;A \u00e0 Z&nbsp;</div><div>Caract\u00e8res $ - _ . + ! * ' ( ) ,&nbsp;&amp; / : ; = ? @&nbsp;#&nbsp;%&nbsp;[ ]&nbsp;</div><div>Par exemple, une rubrique libell\u00e9e \"\u00e9t\u00e9\" correspondra dans les url \u00e0 un r\u00e9pertoire \"ete\".</div>",
-    "thema": "Hyperliens",
-    "name": "35"
-  },
-  "16267": {
-    "goal": "Simplifier l'indexation.",
-    "checklist": {
-      "id": 478,
-      "name": "SEO"
-    },
-    "explanation": "",
-    "description": "Le serveur envoie un code HTTP 404 pour les ressources non trouv\u00e9es.",
-    "solution": "Configurer vos CMS, framework, serveur pour qu'il renvoie un code HTTP 404 pour les ressources non trouv\u00e9es.",
-    "thema": "Serveur",
-    "name": "76"
-  },
-  "16170": {
-    "goal": "<div>Permettre aux moteurs de comprendre le contenu des images.&nbsp;Placer des mots-clefs dans la page en dehors du texte directement visible par les visiteurs.</div>",
-    "checklist": {
-      "id": 478,
-      "name": "SEO"
-    },
-    "explanation": "",
-    "description": "Chaque image ou \u00e9l\u00e9ment non textuel est dot\u00e9e d'une alternative textuelle",
-    "solution": "Renseigner l'attribut ALT de chaque \u00e9l\u00e9ment IMG, AREA, INPUT type image, APPLET. Fournir un contenu alternatif dans chaque \u00e9l\u00e9ment OBJECT. Renseigner le contenu de l'\u00e9l\u00e9ment NOEMBED.",
-    "thema": "Alternatives",
-    "name": "1"
-  },
-  "16171": {
-    "goal": "<div>Simplifier la lecture des alternatives par les moteurs.&nbsp;Inciter \u00e0 \u00e9crire des alternatives br\u00e8ves et percutantes.</div>",
-    "checklist": {
-      "id": 478,
-      "name": "SEO"
-    },
-    "explanation": "",
-    "description": "La longueur des alternatives textuelles est inf\u00e9rieure ou \u00e9gale \u00e0 80 caract\u00e8res.",
-    "solution": "Limiter \u00e0 80 caract\u00e8res au plus, espaces compris, le contenu de l'attribut ALT des \u00e9l\u00e9ments IMG, AREA, INPUT type image, APPLET. Le cas \u00e9ch\u00e9ant, recourir \u00e0 un automatisme du CMS pour tronquer les contenus automatiquement ins\u00e9r\u00e9s comme alternative. Mettre en place dans l'interface de saisie des contenus une validation de la longueur des champs d'alternatives d'images avertissant le r\u00e9dacteur et lui permettant de corriger celles-ci avant la publication.",
-    "thema": "Alternatives",
-    "name": "4"
-  },
-  "16172": {
-    "goal": "Renforcer les m\u00eames mots-clefs.",
-    "checklist": {
-      "id": 478,
-      "name": "SEO"
-    },
-    "explanation": "",
-    "description": "Les termes pr\u00e9sents dans l'alternative textuelle des images sont \u00e9galement pr\u00e9sents dans le contenu de la page.",
-    "solution": "Renseigner l'attribut ALT des \u00e9l\u00e9ments IMG, AREA, APPLET en reprenant des mots-cl\u00e9s pr\u00e9sents dans le contenu textuel auquel elles sont associ\u00e9es dans la page.",
-    "thema": "Alternatives",
-    "name": "5"
-  },
-  "16177": {
-    "goal": "<div>Eviter que les r\u00e9sultats des moteurs soient des pages partielles (cadre int\u00e9rieur uniquement par exemple).&nbsp;Simplifier le crawl des moteurs.</div>",
-    "checklist": {
-      "id": 478,
-      "name": "SEO"
-    },
-    "explanation": "",
-    "description": "Le site n'emploie pas la technique des jeux de cadres",
-    "solution": "Ne pas utiliser les \u00e9l\u00e9ments FRAMESET, FRAME et NOFRAMES.",
-    "thema": "Cadres",
-    "name": "9"
-  },
-  "16178": {
-    "goal": "Fournir du contenu accessible aux moteurs.",
-    "checklist": {
-      "id": 478,
-      "name": "SEO"
-    },
-    "explanation": "",
-    "description": "Si le site utilise la technique des jeux de cadres, l'\u00e9l\u00e9ment NOFRAME est utilis\u00e9.",
-    "solution": "Utiliser un \u00e9l\u00e9ment NOFRAMES dans chaque \u00e9l\u00e9ment FRAMESET.",
-    "thema": "Cadres",
-    "name": "6"
-  },
-  "16179": {
-    "goal": "Fournir du contenu cibl\u00e9 et pertinent aux moteurs.",
-    "checklist": {
-      "id": 478,
-      "name": "SEO"
-    },
-    "explanation": "",
-    "description": "Le contenu de chaque \u00e9l\u00e9ment noframe d\u00e9crit le contenu du cadre",
-    "solution": "Donner \u00e0 chaque \u00e9l\u00e9ment NOFRAMES un contenu descriptif des cadres du FRAMESET correspondant.",
-    "thema": "Cadres",
-    "name": "7"
-  },
-  "16180": {
-    "goal": "Eviter les p\u00e9nalit\u00e9s des moteurs pour keyword-stuffing (bourrage de mots-cl\u00e9s).",
-    "checklist": {
-      "id": 478,
-      "name": "SEO"
-    },
-    "explanation": "",
-    "description": "Le contenu de chaque \u00e9l\u00e9ment noframe n'est pas limit\u00e9 \u00e0 une liste de mots-cl\u00e9s.",
-    "solution": "Utiliser les mots cl\u00e9s dans chaque \u00e9l\u00e9ment NOFRAMES sous la forme d'un texte r\u00e9dig\u00e9 d\u00e9crivant le contenu des cadres du FRAMESET correspondant.",
-    "thema": "Cadres",
-    "name": "8"
-  },
-  "16181": {
-    "goal": "Permettre aux moteurs de comprendre le contenu des vid\u00e9os et pistes audio.",
-    "checklist": {
-      "id": 478,
-      "name": "SEO"
-    },
-    "explanation": "",
-    "description": "Chaque contenu audio et vid\u00e9o est accompagn\u00e9 de sa transcription textuelle",
-    "solution": "V\u00e9rifier la pr\u00e9sence d'une transcription textuelle de chaque contenu audio ou vid\u00e9o, dans la page o\u00f9 se trouve celui-ci. La transcription balis\u00e9e en HTML reproduit l'ensemble de l'information pertinente du contenu audio ou vid\u00e9o, et en particulier des paroles et images contenant du texte, sous une forme int\u00e9grale ou synth\u00e9tique.",
-    "thema": "Alternatives",
-    "name": "2"
-  },
-  "16184": {
-    "goal": "Limiter les risques que le site soit consid\u00e9r\u00e9 comme \"ferme de liens\" et p\u00e9nalis\u00e9 par les moteurs.",
-    "checklist": {
-      "id": 478,
-      "name": "SEO"
-    },
-    "explanation": "",
-    "description": "Le nombre de liens externes dans une page n'exc\u00e8de pas le nombre de liens internes.",
-    "solution": "Limiter le nombre de liens externes dans chaque page \u00e0 un nombre inf\u00e9rieur au total des liens internes pr\u00e9sent dans celle-ci. Mettre en place dans l'interface d'\u00e9dition des contenus une validation du nombre de liens externes, permettant au r\u00e9dacteur d'\u00eatre averti lors de l'ajout d'un lien externe et de corriger en cons\u00e9quences.",
-    "thema": "Hyperliens",
-    "name": "38"
-  },
-  "16190": {
-    "goal": "Permettre aux moteurs d'identifier rapidement la langue du contenu.",
-    "checklist": {
-      "id": 478,
-      "name": "SEO"
-    },
-    "explanation": "",
-    "description": "Le code source de chaque page indique la langue principale du contenu.",
-    "solution": "Renseigner l'attribut lang de l'\u00e9l\u00e9ment racine HTML \u00e0 l'aide d'un code de langue conforme au registre des codes de langue de l'IANA.",
-    "thema": "M\u00e9tadonn\u00e9es",
-    "name": "51"
-  },
-  "16191": {
-    "goal": "<div>Encourager les utilisateurs des moteurs \u00e0 visiter le site.&nbsp;Eviter les p\u00e9nalit\u00e9s des moteurs pour keyword-stuffing (bourrage de mots-cl\u00e9s).&nbsp;Eviter que les moteurs choisissent d'eux-m\u00eame une description pour la page</div>",
-    "checklist": {
-      "id": 478,
-      "name": "SEO"
-    },
-    "explanation": "",
-    "description": "Le contenu de l'\u00e9l\u00e9ment meta description est une phrase significative et non une liste de mots clefs.",
-    "solution": "R\u00e9diger le contenu de l'attribut content de l'\u00e9l\u00e9ment META name=\"description\".",
-    "thema": "M\u00e9tadonn\u00e9es",
-    "name": "48"
-  },
-  "16192": {
-    "goal": "<div>Encourager les utilisateurs des moteurs \u00e0 visiter le site.&nbsp;Placer des mots-clefs dans la description et en renforcer l'importance.&nbsp;Eviter que les moteurs choisissent d'eux-m\u00eame une description pour la page.</div>",
-    "checklist": {
-      "id": 478,
-      "name": "SEO"
-    },
-    "explanation": "",
-    "description": "Le code source de chaque page contient une metadonn\u00e9e qui en d\u00e9crit le contenu.",
-    "solution": "Utiliser dans la section HEAD de la page l'\u00e9l\u00e9ment META name=\"description\" et renseigner son attribut content avec la description du contenu propre de la page.",
-    "thema": "M\u00e9tadonn\u00e9es",
-    "name": "42"
-  },
-  "16194": {
-    "goal": "<div>Eviter le keyword-stuffing (bourrage de mots-cl\u00e9s).&nbsp;Garder le ciblage de la page.&nbsp;</div>",
-    "checklist": {
-      "id": 478,
-      "name": "SEO"
-    },
-    "explanation": "",
-    "description": "Le nombre de caract\u00e8res contenus dans la balise META Description est inf\u00e9rieur ou \u00e9gal \u00e0 250.",
-    "solution": "Limiter \u00e0 250 caract\u00e8res au plus, espaces compris, le contenu de l'attribut content de l'\u00e9l\u00e9ment META name=\"description\". Mettre en place un automatisme dans le CMS tronquant le contenu des attributs content automatiquement g\u00e9n\u00e9r\u00e9s. Mettre en place dans l'interface d'\u00e9dition une validation de la longueur des descriptions saisies par les r\u00e9dacteurs, avertissant ceux-ci en cas d'erreur et leur permettant de corriger la saisie concern\u00e9e avant publication de la page.",
-    "thema": "M\u00e9tadonn\u00e9es",
-    "name": "49"
-  },
-  "16196": {
-    "goal": "<div>Renforcer les mots-clefs associ\u00e9s \u00e0 une page.&nbsp;Encourager les utilisateurs des moteurs \u00e0 visiter la page.</div>",
-    "checklist": {
-      "id": 478,
-      "name": "SEO"
-    },
-    "explanation": "",
-    "description": "Le titre de chaque page (\u00e9l\u00e9ment TITLE) permet d'identifier son contenu.",
-    "solution": "<div>R\u00e9diger le contenu de l'\u00e9l\u00e9ment TITLE de chaque page de mani\u00e8re \u00e0 en d\u00e9crire de mani\u00e8re concise le contenu ou la fonction. Pr\u00e9ciser l'\u00e9tape en cours dans l'\u00e9l\u00e9ment&nbsp;TITLE&nbsp;des pages correspondant \u00e0 des \u00e9tapes dans un processus (exemple : \u00e9tape 3 de votre inscription, etc).&nbsp;</div><div>Pr\u00e9ciser l'intervalle dans une page d'une s\u00e9rie de pages de r\u00e9sultats de recherche (R\u00e9sultats 10 \u00e0 19 de la recherche sur \"Foo\")&nbsp;</div><div>Pr\u00e9ciser l'\u00e9tat dans le titre d'une page demande de confirmation ou de confirmation lors de la soumission d'un formulaire (exemple: demande de confirmation de suppression - mes documents).</div>",
-    "thema": "M\u00e9tadonn\u00e9es",
-    "name": "45"
-  },
-  "16197": {
-    "goal": "<div>Mettre en avant la structure de la page.&nbsp;Placer des mots-clefs aux endroits importants.</div>",
-    "checklist": {
-      "id": 478,
-      "name": "SEO"
-    },
-    "explanation": "",
-    "description": "Chaque page du site contient un \u00e9l\u00e9ment de titre de section H1.",
-    "solution": "Faire figurer au moins un \u00e9l\u00e9ment H1 comme titre de section principal du contenu propre de la page. Automatiser le cas \u00e9ch\u00e9ant la pr\u00e9sence et le contenu de l'\u00e9l\u00e9ment H1 via les gabarits du CMS. Mettre en place un processus de validation de la pr\u00e9sence de l'\u00e9l\u00e9ment H1 quand celui-ci est manuellement ins\u00e9r\u00e9 par le r\u00e9dacteur, avertissant en cas d'erreur et permettant la correction avant publication du contenu.",
-    "thema": "Structure",
-    "name": "10"
-  },
-  "16203": {
-    "goal": "Contr\u00f4ler l'indexation des moteurs.",
-    "checklist": {
-      "id": 478,
-      "name": "SEO"
-    },
-    "explanation": "",
-    "description": "La racine du site contient des instructions pour les robots d'indexation.",
-    "solution": "Mettre en place un fichier robots.txt \u00e0 la racine du site et renseigner son contenu \u00e0 l'aide des directives indiqu\u00e9es par http://www.robotstxt.org/",
-    "thema": "Navigation",
-    "name": "58"
-  },
-  "16204": {
-    "goal": "Simplifier le crawl des moteurs.",
-    "checklist": {
-      "id": 478,
-      "name": "SEO"
-    },
-    "explanation": "",
-    "description": "Le site propose un fichier sitemap indiquant les contenus \u00e0 explorer.",
-    "solution": "Cr\u00e9er un fichier sitemap.xml contenant la liste des pages du site \u00e0 la racine du site.",
-    "thema": "Navigation",
-    "name": "59"
-  },
-  "16205": {
-    "goal": "S\u00e9parer la forme et le contenu.\r\nSimplifier l'acc\u00e8s aux contenus.",
-    "checklist": {
-      "id": 478,
-      "name": "SEO"
-    },
-    "explanation": "",
-    "description": "Les contenus HTML sont mis en forme \u00e0 l'aide de styles CSS externalis\u00e9s.",
-    "solution": "Placer les styles CSS dans des fichiers externes appel\u00e9s avec les \u00e9l\u00e9ments LINK ou la r\u00e8gle @import dans un \u00e9l\u00e9ment STYLE. Ne pas placer les styles CSS directement entre les balises de l'\u00e9l\u00e9ment STYLE ou dans l'attribut style des \u00e9l\u00e9ments HTML. Le cas \u00e9ch\u00e9ant, mettre en place une validation dans l'interface d'\u00e9dition alertant l'utilisateur en cas de saisie d'un attribut style en mode source.",
-    "thema": "Pr\u00e9sentation",
-    "name": "74"
-  },
-  "16206": {
-    "goal": "<div>Simplifier la lecture des titres par les moteurs.&nbsp;Forcer \u00e0 \u00e9crire des titres brefs et percutants.</div>",
-    "checklist": {
-      "id": 478,
-      "name": "SEO"
-    },
-    "explanation": "",
-    "description": "Le contenu de chaque \u00e9l\u00e9ment TITLE est inf\u00e9rieur ou \u00e9gal \u00e0 80 caract\u00e8res",
-    "solution": "Limiter \u00e0 80 caract\u00e8res au plus, espaces compris, le contenu de l'\u00e9l\u00e9ment TITLE. Mettre en place un automatisme dans le CMS tronquant les contenus des titres de page automatiquement g\u00e9n\u00e9r\u00e9s. Mettre en place un processus de validation de la longueur des titres de page saisis par les r\u00e9dacteurs, permettant de les alerter en cas d'erreurs et de corriger la saisie avant publication.",
-    "thema": "M\u00e9tadonn\u00e9es",
-    "name": "46"
-  },
-  "16209": {
-    "goal": "<div>Structurer la page.&nbsp;Placer des mots-clefs aux endroits importants.</div>",
-    "checklist": {
-      "id": 478,
-      "name": "SEO"
-    },
-    "explanation": "",
-    "description": "Le contenu de chaque page est organis\u00e9 selon une structure de titres de section HTML.",
-    "solution": "Utiliser les \u00e9l\u00e9ments de titre de section H1, H2, H3, H4, H5, H6 pour donner \u00e0 chaque section et sous-section du contenu propre de la page un titre refl\u00e9tant son contenu.",
-    "thema": "Structure",
-    "name": "12"
-  },
-  "16210": {
-    "goal": "<div>Renforcer les mots-clefs associ\u00e9s \u00e0 une page.</div><div><br></div>",
-    "checklist": {
-      "id": 478,
-      "name": "SEO"
-    },
-    "explanation": "",
-    "description": "Les titres de section HTML comportent des mots clefs contenus dans la balise meta keywords.",
-    "solution": "R\u00e9diger chaque \u00e9l\u00e9ment H1, H2, H3, H4, H5, H6 de mani\u00e8re \u00e0 ce qu'il contienne au moins un mot-cl\u00e9 pr\u00e9sent dans le contenu de l'attribut content de l'\u00e9l\u00e9ment META name=\"keywords\".",
-    "thema": "Structure",
-    "name": "13"
-  },
-  "16212": {
-    "goal": "<div>Eviter le keyword-stuffing (bourrage de mots-cl\u00e9s).&nbsp;Renforcer les mots-clefs majeurs.</div>",
-    "checklist": {
-      "id": 478,
-      "name": "SEO"
-    },
-    "explanation": "",
-    "description": "Le contenu de chaque \u00e9l\u00e9ment meta keywords est inf\u00e9rieur ou \u00e9gal \u00e0 10 termes.",
-    "solution": "Limiter \u00e0 10 termes ou expressions au plus le contenu de l'attribut content de l'\u00e9l\u00e9ment META name=\"keywords\". Mettre en place dans le CMS un automatisme limitant le nombre de mots-cl\u00e9s ins\u00e9r\u00e9s dans l'attribut. Mettre en place dans l'interface d'\u00e9dition un processus de validation alertant le r\u00e9dacteur en cas de saisie de plus de 10 mots-cl\u00e9s et lui permettant de corriger avant publication.",
-    "thema": "M\u00e9tadonn\u00e9es",
-    "name": "43"
-  },
-  "16213": {
-    "goal": "<div>Ne pas diluer les mots-clefs.&nbsp;Mettre en avant les mots-clefs propres \u00e0 la page.</div>",
-    "checklist": {
-      "id": 478,
-      "name": "SEO"
-    },
-    "explanation": "",
-    "description": "La m\u00e9ta keywords contient exclusivement des termes en rapport direct avec le contenu.",
-    "solution": "Renseigner le contenu de l'attribut content de l'\u00e9l\u00e9ment META name=\"keywords\" avec des mots-cl\u00e9s en rapport direct avec le contenu de la page.",
-    "thema": "M\u00e9tadonn\u00e9es",
-    "name": "44"
-  },
-  "16217": {
-    "goal": "Renforcer les mots-clefs de la page.",
-    "checklist": {
-      "id": 478,
-      "name": "SEO"
-    },
-    "explanation": "",
-    "description": "Les URL contiennent des termes pr\u00e9sents dans les titres de pages.",
-    "solution": "Si vous utilisez un CMS, v\u00e9rifier qu'il est bien param\u00e9tr\u00e9 pour utiliser le titre de la page dans la construction de l'URL.",
-    "thema": "Hyperliens",
-    "name": "37"
-  },
-  "16221": {
-    "goal": "Am\u00e9liorer la popularit\u00e9 du site.",
-    "checklist": {
-      "id": 478,
-      "name": "SEO"
-    },
-    "explanation": "",
-    "description": "Le site fait l'objet de liens entrants.",
-    "solution": "",
-    "thema": "Navigation",
-    "name": "61"
-  },
-  "16229": {
-    "goal": "Fournir des contenus indexables aux moteurs.",
-    "checklist": {
-      "id": 478,
-      "name": "SEO"
-    },
-    "explanation": "",
-    "description": "Si le site propose un fil de syndication, celui propose des contenus et pas seulement des liens.",
-    "solution": "Reproduire dans le fil RSS, associ\u00e9 \u00e0 chaque lien, le r\u00e9sum\u00e9 ou l'introduction des contenus correspondants.",
-    "thema": "Contenu",
-    "name": "23"
-  },
-  "16239": {
-    "goal": "Simplifier la compr\u00e9hension du contenu de la page.",
-    "checklist": {
-      "id": 478,
-      "name": "SEO"
-    },
-    "explanation": "",
-    "description": "Le code source de chaque page contient une metadonn\u00e9e qui d\u00e9finit le jeu de caract\u00e8res.",
-    "solution": "Utiliser dans la section HEAD de la page l'\u00e9l\u00e9ment META http-equiv=\"Content-Type\" et pr\u00e9ciser le jeu de caract\u00e8re utilis\u00e9 dans son attribut content.",
-    "thema": "M\u00e9tadonn\u00e9es",
-    "name": "47"
-  },
-  "16240": {
-    "goal": "Permettre aux moteurs d'acc\u00e9der \u00e0 tous les contenus.",
-    "checklist": {
-      "id": 478,
-      "name": "SEO"
-    },
-    "explanation": "",
-    "description": "Les styles ne sont pas utilis\u00e9s pour g\u00e9n\u00e9rer du contenu.",
-    "solution": "Ne pas utiliser la propri\u00e9t\u00e9 CSS content ainsi que les images d'arri\u00e8re-plan CSS pour afficher dans la page un contenu absent de la source HTML.",
-    "thema": "Pr\u00e9sentation",
-    "name": "71"
-  },
-  "16243": {
-    "goal": "<div>Optimiser la vitesse d'acc\u00e8s.&nbsp;Simplifier la compr\u00e9hension de la cible par les moteurs.</div>",
-    "checklist": {
-      "id": 478,
-      "name": "SEO"
-    },
-    "explanation": "",
-    "description": "Si le nom de domaine correspond \u00e0 une zone g\u00e9ographique, le site est h\u00e9berg\u00e9 dans cette zone.",
-    "solution": "Si le domaine de votre site comporte une extension en .fr, par exemple, \u00e9tablir l'h\u00e9bergement en France ou dans un pays limitrophe.",
-    "thema": "Domaines",
-    "name": "31"
-  },
-  "16251": {
-    "goal": "Simplifier le crawl.",
-    "checklist": {
-      "id": 478,
-      "name": "SEO"
-    },
-    "explanation": "",
-    "description": "Les formats d'images utilis\u00e9s sont indexables par les principaux moteurs de recherche d'image.",
-    "solution": "Limiter le format des images aux seuls JPEG, PNG, GIF ou SVG.",
-    "thema": "Contenu",
-    "name": "20"
-  }
+    "16257": {
+        "goal": "Simplifier la compr\u00e9hension du contenu par les moteurs.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Les mises en majuscules \u00e0 des fins d\u00e9coratives sont effectu\u00e9es \u00e0 l'aide des styles CSS.", 
+        "solution": "Utiliser la propri\u00e9t\u00e9 CSS text-decoration pour r\u00e9aliser les mises en majuscules d\u00e9coratives (mises en majuscules autres que celles des sigles ou contenus commun\u00e9ment mis en majuscule).", 
+        "thema": "Pr\u00e9sentation", 
+        "name": "72"
+    }, 
+    "16259": {
+        "goal": "Simplifier le crawl.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le fichier robots.txt propose une r\u00e9f\u00e9rence valide \u00e0 un fichier sitemap.", 
+        "solution": "Faire figurer dans le fichier robots.txt une indication du type : Sitemap: http://www.example.com/sitemap.xml", 
+        "thema": "Navigation", 
+        "name": "69"
+    }, 
+    "16263": {
+        "goal": "Simplifier l'indexation et le crawl.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Les URL des liens internes contiennent exclusivement des caract\u00e8res alphanum\u00e9riques ou consid\u00e9r\u00e9s comme s\u00fbrs.", 
+        "solution": "<div>N'utiliser dans les URL de liens internes que les caract\u00e8res suivants :&nbsp;</div><div>chiffres de 0 \u00e0 9&nbsp;</div><div>Lettres de a \u00e0 z et de&nbsp;A \u00e0 Z&nbsp;</div><div>Caract\u00e8res $ - _ . + ! * ' ( ) ,&nbsp;&amp; / : ; = ? @&nbsp;#&nbsp;%&nbsp;[ ]&nbsp;</div><div>Par exemple, une rubrique libell\u00e9e \"\u00e9t\u00e9\" correspondra dans les url \u00e0 un r\u00e9pertoire \"ete\".</div>", 
+        "thema": "Hyperliens", 
+        "name": "35"
+    }, 
+    "16170": {
+        "goal": "<div>Permettre aux moteurs de comprendre le contenu des images.&nbsp;Placer des mots-clefs dans la page en dehors du texte directement visible par les visiteurs.</div>", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Chaque image ou \u00e9l\u00e9ment non textuel est dot\u00e9e d'une alternative textuelle", 
+        "solution": "Renseigner l'attribut ALT de chaque \u00e9l\u00e9ment IMG, AREA, INPUT type image, APPLET. Fournir un contenu alternatif dans chaque \u00e9l\u00e9ment OBJECT. Renseigner le contenu de l'\u00e9l\u00e9ment NOEMBED.", 
+        "thema": "Alternatives", 
+        "name": "1"
+    }, 
+    "16171": {
+        "goal": "<div>Simplifier la lecture des alternatives par les moteurs.&nbsp;Inciter \u00e0 \u00e9crire des alternatives br\u00e8ves et percutantes.</div>", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "La longueur des alternatives textuelles est inf\u00e9rieure ou \u00e9gale \u00e0 80 caract\u00e8res.", 
+        "solution": "Limiter \u00e0 80 caract\u00e8res au plus, espaces compris, le contenu de l'attribut ALT des \u00e9l\u00e9ments IMG, AREA, INPUT type image, APPLET. Le cas \u00e9ch\u00e9ant, recourir \u00e0 un automatisme du CMS pour tronquer les contenus automatiquement ins\u00e9r\u00e9s comme alternative. Mettre en place dans l'interface de saisie des contenus une validation de la longueur des champs d'alternatives d'images avertissant le r\u00e9dacteur et lui permettant de corriger celles-ci avant la publication.", 
+        "thema": "Alternatives", 
+        "name": "4"
+    }, 
+    "16172": {
+        "goal": "Renforcer les m\u00eames mots-clefs.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Les termes pr\u00e9sents dans l'alternative textuelle des images sont \u00e9galement pr\u00e9sents dans le contenu de la page.", 
+        "solution": "Renseigner l'attribut ALT des \u00e9l\u00e9ments IMG, AREA, APPLET en reprenant des mots-cl\u00e9s pr\u00e9sents dans le contenu textuel auquel elles sont associ\u00e9es dans la page.", 
+        "thema": "Alternatives", 
+        "name": "5"
+    }, 
+    "16177": {
+        "goal": "<div>Eviter que les r\u00e9sultats des moteurs soient des pages partielles (cadre int\u00e9rieur uniquement par exemple).&nbsp;Simplifier le crawl des moteurs.</div>", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le site n'emploie pas la technique des jeux de cadres", 
+        "solution": "Ne pas utiliser les \u00e9l\u00e9ments FRAMESET, FRAME et NOFRAMES.", 
+        "thema": "Cadres", 
+        "name": "9"
+    }, 
+    "16178": {
+        "goal": "Fournir du contenu accessible aux moteurs.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Si le site utilise la technique des jeux de cadres, l'\u00e9l\u00e9ment NOFRAME est utilis\u00e9.", 
+        "solution": "Utiliser un \u00e9l\u00e9ment NOFRAMES dans chaque \u00e9l\u00e9ment FRAMESET.", 
+        "thema": "Cadres", 
+        "name": "6"
+    }, 
+    "16179": {
+        "goal": "Fournir du contenu cibl\u00e9 et pertinent aux moteurs.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le contenu de chaque \u00e9l\u00e9ment noframe d\u00e9crit le contenu du cadre", 
+        "solution": "Donner \u00e0 chaque \u00e9l\u00e9ment NOFRAMES un contenu descriptif des cadres du FRAMESET correspondant.", 
+        "thema": "Cadres", 
+        "name": "7"
+    }, 
+    "16180": {
+        "goal": "Eviter les p\u00e9nalit\u00e9s des moteurs pour keyword-stuffing (bourrage de mots-cl\u00e9s).", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le contenu de chaque \u00e9l\u00e9ment noframe n'est pas limit\u00e9 \u00e0 une liste de mots-cl\u00e9s.", 
+        "solution": "Utiliser les mots cl\u00e9s dans chaque \u00e9l\u00e9ment NOFRAMES sous la forme d'un texte r\u00e9dig\u00e9 d\u00e9crivant le contenu des cadres du FRAMESET correspondant.", 
+        "thema": "Cadres", 
+        "name": "8"
+    }, 
+    "16181": {
+        "goal": "Permettre aux moteurs de comprendre le contenu des vid\u00e9os et pistes audio.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Chaque contenu audio et vid\u00e9o est accompagn\u00e9 de sa transcription textuelle", 
+        "solution": "V\u00e9rifier la pr\u00e9sence d'une transcription textuelle de chaque contenu audio ou vid\u00e9o, dans la page o\u00f9 se trouve celui-ci. La transcription balis\u00e9e en HTML reproduit l'ensemble de l'information pertinente du contenu audio ou vid\u00e9o, et en particulier des paroles et images contenant du texte, sous une forme int\u00e9grale ou synth\u00e9tique.", 
+        "thema": "Alternatives", 
+        "name": "2"
+    }, 
+    "16184": {
+        "goal": "Limiter les risques que le site soit consid\u00e9r\u00e9 comme \"ferme de liens\" et p\u00e9nalis\u00e9 par les moteurs.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le nombre de liens externes dans une page n'exc\u00e8de pas le nombre de liens internes.", 
+        "solution": "Limiter le nombre de liens externes dans chaque page \u00e0 un nombre inf\u00e9rieur au total des liens internes pr\u00e9sent dans celle-ci. Mettre en place dans l'interface d'\u00e9dition des contenus une validation du nombre de liens externes, permettant au r\u00e9dacteur d'\u00eatre averti lors de l'ajout d'un lien externe et de corriger en cons\u00e9quences.", 
+        "thema": "Hyperliens", 
+        "name": "38"
+    }, 
+    "16190": {
+        "goal": "Permettre aux moteurs d'identifier rapidement la langue du contenu.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le code source de chaque page indique la langue principale du contenu.", 
+        "solution": "Renseigner l'attribut lang de l'\u00e9l\u00e9ment racine HTML \u00e0 l'aide d'un code de langue conforme au registre des codes de langue de l'IANA.", 
+        "thema": "M\u00e9tadonn\u00e9es", 
+        "name": "51"
+    }, 
+    "16191": {
+        "goal": "<div>Encourager les utilisateurs des moteurs \u00e0 visiter le site.&nbsp;Eviter les p\u00e9nalit\u00e9s des moteurs pour keyword-stuffing (bourrage de mots-cl\u00e9s).&nbsp;Eviter que les moteurs choisissent d'eux-m\u00eame une description pour la page</div>", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le contenu de l'\u00e9l\u00e9ment meta description est une phrase significative et non une liste de mots clefs.", 
+        "solution": "R\u00e9diger le contenu de l'attribut content de l'\u00e9l\u00e9ment META name=\"description\".", 
+        "thema": "M\u00e9tadonn\u00e9es", 
+        "name": "48"
+    }, 
+    "16192": {
+        "goal": "<div>Encourager les utilisateurs des moteurs \u00e0 visiter le site.&nbsp;Placer des mots-clefs dans la description et en renforcer l'importance.&nbsp;Eviter que les moteurs choisissent d'eux-m\u00eame une description pour la page.</div>", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le code source de chaque page contient une metadonn\u00e9e qui en d\u00e9crit le contenu.", 
+        "solution": "Utiliser dans la section HEAD de la page l'\u00e9l\u00e9ment META name=\"description\" et renseigner son attribut content avec la description du contenu propre de la page.", 
+        "thema": "M\u00e9tadonn\u00e9es", 
+        "name": "42"
+    }, 
+    "16194": {
+        "goal": "<div>Eviter le keyword-stuffing (bourrage de mots-cl\u00e9s).&nbsp;Garder le ciblage de la page.&nbsp;</div>", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le nombre de caract\u00e8res contenus dans la balise META Description est inf\u00e9rieur ou \u00e9gal \u00e0 250.", 
+        "solution": "Limiter \u00e0 250 caract\u00e8res au plus, espaces compris, le contenu de l'attribut content de l'\u00e9l\u00e9ment META name=\"description\". Mettre en place un automatisme dans le CMS tronquant le contenu des attributs content automatiquement g\u00e9n\u00e9r\u00e9s. Mettre en place dans l'interface d'\u00e9dition une validation de la longueur des descriptions saisies par les r\u00e9dacteurs, avertissant ceux-ci en cas d'erreur et leur permettant de corriger la saisie concern\u00e9e avant publication de la page.", 
+        "thema": "M\u00e9tadonn\u00e9es", 
+        "name": "49"
+    }, 
+    "16196": {
+        "goal": "<div>Renforcer les mots-clefs associ\u00e9s \u00e0 une page.&nbsp;Encourager les utilisateurs des moteurs \u00e0 visiter la page.</div>", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le titre de chaque page (\u00e9l\u00e9ment TITLE) permet d'identifier son contenu.", 
+        "solution": "<div>R\u00e9diger le contenu de l'\u00e9l\u00e9ment TITLE de chaque page de mani\u00e8re \u00e0 en d\u00e9crire de mani\u00e8re concise le contenu ou la fonction. Pr\u00e9ciser l'\u00e9tape en cours dans l'\u00e9l\u00e9ment&nbsp;TITLE&nbsp;des pages correspondant \u00e0 des \u00e9tapes dans un processus (exemple : \u00e9tape 3 de votre inscription, etc).&nbsp;</div><div>Pr\u00e9ciser l'intervalle dans une page d'une s\u00e9rie de pages de r\u00e9sultats de recherche (R\u00e9sultats 10 \u00e0 19 de la recherche sur \"Foo\")&nbsp;</div><div>Pr\u00e9ciser l'\u00e9tat dans le titre d'une page demande de confirmation ou de confirmation lors de la soumission d'un formulaire (exemple: demande de confirmation de suppression - mes documents).</div>", 
+        "thema": "M\u00e9tadonn\u00e9es", 
+        "name": "45"
+    }, 
+    "16197": {
+        "goal": "<div>Mettre en avant la structure de la page.&nbsp;Placer des mots-clefs aux endroits importants.</div>", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Chaque page du site contient un \u00e9l\u00e9ment de titre de section H1.", 
+        "solution": "Faire figurer au moins un \u00e9l\u00e9ment H1 comme titre de section principal du contenu propre de la page. Automatiser le cas \u00e9ch\u00e9ant la pr\u00e9sence et le contenu de l'\u00e9l\u00e9ment H1 via les gabarits du CMS. Mettre en place un processus de validation de la pr\u00e9sence de l'\u00e9l\u00e9ment H1 quand celui-ci est manuellement ins\u00e9r\u00e9 par le r\u00e9dacteur, avertissant en cas d'erreur et permettant la correction avant publication du contenu.", 
+        "thema": "Structure", 
+        "name": "10"
+    }, 
+    "16203": {
+        "goal": "Contr\u00f4ler l'indexation des moteurs.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "La racine du site contient des instructions pour les robots d'indexation.", 
+        "solution": "Mettre en place un fichier robots.txt \u00e0 la racine du site et renseigner son contenu \u00e0 l'aide des directives indiqu\u00e9es par http://www.robotstxt.org/", 
+        "thema": "Navigation", 
+        "name": "58"
+    }, 
+    "16204": {
+        "goal": "Simplifier le crawl des moteurs.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le site propose un fichier sitemap indiquant les contenus \u00e0 explorer.", 
+        "solution": "Cr\u00e9er un fichier sitemap.xml contenant la liste des pages du site \u00e0 la racine du site.", 
+        "thema": "Navigation", 
+        "name": "59"
+    }, 
+    "16205": {
+        "goal": "S\u00e9parer la forme et le contenu.\r\nSimplifier l'acc\u00e8s aux contenus.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Les contenus HTML sont mis en forme \u00e0 l'aide de styles CSS externalis\u00e9s.", 
+        "solution": "Placer les styles CSS dans des fichiers externes appel\u00e9s avec les \u00e9l\u00e9ments LINK ou la r\u00e8gle @import dans un \u00e9l\u00e9ment STYLE. Ne pas placer les styles CSS directement entre les balises de l'\u00e9l\u00e9ment STYLE ou dans l'attribut style des \u00e9l\u00e9ments HTML. Le cas \u00e9ch\u00e9ant, mettre en place une validation dans l'interface d'\u00e9dition alertant l'utilisateur en cas de saisie d'un attribut style en mode source.", 
+        "thema": "Pr\u00e9sentation", 
+        "name": "74"
+    }, 
+    "16206": {
+        "goal": "<div>Simplifier la lecture des titres par les moteurs.&nbsp;Forcer \u00e0 \u00e9crire des titres brefs et percutants.</div>", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le contenu de chaque \u00e9l\u00e9ment TITLE est inf\u00e9rieur ou \u00e9gal \u00e0 80 caract\u00e8res", 
+        "solution": "Limiter \u00e0 80 caract\u00e8res au plus, espaces compris, le contenu de l'\u00e9l\u00e9ment TITLE. Mettre en place un automatisme dans le CMS tronquant les contenus des titres de page automatiquement g\u00e9n\u00e9r\u00e9s. Mettre en place un processus de validation de la longueur des titres de page saisis par les r\u00e9dacteurs, permettant de les alerter en cas d'erreurs et de corriger la saisie avant publication.", 
+        "thema": "M\u00e9tadonn\u00e9es", 
+        "name": "46"
+    }, 
+    "16209": {
+        "goal": "<div>Structurer la page.&nbsp;Placer des mots-clefs aux endroits importants.</div>", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le contenu de chaque page est organis\u00e9 selon une structure de titres de section HTML.", 
+        "solution": "Utiliser les \u00e9l\u00e9ments de titre de section H1, H2, H3, H4, H5, H6 pour donner \u00e0 chaque section et sous-section du contenu propre de la page un titre refl\u00e9tant son contenu.", 
+        "thema": "Structure", 
+        "name": "12"
+    }, 
+    "16210": {
+        "goal": "<div>Renforcer les mots-clefs associ\u00e9s \u00e0 une page.</div><div><br></div>", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Les titres de section HTML comportent des mots clefs contenus dans la balise meta keywords.", 
+        "solution": "R\u00e9diger chaque \u00e9l\u00e9ment H1, H2, H3, H4, H5, H6 de mani\u00e8re \u00e0 ce qu'il contienne au moins un mot-cl\u00e9 pr\u00e9sent dans le contenu de l'attribut content de l'\u00e9l\u00e9ment META name=\"keywords\".", 
+        "thema": "Structure", 
+        "name": "13"
+    }, 
+    "16212": {
+        "goal": "<div>Eviter le keyword-stuffing (bourrage de mots-cl\u00e9s).&nbsp;Renforcer les mots-clefs majeurs.</div>", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le contenu de chaque \u00e9l\u00e9ment meta keywords est inf\u00e9rieur ou \u00e9gal \u00e0 10 termes.", 
+        "solution": "Limiter \u00e0 10 termes ou expressions au plus le contenu de l'attribut content de l'\u00e9l\u00e9ment META name=\"keywords\". Mettre en place dans le CMS un automatisme limitant le nombre de mots-cl\u00e9s ins\u00e9r\u00e9s dans l'attribut. Mettre en place dans l'interface d'\u00e9dition un processus de validation alertant le r\u00e9dacteur en cas de saisie de plus de 10 mots-cl\u00e9s et lui permettant de corriger avant publication.", 
+        "thema": "M\u00e9tadonn\u00e9es", 
+        "name": "43"
+    }, 
+    "16213": {
+        "goal": "<div>Ne pas diluer les mots-clefs.&nbsp;Mettre en avant les mots-clefs propres \u00e0 la page.</div>", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "La m\u00e9ta keywords contient exclusivement des termes en rapport direct avec le contenu.", 
+        "solution": "Renseigner le contenu de l'attribut content de l'\u00e9l\u00e9ment META name=\"keywords\" avec des mots-cl\u00e9s en rapport direct avec le contenu de la page.", 
+        "thema": "M\u00e9tadonn\u00e9es", 
+        "name": "44"
+    }, 
+    "16217": {
+        "goal": "Renforcer les mots-clefs de la page.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Les URL contiennent des termes pr\u00e9sents dans les titres de pages.", 
+        "solution": "Si vous utilisez un CMS, v\u00e9rifier qu'il est bien param\u00e9tr\u00e9 pour utiliser le titre de la page dans la construction de l'URL.", 
+        "thema": "Hyperliens", 
+        "name": "37"
+    }, 
+    "16229": {
+        "goal": "Fournir des contenus indexables aux moteurs.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Si le site propose un fil de syndication, celui propose des contenus et pas seulement des liens.", 
+        "solution": "Reproduire dans le fil RSS, associ\u00e9 \u00e0 chaque lien, le r\u00e9sum\u00e9 ou l'introduction des contenus correspondants.", 
+        "thema": "Contenu", 
+        "name": "23"
+    }, 
+    "16239": {
+        "goal": "Simplifier la compr\u00e9hension du contenu de la page.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Le code source de chaque page contient une metadonn\u00e9e qui d\u00e9finit le jeu de caract\u00e8res.", 
+        "solution": "Utiliser dans la section HEAD de la page l'\u00e9l\u00e9ment META http-equiv=\"Content-Type\" et pr\u00e9ciser le jeu de caract\u00e8re utilis\u00e9 dans son attribut content.", 
+        "thema": "M\u00e9tadonn\u00e9es", 
+        "name": "47"
+    }, 
+    "16243": {
+        "goal": "<div>Optimiser la vitesse d'acc\u00e8s.&nbsp;Simplifier la compr\u00e9hension de la cible par les moteurs.</div>", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Si le nom de domaine correspond \u00e0 une zone g\u00e9ographique, le site est h\u00e9berg\u00e9 dans cette zone.", 
+        "solution": "Si le domaine de votre site comporte une extension en .fr, par exemple, \u00e9tablir l'h\u00e9bergement en France ou dans un pays limitrophe.", 
+        "thema": "Domaines", 
+        "name": "31"
+    }, 
+    "16251": {
+        "goal": "Simplifier le crawl.", 
+        "checklist": {
+            "id": 478, 
+            "name": "SEO"
+        }, 
+        "explanation": "", 
+        "description": "Les formats d'images utilis\u00e9s sont indexables par les principaux moteurs de recherche d'image.", 
+        "solution": "Limiter le format des images aux seuls JPEG, PNG, GIF ou SVG.", 
+        "thema": "Contenu", 
+        "name": "20"
+    }
 }

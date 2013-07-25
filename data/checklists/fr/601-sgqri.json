@@ -1,458 +1,410 @@
 {
-  "21762": {
-    "goal": "",
-    "checklist": {
-      "id": 601,
-      "name": "SGQRI 008-01"
-    },
-    "explanation": "",
-    "description": "Toute image informative ou zone sensible d'une image \u00e0 hyperliens multiples, comporte-t-elle un texte de remplacement cod\u00e9 avec l'attribut alt ?\n\nNote: une image informative dont l'\u00e9quivalent du texte informatif significatif est pr\u00e9sent dans le code (visible ou non) et que ce texte est perceptible par le lecteur d'\u00e9cran, cette image est alors consid\u00e9r\u00e9 comme d\u00e9corative et peut \u00eatre cod\u00e9 par CSS.",
-    "solution": "Selon 20 b), les images informatives doivent avoir un attribut \u00ab\u00a0alt\u00a0\u00bb non vide et contenir du texte de remplacement pertinent. Le contenu de l\u2019attribut \u00ab\u00a0alt\u00a0\u00bb devrait se terminer par un point pour faciliter la compr\u00e9hension d\u2019un utilisateur de synth\u00e8se vocale qui entendra la voix tomber \u00e0 la fin de la phrase pour ne pas se confondre avec la suite du texte. L'attribut \u00ab\u00a0title\u00a0\u00bb ne suffit pas pour l'accessibilit\u00e9. \n\nSelon 20 b) et 19 d), lorsqu'il y a une mise \u00e0 jour sans rechargement, les textes de remplacement des contenus non textuels doivent rester pertinents.\n\nSelon 20 a) et 20 b), il est recommand\u00e9 que lorsqu'un groupe d'images communique une seule information (ex. 5 \u00e9toiles pour \u00e9valuer un contenu), l'une des images doit \u00eatre utilis\u00e9e pour donner la signification de l'ensemble du groupe.\n\nSelon 20 b), une zone sensible d'une image \u00e0 liens multiples doit comporter un texte de remplacement cod\u00e9 avec l\u2019attribut \u00ab\u00a0alt\u00a0\u00bb.",
-    "thema": "Images",
-    "name": "69"
-  },
-  "21764": {
-    "goal": "",
-    "checklist": {
-      "id": 601,
-      "name": "SGQRI 008-01"
-    },
-    "explanation": "",
-    "description": "Toute image uniquement d\u00e9corative ou qui est accompagn\u00e9e d\u2019une l\u00e9gende pr\u00e9sentant un contenu \u00e9quivalent, est-elle cod\u00e9e avec l'attribut alt vide : alt=\"\" ? \n\nNote: contrairement \u00e0 ce qui est indiqu\u00e9 de l'annexe 1 ( cod\u00e9 l'image d\u00e9corative avec la balise &lt;img&gt; avec un alt vide), il est \u00e9galement valide de programm\u00e9 une image d\u00e9corative en CSS. L'important \u00e9tant qu'elle soit ignor\u00e9 par les TA.",
-    "solution": "Selon 20 d), les images d\u00e9coratives et les images ayant une l\u00e9gende suffisante doivent \u00eatre pourvues d'un attribut \u00ab alt\u00a0\u00bb vide ou, \u00e0 d\u00e9faut, cod\u00e9 en CSS. Les images qui ne transmettent aucune information compl\u00e9mentaire ou qui sont jumel\u00e9es d'un libell\u00e9 sont purement d\u00e9coratives.\n\nSelon 20 d), les liens textuels et les liens images adjacentes doivent \u00eatre combin\u00e9s en un seul lien.",
-    "thema": "Images",
-    "name": "71"
-  },
-  "21772": {
-    "goal": "",
-    "checklist": {
-      "id": 601,
-      "name": "SGQRI 008-01"
-    },
-    "explanation": "",
-    "description": "Tout champ associ\u00e9 \u00e0 une \u00e9tiquette, comporte-t-il un nom unique cod\u00e9 avec l'attribut id et cette valeur est-elle reprise dans l'attribut for de la balise &lt;label&gt; de son \u00e9tiquette ?",
-    "solution": "Selon 21 c), l'\u00e9tiquette &lt;label&gt; de chaque champ de formulaire doit \u00eatre associ\u00e9e \u00e0 celui-ci de fa\u00e7on univoque \u00e0 l'aide des attributs \u00ab\u00a0id\u00a0\u00bb et \u00ab\u00a0for\u00a0\u00bb.",
-    "thema": "Formulaires",
-    "name": "79"
-  },
-  "21774": {
-    "goal": "",
-    "checklist": {
-      "id": 601,
-      "name": "SGQRI 008-01"
-    },
-    "explanation": "",
-    "description": "\u00c0 l'exception des donn\u00e9es saisies dans un formulaire et ramen\u00e9es \u00e0 la personne \u00e0 des fins de validation, tout champ est-il exempt d\u2019une valeur textuelle par d\u00e9faut ?",
-    "solution": "Selon 21 e), tout champ dans un formulaire doit \u00eatre exempt d\u2019une valeur textuelle par d\u00e9faut.",
-    "thema": "Formulaires",
-    "name": "81"
-  },
-  "21775": {
-    "goal": "",
-    "checklist": {
-      "id": 601,
-      "name": "SGQRI 008-01"
-    },
-    "explanation": "",
-    "description": "Toute \u00e9tiquette d\u00e9crit-elle clairement la fonction du champ auquel elle est associ\u00e9e ?\n\nNote: s'il y a un attribut title, ce dernier d\u00e9crit-il clairement la fonction du champ sur lequel il est appliqu\u00e9 ?\n\nNote: s'il y a un \u00e9tiquette plus un attribut title, les deux combin\u00e9s d\u00e9crivent-ils bien la fonction du champ auquel l'\u00e9tiquette est associ\u00e9e et sur lequel l\u2019attribut title est appliqu\u00e9.",
-    "solution": "Selon 21 f), l'\u00e9tiquette de chacun des champs doit d\u00e9crire clairement la fonction du champ auquel elle a \u00e9t\u00e9 associ\u00e9e.",
-    "thema": "Formulaires",
-    "name": "82"
-  },
-  "21778": {
-    "goal": "",
-    "checklist": {
-      "id": 601,
-      "name": "SGQRI 008-01"
-    },
-    "explanation": "",
-    "description": "Tout tableau de donn\u00e9es, comporte-t-il des cellules d\u2019en-t\u00eate de ligne ou de colonne cod\u00e9es avec la balise &lt;th&gt; ?",
-    "solution": "Selon 22 a), tout tableau de donn\u00e9es doit comporter des cellules d\u2019en-t\u00eate de ligne ou de colonne cod\u00e9e avec la balise &lt;th&gt;. Pour plus de d\u00e9tail, consultez le Wiki du W3C\u00a0:http://www.w3.org/wiki/HTML/Elements/th.",
-    "thema": "Tableaux",
-    "name": "85"
-  },
-  "21779": {
-    "goal": "",
-    "checklist": {
-      "id": 601,
-      "name": "SGQRI 008-01"
-    },
-    "explanation": "",
-    "description": "Dans un tableau complexe de donn\u00e9es, chaque balise &lt;th&gt; comporte-t-elle un identifiant unique cod\u00e9 avec l'attribut id ? \nDans un tableau complexe de donn\u00e9es, chaque cellule \u00e0 laquelle \ns'applique une cellule d'en-t\u00eate comporte-t-elle un attribut headers \ndans les balises &lt;td&gt; faisant r\u00e9f\u00e9rence aux cellules d\u2019en-t\u00eate \ncorrespondantes ?",
-    "solution": "Selon 22 b), tout tableau complexe de donn\u00e9es doit comporter un identifiant unique cod\u00e9 avec l'attribut \u00ab\u00a0id\u00a0\u00bb et qui fait r\u00e9f\u00e9rence aux cellules d\u2019en-t\u00eate correspondantes cod\u00e9es avec l\u2019attribut \u00ab\u00a0headers\u00a0\u00bb.",
-    "thema": "Tableaux",
-    "name": "86"
-  },
-  "21780": {
-    "goal": "",
-    "checklist": {
-      "id": 601,
-      "name": "SGQRI 008-01"
-    },
-    "explanation": "",
-    "description": "Tout tableau de pr\u00e9sentation est-il exempt des attributs et des balises r\u00e9serv\u00e9s \u00e0 un tableau de donn\u00e9es ?",
-    "solution": "Selon 22 c), un tableau de pr\u00e9sentation doit \u00e9viter l\u2019usage des attributs et des balises r\u00e9serv\u00e9es \u00e0 un tableau de donn\u00e9es. L\u2019attribut r\u00e9serv\u00e9 \u00e0 un tableau de donn\u00e9es est \u00ab\u00a0summary\u00a0\u00bb, les balises r\u00e9serv\u00e9es \u00e0 un tableau de donn\u00e9es sont : &lt;caption&gt;, &lt;th&gt;, &lt;thead&gt; et &lt;tfoot&gt;.",
-    "thema": "Tableaux",
-    "name": "87"
-  },
-  "21781": {
-    "goal": "",
-    "checklist": {
-      "id": 601,
-      "name": "SGQRI 008-01"
-    },
-    "explanation": "",
-    "description": "L'information incluse dans un tableau de pr\u00e9sentation, respecte-t-elle un ordre s\u00e9quentiel logique du contenu une fois cette information restructur\u00e9e de fa\u00e7on lin\u00e9aire ?",
-    "solution": "Selon 22 d), une information incluse dans un tableau de pr\u00e9sentation, doit respecter un ordre s\u00e9quentiel logique du contenu une fois cette information restructur\u00e9e de fa\u00e7on lin\u00e9aire.",
-    "thema": "Tableaux",
-    "name": "88"
-  },
-  "21782": {
-    "goal": "",
-    "checklist": {
-      "id": 601,
-      "name": "SGQRI 008-01"
-    },
-    "explanation": "",
-    "description": "Sur un site Web public seulement, un tableau complexe de donn\u00e9es comporte-t-il un r\u00e9sum\u00e9, cod\u00e9 avec l'attribut \u00ab\u00a0summary\u00a0\u00bb de la balise &lt;table&gt;, qui d\u00e9crit bri\u00e8vement les grandes cat\u00e9gories d\u2019information pr\u00e9sent\u00e9es par colonnes et par lignes, et qui note, s\u2019il y a lieu, la pr\u00e9sence d\u2019irr\u00e9gularit\u00e9s dans le nombre de lignes ou de colonnes ? \n\nNote : En HTML5, m\u00eame si l\u2019attribut \u00ab\u00a0summary\u00a0\u00bb est d\u00e9suet, il faut l'utiliser.",
-    "solution": "Selon 22 e), un tableau complexe de donn\u00e9es doit comporter un r\u00e9sum\u00e9 qui d\u00e9crit bri\u00e8vement les grandes cat\u00e9gories d\u2019information pr\u00e9sent\u00e9e par colonnes et par lignes, et qui note, s\u2019il y a lieu, la pr\u00e9sence d\u2019irr\u00e9gularit\u00e9s dans le nombre de lignes ou de colonnes.",
-    "thema": "Tableaux",
-    "name": "89"
-  },
-  "21701": {
-    "goal": "",
-    "checklist": {
-      "id": 601,
-      "name": "SGQRI 008-01"
-    },
-    "explanation": "",
-    "description": "Le code de la page Web est-il exempt d\u2019erreurs d\u2019imbrication de balises ?",
-    "solution": "Selon 10 a), les balises doivent \u00eatre imbriqu\u00e9es conform\u00e9ment \u00e0 la d\u00e9claration de type de document du W3C. Vous pouvez voir les erreurs \u00ab document type does not allow element \"xxxx\" here \u00bb \u00e0 l'aide de l'outil de validation : http://validator.w3.org.",
-    "thema": "Validit\u00e9",
-    "name": "8"
-  },
-  "21702": {
-    "goal": "",
-    "checklist": {
-      "id": 601,
-      "name": "SGQRI 008-01"
-    },
-    "explanation": "",
-    "description": "Le code de la page Web est-il exempt d\u2019erreurs d\u2019ouverture et de fermeture de balises ?",
-    "solution": "Selon 10 a), les \u00e9l\u00e9ments doivent avoir des balises compl\u00e8tes de d\u00e9but et de fin conform\u00e9ment \u00e0 leurs sp\u00e9cifications. Vous pouvez voir les erreurs \u00ab end tag for \"xxxx\" omitted \u00bb \u00e0 l'aide de l'outil de validation : http://validator.w3.org.",
-    "thema": "Validit\u00e9",
-    "name": "9"
-  },
-  "21703": {
-    "goal": "",
-    "checklist": {
-      "id": 601,
-      "name": "SGQRI 008-01"
-    },
-    "explanation": "",
-    "description": "Le code de la page Web est-il exempt d\u2019erreurs d\u2019unicit\u00e9 des attributs dans une balise ?",
-    "solution": "Selon 10 a), les identifiants \u00ab id \u00bb doivent \u00eatre tous uniques. Tous les \u00e9l\u00e9ments doivent \u00eatre exempts d'attributs dupliqu\u00e9s.",
-    "thema": "Validit\u00e9",
-    "name": "10"
-  },
-  "21705": {
-    "goal": "",
-    "checklist": {
-      "id": 601,
-      "name": "SGQRI 008-01"
-    },
-    "explanation": "",
-    "description": "La d\u00e9claration de type de document est-elle cod\u00e9e avec la balise &lt;DOCTYPE&gt; et respecte-t-elle la syntaxe pr\u00e9vue par le W3C ?",
-    "solution": "Selon 10 c), la page doit comporter une d\u00e9finition de type de document DTD (&lt;doctype&gt;) cod\u00e9 tel que pr\u00e9cis\u00e9 dans Recommended Doctype Declarations to use in your Web document\u00a0: http://www.w3.org/QA/2002/04/valid-dtd-list.html",
-    "thema": "Validit\u00e9",
-    "name": "12"
-  },
-  "21706": {
-    "goal": "",
-    "checklist": {
-      "id": 601,
-      "name": "SGQRI 008-01"
-    },
-    "explanation": "",
-    "description": "Toute balise &lt;object&gt; comporte-t-elle, \r\n- soit un contenu directement utilisable par les technologies d'adaptation informatiques, \r\n- soit un texte donnant une version de rechange \u00e9quivalente conforme, \r\n- soit un hyperlien vers cette version ?",
-    "solution": "<p class=\"p1\"><span class=\"s1\">Selon 10 d), un objet int\u00e9gr\u00e9 \u00e0 la page Web doit offrir un contenu </span>directement utilisable par les technologies d'adaptation informatiques ou doit contenir une version de rechange \u00e9quivalente conforme. Il est aussi pr\u00e9f\u00e9rable d\u2019utiliser la balise &lt;object&gt; pour un objet et non des balises &lt;applet&gt; et &lt;embed&gt;, parce qu'ils ne font pas partit des normes W3C.</p>",
-    "thema": "Images",
-    "name": "13"
-  },
-  "21707": {
-    "goal": "",
-    "checklist": {
-      "id": 601,
-      "name": "SGQRI 008-01"
-    },
-    "explanation": "",
-    "description": "La pr\u00e9sentation visuelle du texte est-elle toujours g\u00e9r\u00e9e par la feuille de style ? Aucun style n'est g\u00e9r\u00e9 par un attribut dans la page.",
-    "solution": "Selon 11, les attributs de pr\u00e9sentation doivent \u00eatre appliqu\u00e9s par CSS. Il faut \u00e9viter les attributs \u00ab\u00a0border\u00a0\u00bb, \u00ab\u00a0cellspacing\u00a0\u00bb, \u00ab\u00a0cellpadding\u00a0\u00bb et les \u00ab\u00a0style\u00a0\u00bb qui sont\ncosm\u00e9tiques et les remplacer par leur \u00e9quivalent dans une feuille de style CSS.\n\nLes tableaux de pr\u00e9sentation doivent \u00e9viter d'inclure les attributs \u00ab\u00a0width\u00a0\u00bb et \u00ab\u00a0height\u00a0\u00bb.",
-    "thema": "Pr\u00e9sentation",
-    "name": "14"
-  },
-  "21708": {
-    "goal": "",
-    "checklist": {
-      "id": 601,
-      "name": "SGQRI 008-01"
-    },
-    "explanation": "",
-    "description": "<p class=\"p1\"><span class=\"s1\">En d\u00e9sactivant le code CSS, l'ordre d'affichage du </span>contenu demeure-t-il logique ? Le sens du contenu est-t-il conserver ? Y-a-t-il une perte d'informations pertinentes ?&nbsp; Y-a-t-il un ajout&nbsp; d'informations pertinentes ?</p>",
-    "solution": "<p class=\"p1\"><span class=\"s1\">Selon 11, en d\u00e9sactivant le code CSS, l'ordre d'affichage du contenu </span>doit demeurer logique et le sens du contenu doit \u00eatre conserv\u00e9. Il faut aussi \u00e9viter la perte ou l'ajout d'informations pertinentes</p>",
-    "thema": "Pr\u00e9sentation",
-    "name": "15"
-  },
-  "21710": {
-    "goal": "",
-    "checklist": {
-      "id": 601,
-      "name": "SGQRI 008-01"
-    },
-    "explanation": "",
-    "description": "Toute page du site comporte-t-elle un hyperlien Accessibilit\u00e9 ?",
-    "solution": "Selon 12, la page Web doit comporter un hyperlien \u00ab\u00a0Accessibilit\u00e9\u00a0\u00bb donnant acc\u00e8s \u00e0 une page Web \u00e9num\u00e9rant les principales dispositions prises pour se conformer au pr\u00e9sent standard.",
-    "thema": "Assujettissement",
-    "name": "17"
-  },
-  "21714": {
-    "goal": "",
-    "checklist": {
-      "id": 601,
-      "name": "SGQRI 008-01"
-    },
-    "explanation": "",
-    "description": "Compte tenu de sa nature, le contenu est-il formul\u00e9 de fa\u00e7on compr\u00e9hensible pour les personnes auxquelles il est destin\u00e9 ?",
-    "solution": "Selon 13, tout contenu dans une page Web doit \u00eatre formul\u00e9 de fa\u00e7on compr\u00e9hensible pour les personnes auxquelles il est destin\u00e9, compte tenu de sa nature.\n\nRecommandations : Les paragraphes ne devraient pas \u00eatre justifi\u00e9s. Les blocs de textes justifi\u00e9s peuvent repr\u00e9senter une difficult\u00e9 cognitive. (Source\u00a0: http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F88)",
-    "thema": "Compr\u00e9hension",
-    "name": "21"
-  },
-  "21717": {
-    "goal": "",
-    "checklist": {
-      "id": 601,
-      "name": "SGQRI 008-01"
-    },
-    "explanation": "",
-    "description": "Toute redirection automatique est-elle g\u00e9r\u00e9e de fa\u00e7on instantan\u00e9e ?\n\nLa redirection du c\u00f4t\u00e9 serveur est g\u00e9n\u00e9ralement plus efficace.",
-    "solution": "Selon 15 c), il faut g\u00e9rer toute redirection automatique de fa\u00e7on instantan\u00e9e.",
-    "thema": "Navigation",
-    "name": "24"
-  },
-  "21719": {
-    "goal": "",
-    "checklist": {
-      "id": 601,
-      "name": "SGQRI 008-01"
-    },
-    "explanation": "",
-    "description": "Le d\u00e9placement du focus au clavier est-il toujours visible ?",
-    "solution": "Selon 15 e), la page doit comporter un mode d'utilisation o\u00f9 la zone active est visible pour toute interface utilisable au clavier. Les navigateurs comportent un indice visuel marquant l\u2019emplacement de la zone active (un encadr\u00e9 pointill\u00e9, par exemple). Il est recommand\u00e9 d'accentuer les \u00e9l\u00e9ments au focus par clavier.",
-    "thema": "Pr\u00e9sentation",
-    "name": "26"
-  },
-  "21722": {
-    "goal": "",
-    "checklist": {
-      "id": 601,
-      "name": "SGQRI 008-01"
-    },
-    "explanation": "",
-    "description": "Ind\u00e9pendamment de son affichage, tout menu de navigation avec des niveaux inf\u00e9rieurs est-il balis\u00e9 avec des listes imbriqu\u00e9es ?",
-    "solution": "Selon 15 f), il faut pr\u00e9senter les niveaux inf\u00e9rieurs d\u2019un menu dans des listes imbriqu\u00e9es, par exemple comme suit&nbsp;:<br>&lt;ul&gt;<br>&lt;li&gt;\u00c9l\u00e9ment du menu<br>&lt;ul&gt;&lt;li&gt;\u00c9l\u00e9ment du sous-menu imbriqu\u00e9&lt;/li&gt;&lt;li&gt;...&lt;/li&gt;&lt;/ul&gt;<br>&lt;/li&gt;<br>&lt;li&gt;...&lt;/li&gt;<br>&lt;/ul&gt; <br>Il est recommand\u00e9 que... (dans tout menu d\u00e9roulant dans la page, les \u00e9l\u00e9ments le composant doivent \u00eatre adjacents \u00e0 leur \u00e9l\u00e9ment d\u00e9clencheur lorsqu'on d\u00e9sactive les CSS).",
-    "thema": "Navigation",
-    "name": "29"
-  },
-  "21729": {
-    "goal": "",
-    "checklist": {
-      "id": 601,
-      "name": "SGQRI 008-01"
-    },
-    "explanation": "",
-    "description": "Sauf pour une application Web ou un lecteur multim\u00e9dia, tout contenu est-il exempt de raccourci clavier ?",
-    "solution": "Selon 15 k), sauf pour une application Web ou un lecteur multim\u00e9dia, \u00e9viter tout raccourci clavier. Il faut supprimer les attributs \u00ab\u00a0accesskey\u00a0\u00bb.",
-    "thema": "Navigation",
-    "name": "36"
-  },
-  "21730": {
-    "goal": "",
-    "checklist": {
-      "id": 601,
-      "name": "SGQRI 008-01"
-    },
-    "explanation": "",
-    "description": "La page comporte-t-elle un titre distinctif qui refl\u00e8te son sujet ou son but cod\u00e9 avec la balise &lt;title&gt; ? Le titre est-t-il unique ?",
-    "solution": "Selon 16 a), la page doit comporter un titre distinctif qui refl\u00e8te son sujet ou son but dans la balise &lt;title&gt;. Il est recommand\u00e9 de donner dans l'ordre le titre de la page suivi du nom du site.",
-    "thema": "Structure",
-    "name": "37"
-  },
-  "21731": {
-    "goal": "",
-    "checklist": {
-      "id": 601,
-      "name": "SGQRI 008-01"
-    },
-    "explanation": "",
-    "description": "Tout cadre comporte-t-il un titre permettant d'en comprendre la fonction cod\u00e9 avec l'attribut \u00ab\u00a0title\u00a0\u00bb ?",
-    "solution": "Selon 16 b), une description de tout cadre doit \u00eatre fait par un titre permettant d'en comprendre la fonction, cod\u00e9e avec l\u2019attribut &lt;title&gt;.",
-    "thema": "Structure",
-    "name": "38"
-  },
-  "21733": {
-    "goal": "",
-    "checklist": {
-      "id": 601,
-      "name": "SGQRI 008-01"
-    },
-    "explanation": "",
-    "description": "Tout en-t\u00eate de section est-il cod\u00e9 avec les balises &lt;h1&gt; \u00e0 &lt;h6&gt; en respectant l'ordre hi\u00e9rarchique ?",
-    "solution": "Selon 16 d), les en-t\u00eates de section doivent \u00eatre cod\u00e9s \u00e0 l'aide des balises &lt;h1&gt; \u00e0 &lt;h6&gt;.\n\nSelon 16 d), les balises &lt;h1&gt; \u00e0 &lt;h6&gt; doivent \u00eatre utilis\u00e9es dans un ordre hi\u00e9rarchique\u00a0: pas de &lt;h2&gt; sans &lt;h1&gt;, pas de &lt;h3&gt; sans &lt;h2&gt;,\u00a0etc.",
-    "thema": "Structure",
-    "name": "40"
-  },
-  "21734": {
-    "goal": "",
-    "checklist": {
-      "id": 601,
-      "name": "SGQRI 008-01"
-    },
-    "explanation": "",
-    "description": "Toute liste autre qu'une liste de d\u00e9finitions est-elle cod\u00e9e avec l'une des balises &lt;ul&gt; ou &lt;ol&gt;, et les \u00e9l\u00e9ments sont-ils cod\u00e9s avec la balise &lt;li&gt; ?",
-    "solution": "Selon 16 e), tous regroupements d'items qui forment une liste doivent \u00eatre cod\u00e9s avec l\u2019une des balises &lt;ul&gt;, &lt;ol&gt; ou &lt;dl&gt; et les \u00e9l\u00e9ments de cette liste le sont avec la balise &lt;li&gt; ou, dans le cas d\u2019une liste de d\u00e9finitions, avec les balises &lt;dt&gt; et &lt;dd&gt;. Il est recommand\u00e9 d'\u00e9viter d'inclure des en-t\u00eates de section dans les items de liste. Les liens \u00ab\u00a0...\u00a0\u00bb ne sont pas des \u00e9num\u00e9rations et donc ne doivent pas \u00eatre cod\u00e9s comme listes d'un seul \u00e9l\u00e9ment.",
-    "thema": "Structure",
-    "name": "41"
-  },
-  "21736": {
-    "goal": "",
-    "checklist": {
-      "id": 601,
-      "name": "SGQRI 008-01"
-    },
-    "explanation": "",
-    "description": "La page comporte-t-elle au moins un en-t\u00eate de section de premier niveau qui refl\u00e8te la nature ou la fonction du contenu de la page ?",
-    "solution": "Selon 16 f), la page doit comporter au moins un en-t\u00eate de section de premier niveau (&lt;h1&gt;) qui refl\u00e8te la nature ou la fonction de la page. Il est recommand\u00e9 de le mettre au tout d\u00e9but du contenu principal de la page.",
-    "thema": "Structure",
-    "name": "43"
-  },
-  "21738": {
-    "goal": "",
-    "checklist": {
-      "id": 601,
-      "name": "SGQRI 008-01"
-    },
-    "explanation": "",
-    "description": "Le contenu est-il exempt de toute fluctuation lumineuse ou de tout clignotement comportant un rythme sup\u00e9rieur \u00e0 trois fois \u00e0 la seconde ?",
-    "solution": "Selon 17 b), toute page Web doit \u00eatre exempte de toute fluctuation lumineuse ou clignotement comportant un rythme sup\u00e9rieur \u00e0 trois fois \u00e0 la seconde.",
-    "thema": "Pr\u00e9sentation",
-    "name": "45"
-  },
-  "21739": {
-    "goal": "",
-    "checklist": {
-      "id": 601,
-      "name": "SGQRI 008-01"
-    },
-    "explanation": "",
-    "description": "<p class=\"p1\"><span class=\"s1\">\u00c0 l\u2019exception d\u2019une animation de pr\u00e9chargement, </span>est-t'il possible d'arr\u00eater facilement un \u00e9l\u00e9ment en mouvement d\u2019une dur\u00e9e de plus cinq secondes ?</p>",
-    "solution": "<p class=\"p1\"><span class=\"s1\">Selon 17 c), \u00e0 l\u2019exception d\u2019une animation de pr\u00e9charg\u00e8rent, tout </span>\u00e9l\u00e9ment en mouvement d\u2019une dur\u00e9e de plus cinq secondes doit avoir la possibilit\u00e9 de l'arr\u00eater facilement.</p>",
-    "thema": "Pr\u00e9sentation",
-    "name": "46"
-  },
-  "21740": {
-    "goal": "",
-    "checklist": {
-      "id": 601,
-      "name": "SGQRI 008-01"
-    },
-    "explanation": "",
-    "description": "<p class=\"p1\">\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<p class=\"p1\"><span class=\"s1\">Un fond sonore (incluant les vid\u00e9os avec fond </span>sonore) qui dure plus de trois secondes peut-il \u00eatre arr\u00eat\u00e9 facilement, d\u00e8s l'entr\u00e9e dans la page ?</p></p>",
-    "solution": "<p class=\"p1\">\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<p class=\"p1\">Selon 17 d), d\u00e8s l'entr\u00e9e dans une page Web, un fond sonore qui <span class=\"s1\">dure plus de trois secondes doit \u00eatre facile \u00e0 arr\u00eater.</span></p></p>",
-    "thema": "Pr\u00e9sentation",
-    "name": "47"
-  },
-  "21743": {
-    "goal": "",
-    "checklist": {
-      "id": 601,
-      "name": "SGQRI 008-01"
-    },
-    "explanation": "",
-    "description": "<p class=\"p1\"><span class=\"s1\">\u00c0 l'exception de la feuille de style pour </span>l'impression, la taille d\u2019une police de caract\u00e8res est-elle sp\u00e9cifi\u00e9e avec une unit\u00e9 de mesure en em, en pourcentage ou au moyen des valeurs xx-small, x-small, small, medium, large, x-large et xx-large ?</p>",
-    "solution": "Selon 17 g), la taille d'une police doit \u00eatre exprim\u00e9e en unit\u00e9 de mesure relative, \u00ab&nbsp;em&nbsp;\u00bb ou pourcentage.",
-    "thema": "Pr\u00e9sentation",
-    "name": "50"
-  },
-  "21748": {
-    "goal": "",
-    "checklist": {
-      "id": 601,
-      "name": "SGQRI 008-01"
-    },
-    "explanation": "",
-    "description": "Pour un hyperlien constituant la seule fa\u00e7on d\u2019acc\u00e9der \u00e0 une destination \u00e0 partir de cette page, l'hyperlien est-il libell\u00e9 pour que sa destination puisse \u00eatre d\u00e9termin\u00e9e hors de son contexte imm\u00e9diat ?",
-    "solution": "Selon 18 d), les images doivent avoir un attribut \u00ab\u00a0alt\u00a0\u00bb non vide quand elles sont le seul contenu d'un lien. Tout hyperlien qui constitue la seule fa\u00e7on d\u2019acc\u00e9der \u00e0 la destination doit \u00eatre libell\u00e9 pour que sa destination puisse \u00eatre d\u00e9termin\u00e9e hors de son contexte imm\u00e9diat. L'image-lien \u00ab\u00a0XXX\u00a0\u00bb doit avoir un attribut \u00ab\u00a0alt\u00a0\u00bb non vide.\n\nSelon 18 d), tout lien doit avoir soit un contenu textuel ou une image avec un texte de remplacement.\nSelon 18 d), un hyperlien constituant la seule fa\u00e7on d'acc\u00e9der \u00e0 une destination \u00e0 partir de cette page doit comporter un libell\u00e9 permettant de d\u00e9terminer sa destination hors de son contexte imm\u00e9diat. Les hyperliens comme \u00ab\u00a0En savoir +\u00a0\u00bb doivent \u00eatre accompagn\u00e9s par un texte compl\u00e9mentaire comme suit\u00a0: &lt\u00a0;a href=\"...\"&gt;En savoir +&lt;span class=\u201dhors-ecran\u201d&gt; sur l'Accompagnement en loisir 2012-2013&lt;/span&gt;&lt;/a&gt;. La classe hors \u00e9cran est optionnelle.\n\nRecommandations : Les \u00ab\u00a0&gt;&gt;\u00a0\u00bb\ndoivent \u00eatre cod\u00e9 en CSS, puisque les lecteurs\nd'\u00e9cran lisent \u00ab\u00a0plus grand que, plus grand que\u00a0\u00bb.",
-    "thema": "Compr\u00e9hension",
-    "name": "55"
-  },
-  "21749": {
-    "goal": "",
-    "checklist": {
-      "id": 601,
-      "name": "SGQRI 008-01"
-    },
-    "explanation": "",
-    "description": "<span class=\"s1\">Dans une m\u00eame page, tout hyperlien ayant le </span>m\u00eame libell\u00e9 atteint-il la m\u00eame destination ?",
-    "solution": "<p class=\"p1\"><span class=\"s1\">Selon 18 e),dans une m\u00eame page Web, tous les liens ayant le </span>m\u00eame libell\u00e9 doivent pointer vers la m\u00eame destination. Les liens doivent avoir des libell\u00e9s diff\u00e9rents des une des autres s'ils pointent \u00e0 des pages diff\u00e9rentes.</p>",
-    "thema": "Compr\u00e9hension",
-    "name": "56"
-  },
-  "21751": {
-    "goal": "",
-    "checklist": {
-      "id": 601,
-      "name": "SGQRI 008-01"
-    },
-    "explanation": "",
-    "description": "La langue principale, est-elle cod\u00e9e avec l'attribut lang ou xml:lang dans l'en-t\u00eate de la page avec un codet alphab\u00e9tique de deux caract\u00e8res seulement ?",
-    "solution": "Selon 18 g), la langue principale de la page Web doit \u00eatre cod\u00e9e sur deux caract\u00e8res dans l'en-t\u00eate de la page, dans la balise &lt;html&gt; avec l\u2019attribut \u00ab\u00a0lang\u00a0\u00bb ou \u00ab\u00a0xml:lang\u00a0\u00bb.",
-    "thema": "Compr\u00e9hension",
-    "name": "58"
-  },
-  "21754": {
-    "goal": "",
-    "checklist": {
-      "id": 601,
-      "name": "SGQRI 008-01"
-    },
-    "explanation": "",
-    "description": "Est-ce que tout \u00e9l\u00e9ment de navigation ouvrant une nouvelle fen\u00eatre est accompagn\u00e9 d\u2019une ic\u00f4ne avec un avertissement mentionnant l\u2019ouverture de la fen\u00eatre ?\r\n\r\nNote: l'ic\u00f4ne doit \u00eatre visible et \u00eatre d\u00e9fini dans la page Accessibilit\u00e9.",
-    "solution": "Selon 18 j), pour pr\u00e9venir un changement de contexte, un \u00e9l\u00e9ment de navigation ouvrant une nouvelle fen\u00eatre doit \u00eatre soit accompagn\u00e9 d\u2019une ic\u00f4ne cod\u00e9e avec la balise &lt;img&gt; \u00e0 l'int\u00e9rieur de la balise &lt;a&gt; du lien ouvrant une nouvelle fen\u00eatre et l'avertissement doit \u00eatre inscrit dans l'attribut \u00ab alt \u00bb de cette balise &lt;img&gt; mentionnant l\u2019ouverture de la fen\u00eatre; toutefois, si tous les hyperliens d'une section dans une page Web ouvrent autant de nouvelles fen\u00eatres, cette section de la page Web doit faire appara\u00eetre ce m\u00eame avertissement sous l\u2019en-t\u00eate de section correspondant. L'avertissement peut \u00eatre \u00e9crit comme suit : \u00ab Cet hyperlien s\u2019ouvrira dans une nouvelle fen\u00eatre \u00bb.",
-    "thema": "Compr\u00e9hension",
-    "name": "61"
-  },
-  "21756": {
-    "goal": "",
-    "checklist": {
-      "id": 601,
-      "name": "SGQRI 008-01"
-    },
-    "explanation": "",
-    "description": "Toute zone active pouvant \u00eatre d\u00e9plac\u00e9e avec le clavier dans un applet ou un objet int\u00e9gr\u00e9 dans la page, peut-elle aussi \u00eatre d\u00e9plac\u00e9e hors de cet applet ou de cet objet en utilisant seulement le clavier ?",
-    "solution": "Selon 19 b), tous les composants (ex. \u00e9l\u00e9ments &lt;applet&gt;, &lt;object&gt; et &lt;embed&gt;) doivent poss\u00e9der un m\u00e9canisme au clavier permettant de revenir en arri\u00e8re ou de poursuivre au-del\u00e0 afin de parcourir le reste de la page.",
-    "thema": "Int\u00e9ractivit\u00e9",
-    "name": "63"
-  },
-  "21757": {
-    "goal": "",
-    "checklist": {
-      "id": 601,
-      "name": "SGQRI 008-01"
-    },
-    "explanation": "",
-    "description": "Si un d\u00e9placement hors d\u2019un applet ou d\u2019un objet exige davantage que l\u2019utilisation d\u2019une fl\u00e8che (touche curseur, vers le haut, le bas, la gauche ou la droite) ou d'une tabulation au clavier, la m\u00e9thode \u00e0 utiliser pour sortir de cet applet ou de cet objet est-elle indiqu\u00e9e ?",
-    "solution": "Selon 19 c), \u00e0 moins d'\u00eatre avis\u00e9 d'une autre m\u00e9thode, l'utilisateur doit pouvoir se d\u00e9placer hors du composant o\u00f9 il se trouve en utilisant soit une touche de direction soit la touche tabulation.",
-    "thema": "Int\u00e9ractivit\u00e9",
-    "name": "64"
-  }
+    "21762": {
+        "goal": "", 
+        "checklist": {
+            "id": 601, 
+            "name": "SGQRI 008-01"
+        }, 
+        "explanation": "", 
+        "description": "Toute image informative ou zone sensible d'une image \u00e0 hyperliens multiples, comporte-t-elle un texte de remplacement cod\u00e9 avec l'attribut alt ?\n\nNote: une image informative dont l'\u00e9quivalent du texte informatif significatif est pr\u00e9sent dans le code (visible ou non) et que ce texte est perceptible par le lecteur d'\u00e9cran, cette image est alors consid\u00e9r\u00e9 comme d\u00e9corative et peut \u00eatre cod\u00e9 par CSS.", 
+        "solution": "Selon 20 b), les images informatives doivent avoir un attribut \u00ab\u00a0alt\u00a0\u00bb non vide et contenir du texte de remplacement pertinent. Le contenu de l\u2019attribut \u00ab\u00a0alt\u00a0\u00bb devrait se terminer par un point pour faciliter la compr\u00e9hension d\u2019un utilisateur de synth\u00e8se vocale qui entendra la voix tomber \u00e0 la fin de la phrase pour ne pas se confondre avec la suite du texte. L'attribut \u00ab\u00a0title\u00a0\u00bb ne suffit pas pour l'accessibilit\u00e9. \n\nSelon 20 b) et 19 d), lorsqu'il y a une mise \u00e0 jour sans rechargement, les textes de remplacement des contenus non textuels doivent rester pertinents.\n\nSelon 20 a) et 20 b), il est recommand\u00e9 que lorsqu'un groupe d'images communique une seule information (ex. 5 \u00e9toiles pour \u00e9valuer un contenu), l'une des images doit \u00eatre utilis\u00e9e pour donner la signification de l'ensemble du groupe.\n\nSelon 20 b), une zone sensible d'une image \u00e0 liens multiples doit comporter un texte de remplacement cod\u00e9 avec l\u2019attribut \u00ab\u00a0alt\u00a0\u00bb.", 
+        "thema": "Images", 
+        "name": "69"
+    }, 
+    "21764": {
+        "goal": "", 
+        "checklist": {
+            "id": 601, 
+            "name": "SGQRI 008-01"
+        }, 
+        "explanation": "", 
+        "description": "Toute image uniquement d\u00e9corative ou qui est accompagn\u00e9e d\u2019une l\u00e9gende pr\u00e9sentant un contenu \u00e9quivalent, est-elle cod\u00e9e avec l'attribut alt vide : alt=\"\" ? \n\nNote: contrairement \u00e0 ce qui est indiqu\u00e9 de l'annexe 1 ( cod\u00e9 l'image d\u00e9corative avec la balise &lt;img&gt; avec un alt vide), il est \u00e9galement valide de programm\u00e9 une image d\u00e9corative en CSS. L'important \u00e9tant qu'elle soit ignor\u00e9 par les TA.", 
+        "solution": "Selon 20 d), les images d\u00e9coratives et les images ayant une l\u00e9gende suffisante doivent \u00eatre pourvues d'un attribut \u00ab alt\u00a0\u00bb vide ou, \u00e0 d\u00e9faut, cod\u00e9 en CSS. Les images qui ne transmettent aucune information compl\u00e9mentaire ou qui sont jumel\u00e9es d'un libell\u00e9 sont purement d\u00e9coratives.\n\nSelon 20 d), les liens textuels et les liens images adjacentes doivent \u00eatre combin\u00e9s en un seul lien.", 
+        "thema": "Images", 
+        "name": "71"
+    }, 
+    "21772": {
+        "goal": "", 
+        "checklist": {
+            "id": 601, 
+            "name": "SGQRI 008-01"
+        }, 
+        "explanation": "", 
+        "description": "Tout champ associ\u00e9 \u00e0 une \u00e9tiquette, comporte-t-il un nom unique cod\u00e9 avec l'attribut id et cette valeur est-elle reprise dans l'attribut for de la balise &lt;label&gt; de son \u00e9tiquette ?", 
+        "solution": "Selon 21 c), l'\u00e9tiquette &lt;label&gt; de chaque champ de formulaire doit \u00eatre associ\u00e9e \u00e0 celui-ci de fa\u00e7on univoque \u00e0 l'aide des attributs \u00ab\u00a0id\u00a0\u00bb et \u00ab\u00a0for\u00a0\u00bb.", 
+        "thema": "Formulaires", 
+        "name": "79"
+    }, 
+    "21774": {
+        "goal": "", 
+        "checklist": {
+            "id": 601, 
+            "name": "SGQRI 008-01"
+        }, 
+        "explanation": "", 
+        "description": "\u00c0 l'exception des donn\u00e9es saisies dans un formulaire et ramen\u00e9es \u00e0 la personne \u00e0 des fins de validation, tout champ est-il exempt d\u2019une valeur textuelle par d\u00e9faut ?", 
+        "solution": "Selon 21 e), tout champ dans un formulaire doit \u00eatre exempt d\u2019une valeur textuelle par d\u00e9faut.", 
+        "thema": "Formulaires", 
+        "name": "81"
+    }, 
+    "21775": {
+        "goal": "", 
+        "checklist": {
+            "id": 601, 
+            "name": "SGQRI 008-01"
+        }, 
+        "explanation": "", 
+        "description": "Toute \u00e9tiquette d\u00e9crit-elle clairement la fonction du champ auquel elle est associ\u00e9e ?\n\nNote: s'il y a un attribut title, ce dernier d\u00e9crit-il clairement la fonction du champ sur lequel il est appliqu\u00e9 ?\n\nNote: s'il y a un \u00e9tiquette plus un attribut title, les deux combin\u00e9s d\u00e9crivent-ils bien la fonction du champ auquel l'\u00e9tiquette est associ\u00e9e et sur lequel l\u2019attribut title est appliqu\u00e9.", 
+        "solution": "Selon 21 f), l'\u00e9tiquette de chacun des champs doit d\u00e9crire clairement la fonction du champ auquel elle a \u00e9t\u00e9 associ\u00e9e.", 
+        "thema": "Formulaires", 
+        "name": "82"
+    }, 
+    "21778": {
+        "goal": "", 
+        "checklist": {
+            "id": 601, 
+            "name": "SGQRI 008-01"
+        }, 
+        "explanation": "", 
+        "description": "Tout tableau de donn\u00e9es, comporte-t-il des cellules d\u2019en-t\u00eate de ligne ou de colonne cod\u00e9es avec la balise &lt;th&gt; ?", 
+        "solution": "Selon 22 a), tout tableau de donn\u00e9es doit comporter des cellules d\u2019en-t\u00eate de ligne ou de colonne cod\u00e9e avec la balise &lt;th&gt;. Pour plus de d\u00e9tail, consultez le Wiki du W3C\u00a0:http://www.w3.org/wiki/HTML/Elements/th.", 
+        "thema": "Tableaux", 
+        "name": "85"
+    }, 
+    "21779": {
+        "goal": "", 
+        "checklist": {
+            "id": 601, 
+            "name": "SGQRI 008-01"
+        }, 
+        "explanation": "", 
+        "description": "Dans un tableau complexe de donn\u00e9es, chaque balise &lt;th&gt; comporte-t-elle un identifiant unique cod\u00e9 avec l'attribut id ? \nDans un tableau complexe de donn\u00e9es, chaque cellule \u00e0 laquelle \ns'applique une cellule d'en-t\u00eate comporte-t-elle un attribut headers \ndans les balises &lt;td&gt; faisant r\u00e9f\u00e9rence aux cellules d\u2019en-t\u00eate \ncorrespondantes ?", 
+        "solution": "Selon 22 b), tout tableau complexe de donn\u00e9es doit comporter un identifiant unique cod\u00e9 avec l'attribut \u00ab\u00a0id\u00a0\u00bb et qui fait r\u00e9f\u00e9rence aux cellules d\u2019en-t\u00eate correspondantes cod\u00e9es avec l\u2019attribut \u00ab\u00a0headers\u00a0\u00bb.", 
+        "thema": "Tableaux", 
+        "name": "86"
+    }, 
+    "21780": {
+        "goal": "", 
+        "checklist": {
+            "id": 601, 
+            "name": "SGQRI 008-01"
+        }, 
+        "explanation": "", 
+        "description": "Tout tableau de pr\u00e9sentation est-il exempt des attributs et des balises r\u00e9serv\u00e9s \u00e0 un tableau de donn\u00e9es ?", 
+        "solution": "Selon 22 c), un tableau de pr\u00e9sentation doit \u00e9viter l\u2019usage des attributs et des balises r\u00e9serv\u00e9es \u00e0 un tableau de donn\u00e9es. L\u2019attribut r\u00e9serv\u00e9 \u00e0 un tableau de donn\u00e9es est \u00ab\u00a0summary\u00a0\u00bb, les balises r\u00e9serv\u00e9es \u00e0 un tableau de donn\u00e9es sont : &lt;caption&gt;, &lt;th&gt;, &lt;thead&gt; et &lt;tfoot&gt;.", 
+        "thema": "Tableaux", 
+        "name": "87"
+    }, 
+    "21781": {
+        "goal": "", 
+        "checklist": {
+            "id": 601, 
+            "name": "SGQRI 008-01"
+        }, 
+        "explanation": "", 
+        "description": "L'information incluse dans un tableau de pr\u00e9sentation, respecte-t-elle un ordre s\u00e9quentiel logique du contenu une fois cette information restructur\u00e9e de fa\u00e7on lin\u00e9aire ?", 
+        "solution": "Selon 22 d), une information incluse dans un tableau de pr\u00e9sentation, doit respecter un ordre s\u00e9quentiel logique du contenu une fois cette information restructur\u00e9e de fa\u00e7on lin\u00e9aire.", 
+        "thema": "Tableaux", 
+        "name": "88"
+    }, 
+    "21782": {
+        "goal": "", 
+        "checklist": {
+            "id": 601, 
+            "name": "SGQRI 008-01"
+        }, 
+        "explanation": "", 
+        "description": "Sur un site Web public seulement, un tableau complexe de donn\u00e9es comporte-t-il un r\u00e9sum\u00e9, cod\u00e9 avec l'attribut \u00ab\u00a0summary\u00a0\u00bb de la balise &lt;table&gt;, qui d\u00e9crit bri\u00e8vement les grandes cat\u00e9gories d\u2019information pr\u00e9sent\u00e9es par colonnes et par lignes, et qui note, s\u2019il y a lieu, la pr\u00e9sence d\u2019irr\u00e9gularit\u00e9s dans le nombre de lignes ou de colonnes ? \n\nNote : En HTML5, m\u00eame si l\u2019attribut \u00ab\u00a0summary\u00a0\u00bb est d\u00e9suet, il faut l'utiliser.", 
+        "solution": "Selon 22 e), un tableau complexe de donn\u00e9es doit comporter un r\u00e9sum\u00e9 qui d\u00e9crit bri\u00e8vement les grandes cat\u00e9gories d\u2019information pr\u00e9sent\u00e9e par colonnes et par lignes, et qui note, s\u2019il y a lieu, la pr\u00e9sence d\u2019irr\u00e9gularit\u00e9s dans le nombre de lignes ou de colonnes.", 
+        "thema": "Tableaux", 
+        "name": "89"
+    }, 
+    "21701": {
+        "goal": "", 
+        "checklist": {
+            "id": 601, 
+            "name": "SGQRI 008-01"
+        }, 
+        "explanation": "", 
+        "description": "Le code de la page Web est-il exempt d\u2019erreurs d\u2019imbrication de balises ?", 
+        "solution": "Selon 10 a), les balises doivent \u00eatre imbriqu\u00e9es conform\u00e9ment \u00e0 la d\u00e9claration de type de document du W3C. Vous pouvez voir les erreurs \u00ab document type does not allow element \"xxxx\" here \u00bb \u00e0 l'aide de l'outil de validation : http://validator.w3.org.", 
+        "thema": "Validit\u00e9", 
+        "name": "8"
+    }, 
+    "21702": {
+        "goal": "", 
+        "checklist": {
+            "id": 601, 
+            "name": "SGQRI 008-01"
+        }, 
+        "explanation": "", 
+        "description": "Le code de la page Web est-il exempt d\u2019erreurs d\u2019ouverture et de fermeture de balises ?", 
+        "solution": "Selon 10 a), les \u00e9l\u00e9ments doivent avoir des balises compl\u00e8tes de d\u00e9but et de fin conform\u00e9ment \u00e0 leurs sp\u00e9cifications. Vous pouvez voir les erreurs \u00ab end tag for \"xxxx\" omitted \u00bb \u00e0 l'aide de l'outil de validation : http://validator.w3.org.", 
+        "thema": "Validit\u00e9", 
+        "name": "9"
+    }, 
+    "21703": {
+        "goal": "", 
+        "checklist": {
+            "id": 601, 
+            "name": "SGQRI 008-01"
+        }, 
+        "explanation": "", 
+        "description": "Le code de la page Web est-il exempt d\u2019erreurs d\u2019unicit\u00e9 des attributs dans une balise ?", 
+        "solution": "Selon 10 a), les identifiants \u00ab id \u00bb doivent \u00eatre tous uniques. Tous les \u00e9l\u00e9ments doivent \u00eatre exempts d'attributs dupliqu\u00e9s.", 
+        "thema": "Validit\u00e9", 
+        "name": "10"
+    }, 
+    "21705": {
+        "goal": "", 
+        "checklist": {
+            "id": 601, 
+            "name": "SGQRI 008-01"
+        }, 
+        "explanation": "", 
+        "description": "La d\u00e9claration de type de document est-elle cod\u00e9e avec la balise &lt;DOCTYPE&gt; et respecte-t-elle la syntaxe pr\u00e9vue par le W3C ?", 
+        "solution": "Selon 10 c), la page doit comporter une d\u00e9finition de type de document DTD (&lt;doctype&gt;) cod\u00e9 tel que pr\u00e9cis\u00e9 dans Recommended Doctype Declarations to use in your Web document\u00a0: http://www.w3.org/QA/2002/04/valid-dtd-list.html", 
+        "thema": "Validit\u00e9", 
+        "name": "12"
+    }, 
+    "21706": {
+        "goal": "", 
+        "checklist": {
+            "id": 601, 
+            "name": "SGQRI 008-01"
+        }, 
+        "explanation": "", 
+        "description": "Toute balise &lt;object&gt; comporte-t-elle, \r\n- soit un contenu directement utilisable par les technologies d'adaptation informatiques, \r\n- soit un texte donnant une version de rechange \u00e9quivalente conforme, \r\n- soit un hyperlien vers cette version ?", 
+        "solution": "<p class=\"p1\"><span class=\"s1\">Selon 10 d), un objet int\u00e9gr\u00e9 \u00e0 la page Web doit offrir un contenu </span>directement utilisable par les technologies d'adaptation informatiques ou doit contenir une version de rechange \u00e9quivalente conforme. Il est aussi pr\u00e9f\u00e9rable d\u2019utiliser la balise &lt;object&gt; pour un objet et non des balises &lt;applet&gt; et &lt;embed&gt;, parce qu'ils ne font pas partit des normes W3C.</p>", 
+        "thema": "Images", 
+        "name": "13"
+    }, 
+    "21707": {
+        "goal": "", 
+        "checklist": {
+            "id": 601, 
+            "name": "SGQRI 008-01"
+        }, 
+        "explanation": "", 
+        "description": "La pr\u00e9sentation visuelle du texte est-elle toujours g\u00e9r\u00e9e par la feuille de style ? Aucun style n'est g\u00e9r\u00e9 par un attribut dans la page.", 
+        "solution": "Selon 11, les attributs de pr\u00e9sentation doivent \u00eatre appliqu\u00e9s par CSS. Il faut \u00e9viter les attributs \u00ab\u00a0border\u00a0\u00bb, \u00ab\u00a0cellspacing\u00a0\u00bb, \u00ab\u00a0cellpadding\u00a0\u00bb et les \u00ab\u00a0style\u00a0\u00bb qui sont\ncosm\u00e9tiques et les remplacer par leur \u00e9quivalent dans une feuille de style CSS.\n\nLes tableaux de pr\u00e9sentation doivent \u00e9viter d'inclure les attributs \u00ab\u00a0width\u00a0\u00bb et \u00ab\u00a0height\u00a0\u00bb.", 
+        "thema": "Pr\u00e9sentation", 
+        "name": "14"
+    }, 
+    "21710": {
+        "goal": "", 
+        "checklist": {
+            "id": 601, 
+            "name": "SGQRI 008-01"
+        }, 
+        "explanation": "", 
+        "description": "Toute page du site comporte-t-elle un hyperlien Accessibilit\u00e9 ?", 
+        "solution": "Selon 12, la page Web doit comporter un hyperlien \u00ab\u00a0Accessibilit\u00e9\u00a0\u00bb donnant acc\u00e8s \u00e0 une page Web \u00e9num\u00e9rant les principales dispositions prises pour se conformer au pr\u00e9sent standard.", 
+        "thema": "Assujettissement", 
+        "name": "17"
+    }, 
+    "21717": {
+        "goal": "", 
+        "checklist": {
+            "id": 601, 
+            "name": "SGQRI 008-01"
+        }, 
+        "explanation": "", 
+        "description": "Toute redirection automatique est-elle g\u00e9r\u00e9e de fa\u00e7on instantan\u00e9e ?\n\nLa redirection du c\u00f4t\u00e9 serveur est g\u00e9n\u00e9ralement plus efficace.", 
+        "solution": "Selon 15 c), il faut g\u00e9rer toute redirection automatique de fa\u00e7on instantan\u00e9e.", 
+        "thema": "Navigation", 
+        "name": "24"
+    }, 
+    "21722": {
+        "goal": "", 
+        "checklist": {
+            "id": 601, 
+            "name": "SGQRI 008-01"
+        }, 
+        "explanation": "", 
+        "description": "Ind\u00e9pendamment de son affichage, tout menu de navigation avec des niveaux inf\u00e9rieurs est-il balis\u00e9 avec des listes imbriqu\u00e9es ?", 
+        "solution": "Selon 15 f), il faut pr\u00e9senter les niveaux inf\u00e9rieurs d\u2019un menu dans des listes imbriqu\u00e9es, par exemple comme suit&nbsp;:<br>&lt;ul&gt;<br>&lt;li&gt;\u00c9l\u00e9ment du menu<br>&lt;ul&gt;&lt;li&gt;\u00c9l\u00e9ment du sous-menu imbriqu\u00e9&lt;/li&gt;&lt;li&gt;...&lt;/li&gt;&lt;/ul&gt;<br>&lt;/li&gt;<br>&lt;li&gt;...&lt;/li&gt;<br>&lt;/ul&gt; <br>Il est recommand\u00e9 que... (dans tout menu d\u00e9roulant dans la page, les \u00e9l\u00e9ments le composant doivent \u00eatre adjacents \u00e0 leur \u00e9l\u00e9ment d\u00e9clencheur lorsqu'on d\u00e9sactive les CSS).", 
+        "thema": "Navigation", 
+        "name": "29"
+    }, 
+    "21729": {
+        "goal": "", 
+        "checklist": {
+            "id": 601, 
+            "name": "SGQRI 008-01"
+        }, 
+        "explanation": "", 
+        "description": "Sauf pour une application Web ou un lecteur multim\u00e9dia, tout contenu est-il exempt de raccourci clavier ?", 
+        "solution": "Selon 15 k), sauf pour une application Web ou un lecteur multim\u00e9dia, \u00e9viter tout raccourci clavier. Il faut supprimer les attributs \u00ab\u00a0accesskey\u00a0\u00bb.", 
+        "thema": "Navigation", 
+        "name": "36"
+    }, 
+    "21730": {
+        "goal": "", 
+        "checklist": {
+            "id": 601, 
+            "name": "SGQRI 008-01"
+        }, 
+        "explanation": "", 
+        "description": "La page comporte-t-elle un titre distinctif qui refl\u00e8te son sujet ou son but cod\u00e9 avec la balise &lt;title&gt; ? Le titre est-t-il unique ?", 
+        "solution": "Selon 16 a), la page doit comporter un titre distinctif qui refl\u00e8te son sujet ou son but dans la balise &lt;title&gt;. Il est recommand\u00e9 de donner dans l'ordre le titre de la page suivi du nom du site.", 
+        "thema": "Structure", 
+        "name": "37"
+    }, 
+    "21731": {
+        "goal": "", 
+        "checklist": {
+            "id": 601, 
+            "name": "SGQRI 008-01"
+        }, 
+        "explanation": "", 
+        "description": "Tout cadre comporte-t-il un titre permettant d'en comprendre la fonction cod\u00e9 avec l'attribut \u00ab\u00a0title\u00a0\u00bb ?", 
+        "solution": "Selon 16 b), une description de tout cadre doit \u00eatre fait par un titre permettant d'en comprendre la fonction, cod\u00e9e avec l\u2019attribut &lt;title&gt;.", 
+        "thema": "Structure", 
+        "name": "38"
+    }, 
+    "21733": {
+        "goal": "", 
+        "checklist": {
+            "id": 601, 
+            "name": "SGQRI 008-01"
+        }, 
+        "explanation": "", 
+        "description": "Tout en-t\u00eate de section est-il cod\u00e9 avec les balises &lt;h1&gt; \u00e0 &lt;h6&gt; en respectant l'ordre hi\u00e9rarchique ?", 
+        "solution": "Selon 16 d), les en-t\u00eates de section doivent \u00eatre cod\u00e9s \u00e0 l'aide des balises &lt;h1&gt; \u00e0 &lt;h6&gt;.\n\nSelon 16 d), les balises &lt;h1&gt; \u00e0 &lt;h6&gt; doivent \u00eatre utilis\u00e9es dans un ordre hi\u00e9rarchique\u00a0: pas de &lt;h2&gt; sans &lt;h1&gt;, pas de &lt;h3&gt; sans &lt;h2&gt;,\u00a0etc.", 
+        "thema": "Structure", 
+        "name": "40"
+    }, 
+    "21734": {
+        "goal": "", 
+        "checklist": {
+            "id": 601, 
+            "name": "SGQRI 008-01"
+        }, 
+        "explanation": "", 
+        "description": "Toute liste autre qu'une liste de d\u00e9finitions est-elle cod\u00e9e avec l'une des balises &lt;ul&gt; ou &lt;ol&gt;, et les \u00e9l\u00e9ments sont-ils cod\u00e9s avec la balise &lt;li&gt; ?", 
+        "solution": "Selon 16 e), tous regroupements d'items qui forment une liste doivent \u00eatre cod\u00e9s avec l\u2019une des balises &lt;ul&gt;, &lt;ol&gt; ou &lt;dl&gt; et les \u00e9l\u00e9ments de cette liste le sont avec la balise &lt;li&gt; ou, dans le cas d\u2019une liste de d\u00e9finitions, avec les balises &lt;dt&gt; et &lt;dd&gt;. Il est recommand\u00e9 d'\u00e9viter d'inclure des en-t\u00eates de section dans les items de liste. Les liens \u00ab\u00a0...\u00a0\u00bb ne sont pas des \u00e9num\u00e9rations et donc ne doivent pas \u00eatre cod\u00e9s comme listes d'un seul \u00e9l\u00e9ment.", 
+        "thema": "Structure", 
+        "name": "41"
+    }, 
+    "21736": {
+        "goal": "", 
+        "checklist": {
+            "id": 601, 
+            "name": "SGQRI 008-01"
+        }, 
+        "explanation": "", 
+        "description": "La page comporte-t-elle au moins un en-t\u00eate de section de premier niveau qui refl\u00e8te la nature ou la fonction du contenu de la page ?", 
+        "solution": "Selon 16 f), la page doit comporter au moins un en-t\u00eate de section de premier niveau (&lt;h1&gt;) qui refl\u00e8te la nature ou la fonction de la page. Il est recommand\u00e9 de le mettre au tout d\u00e9but du contenu principal de la page.", 
+        "thema": "Structure", 
+        "name": "43"
+    }, 
+    "21738": {
+        "goal": "", 
+        "checklist": {
+            "id": 601, 
+            "name": "SGQRI 008-01"
+        }, 
+        "explanation": "", 
+        "description": "Le contenu est-il exempt de toute fluctuation lumineuse ou de tout clignotement comportant un rythme sup\u00e9rieur \u00e0 trois fois \u00e0 la seconde ?", 
+        "solution": "Selon 17 b), toute page Web doit \u00eatre exempte de toute fluctuation lumineuse ou clignotement comportant un rythme sup\u00e9rieur \u00e0 trois fois \u00e0 la seconde.", 
+        "thema": "Pr\u00e9sentation", 
+        "name": "45"
+    }, 
+    "21739": {
+        "goal": "", 
+        "checklist": {
+            "id": 601, 
+            "name": "SGQRI 008-01"
+        }, 
+        "explanation": "", 
+        "description": "<p class=\"p1\"><span class=\"s1\">\u00c0 l\u2019exception d\u2019une animation de pr\u00e9chargement, </span>est-t'il possible d'arr\u00eater facilement un \u00e9l\u00e9ment en mouvement d\u2019une dur\u00e9e de plus cinq secondes ?</p>", 
+        "solution": "<p class=\"p1\"><span class=\"s1\">Selon 17 c), \u00e0 l\u2019exception d\u2019une animation de pr\u00e9charg\u00e8rent, tout </span>\u00e9l\u00e9ment en mouvement d\u2019une dur\u00e9e de plus cinq secondes doit avoir la possibilit\u00e9 de l'arr\u00eater facilement.</p>", 
+        "thema": "Pr\u00e9sentation", 
+        "name": "46"
+    }, 
+    "21740": {
+        "goal": "", 
+        "checklist": {
+            "id": 601, 
+            "name": "SGQRI 008-01"
+        }, 
+        "explanation": "", 
+        "description": "<p class=\"p1\">\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<p class=\"p1\"><span class=\"s1\">Un fond sonore (incluant les vid\u00e9os avec fond </span>sonore) qui dure plus de trois secondes peut-il \u00eatre arr\u00eat\u00e9 facilement, d\u00e8s l'entr\u00e9e dans la page ?</p></p>", 
+        "solution": "<p class=\"p1\">\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<p class=\"p1\">Selon 17 d), d\u00e8s l'entr\u00e9e dans une page Web, un fond sonore qui <span class=\"s1\">dure plus de trois secondes doit \u00eatre facile \u00e0 arr\u00eater.</span></p></p>", 
+        "thema": "Pr\u00e9sentation", 
+        "name": "47"
+    }, 
+    "21748": {
+        "goal": "", 
+        "checklist": {
+            "id": 601, 
+            "name": "SGQRI 008-01"
+        }, 
+        "explanation": "", 
+        "description": "Pour un hyperlien constituant la seule fa\u00e7on d\u2019acc\u00e9der \u00e0 une destination \u00e0 partir de cette page, l'hyperlien est-il libell\u00e9 pour que sa destination puisse \u00eatre d\u00e9termin\u00e9e hors de son contexte imm\u00e9diat ?", 
+        "solution": "Selon 18 d), les images doivent avoir un attribut \u00ab\u00a0alt\u00a0\u00bb non vide quand elles sont le seul contenu d'un lien. Tout hyperlien qui constitue la seule fa\u00e7on d\u2019acc\u00e9der \u00e0 la destination doit \u00eatre libell\u00e9 pour que sa destination puisse \u00eatre d\u00e9termin\u00e9e hors de son contexte imm\u00e9diat. L'image-lien \u00ab\u00a0XXX\u00a0\u00bb doit avoir un attribut \u00ab\u00a0alt\u00a0\u00bb non vide.\n\nSelon 18 d), tout lien doit avoir soit un contenu textuel ou une image avec un texte de remplacement.\nSelon 18 d), un hyperlien constituant la seule fa\u00e7on d'acc\u00e9der \u00e0 une destination \u00e0 partir de cette page doit comporter un libell\u00e9 permettant de d\u00e9terminer sa destination hors de son contexte imm\u00e9diat. Les hyperliens comme \u00ab\u00a0En savoir +\u00a0\u00bb doivent \u00eatre accompagn\u00e9s par un texte compl\u00e9mentaire comme suit\u00a0: &lt\u00a0;a href=\"...\"&gt;En savoir +&lt;span class=\u201dhors-ecran\u201d&gt; sur l'Accompagnement en loisir 2012-2013&lt;/span&gt;&lt;/a&gt;. La classe hors \u00e9cran est optionnelle.\n\nRecommandations : Les \u00ab\u00a0&gt;&gt;\u00a0\u00bb\ndoivent \u00eatre cod\u00e9 en CSS, puisque les lecteurs\nd'\u00e9cran lisent \u00ab\u00a0plus grand que, plus grand que\u00a0\u00bb.", 
+        "thema": "Compr\u00e9hension", 
+        "name": "55"
+    }, 
+    "21749": {
+        "goal": "", 
+        "checklist": {
+            "id": 601, 
+            "name": "SGQRI 008-01"
+        }, 
+        "explanation": "", 
+        "description": "<span class=\"s1\">Dans une m\u00eame page, tout hyperlien ayant le </span>m\u00eame libell\u00e9 atteint-il la m\u00eame destination ?", 
+        "solution": "<p class=\"p1\"><span class=\"s1\">Selon 18 e),dans une m\u00eame page Web, tous les liens ayant le </span>m\u00eame libell\u00e9 doivent pointer vers la m\u00eame destination. Les liens doivent avoir des libell\u00e9s diff\u00e9rents des une des autres s'ils pointent \u00e0 des pages diff\u00e9rentes.</p>", 
+        "thema": "Compr\u00e9hension", 
+        "name": "56"
+    }, 
+    "21751": {
+        "goal": "", 
+        "checklist": {
+            "id": 601, 
+            "name": "SGQRI 008-01"
+        }, 
+        "explanation": "", 
+        "description": "La langue principale, est-elle cod\u00e9e avec l'attribut lang ou xml:lang dans l'en-t\u00eate de la page avec un codet alphab\u00e9tique de deux caract\u00e8res seulement ?", 
+        "solution": "Selon 18 g), la langue principale de la page Web doit \u00eatre cod\u00e9e sur deux caract\u00e8res dans l'en-t\u00eate de la page, dans la balise &lt;html&gt; avec l\u2019attribut \u00ab\u00a0lang\u00a0\u00bb ou \u00ab\u00a0xml:lang\u00a0\u00bb.", 
+        "thema": "Compr\u00e9hension", 
+        "name": "58"
+    }, 
+    "21754": {
+        "goal": "", 
+        "checklist": {
+            "id": 601, 
+            "name": "SGQRI 008-01"
+        }, 
+        "explanation": "", 
+        "description": "Est-ce que tout \u00e9l\u00e9ment de navigation ouvrant une nouvelle fen\u00eatre est accompagn\u00e9 d\u2019une ic\u00f4ne avec un avertissement mentionnant l\u2019ouverture de la fen\u00eatre ?\r\n\r\nNote: l'ic\u00f4ne doit \u00eatre visible et \u00eatre d\u00e9fini dans la page Accessibilit\u00e9.", 
+        "solution": "Selon 18 j), pour pr\u00e9venir un changement de contexte, un \u00e9l\u00e9ment de navigation ouvrant une nouvelle fen\u00eatre doit \u00eatre soit accompagn\u00e9 d\u2019une ic\u00f4ne cod\u00e9e avec la balise &lt;img&gt; \u00e0 l'int\u00e9rieur de la balise &lt;a&gt; du lien ouvrant une nouvelle fen\u00eatre et l'avertissement doit \u00eatre inscrit dans l'attribut \u00ab alt \u00bb de cette balise &lt;img&gt; mentionnant l\u2019ouverture de la fen\u00eatre; toutefois, si tous les hyperliens d'une section dans une page Web ouvrent autant de nouvelles fen\u00eatres, cette section de la page Web doit faire appara\u00eetre ce m\u00eame avertissement sous l\u2019en-t\u00eate de section correspondant. L'avertissement peut \u00eatre \u00e9crit comme suit : \u00ab Cet hyperlien s\u2019ouvrira dans une nouvelle fen\u00eatre \u00bb.", 
+        "thema": "Compr\u00e9hension", 
+        "name": "61"
+    }, 
+    "21756": {
+        "goal": "", 
+        "checklist": {
+            "id": 601, 
+            "name": "SGQRI 008-01"
+        }, 
+        "explanation": "", 
+        "description": "Toute zone active pouvant \u00eatre d\u00e9plac\u00e9e avec le clavier dans un applet ou un objet int\u00e9gr\u00e9 dans la page, peut-elle aussi \u00eatre d\u00e9plac\u00e9e hors de cet applet ou de cet objet en utilisant seulement le clavier ?", 
+        "solution": "Selon 19 b), tous les composants (ex. \u00e9l\u00e9ments &lt;applet&gt;, &lt;object&gt; et &lt;embed&gt;) doivent poss\u00e9der un m\u00e9canisme au clavier permettant de revenir en arri\u00e8re ou de poursuivre au-del\u00e0 afin de parcourir le reste de la page.", 
+        "thema": "Int\u00e9ractivit\u00e9", 
+        "name": "63"
+    }, 
+    "21757": {
+        "goal": "", 
+        "checklist": {
+            "id": 601, 
+            "name": "SGQRI 008-01"
+        }, 
+        "explanation": "", 
+        "description": "Si un d\u00e9placement hors d\u2019un applet ou d\u2019un objet exige davantage que l\u2019utilisation d\u2019une fl\u00e8che (touche curseur, vers le haut, le bas, la gauche ou la droite) ou d'une tabulation au clavier, la m\u00e9thode \u00e0 utiliser pour sortir de cet applet ou de cet objet est-elle indiqu\u00e9e ?", 
+        "solution": "Selon 19 c), \u00e0 moins d'\u00eatre avis\u00e9 d'une autre m\u00e9thode, l'utilisateur doit pouvoir se d\u00e9placer hors du composant o\u00f9 il se trouve en utilisant soit une touche de direction soit la touche tabulation.", 
+        "thema": "Int\u00e9ractivit\u00e9", 
+        "name": "64"
+    }
 }
