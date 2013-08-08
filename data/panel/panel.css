@@ -49,6 +49,7 @@
     -moz-appearance: none;
     cursor: n-resize;
     background: none;
+    min-height: 5px;
     height: 5px;
 }
 
