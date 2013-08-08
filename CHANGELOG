@@ -1,3 +1,9 @@
+2013-08-08 - Version 0.8.0
+
+- Fixed node inspector call with Firefox 23
+- New tests
+- Improved test speed
+
 2013-07-25 - Version 0.7.12
 
 - Updated opquast test-runner
