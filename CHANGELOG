@@ -1,3 +1,7 @@
+2013-08-13 - Version 0.8.1
+
+- Fixed Firefox maxVersion
+
 2013-08-08 - Version 0.8.0
 
 - Fixed node inspector call with Firefox 23
