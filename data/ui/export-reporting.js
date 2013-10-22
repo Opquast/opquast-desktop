@@ -99,11 +99,25 @@ self.port.on("accountRemoved", function(username) {
 
 
 self.port.on("showProjects", function(projects) {
-    function showConfirm(question, row) {
-        var projectID = row.data('project_id'),
+    $('body').doT('tplProjectList', {
+        'projects': projects
+    });
+
+    $('#projects tbody td button').click(function(evt) {
+        let row = $(evt.target).parents('tr'),
+            projectID = row.data('project_id'),
             projectName = $('td[headers~="hName"]', row).text();
 
-        question = question.replace("%s", projectName);
+        self.port.emit("showSamples", projectID, projectName);
+    });
+});
+
+self.port.on("showSamples", function(samples, projectID, projectName) {
+    function showConfirm(question, row) {
+        let sampleID = row.data('sample_id'),
+            sampleName = $('td[headers~="hName"]', row).text();
+
+        question = question.replace("%s", sampleName);
 
         var hidden = $('body *').hide();
         var confirm = $($.doT('tplMessage', {
@@ -121,32 +135,20 @@ self.port.on("showProjects", function(projects) {
         });
 
         bt_ok.click(function() {
-            self.port.emit("sendResults", projectID, projectName);
+            self.port.emit("sendResults", projectID, sampleID, sampleName);
         });
 
         confirm.append('<br />').append(bt_ok).append(' ').append(bt_cancel);
     }
 
-    $('body').doT('tplProjectList', {
-        'projects': projects
+    $('body').doT('tplSampleList', {
+        'samples': samples
     });
 
-    $('#projects tbody td button').click(function(evt) {
-        var row = $(evt.target).parents('tr');
+    $('#samples tbody td button').click(function(evt) {
+        let row = $(evt.target).parents('tr');
 
         showConfirm(self.options.locales['oqs.confirmDataSending'], row);
-    });
-});
-
-self.port.on("showPages", function(pages, projectID, projectName) {
-    $('body').doT('tplPageList', {
-        'pages': pages
-    });
-
-    $('#pages tbody td button').click(function(evt) {
-        var resource_uri = $(evt.target).parents('tr').data('resource_uri');
-
-        self.port.emit("removePage", resource_uri, projectID, projectName);
     });
 });
 

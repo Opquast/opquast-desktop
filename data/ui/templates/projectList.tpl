@@ -1,3 +1,5 @@
+<h2>{{! it.locales['oqs.choose_project'] }}</h2>
+
 <table id="projects" class="data">
   <thead>
     <tr>
