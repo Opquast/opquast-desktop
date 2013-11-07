@@ -41,6 +41,10 @@
 "use strict";
 
 (function($) {
+    self.port.on("attached", function(lang) {
+        $('html').attr('lang', lang);
+    });
+
     function showSaved() {
         $('#pref_saved').stop().show();
         setTimeout(function() {

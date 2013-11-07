@@ -40,10 +40,11 @@
 "use strict";
 
 (function($) {
-    self.port.on("attached", function(template) {
+    self.port.on("attached", function(template, lang) {
         $('body').html(doT.compile(template)({
             "version": self.options.version,
             "platform": self.options.platform
         }));
+        $('html').attr('lang', lang);
     });
 })(jQuery);
