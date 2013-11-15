@@ -203,6 +203,14 @@ self.port.on("showResults", function(tests, tableOptions) {
 
             $('a.prev', this).parent().toggle($(this).detailsViewer('getSibling', row, -1).length > 0);
             $('a.next', this).parent().toggle($(this).detailsViewer('getSibling', row, 1).length > 0);
+            evt.target.focus();
+        },
+        open: function(evt) {
+            evt.target.focus();
+        },
+        close: function(evt) {
+            var orig_row = $(evt.target).data('origin');
+            $('a', orig_row).focus();
         }
     });
     $('#resultDetails').on('click', 'a.close', function(evt) {
