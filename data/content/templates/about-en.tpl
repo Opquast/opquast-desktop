@@ -44,6 +44,9 @@
       <li>You can launch or relaunch the analysis at any time.</li>
     </ul>
 
+    <p><strong>Note:</strong> You can also use "Opquast Desktop" menu in
+    "Tools > Web developer" or the keyboard shortcut "ctrl + alt + o".</p>
+
     <h3>Result management</h3>
 
     <ul>

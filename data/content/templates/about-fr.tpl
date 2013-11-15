@@ -45,6 +45,9 @@
       <li>Vous pouvez lancer ou relancer l'analyse à tout moment.</li>
     </ul>
 
+    <p><strong>Note :</strong> Vous pouvez également utiliser le menu "Opquast Desktop" dans
+    "Outils > Développeur web" ou le raccourci clavier "ctrl + alt + o".</p>
+
     <h3>Manipulation des résultats</h3>
 
     <ul>
