@@ -22,7 +22,7 @@
         <td headers="hChecklist">{{! result.criterion.checklist.name}}</td>
         <td headers="hRef">{{! result.criterion.name }}</td>
         <td headers="hThema">{{! result.criterion.thema }}</td>
-        <td headers="hLabel">{{! result.criterion.description }}</td>
+        <td headers="hLabel"><a href="#">{{! result.criterion.description }}</a></td>
         <td headers="hDuration">{{! result.time }}</td>
         <td headers="hResult" data-stlabel="{{! result.label }}">
           <img src="img/{{! result.result }}.png" alt="{{! result.label }}" />
@@ -33,7 +33,7 @@
   </tbody>
 </table>
 
-<div id="resultDetails">
+<div id="resultDetails" tabindex="-1">
   <ul id="ctx1" class="ctx">
     <li><a href="#" class="prev" title="{{! it.locales['oqs.previous_result'] }}"><span class="key">&#x2190; </span>{{! it.locales['oqs.previous_result'] }}</a> | </li>
     <li><a href="#" class="next" title="{{! it.locales['oqs.next_result'] }}">{{! it.locales['oqs.next_result'] }}<span class="key"> &#x2192;</span></a> | </li>

@@ -85,12 +85,15 @@ button.action, input[type=submit] {
     background: linear-gradient(hsl(209, 15%, 27%), hsl(210, 20%, 13%)) no-repeat padding-box;
     color: #ddd;
 }
-button.action:hover, button.action:active,
-input[type=submit]:hover, input[type=submit]:active {
+button.action:hover, button.action:focus, button.action:active,
+input[type=submit]:hover, input[type=submit]:focus, input[type=submit]:active {
     background: linear-gradient(hsl(209, 10%, 28%), hsl(210, 14%, 8%)) no-repeat padding-box;
     color: #fff;
 }
 
+button.action:focus, input[type=submit]:focus {
+    border-color: #ff9f21;
+}
 button.action:active, input[type=submit]:active {
     border-color: #000;
 }
