@@ -25,7 +25,11 @@
         <td headers="hLabel"><a href="#">{{! result.criterion.description }}</a></td>
         <td headers="hDuration">{{! result.time }}</td>
         <td headers="hResult" data-stlabel="{{! result.label }}">
-          <img src="img/{{! result.result }}.png" alt="{{! result.label }}" />
+          <span class="user-defined icon" aria-hidden="true"
+          style="{{? result.auto }}visibility:hidden{{?}}">•</span>
+          <span class="user-defined backup" style="{{? result.auto }}visibility:hidden{{?}}">
+            {{! it.locales['oqs.user_defined_value'] }}</span>
+          <span><img class="result" src="img/{{! result.result }}.png" alt="{{! result.label }}" /></span>
           <span style="display:none;">{{! result.label }}</span>
         </td>
       </tr>

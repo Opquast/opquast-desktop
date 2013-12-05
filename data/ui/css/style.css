@@ -162,6 +162,23 @@ table.data th, table.data td {
     text-align: center;
 }
 
+span.user-defined {
+    color: #ff9326;
+    border: none;
+}
+span.user-defined.icon {
+    text-shadow: 0 0 3px rgba(255, 255, 255, 1);
+}
+span.user-defined.backup {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding:0 !important;
+    border:0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
 #resultDetails {
     display: none;
     position: fixed;
@@ -270,6 +287,9 @@ table.data th, table.data td {
 }
 #resultDetails p.status.nt {
     background-image: url(../img/nt-tr.png);
+}
+#resultDetails p.status select {
+    font-size: 1em;
 }
 
 

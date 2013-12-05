@@ -228,6 +228,29 @@ self.port.on("showResults", function(tests, tableOptions) {
         );
     });
 
+    // Editable status
+    var changeResult = function(row, result) {
+        let data = row.data();
+
+        self.port.emit("setUserData", data.test_id, result);
+
+        // Update row image
+        $("td[headers=hResult] img.result", row).each(function() {
+            this.src = this.src.replace(/\w+.png*$/, result + '.png');
+        });
+
+        // Update data and filters
+        data.result = result;
+        data.label = LABELS[result];
+        data.stTerms.hResult = data.label;
+        row.data(data);
+
+        // Update filters values
+        $('#test_result').superTable('setFilterControls');
+
+        // Set user-defined visibility
+        $("td[headers=hResult] span.user-defined", row).css("visibility", "visible");
+    };
     // Table events
     var display_counter = function(evt, data) {
         self.port.emit("resultCounter",
@@ -278,8 +301,20 @@ self.port.on("showResults", function(tests, tableOptions) {
 
     // Table display
     $('#test_result').superTable(tableOptions);
-
     self.port.emit("resultLoaded");
+
+    // Change status within details view
+    $("#resultDetails").on("change", "#testStatus", function(evt) {
+        let result = evt.target.value;
+        let row = $($("#resultDetails").data("origin"));
+
+        // Set new result
+        changeResult(row, result);
+
+        // Update details icon
+        $(evt.target).parent().removeClass(Object.keys(LABELS).join(' ')).addClass(result);
+    });
+
 
     // Various worker events
     self.port.on("showResultCount", function(count_string) {

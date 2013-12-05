@@ -67,7 +67,7 @@
                 this._setSortable();
             } else if (key == 'filterable') {
                 this._setFilterable();
-                this._setFilterControls();
+                this.setFilterControls();
             }
         },
 
@@ -113,7 +113,7 @@
 
             // Set filters
             this._setFilterable();
-            this._setFilterControls();
+            this.setFilterControls();
         },
 
         _formatHeader: function(cell) {
@@ -244,7 +244,7 @@
             this._trigger("filtered");
         },
 
-        _setFilterControls: function() {
+        setFilterControls: function() {
             var filters = {},
                 query = this.element.data('stSearch'),
                 _this = this;
@@ -343,7 +343,7 @@
                 // Reset filters
                 this.resetFilters();
                 //$('thead select option:first', this.element).prop('selected', true).change();
-                this._setFilterControls();
+                this.setFilterControls();
             }.bind(this));
 
             this._trigger("rowsdisabled", null, {"rows": rows});
@@ -356,7 +356,7 @@
                 // Reset filters
                 this.resetFilters();
                 //$('thead select option:first', this.element).prop('selected', true).change();
-                this._setFilterControls();
+                this.setFilterControls();
             }.bind(this));
 
             this._trigger("rowsenabled", null, {"rows": rows});
@@ -429,7 +429,7 @@
             // No filter, quick way
             if ($.isEmptyObject(filters) && !query) {
                 this.getRows().filter(':hidden').show();
-                this._setFilterControls();
+                this.setFilterControls();
                 return;
             }
 
@@ -450,7 +450,7 @@
                 $(this).toggle(!hide_row);
             });
 
-            this._setFilterControls();
+            this.setFilterControls();
         },
 
         resetFilters: function() {
