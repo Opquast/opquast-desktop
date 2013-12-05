@@ -96,6 +96,12 @@
     margin: 0 2px 2px 2px;
     line-height: 1;
     vertical-align: middle;
+    border: 1px dotted transparent;
+    border-radius: 3px;
+    -moz-user-focus: normal;
+}
+.opquast-desktop-dock-infobox:focus {
+    border-color: #666;
 }
 
 .opquast-desktop-dock-searchbox {
