@@ -141,23 +141,22 @@ $.widget("ui.detailsViewer",{
     }
 });
 
-
 //
 // Display test results
 //
+const LABELS = {
+    'c': _('oqs.pass'),
+    'nc': _('oqs.fail'),
+    'i': _('oqs.cannot_tell'),
+    'na': _('oqs.not_applicable'),
+    'nt': _('oqs.not_tested')
+};
+
 self.port.on("showResults", function(tests, tableOptions) {
     // Prepare results
     let allCL = [];
     tests.oaa_results.map(function(r) {
-        if (r.result == 'c') {
-            r.label = _('oqs.pass');
-        } else if (r.result == 'nc') {
-            r.label = _('oqs.fail');
-        } else if (r.result == 'i') {
-            r.label = _('oqs.cannot_tell');
-        } else if (r.result == 'na') {
-            r.label = _('oqs.not_applicable');
-        }
+        r.label = LABELS[r.result];
 
         r.criterion.thema = $.trim(r.criterion.thema);
         if (r.criterion.thema === '') {
