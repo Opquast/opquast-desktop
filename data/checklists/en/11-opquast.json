@@ -1,770 +1,2606 @@
 {
-    "645": {
-        "goal": "Permettre aux agents utilisateurs d'opter pour le traitement linguistique appropri\u00e9, et notamment :\r\n    * la prononciation correcte du contenu par les synth\u00e8ses vocales (lecteurs d'\u00e9cran)\r\n    * la traduction pertinente du contenu par les outils de traduction automatis\u00e9s.", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "The server sends the main language of contents as a header", 
-        "solution": "[Cad]-01", 
-        "thema": "Server and performance", 
-        "name": "146"
-    }, 
-    "646": {
-        "goal": "Permettre aux utilisateurs d'aides techniques (lecteurs d'\u00e9cran) d'identifier ais\u00e9ment la nature des informations fournie par un tableau.", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Captions for data tables are provided", 
-        "solution": "[Cad]-01", 
-        "thema": "Tables", 
-        "name": "147"
-    }, 
-    "651": {
-        "goal": "Fournir un contenu compr\u00e9hensible aux utilisateurs dont l'agent utilisateur ou l'aide technique (lecteur d'\u00e9cran) ne permet pas de restituer la mise en forme initialement pr\u00e9vue \u00e0 l'aide d'un tableau.", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Linearising tables used for layout does not impede the understanding of contents", 
-        "solution": "[Cad]-01", 
-        "thema": "Tables", 
-        "name": "152"
-    }, 
-    "654": {
-        "goal": "Permettre aux utilisateurs qui ne peuvent acc\u00e9der au son ou \u00e0 l'image propos\u00e9es sous forme multim\u00e9dia d'acc\u00e9der \u00e0 une transcription textuelle servant d'alternative.\nPermettre l'exploitation de l'information par des robots et notamment : am\u00e9liorer l'indexation et le r\u00e9f\u00e9rencement, permettre son acc\u00e8s via des outils de traduction en ligne", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Every audio or video content is provided with a text transcript", 
-        "solution": "[Cad]-01", 
-        "thema": "Alternatives", 
-        "name": "155"
-    }, 
-    "655": {
-        "goal": "<p>Am\u00e9liorer le degr\u00e9 de s\u00e9paration du contenu et de la pr\u00e9sentation.</p><p>All\u00e9ger la source HTML des styles CSS qui peuvent \u00eatre externalis\u00e9s.</p><p>Faciliter l'adaptation de la mise en forme du contenu aux besoins de l'utilisateur en s'appuyant sur des classes plut\u00f4t que sur des mises en forme au cas par cas.</p>", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Inline styles are used in an appropriate way", 
-        "solution": "<p>R\u00e9server le recours aux styles CSS en ligne (attribut <code>style</code> des \u00e9l\u00e9ments HTML) aux propri\u00e9t\u00e9s CSS qui ne peuvent pas \u00eatre externalis\u00e9es dans des feuilles de style externes et appliqu\u00e9es via des classes ou des identifiants.</p>", 
-        "thema": "Code", 
-        "name": "156"
-    }, 
-    "656": {
-        "goal": "Permet de limiter les risques d'interpr\u00e9tation hasardeux du DOM d'un document par des agents utilisateurs diff\u00e9rents", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "The page's source code includes no error in either the tree of the document or the syntax of tags and attributes", 
-        "solution": "[Cad]-01", 
-        "thema": "Code", 
-        "name": "157"
-    }, 
-    "529": {
-        "goal": "<p>Informer l'utilisateur afin qu'il puisse d\u00e9cider en connaissance de cause de consulter ou de t\u00e9l\u00e9charger ou non le contenu concern\u00e9.</p>", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "The length of video and audio contents is indicated", 
-        "solution": "<p>Accompagner chaque contenu vid\u00e9o ou audio, \u00e0 t\u00e9l\u00e9charger ou \u00e0 consulter en ligne, de la mention de sa dur\u00e9e. Celle-ci peut \u00eatre \u00e9ventuellement indiqu\u00e9e de mani\u00e8re g\u00e9n\u00e9rique, sous forme d'un ordre de grandeur commun \u00e0 un ensemble de contenus.</p>", 
-        "thema": "Files and multimedia", 
-        "name": "30"
-    }, 
-    "658": {
-        "goal": "Augmenter la vitesse d'affichage de la page", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Real dimensions of images are indicated in the source code", 
-        "solution": "[Cad]-01", 
-        "thema": "Code", 
-        "name": "159"
-    }, 
-    "660": {
-        "goal": "Permettre aux utilisateurs qui ne peuvent ou ne veulent pas activer les scripts d'acc\u00e9der tout de m\u00eame aux contenus.\nFavoriser l'exploitation des contenus par des robots", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Contents and services are available even if scripts are disabled", 
-        "solution": "[Cad]-01", 
-        "thema": "Code", 
-        "name": "161"
-    }, 
-    "533": {
-        "goal": "<p>Laisser \u00e0 l'utilisateur le contr\u00f4le des animations lors de la consultation du contenu.</p><p>Ne pas perturber l'attention en imposant des \u00e9l\u00e9ments pouvant g\u00eaner celle-ci.</p><p>Permettre la consultation pas \u00e0 pas d'animations s\u00e9quentielles ou de contenus sonores.</p>", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Animations, sounds and blinking can be paused", 
-        "solution": "<p>D\u00e8s lors qu'une animation visuelle a une dur\u00e9e de plus de 5 secondes ou qu'un son a une dur\u00e9e de plus de 3 secondes, doter syst\u00e9matiquement l'objet multim\u00e9dia des moyens de contr\u00f4le n\u00e9cessaires&nbsp;: d\u00e9marrage, arr\u00eat, muet ou volume.</p><p>Ne pas utiliser de graphismes anim\u00e9s non contr\u00f4lables, ou encore partiellement contr\u00f4lables par l'utilisateur (images gif anim\u00e9es en particulier).</p><p>Ne pas incorporer dans la page d'\u00e9l\u00e9ments d\u00e9clenchant la lecture d'un son non contr\u00f4lable en arri\u00e8re-plan (<code>bgsound</code>).</p>", 
-        "thema": "Files and multimedia", 
-        "name": "34"
-    }, 
-    "534": {
-        "goal": "* faciliter la compr\u00e9hension des donn\u00e9es attendues dans les formulaires\n    * faciliter la saisie en permettant de s\u00e9lectionner l'\u00e9tiquette plut\u00f4t que la case \u00e0 cocher ou le bouton radio", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Each form field is associated with its own label in the source code", 
-        "solution": "[Cad]-01", 
-        "thema": "Forms", 
-        "name": "35"
-    }, 
-    "535": {
-        "goal": "# Donner un retour \u00e0 l'utilisateur sur l'action qu'il vient d'effectuer\n# Guider l'utilisateur directement vers les \u00e9l\u00e9ments sur lesquels il doit agir", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "In the case when data entered in a form were rejected, the fields containing the rejected data are indicated to the user", 
-        "solution": "[Cad]-01", 
-        "thema": "Forms", 
-        "name": "36"
-    }, 
-    "657": {
-        "goal": "Favoriser l'adaptation de la mise en forme des contenus par les agents utilisateurs, selon les besoins de l'utilisateur.\nAll\u00e9ger le poids du code source des pages, en incitant \u00e0 mutualiser les informations de mise en forme gr\u00e2ce \u00e0 CSS", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Each page's source code does not contain any presentational tag or attribute", 
-        "solution": "[Cad]-01", 
-        "thema": "Code", 
-        "name": "158"
-    }, 
-    "538": {
-        "goal": "* Permettre aux utilisateurs de savoir \u00e0 l'avance si un champ est obligatoire\n    * Pr\u00e9venir les erreurs avant qu'elles ne surviennent", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "The label of each form field indicates if input is mandatory", 
-        "solution": "[Cad]-01", 
-        "thema": "Forms", 
-        "name": "39"
-    }, 
-    "540": {
-        "goal": "* \u00c9viter aux utilisateurs d'avoir par exemple l'URL du lien en guise de libell\u00e9 dans une aide technique, celle-ci \u00e9tant contrainte \u00e0 trouver dans le code de la page une information \u00e0 donner en guise de libell\u00e9 vide\n    * \u00c9viter aux utilisateurs de ne pas acc\u00e9der au lien lorsque CSS est d\u00e9sactiv\u00e9 dans un navigateur graphique.", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Each link has a proper label in the source code", 
-        "solution": "[Cad]-01", 
-        "thema": "Hyperlinks", 
-        "name": "41"
-    }, 
-    "541": {
-        "goal": "* Eviter les clics inutiles sur des contenus soulign\u00e9s per\u00e7us comme des hyperliens\n    * Faciliter l'identification des liens", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Underlining cannot be used for other elements than hyperlinks", 
-        "solution": "[Cad]-01", 
-        "thema": "Hyperlinks", 
-        "name": "42"
-    }, 
-    "709": {
-        "goal": "Permettre un copier coller des contenus sans mise en forme en majuscules.", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Capitalisation of words for decorative purposes is achieved through styling", 
-        "solution": "[Cad]-01", 
-        "thema": "Presentation", 
-        "name": "210"
-    }, 
-    "636": {
-        "goal": "Eviter l'ouverture inopin\u00e9e sur le poste client d'un autre logiciel que le navigateur Web.", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Links to an external software have an explicit label", 
-        "solution": "[Cad]-01", 
-        "thema": "Navigation", 
-        "name": "137"
-    }, 
-    "548": {
-        "goal": "Am\u00e9liorer l'identification visuelle du site et de ses pages\n\nFaciliter l'identification dans le navigateur et dans les favoris ou signets\n\nPermet l'affichage, l'appel, et la m\u00e9morisation \u00e9ventuelle de l'ic\u00f4ne de favori par tous les navigateurs.", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Each page's source code specifies the content's main language", 
-        "solution": "[Cad]-01", 
-        "thema": "Internationalization", 
-        "name": "49"
-    }, 
-    "677": {
-        "goal": "Donner aux utilisateurs la possibilit\u00e9 de s'\u00e9quiper du ou des plugins n\u00e9cessaires", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "An information link is provided for each plugin necessary to access the content", 
-        "solution": "[Cad]-01", 
-        "thema": "Files and multimedia", 
-        "name": "178"
-    }, 
-    "551": {
-        "goal": "am\u00e9liorer la consultation et la navigation pour les personnes handicap\u00e9es\n\u00e9viter les probl\u00e8mes d'impression ou de mise en favoris\nam\u00e9liorer le r\u00e9f\u00e9rencement en \u00e9vitant l'indexation de pages orphelines", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "The site does not use framesets", 
-        "solution": "[Cad]-01", 
-        "thema": "Navigation", 
-        "name": "52"
-    }, 
-    "552": {
-        "goal": "<p>Permettre une restitution alternative d'un <code>iframe</code> sous la forme d'un lien correctement libell\u00e9 vers le contenu inclus.</p>", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Iframes have an explicit title attribute", 
-        "solution": "[Cad]-01", 
-        "thema": "Navigation", 
-        "name": "53"
-    }, 
-    "681": {
-        "goal": "Permettre aux utilisateurs d'identifier sans ambiguit\u00e9 les champs de formulaire et la nature des infos \u00e0 saisir\nPr\u00e9venir les erreurs de saisie\nFaciliter et acc\u00e9lerer l'usage du formulaire", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Each form label is visually linked to the form field it describes", 
-        "solution": "[Cad]-01", 
-        "thema": "Forms", 
-        "name": "182"
-    }, 
-    "682": {
-        "goal": "Des champs de formulaire doivent \u00eatre regroup\u00e9s avec le balisage appropri\u00e9 lorsque leurs \u00e9tiquettes ne suffisent pas \u00e0 indiquer clairement le r\u00f4le de chaque champ concern\u00e9. Le regroupement permet alors de compl\u00e9ter ces \u00e9tiquettes par une l\u00e9gende commune. Ceci permet :\n    * de faciliter le remplissage du formulaire : \n        * en contextualisant les informations demand\u00e9es\n        * en d\u00e9coupant l'ensemble des informations demand\u00e9es en sous-groupes\n    * de donner aux aides techniques le moyen d'expliciter les \u00e9tiquettes des champs de formulaire qui le n\u00e9cessitent \u00e0 l'aide d'une l\u00e9gende attribu\u00e9e au groupe de champs\n    * d'obtenir un rendu appropri\u00e9 des regroupements de champs de formulaire par tous les navigateurs", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Form fields that require a common information are grouped under a single legend", 
-        "solution": "[Cad]-01", 
-        "thema": "Forms", 
-        "name": "183"
-    }, 
-    "683": {
-        "goal": "Permettre aux aides techniques de restituer \u00e0 l'utilisateur une liste:\n    * dont l'organisation soit clairement perceptible\n    * dont le contenu est navigable de mani\u00e8re ais\u00e9e.\nFavoriser un rendu appropri\u00e9 des listes d\u00e9roulantes complexe dans tous les navigateurs.", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Elements of a drop-down list that can be grouped are indeed grouped in a proper way", 
-        "solution": "[Cad]-01", 
-        "thema": "Forms", 
-        "name": "184"
-    }, 
-    "684": {
-        "goal": "Permettre aux utilisateurs, handicap\u00e9s ou pas d'acc\u00e9der rapidement \u00e0 l'item de liste recherch\u00e9", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Option lists in forms are presented in an understandable order", 
-        "solution": "[Cad]-01", 
-        "thema": "Forms", 
-        "name": "185"
-    }, 
-    "690": {
-        "goal": "Mettre \u00e0 disposition des informations synth\u00e9tiques et lisibles par les machines sur l'ensemble des contenus propos\u00e9s", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "The site provides a sitemap file listing contents to be crawled", 
-        "solution": "<p>Cr\u00e9er un fichier <code>sitemap.xml</code> contenant la liste des pages du site \u00e0 la racine du site. \u00c0 d\u00e9faut de respecter le format XML, une simple liste d'URL est accept\u00e9e par les moteurs.</p>", 
-        "thema": "Identification", 
-        "name": "191"
-    }, 
-    "558": {
-        "goal": "<p>Permettre \u00e0 l&apos;utilisateur d'anticiper le r\u00e9sultat de l'activation d'un lien.</p><p>\u00c9viter aux utilisateurs d'aides techniques d'\u00eatre d\u00e9sorient\u00e9s par l'ouverture d'une nouvelle fen\u00eatre qui n'est pas toujours perceptible et perturbe notamment l'utilisation de l'historique de navigation.</p>", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "The user is warned when new windows have to be opened", 
-        "solution": "<p>Ajouter une mention du type \u00ab&nbsp;(nouvelle fen\u00eatre)&nbsp;\u00bb, soit directement dans le libell\u00e9 du lien, soit dans son attribut <code>title</code> qui doit alors reprendre et compl\u00e9ter le libell\u00e9.</p><p>Ajouter une mention du type \u00ab&nbsp;(nouvelle fen\u00eatre)&nbsp;\u00bb dans les \u00e9tiquettes de contr\u00f4le de formulaire, dans les libell\u00e9s de boutons ou dans tout autre objet provoquant l'ouverture d'une nouvelle fen\u00eatre.</p><p>Indiquer l'ouverture d'une nouvelle fen\u00eatre dans les \u00e9tiquettes textuelles des contr\u00f4les Flash.</p>", 
-        "thema": "Navigation", 
-        "name": "59"
-    }, 
-    "559": {
-        "goal": "permet \u00e0 l'utilisateur de naviguer sur le site sans avoir d'op\u00e9ration sp\u00e9cifique \u00e0 effectuer pendant la navigation", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Navigating the site does not open any popup window", 
-        "solution": "[Cad]-01", 
-        "thema": "Navigation", 
-        "name": "60"
-    }, 
-    "562": {
-        "goal": "<p>Laisser \u00e0 l'utilisateur le contr\u00f4le de son navigateur et de son interface de consultation</p><p>Ne pas le d\u00e9sorienter ou le surprendre par un changement non anticip\u00e9 de ceux-ci.</p>", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "The site does not resize the browser window", 
-        "solution": "<p>Ne pas utiliser de techniques Javascript modifiant la taille de la fen\u00eatre du navigateur.</p>", 
-        "thema": "Navigation", 
-        "name": "63"
-    }, 
-    "696": {
-        "goal": "Fournir aux utilisateurs une continuit\u00e9 dans la navigation\r\nEviter les changements de contexte", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Navigating the site does not forcefully open any new window", 
-        "solution": "<p>Ne pas recourir aux techniques Javascript d'ouverture automatique d'une popup lors du chargement de la page.</p><p>Ne pas recourir aux techniques Javascript ou HTML (attribut <code>target</code>) for\u00e7ant l'ouverture d'un lien dans une nouvelle fen\u00eatre du navigateur.</p><p>Ne pas recourir aux techniques d'ouverture d'une nouvelle fen\u00eatre propres aux technologies Flash.</p>", 
-        "thema": "Navigation", 
-        "name": "197"
-    }, 
-    "574": {
-        "goal": "Permet au navigateur de choisir le bon encodage des caract\u00e8res pour afficher la page.", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Headers sent by the server contain information pertaining to the character set used", 
-        "solution": "[Cad]-01", 
-        "thema": "Server and performance", 
-        "name": "75"
-    }, 
-    "575": {
-        "goal": "<p>Acc\u00e9l\u00e9rer l'affichage des contenus et permettre une navigation plus fluide.</p><p>R\u00e9duire les co\u00fbts de bande passante.</p>", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "The server sends information to enable the caching of contents", 
-        "solution": "[Cad]-01", 
-        "thema": "Server and performance", 
-        "name": "76"
-    }, 
-    "577": {
-        "goal": "informe l'utilisateur sur l'erreur rencontr\u00e9e, sur la continuit\u00e9 de fonctionnement du serveur, et met hors de cause la connection de l'utilisateur", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "The server sends a personalised 404 Not found error page", 
-        "solution": "[Cad]-01", 
-        "thema": "Server and performance", 
-        "name": "78"
-    }, 
-    "579": {
-        "goal": "<p>Am\u00e9liorer la vitesse de rendu de la page.</p><p>Diminuer les co\u00fbts de bande passante.</p>", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "The server compresses contents if the client accepts compressed contents", 
-        "solution": "<p>Activer le module Gzip ou Deflate du serveur pour compresser les ressources Javascript, CSS et HTML.</p>", 
-        "thema": "Server and performance", 
-        "name": "80"
-    }, 
-    "580": {
-        "goal": "permettre aux utilisateurs de configurer la fr\u00e9quence \u00e0 laquelle leurs outils consultent le fil de syndication\nr\u00e9duire la charge du serveur", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "The source code of syndication feeds indicates their update frequency", 
-        "solution": "[Cad]-01", 
-        "thema": "Syndication", 
-        "name": "81"
-    }, 
-    "581": {
-        "goal": "<p>Assurer la fiabilit\u00e9 des liens lorsque le contenu est r\u00e9utilis\u00e9.</p>", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Hyperlinks in syndication feeds are absolute", 
-        "solution": "[Cad]-01", 
-        "thema": "Syndication", 
-        "name": "82"
-    }, 
-    "582": {
-        "goal": "<p>Permettre au navigateur d'indiquer dans son interface la pr\u00e9sence d'un fil de syndication associ\u00e9 \u00e0 la page en cours de consultation.</p>", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Syndication feeds can be detected by user agents", 
-        "solution": "<p>Indiquer les fils RSS dans la section <code>head</code> de la page, \u00e0 l'aide d'un \u00e9l\u00e9ment <code>link</code> du type&nbsp;:</p><p>&lt;link title=&quot;La bonne pratique du jour&quot; href=&quot;https://checklists.opquast.com/dailybp/feed&quot; type=&quot;application/rss+xml&quot; rel=&quot;alternate&quot;&gt;.</p>", 
-        "thema": "Syndication", 
-        "name": "83"
-    }, 
-    "583": {
-        "goal": "Permettre aux aides techniques de restituer l'information contenue dans les tableaux de donn\u00e9es de mani\u00e8re explicite, en indiquant \u00e0 l'utilisateur les relations logique entre contenu et en-t\u00eates du tableau", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Cells in data tables are linked to their headers", 
-        "solution": "[Cad]-01", 
-        "thema": "Tables", 
-        "name": "84"
-    }, 
-    "712": {
-        "goal": "Permettre le chargement prioritaire des contenus\r\nLimiter le d\u00e9lai d'affichage des contenus", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Calls to external scripts are put after the content", 
-        "solution": "<p>Placer les appels de scripts en fin de code, juste avant la fermeture de l'\u00e9l\u00e9ment <code>body</code> (balise &lt;/body&gt;).</p>", 
-        "thema": "Server and performance", 
-        "name": "213"
-    }, 
-    "585": {
-        "goal": "Fournir un acc\u00e8s \u00e0 l'information pour les utilisateurs dont le navigateur ou la platre-forme ne supporte pas les technologies utilis\u00e9es dans les objets inclus", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Embedded objects are provided with a proper alternative", 
-        "solution": "[Cad]-01", 
-        "thema": "Alternatives", 
-        "name": "86"
-    }, 
-    "714": {
-        "goal": "Minimiser la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger par l'utilisateur\nAm\u00e9liorer les performances", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Script functions are put into external files", 
-        "solution": "[Cad]-01", 
-        "thema": "Server and performance", 
-        "name": "215"
-    }, 
-    "587": {
-        "goal": "* Faciliter le traitement des pages par les aides techniques\n    * Favoriser la s\u00e9paration du contenu structur\u00e9 et de sa mise en forme\n    * All\u00e9ger le coe HTML", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "The content does not include nested tables", 
-        "solution": "[Cad]-01", 
-        "thema": "Code", 
-        "name": "88"
-    }, 
-    "588": {
-        "goal": "<p>Recourir \u00e0 un jeu de caract\u00e8res international.</p><p>Pr\u00e9venir les d\u00e9fauts d'affichage.</p>", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "The character encoding used is UTF-8", 
-        "solution": "<p>Configurer le serveur et les bases de donn\u00e9es de mani\u00e8re \u00e0 utiliser UTF-8.</p><p>Choisir des outils (logiciels de d\u00e9veloppement, frameworks, CMS, outils de production de contenu) compatibles avec UTF-8.</p>", 
-        "thema": "Code", 
-        "name": "89"
-    }, 
-    "661": {
-        "goal": "Permettre une restitution pr\u00e9visible par les agents utilisateurs conformes.", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "The page's source code is valid according to the chosen grammar", 
-        "solution": "[Cad]-01", 
-        "thema": "Code", 
-        "name": "162"
-    }, 
-    "596": {
-        "goal": "Permettre la restitution en tant que telles des listes par les navigateurs et les aides techniques, afin de faciliter leur compr\u00e9hension par les utilisateurs.", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Elements which are presented visually as lists are tagged in an appropriate way in the source code", 
-        "solution": "[Cad]-01", 
-        "thema": "Code", 
-        "name": "97"
-    }, 
-    "599": {
-        "goal": "Permettre un affichage hors-ligne correct des pages en indiquant au navigateur le jeu de caract\u00e8res utilis\u00e9", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Each page's source code contains a metadata defining the character set used", 
-        "solution": "[Cad]-01", 
-        "thema": "Code", 
-        "name": "100"
-    }, 
-    "676": {
-        "goal": "Fournir aux utilisateurs un acc\u00e8s direct et imm\u00e9diat aux contenus, m\u00eame lorsque l'administrateur du site d\u00e9cide de proposer une animation ou une publicit\u00e9 pr\u00e9alable.", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Running animations does not block access to navigation or content", 
-        "solution": "<p>En cas d'animation propos\u00e9e dans un splash screen, celle-ci doit comporter un lien permettant d'acc\u00e9der directement aux contenus sans devoir attendre la fin de l'animation.</p>", 
-        "thema": "Files and multimedia", 
-        "name": "177"
-    }, 
-    "613": {
-        "goal": "Eviter le t\u00e9l\u00e9chargement de donn\u00e9es inutiles\nAm\u00e9liorer les performances", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Thumbnails are not bigger images that were resized on the client side", 
-        "solution": "[Cad]-01", 
-        "thema": "Files and multimedia", 
-        "name": "114"
-    }, 
-    "614": {
-        "goal": "Aider l'internaute \u00e0 comprendre ce qu'on attend et ainsi, faciliter le passage \u00e0 l'\u00e9tape suivante\n\u00c9viter la frustration de l'utilisateur", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "In the case when data entered in a form was rejected, the reasons for the rejection are indicated to the user", 
-        "solution": "[Cad]-01", 
-        "thema": "Forms", 
-        "name": "115"
-    }, 
-    "615": {
-        "goal": "Donner \u00e0 l'utilisateur une vue globale de ce qu'il a saisie dans les pages pr\u00e9c\u00e9dentes", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "When a form spans several pages, a global summary is displayed before the final form submission", 
-        "solution": "[Cad]-01", 
-        "thema": "Forms", 
-        "name": "116"
-    }, 
-    "616": {
-        "goal": "Toujours laisser la main \u00e0 l'utilisateur sur la totalit\u00e9 des informations qu'il donne\nPermettre \u00e0 l'utilisateur de modifier des informations sur lesquelles il voudrait revenir", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "In the case when data entered in a form was rejected, all the data entered can be modified by the user", 
-        "solution": "[Cad]-01", 
-        "thema": "Forms", 
-        "name": "117"
-    }, 
-    "617": {
-        "goal": "Donner  \u00e0 l'utilisateur un retour sur l'action qu'il vient d'effectuer\r\n\u00c9viter la frustration d'un utilisateur qui pense que le processus est fini alors qu'il y a eu un probl\u00e8me", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "The submission of a form is followed by a feedback message indicating if the action worked or not", 
-        "solution": "<p>Retourner une page de confirmation explicite apr\u00e8s soumission d'un formulaire.</p>", 
-        "thema": "Forms", 
-        "name": "118"
-    }, 
-    "618": {
-        "goal": "Limiter le risque d'erreurs de saisie\n Limiter les risques associ\u00e9s \u00e0 l'envoi de donn\u00e9es eronn\u00e9es ou inexploitables", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "The label of each form field indicates if need be what input format must be used", 
-        "solution": "[Cad]-01", 
-        "thema": "Forms", 
-        "name": "119"
-    }, 
-    "679": {
-        "goal": "S'assurer qu'au moins un des deux processus de validation a bien lieu", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Form validation on the client side is also done on the server side", 
-        "solution": "[Cad]-01", 
-        "thema": "Forms", 
-        "name": "180"
-    }, 
-    "622": {
-        "goal": "Assurer une pr\u00e9vention contre les erreurs 404 en cours de navigation\nFaciliter un acc\u00e8s rapide \u00e0 tous les contenus", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "All hyperlinks internal to the site are valid", 
-        "solution": "[Cad]-01", 
-        "thema": "Hyperlinks", 
-        "name": "123"
-    }, 
-    "624": {
-        "goal": "Permettre un r\u00e9f\u00e9rencement cibl\u00e9\nAm\u00e9liorer le guidage pour les outils de recherche", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "The site's root contains instructions for spiders and robots", 
-        "solution": "[Cad]-01", 
-        "thema": "Identification", 
-        "name": "125"
-    }, 
-    "625": {
-        "goal": "Permet aux outils de recherche et d'indexation d'extraire des informations sur les pages et ainsi d'am\u00e9liorer la restitution aux utilisateurs", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "The source code for each page contains a metadata describing the page's content", 
-        "solution": "[Cad]-01", 
-        "thema": "Identification", 
-        "name": "126"
-    }, 
-    "627": {
-        "goal": "Am\u00e9liorer l'identification visuelle du site et de ses pages\nFaciliter l'identification dans le navigateur et dans les favoris ou signets\nPermet l'affichage, l'appel, et la m\u00e9morisation \u00e9ventuelle de l'ic\u00f4ne de favori par tous les navigateurs.", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "The source code of the pages contains a valid call to a favourite icon (\u201cfavicon\u201d)", 
-        "solution": "[Cad]-01", 
-        "thema": "Identification", 
-        "name": "128"
-    }, 
-    "500": {
-        "goal": "* Permettre la navigation et la consultation pour les utilisateurs plac\u00e9s dans des contextes o\u00f9 les images ne sont pas perceptibles (navigateurs texte, lecteur d'\u00e9cran, images d\u00e9sactiv\u00e9es)\n    * Permettre aux robots d'exploiter l'information v\u00e9hicul\u00e9e par les images (r\u00e9f\u00e9rencement, traduction automatique)\n    * Permettre l'affichage d'un texte pendant la chargement des images", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Every image is provided with a proper alternative text", 
-        "solution": "[Cad]-01", 
-        "thema": "Alternatives", 
-        "name": "1"
-    }, 
-    "501": {
-        "goal": "Faciliter la validation du code source et favoriser un rendu pr\u00e9visible quelque-soit le navigateur (en mode de rendu strict pour les moteurs de rendu CSS)", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "The page's source code begins with a Document Type Declaration (DTD) whose syntax is one of those recommended by the W3C", 
-        "solution": "[Cad]-01", 
-        "thema": "Code", 
-        "name": "2"
-    }, 
-    "502": {
-        "goal": "Permettre aux utilisateurs qui le souhaitent de visualiser la structure du contenu de la page\nPermettre aux machines et aux outils d'indexation d'extraire le plan de chaque page\nAm\u00e9liorer le r\u00e9f\u00e9rencement en facilitant l'interpr\u00e9tation du contenu par les robots d'indexation", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Each page's content is organised according to a hierarchical heading and sub-heading structure", 
-        "solution": "[Cad]-01", 
-        "thema": "Code", 
-        "name": "3"
-    }, 
-    "508": {
-        "goal": "Permettre aux utilisateurs d'identifier la nature des contenus de chaque page dans les onglets, dans les favoris, dans la fen\u00eatre du navigateur ou dans les lecteurs d'\u00e9cran.", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Each page provides a title that enables one to identify its content", 
-        "solution": "[Cad]-01", 
-        "thema": "Contents", 
-        "name": "9"
-    }, 
-    "511": {
-        "goal": "Permettre aux utilisateurs d'identifier le site dans les onglets, dans les favoris, dans la fen\u00eatre du navigateur ou dans les lecteurs d'\u00e9cran.", 
-        "checklist": {
-            "id": 11, 
-            "name": "Qualit\u00e9 Web - Opquast V2"
-        }, 
-        "explanation": "", 
-        "description": "Each page provides a title that enables one to identify the site", 
-        "solution": "[Cad]-01", 
-        "thema": "Contents", 
-        "name": "12"
-    }
+  "512": {
+    "goal": "permet aux utilisateurs d'indentifier le montant total qu'il aura \u00e0 payer et les diff\u00e9rentes composantes de ce montant.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Financing conditions (global credit cost, conditions, reservations, agreement delays) are indicated",
+    "solution": "[Cad]-01",
+    "thema": "E-Commerce",
+    "name": "13"
+  },
+  "513": {
+    "goal": "permet aux utilisateurs d'identifier la date r\u00e9elle \u00e0 laquelle le bien command\u00e9 sera effectivement en leur possession",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Estimated delivery date is indicated before final order placement",
+    "solution": "[Cad]-01",
+    "thema": "E-Commerce",
+    "name": "14"
+  },
+  "514": {
+    "goal": "Permet un acc\u00e8s facile et permanent \u00e0 toutes les conditions de r\u00e9alisation du service.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Sale and use terms and conditions can be reached from every page",
+    "solution": "[Cad]-01",
+    "thema": "E-Commerce",
+    "name": "15"
+  },
+  "515": {
+    "goal": "Fournit aux utilisateurs une indication v\u00e9rifiable de l'existence officielle de la structure qui propose les contenus ou le service",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The legal registration number delivered to companies or organisations in their original country is indicated",
+    "solution": "[Cad]-01",
+    "thema": "E-Commerce",
+    "name": "16"
+  },
+  "516": {
+    "goal": "permet aux utilisateurs d'identifier pr\u00e9cis\u00e9ment la nature et les sp\u00e9cifications des produits propos\u00e9s",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The nature and quantifiable characteristics of products and services (dimensions, duration, countenance, etc.) are indicated",
+    "solution": "[Cad]-01",
+    "thema": "E-Commerce",
+    "name": "17"
+  },
+  "517": {
+    "goal": "permet d'anticiper d'\u00e9ventuelles difficult\u00e9s et une augmentation du d\u00e9lai de livraison",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The availability of products is indicated before the final order submission",
+    "solution": "[Cad]-01",
+    "thema": "E-Commerce",
+    "name": "18"
+  },
+  "518": {
+    "goal": "Permet aux utilisateurs d'identifier pr\u00e9cis\u00e9ment et avant l'achat le montant total qu'ils auront \u00e0 payer\nPermet aux utilisateurs d'identifier pr\u00e9cis\u00e9ment les montants d\u00e9ductibles et les diff\u00e9rentes imputations.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Prices displayed show the details of taxes and possible additional costs, as well as the price excluding taxes",
+    "solution": "[Cad]-01",
+    "thema": "E-Commerce",
+    "name": "19"
+  },
+  "519": {
+    "goal": "permet aux utilisateurs d'identifier la p\u00e9riode au cours de laquelle ils peuvent b\u00e9n\u00e9ficier des offres propos\u00e9es",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The period and conditions of availability for special offers are indicated",
+    "solution": "[Cad]-01",
+    "thema": "E-Commerce",
+    "name": "20"
+  },
+  "520": {
+    "goal": "permettre \u00e0 l'utilisateur de modifier facilement sa commande",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Modifying each article's quantity, adding and deleting one or more articles is still possible as long as the order has not been definitely placed",
+    "solution": "[Cad]-01",
+    "thema": "E-Commerce",
+    "name": "21"
+  },
+  "521": {
+    "goal": "permettre \u00e0 l'utilisateur de conna\u00eetre le d\u00e9tail du montant de sa commande\nlever un frein \u00e0 la validation d'une commande",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The detailed subtotal (quantities, amount, expenses, insurance, etc.) is indicated before final order placement",
+    "solution": "[Cad]-01",
+    "thema": "E-Commerce",
+    "name": "22"
+  },
+  "522": {
+    "goal": "permet aux utilisateurs d'anticiper sur le mode et les conditions de paiement et de v\u00e9rifier avant la commande qu'ils pourront la mener \u00e0 son terme.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Accepted payment means are indicated, as well as procedures for each of them",
+    "solution": "[Cad]-01",
+    "thema": "E-Commerce",
+    "name": "23"
+  },
+  "523": {
+    "goal": "permet aux utilisateurs d'identifier pr\u00e9cis\u00e9ment la nature des services associ\u00e9s et leur co\u00fbt",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Conditions of guarantee (duration, options, extensions, prices, restrictions, etc.) are indicated",
+    "solution": "[Cad]-01",
+    "thema": "E-Commerce",
+    "name": "24"
+  },
+  "524": {
+    "goal": "permet aux utilisateurs de conna\u00eetre les conditions d'assistance en cas de difficult\u00e9",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Customer support service conditions (prices, opening hours, means of contact, etc.) are indicated",
+    "solution": "[Cad]-01",
+    "thema": "E-Commerce",
+    "name": "25"
+  },
+  "525": {
+    "goal": "permet aux utilisateurs de faire livrer un achat sur le lieu de son choix",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Different shipping and billing addresses can be specified",
+    "solution": "[Cad]-01",
+    "thema": "E-Commerce",
+    "name": "26"
+  },
+  "526": {
+    "goal": "permet d'\u00e9viter une navigation et des commandes inutiles, voire une perte de temps pour l'utilisateur et la structure qui propose les biens ou les services",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Information about zones of product or service delivery are indicated",
+    "solution": "[Cad]-01",
+    "thema": "E-Commerce",
+    "name": "27"
+  },
+  "527": {
+    "goal": "<p>Laisser \u00e0 l'utilisateur le contr\u00f4le de sa commande.</p><p>Ne pas compromettre la relation de confiance avec l'utilisateur.</p><p>\u00c9viter toute forme de vente forc\u00e9e.</p>",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "No additional product or service is added to the shopping cart without customer action",
+    "solution": "<p>N'inclure dans le panier de l'utilisateur que des produits ou services qu'il a explicitement s\u00e9lectionn\u00e9s.</p>",
+    "thema": "E-Commerce",
+    "name": "28"
+  },
+  "528": {
+    "goal": "permet aux utilisateurs de signaler des abus et de faire effectuer des corrections",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The site provides at least one means of contacting the moderator of public spaces",
+    "solution": "[Cad]-01",
+    "thema": "Public spaces",
+    "name": "29"
+  },
+  "529": {
+    "goal": "<p>Informer l'utilisateur afin qu'il puisse d\u00e9cider en connaissance de cause de consulter ou de t\u00e9l\u00e9charger ou non le contenu concern\u00e9.</p>",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The length of video and audio contents is indicated",
+    "solution": "<p>Accompagner chaque contenu vid\u00e9o ou audio, \u00e0 t\u00e9l\u00e9charger ou \u00e0 consulter en ligne, de la mention de sa dur\u00e9e. Celle-ci peut \u00eatre \u00e9ventuellement indiqu\u00e9e de mani\u00e8re g\u00e9n\u00e9rique, sous forme d'un ordre de grandeur commun \u00e0 un ensemble de contenus.</p>",
+    "thema": "Files and multimedia",
+    "name": "30"
+  },
+  "530": {
+    "goal": "<p>Laisser \u00e0 l'utilisateur le contr\u00f4le de l'interface sonore et visuelle lors de la consultation du site.</p><p>Ne pas surprendre l'utilisateur par la diffusion inattendue d'un contenu audio.</p><p>Ne pas imposer \u00e0 l'utilisateur le d\u00e9clenchement d'un contenu anim\u00e9.</p>",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Sounds and videos are started by the user",
+    "solution": "<p>Ne pas mettre en place des contenus audio ou vid\u00e9o dont le d\u00e9marrage est automatique et sans action explicite de l'utilisateur en ce sens.</p>",
+    "thema": "Files and multimedia",
+    "name": "31"
+  },
+  "531": {
+    "goal": "<p>\u00c9viter \u00e0 l'utilisateur de saisir un mot de passe qui ne correspond finalement pas \u00e0 celui qu'il a souhait\u00e9 ou m\u00e9moris\u00e9.</p>",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The creation of a password by the user is validated by a double input",
+    "solution": "<p>Proposer, apr\u00e8s le champ de saisie du mot de passe, un champ de confirmation o\u00f9 le mot de passe doit \u00eatre saisi \u00e0 nouveau et v\u00e9rifier que les deux saisies sont effectivement identiques lors de la soumission.</p>",
+    "thema": "Forms",
+    "name": "32"
+  },
+  "532": {
+    "goal": "permettre aux utilisateurs de savoir si leurs outils leur permettent de consulter les fichiers propos\u00e9s en t\u00e9l\u00e9chargement\nr\u00e9duire la charge serveur en \u00e9vitant les t\u00e9l\u00e9chargements inutiles",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The format of downloadable files is  indicated",
+    "solution": "[Cad]-01",
+    "thema": "Files and multimedia",
+    "name": "33"
+  },
+  "533": {
+    "goal": "<p>Laisser \u00e0 l'utilisateur le contr\u00f4le des animations lors de la consultation du contenu.</p><p>Ne pas perturber l'attention en imposant des \u00e9l\u00e9ments pouvant g\u00eaner celle-ci.</p><p>Permettre la consultation pas \u00e0 pas d'animations s\u00e9quentielles ou de contenus sonores.</p>",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Animations, sounds and blinking can be paused",
+    "solution": "<p>D\u00e8s lors qu'une animation visuelle a une dur\u00e9e de plus de 5 secondes ou qu'un son a une dur\u00e9e de plus de 3 secondes, doter syst\u00e9matiquement l'objet multim\u00e9dia des moyens de contr\u00f4le n\u00e9cessaires&nbsp;: d\u00e9marrage, arr\u00eat, muet ou volume.</p><p>Ne pas utiliser de graphismes anim\u00e9s non contr\u00f4lables, ou encore partiellement contr\u00f4lables par l'utilisateur (images gif anim\u00e9es en particulier).</p><p>Ne pas incorporer dans la page d'\u00e9l\u00e9ments d\u00e9clenchant la lecture d'un son non contr\u00f4lable en arri\u00e8re-plan (<code>bgsound</code>).</p>",
+    "thema": "Files and multimedia",
+    "name": "34"
+  },
+  "534": {
+    "goal": "* faciliter la compr\u00e9hension des donn\u00e9es attendues dans les formulaires\n    * faciliter la saisie en permettant de s\u00e9lectionner l'\u00e9tiquette plut\u00f4t que la case \u00e0 cocher ou le bouton radio",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Each form field is associated with its own label in the source code",
+    "solution": "[Cad]-01",
+    "thema": "Forms",
+    "name": "35"
+  },
+  "535": {
+    "goal": "# Donner un retour \u00e0 l'utilisateur sur l'action qu'il vient d'effectuer\n# Guider l'utilisateur directement vers les \u00e9l\u00e9ments sur lesquels il doit agir",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "In the case when data entered in a form were rejected, the fields containing the rejected data are indicated to the user",
+    "solution": "[Cad]-01",
+    "thema": "Forms",
+    "name": "36"
+  },
+  "536": {
+    "goal": "* Donner de la visibilit\u00e9 \u00e0 l'utilisateur (temps, informations n\u00e9cessaires, etc.)\n    * \u00c9viter que l'utilisateur ne se sente pi\u00e9g\u00e9 dans un processus qu'il n'avait pas pr\u00e9vu",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Complex processes are provided with a list of steps",
+    "solution": "[Cad]-01",
+    "thema": "Forms",
+    "name": "37"
+  },
+  "537": {
+    "goal": "Donner \u00e0 l'utilisateur de la visibilit\u00e9 sur l'avancement de la t\u00e2che qu'il r\u00e9alise",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The current step in a process is indicated",
+    "solution": "[Cad]-01",
+    "thema": "Forms",
+    "name": "38"
+  },
+  "538": {
+    "goal": "* Permettre aux utilisateurs de savoir \u00e0 l'avance si un champ est obligatoire\n    * Pr\u00e9venir les erreurs avant qu'elles ne surviennent",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The label of each form field indicates if input is mandatory",
+    "solution": "[Cad]-01",
+    "thema": "Forms",
+    "name": "39"
+  },
+  "539": {
+    "goal": "# Eviter l'utilisation de la fonction page pr\u00e9c\u00e9dente du navigateur\n# Limiter le risque de double envoi de formulaire",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The page displayed after form submission must enable the user to navigate straight away",
+    "solution": "[Cad]-01",
+    "thema": "Forms",
+    "name": "40"
+  },
+  "540": {
+    "goal": "* \u00c9viter aux utilisateurs d'avoir par exemple l'URL du lien en guise de libell\u00e9 dans une aide technique, celle-ci \u00e9tant contrainte \u00e0 trouver dans le code de la page une information \u00e0 donner en guise de libell\u00e9 vide\n    * \u00c9viter aux utilisateurs de ne pas acc\u00e9der au lien lorsque CSS est d\u00e9sactiv\u00e9 dans un navigateur graphique.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Each link has a proper label in the source code",
+    "solution": "[Cad]-01",
+    "thema": "Hyperlinks",
+    "name": "41"
+  },
+  "541": {
+    "goal": "* Eviter les clics inutiles sur des contenus soulign\u00e9s per\u00e7us comme des hyperliens\n    * Faciliter l'identification des liens",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Underlining cannot be used for other elements than hyperlinks",
+    "solution": "[Cad]-01",
+    "thema": "Hyperlinks",
+    "name": "42"
+  },
+  "542": {
+    "goal": "permet aux utilisateurs d'identifier facilement les liens",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Hyperlinks are visually differentiated from the rest of the content",
+    "solution": "[Cad]-01",
+    "thema": "Hyperlinks",
+    "name": "43"
+  },
+  "543": {
+    "goal": "* Permettre \u00e0 l'utilisateur d'identifier directement l'auteur (au sens large)\n    * Limiter les risques de d\u00e9fiance",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The identity of the person or of the service responsible for the contents is provided",
+    "solution": "[Cad]-01",
+    "thema": "Identification",
+    "name": "44"
+  },
+  "544": {
+    "goal": "Permettre \u00e0 l'utilisateur d'identifier imm\u00e9diatement et en permanence l'auteur ou l'entit\u00e9 qui administre le site",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The site's name and/or the author's name are provided on each page",
+    "solution": "[Cad]-01",
+    "thema": "Identification",
+    "name": "45"
+  },
+  "545": {
+    "goal": "Permettre aux utilisateurs d'identifier sans ambig\u00fcit\u00e9 un interlocuteur physique capable de r\u00e9pondre aux questions \u00e9ventuelles sur les contenus propos\u00e9s, ou d'assumer les responsabilit\u00e9s li\u00e9es \u00e0 ces contenus.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The identity of the author, the company or the organisation is provided",
+    "solution": "[Cad]-01",
+    "thema": "Identification",
+    "name": "46"
+  },
+  "546": {
+    "goal": "Donner aux utilisateurs une vision imm\u00e9diate sur la nature du site et des contenus propos\u00e9s.\n\u00c9viter des recherches inutiles",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The home page explains the nature of contents and services provided",
+    "solution": "[Cad]-01",
+    "thema": "Identification",
+    "name": "47"
+  },
+  "547": {
+    "goal": "Eviter des consultations inutiles\nD\u00e9livrer un avertissement aux utilisateurs",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "If the site is restricted or destined to a specific public, this public is mentioned at least on the home page",
+    "solution": "[Cad]-01",
+    "thema": "Identification",
+    "name": "48"
+  },
+  "548": {
+    "goal": "Am\u00e9liorer l'identification visuelle du site et de ses pages\n\nFaciliter l'identification dans le navigateur et dans les favoris ou signets\n\nPermet l'affichage, l'appel, et la m\u00e9morisation \u00e9ventuelle de l'ic\u00f4ne de favori par tous les navigateurs.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Each page's source code specifies the content's main language",
+    "solution": "[Cad]-01",
+    "thema": "Internationalization",
+    "name": "49"
+  },
+  "549": {
+    "goal": "Permettre aux utilisateurs d'identifier imm\u00e9diatement le pays associ\u00e9 \u00e0 l'adresse, sans ambiguit\u00e9 et sans avoir recours \u00e0 d'autres \u00e9l\u00e9ments (ville, r\u00e9gion, code postal, num\u00e9ro de t\u00e9l\u00e9phone)",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The country is mentioned in all post addresses",
+    "solution": "[Cad]-01",
+    "thema": "Internationalization",
+    "name": "50"
+  },
+  "550": {
+    "goal": "<p>Permettre l'utilisation imm\u00e9diate du contact t\u00e9l\u00e9phonique quel que soit le contexte utilisateur.</p>",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Each phone number is provided in an international format",
+    "solution": "[Cad]-01",
+    "thema": "Internationalization",
+    "name": "51"
+  },
+  "551": {
+    "goal": "am\u00e9liorer la consultation et la navigation pour les personnes handicap\u00e9es\n\u00e9viter les probl\u00e8mes d'impression ou de mise en favoris\nam\u00e9liorer le r\u00e9f\u00e9rencement en \u00e9vitant l'indexation de pages orphelines",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The site does not use framesets",
+    "solution": "[Cad]-01",
+    "thema": "Navigation",
+    "name": "52"
+  },
+  "552": {
+    "goal": "<p>Permettre une restitution alternative d'un <code>iframe</code> sous la forme d'un lien correctement libell\u00e9 vers le contenu inclus.</p>",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Iframes have an explicit title attribute",
+    "solution": "[Cad]-01",
+    "thema": "Navigation",
+    "name": "53"
+  },
+  "553": {
+    "goal": "fournir aux utilisateurs une solution en cas de d\u00e9sorientation, pour naviguer et se rep\u00e9rer dans le site, pour visualiser l'ensemble des contenus et la taille du site. Incite les administrateurs \u00e0 repr\u00e9senter graphiquement et \u00e0 rationaliser leur contenu.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "If all the pages in a site cannot be reached directly from the home page, then a site map can be reached from each page",
+    "solution": "[Cad]-01",
+    "thema": "Navigation",
+    "name": "54"
+  },
+  "554": {
+    "goal": "Permettre \u00e0 l'utilisateur de d\u00e9terminer",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Each page gives information as to where it is located in the site's hierarchy",
+    "solution": "[Cad]-01",
+    "thema": "Navigation",
+    "name": "55"
+  },
+  "555": {
+    "goal": "* Permettre aux utilisateurs de revenir en page d'accueil en cas de d\u00e9sorientation\n    * Identifier le lien principal permettant d'acc\u00e9der au site",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "It is possible to go back to the home page from any page",
+    "solution": "[Cad]-01",
+    "thema": "Navigation",
+    "name": "56"
+  },
+  "556": {
+    "goal": "Permettre la navigation au clavier",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The site can be navigated in its entirety using only a keyboard",
+    "solution": "<p>Recourir \u00e0 des gestionnaires d'\u00e9v\u00e9nements universels en cas d'interaction bas\u00e9e sur Javascript (par exemple, <code>onclick</code> pour un lien <code>a</code> ou pour un champ ou contr\u00f4le de formulaire) ou, \u00e0 d\u00e9faut, compl\u00e9ter les gestionnaires d'\u00e9v\u00e9nements non universels (<code>onmouseover</code> par exemple) par un second gestionnaire permettant l'acc\u00e8s clavier (<code>onfocus</code> par exemple) ou encore fournir un moyen d'acc\u00e8s alternatif.</p><p>Fournir des moyens d'acc\u00e8s clavier dans les interfaces recourant \u00e0 des technologies sp\u00e9cifiques telles que Flash.</p>",
+    "thema": "Navigation",
+    "name": "57"
+  },
+  "557": {
+    "goal": "Permettre la navigation au clavier",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Keyboard focus is neither removed nor hidden",
+    "solution": "[Cad]-01",
+    "thema": "Navigation",
+    "name": "58"
+  },
+  "558": {
+    "goal": "<p>Permettre \u00e0 l&apos;utilisateur d'anticiper le r\u00e9sultat de l'activation d'un lien.</p><p>\u00c9viter aux utilisateurs d'aides techniques d'\u00eatre d\u00e9sorient\u00e9s par l'ouverture d'une nouvelle fen\u00eatre qui n'est pas toujours perceptible et perturbe notamment l'utilisation de l'historique de navigation.</p>",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The user is warned when new windows have to be opened",
+    "solution": "<p>Ajouter une mention du type \u00ab&nbsp;(nouvelle fen\u00eatre)&nbsp;\u00bb, soit directement dans le libell\u00e9 du lien, soit dans son attribut <code>title</code> qui doit alors reprendre et compl\u00e9ter le libell\u00e9.</p><p>Ajouter une mention du type \u00ab&nbsp;(nouvelle fen\u00eatre)&nbsp;\u00bb dans les \u00e9tiquettes de contr\u00f4le de formulaire, dans les libell\u00e9s de boutons ou dans tout autre objet provoquant l'ouverture d'une nouvelle fen\u00eatre.</p><p>Indiquer l'ouverture d'une nouvelle fen\u00eatre dans les \u00e9tiquettes textuelles des contr\u00f4les Flash.</p>",
+    "thema": "Navigation",
+    "name": "59"
+  },
+  "559": {
+    "goal": "permet \u00e0 l'utilisateur de naviguer sur le site sans avoir d'op\u00e9ration sp\u00e9cifique \u00e0 effectuer pendant la navigation",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Navigating the site does not open any popup window",
+    "solution": "[Cad]-01",
+    "thema": "Navigation",
+    "name": "60"
+  },
+  "560": {
+    "goal": "Eviter des clics inutiles aux utilisateurs. Limiter la bande passante. proposer du contenu \u00e0 valeur ajout\u00e9e",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The site does not contain any link to pages under construction",
+    "solution": "[Cad]-01",
+    "thema": "Navigation",
+    "name": "61"
+  },
+  "561": {
+    "goal": "<p>Fournir aux utilisateurs une solution de navigation alternative et d'acc\u00e8s rapide aux contenus li\u00e9s \u00e0 des mots-cl\u00e9s retenus par ceux-ci.</p>",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "If all the pages in the site cannot be reached through the site map, then an internal search engine can be reached on each page",
+    "solution": "<p>Proposer un formulaire et une fonctionnalit\u00e9 de recherche simple, qu'il s'agisse d'une solution interne ou de l'incorporation d'une solution externe (Google par exemple).</p>",
+    "thema": "Navigation",
+    "name": "62"
+  },
+  "562": {
+    "goal": "<p>Laisser \u00e0 l'utilisateur le contr\u00f4le de son navigateur et de son interface de consultation</p><p>Ne pas le d\u00e9sorienter ou le surprendre par un changement non anticip\u00e9 de ceux-ci.</p>",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The site does not resize the browser window",
+    "solution": "<p>Ne pas utiliser de techniques Javascript modifiant la taille de la fen\u00eatre du navigateur.</p>",
+    "thema": "Navigation",
+    "name": "63"
+  },
+  "563": {
+    "goal": "permettre aux abonn\u00e9s de ne plus recevoir une newsletter",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "An 'unsubscribe' link is provided in each newsletter",
+    "solution": "[Cad]-01",
+    "thema": "Newsletter",
+    "name": "64"
+  },
+  "564": {
+    "goal": "<p>\u00c9viter la divulgation de donn\u00e9es personnelles confidentielles.</p>",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The \u201cto\u201d field in a newsletter shows only the recipient's address (or, alternatively, a generic email address created by the sender)",
+    "solution": "<p>N'effectuer d'envoi group\u00e9 de newsletters qu'en mettant les destinataires dans le champ CCI.</p><p>Ou ne pas effectuer d'envoi group\u00e9.</p>",
+    "thema": "Newsletter",
+    "name": "65"
+  },
+  "565": {
+    "goal": "\u00e9viter l'inscription \u00e0 une newsletter par un tiers usurpant une identit\u00e9\nv\u00e9rifier que l'adresse e-mail a \u00e9t\u00e9 saisie sans erreur",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Subscribing to newsletters is subjected to a prior confirmation process",
+    "solution": "[Cad]-01",
+    "thema": "Newsletter",
+    "name": "66"
+  },
+  "566": {
+    "goal": "permet une homog\u00e9n\u00e9\u00eft\u00e9 et une continu\u00eft\u00e9 dans la visite et la navigation, et permet une identification permanente du service en ligne visit\u00e9.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The design is consistent all over the site",
+    "solution": "[Cad]-01",
+    "thema": "Presentation",
+    "name": "67"
+  },
+  "567": {
+    "goal": "<p>Permette \u00e0 l'utilisateur d'acc\u00e9der \u00e0 son compte en cas de perte du mot de passe.</p><p>Simplifier la gestion des comptes utilisateurs. </p><p>Renforcer la s\u00e9curit\u00e9 en \u00e9vitant le stockage de mots de passe non crypt\u00e9s afin de pouvoir les communiquer de nouveau \u00e0 l'utilisateur.</p>",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The site provides a way to reinitialise a password if it's lost, stolen or forgotten",
+    "solution": "<p>Fournir un lien permettant l'envoi d'un mail \u00e0 l'adresse associ\u00e9e au compte indiquant la proc\u00e9dure de r\u00e9initialisation.</p><p>Placer de pr\u00e9f\u00e9rence ce lien dans le formulaire de connexion.</p>",
+    "thema": "Security and privacy",
+    "name": "68"
+  },
+  "568": {
+    "goal": "<p>Conforter la confiance de l'utilisateur.</p><p>Permettre \u00e0 l'utilisateur de saisir des donn\u00e9es sensibles en sachant qu'elles seront prot\u00e9g\u00e9es.</p><p>Minimiser les risques d'utilisation frauduleuse des donn\u00e9es des utilisateurs.</p>",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Sensitive data are securely transmitted and signalled as such",
+    "solution": "<p>Recourir \u00e0 un certificat de s\u00e9curit\u00e9 informatique dans une version support\u00e9e par les versions r\u00e9centes des navigateurs.</p><p>Recourir \u00e0 un service tiers d'authentification d\u00e9centralis\u00e9 du type OpenID.</p>",
+    "thema": "Security and privacy",
+    "name": "69"
+  },
+  "569": {
+    "goal": "<p>\u00c9viter que des donn\u00e9es sensibles ne soient publiques et stock\u00e9es en clair aux diff\u00e9rentes \u00e9tapes de l'acc\u00e8s \u00e0 la page (FAI, proxy, serveur Web, historique du navigateur, services tiers\u2026).</p><p>Permettre \u00e0 l'utilisateur de saisir des donn\u00e9es sensibles en sachant qu'elles seront prot\u00e9g\u00e9es et confidentielles.</p>",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Sensitive data are not transmitted literally through URLs",
+    "solution": "<p>Envoyer les donn\u00e9es de formulaire sensibles par la m\u00e9thode <code>POST</code>.</p><p>Ne pas inscrire de donn\u00e9es sensibles dans l'URL d'un lien.</p>",
+    "thema": "Security and privacy",
+    "name": "70"
+  },
+  "570": {
+    "goal": "contribuer \u00e0 l'information des utilisateurs sur la s\u00e9curisation des \u00e9changes de donn\u00e9es sensibles",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Information relative to transaction security are provided",
+    "solution": "[Cad]-01",
+    "thema": "Security and privacy",
+    "name": "71"
+  },
+  "571": {
+    "goal": "permet de fournir aux utilisateurs des informations sur les partenaires tiers impliqu\u00e9s dans la transaction.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The identity of third-parties involved in transactions is provided",
+    "solution": "[Cad]-01",
+    "thema": "Security and privacy",
+    "name": "72"
+  },
+  "572": {
+    "goal": "permet aux utilisateurs de conna\u00eetre la validit\u00e9 du certificat et contribue \u00e0 la s\u00e9curisation de la transaction",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Security certificates are signed and currently valid",
+    "solution": "[Cad]-01",
+    "thema": "Security and privacy",
+    "name": "73"
+  },
+  "573": {
+    "goal": "permet aux utilisateurs de conna\u00eetre les conditions de conservation de leurs donn\u00e9es personnelles",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The privacy policy can be reached from any page",
+    "solution": "[Cad]-01",
+    "thema": "Security and privacy",
+    "name": "74"
+  },
+  "574": {
+    "goal": "Permet au navigateur de choisir le bon encodage des caract\u00e8res pour afficher la page.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Headers sent by the server contain information pertaining to the character set used",
+    "solution": "[Cad]-01",
+    "thema": "Server and performance",
+    "name": "75"
+  },
+  "575": {
+    "goal": "<p>Acc\u00e9l\u00e9rer l'affichage des contenus et permettre une navigation plus fluide.</p><p>R\u00e9duire les co\u00fbts de bande passante.</p>",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The server sends information to enable the caching of contents",
+    "solution": "[Cad]-01",
+    "thema": "Server and performance",
+    "name": "76"
+  },
+  "576": {
+    "goal": "permet aux utilisateurs de rejoindre la page d'accueil du site m\u00eame lorsqu'il oublie de taper le pr\u00e9fixe WWW",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The address of the site and of its subdomains works with and without a www prefix",
+    "solution": "[Cad]-01",
+    "thema": "Server and performance",
+    "name": "77"
+  },
+  "577": {
+    "goal": "informe l'utilisateur sur l'erreur rencontr\u00e9e, sur la continuit\u00e9 de fonctionnement du serveur, et met hors de cause la connection de l'utilisateur",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The server sends a personalised 404 Not found error page",
+    "solution": "[Cad]-01",
+    "thema": "Server and performance",
+    "name": "78"
+  },
+  "578": {
+    "goal": "<p>Permettre la d\u00e9tection automatis\u00e9e des URL erron\u00e9es.</p><p>Transmettre au navigateur une information s\u00fbre.</p>",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The server sends a 404 HTTP error code for resources not found",
+    "solution": "<p>Modifier la configuration du serveur web pour renvoyer l'utilisateur vers une page personnalis\u00e9e lorsque la ressource demand\u00e9e n'existe pas.</p><p>Si la configuration principale du serveur n'est pas directement accessible et si l'environnement le permet, utiliser une configuration locale par r\u00e9pertoire. Par exemple, l'environnement Apache autorise la cr\u00e9ation d'un fichier <code>.htaccess</code> contenant des directives relatives aux traitements des erreurs : <code>ErrorDocument 404 /mapage.html</code>.</p>",
+    "thema": "Server and performance",
+    "name": "79"
+  },
+  "579": {
+    "goal": "<p>Am\u00e9liorer la vitesse de rendu de la page.</p><p>Diminuer les co\u00fbts de bande passante.</p>",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The server compresses contents if the client accepts compressed contents",
+    "solution": "<p>Activer le module Gzip ou Deflate du serveur pour compresser les ressources Javascript, CSS et HTML.</p>",
+    "thema": "Server and performance",
+    "name": "80"
+  },
+  "580": {
+    "goal": "permettre aux utilisateurs de configurer la fr\u00e9quence \u00e0 laquelle leurs outils consultent le fil de syndication\nr\u00e9duire la charge du serveur",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The source code of syndication feeds indicates their update frequency",
+    "solution": "[Cad]-01",
+    "thema": "Syndication",
+    "name": "81"
+  },
+  "581": {
+    "goal": "<p>Assurer la fiabilit\u00e9 des liens lorsque le contenu est r\u00e9utilis\u00e9.</p>",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Hyperlinks in syndication feeds are absolute",
+    "solution": "[Cad]-01",
+    "thema": "Syndication",
+    "name": "82"
+  },
+  "582": {
+    "goal": "<p>Permettre au navigateur d'indiquer dans son interface la pr\u00e9sence d'un fil de syndication associ\u00e9 \u00e0 la page en cours de consultation.</p>",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Syndication feeds can be detected by user agents",
+    "solution": "<p>Indiquer les fils RSS dans la section <code>head</code> de la page, \u00e0 l'aide d'un \u00e9l\u00e9ment <code>link</code> du type&nbsp;:</p><p>&lt;link title=&quot;La bonne pratique du jour&quot; href=&quot;https://checklists.opquast.com/dailybp/feed&quot; type=&quot;application/rss+xml&quot; rel=&quot;alternate&quot;&gt;.</p>",
+    "thema": "Syndication",
+    "name": "83"
+  },
+  "583": {
+    "goal": "Permettre aux aides techniques de restituer l'information contenue dans les tableaux de donn\u00e9es de mani\u00e8re explicite, en indiquant \u00e0 l'utilisateur les relations logique entre contenu et en-t\u00eates du tableau",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Cells in data tables are linked to their headers",
+    "solution": "[Cad]-01",
+    "thema": "Tables",
+    "name": "84"
+  },
+  "584": {
+    "goal": "Permettre l'acc\u00e8s \u00e0 l'information pour les utilisateurs dont le navigateur ou la plate-forme, ou encore  l'aide tchnique, ne permet pas de visualiser les couleurs",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Information are not conveyed by colour alone",
+    "solution": "[Cad]-01",
+    "thema": "Alternatives",
+    "name": "85"
+  },
+  "585": {
+    "goal": "Fournir un acc\u00e8s \u00e0 l'information pour les utilisateurs dont le navigateur ou la platre-forme ne supporte pas les technologies utilis\u00e9es dans les objets inclus",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Embedded objects are provided with a proper alternative",
+    "solution": "[Cad]-01",
+    "thema": "Alternatives",
+    "name": "86"
+  },
+  "586": {
+    "goal": "Faciliter l'acc\u00e8s aux contenus ou services prot\u00e9g\u00e9s par des captchas pour les utilisateurs ne pouvant exploiter les captchas graphiques",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Audio captchas can be played again at will",
+    "solution": "[Cad]-01",
+    "thema": "Alternatives",
+    "name": "87"
+  },
+  "587": {
+    "goal": "* Faciliter le traitement des pages par les aides techniques\n    * Favoriser la s\u00e9paration du contenu structur\u00e9 et de sa mise en forme\n    * All\u00e9ger le coe HTML",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The content does not include nested tables",
+    "solution": "[Cad]-01",
+    "thema": "Code",
+    "name": "88"
+  },
+  "588": {
+    "goal": "<p>Recourir \u00e0 un jeu de caract\u00e8res international.</p><p>Pr\u00e9venir les d\u00e9fauts d'affichage.</p>",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The character encoding used is UTF-8",
+    "solution": "<p>Configurer le serveur et les bases de donn\u00e9es de mani\u00e8re \u00e0 utiliser UTF-8.</p><p>Choisir des outils (logiciels de d\u00e9veloppement, frameworks, CMS, outils de production de contenu) compatibles avec UTF-8.</p>",
+    "thema": "Code",
+    "name": "89"
+  },
+  "589": {
+    "goal": "Faciliter l'adaptation du rendu aux besoins de l'utilisateur (agrandissement de la taille des caract\u00e8res, modification des couleurs, de la police, de la graisse, de la justification, etc.)",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Text that can be designed through styles is not replaced by images",
+    "solution": "[Cad]-01",
+    "thema": "Code",
+    "name": "90"
+  },
+  "590": {
+    "goal": "<p>Permettre la restitution correcte du contenu par une synth\u00e8se vocale.</p><p>Permettre une indexation pertinente du contenu.</p>",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Words do not bear any internal space or markup",
+    "solution": "<p>Utiliser la propri\u00e9t\u00e9 CSS <code>letter-spacing</code> pour espacer les lettres d'un mot.</p><p>Utiliser le pseudo-\u00e9l\u00e9ment <code>first-letter</code> pour cr\u00e9er une lettrine.</p>",
+    "thema": "Code",
+    "name": "91"
+  },
+  "591": {
+    "goal": "Optimiser les possibilit\u00e9s de retour d'information de la part des utilisateurs.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The site provides at least two means of contact",
+    "solution": "[Cad]-01",
+    "thema": "Contact",
+    "name": "92"
+  },
+  "592": {
+    "goal": "Informer les utilisateurs sur la prise en compte de leur demande\npermettre aux utilisateurs d'obtenir une confirmation archivable de la bonne r\u00e9ception de leurs demandes d'information",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Every information request is met with an acknowledgement of receipt",
+    "solution": "[Cad]-01",
+    "thema": "Contact",
+    "name": "93"
+  },
+  "593": {
+    "goal": "* Informer les utilisateurs sur les d\u00e9lais chiffr\u00e9s de r\u00e9ponse\n    * Limiter les risques de relance de la part des utilisateurs\n    * rassurer sur la capacit\u00e9 \u00e0 prendre en compte les demandes",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Delays for replies to information requests are given",
+    "solution": "[Cad]-01",
+    "thema": "Contact",
+    "name": "94"
+  },
+  "594": {
+    "goal": "Permettre aux utilisateurs d'identifier imm\u00e9diatement les nouveaux contenus ou services en ligne",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The site provides users with a way to know about new contents and services",
+    "solution": "<p>Les diff\u00e9rentes solutions ci-dessous peuvent \u00eatre d\u00e9ploy\u00e9es seules ou conjointement&nbsp;: </p><ul>\n<li>Publier un flux RSS des actualit\u00e9s du site ;</li>\n\t\t\t\t\t<li>Publier une rubrique du type \u00ab&nbsp;Actualit\u00e9s du site&nbsp;\u00bb ou \u00ab&nbsp;Quoi de neuf ?&nbsp;\u00bb ;</li>\n\t\t\t\t\t<li>Indiquer un compte de type Twitter, Facebook ou autre, o\u00f9 sont publi\u00e9es les actualit\u00e9s concernant le site.</li>\n\t\t\t\t</ul>",
+    "thema": "Contents",
+    "name": "95"
+  },
+  "595": {
+    "goal": "Faciliter la compr\u00e9hension du contenu quel que soit le mode de restitution, notamment vocal",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Cryptic syntaxes (SMS language, ASCII art, etc.) are explained or translated",
+    "solution": "[Cad]-01",
+    "thema": "Contents",
+    "name": "96"
+  },
+  "596": {
+    "goal": "Permettre la restitution en tant que telles des listes par les navigateurs et les aides techniques, afin de faciliter leur compr\u00e9hension par les utilisateurs.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Elements which are presented visually as lists are tagged in an appropriate way in the source code",
+    "solution": "[Cad]-01",
+    "thema": "Code",
+    "name": "97"
+  },
+  "597": {
+    "goal": "Faciliter la navigation pour les utilisateurs de lecteurs d'\u00e9cran ou pour ceux naviguant au clavier",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Navigation blocks are in a consistent place in the source code of all pages",
+    "solution": "[Cad]-01",
+    "thema": "Code",
+    "name": "98"
+  },
+  "598": {
+    "goal": "* Permettre une compr\u00e9hension des contenus pour les utilisateurs qui n'utilisent pas feuilles de style\n    * Am\u00e9liorer la s\u00e9paration des contenus et de la pr\u00e9sentation",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The content and meaning of each page are not altered when styles are disabled",
+    "solution": "[Cad]-01",
+    "thema": "Code",
+    "name": "99"
+  },
+  "599": {
+    "goal": "Permettre un affichage hors-ligne correct des pages en indiquant au navigateur le jeu de caract\u00e8res utilis\u00e9",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Each page's source code contains a metadata defining the character set used",
+    "solution": "[Cad]-01",
+    "thema": "Code",
+    "name": "100"
+  },
+  "600": {
+    "goal": "Donner un acc\u00e8s imm\u00e9diat \u00e0 l'utilisateur pour comprendre de quoi il s'agit",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Any affiliation to a professional association, endorsement of a label or an award features a link to its source",
+    "solution": "[Cad]-01",
+    "thema": "E-Commerce",
+    "name": "101"
+  },
+  "601": {
+    "goal": "Rassurer l'internaute avant l'achat\nDonner \u00e0 l'acheteur toutes les informations li\u00e9es \u00e0 son achat, que celui-ci se passe bien ou non",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The way to solve litigations is indicated in the terms and conditions",
+    "solution": "[Cad]-01",
+    "thema": "E-Commerce",
+    "name": "102"
+  },
+  "602": {
+    "goal": "Permettre \u00e0 l'utilisateur d'identifier imm\u00e9diatement et sans confusion possible les produits indisponibles\n\u00c9viter l'effet de d\u00e9ception si un utilisateur fait la d\u00e9marche pour un produit et s'aper\u00e7oit tardivement de son indisponibilit\u00e9",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Unavailable products are visually and textually differentiated",
+    "solution": "[Cad]-01",
+    "thema": "E-Commerce",
+    "name": "103"
+  },
+  "603": {
+    "goal": "Permet aux utilisateurs de choisir le mode de paiement qui leur convient le mieux dans leur contexte.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The site accepts at least two means of payment",
+    "solution": "[Cad]-01",
+    "thema": "E-Commerce",
+    "name": "104"
+  },
+  "604": {
+    "goal": "Donner \u00e0 l'utilisateur une confirmation des informations relatives \u00e0 la commande\nPermettre \u00e0 l'utilisateur de conserver un historique de la transaction ailleurs que sur le site",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "An email indicating the transaction's reference and the content of the order is sent following order placement",
+    "solution": "[Cad]-01",
+    "thema": "E-Commerce",
+    "name": "105"
+  },
+  "605": {
+    "goal": "permet aux utilisateurs d'afficher et \u00e9ventuellement d'imprimer une trace de sa commande",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The transaction reference is shown to the customer after the order has been placed",
+    "solution": "[Cad]-01",
+    "thema": "E-Commerce",
+    "name": "106"
+  },
+  "606": {
+    "goal": "<p>Permettre aux utilisateurs d'identifier pr\u00e9cis\u00e9ment les conditions de l'encaissement.</p>",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Debiting or cashing conditions are specified before final order placement",
+    "solution": "<p>Indiquer dans le processus de commande et de gestion du panier les conditions de d\u00e9bit ou d'encaissement avant la validation de celui-ci.</p>",
+    "thema": "E-Commerce",
+    "name": "107"
+  },
+  "607": {
+    "goal": "permettre aux utilisateurs de conna\u00eetre les services mis \u00e0 leur disposition et leurs fonctionnements",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Opening hours and prices for all services made available to customers are indicated",
+    "solution": "[Cad]-01",
+    "thema": "E-Commerce",
+    "name": "108"
+  },
+  "608": {
+    "goal": "Permettre \u00e0 l'utilisateur de v\u00e9rifier et de corriger si n\u00e9cessaire sa saisie.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Contents and files destined to public spaces can be checked before final upload",
+    "solution": "<p>Mettre en place une pr\u00e9visualisation des informations saisies avant la soumission d\u00e9finitive du formulaire, avec possibilit\u00e9 de les modifier.</p>",
+    "thema": "Public spaces",
+    "name": "109"
+  },
+  "609": {
+    "goal": "expliquer aux utilisateurs pourquoi et dans quelles mesures leurs publications peuvent \u00eatre mod\u00e9r\u00e9es\nlimiter les demandes des utilisateurs ne voyant leurs publications appara\u00eetre",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Conditions of moderation in public spaces are indicated",
+    "solution": "[Cad]-01",
+    "thema": "Public spaces",
+    "name": "110"
+  },
+  "610": {
+    "goal": "Faciliter le signalement de contenus ill\u00e9gaux ou inappropri\u00e9s\nAcc\u00e9lerer la vitesse de d\u00e9tection\nLimiter les risques de consultation de contenus ill\u00e9gaux ou inappropri\u00e9s",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Public spaces provide at least one means of reporting abuse",
+    "solution": "[Cad]-01",
+    "thema": "Public spaces",
+    "name": "111"
+  },
+  "611": {
+    "goal": "Permettre un r\u00e9f\u00e9rencement des contenus des documents PDF\r\nFaciliter la manipulation de contenus des documents PDF\r\nGarantir la lisibilit\u00e9 des contenus des documents PDF",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The text of internal PDF documents can be selected",
+    "solution": "<p>Ne pas diffuser de PDF issus de la num\u00e9risation de documents initiaux mais uniquement des documents convertis au format num\u00e9rique (par OCR le cas \u00e9ch\u00e9ant).</p>",
+    "thema": "Files and multimedia",
+    "name": "112"
+  },
+  "612": {
+    "goal": "Informer les utilisateurs sur la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger\nPermettre aux utilisateurs de diff\u00e9rer le t\u00e9l\u00e9chargement en connexion bas-d\u00e9bit ou mobile",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The size of files that can be downloaded on the site itself is indicated",
+    "solution": "[Cad]-01",
+    "thema": "Files and multimedia",
+    "name": "113"
+  },
+  "613": {
+    "goal": "Eviter le t\u00e9l\u00e9chargement de donn\u00e9es inutiles\nAm\u00e9liorer les performances",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Thumbnails are not bigger images that were resized on the client side",
+    "solution": "[Cad]-01",
+    "thema": "Files and multimedia",
+    "name": "114"
+  },
+  "614": {
+    "goal": "Aider l'internaute \u00e0 comprendre ce qu'on attend et ainsi, faciliter le passage \u00e0 l'\u00e9tape suivante\n\u00c9viter la frustration de l'utilisateur",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "In the case when data entered in a form was rejected, the reasons for the rejection are indicated to the user",
+    "solution": "[Cad]-01",
+    "thema": "Forms",
+    "name": "115"
+  },
+  "615": {
+    "goal": "Donner \u00e0 l'utilisateur une vue globale de ce qu'il a saisie dans les pages pr\u00e9c\u00e9dentes",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "When a form spans several pages, a global summary is displayed before the final form submission",
+    "solution": "[Cad]-01",
+    "thema": "Forms",
+    "name": "116"
+  },
+  "616": {
+    "goal": "Toujours laisser la main \u00e0 l'utilisateur sur la totalit\u00e9 des informations qu'il donne\nPermettre \u00e0 l'utilisateur de modifier des informations sur lesquelles il voudrait revenir",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "In the case when data entered in a form was rejected, all the data entered can be modified by the user",
+    "solution": "[Cad]-01",
+    "thema": "Forms",
+    "name": "117"
+  },
+  "617": {
+    "goal": "Donner  \u00e0 l'utilisateur un retour sur l'action qu'il vient d'effectuer\r\n\u00c9viter la frustration d'un utilisateur qui pense que le processus est fini alors qu'il y a eu un probl\u00e8me",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The submission of a form is followed by a feedback message indicating if the action worked or not",
+    "solution": "<p>Retourner une page de confirmation explicite apr\u00e8s soumission d'un formulaire.</p>",
+    "thema": "Forms",
+    "name": "118"
+  },
+  "618": {
+    "goal": "Limiter le risque d'erreurs de saisie\n Limiter les risques associ\u00e9s \u00e0 l'envoi de donn\u00e9es eronn\u00e9es ou inexploitables",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The label of each form field indicates if need be what input format must be used",
+    "solution": "[Cad]-01",
+    "thema": "Forms",
+    "name": "119"
+  },
+  "619": {
+    "goal": "Acc\u00e9l\u00e9rer l'apprentissage du fonctionnement de l'interface\nAm\u00e9liorer l'identification des liens et de leur fonction",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Hyperlinks of the same nature have identical colours, shapes and behaviours on all pages",
+    "solution": "[Cad]-01",
+    "thema": "Hyperlinks",
+    "name": "120"
+  },
+  "620": {
+    "goal": "Limiter les difficult\u00e9s \u00e0 cliquer sur un lien lorsque celui ci occupe plus d'espace en mode survol\u00e9 ou activ\u00e9\nLimiter les effets de clignotements ou de d\u00e9placement de contenus.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Hovering over, or activating, hyperlinks does not alter the layout",
+    "solution": "[Cad]-01",
+    "thema": "Hyperlinks",
+    "name": "121"
+  },
+  "621": {
+    "goal": "Faciliter le r\u00e9f\u00e9rencement \u00e0 travers l'obtention de backlinks\nAugmenter la visibilit\u00e9 pour les utilisateurs",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The site does not forbid incoming links",
+    "solution": "[Cad]-01",
+    "thema": "Hyperlinks",
+    "name": "122"
+  },
+  "622": {
+    "goal": "Assurer une pr\u00e9vention contre les erreurs 404 en cours de navigation\nFaciliter un acc\u00e8s rapide \u00e0 tous les contenus",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "All hyperlinks internal to the site are valid",
+    "solution": "[Cad]-01",
+    "thema": "Hyperlinks",
+    "name": "123"
+  },
+  "623": {
+    "goal": "Faciliter l'identification des contenus d\u00e9j\u00e0 visit\u00e9s\r\nFaciliter l'identification des contenus restant \u00e0 d\u00e9couvrir\r\nInciter \u00e0 la navigation sur de nouvelles pages",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The site applies a different style to unvisited and visited links",
+    "solution": "<p>En dehors des menus de navigation, ne pas appliquer les m\u00eames styles CSS par d\u00e9faut pour les liens non visit\u00e9s (s\u00e9lecteurs <code>a</code> ou <code>a:link</code>) et pour les liens visit\u00e9s (s\u00e9lecteur <code>a:visited</code>). Pour ce faire&nbsp;: soit pr\u00e9voir un rendu sp\u00e9cifique pour les liens visit\u00e9s, soit ne pas indiquer de r\u00e8gle de rendu pour ceux-ci (le style par d\u00e9faut du navigateur pourra alors s'appliquer sans difficult\u00e9).</p>",
+    "thema": "Hyperlinks",
+    "name": "124"
+  },
+  "624": {
+    "goal": "Permettre un r\u00e9f\u00e9rencement cibl\u00e9\nAm\u00e9liorer le guidage pour les outils de recherche",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The site's root contains instructions for spiders and robots",
+    "solution": "[Cad]-01",
+    "thema": "Identification",
+    "name": "125"
+  },
+  "625": {
+    "goal": "Permet aux outils de recherche et d'indexation d'extraire des informations sur les pages et ainsi d'am\u00e9liorer la restitution aux utilisateurs",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The source code for each page contains a metadata describing the page's content",
+    "solution": "[Cad]-01",
+    "thema": "Identification",
+    "name": "126"
+  },
+  "626": {
+    "goal": "Donner aux utilisateurs qui le souhaitent la possibilit\u00e9 d'acc\u00e9der sans difficult\u00e9 aux moyens de contact t\u00e9l\u00e9phoniques et postaux.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The complete address and phone number of companies and organisations can be reached from each page of the site",
+    "solution": "[Cad]-01",
+    "thema": "Identification",
+    "name": "127"
+  },
+  "627": {
+    "goal": "Am\u00e9liorer l'identification visuelle du site et de ses pages\nFaciliter l'identification dans le navigateur et dans les favoris ou signets\nPermet l'affichage, l'appel, et la m\u00e9morisation \u00e9ventuelle de l'ic\u00f4ne de favori par tous les navigateurs.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The source code of the pages contains a valid call to a favourite icon (\u201cfavicon\u201d)",
+    "solution": "[Cad]-01",
+    "thema": "Identification",
+    "name": "128"
+  },
+  "628": {
+    "goal": "Permettre aux utilisateurs et outils de navigation d'anticiper le changement de langue en cours de navigation\r\nEviter aux utilisateurs de se rendre sur une page dont ils ne comprennent pas la langue",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The main language of a link's target page is provided if it differs from the original page",
+    "solution": "<p>La langue cible d'un lien peut \u00eatre indiqu\u00e9e&nbsp;:</p><ul>\n<li>Simplement via le libell\u00e9 du lien qui sera r\u00e9dig\u00e9 dans la langue cible ;</li>\n\t\t\t\t\t<li>\u00c9ventuellement \u00e0 l'aide d'une ic\u00f4ne appropri\u00e9e (drapeau) ;</li>\n\t\t\t\t\t<li>\u00c9ventuellement de mani\u00e8re explicite dans le libell\u00e9 du lien ou dans son contexte imm\u00e9diat, en mentionnant la langue directement.</li>\n\t\t\t\t</ul>",
+    "thema": "Internationalization",
+    "name": "129"
+  },
+  "629": {
+    "goal": "Donner aux utilisateurs la possibilit\u00e9 d'acc\u00e9der directement \u00e0 la traduction de la page visit\u00e9e",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Each page provides a link to available translations",
+    "solution": "[Cad]-01",
+    "thema": "Internationalization",
+    "name": "130"
+  },
+  "630": {
+    "goal": "Limiter le temps d'apprentissage de l'interface\nFaciliter la compr\u00e9hension des ic\u00f4nes\nLimiter le risque d'erreurs",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Navigation icons are provided with an explicit legend",
+    "solution": "[Cad]-01",
+    "thema": "Navigation",
+    "name": "131"
+  },
+  "631": {
+    "goal": "Permettre aux utilisateurs qui consultent les pages de mani\u00e8re lin\u00e9aire (mode vocal) ou semi-lin\u00e9aire (\u00e9cran de faible largeur) de ne pas avoir \u00e0 d\u00e9filer l'ensemble des \u00e9l\u00e9ments sur chaque page pour acc\u00e9der aux contenus.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Each page provides \u201cskip links\u201d at the beginning of its source code",
+    "solution": "[Cad]-01",
+    "thema": "Navigation",
+    "name": "132"
+  },
+  "632": {
+    "goal": "Permettre aux utilisateurs d'avoir l'ensemble des informations essentielles relatives \u00e0 la recherche qu'ils ont effectu\u00e9e.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The search result page indicates the number of results, the number of pages of results, and the number of results per page",
+    "solution": "<p>Le nombre global de r\u00e9sultats est g\u00e9n\u00e9ralement annonc\u00e9 et rappel\u00e9 dans le titre de chaque page de r\u00e9sultats (par exemple : 246 r\u00e9sultats correspondent \u00e0 votre requ\u00eate \u00ab&nbsp;Exemple&nbsp;\u00bb).</p><p>Le nombre de pages de r\u00e9sultats est g\u00e9n\u00e9ralement indiqu\u00e9 dans le menu de navigation entre les pages de r\u00e9sultats.</p><p>Le nombre de r\u00e9sultats par page est g\u00e9n\u00e9ralement indiqu\u00e9 avant la liste des r\u00e9sultats.</p>",
+    "thema": "Navigation",
+    "name": "133"
+  },
+  "633": {
+    "goal": "Permettre aux utilisateurs naviguant au clavier sur un site d'appr\u00e9hender la structure des pages et d'identifier rapidement l'emplacement des diff\u00e9rents \u00e9l\u00e9ments.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Keyboard navigation happens in an foreseeable order",
+    "solution": "<p>Organiser les contenus dans l'ordre lin\u00e9aire du code HTML de mani\u00e8re \u00e0 regrouper et ordonner logiquement les liens et les contr\u00f4les de formulaires qui apparaissent les uns \u00e0 la suite des autres \u00e0 l'affichage et ordonner logiquement les principaux blocs de navigation et de contenu composant la page.</p><p>Le cas \u00e9ch\u00e9ant, et en dernier ressort, recourir \u00e0 l'attribut HTML <code>tabindex</code> pour cr\u00e9er un ordre de navigation au clavier sp\u00e9cifique, diff\u00e9rent de l'ordre par d\u00e9faut issu de l'organisation des liens et des contr\u00f4les de formulaires dans le code.</p><p>G\u00e9rer sp\u00e9cifiquement l'ordre de navigation au clavier en cas de fen\u00eatre modale ou de widget.</p>",
+    "thema": "Navigation",
+    "name": "134"
+  },
+  "634": {
+    "goal": "Donner aux utilisateurs des indications explicites pour fermer une fen\u00eatre ou une bo\u00eete modale.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "New windows that are resized, as well as modal windows, are provided with an explicit close button",
+    "solution": "[Cad]-01",
+    "thema": "Navigation",
+    "name": "135"
+  },
+  "635": {
+    "goal": "Faciliter l'apprentissage de la navigation sur l'interface\nFaciliter le rep\u00e9rage de l'information",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Navigation blocks of the same nature are in a consistent place on every page",
+    "solution": "[Cad]-01",
+    "thema": "Navigation",
+    "name": "136"
+  },
+  "636": {
+    "goal": "Eviter l'ouverture inopin\u00e9e sur le poste client d'un autre logiciel que le navigateur Web.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Links to an external software have an explicit label",
+    "solution": "[Cad]-01",
+    "thema": "Navigation",
+    "name": "137"
+  },
+  "637": {
+    "goal": "Permettre aux utilisateurs de commencer imm\u00e9diatement leur navigation sur la ressource qu'ils ont demand\u00e9.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "If the site is not restricted to a specific public, content is available immediately",
+    "solution": "[Cad]-01",
+    "thema": "Navigation",
+    "name": "138"
+  },
+  "638": {
+    "goal": "Permettre une restitution correcte des contenus masqu\u00e9s qui doivent \u00eatre lus par les lecteurs d'\u00e9cran",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "A content that must be read by a screen reader is not hidden from it",
+    "solution": "[Cad]-01",
+    "thema": "Navigation",
+    "name": "139"
+  },
+  "639": {
+    "goal": "Permettre l'impression des contenus sous une forme sp\u00e9cifique.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The site provides at least one print stylesheet",
+    "solution": "[Cad]-01",
+    "thema": "Presentation",
+    "name": "140"
+  },
+  "640": {
+    "goal": "Permettre aux contenus de s'afficher correctement, m\u00eame lorsque les polices pr\u00e9vues ne sont pas pr\u00e9sentes sur le syst\u00e8me de l'utilisateur.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "A generic font family is listed as the last alternative in font family lists",
+    "solution": "[Cad]-01",
+    "thema": "Presentation",
+    "name": "141"
+  },
+  "641": {
+    "goal": "Permettre aux utilisateurs \u00e9quip\u00e9s de navigateurs qui ne g\u00e8rent pas l'agrandissement des polices en taille fixe d'agrandir les polices sans difficult\u00e9.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The display font size is set in variable units and not in fixed units",
+    "solution": "[Cad]-01",
+    "thema": "Presentation",
+    "name": "142"
+  },
+  "642": {
+    "goal": "Eviter l'affichage de listes de fichiers contenus dans un r\u00e9pertoire\nAm\u00e9liorer la s\u00e9curit\u00e9 du serveur\nLimiter les risques d'intrusion",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The server does not list files in folders that do not have index files",
+    "solution": "[Cad]-01",
+    "thema": "Security and privacy",
+    "name": "143"
+  },
+  "643": {
+    "goal": "Informer l'utilisateur sur les cookies\nExpliquer leur r\u00f4le et leur utilit\u00e9",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The aim of using cookies, as well as the consequences of refusing them, are explained",
+    "solution": "[Cad]-01",
+    "thema": "Security and privacy",
+    "name": "144"
+  },
+  "644": {
+    "goal": "<p>Faciliter la gestion des comptes utilisateurs.</p><p>\u00c9viter \u00e0 l'utilisateur une recherche de contact.</p><p>Conforter la confiance dans le site ou le service.</p>",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Accounts and subscriptions opened online can be closed online",
+    "solution": "<p>Fournir dans le site une proc\u00e9dure (formulaire) de cl\u00f4ture de compte automatis\u00e9e si la cr\u00e9ation de compte est elle-m\u00eame automatis\u00e9e.</p><p>Fournir sur le site un formulaire de demande de cl\u00f4ture si la cr\u00e9ation de compte est diff\u00e9r\u00e9e.</p>",
+    "thema": "Security and privacy",
+    "name": "145"
+  },
+  "645": {
+    "goal": "Permettre aux agents utilisateurs d'opter pour le traitement linguistique appropri\u00e9, et notamment :\r\n    * la prononciation correcte du contenu par les synth\u00e8ses vocales (lecteurs d'\u00e9cran)\r\n    * la traduction pertinente du contenu par les outils de traduction automatis\u00e9s.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The server sends the main language of contents as a header",
+    "solution": "[Cad]-01",
+    "thema": "Server and performance",
+    "name": "146"
+  },
+  "646": {
+    "goal": "Permettre aux utilisateurs d'aides techniques (lecteurs d'\u00e9cran) d'identifier ais\u00e9ment la nature des informations fournie par un tableau.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Captions for data tables are provided",
+    "solution": "[Cad]-01",
+    "thema": "Tables",
+    "name": "147"
+  },
+  "647": {
+    "goal": "Permettre aux utilisateurs de choisir un mot de passe personnalis\u00e9\r\nEviter aux utilisateurs de rechercher leur mot de passe \u00e0 chaque connexion",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Passwords can be chosen and changed by the user",
+    "solution": "<p>Fournir une proc\u00e9dure en ligne permettant le choix d'un mot de passe personnalis\u00e9 d\u00e8s la cr\u00e9ation du compte ou la modification ult\u00e9rieure des mots de passe automatiquement g\u00e9n\u00e9r\u00e9s.</p><p>Fournir un acc\u00e8s \u00e0 la modification du mot de passe depuis la gestion du compte utilisateur ou \u00e0 d\u00e9faut dans le contexte du formulaire d'identification.</p>",
+    "thema": "Security and privacy",
+    "name": "148"
+  },
+  "648": {
+    "goal": "Informer l'utilisateur sur l'utilisation de ses donn\u00e9es personnelles",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The process of accessing and modifying personal data is explained",
+    "solution": "<p>Indiquer \u00e0 l'utilisateur dans une section de contenu d\u00e9di\u00e9e par quelles proc\u00e9dures ou moyens de contact il peut effectuer une demande d'acc\u00e8s, de suppression ou de rectification de ses donn\u00e9es personnelles.</p>",
+    "thema": "Security and privacy",
+    "name": "149"
+  },
+  "649": {
+    "goal": "Rassurer l'internaute sur le fait qu'il est toujours sur le m\u00eame site\nPermettre \u00e0 l'administrateur du site de mettre des \u00e9l\u00e9ments de guidage pour l'utilisateur\ninforme l'utilisateur sur l'erreur rencontr\u00e9e, sur la continuit\u00e9 de fonctionnement du serveur, et met hors de cause la connection de l'utilisateur",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The server sends a personalised 403 Not allowed error page",
+    "solution": "[Cad]-01",
+    "thema": "Server and performance",
+    "name": "150"
+  },
+  "650": {
+    "goal": "Permettre aux utilisateurs de s'abonner facilement aux fils de syndication",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The site provides at least one link to each syndication feed",
+    "solution": "[Cad]-01",
+    "thema": "Syndication",
+    "name": "151"
+  },
+  "651": {
+    "goal": "Fournir un contenu compr\u00e9hensible aux utilisateurs dont l'agent utilisateur ou l'aide technique (lecteur d'\u00e9cran) ne permet pas de restituer la mise en forme initialement pr\u00e9vue \u00e0 l'aide d'un tableau.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Linearising tables used for layout does not impede the understanding of contents",
+    "solution": "[Cad]-01",
+    "thema": "Tables",
+    "name": "152"
+  },
+  "652": {
+    "goal": "Permettre aux utilisateurs d'acc\u00e9der \u00e0 des tableaux exploitables par leur agent utilisateur et restitu\u00e9s de mani\u00e8re compr\u00e9hensible dans tous les cas.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Data tables are not simulated through styled text",
+    "solution": "[Cad]-01",
+    "thema": "Tables",
+    "name": "153"
+  },
+  "653": {
+    "goal": "Permettre aux utilisateurs qui ont des difficult\u00e9s \u00e0 d\u00e9chiffrer ou qui ne peuvent pas utiliser un captcha sous sa forme par d\u00e9faut d'acc\u00e9der aux contenus ou service par un autre moyen.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "An alternative way is provided wherever captchas are used",
+    "solution": "[Cad]-01",
+    "thema": "Alternatives",
+    "name": "154"
+  },
+  "654": {
+    "goal": "Permettre aux utilisateurs qui ne peuvent acc\u00e9der au son ou \u00e0 l'image propos\u00e9es sous forme multim\u00e9dia d'acc\u00e9der \u00e0 une transcription textuelle servant d'alternative.\nPermettre l'exploitation de l'information par des robots et notamment : am\u00e9liorer l'indexation et le r\u00e9f\u00e9rencement, permettre son acc\u00e8s via des outils de traduction en ligne",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Every audio or video content is provided with a text transcript",
+    "solution": "[Cad]-01",
+    "thema": "Alternatives",
+    "name": "155"
+  },
+  "655": {
+    "goal": "<p>Am\u00e9liorer le degr\u00e9 de s\u00e9paration du contenu et de la pr\u00e9sentation.</p><p>All\u00e9ger la source HTML des styles CSS qui peuvent \u00eatre externalis\u00e9s.</p><p>Faciliter l'adaptation de la mise en forme du contenu aux besoins de l'utilisateur en s'appuyant sur des classes plut\u00f4t que sur des mises en forme au cas par cas.</p>",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Inline styles are used in an appropriate way",
+    "solution": "<p>R\u00e9server le recours aux styles CSS en ligne (attribut <code>style</code> des \u00e9l\u00e9ments HTML) aux propri\u00e9t\u00e9s CSS qui ne peuvent pas \u00eatre externalis\u00e9es dans des feuilles de style externes et appliqu\u00e9es via des classes ou des identifiants.</p>",
+    "thema": "Code",
+    "name": "156"
+  },
+  "656": {
+    "goal": "Permet de limiter les risques d'interpr\u00e9tation hasardeux du DOM d'un document par des agents utilisateurs diff\u00e9rents",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The page's source code includes no error in either the tree of the document or the syntax of tags and attributes",
+    "solution": "[Cad]-01",
+    "thema": "Code",
+    "name": "157"
+  },
+  "657": {
+    "goal": "Favoriser l'adaptation de la mise en forme des contenus par les agents utilisateurs, selon les besoins de l'utilisateur.\nAll\u00e9ger le poids du code source des pages, en incitant \u00e0 mutualiser les informations de mise en forme gr\u00e2ce \u00e0 CSS",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Each page's source code does not contain any presentational tag or attribute",
+    "solution": "[Cad]-01",
+    "thema": "Code",
+    "name": "158"
+  },
+  "658": {
+    "goal": "Augmenter la vitesse d'affichage de la page",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Real dimensions of images are indicated in the source code",
+    "solution": "[Cad]-01",
+    "thema": "Code",
+    "name": "159"
+  },
+  "659": {
+    "goal": "Permettre aux utilisateurs d'acc\u00e9der rapidement \u00e0 la signification d'un sigle\n Permettre l'exploitation du contenu par un robot (\u00e9tablissement d'un index des sigles)\nFavoriser le r\u00e9f\u00e9rencement du contenu",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The first occurrence of an abbreviation or of an acronym in the content of any page gives access to its meaning",
+    "solution": "[Cad]-01",
+    "thema": "Code",
+    "name": "160"
+  },
+  "660": {
+    "goal": "Permettre aux utilisateurs qui ne peuvent ou ne veulent pas activer les scripts d'acc\u00e9der tout de m\u00eame aux contenus.\nFavoriser l'exploitation des contenus par des robots",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Contents and services are available even if scripts are disabled",
+    "solution": "[Cad]-01",
+    "thema": "Code",
+    "name": "161"
+  },
+  "661": {
+    "goal": "Permettre une restitution pr\u00e9visible par les agents utilisateurs conformes.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The page's source code is valid according to the chosen grammar",
+    "solution": "[Cad]-01",
+    "thema": "Code",
+    "name": "162"
+  },
+  "662": {
+    "goal": "Permettre aux agents utilisateurs et en particulier aux aides techniques (lecteurs d'\u00e9cran) d'identifier, d'exploiter et de restituer de mani\u00e8re appropri\u00e9e les citations, afin qu'elles soient imm\u00e9diatement identifiables et diff\u00e9rentiables du reste du contenu  par les utilisateurs\nPermettre aux utilisateurs d'identifier imm\u00e9diatement les citations lorsque seuls le rendu par d\u00e9faut de l'agent utilisateur est pris en compte.\nPermettre l'exploitation du contenu par des robots et notamment l'extraction des citations dans un corpus d'informations\nFavoriser un traitement s\u00e9mantique lors des traductions automatis\u00e9es du contenu.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Quotations are tagged in an appropriate way in the source code",
+    "solution": "[Cad]-01",
+    "thema": "Code",
+    "name": "163"
+  },
+  "663": {
+    "goal": "Permettre l'exploitation pertinente du code source par les agents utilisateurs.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Each page's source code contains no element that was misused for presentational purposes",
+    "solution": "[Cad]-01",
+    "thema": "Code",
+    "name": "164"
+  },
+  "664": {
+    "goal": "<p>Faciliter l'identification de l'entit\u00e9 ou de la personne responsable des contenus ou des services.</p><p>Permettre \u00e0 des utilisateurs de s'assurer qu'ils sont bien sur le bon site et non sur un site de phishing, par exemple.</p>",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The data contained in the site's WHOIS information make it possible to get to the owner directly",
+    "solution": "<p>Solution 1&nbsp;: Lorsque cela est possible, modifier les donn\u00e9es contenues dans le Whois de fa\u00e7on \u00e0 ce qu'au moins l'un des contacts soit directement reli\u00e9 au propri\u00e9taire du site.</p><p>Solution 2&nbsp;: Modifier le site (les mentions l\u00e9gales, par exemple) de fa\u00e7on \u00e0 ce que l'un des contacts du Whois soit mentionn\u00e9.</p>",
+    "thema": "Contact",
+    "name": "165"
+  },
+  "665": {
+    "goal": "Permettre la restitution d'un contenu compr\u00e9hensible si des polices de caract\u00e8res sp\u00e9cifiques ne sont pas disponibles pour le navigateur\nPermettre la restitution d'un contenu compr\u00e9hensible par les aides techniques (lecteurs d'\u00e9cran) lorsque le rendu standard d'un symbole graphique Unicode ne correspond pas \u00e0 son sens particulier dans le contexte o\u00f9 il est employ\u00e9.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Graphical symbols are HTML images and not unicode characters",
+    "solution": "[Cad]-01",
+    "thema": "Contents",
+    "name": "166"
+  },
+  "666": {
+    "goal": "Permettre aux utilisateurs de comprendre les contenus sectoriels ou techniques\nPermettre aux utilisateurs de se former en augmentant leurs connaissances\nAm\u00e9liorer le r\u00e9f\u00e9rencement sur des mots-cl\u00e9s ou expressions techniques",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "A lexicon or a glossary adapted to the target audience explains the professional or technical vocabulary",
+    "solution": "[Cad]-01",
+    "thema": "Contents",
+    "name": "167"
+  },
+  "667": {
+    "goal": "Eviter les difficult\u00e9s de compr\u00e9hension des contenus\r\nAm\u00e9liorer la perception des contenus et de l'auteur",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The content of each page of a site contains no spelling mistake",
+    "solution": "[Cad]-01",
+    "thema": "Contents",
+    "name": "168"
+  },
+  "668": {
+    "goal": "<p>Permettre l'archivage des contenus cr\u00e9\u00e9s par l'utilisateur.</p><p>\u00c9viter \u00e0 l'utilisateur d'\u00e9ventuelles saisies redoubl\u00e9es en cas de r\u00e9utilisation des contenus.</p>",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "If the site provides a personal space (or a subscriber space), it is possible to backup personal data in a standard format",
+    "solution": "<p>Fournir une solution d'exportation des contenus dans un format bureautique courant, dans un format XML courant ou dans un format dont les sp\u00e9cifications sont publiques.</p>",
+    "thema": "Contents",
+    "name": "169"
+  },
+  "669": {
+    "goal": "<p>Garantir que les contenus propos\u00e9s sous plusieurs formes ne seront pas assimil\u00e9s \u00e0 des contenus dupliqu\u00e9s par les moteurs de recherche.</p><p>Diminuer les risques de d\u00e9r\u00e9f\u00e9rencement.</p>",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "A metadata indicates the reference URL for contents provided in several forms",
+    "solution": "<p>Il s'agit de mettre en place un \u00e9l\u00e9ment <code>link canonical</code> : </p><p>&lt;link rel=&quot;canonical&quot; href=&quot;http://www.example.com/foo.html&quot; /&gt;.</p>",
+    "thema": "Contents",
+    "name": "170"
+  },
+  "670": {
+    "goal": "permet aux utilisateurs de s'adresser ou d'adresser directement leurs r\u00e9clamations au bon interlocuteur",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The site provides at least one means of contacting the person to whom complaints can be placed",
+    "solution": "[Cad]-01",
+    "thema": "E-Commerce",
+    "name": "171"
+  },
+  "671": {
+    "goal": "permet aux utilisateurs d'identifier pr\u00e9cis\u00e9ment les pi\u00e8ces n\u00e9cessaires en cas de n\u00e9cessit\u00e9 de retour du produit",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Refunding conditions (delays, expenses and vouchers needed) are indicated",
+    "solution": "[Cad]-01",
+    "thema": "E-Commerce",
+    "name": "172"
+  },
+  "672": {
+    "goal": "permet aux utilisateurs d'anticiper sur d'\u00e9ventuelles difficult\u00e9s d'utilisation et/ou de fonctionnement du bien ou du service propos\u00e9",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The address and the conditions for returns (on site, to workshops) are indicated",
+    "solution": "[Cad]-01",
+    "thema": "E-Commerce",
+    "name": "173"
+  },
+  "673": {
+    "goal": "permet \u00e0 l'utilisateur d'obtenir une confirmation de sa demande en dehors du contexte de la navigation sur le site",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Each complaint is met with an acknowledgement of receipt",
+    "solution": "[Cad]-01",
+    "thema": "E-Commerce",
+    "name": "174"
+  },
+  "674": {
+    "goal": "permet aux utilisateurs de comprendre ou d'anticiper d'\u00e9ventuelles difficult\u00e9s sur le site ou lors de la transaction.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The way to file complaints and the way they are processed are indicated",
+    "solution": "[Cad]-01",
+    "thema": "E-Commerce",
+    "name": "175"
+  },
+  "675": {
+    "goal": "Permettre \u00e0 l'utilisateur de v\u00e9rifier et de corriger si n\u00e9cessaire sa saisie.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Information destined to public spaces can be previewed in their final presentation",
+    "solution": "[Cad]-01",
+    "thema": "Public spaces",
+    "name": "176"
+  },
+  "676": {
+    "goal": "Fournir aux utilisateurs un acc\u00e8s direct et imm\u00e9diat aux contenus, m\u00eame lorsque l'administrateur du site d\u00e9cide de proposer une animation ou une publicit\u00e9 pr\u00e9alable.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Running animations does not block access to navigation or content",
+    "solution": "<p>En cas d'animation propos\u00e9e dans un splash screen, celle-ci doit comporter un lien permettant d'acc\u00e9der directement aux contenus sans devoir attendre la fin de l'animation.</p>",
+    "thema": "Files and multimedia",
+    "name": "177"
+  },
+  "677": {
+    "goal": "Donner aux utilisateurs la possibilit\u00e9 de s'\u00e9quiper du ou des plugins n\u00e9cessaires",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "An information link is provided for each plugin necessary to access the content",
+    "solution": "[Cad]-01",
+    "thema": "Files and multimedia",
+    "name": "178"
+  },
+  "678": {
+    "goal": "Permettre aux utilisateurs d'acc\u00e9der directement \u00e0 diff\u00e9rentes sections d'un document PDF<br>Fournir une structure de titres aux utilisateurs qui en ont besoin",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Internal PDF documents are tagged",
+    "solution": "[Cad]-01",
+    "thema": "Files and multimedia",
+    "name": "179"
+  },
+  "679": {
+    "goal": "S'assurer qu'au moins un des deux processus de validation a bien lieu",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Form validation on the client side is also done on the server side",
+    "solution": "[Cad]-01",
+    "thema": "Forms",
+    "name": "180"
+  },
+  "680": {
+    "goal": "\u00c9viter le risque d'erreur et donc \u00e9viter \u00e0 l'utilisateur de devoir remplir plusieurs fois un m\u00eame champ\n\u00c9viter l'incompr\u00e9hension de l'utilisateur qui pense avoir rempli correctement le champ mais le voir revenir en erreur",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The user is told when a form input is case-sensitive",
+    "solution": "[Cad]-01",
+    "thema": "Forms",
+    "name": "181"
+  },
+  "681": {
+    "goal": "Permettre aux utilisateurs d'identifier sans ambiguit\u00e9 les champs de formulaire et la nature des infos \u00e0 saisir\nPr\u00e9venir les erreurs de saisie\nFaciliter et acc\u00e9lerer l'usage du formulaire",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Each form label is visually linked to the form field it describes",
+    "solution": "[Cad]-01",
+    "thema": "Forms",
+    "name": "182"
+  },
+  "682": {
+    "goal": "Des champs de formulaire doivent \u00eatre regroup\u00e9s avec le balisage appropri\u00e9 lorsque leurs \u00e9tiquettes ne suffisent pas \u00e0 indiquer clairement le r\u00f4le de chaque champ concern\u00e9. Le regroupement permet alors de compl\u00e9ter ces \u00e9tiquettes par une l\u00e9gende commune. Ceci permet :\n    * de faciliter le remplissage du formulaire : \n        * en contextualisant les informations demand\u00e9es\n        * en d\u00e9coupant l'ensemble des informations demand\u00e9es en sous-groupes\n    * de donner aux aides techniques le moyen d'expliciter les \u00e9tiquettes des champs de formulaire qui le n\u00e9cessitent \u00e0 l'aide d'une l\u00e9gende attribu\u00e9e au groupe de champs\n    * d'obtenir un rendu appropri\u00e9 des regroupements de champs de formulaire par tous les navigateurs",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Form fields that require a common information are grouped under a single legend",
+    "solution": "[Cad]-01",
+    "thema": "Forms",
+    "name": "183"
+  },
+  "683": {
+    "goal": "Permettre aux aides techniques de restituer \u00e0 l'utilisateur une liste:\n    * dont l'organisation soit clairement perceptible\n    * dont le contenu est navigable de mani\u00e8re ais\u00e9e.\nFavoriser un rendu appropri\u00e9 des listes d\u00e9roulantes complexe dans tous les navigateurs.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Elements of a drop-down list that can be grouped are indeed grouped in a proper way",
+    "solution": "[Cad]-01",
+    "thema": "Forms",
+    "name": "184"
+  },
+  "684": {
+    "goal": "Permettre aux utilisateurs, handicap\u00e9s ou pas d'acc\u00e9der rapidement \u00e0 l'item de liste recherch\u00e9",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Option lists in forms are presented in an understandable order",
+    "solution": "[Cad]-01",
+    "thema": "Forms",
+    "name": "185"
+  },
+  "685": {
+    "goal": "Eviter les confusions entre deux liens cons\u00e9cutifs",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Consecutive hyperlinks are separated visually",
+    "solution": "[Cad]-01",
+    "thema": "Hyperlinks",
+    "name": "186"
+  },
+  "686": {
+    "goal": "Permettre aux utilisateurs d'identifier pr\u00e9cis\u00e9ment la nature du lien\nPermettre aux outils d'indexation d'associer un libell\u00e9 \u00e0 une ressource\nPermettre aux lecteur d'\u00e9cran de restituer la cible de fa\u00e7on explicite",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Each hyperlink's label describes either its function or the nature of its target",
+    "solution": "[Cad]-01",
+    "thema": "Hyperlinks",
+    "name": "187"
+  },
+  "687": {
+    "goal": "Pr\u00e9venir clairement l'internaute des conditions dans lequel il va quitter le service en ligne qu'il visite.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Internal and external hyperlinks are differentiated",
+    "solution": "[Cad]-01",
+    "thema": "Hyperlinks",
+    "name": "188"
+  },
+  "688": {
+    "goal": "Contribuer \u00e0 la compr\u00e9hension imm\u00e9diate de l'identit\u00e9, de l'activit\u00e9 ou de la zone g\u00e9ographique du siteAm\u00e9liorer la capacit\u00e9 des utilisateurs \u00e0 m\u00e9moriser l'adresse du site et \u00e0 la retrouver en cas d'oubli",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The extension used is coherent with the identity, the activity, the geographical zone or with the domain name",
+    "solution": "[Cad]-01",
+    "thema": "Identification",
+    "name": "189"
+  },
+  "689": {
+    "goal": "Faciliter la compr\u00e9hension par l'utilisateur des r\u00e8gles de qualit\u00e9, d'accessibilit\u00e9 ou autres appliqu\u00e9es sur le site",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "If the site claims to abide to on or more standards and guidelines, a link is provided to each of them",
+    "solution": "[Cad]-01",
+    "thema": "Identification",
+    "name": "190"
+  },
+  "690": {
+    "goal": "Mettre \u00e0 disposition des informations synth\u00e9tiques et lisibles par les machines sur l'ensemble des contenus propos\u00e9s",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The site provides a sitemap file listing contents to be crawled",
+    "solution": "<p>Cr\u00e9er un fichier <code>sitemap.xml</code> contenant la liste des pages du site \u00e0 la racine du site. \u00c0 d\u00e9faut de respecter le format XML, une simple liste d'URL est accept\u00e9e par les moteurs.</p>",
+    "thema": "Identification",
+    "name": "191"
+  },
+  "691": {
+    "goal": "Permettre l'identification imm\u00e9diate du lien pertinent par l'utilisateur",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Links to equivalent versions of a page or site are written in the target language",
+    "solution": "[Cad]-01",
+    "thema": "Internationalization",
+    "name": "192"
+  },
+  "692": {
+    "goal": "Permettre aux aides techniques d'interpr\u00e9ter correctement les contenus exprim\u00e9s dans une autre langue\nPermettre aux outils d'indexation d'extraire des chaines dans une langue donn\u00e9e",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Each language change is signalled",
+    "solution": "[Cad]-01",
+    "thema": "Internationalization",
+    "name": "193"
+  },
+  "693": {
+    "goal": "Donner un acc\u00e8s direct aux traductions de la page courante",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Links to translated versions directly target the current page's translation",
+    "solution": "<p>Fournir sur chaque page dont le contenu a \u00e9t\u00e9 traduit un lien ou un formulaire de navigation donnant imm\u00e9diatement acc\u00e8s \u00e0 la version traduite de la page courante, sans retour \u00e0 la page d''accueil de la version linguistique concern\u00e9e.</p>",
+    "thema": "Internationalization",
+    "name": "194"
+  },
+  "694": {
+    "goal": "Eviter aux utilisateurs des t\u00e9l\u00e9chargements inutiles.\r\nInformer les utilisateurs sur les fichiers t\u00e9l\u00e9charg\u00e9s.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The language of downloadable files is mentioned if it is not the same as the original page",
+    "solution": "<p>Indiquer la langue du contenu du document&nbsp;:</p><ul>\n<li>Soit dans le libell\u00e9 du lien ;</li>\n\t\t\t\t\t<li>Soit via l'attribut <code>title</code> du lien.</li>\n\t\t\t\t</ul>",
+    "thema": "Internationalization",
+    "name": "195"
+  },
+  "695": {
+    "goal": "Permettre aux outils de lecture d'\u00e9cran de restituer correctement les contenus.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The content's text direction is indicated when it differs from default",
+    "solution": "<p>Indiquer, outre le changement de langue du contenu via l'attribut <code>lang</code>, le changement de sens de lecture \u00e0 d'aide de l'attribut <code>dir</code> renseign\u00e9 avec la valeur appropri\u00e9e (<code>ltr</code> ou <code>rtl</code>).</p>",
+    "thema": "Internationalization",
+    "name": "196"
+  },
+  "696": {
+    "goal": "Fournir aux utilisateurs une continuit\u00e9 dans la navigation\r\nEviter les changements de contexte",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Navigating the site does not forcefully open any new window",
+    "solution": "<p>Ne pas recourir aux techniques Javascript d'ouverture automatique d'une popup lors du chargement de la page.</p><p>Ne pas recourir aux techniques Javascript ou HTML (attribut <code>target</code>) for\u00e7ant l'ouverture d'un lien dans une nouvelle fen\u00eatre du navigateur.</p><p>Ne pas recourir aux techniques d'ouverture d'une nouvelle fen\u00eatre propres aux technologies Flash.</p>",
+    "thema": "Navigation",
+    "name": "197"
+  },
+  "697": {
+    "goal": "Permettre \u00e0 l'utilisateur de se d\u00e9sinscrire sans n\u00e9cessairement passer par un mail",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "It is possible to unsubscribe from newsletters from the site",
+    "solution": "<p>Fournir une page d\u00e9di\u00e9e \u00e0 la newsletter, dans laquelle le formulaire d'abonnement est accompagn\u00e9 d'un formulaire de d\u00e9sabonnement.</p><p>Faire figurer le lien de d\u00e9sabonnement dans les autres \u00e9ventuels formulaires d'inscription \u00ab&nbsp;rapides&nbsp;\u00bb int\u00e9gr\u00e9s \u00e0 d'autres pages du site.</p>",
+    "thema": "Newsletter",
+    "name": "198"
+  },
+  "698": {
+    "goal": "Faciliter l'archivage et la consultation des newsletters",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The publication date and/or the issue number of the newsletter are indicated in the subject of messages",
+    "solution": "[Cad]-01",
+    "thema": "Newsletter",
+    "name": "199"
+  },
+  "699": {
+    "goal": "permettre aux utilisateurs de se faire une id\u00e9e de la newsletter envoy\u00e9e aux abonn\u00e9s",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The latest newsletter sent is available online",
+    "solution": "[Cad]-01",
+    "thema": "Newsletter",
+    "name": "200"
+  },
+  "700": {
+    "goal": "permettre aux utilisateurs de conna\u00eetre avant leur inscription la fr\u00e9quence \u00e0 laquelle ils recevront la newsletter",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The frequency of newsletters can be found before subscribing",
+    "solution": "[Cad]-01",
+    "thema": "Newsletter",
+    "name": "201"
+  },
+  "701": {
+    "goal": "Faciliter la consultation des archives des newsletter, permettre aux utilisateurs de se faire une id\u00e9e de la newsletter envoy\u00e9e aux abonn\u00e9s .",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Newsletter archives are available online",
+    "solution": "[Cad]-01",
+    "thema": "Newsletter",
+    "name": "202"
+  },
+  "702": {
+    "goal": "am\u00e9liorer la lisibilit\u00e9 des contenus",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The amount of different fonts used on the site is less than or equal to three (except when showing works or graphic products)",
+    "solution": "[Cad]-01",
+    "thema": "Presentation",
+    "name": "203"
+  },
+  "703": {
+    "goal": "Faciliter une bonne lisibilit\u00e9\r\nLimiter la charge mentale \u00e0 la consultation.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Contents are presented with a sufficient contrast with their background",
+    "solution": "[Cad]-01",
+    "thema": "Presentation",
+    "name": "204"
+  },
+  "704": {
+    "goal": "Am\u00e9liorer la lisibilit\u00e9 des contenus imprim\u00e9s",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The content of each page can be printed without navigation blocks",
+    "solution": "[Cad]-01",
+    "thema": "Presentation",
+    "name": "205"
+  },
+  "705": {
+    "goal": "Permettre la consultation sur les t\u00e9l\u00e9phones portables et smartphones. Ce qui ne se limite pas \u00e0 l'iPhone.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The site provides one or more style sheets for mobile browsers",
+    "solution": "[Cad]-01",
+    "thema": "Presentation",
+    "name": "206"
+  },
+  "706": {
+    "goal": "Limiter la quantit\u00e9 de donn\u00e9es \u00e0 imprimer \u00e0 ce qui est strictement n\u00e9cessaire. Permettre un acc\u00e8s imm\u00e9diat \u00e0 l'information dans un lecteur d'\u00e9cran. Conserver des alternatives textuelles d'images concises.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Sentences or groups of words in text images are not cut up in several images",
+    "solution": "[Cad]-01",
+    "thema": "Presentation",
+    "name": "207"
+  },
+  "707": {
+    "goal": "Eviter les pertes de contenus lorsque la disposition originale des images est alt\u00e9r\u00e9e\nFaciliter la mise en accessibilit\u00e9 des images (contenus alternatifs)",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "A content is not mentioned only in reference to its shape or to its position on the screen",
+    "solution": "[Cad]-01",
+    "thema": "Presentation",
+    "name": "208"
+  },
+  "708": {
+    "goal": "Eviter les probl\u00e8mes de navigation ou d'acc\u00e8s aux contenus pour les personnes qui n'ont pas les informations de forme ou de position",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Text content can still be read when text is increased twice in the browser",
+    "solution": "[Cad]-01",
+    "thema": "Presentation",
+    "name": "209"
+  },
+  "709": {
+    "goal": "Permettre un copier coller des contenus sans mise en forme en majuscules.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Capitalisation of words for decorative purposes is achieved through styling",
+    "solution": "[Cad]-01",
+    "thema": "Presentation",
+    "name": "210"
+  },
+  "710": {
+    "goal": "Informer les utilisateurs sur le niveau de s\u00e9curit\u00e9 du mot de passe choisi et donc sur les risques de d\u00e9tournement",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "A mechanism raises the user's awareness regarding their password's level of security",
+    "solution": "",
+    "thema": "Security and privacy",
+    "name": "211"
+  },
+  "711": {
+    "goal": "Servir les pages dans la langue souhait\u00e9e",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The server respects the preferential order of languages specified in user agents",
+    "solution": "[Cad]-01",
+    "thema": "Server and performance",
+    "name": "212"
+  },
+  "712": {
+    "goal": "Permettre le chargement prioritaire des contenus\r\nLimiter le d\u00e9lai d'affichage des contenus",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Calls to external scripts are put after the content",
+    "solution": "<p>Placer les appels de scripts en fin de code, juste avant la fermeture de l'\u00e9l\u00e9ment <code>body</code> (balise &lt;/body&gt;).</p>",
+    "thema": "Server and performance",
+    "name": "213"
+  },
+  "713": {
+    "goal": "\u00e9vite aux utisateurs les ruptures de navigation, l'arriv\u00e9e sur des\npages cul-de-sac, l'obligation d'utiliser le bouton pr\u00e9c\u00e9dent du\nnavigateur",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The main navigation menu is featured on personalised error pages",
+    "solution": "[Cad]-01",
+    "thema": "Server and performance",
+    "name": "214"
+  },
+  "714": {
+    "goal": "Minimiser la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger par l'utilisateur\nAm\u00e9liorer les performances",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Script functions are put into external files",
+    "solution": "[Cad]-01",
+    "thema": "Server and performance",
+    "name": "215"
+  },
+  "715": {
+    "goal": "Acc\u00e9l\u00e9rer la vitesse d'affichage des pages\nAm\u00e9liorer les performances\nDiminuer la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Scripts are minified",
+    "solution": "[Cad]-01",
+    "thema": "Server and performance",
+    "name": "216"
+  },
+  "716": {
+    "goal": "Minimiser la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger par l'utilisateur\nAm\u00e9liorer les performances",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Style information are minified",
+    "solution": "[Cad]-01",
+    "thema": "Server and performance",
+    "name": "217"
+  },
+  "500": {
+    "goal": "* Permettre la navigation et la consultation pour les utilisateurs plac\u00e9s dans des contextes o\u00f9 les images ne sont pas perceptibles (navigateurs texte, lecteur d'\u00e9cran, images d\u00e9sactiv\u00e9es)\n    * Permettre aux robots d'exploiter l'information v\u00e9hicul\u00e9e par les images (r\u00e9f\u00e9rencement, traduction automatique)\n    * Permettre l'affichage d'un texte pendant la chargement des images",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Every image is provided with a proper alternative text",
+    "solution": "[Cad]-01",
+    "thema": "Alternatives",
+    "name": "1"
+  },
+  "501": {
+    "goal": "Faciliter la validation du code source et favoriser un rendu pr\u00e9visible quelque-soit le navigateur (en mode de rendu strict pour les moteurs de rendu CSS)",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The page's source code begins with a Document Type Declaration (DTD) whose syntax is one of those recommended by the W3C",
+    "solution": "[Cad]-01",
+    "thema": "Code",
+    "name": "2"
+  },
+  "502": {
+    "goal": "Permettre aux utilisateurs qui le souhaitent de visualiser la structure du contenu de la page\nPermettre aux machines et aux outils d'indexation d'extraire le plan de chaque page\nAm\u00e9liorer le r\u00e9f\u00e9rencement en facilitant l'interpr\u00e9tation du contenu par les robots d'indexation",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Each page's content is organised according to a hierarchical heading and sub-heading structure",
+    "solution": "[Cad]-01",
+    "thema": "Code",
+    "name": "3"
+  },
+  "503": {
+    "goal": "Permettre aux utilisateurs de conserver la maitrise de leur environnement de travail\nEviter des interruptions ou des pertes d'information en cours de lecture, notamment pour les utilisateurs \u00e9quip\u00e9s de lecteurs d'\u00e9cran",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The site forces no redirection or automatic refresh on the client side",
+    "solution": "[Cad]-01",
+    "thema": "Code",
+    "name": "4"
+  },
+  "504": {
+    "goal": "<p>Garantir l'acc\u00e8s au contenu ind\u00e9pendamment de la prise en compte de la couche de mise en forme CSS.</p><p>Permettre la r\u00e9utilisation du contenu sur des m\u00e9dias ou des supports qui ne prennent pas en charge la mise en forme pour l'affichage \u00e0 l'\u00e9cran.</p><p>Assurer une s\u00e9mantique des contenus suffisante pour favoriser notamment leur indexation.</p>",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Styling is not used to generate content",
+    "solution": "<p>Ne pas utiliser les propri\u00e9t\u00e9s CSS <code>background</code>, <code>background-image</code> ou <code>content</code> ni les pseudos-\u00e9l\u00e9ments <code>:before</code> et <code>:after</code> pour g\u00e9n\u00e9rer une information qui est absente du contenu HTML.</p>",
+    "thema": "Code",
+    "name": "5"
+  },
+  "505": {
+    "goal": "Eviter les risques de confusion sur une date de la part des utilisateurs",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Dates are presented in an explicit format",
+    "solution": "[Cad]-01",
+    "thema": "Code",
+    "name": "6"
+  },
+  "506": {
+    "goal": "Faciliter le retour d'information de la part des utilisateurs",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "The site provides at least one means of contact",
+    "solution": "[Cad]-01",
+    "thema": "Contact",
+    "name": "7"
+  },
+  "507": {
+    "goal": "<p>Favoriser l'identification de l'entit\u00e9 responsable des contenus et des services.</p><p>Fournir un moyen de contact alternatif.</p>",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Mail and phone information about local agencies or headquarters of companies and organisations are provided",
+    "solution": "<p>Les coordonn\u00e9es postales et t\u00e9l\u00e9phoniques peuvent \u00eatre indiqu\u00e9es tout aussi bien&nbsp;:</p><ul>\n<li>Sur une page unique de type Mentions l\u00e9gales, \u00c0 propos ou Contact ;</li>\n\t\t\t\t\t<li>De mani\u00e8re r\u00e9p\u00e9t\u00e9e et syst\u00e9matique dans les pieds de page du site.</li>\n\t\t\t\t</ul>",
+    "thema": "Contact",
+    "name": "8"
+  },
+  "508": {
+    "goal": "Permettre aux utilisateurs d'identifier la nature des contenus de chaque page dans les onglets, dans les favoris, dans la fen\u00eatre du navigateur ou dans les lecteurs d'\u00e9cran.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Each page provides a title that enables one to identify its content",
+    "solution": "[Cad]-01",
+    "thema": "Contents",
+    "name": "9"
+  },
+  "509": {
+    "goal": "informer les utilisateurs sur les conditions sous lesquelles sont publi\u00e9s les contenus\ninformer les utilisateurs sur les conditions de copie et de r\u00e9utilisation",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Information in regard to the right to copy and reuse are available from all pages",
+    "solution": "[Cad]-01",
+    "thema": "Contents",
+    "name": "10"
+  },
+  "510": {
+    "goal": "permettre aux utilisateurs de diff\u00e9rencier la publicit\u00e9 du reste du contenu\nPermettre une identification imm\u00e9diate des contenus publicitaires ou sponsoris\u00e9s\nEviter les confusions entre contenus r\u00e9dactionnels et publicitaires\nPr\u00e9venir les risques associ\u00e9s aux conflits d'int\u00e9r\u00eat",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Advertisement or sponsored contents are identified as such",
+    "solution": "[Cad]-01",
+    "thema": "Contents",
+    "name": "11"
+  },
+  "511": {
+    "goal": "Permettre aux utilisateurs d'identifier le site dans les onglets, dans les favoris, dans la fen\u00eatre du navigateur ou dans les lecteurs d'\u00e9cran.",
+    "checklist": {
+      "id": 11,
+      "name": "Qualit\u00e9 Web - Opquast V2"
+    },
+    "explanation": "",
+    "description": "Each page provides a title that enables one to identify the site",
+    "solution": "[Cad]-01",
+    "thema": "Contents",
+    "name": "12"
+  }
 }

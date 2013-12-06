@@ -1,230 +1,782 @@
 {
-    "31362": {
-        "goal": "Aider l'internaute \u00e0 comprendre ce qu'on attend et ainsi, faciliter le passage \u00e0 l'\u00e9tape suivante\n\u00c9viter la frustration de l'utilisateur",
-        "checklist": {
-            "id": 667,
-            "name": "Opquast Website"
-        },
-        "explanation": "",
-        "description": "In the case when data entered in a form was rejected, the reasons for the rejection are indicated to the user",
-        "solution": "[Cad]-01",
-        "thema": "Forms",
-        "name": "115"
+  "31360": {
+    "goal": "Fournir un acc\u00e8s \u00e0 l'information pour les utilisateurs dont le navigateur ou la platre-forme ne supporte pas les technologies utilis\u00e9es dans les objets inclus",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
     },
-    "31364": {
-        "goal": "Toujours laisser la main \u00e0 l'utilisateur sur la totalit\u00e9 des informations qu'il donne\nPermettre \u00e0 l'utilisateur de modifier des informations sur lesquelles il voudrait revenir",
-        "checklist": {
-            "id": 667,
-            "name": "Opquast Website"
-        },
-        "explanation": "",
-        "description": "In the case when data entered in a form was rejected, all the data entered can be modified by the user",
-        "solution": "[Cad]-01",
-        "thema": "Forms",
-        "name": "117"
+    "explanation": "",
+    "description": "Embedded objects are provided with a proper alternative",
+    "solution": "[Cad]-01",
+    "thema": "Alternatives",
+    "name": "86"
+  },
+  "31233": {
+    "goal": "permet aux utilisateurs de conna\u00eetre la validit\u00e9 du certificat et contribue \u00e0 la s\u00e9curisation de la transaction",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
     },
-    "31333": {
-        "goal": "Minimiser la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger par l'utilisateur\nAm\u00e9liorer les performances",
-        "checklist": {
-            "id": 667,
-            "name": "Opquast Website"
-        },
-        "explanation": "",
-        "description": "Script functions are put into external files",
-        "solution": "[Cad]-01",
-        "thema": "Server and performance",
-        "name": "215"
+    "explanation": "",
+    "description": "Security certificates are signed and currently valid",
+    "solution": "[Cad]-01",
+    "thema": "Security and privacy",
+    "name": "73"
+  },
+  "31234": {
+    "goal": "Permet aux utilisateurs de choisir le mode de paiement qui leur convient le mieux dans leur contexte.",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
     },
-    "31370": {
-        "goal": "Fournir aux utilisateurs un acc\u00e8s direct et imm\u00e9diat aux contenus, m\u00eame lorsque l'administrateur du site d\u00e9cide de proposer une animation ou une publicit\u00e9 pr\u00e9alable.",
-        "checklist": {
-            "id": 667,
-            "name": "Opquast Website"
-        },
-        "explanation": "",
-        "description": "Running animations does not block access to navigation or content",
-        "solution": "<p>En cas d'animation propos\u00e9e dans un splash screen, celle-ci doit comporter un lien permettant d'acc\u00e9der directement aux contenus sans devoir attendre la fin de l'animation.</p>",
-        "thema": "Files and multimedia",
-        "name": "177"
+    "explanation": "",
+    "description": "The site accepts at least two means of payment",
+    "solution": "[Cad]-01",
+    "thema": "E-Commerce",
+    "name": "104"
+  },
+  "31363": {
+    "goal": "Donner \u00e0 l'utilisateur une vue globale de ce qu'il a saisie dans les pages pr\u00e9c\u00e9dentes",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
     },
-    "31303": {
-        "goal": "informe l'utilisateur sur l'erreur rencontr\u00e9e, sur la continuit\u00e9 de fonctionnement du serveur, et met hors de cause la connection de l'utilisateur",
-        "checklist": {
-            "id": 667,
-            "name": "Opquast Website"
-        },
-        "explanation": "",
-        "description": "The server sends a personalised 404 Not found error page",
-        "solution": "[Cad]-01",
-        "thema": "Server and performance",
-        "name": "78"
+    "explanation": "",
+    "description": "When a form spans several pages, a global summary is displayed before the final form submission",
+    "solution": "[Cad]-01",
+    "thema": "Forms",
+    "name": "116"
+  },
+  "31364": {
+    "goal": "Toujours laisser la main \u00e0 l'utilisateur sur la totalit\u00e9 des informations qu'il donne\nPermettre \u00e0 l'utilisateur de modifier des informations sur lesquelles il voudrait revenir",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
     },
-    "31306": {
-        "goal": "<p>Am\u00e9liorer la vitesse de rendu de la page.</p><p>Diminuer les co\u00fbts de bande passante.</p>",
-        "checklist": {
-            "id": 667,
-            "name": "Opquast Website"
-        },
-        "explanation": "",
-        "description": "The server compresses contents if the client accepts compressed contents",
-        "solution": "<p>Activer le module Gzip ou Deflate du serveur pour compresser les ressources Javascript, CSS et HTML.</p>",
-        "thema": "Server and performance",
-        "name": "80"
+    "explanation": "",
+    "description": "In the case when data entered in a form was rejected, all the data entered can be modified by the user",
+    "solution": "[Cad]-01",
+    "thema": "Forms",
+    "name": "117"
+  },
+  "31365": {
+    "goal": "Limiter le risque d'erreurs de saisie\n Limiter les risques associ\u00e9s \u00e0 l'envoi de donn\u00e9es eronn\u00e9es ou inexploitables",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
     },
-    "31339": {
-        "goal": "<p>Acc\u00e9l\u00e9rer l'affichage des contenus et permettre une navigation plus fluide.</p><p>R\u00e9duire les co\u00fbts de bande passante.</p>",
-        "checklist": {
-            "id": 667,
-            "name": "Opquast Website"
-        },
-        "explanation": "",
-        "description": "The server sends information to enable the caching of contents",
-        "solution": "[Cad]-01",
-        "thema": "Server and performance",
-        "name": "76"
+    "explanation": "",
+    "description": "The label of each form field indicates if need be what input format must be used",
+    "solution": "[Cad]-01",
+    "thema": "Forms",
+    "name": "119"
+  },
+  "31241": {
+    "goal": "permet aux utilisateurs d'identifier facilement les liens",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
     },
-    "31346": {
-        "goal": "Donner  \u00e0 l'utilisateur un retour sur l'action qu'il vient d'effectuer\r\n\u00c9viter la frustration d'un utilisateur qui pense que le processus est fini alors qu'il y a eu un probl\u00e8me",
-        "checklist": {
-            "id": 667,
-            "name": "Opquast Website"
-        },
-        "explanation": "",
-        "description": "The submission of a form is followed by a feedback message indicating if the action worked or not",
-        "solution": "<p>Retourner une page de confirmation explicite apr\u00e8s soumission d'un formulaire.</p>",
-        "thema": "Forms",
-        "name": "118"
+    "explanation": "",
+    "description": "Hyperlinks are visually differentiated from the rest of the content",
+    "solution": "[Cad]-01",
+    "thema": "Hyperlinks",
+    "name": "43"
+  },
+  "31370": {
+    "goal": "Fournir aux utilisateurs un acc\u00e8s direct et imm\u00e9diat aux contenus, m\u00eame lorsque l'administrateur du site d\u00e9cide de proposer une animation ou une publicit\u00e9 pr\u00e9alable.",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
     },
-    "31357": {
-        "goal": "permet \u00e0 l'utilisateur de naviguer sur le site sans avoir d'op\u00e9ration sp\u00e9cifique \u00e0 effectuer pendant la navigation",
-        "checklist": {
-            "id": 667,
-            "name": "Opquast Website"
-        },
-        "explanation": "",
-        "description": "Navigating the site does not open any popup window",
-        "solution": "[Cad]-01",
-        "thema": "Navigation",
-        "name": "60"
+    "explanation": "",
+    "description": "Running animations does not block access to navigation or content",
+    "solution": "<p>En cas d'animation propos\u00e9e dans un splash screen, celle-ci doit comporter un lien permettant d'acc\u00e9der directement aux contenus sans devoir attendre la fin de l'animation.</p>",
+    "thema": "Files and multimedia",
+    "name": "177"
+  },
+  "31371": {
+    "goal": "Permettre aux utilisateurs d'identifier sans ambiguit\u00e9 les champs de formulaire et la nature des infos \u00e0 saisir\nPr\u00e9venir les erreurs de saisie\nFaciliter et acc\u00e9lerer l'usage du formulaire",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
     },
-    "31376": {
-        "goal": "# Donner un retour \u00e0 l'utilisateur sur l'action qu'il vient d'effectuer\n# Guider l'utilisateur directement vers les \u00e9l\u00e9ments sur lesquels il doit agir",
-        "checklist": {
-            "id": 667,
-            "name": "Opquast Website"
-        },
-        "explanation": "",
-        "description": "In the case when data entered in a form were rejected, the fields containing the rejected data are indicated to the user",
-        "solution": "[Cad]-01",
-        "thema": "Forms",
-        "name": "36"
+    "explanation": "",
+    "description": "Each form label is visually linked to the form field it describes",
+    "solution": "[Cad]-01",
+    "thema": "Forms",
+    "name": "182"
+  },
+  "31362": {
+    "goal": "Aider l'internaute \u00e0 comprendre ce qu'on attend et ainsi, faciliter le passage \u00e0 l'\u00e9tape suivante\n\u00c9viter la frustration de l'utilisateur",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
     },
-    "31314": {
-        "goal": "Permettre un r\u00e9f\u00e9rencement cibl\u00e9\nAm\u00e9liorer le guidage pour les outils de recherche",
-        "checklist": {
-            "id": 667,
-            "name": "Opquast Website"
-        },
-        "explanation": "",
-        "description": "The site's root contains instructions for spiders and robots",
-        "solution": "[Cad]-01",
-        "thema": "Identification",
-        "name": "125"
+    "explanation": "",
+    "description": "In the case when data entered in a form was rejected, the reasons for the rejection are indicated to the user",
+    "solution": "[Cad]-01",
+    "thema": "Forms",
+    "name": "115"
+  },
+  "31246": {
+    "goal": "* Permettre \u00e0 l'utilisateur d'identifier directement l'auteur (au sens large)\n    * Limiter les risques de d\u00e9fiance",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
     },
-    "31315": {
-        "goal": "Am\u00e9liorer l'identification visuelle du site et de ses pages\nFaciliter l'identification dans le navigateur et dans les favoris ou signets\nPermet l'affichage, l'appel, et la m\u00e9morisation \u00e9ventuelle de l'ic\u00f4ne de favori par tous les navigateurs.",
-        "checklist": {
-            "id": 667,
-            "name": "Opquast Website"
-        },
-        "explanation": "",
-        "description": "The source code of the pages contains a valid call to a favourite icon (\u201cfavicon\u201d)",
-        "solution": "[Cad]-01",
-        "thema": "Identification",
-        "name": "128"
+    "explanation": "",
+    "description": "The identity of the person or of the service responsible for the contents is provided",
+    "solution": "[Cad]-01",
+    "thema": "Identification",
+    "name": "44"
+  },
+  "31376": {
+    "goal": "# Donner un retour \u00e0 l'utilisateur sur l'action qu'il vient d'effectuer\n# Guider l'utilisateur directement vers les \u00e9l\u00e9ments sur lesquels il doit agir",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
     },
-    "31380": {
-        "goal": "Permettre aux utilisateurs d'identifier la nature des contenus de chaque page dans les onglets, dans les favoris, dans la fen\u00eatre du navigateur ou dans les lecteurs d'\u00e9cran.",
-        "checklist": {
-            "id": 667,
-            "name": "Opquast Website"
-        },
-        "explanation": "",
-        "description": "Each page provides a title that enables one to identify its content",
-        "solution": "[Cad]-01",
-        "thema": "Contents",
-        "name": "9"
+    "explanation": "",
+    "description": "In the case when data entered in a form were rejected, the fields containing the rejected data are indicated to the user",
+    "solution": "[Cad]-01",
+    "thema": "Forms",
+    "name": "36"
+  },
+  "31380": {
+    "goal": "Permettre aux utilisateurs d'identifier la nature des contenus de chaque page dans les onglets, dans les favoris, dans la fen\u00eatre du navigateur ou dans les lecteurs d'\u00e9cran.",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
     },
-    "31319": {
-        "goal": "Mettre \u00e0 disposition des informations synth\u00e9tiques et lisibles par les machines sur l'ensemble des contenus propos\u00e9s",
-        "checklist": {
-            "id": 667,
-            "name": "Opquast Website"
-        },
-        "explanation": "",
-        "description": "The site provides a sitemap file listing contents to be crawled",
-        "solution": "<p>Cr\u00e9er un fichier <code>sitemap.xml</code> contenant la liste des pages du site \u00e0 la racine du site. \u00c0 d\u00e9faut de respecter le format XML, une simple liste d'URL est accept\u00e9e par les moteurs.</p>",
-        "thema": "Identification",
-        "name": "191"
+    "explanation": "",
+    "description": "Each page provides a title that enables one to identify its content",
+    "solution": "[Cad]-01",
+    "thema": "Contents",
+    "name": "9"
+  },
+  "31253": {
+    "goal": "<p>Conforter la confiance de l'utilisateur.</p><p>Permettre \u00e0 l'utilisateur de saisir des donn\u00e9es sensibles en sachant qu'elles seront prot\u00e9g\u00e9es.</p><p>Minimiser les risques d'utilisation frauduleuse des donn\u00e9es des utilisateurs.</p>",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
     },
-    "31321": {
-        "goal": "Acc\u00e9l\u00e9rer la vitesse d'affichage des pages\nAm\u00e9liorer les performances\nDiminuer la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger",
-        "checklist": {
-            "id": 667,
-            "name": "Opquast Website"
-        },
-        "explanation": "",
-        "description": "Scripts are minified",
-        "solution": "[Cad]-01",
-        "thema": "Server and performance",
-        "name": "216"
+    "explanation": "",
+    "description": "Sensitive data are securely transmitted and signalled as such",
+    "solution": "<p>Recourir \u00e0 un certificat de s\u00e9curit\u00e9 informatique dans une version support\u00e9e par les versions r\u00e9centes des navigateurs.</p><p>Recourir \u00e0 un service tiers d'authentification d\u00e9centralis\u00e9 du type OpenID.</p>",
+    "thema": "Security and privacy",
+    "name": "69"
+  },
+  "31257": {
+    "goal": "permet aux utilisateurs d'identifier pr\u00e9cis\u00e9ment les pi\u00e8ces n\u00e9cessaires en cas de n\u00e9cessit\u00e9 de retour du produit",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
     },
-    "31322": {
-        "goal": "Permettre aux utilisateurs qui le souhaitent de visualiser la structure du contenu de la page\nPermettre aux machines et aux outils d'indexation d'extraire le plan de chaque page\nAm\u00e9liorer le r\u00e9f\u00e9rencement en facilitant l'interpr\u00e9tation du contenu par les robots d'indexation",
-        "checklist": {
-            "id": 667,
-            "name": "Opquast Website"
-        },
-        "explanation": "",
-        "description": "Each page's content is organised according to a hierarchical heading and sub-heading structure",
-        "solution": "[Cad]-01",
-        "thema": "Code",
-        "name": "3"
+    "explanation": "",
+    "description": "Refunding conditions (delays, expenses and vouchers needed) are indicated",
+    "solution": "[Cad]-01",
+    "thema": "E-Commerce",
+    "name": "172"
+  },
+  "31322": {
+    "goal": "Permettre aux utilisateurs qui le souhaitent de visualiser la structure du contenu de la page\nPermettre aux machines et aux outils d'indexation d'extraire le plan de chaque page\nAm\u00e9liorer le r\u00e9f\u00e9rencement en facilitant l'interpr\u00e9tation du contenu par les robots d'indexation",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
     },
-    "31354": {
-        "goal": "* Permettre aux utilisateurs de savoir \u00e0 l'avance si un champ est obligatoire\n    * Pr\u00e9venir les erreurs avant qu'elles ne surviennent",
-        "checklist": {
-            "id": 667,
-            "name": "Opquast Website"
-        },
-        "explanation": "",
-        "description": "The label of each form field indicates if input is mandatory",
-        "solution": "[Cad]-01",
-        "thema": "Forms",
-        "name": "39"
+    "explanation": "",
+    "description": "Each page's content is organised according to a hierarchical heading and sub-heading structure",
+    "solution": "[Cad]-01",
+    "thema": "Code",
+    "name": "3"
+  },
+  "31262": {
+    "goal": "<p>Favoriser l'identification de l'entit\u00e9 responsable des contenus et des services.</p><p>Fournir un moyen de contact alternatif.</p>",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
     },
-    "31347": {
-        "goal": "Permet aux outils de recherche et d'indexation d'extraire des informations sur les pages et ainsi d'am\u00e9liorer la restitution aux utilisateurs",
-        "checklist": {
-            "id": 667,
-            "name": "Opquast Website"
-        },
-        "explanation": "",
-        "description": "The source code for each page contains a metadata describing the page's content",
-        "solution": "[Cad]-01",
-        "thema": "Identification",
-        "name": "126"
+    "explanation": "",
+    "description": "Mail and phone information about local agencies or headquarters of companies and organisations are provided",
+    "solution": "<p>Les coordonn\u00e9es postales et t\u00e9l\u00e9phoniques peuvent \u00eatre indiqu\u00e9es tout aussi bien&nbsp;:</p><ul>\n<li>Sur une page unique de type Mentions l\u00e9gales, \u00c0 propos ou Contact ;</li>\n\t\t\t\t\t<li>De mani\u00e8re r\u00e9p\u00e9t\u00e9e et syst\u00e9matique dans les pieds de page du site.</li>\n\t\t\t\t</ul>",
+    "thema": "Contact",
+    "name": "8"
+  },
+  "31237": {
+    "goal": "Faciliter le r\u00e9f\u00e9rencement \u00e0 travers l'obtention de backlinks\nAugmenter la visibilit\u00e9 pour les utilisateurs",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
     },
-    "31365": {
-        "goal": "Limiter le risque d'erreurs de saisie\n Limiter les risques associ\u00e9s \u00e0 l'envoi de donn\u00e9es eronn\u00e9es ou inexploitables",
-        "checklist": {
-            "id": 667,
-            "name": "Opquast Website"
-        },
-        "explanation": "",
-        "description": "The label of each form field indicates if need be what input format must be used",
-        "solution": "[Cad]-01",
-        "thema": "Forms",
-        "name": "119"
-    }
+    "explanation": "",
+    "description": "The site does not forbid incoming links",
+    "solution": "[Cad]-01",
+    "thema": "Hyperlinks",
+    "name": "122"
+  },
+  "31266": {
+    "goal": "Informer les utilisateurs sur la prise en compte de leur demande\npermettre aux utilisateurs d'obtenir une confirmation archivable de la bonne r\u00e9ception de leurs demandes d'information",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "Every information request is met with an acknowledgement of receipt",
+    "solution": "[Cad]-01",
+    "thema": "Contact",
+    "name": "93"
+  },
+  "31272": {
+    "goal": "* Donner de la visibilit\u00e9 \u00e0 l'utilisateur (temps, informations n\u00e9cessaires, etc.)\n    * \u00c9viter que l'utilisateur ne se sente pi\u00e9g\u00e9 dans un processus qu'il n'avait pas pr\u00e9vu",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "Complex processes are provided with a list of steps",
+    "solution": "[Cad]-01",
+    "thema": "Forms",
+    "name": "37"
+  },
+  "31275": {
+    "goal": "permet aux utilisateurs d'anticiper sur le mode et les conditions de paiement et de v\u00e9rifier avant la commande qu'ils pourront la mener \u00e0 son terme.",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "Accepted payment means are indicated, as well as procedures for each of them",
+    "solution": "[Cad]-01",
+    "thema": "E-Commerce",
+    "name": "23"
+  },
+  "31279": {
+    "goal": "permettre \u00e0 l'utilisateur de modifier facilement sa commande",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "Modifying each article's quantity, adding and deleting one or more articles is still possible as long as the order has not been definitely placed",
+    "solution": "[Cad]-01",
+    "thema": "E-Commerce",
+    "name": "21"
+  },
+  "31281": {
+    "goal": "Permettre \u00e0 l'utilisateur de d\u00e9terminer",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "Each page gives information as to where it is located in the site's hierarchy",
+    "solution": "[Cad]-01",
+    "thema": "Navigation",
+    "name": "55"
+  },
+  "31219": {
+    "goal": "<p>Fournir aux utilisateurs une solution de navigation alternative et d'acc\u00e8s rapide aux contenus li\u00e9s \u00e0 des mots-cl\u00e9s retenus par ceux-ci.</p>",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "If all the pages in the site cannot be reached through the site map, then an internal search engine can be reached on each page",
+    "solution": "<p>Proposer un formulaire et une fonctionnalit\u00e9 de recherche simple, qu'il s'agisse d'une solution interne ou de l'incorporation d'une solution externe (Google par exemple).</p>",
+    "thema": "Navigation",
+    "name": "62"
+  },
+  "31220": {
+    "goal": "contribuer \u00e0 l'information des utilisateurs sur la s\u00e9curisation des \u00e9changes de donn\u00e9es sensibles",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "Information relative to transaction security are provided",
+    "solution": "[Cad]-01",
+    "thema": "Security and privacy",
+    "name": "71"
+  },
+  "31292": {
+    "goal": "Permet un acc\u00e8s facile et permanent \u00e0 toutes les conditions de r\u00e9alisation du service.",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "Sale and use terms and conditions can be reached from every page",
+    "solution": "[Cad]-01",
+    "thema": "E-Commerce",
+    "name": "15"
+  },
+  "31165": {
+    "goal": "<p>Permette \u00e0 l'utilisateur d'acc\u00e9der \u00e0 son compte en cas de perte du mot de passe.</p><p>Simplifier la gestion des comptes utilisateurs. </p><p>Renforcer la s\u00e9curit\u00e9 en \u00e9vitant le stockage de mots de passe non crypt\u00e9s afin de pouvoir les communiquer de nouveau \u00e0 l'utilisateur.</p>",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "The site provides a way to reinitialise a password if it's lost, stolen or forgotten",
+    "solution": "<p>Fournir un lien permettant l'envoi d'un mail \u00e0 l'adresse associ\u00e9e au compte indiquant la proc\u00e9dure de r\u00e9initialisation.</p><p>Placer de pr\u00e9f\u00e9rence ce lien dans le formulaire de connexion.</p>",
+    "thema": "Security and privacy",
+    "name": "68"
+  },
+  "31166": {
+    "goal": "Informer l'utilisateur sur les cookies\nExpliquer leur r\u00f4le et leur utilit\u00e9",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "The aim of using cookies, as well as the consequences of refusing them, are explained",
+    "solution": "[Cad]-01",
+    "thema": "Security and privacy",
+    "name": "144"
+  },
+  "31296": {
+    "goal": "permet d'\u00e9viter une navigation et des commandes inutiles, voire une perte de temps pour l'utilisateur et la structure qui propose les biens ou les services",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "Information about zones of product or service delivery are indicated",
+    "solution": "[Cad]-01",
+    "thema": "E-Commerce",
+    "name": "27"
+  },
+  "31170": {
+    "goal": "Permettre \u00e0 l'utilisateur d'identifier imm\u00e9diatement et sans confusion possible les produits indisponibles\n\u00c9viter l'effet de d\u00e9ception si un utilisateur fait la d\u00e9marche pour un produit et s'aper\u00e7oit tardivement de son indisponibilit\u00e9",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "Unavailable products are visually and textually differentiated",
+    "solution": "[Cad]-01",
+    "thema": "E-Commerce",
+    "name": "103"
+  },
+  "31243": {
+    "goal": "permet aux utilisateurs d'identifier la date r\u00e9elle \u00e0 laquelle le bien command\u00e9 sera effectivement en leur possession",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "Estimated delivery date is indicated before final order placement",
+    "solution": "[Cad]-01",
+    "thema": "E-Commerce",
+    "name": "14"
+  },
+  "31300": {
+    "goal": "permet d'anticiper d'\u00e9ventuelles difficult\u00e9s et une augmentation du d\u00e9lai de livraison",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "The availability of products is indicated before the final order submission",
+    "solution": "[Cad]-01",
+    "thema": "E-Commerce",
+    "name": "18"
+  },
+  "31173": {
+    "goal": "permettre aux utilisateurs de conna\u00eetre les services mis \u00e0 leur disposition et leurs fonctionnements",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "Opening hours and prices for all services made available to customers are indicated",
+    "solution": "[Cad]-01",
+    "thema": "E-Commerce",
+    "name": "108"
+  },
+  "31303": {
+    "goal": "informe l'utilisateur sur l'erreur rencontr\u00e9e, sur la continuit\u00e9 de fonctionnement du serveur, et met hors de cause la connection de l'utilisateur",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "The server sends a personalised 404 Not found error page",
+    "solution": "[Cad]-01",
+    "thema": "Server and performance",
+    "name": "78"
+  },
+  "31306": {
+    "goal": "<p>Am\u00e9liorer la vitesse de rendu de la page.</p><p>Diminuer les co\u00fbts de bande passante.</p>",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "The server compresses contents if the client accepts compressed contents",
+    "solution": "<p>Activer le module Gzip ou Deflate du serveur pour compresser les ressources Javascript, CSS et HTML.</p>",
+    "thema": "Server and performance",
+    "name": "80"
+  },
+  "31182": {
+    "goal": "permet aux utilisateurs d'anticiper sur d'\u00e9ventuelles difficult\u00e9s d'utilisation et/ou de fonctionnement du bien ou du service propos\u00e9",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "The address and the conditions for returns (on site, to workshops) are indicated",
+    "solution": "[Cad]-01",
+    "thema": "E-Commerce",
+    "name": "173"
+  },
+  "31185": {
+    "goal": "permet aux utilisateurs d'identifier pr\u00e9cis\u00e9ment la nature des services associ\u00e9s et leur co\u00fbt",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "Conditions of guarantee (duration, options, extensions, prices, restrictions, etc.) are indicated",
+    "solution": "[Cad]-01",
+    "thema": "E-Commerce",
+    "name": "24"
+  },
+  "31314": {
+    "goal": "Permettre un r\u00e9f\u00e9rencement cibl\u00e9\nAm\u00e9liorer le guidage pour les outils de recherche",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "The site's root contains instructions for spiders and robots",
+    "solution": "[Cad]-01",
+    "thema": "Identification",
+    "name": "125"
+  },
+  "31315": {
+    "goal": "Am\u00e9liorer l'identification visuelle du site et de ses pages\nFaciliter l'identification dans le navigateur et dans les favoris ou signets\nPermet l'affichage, l'appel, et la m\u00e9morisation \u00e9ventuelle de l'ic\u00f4ne de favori par tous les navigateurs.",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "The source code of the pages contains a valid call to a favourite icon (\u201cfavicon\u201d)",
+    "solution": "[Cad]-01",
+    "thema": "Identification",
+    "name": "128"
+  },
+  "31189": {
+    "goal": "Faciliter une bonne lisibilit\u00e9\r\nLimiter la charge mentale \u00e0 la consultation.",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "Contents are presented with a sufficient contrast with their background",
+    "solution": "[Cad]-01",
+    "thema": "Presentation",
+    "name": "204"
+  },
+  "31190": {
+    "goal": "permet aux utilisateurs d'identifier pr\u00e9cis\u00e9ment la nature et les sp\u00e9cifications des produits propos\u00e9s",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "The nature and quantifiable characteristics of products and services (dimensions, duration, countenance, etc.) are indicated",
+    "solution": "[Cad]-01",
+    "thema": "E-Commerce",
+    "name": "17"
+  },
+  "31319": {
+    "goal": "Mettre \u00e0 disposition des informations synth\u00e9tiques et lisibles par les machines sur l'ensemble des contenus propos\u00e9s",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "The site provides a sitemap file listing contents to be crawled",
+    "solution": "<p>Cr\u00e9er un fichier <code>sitemap.xml</code> contenant la liste des pages du site \u00e0 la racine du site. \u00c0 d\u00e9faut de respecter le format XML, une simple liste d'URL est accept\u00e9e par les moteurs.</p>",
+    "thema": "Identification",
+    "name": "191"
+  },
+  "31321": {
+    "goal": "Acc\u00e9l\u00e9rer la vitesse d'affichage des pages\nAm\u00e9liorer les performances\nDiminuer la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "Scripts are minified",
+    "solution": "[Cad]-01",
+    "thema": "Server and performance",
+    "name": "216"
+  },
+  "31194": {
+    "goal": "Donner \u00e0 l'utilisateur de la visibilit\u00e9 sur l'avancement de la t\u00e2che qu'il r\u00e9alise",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "The current step in a process is indicated",
+    "solution": "[Cad]-01",
+    "thema": "Forms",
+    "name": "38"
+  },
+  "31354": {
+    "goal": "* Permettre aux utilisateurs de savoir \u00e0 l'avance si un champ est obligatoire\n    * Pr\u00e9venir les erreurs avant qu'elles ne surviennent",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "The label of each form field indicates if input is mandatory",
+    "solution": "[Cad]-01",
+    "thema": "Forms",
+    "name": "39"
+  },
+  "31333": {
+    "goal": "Minimiser la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger par l'utilisateur\nAm\u00e9liorer les performances",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "Script functions are put into external files",
+    "solution": "[Cad]-01",
+    "thema": "Server and performance",
+    "name": "215"
+  },
+  "31329": {
+    "goal": "Minimiser la quantit\u00e9 de donn\u00e9es \u00e0 t\u00e9l\u00e9charger par l'utilisateur\nAm\u00e9liorer les performances",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "Style information are minified",
+    "solution": "[Cad]-01",
+    "thema": "Server and performance",
+    "name": "217"
+  },
+  "31202": {
+    "goal": "\u00e9vite aux utisateurs les ruptures de navigation, l'arriv\u00e9e sur des\npages cul-de-sac, l'obligation d'utiliser le bouton pr\u00e9c\u00e9dent du\nnavigateur",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "The main navigation menu is featured on personalised error pages",
+    "solution": "[Cad]-01",
+    "thema": "Server and performance",
+    "name": "214"
+  },
+  "31205": {
+    "goal": "permet aux utilisateurs de conna\u00eetre les conditions d'assistance en cas de difficult\u00e9",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "Customer support service conditions (prices, opening hours, means of contact, etc.) are indicated",
+    "solution": "[Cad]-01",
+    "thema": "E-Commerce",
+    "name": "25"
+  },
+  "31334": {
+    "goal": "* \u00c9viter aux utilisateurs d'avoir par exemple l'URL du lien en guise de libell\u00e9 dans une aide technique, celle-ci \u00e9tant contrainte \u00e0 trouver dans le code de la page une information \u00e0 donner en guise de libell\u00e9 vide\n    * \u00c9viter aux utilisateurs de ne pas acc\u00e9der au lien lorsque CSS est d\u00e9sactiv\u00e9 dans un navigateur graphique.",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "Each link has a proper label in the source code",
+    "solution": "[Cad]-01",
+    "thema": "Hyperlinks",
+    "name": "41"
+  },
+  "31208": {
+    "goal": "permet aux utilisateurs de faire livrer un achat sur le lieu de son choix",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "Different shipping and billing addresses can be specified",
+    "solution": "[Cad]-01",
+    "thema": "E-Commerce",
+    "name": "26"
+  },
+  "31338": {
+    "goal": "* Eviter les clics inutiles sur des contenus soulign\u00e9s per\u00e7us comme des hyperliens\n    * Faciliter l'identification des liens",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "Underlining cannot be used for other elements than hyperlinks",
+    "solution": "[Cad]-01",
+    "thema": "Hyperlinks",
+    "name": "42"
+  },
+  "31339": {
+    "goal": "<p>Acc\u00e9l\u00e9rer l'affichage des contenus et permettre une navigation plus fluide.</p><p>R\u00e9duire les co\u00fbts de bande passante.</p>",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "The server sends information to enable the caching of contents",
+    "solution": "[Cad]-01",
+    "thema": "Server and performance",
+    "name": "76"
+  },
+  "31215": {
+    "goal": "Permettre la navigation au clavier",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "The site can be navigated in its entirety using only a keyboard",
+    "solution": "<p>Recourir \u00e0 des gestionnaires d'\u00e9v\u00e9nements universels en cas d'interaction bas\u00e9e sur Javascript (par exemple, <code>onclick</code> pour un lien <code>a</code> ou pour un champ ou contr\u00f4le de formulaire) ou, \u00e0 d\u00e9faut, compl\u00e9ter les gestionnaires d'\u00e9v\u00e9nements non universels (<code>onmouseover</code> par exemple) par un second gestionnaire permettant l'acc\u00e8s clavier (<code>onfocus</code> par exemple) ou encore fournir un moyen d'acc\u00e8s alternatif.</p><p>Fournir des moyens d'acc\u00e8s clavier dans les interfaces recourant \u00e0 des technologies sp\u00e9cifiques telles que Flash.</p>",
+    "thema": "Navigation",
+    "name": "57"
+  },
+  "31344": {
+    "goal": "Permettre aux utilisateurs d'identifier le site dans les onglets, dans les favoris, dans la fen\u00eatre du navigateur ou dans les lecteurs d'\u00e9cran.",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "Each page provides a title that enables one to identify the site",
+    "solution": "[Cad]-01",
+    "thema": "Contents",
+    "name": "12"
+  },
+  "31346": {
+    "goal": "Donner  \u00e0 l'utilisateur un retour sur l'action qu'il vient d'effectuer\r\n\u00c9viter la frustration d'un utilisateur qui pense que le processus est fini alors qu'il y a eu un probl\u00e8me",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "The submission of a form is followed by a feedback message indicating if the action worked or not",
+    "solution": "<p>Retourner une page de confirmation explicite apr\u00e8s soumission d'un formulaire.</p>",
+    "thema": "Forms",
+    "name": "118"
+  },
+  "31347": {
+    "goal": "Permet aux outils de recherche et d'indexation d'extraire des informations sur les pages et ainsi d'am\u00e9liorer la restitution aux utilisateurs",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "The source code for each page contains a metadata describing the page's content",
+    "solution": "[Cad]-01",
+    "thema": "Identification",
+    "name": "126"
+  },
+  "31348": {
+    "goal": "permettre aux utilisateurs de savoir si leurs outils leur permettent de consulter les fichiers propos\u00e9s en t\u00e9l\u00e9chargement\nr\u00e9duire la charge serveur en \u00e9vitant les t\u00e9l\u00e9chargements inutiles",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "The format of downloadable files is  indicated",
+    "solution": "[Cad]-01",
+    "thema": "Files and multimedia",
+    "name": "33"
+  },
+  "31294": {
+    "goal": "<p>Laisser \u00e0 l'utilisateur le contr\u00f4le de l'interface sonore et visuelle lors de la consultation du site.</p><p>Ne pas surprendre l'utilisateur par la diffusion inattendue d'un contenu audio.</p><p>Ne pas imposer \u00e0 l'utilisateur le d\u00e9clenchement d'un contenu anim\u00e9.</p>",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "Sounds and videos are started by the user",
+    "solution": "<p>Ne pas mettre en place des contenus audio ou vid\u00e9o dont le d\u00e9marrage est automatique et sans action explicite de l'utilisateur en ce sens.</p>",
+    "thema": "Files and multimedia",
+    "name": "31"
+  },
+  "31222": {
+    "goal": "Permettre l'acc\u00e8s \u00e0 l'information pour les utilisateurs dont le navigateur ou la plate-forme, ou encore  l'aide tchnique, ne permet pas de visualiser les couleurs",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "Information are not conveyed by colour alone",
+    "solution": "[Cad]-01",
+    "thema": "Alternatives",
+    "name": "85"
+  },
+  "31351": {
+    "goal": "<p>Laisser \u00e0 l'utilisateur le contr\u00f4le des animations lors de la consultation du contenu.</p><p>Ne pas perturber l'attention en imposant des \u00e9l\u00e9ments pouvant g\u00eaner celle-ci.</p><p>Permettre la consultation pas \u00e0 pas d'animations s\u00e9quentielles ou de contenus sonores.</p>",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "Animations, sounds and blinking can be paused",
+    "solution": "<p>D\u00e8s lors qu'une animation visuelle a une dur\u00e9e de plus de 5 secondes ou qu'un son a une dur\u00e9e de plus de 3 secondes, doter syst\u00e9matiquement l'objet multim\u00e9dia des moyens de contr\u00f4le n\u00e9cessaires&nbsp;: d\u00e9marrage, arr\u00eat, muet ou volume.</p><p>Ne pas utiliser de graphismes anim\u00e9s non contr\u00f4lables, ou encore partiellement contr\u00f4lables par l'utilisateur (images gif anim\u00e9es en particulier).</p><p>Ne pas incorporer dans la page d'\u00e9l\u00e9ments d\u00e9clenchant la lecture d'un son non contr\u00f4lable en arri\u00e8re-plan (<code>bgsound</code>).</p>",
+    "thema": "Files and multimedia",
+    "name": "34"
+  },
+  "31352": {
+    "goal": "* Permettre la navigation et la consultation pour les utilisateurs plac\u00e9s dans des contextes o\u00f9 les images ne sont pas perceptibles (navigateurs texte, lecteur d'\u00e9cran, images d\u00e9sactiv\u00e9es)\n    * Permettre aux robots d'exploiter l'information v\u00e9hicul\u00e9e par les images (r\u00e9f\u00e9rencement, traduction automatique)\n    * Permettre l'affichage d'un texte pendant la chargement des images",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "Every image is provided with a proper alternative text",
+    "solution": "[Cad]-01",
+    "thema": "Alternatives",
+    "name": "1"
+  },
+  "31226": {
+    "goal": "Permettre aux utilisateurs de choisir un mot de passe personnalis\u00e9\r\nEviter aux utilisateurs de rechercher leur mot de passe \u00e0 chaque connexion",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "Passwords can be chosen and changed by the user",
+    "solution": "<p>Fournir une proc\u00e9dure en ligne permettant le choix d'un mot de passe personnalis\u00e9 d\u00e8s la cr\u00e9ation du compte ou la modification ult\u00e9rieure des mots de passe automatiquement g\u00e9n\u00e9r\u00e9s.</p><p>Fournir un acc\u00e8s \u00e0 la modification du mot de passe depuis la gestion du compte utilisateur ou \u00e0 d\u00e9faut dans le contexte du formulaire d'identification.</p>",
+    "thema": "Security and privacy",
+    "name": "148"
+  },
+  "31357": {
+    "goal": "permet \u00e0 l'utilisateur de naviguer sur le site sans avoir d'op\u00e9ration sp\u00e9cifique \u00e0 effectuer pendant la navigation",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "Navigating the site does not open any popup window",
+    "solution": "[Cad]-01",
+    "thema": "Navigation",
+    "name": "60"
+  },
+  "31230": {
+    "goal": "Permettre aux utilisateurs d'identifier pr\u00e9cis\u00e9ment la nature du lien\nPermettre aux outils d'indexation d'associer un libell\u00e9 \u00e0 une ressource\nPermettre aux lecteur d'\u00e9cran de restituer la cible de fa\u00e7on explicite",
+    "checklist": {
+      "id": 667,
+      "name": "Opquast Website"
+    },
+    "explanation": "",
+    "description": "Each hyperlink's label describes either its function or the nature of its target",
+    "solution": "[Cad]-01",
+    "thema": "Hyperlinks",
+    "name": "187"
+  }
 }
