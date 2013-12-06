@@ -116,6 +116,11 @@ $.widget("ui.detailsViewer",{
                 _this._trigger("open");
 
                 $(document).on('keydown.detailsViewer', _this._handleKey.bind(_this));
+                $(document).on('click.detailsViewer', function(evt) {
+                    if ($(evt.target).parents().index(_this.element) === -1) {
+                        _this.close();
+                    }
+                });
             });
         }
     },
