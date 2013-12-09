@@ -1,3 +1,7 @@
+2013-12-09 - Version 0.9.3
+
+- Updated opquast test-runner
+
 2013-12-09 - Version 0.9.2
 
 - Forced CSV charset to ISO-8859-1 on windows
