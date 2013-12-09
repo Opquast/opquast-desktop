@@ -438,5 +438,17 @@ self.port.on("showLandingUI", function() {
     });
 });
 
+self.port.on("showConfirmDelete", function() {
+    $('body').doT('tplConfirmDelete', {});
+
+    $('button[name=keep]').click(function() {
+        self.port.emit("launch", false);
+    });
+
+    $('button[name=erase]').click(function() {
+        self.port.emit("launch", true);
+    });
+});
+
 //----
 })(jQuery);
