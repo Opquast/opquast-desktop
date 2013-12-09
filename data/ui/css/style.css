@@ -66,6 +66,15 @@ body {
     padding-bottom: 50px;
 }
 
+#message.confirmDelete {
+    font-size: 1.6em;
+    margin-top: 40px;
+    text-align: center;
+}
+#message.confirmDelete button.action {
+    font-size: 0.8em;
+}
+
 .error {
     background: #eab5b5;
     border-radius: 6px;
@@ -160,6 +169,39 @@ table.data th, table.data td {
 }
 #test_result tbody td[headers=hResult] {
     text-align: center;
+}
+
+span.user-defined {
+    color: #ff9326;
+    border: none;
+}
+span.user-defined.icon {
+    text-shadow: 0 0 3px rgba(255, 255, 255, 1);
+}
+span.user-defined.backup {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding:0 !important;
+    border:0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+ul.action_toolbar {
+    display: block;
+    margin: 0 16px 0 0;
+    padding: 5px 0;
+    background: #eee;
+    border-radius: 3px;
+    height: 16px;
+    position: absolute;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+ul.action_toolbar li {
+    display: inline-block;
+    margin: 0 4px;
+    padding: 0;
 }
 
 #resultDetails {
@@ -267,6 +309,12 @@ table.data th, table.data td {
 }
 #resultDetails p.status.i {
     background-image: url(../img/i-tr.png);
+}
+#resultDetails p.status.nt {
+    background-image: url(../img/nt-tr.png);
+}
+#resultDetails p.status select {
+    font-size: 1em;
 }
 
 
