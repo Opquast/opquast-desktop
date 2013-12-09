@@ -1,146 +1,146 @@
 {
-    "29981": {
-        "goal": "",
-        "checklist": {
-            "id": 658,
-            "name": "OpenData"
-        },
-        "explanation": "",
-        "description": "Any vocabularies used within the dataset are identified and documented",
-        "solution": "",
-        "thema": "Linkeddata",
-        "name": "52"
+  "29986": {
+    "goal": "Permettre d'entrer en relation avec les personnes en charge du maintient du jeu de donn\u00e9es pour demander des explications quant \u00e0 son utilisation, signaler une erreur ou proposer des enrichissements",
+    "checklist": {
+      "id": 658,
+      "name": "Opendatav2"
     },
-    "29982": {
-        "goal": "",
-        "checklist": {
-            "id": 658,
-            "name": "OpenData"
-        },
-        "explanation": "",
-        "description": "The licence sets out the conditions of attribution, reuse, redistribution and commercialisation",
-        "solution": "",
-        "thema": "License",
-        "name": "48"
+    "explanation": "",
+    "description": "Datasets are accompanied by at least one means of contact for the producer (or maintainer)",
+    "solution": "Conform\u00e9ment aux recommandations de la directive INSPIRE qui vise \u00e0 \r\nfournir un moyen d'identification des informations environnementales \r\n\u00e9ventuellement n\u00e9cessaires \u00e0 la gestion d'une situation de crise, le \r\nsch\u00e9ma DCAT int\u00e8gre diff\u00e9rents \u00e9l\u00e9ments du sch\u00e9ma Dublin Core permettant\r\n de sp\u00e9cifier l'identit\u00e9 et le contact du mainteneur du jeu de donn\u00e9es \r\net/ou de son cr\u00e9ateur (respectivement <a href=\"http://dublincore.org/documents/dcmi-terms/#elements-contributor\">dcterms:contributor</a> et <a href=\"http://dublincore.org/documents/dcmi-terms/#elements-creator\">dcterms:creator</a>)",
+    "thema": "Identification",
+    "name": "46"
+  },
+  "29989": {
+    "goal": "Permet de distinguer sans ambigu\u00eft\u00e9 un jeu de donn\u00e9es notamment dans le \r\ncas o\u00f9 un acc\u00e8s programmatique serait propos\u00e9 aux utilisateurs",
+    "checklist": {
+      "id": 658,
+      "name": "Opendatav2"
     },
-    "29986": {
-        "goal": "",
-        "checklist": {
-            "id": 658,
-            "name": "OpenData"
-        },
-        "explanation": "",
-        "description": "Datasets are accompanied by at least one means of contact for the producer (or maintainer)",
-        "solution": "",
-        "thema": "Identification",
-        "name": "46"
+    "explanation": "",
+    "description": "Each dataset is given  a unique identifier",
+    "solution": "Diff\u00e9rentes solutions d'attribution d'identifiants existent. Elles se r\u00e9partissent entre identifiants signifiants et identifiants opaques.<br>Les premiers sont int\u00e9ressants pour le r\u00e9f\u00e9rencement naturel par les moteurs de recherche mais plus difficiles \u00e0 maintenir. <br>Les identifiants opaque sont plus difficiles \u00e0 mettre en place mais offrent un meilleur gage de p\u00e9rennit\u00e9.<br>Pour les identifiants signifiants les r\u00e8gles d'URI d\u00e9finies dans <a href=\"https://www.ietf.org/rfc/rfc2396.txt\">la recommandation du W3C </a>sont \u00e0 utiliser.<br>Pour les identifiants opaques on peut citer les syst\u00e8mes <a href=\"https://fr.wikipedia.org/wiki/Digital_Object_Identifier\">DOI</a> et <a href=\"https://fr.wikipedia.org/wiki/Archival_Resource_Key_%28ARK%29\">ARK</a>",
+    "thema": "Identification",
+    "name": "44"
+  },
+  "29990": {
+    "goal": "Plusieurs type de jeux de donn\u00e9es disposent de versions mise \u00e0 jour \r\nsuivant une p\u00e9riodicit\u00e9 r\u00e9guli\u00e8re et la consultation de ces diff\u00e9rents \r\nversions permet d'observer des dynamiques.",
+    "checklist": {
+      "id": 658,
+      "name": "Opendatav2"
     },
-    "29989": {
-        "goal": "",
-        "checklist": {
-            "id": 658,
-            "name": "OpenData"
-        },
-        "explanation": "",
-        "description": "Each dataset is given a unique identifier",
-        "solution": "",
-        "thema": "Identification",
-        "name": "44"
+    "explanation": "",
+    "description": "One can access different versions of datasets",
+    "solution": "Ce service peut \u00e9galement \u00eatre entendu comme la possibilit\u00e9 d'acc\u00e9der \r\naux diff\u00e9rents modifications effectu\u00e9es sur les donn\u00e9es. La mise en \r\noeuvre d'un tel service peut rapidement introduire des co\u00fbts de \r\nfonctionnement important. Dans le cas des donn\u00e9es tr\u00e8s fr\u00e9quemment mises\r\n \u00e0 jour (ou en temps r\u00e9el), cette fonctionnalit\u00e9 n'a pas de sens. \r\nToutefois, un snapshot peut \u00eatre effectu\u00e9 \u00e0 intervalle r\u00e9gulier et mis \u00e0\r\n disposition comme une version de ce jeu de donn\u00e9es",
+    "thema": "Versions",
+    "name": "42"
+  },
+  "30028": {
+    "goal": "permet d'anticiper sur la fr\u00e9quence de r\u00e9cup\u00e9ration programmatique qui doit \u00eatre effectu\u00e9e par le r\u00e9utilisateur",
+    "checklist": {
+      "id": 658,
+      "name": "Opendatav2"
     },
-    "29990": {
-        "goal": "",
-        "checklist": {
-            "id": 658,
-            "name": "OpenData"
-        },
-        "explanation": "",
-        "description": "One can access different versions of datasets",
-        "solution": "",
-        "thema": "Versions",
-        "name": "42"
+    "explanation": "",
+    "description": "An update frequency is given for each dataset",
+    "solution": "L'utilisation de l'\u00e9l\u00e9ment dcterms:frequency dans le sch\u00e9ma DCAT permet de sp\u00e9cifier la date de derni\u00e8re mise \u00e0 jour du fichier.",
+    "thema": "Transparency",
+    "name": "62"
+  },
+  "29997": {
+    "goal": "Permettre de pr\u00e9senter l'\u00e9tendue de l'information g\u00e9ographique disposnible",
+    "checklist": {
+      "id": 658,
+      "name": "Opendatav2"
     },
-    "29997": {
-        "goal": "",
-        "checklist": {
-            "id": 658,
-            "name": "OpenData"
-        },
-        "explanation": "",
-        "description": "If a dataset refers to a specific geographical area, its spatial coverage is specified",
-        "solution": "",
-        "thema": "Metadata",
-        "name": "31"
+    "explanation": "",
+    "description": "If a dataset refers to a specific geographical area, its spatial coverage is specified",
+    "solution": "La couverture g\u00e9ographique du jeu de donn\u00e9es peut \u00eatre exprim\u00e9e au moyen\r\n de dc:coverage texte, dcterms:spatial texte ou coordonn\u00e9es \r\ndcterms:extent texte et coordonn\u00e9es g\u00e9ographiques",
+    "thema": "Metadata",
+    "name": "31"
+  },
+  "29998": {
+    "goal": "Permettre aux outils automatiques de n\u00e9gociation de contenu d'adapter la langue d'affichage en fonction de la pr\u00e9sence d'une m\u00e9tadonn\u00e9es de type dcterms:language et de sa valeur",
+    "checklist": {
+      "id": 658,
+      "name": "Opendatav2"
     },
-    "29998": {
-        "goal": "",
-        "checklist": {
-            "id": 658,
-            "name": "OpenData"
-        },
-        "explanation": "",
-        "description": "Each dataset is accompanied by a reference to the language used",
-        "solution": "",
-        "thema": "Metadata",
-        "name": "29"
+    "explanation": "",
+    "description": "Each dataset is accompanied by a reference to the language used",
+    "solution": "la langue du producteur du jeu de donn\u00e9es ou du jeu de donn\u00e9es dc:language dcterms:hasLanguage",
+    "thema": "Metadata",
+    "name": "29"
+  },
+  "29999": {
+    "goal": "Permettre aux utilisateurs d'identifier sans ambig\u00fcit\u00e9 un interlocuteur \r\nmoral ou physique capable de r\u00e9pondre aux questions \u00e9ventuelles sur les \r\ndonn\u00e9es, ou d'assumer les responsabilit\u00e9s li\u00e9es \u00e0 celles-ci.",
+    "checklist": {
+      "id": 658,
+      "name": "Opendatav2"
     },
-    "29999": {
-        "goal": "",
-        "checklist": {
-            "id": 658,
-            "name": "OpenData"
-        },
-        "explanation": "",
-        "description": "The identity and role of the person responsible for each dataset is specified",
-        "solution": "",
-        "thema": "Metadata",
-        "name": "22"
+    "explanation": "",
+    "description": "The identity and role of the person responsible for each dataset is specified",
+    "solution": "Indiquer sur le site le nom d'une personne morale ou physique responsable du jeu de donn\u00e9es.",
+    "thema": "Metadata",
+    "name": "22"
+  },
+  "30000": {
+    "goal": "Permettre la gestion de la mise \u00e0 jour des donn\u00e9es.",
+    "checklist": {
+      "id": 658,
+      "name": "Opendatav2"
     },
-    "30000": {
-        "goal": "",
-        "checklist": {
-            "id": 658,
-            "name": "OpenData"
-        },
-        "explanation": "",
-        "description": "A last-updated date is given for each dataset",
-        "solution": "",
-        "thema": "Metadata",
-        "name": "26"
+    "explanation": "",
+    "description": "A last-updated date is given for each dataset",
+    "solution": "Lors de la mise \u00e0 jour du jeu de donn\u00e9es dcterms:modified<br>Lors d'une r\u00e9vision du jeu de donn\u00e9es dcterms:hasVersion",
+    "thema": "Metadata",
+    "name": "26"
+  },
+  "30001": {
+    "goal": "Permet de connaitre l'historique de donn\u00e9es notamment dans le cas de la \r\nmise \u00e0 disposition d'une journalisation des r\u00e9visions du jeu de donn\u00e9es",
+    "checklist": {
+      "id": 658,
+      "name": "Opendatav2"
     },
-    "30001": {
-        "goal": "",
-        "checklist": {
-            "id": 658,
-            "name": "OpenData"
-        },
-        "explanation": "",
-        "description": "A creation date is given for each dataset",
-        "solution": "",
-        "thema": "Metadata",
-        "name": "25"
+    "explanation": "",
+    "description": "A creation date is given for each dataset",
+    "solution": "Lors de la premi\u00e8re publication du jeu de donn\u00e9es dcterms:issued<br>Lors de la cr\u00e9ation du jeu de donn\u00e9es dcterms:created<br>Lors de la publication du jeu de donn\u00e9es dcterms:published",
+    "thema": "Metadata",
+    "name": "25"
+  },
+  "30002": {
+    "goal": "Permettre la compr\u00e9hension rapide du contenu du jeu de donn\u00e9es",
+    "checklist": {
+      "id": 658,
+      "name": "Opendatav2"
     },
-    "30002": {
-        "goal": "",
-        "checklist": {
-            "id": 658,
-            "name": "OpenData"
-        },
-        "explanation": "",
-        "description": "Each dataset includes at least a title and a description",
-        "solution": "",
-        "thema": "Metadata",
-        "name": "24"
+    "explanation": "",
+    "description": "Each dataset includes at least a title and a description",
+    "solution": "",
+    "thema": "Metadata",
+    "name": "24"
+  },
+  "29981": {
+    "goal": "Permettre de faire des inf\u00e9rences entre les donn\u00e9es. En effet, il est tout \u00e0 fait possible d\u2019int\u00e9grer des th\u00e9saurus existants sous la forme de fichiers <a href=\"https://fr.wikipedia.org/wiki/SKOS\">RDF-SKOS</a>\r\n et de ce fait d\u2019augmenter les possibilit\u00e9s de rapprochement de jeux de \r\ndonn\u00e9es provenant de portails diff\u00e9rents automatiquement.",
+    "checklist": {
+      "id": 658,
+      "name": "Opendatav2"
     },
-    "30028": {
-        "goal": "",
-        "checklist": {
-            "id": 658,
-            "name": "OpenData"
-        },
-        "explanation": "",
-        "description": "An update frequency is given for each dataset",
-        "solution": "",
-        "thema": "Transparency",
-        "name": "62"
-    }
+    "explanation": "",
+    "description": "Any vocabularies used within the dataset are identified and documented",
+    "solution": "",
+    "thema": "Linkeddata",
+    "name": "52"
+  },
+  "29982": {
+    "goal": "Faciliter et favoriser l'exploitation des donn\u00e9es en donnant acc\u00e8s \u00e0 des conditions de r\u00e9utilisation document\u00e9es.",
+    "checklist": {
+      "id": 658,
+      "name": "Opendatav2"
+    },
+    "explanation": "",
+    "description": "The licence sets out the conditions of attribution, reuse, redistribution and commercialisation",
+    "solution": "Les licences opendata du type licence ouverte ou ODBL d\u00e9crivent les obligations qui engagent les r\u00e9-utilisateurs des jeux de donn\u00e9es. Elles s'apparentent aux licence Creative Commons mais s'appliquent aux bases de donn\u00e9es qui ne sont pas consid\u00e9r\u00e9es a priori comme des \u0153uvres de l'esprit",
+    "thema": "License",
+    "name": "48"
+  }
 }

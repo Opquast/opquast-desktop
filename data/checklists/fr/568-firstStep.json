@@ -1,974 +1,974 @@
 {
-    "19359": {
-        "goal": "", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser un contenu d'attribut alt identique au texte pr\u00e9sent dans un lien si l'\u00e9l\u00e9ment img est un descendant d'\u00e9l\u00e9ment a contenant \u00e9galement du texte", 
-        "solution": "", 
-        "thema": "HTML", 
-        "name": "42"
-    }, 
-    "19338": {
-        "goal": "", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser d'attribut alt vide sur un \u00e9l\u00e9ment area dot\u00e9 d'un attribut href", 
-        "solution": "", 
-        "thema": "HTML", 
-        "name": "41"
-    }, 
-    "19355": {
-        "goal": "", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser l'\u00e9l\u00e9ment fieldset en dehors d'un \u00e9l\u00e9ment form", 
-        "solution": "", 
-        "thema": "HTML", 
-        "name": "70"
-    }, 
-    "19216": {
-        "goal": "\u00c9viter \u00e0 l'utilisateur d'avoir des \u00e9l\u00e9ments interactifs dont il ne peut connaitre la destination ou l'action", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser d'\u00e9l\u00e9ment a vide \u00e0 l'exception des ancres", 
-        "solution": "Mettre un libell\u00e9 dans l'\u00e9l\u00e9ment &lt;a&gt;. Par exemple : &lt;a href=\"http://www.google.fr\"&gt;Site de google&lt;/a&gt;", 
-        "thema": "HTML", 
-        "name": "30"
-    }, 
-    "19218": {
-        "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser l'attribut align", 
-        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.", 
-        "thema": "HTML", 
-        "name": "27"
-    }, 
-    "19219": {
-        "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser l'attribut alink", 
-        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.", 
-        "thema": "HTML", 
-        "name": "52"
-    }, 
-    "19220": {
-        "goal": "Permettre la restitution d'un contenu alternatif aux utilisateurs qui ne peuvent pas percevoir le contenu de l'\u00e9l\u00e9ment.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Utiliser un attribut alt pour l'\u00e9l\u00e9ment applet", 
-        "solution": "ajouter l'attribut alt sur l'\u00e9l\u00e9ment. Exemple&nbsp;: &lt;applet alt='...'&gt;&lt;/applet&gt;", 
-        "thema": "HTML", 
-        "name": "37"
-    }, 
-    "19221": {
-        "goal": "Permettre aux utilisateurs de distinguer les liens qui m\u00e8nent \u00e0 des adresses diff\u00e9rentes.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Utiliser un attribut alt pour l'\u00e9l\u00e9ment area", 
-        "solution": "ajouter l'attribut alt sur l'\u00e9l\u00e9ment. Exemple&nbsp;: &lt;area alt='...'&gt;&lt;/area&gt;", 
-        "thema": "HTML", 
-        "name": "36"
-    }, 
-    "19222": {
-        "goal": "Permettre aux utilisateurs de distinguer les liens qui m\u00e8nent \u00e0 des adresses diff\u00e9rentes.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser un contenu d'attribut alt identique pour plusieurs \u00e9l\u00e9ments area ayant un attribut href diff\u00e9rent", 
-        "solution": "Indiquer dans chaque attribut alt un contenu permettant de comprendre la destination du lien.", 
-        "thema": "HTML", 
-        "name": "44"
-    }, 
-    "19353": {
-        "goal": "", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser une valeur d'attribut dir autre que ltr, rtl ou vide", 
-        "solution": "", 
-        "thema": "HTML", 
-        "name": "8"
-    }, 
-    "19224": {
-        "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser l'attribut background", 
-        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.", 
-        "thema": "HTML", 
-        "name": "46"
-    }, 
-    "19225": {
-        "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser l'\u00e9l\u00e9ment basefont", 
-        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.", 
-        "thema": "HTML", 
-        "name": "78"
-    }, 
-    "19226": {
-        "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser l'attribut bgcolor", 
-        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.", 
-        "thema": "HTML", 
-        "name": "61"
-    }, 
-    "19227": {
-        "goal": "Permettre d'\u00e9viter la lecture automatique de son qu'il n'est pas possible d'arr\u00eater.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser l'\u00e9l\u00e9ment bgsound", 
-        "solution": "Utiliser un syst\u00e8me de lecture des sons que les utilisateurs peuvent contr\u00f4ler avec la souris et avec le clavier.", 
-        "thema": "HTML", 
-        "name": "47"
-    }, 
-    "19228": {
-        "goal": "Permettre d'\u00e9viter la pr\u00e9sence de clignotement qu'il n'est pas possible d'arr\u00eater.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser l'\u00e9l\u00e9ment blink", 
-        "solution": "Eviter les contenus clignotant ou utiliser un syst\u00e8me de clignotement des contenus que les utilisateurs peuvent contr\u00f4ler avec la souris et avec le clavier.", 
-        "thema": "HTML", 
-        "name": "79"
-    }, 
-    "19229": {
-        "goal": "Permettre l'identification et la restitution du titre principal de la page.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Utiliser au moins un \u00e9l\u00e9ment h1 descendant de l'\u00e9l\u00e9ment body", 
-        "solution": "Baliser le titre principal de la page avec l'\u00e9l\u00e9ment h1.", 
-        "thema": "HTML", 
-        "name": "13"
-    }, 
-    "19230": {
-        "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser l'attribut border", 
-        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.", 
-        "thema": "HTML", 
-        "name": "43"
-    }, 
-    "19231": {
-        "goal": "Eviter \u00e0 l'utilisateur d'avoir des \u00e9l\u00e9ments interactifs dont il ne peut connaitre la destination ou l'action", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser d'\u00e9l\u00e9ment button vide", 
-        "solution": "Mettre du texte dans l'\u00e9l\u00e9ment button. Exemple&nbsp;: &lt;button&gt;Passer ma commande&lt;/button&gt;", 
-        "thema": "HTML", 
-        "name": "31"
-    }, 
-    "19233": {
-        "goal": "Permettre aux utilisateurs de distinguer le sujet d'un tableau de donn\u00e9es de la mani\u00e8re dont il est construit.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser un contenu d'\u00e9l\u00e9ment caption identique au contenu de l'attribut summary", 
-        "solution": "Mettre dans l'\u00e9l\u00e9ment caption un contenu servant \u00e0 titrer le tableau et dans l'attribut summary un contenu pour d\u00e9crire l'organisation du tableau", 
-        "thema": "HTML", 
-        "name": "49"
-    }, 
-    "19234": {
-        "goal": "Permettre la restitution du sujet du tableau de donn\u00e9es.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser d'\u00e9l\u00e9ment caption vide", 
-        "solution": "Mettre dans l'\u00e9l\u00e9ment caption le titre du tableau.", 
-        "thema": "HTML", 
-        "name": "50"
-    }, 
-    "19235": {
-        "goal": "Permettre la distinction entre les tableaux de donn\u00e9es et les tableaux de mise en page.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser d'\u00e9l\u00e9ment caption dans un \u00e9l\u00e9ment table contenant uniquement des cellules td", 
-        "solution": "Ne pas utiliser d'\u00e9l\u00e9ment caption dans les tableau de mise en page. En revanche, dans le cas d'un tableau de donn\u00e9es o\u00f9 l'\u00e9l\u00e9ment caption serait justifi\u00e9, utiliser des \u00e9l\u00e9ments th pour signaler les ent\u00eates du tableau.", 
-        "thema": "HTML", 
-        "name": "51"
-    }, 
-    "19236": {
-        "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser l'\u00e9l\u00e9ment center", 
-        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.", 
-        "thema": "HTML", 
-        "name": "80"
-    }, 
-    "19239": {
-        "goal": "Permettre la restitution de la nature des contenus (ici une liste de d\u00e9finition) aux  utilisateurs qui ne per\u00e7oivent pas la mise en page originale.\r\nEviter l'utilisation d'\u00e9l\u00e9ment en fonction de la mani\u00e8re dont ils sont restitu\u00e9s visuellement.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Utiliser un \u00e9l\u00e9ment dt comme premier enfant de l'\u00e9l\u00e9ment dl", 
-        "solution": "Utiliser les \u00e9l\u00e9ments dl et dt et dd pour baliser les listes de d\u00e9finition.", 
-        "thema": "HTML", 
-        "name": "25"
-    }, 
-    "19241": {
-        "goal": "Permettre la restitution d'un titre au groupe form\u00e9 par fieldset.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Utiliser un \u00e9l\u00e9ment legend enfant de l'\u00e9l\u00e9ment fieldset", 
-        "solution": "Utiliser l'\u00e9l\u00e9ment legend juste apr\u00e8s l'\u00e9l\u00e9ment fieldset ou remplacer l'\u00e9l\u00e9ment fieldset par un div", 
-        "thema": "HTML", 
-        "name": "69"
-    }, 
-    "19242": {
-        "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser l'\u00e9l\u00e9ment font", 
-        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.", 
-        "thema": "HTML", 
-        "name": "81"
-    }, 
-    "19244": {
-        "goal": "Permettre la restitution d'un contenu d\u00e9crivant la fonction et/ou le contenu de l'\u00e9l\u00e9ment.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Utiliser un attribut title pour chaque \u00e9l\u00e9ment frame", 
-        "solution": "Ajouter un attribut title sur chaque \u00e9l\u00e9ment frame. Exemple&nbsp;: &lt;frame title='...' src='...'&gt;&lt;/frame&gt;", 
-        "thema": "HTML", 
-        "name": "9"
-    }, 
-    "19245": {
-        "goal": "Permettre la restitution d'un contenu d\u00e9crivant la fonction et/ou le contenu de l'\u00e9l\u00e9ment.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser un attribut title vide pour l'\u00e9l\u00e9ment frame", 
-        "solution": "Ajouter un contenu \u00e0 l'attribut title des \u00e9l\u00e9ments frame permettant de conna\u00eetre la fonction ou le contenu de la frame. Exemple&nbsp;: &lt;frame title='navigation src='...' principale'&gt;&lt;/frame&gt;", 
-        "thema": "HTML", 
-        "name": "10"
-    }, 
-    "19246": {
-        "goal": "Eviter \u00e0 l'utilisateur d'avoir une hi\u00e9rarchie de titre incompl\u00e8te ou incoh\u00e9rente", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser d'\u00e9l\u00e9ment h1 vide", 
-        "solution": "Ajouter un contenu \u00e0 l'\u00e9l\u00e9ment.", 
-        "thema": "HTML", 
-        "name": "14"
-    }, 
-    "19247": {
-        "goal": "Eviter \u00e0 l'utilisateur d'avoir une hi\u00e9rarchie de titre incompl\u00e8te ou incoh\u00e9rente", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser d'\u00e9l\u00e9ment h2 vide", 
-        "solution": "Ajouter un contenu \u00e0 l'\u00e9l\u00e9ment.", 
-        "thema": "HTML", 
-        "name": "15"
-    }, 
-    "19248": {
-        "goal": "Eviter les trous dans la hi\u00e9rarchie des titres.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Utiliser un \u00e9l\u00e9ment h1, h2, h3, h4, h5 ou h6 comme premier \u00e9l\u00e9ment de titrage pr\u00e9c\u00e9dant l'\u00e9l\u00e9ment h2 dans l'ordre du code source", 
-        "solution": "Pr\u00e9c\u00e9der chaque \u00e9l\u00e9ment h2 d'un \u00e9l\u00e9ment h1, h2, h3, h4, h5 ou h6.", 
-        "thema": "HTML", 
-        "name": "20"
-    }, 
-    "19249": {
-        "goal": "Eviter \u00e0 l'utilisateur d'avoir une hi\u00e9rarchie de titre incompl\u00e8te ou incoh\u00e9rente", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser d'\u00e9l\u00e9ment h3 vide", 
-        "solution": "Ajouter un contenu \u00e0 l'\u00e9l\u00e9ment.", 
-        "thema": "HTML", 
-        "name": "16"
-    }, 
-    "19250": {
-        "goal": "Eviter les trous dans la hi\u00e9rarchie des titres.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Utiliser un \u00e9l\u00e9ment h2, h3, h4, h5 ou h6 comme premier \u00e9l\u00e9ment de titrage pr\u00e9c\u00e9dant l'\u00e9l\u00e9ment h3 dans l'ordre du code source", 
-        "solution": "Pr\u00e9c\u00e9der chaque \u00e9l\u00e9ment h3 d'un \u00e9l\u00e9ment h2, h3, h4, h5 ou h6.", 
-        "thema": "HTML", 
-        "name": "21"
-    }, 
-    "19251": {
-        "goal": "Eviter \u00e0 l'utilisateur d'avoir une hi\u00e9rarchie de titre incompl\u00e8te ou incoh\u00e9rente", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser d'\u00e9l\u00e9ment h4 vide", 
-        "solution": "Ajouter un contenu \u00e0 l'\u00e9l\u00e9ment.", 
-        "thema": "HTML", 
-        "name": "17"
-    }, 
-    "19252": {
-        "goal": "Eviter les trous dans la hi\u00e9rarchie des titres.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Utiliser un \u00e9l\u00e9ment h3, h4, h5 ou h6 comme premier \u00e9l\u00e9ment de titrage pr\u00e9c\u00e9dant l'\u00e9l\u00e9ment h4 dans l'ordre du code source", 
-        "solution": "Pr\u00e9c\u00e9der chaque \u00e9l\u00e9ment h4 d'un \u00e9l\u00e9ment h3, h4, h5 ou h6.", 
-        "thema": "HTML", 
-        "name": "22"
-    }, 
-    "19253": {
-        "goal": "Eviter \u00e0 l'utilisateur d'avoir une hi\u00e9rarchie de titre incompl\u00e8te ou incoh\u00e9rente", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser d'\u00e9l\u00e9ment h5 vide", 
-        "solution": "Ajouter un contenu \u00e0 l'\u00e9l\u00e9ment.", 
-        "thema": "HTML", 
-        "name": "18"
-    }, 
-    "19254": {
-        "goal": "Eviter les trous dans la hi\u00e9rarchie des titres.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Utiliser un \u00e9l\u00e9ment h4, h5 ou h6 comme premier \u00e9l\u00e9ment de titrage pr\u00e9c\u00e9dant l'\u00e9l\u00e9ment h5 dans l'ordre du code source", 
-        "solution": "Pr\u00e9c\u00e9der chaque \u00e9l\u00e9ment h5 d'un \u00e9l\u00e9ment h4, h5 ou h6.", 
-        "thema": "HTML", 
-        "name": "23"
-    }, 
-    "19255": {
-        "goal": "Eviter \u00e0 l'utilisateur d'avoir une hi\u00e9rarchie de titre incompl\u00e8te ou incoh\u00e9rente", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser d'\u00e9l\u00e9ment h6 vide", 
-        "solution": "Ajouter un contenu \u00e0 l'\u00e9l\u00e9ment.", 
-        "thema": "HTML", 
-        "name": "19"
-    }, 
-    "19256": {
-        "goal": "Eviter les trous dans la hi\u00e9rarchie des titres.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Utiliser un \u00e9l\u00e9ment h5 ou h6 comme premier \u00e9l\u00e9ment de titrage pr\u00e9c\u00e9dant l'\u00e9l\u00e9ment h6 dans l'ordre du code source", 
-        "solution": "Pr\u00e9c\u00e9der chaque \u00e9l\u00e9ment h6 d'un \u00e9l\u00e9ment h5 ou h6.", 
-        "thema": "HTML", 
-        "name": "24"
-    }, 
-    "19257": {
-        "goal": "Permettre la restitution d'un titre de page destin\u00e9 \u00e0 identifier le contenu du document.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Utiliser un \u00e9l\u00e9ment title enfant de l'\u00e9l\u00e9ment head", 
-        "solution": "Ajouter un \u00e9l\u00e9ment title dans l'\u00e9l\u00e9ment head.", 
-        "thema": "HTML", 
-        "name": "3"
-    }, 
-    "19258": {
-        "goal": "Permettre la d\u00e9claration de la langue du document et l'adaptation des aides techniques \u00e0 celle-ci.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Utiliser un attribut lang pour l'\u00e9l\u00e9ment html", 
-        "solution": "Ajouter l'attribut lang sur l'\u00e9l\u00e9ment html.", 
-        "thema": "HTML", 
-        "name": "6"
-    }, 
-    "19259": {
-        "goal": "Permettre aux agents utilisateurs d'interpr\u00e9ter correctement le document.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Utiliser une dtd conforme aux recommandations du W3C avant l'\u00e9l\u00e9ment html", 
-        "solution": "Positionner comme premier \u00e9l\u00e9ment une dtd conforme. Choisir dans la liste suivante&nbsp;: http://www.w3.org/QA/2002/04/valid-dtd-list.html", 
-        "thema": "HTML", 
-        "name": "1"
-    }, 
-    "19260": {
-        "goal": "Eviter les erreurs d'interpr\u00e9tation et de restitution par les agents utilisateurs et les aides techniques", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser de syntaxes d'attribut erron\u00e9es ni d'imbrications d'\u00e9l\u00e9ments non conformes dans l'\u00e9l\u00e9ment html", 
-        "solution": "Fermer toutes les balises ouvertes. Ne pas imbriquer de balise de type block dans les balises de type inline. Utiliser des syntaxes et des valeurs d'attribut conformes en fonction de la dtd d\u00e9clar\u00e9e.", 
-        "thema": "HTML", 
-        "name": "2"
-    }, 
-    "19261": {
-        "goal": "Permettre la restitution d'un contenu d\u00e9crivant la fonction et/ou le contenu de l'\u00e9l\u00e9ment.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Utiliser un attribut title pour l'\u00e9l\u00e9ment iframe", 
-        "solution": "Ajouter un attribut title sur chaque \u00e9l\u00e9ment iframe.", 
-        "thema": "HTML", 
-        "name": "11"
-    }, 
-    "19262": {
-        "goal": "Permettre la restitution d'un contenu d\u00e9crivant la fonction et/ou le contenu de l'\u00e9l\u00e9ment.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser un attribut title vide sur l'\u00e9l\u00e9ment iframe", 
-        "solution": "Ajouter un contenu \u00e0 l'attribut title des \u00e9l\u00e9ments iframe.", 
-        "thema": "HTML", 
-        "name": "12"
-    }, 
-    "19263": {
-        "goal": "Permettre la restitution d'un contenu alternatif aux utilisateurs qui ne peuvent pas percevoir le contenu de l'\u00e9l\u00e9ment.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Utiliser un attribut alt pour l'\u00e9l\u00e9ment img", 
-        "solution": "ajouter l'attribut alt sur l'\u00e9l\u00e9ment. Exemple&nbsp;: &lt;img src='...' alt='...' /&gt;", 
-        "thema": "HTML", 
-        "name": "35"
-    }, 
-    "19265": {
-        "goal": "Eviter \u00e0 l'utilisateur d'avoir des \u00e9l\u00e9ments interactifs dont il ne peut connaitre la destination ou l'action", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser d'attribut alt vide si l'\u00e9l\u00e9ment img est le seul enfant d'un \u00e9l\u00e9ment a ou button", 
-        "solution": "Renseigner le contenu de l'attribut alt avec la destination du lien ou la fonction du bouton d'action.", 
-        "thema": "HTML", 
-        "name": "39"
-    }, 
-    "19266": {
-        "goal": "Permettre d'associer le contenu d'une description longue \u00e0 l'image \u00e0 laquelle il se rapporte.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Utiliser une URI comme valeur de l'attribut longdesc", 
-        "solution": "Ajouter une url dans l'attribut longdesc. Exemple&nbsp;: &lt;img longdesc=\"url-de-la-description.html\" \u2026 &gt;", 
-        "thema": "HTML", 
-        "name": "45"
-    }, 
-    "19269": {
-        "goal": "Permettre la restitution d'un contenu alternatif aux utilisateurs qui ne peuvent pas percevoir le contenu de l'\u00e9l\u00e9ment.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Utiliser un attribut alt pour chaque \u00e9l\u00e9ment input de type image", 
-        "solution": "ajouter l'attribut alt sur l'\u00e9l\u00e9ment. Exemple&nbsp;: &lt;input type='image' alt='...'/&gt;", 
-        "thema": "HTML", 
-        "name": "38"
-    }, 
-    "19270": {
-        "goal": "Eviter \u00e0 l'utilisateur d'avoir des \u00e9l\u00e9ments interactifs dont il ne peut connaitre la destination ou l'action", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser d'attribut alt vide pour un \u00e9l\u00e9ment input de type image", 
-        "solution": "Renseigner le contenu de l'attribut alt avec la destination ou la fonction du bouton d'action.", 
-        "thema": "HTML", 
-        "name": "40"
-    }, 
-    "19273": {
-        "goal": "Eviter \u00e0 l'utilisateur d'avoir des \u00e9l\u00e9ments interactifs dont il ne peut connaitre la destination ou l'action", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser d'attribut value vide pour un \u00e9l\u00e9ment input de type submit", 
-        "solution": "Mettre le texte correspondant \u00e0 l'action associ\u00e9e dans l'attribut value. Exemple : &lt;input type=''submit'' value=''envoyer le message''&gt;", 
-        "thema": "HTML", 
-        "name": "67"
-    }, 
-    "19275": {
-        "goal": "Permettre l'association des \u00e9tiquettes avec les champs auxquelles elles se rapportent.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Utiliser l'attribut for pour l'\u00e9l\u00e9ment label", 
-        "solution": "Ajouter un attribut for sur l'\u00e9l\u00e9ment label. Exemple&nbsp;: &lt;label for='champ-xxx'&gt;xxx&lt;/label&gt;", 
-        "thema": "HTML", 
-        "name": "72"
-    }, 
-    "19276": {
-        "goal": "Eviter \u00e0 l'utilisateur la restitution d'\u00e9tiquette associ\u00e9e \u00e0 aucun champ de formulaire.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser d'attribut for vide pour l'\u00e9l\u00e9ment label", 
-        "solution": "Mettre dans l'attribut for la valeur de l'identifiant du champ associ\u00e9 au label", 
-        "thema": "HTML", 
-        "name": "73"
-    }, 
-    "19277": {
-        "goal": "Eviter \u00e0 l'utilisateur la restitution d'\u00e9tiquette associ\u00e9e \u00e0 aucun champ de formulaire.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser un contenu d'attribut for qui ne correspond \u00e0 aucune valeur d'attribut id existant dans le m\u00eame \u00e9l\u00e9ment form", 
-        "solution": "Corriger la valeur de l'attribut for afin de la faire correspondre au champ associ\u00e9 au label", 
-        "thema": "HTML", 
-        "name": "74"
-    }, 
-    "19278": {
-        "goal": "Permettre la d\u00e9claration de la langue du document et l'adaptation des aides techniques \u00e0 celle-ci.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Utiliser un code de langue conforme dans l'attribut lang", 
-        "solution": "Donner une valeur conforme au code de langue dans l'attribut lang. Exemple&nbsp;: \u201cfr\u201c pour le fran\u00e7ais, \u201cen\u201c pour l'anglais. Voir http://www.loc.gov/standards/iso639-2/php/code_list.php pour la liste compl\u00e8te des codes de langue.", 
-        "thema": "HTML", 
-        "name": "7"
-    }, 
-    "19280": {
-        "goal": "Eviter \u00e0 l'utilisateur la pr\u00e9sence de groupement d'\u00e9l\u00e9ments de formulaire qu'il ne pourra pas identifier.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser d'\u00e9l\u00e9ment legend vide", 
-        "solution": "Renseigner l'\u00e9l\u00e9ment legend avec le titre du groupe form\u00e9 d'\u00e9l\u00e9ments de formulaire.", 
-        "thema": "HTML", 
-        "name": "71"
-    }, 
-    "19281": {
-        "goal": "Permettre la restitution sans erreur du nombre d'\u00e9l\u00e9ments composant une liste.\r\nEviter l'utilisation d'\u00e9l\u00e9ments \u00e0 des fins de pr\u00e9sentation.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser d'\u00e9l\u00e9ment li vide", 
-        "solution": "Supprimer les \u00e9l\u00e9ments &lt;li&gt; qui ne poss\u00e8dent pas de contenu. Utiliser les propri\u00e9t\u00e9s des feuilles de styles margin et padding pour d\u00e9terminer les \u00e9carts entres les diff\u00e9rents \u00e9l\u00e9ments.", 
-        "thema": "HTML", 
-        "name": "26"
-    }, 
-    "19282": {
-        "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser l'attribut link", 
-        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.", 
-        "thema": "HTML", 
-        "name": "34"
-    }, 
-    "19283": {
-        "goal": "Eviter l'utilisation d'\u00e9l\u00e9ments obsol\u00e8tes que les agents utilisateurs de sauraient pas interpr\u00e9ter.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser l'\u00e9l\u00e9ment listing", 
-        "solution": "Utiliser l'\u00e9l\u00e9ment pre au lieu de listing.", 
-        "thema": "HTML", 
-        "name": "57"
-    }, 
-    "19284": {
-        "goal": "Permettre d'\u00e9viter la pr\u00e9sence de contenu d\u00e9filant qu'il n'est pas possible d'arr\u00eater.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser l'\u00e9l\u00e9ment marquee", 
-        "solution": "Eviter les contenus d\u00e9filant ou utiliser un syst\u00e8me de d\u00e9filement des contenus que les utilisateurs peuvent contr\u00f4ler avec la souris et avec le clavier.", 
-        "thema": "HTML", 
-        "name": "68"
-    }, 
-    "19285": {
-        "goal": "Eviter aux utilisateurs un rechargement de la page qu'il ne pourrait pas ma\u00eetriser.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser l'\u00e9l\u00e9ment meta avec un attribut http-equiv ayant la valeur refresh", 
-        "solution": "Eviter les rechargements automatiques des pages ou utiliser un syst\u00e8me de rechargement o\u00f9 les utilisateurs sont inform\u00e9s du fonctionnement et o\u00f9 ils peuvent d\u00e9sactiver ce rechargement avec la souris et avec le clavier.", 
-        "thema": "HTML", 
-        "name": "5"
-    }, 
-    "19287": {
-        "goal": "Permettre la restitution d'un titre au groupe form\u00e9 par optgroup.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Utiliser un attribut label pour chaque \u00e9l\u00e9ment optgroup", 
-        "solution": "Ajouter un attribut label aux \u00e9l\u00e9ments optgroup. Exemple&nbsp;: &lt;optgroup label='france'&gt;...&lt;/optgroup&gt;", 
-        "thema": "HTML", 
-        "name": "75"
-    }, 
-    "19288": {
-        "goal": "Permettre la distinction des diff\u00e9rents groupes form\u00e9s.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser un contenu d'attribut label identique pour plusieurs \u00e9l\u00e9ment optgroup d'un m\u00eame \u00e9l\u00e9ment select", 
-        "solution": "D\u00e9terminer un titre diff\u00e9rent pour chaque groupe form\u00e9 par les \u00e9l\u00e9ments optgroup.", 
-        "thema": "HTML", 
-        "name": "76"
-    }, 
-    "19289": {
-        "goal": "Permettre la distinction des diff\u00e9rents groupes form\u00e9s.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser d'attribut label vide sur l'\u00e9l\u00e9ment optgroup", 
-        "solution": "D\u00e9terminer le nom du groupe form\u00e9 par optgroup et renseigner l'attribut label avec ce nom.", 
-        "thema": "HTML", 
-        "name": "77"
-    }, 
-    "19290": {
-        "goal": "Eviter l'utilisation d'\u00e9l\u00e9ments \u00e0 des fins de pr\u00e9sentation.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser d'\u00e9l\u00e9ment p vide", 
-        "solution": "Supprimer les \u00e9l\u00e9ments &lt;p&gt; qui ne poss\u00e8dent pas de contenu. Utiliser les propri\u00e9t\u00e9s des feuilles de styles margin et padding pour d\u00e9terminer les \u00e9carts entres les diff\u00e9rents \u00e9l\u00e9ments.", 
-        "thema": "HTML", 
-        "name": "29"
-    }, 
-    "19292": {
-        "goal": "Eviter l'utilisation d'\u00e9l\u00e9ments obsol\u00e8tes que les agents utilisateurs de sauraient pas interpr\u00e9ter.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser l'\u00e9l\u00e9ment plaintext", 
-        "solution": "Utiliser l'\u00e9l\u00e9ment pre au lieu de plaintext.", 
-        "thema": "HTML", 
-        "name": "64"
-    }, 
-    "19295": {
-        "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser l'\u00e9l\u00e9ment strike", 
-        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.", 
-        "thema": "HTML", 
-        "name": "56"
-    }, 
-    "19296": {
-        "goal": "Permettre l'identification des tableaux de donn\u00e9es et la restitution des contenus permettant de les caract\u00e9riser.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Utiliser un \u00e9l\u00e9ment caption comme premier enfant de l'\u00e9l\u00e9ment table si le tableau contient au moins un \u00e9l\u00e9ment th", 
-        "solution": "Positionner un \u00e9l\u00e9ment caption tout de suite apr\u00e8s l'\u00e9l\u00e9ment table lorsqu'il s'agit d'un tableau de donn\u00e9es.", 
-        "thema": "HTML", 
-        "name": "48"
-    }, 
-    "19298": {
-        "goal": "Permettre l'identification des tableaux de donn\u00e9es et la restitution des contenus permettant de les caract\u00e9riser.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Utiliser au moins un \u00e9l\u00e9ment th dans l'\u00e9l\u00e9ment table contenant un \u00e9l\u00e9ment caption ou ayant un attribut summary non vide", 
-        "solution": "Modifier le code de mani\u00e8re \u00e0 utiliser l'\u00e9l\u00e9ment th \u00e0 la place de l'\u00e9l\u00e9ment td afin de d\u00e9clarer les ent\u00eates des tableaux de donn\u00e9es. Si c'est un tableau de mise en forme supprimer le caption ou le summary non vide", 
-        "thema": "HTML", 
-        "name": "58"
-    }, 
-    "19300": {
-        "goal": "Permettre aux utilisateurs de distinguer le sujet d'un tableau de donn\u00e9es de la mani\u00e8re dont il est construit.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser un contenu d'attribut summary identique au contenu de l'\u00e9l\u00e9ment caption", 
-        "solution": "Mettre dans l'\u00e9l\u00e9ment caption un contenu servant \u00e0 titrer le tableau et dans l'attribut summary un contenu pour d\u00e9crire l'organisation du tableau", 
-        "thema": "HTML", 
-        "name": "53"
-    }, 
-    "19301": {
-        "goal": "Permettre l'identification des tableaux de donn\u00e9es et la restitution des contenus permettant de les caract\u00e9riser.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser d'attribut summary vide sur l'\u00e9l\u00e9ment table si le tableau contient un \u00e9l\u00e9ment th ou caption", 
-        "solution": "Inclure un contenu \u00e0 l'attribut summary de l'\u00e9l\u00e9ment table lorsqu'il s'agit d'un tableau de donn\u00e9es.", 
-        "thema": "HTML", 
-        "name": "54"
-    }, 
-    "19302": {
-        "goal": "Permettre aux utilisateurs de diff\u00e9rencier les tableaux de donn\u00e9es des tableaux de mise en page en n'utilisant pas les caract\u00e9ristiques sp\u00e9cifiques aux premiers dans les seconds.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser d'attribut summary sur un \u00e9l\u00e9ment table contenant uniquement des cellules td", 
-        "solution": "Ne pas utiliser d'attribut summary dans les tableaux de mis en page.", 
-        "thema": "HTML", 
-        "name": "55"
-    }, 
-    "19303": {
-        "goal": "Permettre l'association des cellules avec leurs ent\u00eates dans les tableaux de donn\u00e9es.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Utiliser l'attribut headers sur l'\u00e9l\u00e9ment td s'il se rapporte \u00e0 un \u00e9l\u00e9ment th ayant un attribut id", 
-        "solution": "Utiliser un attribut headers sur les cellules td des tableaux de donn\u00e9es dont les ent\u00eates (th) contiennent un attribut id.", 
-        "thema": "HTML", 
-        "name": "63"
-    }, 
-    "19305": {
-        "goal": "Permettre l'association des cellules avec leurs ent\u00eates dans les tableaux de donn\u00e9es.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser un contenu d'attribut headers qui ne correspond \u00e0 aucune valeur d'attribut id pr\u00e9sent dans le m\u00eame tableau", 
-        "solution": "Renseigner les attributs headers des \u00e9l\u00e9ments td avec les valeurs des attributs id des ent\u00eates associ\u00e9es.", 
-        "thema": "HTML", 
-        "name": "65"
-    }, 
-    "19306": {
-        "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser l'attribut text", 
-        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.", 
-        "thema": "HTML", 
-        "name": "33"
-    }, 
-    "19308": {
-        "goal": "Permettre l'association des cellules avec leurs ent\u00eates dans les tableaux de donn\u00e9es.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Utiliser un attribut scope ou id pour chaque \u00e9l\u00e9ment th non vide", 
-        "solution": "Utiliser un attribut scope ou id sur les ent\u00eates (th) des tableaux de donn\u00e9es.", 
-        "thema": "HTML", 
-        "name": "59"
-    }, 
-    "19309": {
-        "goal": "Permettre l'association des cellules avec leurs ent\u00eates dans les tableaux de donn\u00e9es.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser une valeur d'attribut scope autre que row ou col", 
-        "solution": "Utiliser la valeur row sur l'attribut scope des ent\u00eates de ligne et la valeur col sur les ent\u00eates de colonnes.", 
-        "thema": "HTML", 
-        "name": "60"
-    }, 
-    "19310": {
-        "goal": "Permettre la restitution du titre de la page.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser d'\u00e9l\u00e9ment title vide", 
-        "solution": "D\u00e9terminer le titre de la page et renseigner l'\u00e9l\u00e9ment title avec ce titre.", 
-        "thema": "HTML", 
-        "name": "4"
-    }, 
-    "19311": {
-        "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser l'\u00e9l\u00e9ment tt", 
-        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.", 
-        "thema": "HTML", 
-        "name": "62"
-    }, 
-    "19313": {
-        "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser l'attribut vlink", 
-        "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.", 
-        "thema": "HTML", 
-        "name": "32"
-    }, 
-    "19314": {
-        "goal": "Eviter l'utilisation d'\u00e9l\u00e9ments obsol\u00e8tes que les agents utilisateurs de sauraient pas interpr\u00e9ter.", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Ne pas utiliser l'\u00e9l\u00e9ment xmp", 
-        "solution": "Utiliser l'\u00e9l\u00e9ment pre au lieu de xmp.", 
-        "thema": "HTML", 
-        "name": "28"
-    }, 
-    "19348": {
-        "goal": "", 
-        "checklist": {
-            "id": 568, 
-            "name": "Premier pas vers WCAG 2.0 : erreurs"
-        }, 
-        "explanation": "", 
-        "description": "Utiliser un \u00e9l\u00e9ment button ou un \u00e9l\u00e9ment input de type submit, image ou button dans chaque \u00e9l\u00e9ment form", 
-        "solution": "", 
-        "thema": "HTML", 
-        "name": "66"
-    }
+  "19231": {
+    "goal": "Eviter \u00e0 l'utilisateur d'avoir des \u00e9l\u00e9ments interactifs dont il ne peut connaitre la destination ou l'action",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser d'\u00e9l\u00e9ment button vide",
+    "solution": "Mettre du texte dans l'\u00e9l\u00e9ment button. Exemple&nbsp;: &lt;button&gt;Passer ma commande&lt;/button&gt;",
+    "thema": "HTML",
+    "name": "31"
+  },
+  "19338": {
+    "goal": "",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser d'attribut alt vide sur un \u00e9l\u00e9ment area dot\u00e9 d'un attribut href",
+    "solution": "",
+    "thema": "HTML",
+    "name": "41"
+  },
+  "19216": {
+    "goal": "\u00c9viter \u00e0 l'utilisateur d'avoir des \u00e9l\u00e9ments interactifs dont il ne peut connaitre la destination ou l'action",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser d'\u00e9l\u00e9ment a vide \u00e0 l'exception des ancres",
+    "solution": "Mettre un libell\u00e9 dans l'\u00e9l\u00e9ment &lt;a&gt;. Par exemple : &lt;a href=\"http://www.google.fr\"&gt;Site de google&lt;/a&gt;",
+    "thema": "HTML",
+    "name": "30"
+  },
+  "19218": {
+    "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser l'attribut align",
+    "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.",
+    "thema": "HTML",
+    "name": "27"
+  },
+  "19219": {
+    "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser l'attribut alink",
+    "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.",
+    "thema": "HTML",
+    "name": "52"
+  },
+  "19348": {
+    "goal": "",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Utiliser un \u00e9l\u00e9ment button ou un \u00e9l\u00e9ment input de type submit, image ou button dans chaque \u00e9l\u00e9ment form",
+    "solution": "",
+    "thema": "HTML",
+    "name": "66"
+  },
+  "19221": {
+    "goal": "Permettre aux utilisateurs de distinguer les liens qui m\u00e8nent \u00e0 des adresses diff\u00e9rentes.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Utiliser un attribut alt pour l'\u00e9l\u00e9ment area",
+    "solution": "ajouter l'attribut alt sur l'\u00e9l\u00e9ment. Exemple&nbsp;: &lt;area alt='...'&gt;&lt;/area&gt;",
+    "thema": "HTML",
+    "name": "36"
+  },
+  "19222": {
+    "goal": "Permettre aux utilisateurs de distinguer les liens qui m\u00e8nent \u00e0 des adresses diff\u00e9rentes.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser un contenu d'attribut alt identique pour plusieurs \u00e9l\u00e9ments area ayant un attribut href diff\u00e9rent",
+    "solution": "Indiquer dans chaque attribut alt un contenu permettant de comprendre la destination du lien.",
+    "thema": "HTML",
+    "name": "44"
+  },
+  "19353": {
+    "goal": "",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser une valeur d'attribut dir autre que ltr, rtl ou vide",
+    "solution": "",
+    "thema": "HTML",
+    "name": "8"
+  },
+  "19224": {
+    "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser l'attribut background",
+    "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.",
+    "thema": "HTML",
+    "name": "46"
+  },
+  "19225": {
+    "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser l'\u00e9l\u00e9ment basefont",
+    "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.",
+    "thema": "HTML",
+    "name": "78"
+  },
+  "19226": {
+    "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser l'attribut bgcolor",
+    "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.",
+    "thema": "HTML",
+    "name": "61"
+  },
+  "19227": {
+    "goal": "Permettre d'\u00e9viter la lecture automatique de son qu'il n'est pas possible d'arr\u00eater.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser l'\u00e9l\u00e9ment bgsound",
+    "solution": "Utiliser un syst\u00e8me de lecture des sons que les utilisateurs peuvent contr\u00f4ler avec la souris et avec le clavier.",
+    "thema": "HTML",
+    "name": "47"
+  },
+  "19228": {
+    "goal": "Permettre d'\u00e9viter la pr\u00e9sence de clignotement qu'il n'est pas possible d'arr\u00eater.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser l'\u00e9l\u00e9ment blink",
+    "solution": "Eviter les contenus clignotant ou utiliser un syst\u00e8me de clignotement des contenus que les utilisateurs peuvent contr\u00f4ler avec la souris et avec le clavier.",
+    "thema": "HTML",
+    "name": "79"
+  },
+  "19229": {
+    "goal": "Permettre l'identification et la restitution du titre principal de la page.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Utiliser au moins un \u00e9l\u00e9ment h1 descendant de l'\u00e9l\u00e9ment body",
+    "solution": "Baliser le titre principal de la page avec l'\u00e9l\u00e9ment h1.",
+    "thema": "HTML",
+    "name": "13"
+  },
+  "19230": {
+    "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser l'attribut border",
+    "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.",
+    "thema": "HTML",
+    "name": "43"
+  },
+  "19359": {
+    "goal": "",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser un contenu d'attribut alt identique au texte pr\u00e9sent dans un lien si l'\u00e9l\u00e9ment img est un descendant d'\u00e9l\u00e9ment a contenant \u00e9galement du texte",
+    "solution": "",
+    "thema": "HTML",
+    "name": "42"
+  },
+  "19233": {
+    "goal": "Permettre aux utilisateurs de distinguer le sujet d'un tableau de donn\u00e9es de la mani\u00e8re dont il est construit.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser un contenu d'\u00e9l\u00e9ment caption identique au contenu de l'attribut summary",
+    "solution": "Mettre dans l'\u00e9l\u00e9ment caption un contenu servant \u00e0 titrer le tableau et dans l'attribut summary un contenu pour d\u00e9crire l'organisation du tableau",
+    "thema": "HTML",
+    "name": "49"
+  },
+  "19234": {
+    "goal": "Permettre la restitution du sujet du tableau de donn\u00e9es.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser d'\u00e9l\u00e9ment caption vide",
+    "solution": "Mettre dans l'\u00e9l\u00e9ment caption le titre du tableau.",
+    "thema": "HTML",
+    "name": "50"
+  },
+  "19355": {
+    "goal": "",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser l'\u00e9l\u00e9ment fieldset en dehors d'un \u00e9l\u00e9ment form",
+    "solution": "",
+    "thema": "HTML",
+    "name": "70"
+  },
+  "19236": {
+    "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser l'\u00e9l\u00e9ment center",
+    "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.",
+    "thema": "HTML",
+    "name": "80"
+  },
+  "19220": {
+    "goal": "Permettre la restitution d'un contenu alternatif aux utilisateurs qui ne peuvent pas percevoir le contenu de l'\u00e9l\u00e9ment.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Utiliser un attribut alt pour l'\u00e9l\u00e9ment applet",
+    "solution": "ajouter l'attribut alt sur l'\u00e9l\u00e9ment. Exemple&nbsp;: &lt;applet alt='...'&gt;&lt;/applet&gt;",
+    "thema": "HTML",
+    "name": "37"
+  },
+  "19239": {
+    "goal": "Permettre la restitution de la nature des contenus (ici une liste de d\u00e9finition) aux  utilisateurs qui ne per\u00e7oivent pas la mise en page originale.\r\nEviter l'utilisation d'\u00e9l\u00e9ment en fonction de la mani\u00e8re dont ils sont restitu\u00e9s visuellement.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Utiliser un \u00e9l\u00e9ment dt comme premier enfant de l'\u00e9l\u00e9ment dl",
+    "solution": "Utiliser les \u00e9l\u00e9ments dl et dt et dd pour baliser les listes de d\u00e9finition.",
+    "thema": "HTML",
+    "name": "25"
+  },
+  "19241": {
+    "goal": "Permettre la restitution d'un titre au groupe form\u00e9 par fieldset.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Utiliser un \u00e9l\u00e9ment legend enfant de l'\u00e9l\u00e9ment fieldset",
+    "solution": "Utiliser l'\u00e9l\u00e9ment legend juste apr\u00e8s l'\u00e9l\u00e9ment fieldset ou remplacer l'\u00e9l\u00e9ment fieldset par un div",
+    "thema": "HTML",
+    "name": "69"
+  },
+  "19242": {
+    "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser l'\u00e9l\u00e9ment font",
+    "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.",
+    "thema": "HTML",
+    "name": "81"
+  },
+  "19244": {
+    "goal": "Permettre la restitution d'un contenu d\u00e9crivant la fonction et/ou le contenu de l'\u00e9l\u00e9ment.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Utiliser un attribut title pour chaque \u00e9l\u00e9ment frame",
+    "solution": "Ajouter un attribut title sur chaque \u00e9l\u00e9ment frame. Exemple&nbsp;: &lt;frame title='...' src='...'&gt;&lt;/frame&gt;",
+    "thema": "HTML",
+    "name": "9"
+  },
+  "19245": {
+    "goal": "Permettre la restitution d'un contenu d\u00e9crivant la fonction et/ou le contenu de l'\u00e9l\u00e9ment.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser un attribut title vide pour l'\u00e9l\u00e9ment frame",
+    "solution": "Ajouter un contenu \u00e0 l'attribut title des \u00e9l\u00e9ments frame permettant de conna\u00eetre la fonction ou le contenu de la frame. Exemple&nbsp;: &lt;frame title='navigation src='...' principale'&gt;&lt;/frame&gt;",
+    "thema": "HTML",
+    "name": "10"
+  },
+  "19246": {
+    "goal": "Eviter \u00e0 l'utilisateur d'avoir une hi\u00e9rarchie de titre incompl\u00e8te ou incoh\u00e9rente",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser d'\u00e9l\u00e9ment h1 vide",
+    "solution": "Ajouter un contenu \u00e0 l'\u00e9l\u00e9ment.",
+    "thema": "HTML",
+    "name": "14"
+  },
+  "19247": {
+    "goal": "Eviter \u00e0 l'utilisateur d'avoir une hi\u00e9rarchie de titre incompl\u00e8te ou incoh\u00e9rente",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser d'\u00e9l\u00e9ment h2 vide",
+    "solution": "Ajouter un contenu \u00e0 l'\u00e9l\u00e9ment.",
+    "thema": "HTML",
+    "name": "15"
+  },
+  "19248": {
+    "goal": "Eviter les trous dans la hi\u00e9rarchie des titres.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Utiliser un \u00e9l\u00e9ment h1, h2, h3, h4, h5 ou h6 comme premier \u00e9l\u00e9ment de titrage pr\u00e9c\u00e9dant l'\u00e9l\u00e9ment h2 dans l'ordre du code source",
+    "solution": "Pr\u00e9c\u00e9der chaque \u00e9l\u00e9ment h2 d'un \u00e9l\u00e9ment h1, h2, h3, h4, h5 ou h6.",
+    "thema": "HTML",
+    "name": "20"
+  },
+  "19249": {
+    "goal": "Eviter \u00e0 l'utilisateur d'avoir une hi\u00e9rarchie de titre incompl\u00e8te ou incoh\u00e9rente",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser d'\u00e9l\u00e9ment h3 vide",
+    "solution": "Ajouter un contenu \u00e0 l'\u00e9l\u00e9ment.",
+    "thema": "HTML",
+    "name": "16"
+  },
+  "19250": {
+    "goal": "Eviter les trous dans la hi\u00e9rarchie des titres.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Utiliser un \u00e9l\u00e9ment h2, h3, h4, h5 ou h6 comme premier \u00e9l\u00e9ment de titrage pr\u00e9c\u00e9dant l'\u00e9l\u00e9ment h3 dans l'ordre du code source",
+    "solution": "Pr\u00e9c\u00e9der chaque \u00e9l\u00e9ment h3 d'un \u00e9l\u00e9ment h2, h3, h4, h5 ou h6.",
+    "thema": "HTML",
+    "name": "21"
+  },
+  "19251": {
+    "goal": "Eviter \u00e0 l'utilisateur d'avoir une hi\u00e9rarchie de titre incompl\u00e8te ou incoh\u00e9rente",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser d'\u00e9l\u00e9ment h4 vide",
+    "solution": "Ajouter un contenu \u00e0 l'\u00e9l\u00e9ment.",
+    "thema": "HTML",
+    "name": "17"
+  },
+  "19252": {
+    "goal": "Eviter les trous dans la hi\u00e9rarchie des titres.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Utiliser un \u00e9l\u00e9ment h3, h4, h5 ou h6 comme premier \u00e9l\u00e9ment de titrage pr\u00e9c\u00e9dant l'\u00e9l\u00e9ment h4 dans l'ordre du code source",
+    "solution": "Pr\u00e9c\u00e9der chaque \u00e9l\u00e9ment h4 d'un \u00e9l\u00e9ment h3, h4, h5 ou h6.",
+    "thema": "HTML",
+    "name": "22"
+  },
+  "19253": {
+    "goal": "Eviter \u00e0 l'utilisateur d'avoir une hi\u00e9rarchie de titre incompl\u00e8te ou incoh\u00e9rente",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser d'\u00e9l\u00e9ment h5 vide",
+    "solution": "Ajouter un contenu \u00e0 l'\u00e9l\u00e9ment.",
+    "thema": "HTML",
+    "name": "18"
+  },
+  "19254": {
+    "goal": "Eviter les trous dans la hi\u00e9rarchie des titres.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Utiliser un \u00e9l\u00e9ment h4, h5 ou h6 comme premier \u00e9l\u00e9ment de titrage pr\u00e9c\u00e9dant l'\u00e9l\u00e9ment h5 dans l'ordre du code source",
+    "solution": "Pr\u00e9c\u00e9der chaque \u00e9l\u00e9ment h5 d'un \u00e9l\u00e9ment h4, h5 ou h6.",
+    "thema": "HTML",
+    "name": "23"
+  },
+  "19255": {
+    "goal": "Eviter \u00e0 l'utilisateur d'avoir une hi\u00e9rarchie de titre incompl\u00e8te ou incoh\u00e9rente",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser d'\u00e9l\u00e9ment h6 vide",
+    "solution": "Ajouter un contenu \u00e0 l'\u00e9l\u00e9ment.",
+    "thema": "HTML",
+    "name": "19"
+  },
+  "19256": {
+    "goal": "Eviter les trous dans la hi\u00e9rarchie des titres.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Utiliser un \u00e9l\u00e9ment h5 ou h6 comme premier \u00e9l\u00e9ment de titrage pr\u00e9c\u00e9dant l'\u00e9l\u00e9ment h6 dans l'ordre du code source",
+    "solution": "Pr\u00e9c\u00e9der chaque \u00e9l\u00e9ment h6 d'un \u00e9l\u00e9ment h5 ou h6.",
+    "thema": "HTML",
+    "name": "24"
+  },
+  "19257": {
+    "goal": "Permettre la restitution d'un titre de page destin\u00e9 \u00e0 identifier le contenu du document.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Utiliser un \u00e9l\u00e9ment title enfant de l'\u00e9l\u00e9ment head",
+    "solution": "Ajouter un \u00e9l\u00e9ment title dans l'\u00e9l\u00e9ment head.",
+    "thema": "HTML",
+    "name": "3"
+  },
+  "19258": {
+    "goal": "Permettre la d\u00e9claration de la langue du document et l'adaptation des aides techniques \u00e0 celle-ci.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Utiliser un attribut lang pour l'\u00e9l\u00e9ment html",
+    "solution": "Ajouter l'attribut lang sur l'\u00e9l\u00e9ment html.",
+    "thema": "HTML",
+    "name": "6"
+  },
+  "19259": {
+    "goal": "Permettre aux agents utilisateurs d'interpr\u00e9ter correctement le document.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Utiliser une dtd conforme aux recommandations du W3C avant l'\u00e9l\u00e9ment html",
+    "solution": "Positionner comme premier \u00e9l\u00e9ment une dtd conforme. Choisir dans la liste suivante&nbsp;: http://www.w3.org/QA/2002/04/valid-dtd-list.html",
+    "thema": "HTML",
+    "name": "1"
+  },
+  "19260": {
+    "goal": "Eviter les erreurs d'interpr\u00e9tation et de restitution par les agents utilisateurs et les aides techniques",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser de syntaxes d'attribut erron\u00e9es ni d'imbrications d'\u00e9l\u00e9ments non conformes dans l'\u00e9l\u00e9ment html",
+    "solution": "Fermer toutes les balises ouvertes. Ne pas imbriquer de balise de type block dans les balises de type inline. Utiliser des syntaxes et des valeurs d'attribut conformes en fonction de la dtd d\u00e9clar\u00e9e.",
+    "thema": "HTML",
+    "name": "2"
+  },
+  "19261": {
+    "goal": "Permettre la restitution d'un contenu d\u00e9crivant la fonction et/ou le contenu de l'\u00e9l\u00e9ment.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Utiliser un attribut title pour l'\u00e9l\u00e9ment iframe",
+    "solution": "Ajouter un attribut title sur chaque \u00e9l\u00e9ment iframe.",
+    "thema": "HTML",
+    "name": "11"
+  },
+  "19262": {
+    "goal": "Permettre la restitution d'un contenu d\u00e9crivant la fonction et/ou le contenu de l'\u00e9l\u00e9ment.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser un attribut title vide sur l'\u00e9l\u00e9ment iframe",
+    "solution": "Ajouter un contenu \u00e0 l'attribut title des \u00e9l\u00e9ments iframe.",
+    "thema": "HTML",
+    "name": "12"
+  },
+  "19263": {
+    "goal": "Permettre la restitution d'un contenu alternatif aux utilisateurs qui ne peuvent pas percevoir le contenu de l'\u00e9l\u00e9ment.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Utiliser un attribut alt pour l'\u00e9l\u00e9ment img",
+    "solution": "ajouter l'attribut alt sur l'\u00e9l\u00e9ment. Exemple&nbsp;: &lt;img src='...' alt='...' /&gt;",
+    "thema": "HTML",
+    "name": "35"
+  },
+  "19265": {
+    "goal": "Eviter \u00e0 l'utilisateur d'avoir des \u00e9l\u00e9ments interactifs dont il ne peut connaitre la destination ou l'action",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser d'attribut alt vide si l'\u00e9l\u00e9ment img est le seul enfant d'un \u00e9l\u00e9ment a ou button",
+    "solution": "Renseigner le contenu de l'attribut alt avec la destination du lien ou la fonction du bouton d'action.",
+    "thema": "HTML",
+    "name": "39"
+  },
+  "19266": {
+    "goal": "Permettre d'associer le contenu d'une description longue \u00e0 l'image \u00e0 laquelle il se rapporte.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Utiliser une URI comme valeur de l'attribut longdesc",
+    "solution": "Ajouter une url dans l'attribut longdesc. Exemple&nbsp;: &lt;img longdesc=\"url-de-la-description.html\" \u2026 &gt;",
+    "thema": "HTML",
+    "name": "45"
+  },
+  "19269": {
+    "goal": "Permettre la restitution d'un contenu alternatif aux utilisateurs qui ne peuvent pas percevoir le contenu de l'\u00e9l\u00e9ment.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Utiliser un attribut alt pour chaque \u00e9l\u00e9ment input de type image",
+    "solution": "ajouter l'attribut alt sur l'\u00e9l\u00e9ment. Exemple&nbsp;: &lt;input type='image' alt='...'/&gt;",
+    "thema": "HTML",
+    "name": "38"
+  },
+  "19270": {
+    "goal": "Eviter \u00e0 l'utilisateur d'avoir des \u00e9l\u00e9ments interactifs dont il ne peut connaitre la destination ou l'action",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser d'attribut alt vide pour un \u00e9l\u00e9ment input de type image",
+    "solution": "Renseigner le contenu de l'attribut alt avec la destination ou la fonction du bouton d'action.",
+    "thema": "HTML",
+    "name": "40"
+  },
+  "19273": {
+    "goal": "Eviter \u00e0 l'utilisateur d'avoir des \u00e9l\u00e9ments interactifs dont il ne peut connaitre la destination ou l'action",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser d'attribut value vide pour un \u00e9l\u00e9ment input de type submit",
+    "solution": "Mettre le texte correspondant \u00e0 l'action associ\u00e9e dans l'attribut value. Exemple : &lt;input type=''submit'' value=''envoyer le message''&gt;",
+    "thema": "HTML",
+    "name": "67"
+  },
+  "19275": {
+    "goal": "Permettre l'association des \u00e9tiquettes avec les champs auxquelles elles se rapportent.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Utiliser l'attribut for pour l'\u00e9l\u00e9ment label",
+    "solution": "Ajouter un attribut for sur l'\u00e9l\u00e9ment label. Exemple&nbsp;: &lt;label for='champ-xxx'&gt;xxx&lt;/label&gt;",
+    "thema": "HTML",
+    "name": "72"
+  },
+  "19276": {
+    "goal": "Eviter \u00e0 l'utilisateur la restitution d'\u00e9tiquette associ\u00e9e \u00e0 aucun champ de formulaire.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser d'attribut for vide pour l'\u00e9l\u00e9ment label",
+    "solution": "Mettre dans l'attribut for la valeur de l'identifiant du champ associ\u00e9 au label",
+    "thema": "HTML",
+    "name": "73"
+  },
+  "19277": {
+    "goal": "Eviter \u00e0 l'utilisateur la restitution d'\u00e9tiquette associ\u00e9e \u00e0 aucun champ de formulaire.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser un contenu d'attribut for qui ne correspond \u00e0 aucune valeur d'attribut id existant dans le m\u00eame \u00e9l\u00e9ment form",
+    "solution": "Corriger la valeur de l'attribut for afin de la faire correspondre au champ associ\u00e9 au label",
+    "thema": "HTML",
+    "name": "74"
+  },
+  "19278": {
+    "goal": "Permettre la d\u00e9claration de la langue du document et l'adaptation des aides techniques \u00e0 celle-ci.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Utiliser un code de langue conforme dans l'attribut lang",
+    "solution": "Donner une valeur conforme au code de langue dans l'attribut lang. Exemple&nbsp;: \u201cfr\u201c pour le fran\u00e7ais, \u201cen\u201c pour l'anglais. Voir http://www.loc.gov/standards/iso639-2/php/code_list.php pour la liste compl\u00e8te des codes de langue.",
+    "thema": "HTML",
+    "name": "7"
+  },
+  "19280": {
+    "goal": "Eviter \u00e0 l'utilisateur la pr\u00e9sence de groupement d'\u00e9l\u00e9ments de formulaire qu'il ne pourra pas identifier.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser d'\u00e9l\u00e9ment legend vide",
+    "solution": "Renseigner l'\u00e9l\u00e9ment legend avec le titre du groupe form\u00e9 d'\u00e9l\u00e9ments de formulaire.",
+    "thema": "HTML",
+    "name": "71"
+  },
+  "19281": {
+    "goal": "Permettre la restitution sans erreur du nombre d'\u00e9l\u00e9ments composant une liste.\r\nEviter l'utilisation d'\u00e9l\u00e9ments \u00e0 des fins de pr\u00e9sentation.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser d'\u00e9l\u00e9ment li vide",
+    "solution": "Supprimer les \u00e9l\u00e9ments &lt;li&gt; qui ne poss\u00e8dent pas de contenu. Utiliser les propri\u00e9t\u00e9s des feuilles de styles margin et padding pour d\u00e9terminer les \u00e9carts entres les diff\u00e9rents \u00e9l\u00e9ments.",
+    "thema": "HTML",
+    "name": "26"
+  },
+  "19282": {
+    "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser l'attribut link",
+    "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.",
+    "thema": "HTML",
+    "name": "34"
+  },
+  "19283": {
+    "goal": "Eviter l'utilisation d'\u00e9l\u00e9ments obsol\u00e8tes que les agents utilisateurs de sauraient pas interpr\u00e9ter.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser l'\u00e9l\u00e9ment listing",
+    "solution": "Utiliser l'\u00e9l\u00e9ment pre au lieu de listing.",
+    "thema": "HTML",
+    "name": "57"
+  },
+  "19284": {
+    "goal": "Permettre d'\u00e9viter la pr\u00e9sence de contenu d\u00e9filant qu'il n'est pas possible d'arr\u00eater.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser l'\u00e9l\u00e9ment marquee",
+    "solution": "Eviter les contenus d\u00e9filant ou utiliser un syst\u00e8me de d\u00e9filement des contenus que les utilisateurs peuvent contr\u00f4ler avec la souris et avec le clavier.",
+    "thema": "HTML",
+    "name": "68"
+  },
+  "19285": {
+    "goal": "Eviter aux utilisateurs un rechargement de la page qu'il ne pourrait pas ma\u00eetriser.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser l'\u00e9l\u00e9ment meta avec un attribut http-equiv ayant la valeur refresh",
+    "solution": "Eviter les rechargements automatiques des pages ou utiliser un syst\u00e8me de rechargement o\u00f9 les utilisateurs sont inform\u00e9s du fonctionnement et o\u00f9 ils peuvent d\u00e9sactiver ce rechargement avec la souris et avec le clavier.",
+    "thema": "HTML",
+    "name": "5"
+  },
+  "19287": {
+    "goal": "Permettre la restitution d'un titre au groupe form\u00e9 par optgroup.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Utiliser un attribut label pour chaque \u00e9l\u00e9ment optgroup",
+    "solution": "Ajouter un attribut label aux \u00e9l\u00e9ments optgroup. Exemple&nbsp;: &lt;optgroup label='france'&gt;...&lt;/optgroup&gt;",
+    "thema": "HTML",
+    "name": "75"
+  },
+  "19288": {
+    "goal": "Permettre la distinction des diff\u00e9rents groupes form\u00e9s.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser un contenu d'attribut label identique pour plusieurs \u00e9l\u00e9ment optgroup d'un m\u00eame \u00e9l\u00e9ment select",
+    "solution": "D\u00e9terminer un titre diff\u00e9rent pour chaque groupe form\u00e9 par les \u00e9l\u00e9ments optgroup.",
+    "thema": "HTML",
+    "name": "76"
+  },
+  "19289": {
+    "goal": "Permettre la distinction des diff\u00e9rents groupes form\u00e9s.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser d'attribut label vide sur l'\u00e9l\u00e9ment optgroup",
+    "solution": "D\u00e9terminer le nom du groupe form\u00e9 par optgroup et renseigner l'attribut label avec ce nom.",
+    "thema": "HTML",
+    "name": "77"
+  },
+  "19290": {
+    "goal": "Eviter l'utilisation d'\u00e9l\u00e9ments \u00e0 des fins de pr\u00e9sentation.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser d'\u00e9l\u00e9ment p vide",
+    "solution": "Supprimer les \u00e9l\u00e9ments &lt;p&gt; qui ne poss\u00e8dent pas de contenu. Utiliser les propri\u00e9t\u00e9s des feuilles de styles margin et padding pour d\u00e9terminer les \u00e9carts entres les diff\u00e9rents \u00e9l\u00e9ments.",
+    "thema": "HTML",
+    "name": "29"
+  },
+  "19292": {
+    "goal": "Eviter l'utilisation d'\u00e9l\u00e9ments obsol\u00e8tes que les agents utilisateurs de sauraient pas interpr\u00e9ter.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser l'\u00e9l\u00e9ment plaintext",
+    "solution": "Utiliser l'\u00e9l\u00e9ment pre au lieu de plaintext.",
+    "thema": "HTML",
+    "name": "64"
+  },
+  "19295": {
+    "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser l'\u00e9l\u00e9ment strike",
+    "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.",
+    "thema": "HTML",
+    "name": "56"
+  },
+  "19296": {
+    "goal": "Permettre l'identification des tableaux de donn\u00e9es et la restitution des contenus permettant de les caract\u00e9riser.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Utiliser un \u00e9l\u00e9ment caption comme premier enfant de l'\u00e9l\u00e9ment table si le tableau contient au moins un \u00e9l\u00e9ment th",
+    "solution": "Positionner un \u00e9l\u00e9ment caption tout de suite apr\u00e8s l'\u00e9l\u00e9ment table lorsqu'il s'agit d'un tableau de donn\u00e9es.",
+    "thema": "HTML",
+    "name": "48"
+  },
+  "19298": {
+    "goal": "Permettre l'identification des tableaux de donn\u00e9es et la restitution des contenus permettant de les caract\u00e9riser.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Utiliser au moins un \u00e9l\u00e9ment th dans l'\u00e9l\u00e9ment table contenant un \u00e9l\u00e9ment caption ou ayant un attribut summary non vide",
+    "solution": "Modifier le code de mani\u00e8re \u00e0 utiliser l'\u00e9l\u00e9ment th \u00e0 la place de l'\u00e9l\u00e9ment td afin de d\u00e9clarer les ent\u00eates des tableaux de donn\u00e9es. Si c'est un tableau de mise en forme supprimer le caption ou le summary non vide",
+    "thema": "HTML",
+    "name": "58"
+  },
+  "19300": {
+    "goal": "Permettre aux utilisateurs de distinguer le sujet d'un tableau de donn\u00e9es de la mani\u00e8re dont il est construit.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser un contenu d'attribut summary identique au contenu de l'\u00e9l\u00e9ment caption",
+    "solution": "Mettre dans l'\u00e9l\u00e9ment caption un contenu servant \u00e0 titrer le tableau et dans l'attribut summary un contenu pour d\u00e9crire l'organisation du tableau",
+    "thema": "HTML",
+    "name": "53"
+  },
+  "19301": {
+    "goal": "Permettre l'identification des tableaux de donn\u00e9es et la restitution des contenus permettant de les caract\u00e9riser.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser d'attribut summary vide sur l'\u00e9l\u00e9ment table si le tableau contient un \u00e9l\u00e9ment th ou caption",
+    "solution": "Inclure un contenu \u00e0 l'attribut summary de l'\u00e9l\u00e9ment table lorsqu'il s'agit d'un tableau de donn\u00e9es.",
+    "thema": "HTML",
+    "name": "54"
+  },
+  "19302": {
+    "goal": "Permettre aux utilisateurs de diff\u00e9rencier les tableaux de donn\u00e9es des tableaux de mise en page en n'utilisant pas les caract\u00e9ristiques sp\u00e9cifiques aux premiers dans les seconds.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser d'attribut summary sur un \u00e9l\u00e9ment table contenant uniquement des cellules td",
+    "solution": "Ne pas utiliser d'attribut summary dans les tableaux de mis en page.",
+    "thema": "HTML",
+    "name": "55"
+  },
+  "19303": {
+    "goal": "Permettre l'association des cellules avec leurs ent\u00eates dans les tableaux de donn\u00e9es.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Utiliser l'attribut headers sur l'\u00e9l\u00e9ment td s'il se rapporte \u00e0 un \u00e9l\u00e9ment th ayant un attribut id",
+    "solution": "Utiliser un attribut headers sur les cellules td des tableaux de donn\u00e9es dont les ent\u00eates (th) contiennent un attribut id.",
+    "thema": "HTML",
+    "name": "63"
+  },
+  "19305": {
+    "goal": "Permettre l'association des cellules avec leurs ent\u00eates dans les tableaux de donn\u00e9es.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser un contenu d'attribut headers qui ne correspond \u00e0 aucune valeur d'attribut id pr\u00e9sent dans le m\u00eame tableau",
+    "solution": "Renseigner les attributs headers des \u00e9l\u00e9ments td avec les valeurs des attributs id des ent\u00eates associ\u00e9es.",
+    "thema": "HTML",
+    "name": "65"
+  },
+  "19306": {
+    "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser l'attribut text",
+    "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.",
+    "thema": "HTML",
+    "name": "33"
+  },
+  "19308": {
+    "goal": "Permettre l'association des cellules avec leurs ent\u00eates dans les tableaux de donn\u00e9es.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Utiliser un attribut scope ou id pour chaque \u00e9l\u00e9ment th non vide",
+    "solution": "Utiliser un attribut scope ou id sur les ent\u00eates (th) des tableaux de donn\u00e9es.",
+    "thema": "HTML",
+    "name": "59"
+  },
+  "19309": {
+    "goal": "Permettre l'association des cellules avec leurs ent\u00eates dans les tableaux de donn\u00e9es.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser une valeur d'attribut scope autre que row ou col",
+    "solution": "Utiliser la valeur row sur l'attribut scope des ent\u00eates de ligne et la valeur col sur les ent\u00eates de colonnes.",
+    "thema": "HTML",
+    "name": "60"
+  },
+  "19310": {
+    "goal": "Permettre la restitution du titre de la page.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser d'\u00e9l\u00e9ment title vide",
+    "solution": "D\u00e9terminer le titre de la page et renseigner l'\u00e9l\u00e9ment title avec ce titre.",
+    "thema": "HTML",
+    "name": "4"
+  },
+  "19311": {
+    "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser l'\u00e9l\u00e9ment tt",
+    "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.",
+    "thema": "HTML",
+    "name": "62"
+  },
+  "19313": {
+    "goal": "Permettre \u00e0 l'utilisateur de personnaliser l'affichage de la page par l'utilisation d'une feuille de style personnelle qui se substitue \u00e0 celle pr\u00e9vue par le concepteur.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser l'attribut vlink",
+    "solution": "Utiliser les feuilles de styles pour d\u00e9finir la position et les caract\u00e9ristiques visuelles des \u00e9l\u00e9ments.",
+    "thema": "HTML",
+    "name": "32"
+  },
+  "19314": {
+    "goal": "Eviter l'utilisation d'\u00e9l\u00e9ments obsol\u00e8tes que les agents utilisateurs de sauraient pas interpr\u00e9ter.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser l'\u00e9l\u00e9ment xmp",
+    "solution": "Utiliser l'\u00e9l\u00e9ment pre au lieu de xmp.",
+    "thema": "HTML",
+    "name": "28"
+  },
+  "19235": {
+    "goal": "Permettre la distinction entre les tableaux de donn\u00e9es et les tableaux de mise en page.",
+    "checklist": {
+      "id": 568,
+      "name": "Premier pas vers WCAG 2.0 : erreurs"
+    },
+    "explanation": "",
+    "description": "Ne pas utiliser d'\u00e9l\u00e9ment caption dans un \u00e9l\u00e9ment table contenant uniquement des cellules td",
+    "solution": "Ne pas utiliser d'\u00e9l\u00e9ment caption dans les tableau de mise en page. En revanche, dans le cas d'un tableau de donn\u00e9es o\u00f9 l'\u00e9l\u00e9ment caption serait justifi\u00e9, utiliser des \u00e9l\u00e9ments th pour signaler les ent\u00eates du tableau.",
+    "thema": "HTML",
+    "name": "51"
+  }
 }

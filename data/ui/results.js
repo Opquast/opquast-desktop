@@ -116,6 +116,11 @@ $.widget("ui.detailsViewer",{
                 _this._trigger("open");
 
                 $(document).on('keydown.detailsViewer', _this._handleKey.bind(_this));
+                $(document).on('click.detailsViewer', function(evt) {
+                    if ($(evt.target).parents().index(_this.element) === -1) {
+                        _this.close();
+                    }
+                });
             });
         }
     },
@@ -141,23 +146,22 @@ $.widget("ui.detailsViewer",{
     }
 });
 
-
 //
 // Display test results
 //
+const LABELS = {
+    'c': _('oqs.pass'),
+    'nc': _('oqs.fail'),
+    'i': _('oqs.cannot_tell'),
+    'na': _('oqs.not_applicable'),
+    'nt': _('oqs.not_tested')
+};
+
 self.port.on("showResults", function(tests, tableOptions) {
     // Prepare results
     let allCL = [];
     tests.oaa_results.map(function(r) {
-        if (r.result == 'c') {
-            r.label = _('oqs.pass');
-        } else if (r.result == 'nc') {
-            r.label = _('oqs.fail');
-        } else if (r.result == 'i') {
-            r.label = _('oqs.cannot_tell');
-        } else if (r.result == 'na') {
-            r.label = _('oqs.not_applicable');
-        }
+        r.label = LABELS[r.result];
 
         r.criterion.thema = $.trim(r.criterion.thema);
         if (r.criterion.thema === '') {
@@ -229,6 +233,102 @@ self.port.on("showResults", function(tests, tableOptions) {
         );
     });
 
+    // Editable status
+    var changeResult = function(row, result) {
+        let data = row.data();
+
+        self.port.emit("setUserData", data.test_id, result);
+
+        // Update row image
+        $("td[headers=hResult] img.result", row).each(function() {
+            this.src = this.src.replace(/\w+.png*$/, result + '.png');
+        });
+
+        // Update data and filters
+        data.result = result;
+        data.label = LABELS[result];
+        data.stTerms.hResult = data.label;
+        row.data(data);
+
+        // Update filters values
+        $('#test_result').superTable('setFilterControls');
+
+        // Set user-defined visibility
+        $("td[headers=hResult] span.user-defined", row).css("visibility", "visible");
+    };
+
+    var actionToolbar = function(selector, target, callback) {
+        let old;
+
+        $(selector).on("mouseenter", target, function(evt) {
+            let img = $(evt.target);
+            let base = img.parent();
+            let row = img.parents('tr').eq(0);
+
+            let toolbar = base.data('toolbar');
+            let item, action;
+
+            if (typeof(toolbar) === 'undefined') {
+                toolbar = $('<ul class="action_toolbar"></ul>').hide();
+                base.data('toolbar', toolbar).append(toolbar);
+            }
+            toolbar.empty();
+            for (var k in LABELS) {
+                if (row.data('result') === k) {
+                    continue;
+                }
+                item = $('<li></li>');
+                action = $('<img src="img/' + k + '.png" alt="' + LABELS[k] + '" />');
+                action.data('result', k).appendTo(item);
+                toolbar.append(item);
+
+                action.click(function(evt) {
+                    evt.stopPropagation();
+                    callback.call(null, row, $(evt.target).data('result'));
+                    removeTimeout(toolbar.hide());
+                });
+            }
+            toolbar.css({
+                'top': img.offset().top - toolbar.outerHeight()/2 + img.outerHeight()/2,
+                'left': img.offset().left - toolbar.outerWidth(true),
+            });
+
+            let removeTimeout = function(el) {
+                let timeout = el.data("timeout_hide");
+                if (timeout) {
+                    clearTimeout(timeout);
+                    el.removeData("timeout_hide");
+                    return true;
+                }
+                return false;
+            };
+
+            let onOut = function() {
+                old = toolbar;
+                toolbar.data("timeout_hide", setTimeout(function() {
+                    toolbar.removeData("timeout_hide").hide();
+                    old = undefined;
+                }, 1000));
+                toolbar.one("mouseenter", onEnter);
+            };
+
+            let onEnter = function() {
+                if (removeTimeout(toolbar)) {
+                    base.one("mouseleave", onOut);
+                }
+            };
+
+            removeTimeout(toolbar);
+            if (old) {
+                removeTimeout(old);
+                old.hide();
+            }
+            toolbar.show();
+
+            base.one("mouseleave", onOut);
+        });
+    };
+
     // Table events
     var display_counter = function(evt, data) {
         self.port.emit("resultCounter",
@@ -279,8 +379,26 @@ self.port.on("showResults", function(tests, tableOptions) {
 
     // Table display
     $('#test_result').superTable(tableOptions);
-
     self.port.emit("resultLoaded");
+
+
+    // Change status with icon in list
+    actionToolbar("#test_result tbody td[headers=hResult]", "img.result", function(row, result) {
+        changeResult(row, result);
+    });
+
+    // Change status within details view
+    $("#resultDetails").on("change", "#testStatus", function(evt) {
+        let result = evt.target.value;
+        let row = $($("#resultDetails").data("origin"));
+
+        // Set new result
+        changeResult(row, result);
+
+        // Update details icon
+        $(evt.target).parent().removeClass(Object.keys(LABELS).join(' ')).addClass(result);
+    });
+
 
     // Various worker events
     self.port.on("showResultCount", function(count_string) {
@@ -317,6 +435,18 @@ self.port.on("showLandingUI", function() {
 
     $('button').prepend('<span></span>').addClass('launch').click(function() {
         self.port.emit("launch");
+    });
+});
+
+self.port.on("showConfirmDelete", function() {
+    $('body').doT('tplConfirmDelete', {});
+
+    $('button[name=keep]').click(function() {
+        self.port.emit("launch", false);
+    });
+
+    $('button[name=erase]').click(function() {
+        self.port.emit("launch", true);
     });
 });
 
