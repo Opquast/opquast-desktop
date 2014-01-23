@@ -113,12 +113,7 @@ self.port.on("showProjects", function(projects) {
 });
 
 self.port.on("showSamples", function(samples, projectID, projectName) {
-    function showConfirm(question, row) {
-        let sampleID = row.data('sample_id'),
-            sampleName = $('td[headers~="hName"]', row).text();
-
-        question = question.replace("%s", sampleName);
-
+    function showConfirm(question, urls) {
         var hidden = $('body *').hide();
         var confirm = $($.doT('tplMessage', {
             'message': question,
@@ -135,20 +130,37 @@ self.port.on("showSamples", function(samples, projectID, projectName) {
         });
 
         bt_ok.click(function() {
-            self.port.emit("sendResults", projectID, sampleID, sampleName);
+            self.port.emit("sendResults", projectID, projectName, urls);
         });
 
         confirm.append('<br />').append(bt_ok).append(' ').append(bt_cancel);
     }
 
+    let pageURLs = {};
+    samples.forEach(function(sample) {
+        pageURLs[sample.id] = sample.pages.map(function(page) {
+            return page.resource_uri;
+        });
+    });
+
     $('body').doT('tplSampleList', {
         'samples': samples
     });
 
-    $('#samples tbody td button').click(function(evt) {
-        let row = $(evt.target).parents('tr');
+    $('#inject').submit(function(evt) {
+        evt.preventDefault();
+        let pushURLs = [];
+        $('input:checked', evt.target).each(function() {
+            let sampleID = $(this).data('sample');
+            let evaluationID = $(this).data('evaluation');
+            let clID = $(this).data('checklist');
 
-        showConfirm(self.options.locales['oqs.confirmDataSending'], row);
+            pushURLs.push([
+                clID, pageURLs[sampleID][0] + '/eval/' + evaluationID + '/results'
+            ]);
+        });
+
+        showConfirm(self.options.locales['oqs.confirmDataSending'].replace('%s', projectName), pushURLs);
     });
 });
 
