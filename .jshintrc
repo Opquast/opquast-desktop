@@ -1,0 +1,11 @@
+{
+    "moz": true,
+    "node": true,
+    "loopfunc": true,
+    "globals": {
+        "require": true,
+        "exports": true,
+        "console": true
+    },
+    "newcap": false
+}
