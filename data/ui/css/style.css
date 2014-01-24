@@ -50,6 +50,14 @@ body {
     font-size: 12px;
 }
 
+a.link {
+    color: #06c;
+    text-decoration: underline;
+}
+a.link:focus, a.link:focus {
+    text-decoration: none;
+}
+
 #main {
     position: relative;
     margin: 0 10px;
@@ -333,11 +341,6 @@ ul.action_toolbar li {
     margin: 0.5em 0;
 }
 
-#resultDetails a {
-    color: #06c;
-    text-decoration: underline;
-}
-
 #projects button {
     cursor: pointer;
     margin: .5em;
@@ -378,13 +381,6 @@ th.nowrap, td.nowrap {
 
 #accounts {
     width: 48%;
-}
-#accounts a {
-    color: #06c;
-    text-decoration: underline;
-}
-#accounts a:hover, #accounts a:focus {
-    text-decoration: none;
 }
 #accounts a.use {
     font-weight: bold;

@@ -13,17 +13,17 @@
     <table>
     {{~ it.accounts :account }}
       <tr data-username="{{! account.username }}">
-        <td><a href="#" class="use">{{! account.username }}</a></td>
+        <td><a href="#" class="link use">{{! account.username }}</a></td>
         <td>
-          (<a href="#" class="edit">{{! it.locales['oqs.edit'] }}</a> |
-          <a href="#" class="remove">{{! it.locales['oqs.remove'] }}</a>)
+          (<a href="#" class="link edit">{{! it.locales['oqs.edit'] }}</a> |
+          <a href="#" class="link remove">{{! it.locales['oqs.remove'] }}</a>)
         </td>
       </tr>
     {{~}}
     </table>
     {{??}}
-      <p><a class="external" href="http://reporting.opquast.com/">{{! it.locales['oqs.reporting_learn'] }}</a></p>
-      <p><strong><a class="external" href="https://reporting.opquast.com/plans/">{{! it.locales['oqs.reporting_subscribe'] }}</a></p>
+      <p><a class="link external" href="http://reporting.opquast.com/">{{! it.locales['oqs.reporting_learn'] }}</a></p>
+      <p><strong><a class="link external" href="https://reporting.opquast.com/plans/">{{! it.locales['oqs.reporting_subscribe'] }}</a></p>
     {{?}}
   </div>
 

@@ -24,7 +24,7 @@
     {{~ it.nodes :node }}
       <li>
       {{? node.selector }}
-        <a href="#" class="inspect" data-path="{{! node.selector }}">{{! node.text }}</a> {{? node.extra }}({{! node.extra }}){{?}}
+        <a href="#" class="link inspect" data-path="{{! node.selector }}">{{! node.text }}</a> {{? node.extra }}({{! node.extra }}){{?}}
       {{??}}
         <pre>{{! node }}</pre>
       {{?}}
