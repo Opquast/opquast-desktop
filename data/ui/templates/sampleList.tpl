@@ -1,8 +1,17 @@
 <div id="main">
   {{? it.samples.length == 0 }}
   <h2>{{! it.locales['oqs.no_evaluation'] }}</h2>
+  <p>{{! it.locales['oqs.no_eval_desc'] }}</p>
 
-  {{= it.locales['oqs.create_evaluation'] }}
+  <ul>
+    <li>{{= it.no_eval_1 }}</li>
+    <li>{{! it.locales['oqs.no_eval_2'] }}
+      <ul>{{~ it.clNames :cl}}<li>{{! cl }}</li>{{~}}</ul>
+    </li>
+    <li>{{= it.no_eval_3 }}</li>
+  </ul>
+
+  <p>{{= it.no_eval_4 }}</p>
 
   {{??}}
   <h2>{{! it.locales['oqs.choose_evaluation'] }}</h2>

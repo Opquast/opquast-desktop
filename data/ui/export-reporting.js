@@ -112,7 +112,7 @@ self.port.on("showProjects", function(projects) {
     });
 });
 
-self.port.on("showSamples", function(samples, projectID, projectName) {
+self.port.on("showSamples", function(pageUrl, checklists, samples, projectID, projectName) {
     function showConfirm(question, urls) {
         var hidden = $('body *').hide();
         var confirm = $($.doT('tplMessage', {
@@ -143,8 +143,26 @@ self.port.on("showSamples", function(samples, projectID, projectName) {
         });
     });
 
+    let clNames = Object.keys(checklists).map(function(k) checklists[k]);
+    let no_eval_3 = $('<div>' + self.options.locales['oqs.no_eval_3'] + '</div>');
+    $('a', no_eval_3).attr('href', '#').addClass('link preferences');
+
+    let no_eval_4 = $('<div>' + self.options.locales['oqs.no_eval_4'] + '</div>');
+    $('a', no_eval_4)
+    .attr('href', 'https://reporting.opquast.com/projects/' + projectID + '/audits/')
+    .addClass('link external');
+
     $('body').doT('tplSampleList', {
-        'samples': samples
+        'samples': samples,
+        'clNames': clNames,
+        'no_eval_1': self.options.locales['oqs.no_eval_1'].replace('%s', pageUrl),
+        'no_eval_3': no_eval_3.html(),
+        'no_eval_4': no_eval_4.html()
+    });
+
+    $('body').on('click', 'a.preferences', function(evt) {
+        evt.preventDefault();
+        self.port.emit("openPreferences");
     });
 
     $('#inject').submit(function(evt) {
