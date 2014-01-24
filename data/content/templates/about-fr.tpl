@@ -10,15 +10,19 @@
 
     <h3>Le projet Opquast</h3>
 
-    <p><a href="http://www.opquast.com">Opquast</a> (Open Quality Standards) est un framework
-    d'amélioration de la qualité et de l'accessibilité Web porté par la société Temesis. Il est né
-    fin 2003. Le projet met à disposition des check-lists (<a
-    href="http://checklists.opquast.com/fr/opquastv2">Qualité Web</a>, <a
-    href="http://checklists.opquast.com/fr/seo">SEO</a>, <a
-    href="http://checklists.opquast.com/fr/opendata">Open data</a>…), des outils de test (Opquast
-    Desktop, l'Inspecteur), une application mobile (iOpquast) et des services en ligne
-    (<a href="http://reporting.opquast.com">Opquast reporting</a>, <a
-    href="http://directory.opquast.com">Opquast directory</a>…).</p>
+    <p><a href="http://www.opquast.com">Opquast</a> (Open Quality Standards) est un écosystème qui
+    vous permet d'améliorer et de rentabiliser vos sites.</p>
+    <ul>
+      <li>Des bonnes pratiques pour comprendre et mettre en œuvre (check-lists <a
+        href="http://checklists.opquast.com/fr/opquast-website">Opquast Website</a>, <a
+        href="http://checklists.opquast.com/fr/opquastv2">Qualité Web</a>, <a
+        href="http://checklists.opquast.com/fr/seo">SEO</a>, <a
+        href="http://checklists.opquast.com/fr/opendata">Open data</a>…)</li>
+      <li>Des outils pour tester et piloter la qualité de vos sites
+      (Opquast Desktop, <a href="http://reporting.opquast.com">Opquast reporting</a>)</li>
+      <li>Des professionnels pour vous accompagner dans vos projets Web
+      (<a href="http://partners.opquast.com/">partners.opquast.com</a>)</li>
+    </ul>
 
     <h3>Opquast Desktop</h3>
 
@@ -115,6 +119,13 @@
       </thead>
 
       <tbody>
+        <tr>
+          <td><a href="http://checklists.opquast.com/fr/opquast-website">Opquast Website</a></td>
+          <td>Version 1 (2013)</td>
+          <td><a href="http://creativecommons.org/licenses/by-sa/2.0/fr/">Creative commons
+          BY-SA</a></td>
+        </tr>
+
         <tr>
           <td><a href="http://checklists.opquast.com/fr/opquastv2">Opquast Qualité Web</a></td>
           <td>Version 2 (2010)</td>

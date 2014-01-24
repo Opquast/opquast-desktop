@@ -10,14 +10,20 @@
 
     <h3>The Opquast Project</h3>
 
-    <p><a href="http://www.opquast.com">Opquast</a> (Open Quality Standards) is a Web quality and
-    accessibility improvement framework developed by Temesis. It was created in 2003. This project
-    provides checklists (<a href="http://checklists.opquast.com/fr/opquastv2">Qualité
-    Web</a>, <a href="http://checklists.opquast.com/fr/seo">SEO</a>, <a
-    href="http://checklists.opquast.com/fr/opendata">Open data</a>…), testing tools (Opquast
-    Desktop, Inspector), a mobile application (iOpquast) and online services (<a
-    href="http://reporting.opquast.com">Opquast reporting</a>, <a
-    href="http://directory.opquast.com">Opquast directory</a>…).</p>
+    <p><a href="http://www.opquast.com">Opquast</a> (Open Quality Standards) is an ecosystem aimed
+    at improvement and rentability of websites.</p>
+
+    <ul>
+      <li>Checklists to understand and produce (<a
+        href="http://checklists.opquast.com/fr/opquast-website">Opquast Website</a>, <a
+        href="http://checklists.opquast.com/fr/opquastv2">Qualité Web</a>, <a
+        href="http://checklists.opquast.com/fr/seo">SEO</a>, <a
+        href="http://checklists.opquast.com/fr/opendata">Open data</a> checklists…)</li>
+      <li>Testing tools to drive website quality
+      (Opquast Desktop, <a href="http://reporting.opquast.com">Opquast reporting</a>)</li>
+      <li>Professionnals to help you with your web projects
+      (<a href="http://partners.opquast.com/">partners.opquast.com</a>)</li>
+    </ul>
 
     <h3>Opquast Desktop</h3>
 
@@ -111,6 +117,13 @@
       </thead>
 
       <tbody>
+        <tr>
+          <td><a href="http://checklists.opquast.com/en/opquast-website">Opquast Website</a></td>
+          <td>Version 1 (2013)</td>
+          <td><a href="http://creativecommons.org/licenses/by-sa/2.0/fr/">Creative commons
+          BY-SA</a></td>
+        </tr>
+
         <tr>
           <td><a href="http://checklists.opquast.com/en/opquastv2">Opquast UX</a></td>
           <td>Version 2 (2010)</td>
