@@ -37,7 +37,7 @@
  * ***** END LICENSE BLOCK ***** */
 
 /*jshint globalstrict:true, jquery:true */
-/*globals self, _ */
+/*globals self:true, _:true, window:true, document:true */
 
 "use strict";
 
