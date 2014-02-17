@@ -237,7 +237,9 @@ self.port.on("showResults", function(tests, tableOptions) {
     var changeResult = function(row, result) {
         let data = row.data();
 
-        self.port.emit("setUserData", data.test_id, result);
+        self.port.emit("setUserData", data.test_id, {
+            result: result
+        });
 
         // Update row image
         $("td[headers=hResult] img.result", row).each(function() {
