@@ -17,7 +17,8 @@
 <p class="label">{{! it.stTerms['hChecklist'] }} - {{! it.stTerms['hRef']}}</p>
 
 <h2>{{! it.locales['oqs.comment'] }}</h2>
-<p>{{! it.comment }}</p>
+<p class="comment"><textarea id="editComment" cols="40" rows="5">{{! it.comment }}</textarea>
+<br /><button id="saveComment" class="action">{{! it.locales['oqs.save_comment'] }}</button></p>
 {{? it.nodes.length > 0 }}
   <h2>{{! it.locales['oqs.targeted_elements'] }}</h2>
   <ul>

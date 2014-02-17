@@ -341,6 +341,27 @@ ul.action_toolbar li {
     margin: 0.5em 0;
 }
 
+#resultDetails p.comment {
+    text-align: right;
+}
+#resultDetails textarea {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 0.5em;
+    border-radius: 3px;
+    font-family: "Lucida Grande", sans-serif;
+    font-size: 1em;
+}
+#resultDetails textarea:focus {
+    box-shadow: 0 0 2px rgba(0,102,204, 0.7);
+}
+#saveComment {
+    margin-top: 0.5em;
+    min-width: 20em;
+}
+
 #projects button {
     cursor: pointer;
     margin: .5em;

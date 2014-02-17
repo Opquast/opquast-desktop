@@ -259,6 +259,21 @@ self.port.on("showResults", function(tests, tableOptions) {
         $("td[headers=hResult] span.user-defined", row).css("visibility", "visible");
     };
 
+    var changeComment = function(row, comment) {
+        let data = row.data();
+
+        self.port.emit("setUserData", data.test_id, {
+            comment: comment
+        }, "restoreCommentButton");
+
+        // Update data
+        data.comment = comment;
+        row.data(data);
+
+        // Set user-defined visibility
+        $("td[headers=hResult] span.user-defined", row).css("visibility", "visible");
+    };
+
     var actionToolbar = function(selector, target, callback) {
         let old;
 
@@ -401,6 +416,19 @@ self.port.on("showResults", function(tests, tableOptions) {
         $(evt.target).parent().removeClass(Object.keys(LABELS).join(' ')).addClass(result);
     });
 
+    // Edit comment
+    $("#resultDetails").on("click", "#saveComment", function(evt) {
+        let comment = $('#editComment').val();
+        let row = $($("#resultDetails").data("origin"));
+
+        // Disable button
+        $(this).data('original-text', $(this).text())
+        .text('...')
+        .attr('disabled', true);
+
+        // Set new comment
+        changeComment(row, comment);
+    });
 
     // Various worker events
     self.port.on("showResultCount", function(count_string) {
@@ -421,6 +449,13 @@ self.port.on("showResults", function(tests, tableOptions) {
 
     self.port.on("resultSearch", function(q) {
         $('#test_result').superTable('search', q);
+    });
+
+    self.port.on("restoreCommentButton", function() {
+        setTimeout(function() {
+            let btn = $('#saveComment');
+            btn.text(btn.data('original-text')).removeAttr('disabled');
+        }, 1000);
     });
 });
 
