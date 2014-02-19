@@ -423,7 +423,7 @@ self.port.on("showResults", function(tests, tableOptions) {
 
         // Disable button
         $(this).data('original-text', $(this).text())
-        .text('...')
+        .text(_('oqs.saving'))
         .attr('disabled', true);
 
         // Set new comment
