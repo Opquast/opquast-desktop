@@ -37,7 +37,7 @@
  * ***** END LICENSE BLOCK ***** */
 
 /*jshint globalstrict:true, jquery:true */
-/*globals self, _ */
+/*globals self:true, _:true, window:true, document:true */
 
 "use strict";
 
@@ -237,7 +237,9 @@ self.port.on("showResults", function(tests, tableOptions) {
     var changeResult = function(row, result) {
         let data = row.data();
 
-        self.port.emit("setUserData", data.test_id, result);
+        self.port.emit("setUserData", data.test_id, {
+            result: result
+        });
 
         // Update row image
         $("td[headers=hResult] img.result", row).each(function() {
@@ -252,6 +254,21 @@ self.port.on("showResults", function(tests, tableOptions) {
 
         // Update filters values
         $('#test_result').superTable('setFilterControls');
+
+        // Set user-defined visibility
+        $("td[headers=hResult] span.user-defined", row).css("visibility", "visible");
+    };
+
+    var changeComment = function(row, comment) {
+        let data = row.data();
+
+        self.port.emit("setUserData", data.test_id, {
+            comment: comment
+        }, "restoreCommentButton");
+
+        // Update data
+        data.comment = comment;
+        row.data(data);
 
         // Set user-defined visibility
         $("td[headers=hResult] span.user-defined", row).css("visibility", "visible");
@@ -399,6 +416,19 @@ self.port.on("showResults", function(tests, tableOptions) {
         $(evt.target).parent().removeClass(Object.keys(LABELS).join(' ')).addClass(result);
     });
 
+    // Edit comment
+    $("#resultDetails").on("click", "#saveComment", function(evt) {
+        let comment = $('#editComment').val();
+        let row = $($("#resultDetails").data("origin"));
+
+        // Disable button
+        $(this).data('original-text', $(this).text())
+        .text(_('oqs.saving'))
+        .attr('disabled', true);
+
+        // Set new comment
+        changeComment(row, comment);
+    });
 
     // Various worker events
     self.port.on("showResultCount", function(count_string) {
@@ -419,6 +449,13 @@ self.port.on("showResults", function(tests, tableOptions) {
 
     self.port.on("resultSearch", function(q) {
         $('#test_result').superTable('search', q);
+    });
+
+    self.port.on("restoreCommentButton", function() {
+        setTimeout(function() {
+            let btn = $('#saveComment');
+            btn.text(btn.data('original-text')).removeAttr('disabled');
+        }, 1000);
     });
 });
 
