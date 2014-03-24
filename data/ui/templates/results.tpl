@@ -1,3 +1,34 @@
+<div id="tabs">
+<ul>
+  <li><a href="#tab-scores">{{! it.locales['oqs.scores'] }}
+    <strong class="score {{! it.scores.global.class }}">{{! it.scores.global.value }}</strong></a>
+  </li>
+  <li><a href="#tab-results">{{! it.locales['oqs.results'] }}</a></li>
+</ul>
+
+<div id="tab-scores">
+<table id="scores">
+  <tr class="global">
+    <td>{{! it.locales['oqs.global_score'] }}</td>
+    <td class="score"><span class="score {{! it.scores.global.class }}">{{! it.scores.global.value }}/10</span></td>
+    <td><a href="#" class="link" data-result="{{! it.scores.labels.c }}">{{! it.scores.global.c_label }}</a></td>
+    <td><a href="#" class="link" data-result="{{! it.scores.labels.nc }}">{{! it.scores.global.nc_label }}</a></td>
+  </tr>
+
+  {{~ it.scores.details :score }}
+    <tr>
+      <td>{{! score.checklist }}</td>
+      <td class="score"><span class="score {{! score.class }}">{{! score.value }}/10</span></td>
+      <td><a href="#" class="link" data-cl="{{! score.checklist }}"
+        data-result="{{! it.scores.labels.c }}">{{! score.c_label }}</a></td>
+      <td><a href="#" class="link" data-cl="{{! score.checklist }}"
+        data-result="{{! it.scores.labels.nc }}">{{! score.nc_label }}</a></td>
+    </tr>
+  {{~}}
+</table>
+</div>
+
+<div id="tab-results">
 <table id="test_result" class="data">
   <thead>
     <tr>
@@ -36,6 +67,9 @@
     {{~}}
   </tbody>
 </table>
+</div>
+
+</div>
 
 <div id="resultDetails" tabindex="-1">
   <ul id="ctx1" class="ctx">

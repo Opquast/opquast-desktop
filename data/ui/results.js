@@ -146,6 +146,62 @@ $.widget("ui.detailsViewer",{
     }
 });
 
+// Compute scores
+let getScores = function(results) {
+    let scores = {},
+        global_score = {'c': 0, 'nc': 0},
+        labels = {'c': LABELS.c, 'nc': LABELS.nc};
+
+    let getScoreDetails = function(checklist, c, nc) {
+        let res = {
+            'checklist': checklist,
+            'c': c,
+            'nc': nc
+        };
+        res.value = Math.round(10 * (10 * c) / (c + nc)) / 10;
+
+        res.class = 'fatal';
+        if (res.value >= 6) {
+            res.class = 'good';
+        } else if (res.value >= 4) {
+            res.class = 'warn';
+        }
+
+        // Stupid l10n system
+        res.c_label = (c > 1 ? self.options.locales['oqs.pass_n'] : self.options.locales['oqs.pass_1']).replace('%s', c);
+        res.nc_label = (nc > 1 ? self.options.locales['oqs.fail_n'] : self.options.locales['oqs.fail_1']).replace('%s', nc);
+
+        return res;
+    };
+
+    results.forEach(function(r) {
+        let cl = r.criterion.checklist.name;
+        if (typeof(scores[cl]) === 'undefined') {
+            scores[cl] = {
+                'c': 0,
+                'nc': 0
+            };
+        }
+        if (['nc', 'c'].indexOf(r.result) !== -1) {
+            scores[cl][r.result] += 1;
+            global_score[r.result] += 1;
+            labels[r.result] = r.label;
+        }
+    });
+
+    let _s = [];
+    for (let cl in scores) {
+        _s.push(getScoreDetails(cl, scores[cl].c, scores[cl].nc));
+    }
+    scores = _s;
+
+    return {
+        'global': getScoreDetails(null, global_score.c, global_score.nc),
+        'details': scores,
+        'labels': labels
+    };
+};
+
 //
 // Display test results
 //
@@ -186,7 +242,20 @@ self.port.on("showResults", function(tests, tableOptions) {
 
     // Show result list
     $('body').doT('tplResults', {
-        'tests': tests
+        'tests': tests,
+        'scores': getScores(tests.oaa_results)
+    });
+
+    // Tabs
+    $('#tabs').tabs({active: 1})
+    .css('margin-top', $('#tabs>ul').height() + 'px');
+
+    // Switch to result tab on score click
+    $('#scores td').on('click', 'a.link', function(evt) {
+        evt.preventDefault();
+        $('#tabs').tabs('option', 'active', 1);
+        $('#hChecklist select').val($(this).data('cl')).change();
+        $('#hResult select').val($(this).data('result')).change();
     });
 
     // Prepare modalizer
