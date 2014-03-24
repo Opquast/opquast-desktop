@@ -252,6 +252,10 @@ ul.action_toolbar li {
 #scores tr.global td {
     font-weight: bold;
     border-bottom: 1px solid #ccc;
+    padding-bottom: 1em;
+}
+#scores tr.global+tr td {
+    padding-top: 1em;
 }
 
 .score.good {
@@ -265,6 +269,16 @@ ul.action_toolbar li {
 .score.fatal {
     background-color: #d00d00;
     color: #fff;
+}
+
+a.score.pass {
+    color: #749900;
+}
+a.score.fail {
+    color: #d00d00;
+}
+a.score:hover, a.score:focus {
+    text-decoration: underline;
 }
 
 #resultDetails {

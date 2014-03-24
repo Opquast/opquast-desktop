@@ -251,7 +251,7 @@ self.port.on("showResults", function(tests, tableOptions) {
     .css('margin-top', $('#tabs>ul').height() + 'px');
 
     // Switch to result tab on score click
-    $('#scores td').on('click', 'a.link', function(evt) {
+    $('#scores td').on('click', 'a.score', function(evt) {
         evt.preventDefault();
         $('#tabs').tabs('option', 'active', 1);
         $('#hChecklist select').val($(this).data('cl')).change();
