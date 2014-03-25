@@ -247,13 +247,13 @@ self.port.on("showResults", function(tests, tableOptions) {
     });
 
     // Tabs
-    $('#tabs').tabs({active: 1})
+    $('#tabs').tabs({active: 0})
     .css('margin-top', $('#tabs>ul').height() + 'px');
 
     // Switch to result tab on score click
     $('#scores td').on('click', 'a.score', function(evt) {
         evt.preventDefault();
-        $('#tabs').tabs('option', 'active', 0);
+        $('#tabs').tabs('option', 'active', 1);
         $('#hChecklist select').val($(this).data('cl')).change();
         $('#hResult select').val($(this).data('result')).change();
     });
