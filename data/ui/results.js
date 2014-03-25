@@ -246,18 +246,6 @@ self.port.on("showResults", function(tests, tableOptions) {
         'scores': getScores(tests.oaa_results)
     });
 
-    // Tabs
-    $('#tabs').tabs({active: 0})
-    .css('margin-top', $('#tabs>ul').height() + 'px');
-
-    // Switch to result tab on score click
-    $('#scores td').on('click', 'a.score', function(evt) {
-        evt.preventDefault();
-        $('#tabs').tabs('option', 'active', 1);
-        $('#hChecklist select').val($(this).data('cl')).change();
-        $('#hResult select').val($(this).data('result')).change();
-    });
-
     // Pref
     $('body').on('click', 'a.preferences', function(evt) {
         evt.preventDefault();
@@ -473,10 +461,21 @@ self.port.on("showResults", function(tests, tableOptions) {
     $('#test_result').superTable(tableOptions);
     self.port.emit("resultLoaded");
 
-
     // Change status with icon in list
     actionToolbar("#test_result tbody td[headers=hResult]", "img.result", function(row, result) {
         changeResult(row, result);
+    });
+
+    // Tabs
+    $('#tabs').tabs({active: 0})
+    .css('margin-top', $('#tabs>ul').height() + 'px');
+
+    // Switch to result tab on score click
+    $('#scores td').on('click', 'a.score', function(evt) {
+        evt.preventDefault();
+        $('#tabs').tabs('option', 'active', 1);
+        $('#hChecklist select').val($(this).data('cl')).change();
+        $('#hResult select').val($(this).data('result')).change();
     });
 
     // Change status within details view

@@ -1,7 +1,7 @@
 <div id="tabs">
 <ul>
   <li><a href="#tab-scores">{{! it.locales['oqs.scores'] }}
-    <strong class="score {{! it.scores.global.class }}">{{! it.scores.global.value }}</strong></a>
+    <strong class="score {{! it.scores.global.class }}">{{! it.scores.global.value }}/10</strong></a>
   </li>
   <li><a href="#tab-results">{{! it.locales['oqs.results'] }}</a></li>
 </ul>
