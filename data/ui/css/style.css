@@ -212,6 +212,83 @@ ul.action_toolbar li {
     padding: 0;
 }
 
+#tabs {
+    border: 0;
+}
+#tabs>ul {
+    border-width: 0 0 1px 0;
+    border-radius: 0;
+    background: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background: #fff;
+}
+#tabs>ul a {
+    padding: 0.4em 1em;
+}
+#tabs>ul strong.score {
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+#tab-results {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#scores {
+    font-size: 1.2em;
+    border-collapse: collapse;
+}
+#scores td {
+    padding: 0.5em;
+}
+#scores td:first-child {
+    padding-left: 0;
+}
+#scores td.score a.score {
+    padding: 0.2em 0.5em;
+    border-radius: 5px;
+}
+#scores td.score a.score:hover, #scores td.score a.score:focus {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+#scores tr.global td {
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1em;
+}
+#scores tr.global+tr td {
+    padding-top: 1em;
+}
+
+.score.good {
+    background-color: #749900;
+    color: #fff;
+}
+.score.warn {
+    background-color: #fb8e00;
+    color: #fff;
+}
+.score.fatal {
+    background-color: #d00d00;
+    color: #fff;
+}
+
+a.score.pass {
+    color: #749900;
+}
+a.score.fail {
+    color: #d00d00;
+}
+a.score:hover, a.score:focus {
+    text-decoration: underline;
+}
+
 #resultDetails {
     display: none;
     position: fixed;
