@@ -245,10 +245,18 @@ ul.action_toolbar li {
 #scores td {
     padding: 0.5em;
 }
-#scores td span.score {
+#scores td:first-child {
+    padding-left: 0;
+}
+#scores td.score a.score {
     padding: 0.2em 0.5em;
     border-radius: 5px;
 }
+#scores td.score a.score:hover, #scores td.score a.score:focus {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
 #scores tr.global td {
     font-weight: bold;
     border-bottom: 1px solid #ccc;

@@ -253,9 +253,15 @@ self.port.on("showResults", function(tests, tableOptions) {
     // Switch to result tab on score click
     $('#scores td').on('click', 'a.score', function(evt) {
         evt.preventDefault();
-        $('#tabs').tabs('option', 'active', 1);
+        $('#tabs').tabs('option', 'active', 0);
         $('#hChecklist select').val($(this).data('cl')).change();
         $('#hResult select').val($(this).data('result')).change();
+    });
+
+    // Pref
+    $('body').on('click', 'a.preferences', function(evt) {
+        evt.preventDefault();
+        self.port.emit('openPreferences');
     });
 
     // Prepare modalizer

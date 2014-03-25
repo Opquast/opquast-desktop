@@ -10,7 +10,7 @@
 <table id="scores">
   <tr class="global">
     <td>{{! it.locales['oqs.global_score'] }}</td>
-    <td class="score"><span class="score {{! it.scores.global.class }}">{{! it.scores.global.value }}/10</span></td>
+    <td class="score"><a href="#" class="score {{! it.scores.global.class }}">{{! it.scores.global.value }}/10</a></td>
     <td>{{? it.scores.global.c > 0 }}
       <a href="#" class="score pass" data-result="{{! it.scores.labels.c }}">{{! it.scores.global.c_label }}</a>
     {{??}}
@@ -26,7 +26,8 @@
   {{~ it.scores.details :score }}
     <tr>
       <td>{{! score.checklist }}</td>
-      <td class="score"><span class="score {{! score.class }}">{{! score.value }}/10</span></td>
+      <td class="score"><a href="#" class="score {{! score.class }}"
+        data-cl="{{! score.checklist }}">{{! score.value }}/10</a></td>
       <td>{{? score.c > 0 }}
         <a href="#" class="score pass" data-cl="{{! score.checklist }}"
         data-result="{{! it.scores.labels.c }}">{{! score.c_label }}</a>
@@ -42,6 +43,8 @@
     </tr>
   {{~}}
 </table>
+
+<p><a href="#" class="link preferences">{{! it.locales['oqs.choose_checklists'] }}</a></p>
 </div>
 
 <div id="tab-results">
