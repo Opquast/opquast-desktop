@@ -15,6 +15,8 @@ If you want to make your own XPI or hack it, install the
 clone the Opquast Desktop repository, activate the Add-on
 SDK environment and then run:
 
+    git submodule init
+    git submodule update
     cfx run
 
 ## License ##
