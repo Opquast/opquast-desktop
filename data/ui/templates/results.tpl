@@ -14,12 +14,12 @@
     <td>{{? it.scores.global.c > 0 }}
       <a href="#" class="score pass" data-result="{{! it.scores.labels.c }}">{{! it.scores.global.c_label }}</a>
     {{??}}
-      {{! it.scores.glocal.c_label }}
+      {{! it.scores.global.c_label }}
     {{?}}</td>
     <td>{{? it.scores.global.nc > 0 }}
       <a href="#" class="score fail" data-result="{{! it.scores.labels.nc }}">{{! it.scores.global.nc_label }}</a>
     {{??}}
-      {{! it.scores.glocal.nc_label }}
+      {{! it.scores.global.nc_label }}
     {{?}}</td>
   </tr>
 
