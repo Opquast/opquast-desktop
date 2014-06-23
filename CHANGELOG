@@ -1,3 +1,7 @@
+2014-06-23 - Version 1.0-RC3
+
+- Bugfix : repair l10n outdated calls (Firefox 30 compatibilty)
+
 2014-05-06 - Version 1.0-RC2
 
 - Updated test runner (1.6.4)
