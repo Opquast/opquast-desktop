@@ -1,6 +1,6 @@
 <div id="header-wrap">
   <div id="header">
-    <h1>Opquast Desktop</h1>
+    <h1>Opquast Desktop <span class="version">({{! it.version }})</span></h1>
   </div>
 </div>
 
