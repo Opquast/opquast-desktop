@@ -87,7 +87,7 @@
 
     <h3>Conception and development</h3>
 
-    <p>Olivier Meunier, Elie Sloïm, Fabrice Bonny and Aurélien Levy for <a href=
+    <p>Olivier Meunier, Elie Sloïm, Fabrice Bonny, Aurélien Levy and Mickaël Hoareau for <a href=
     "http://www.temesis.com">Temesis SAS</a> - 18, rue Lucien Granet 33150 Cenon - France</p>
 
     <p>With the assistance of <em>pôle Aquitain en logiciels libres <a
