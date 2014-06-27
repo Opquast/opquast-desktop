@@ -1,3 +1,13 @@
+2014-06-27 - Version 1.0-RC5
+
+- Fixed minVersion in RDF file (Firefox > 29.0)
+- AMO validation preparation (Get whitelisted version of jQueryUI 1.10.4)
+
+2014-06-27 - Version 1.0-RC4
+
+- User new ActionButton from Australis (FF>29, SDK 1.16) 
+- Fixed : tabs opened before addon install/upgrade can not be tested
+
 2014-06-23 - Version 1.0-RC3
 
 - Bugfix : repair l10n outdated calls (Firefox 30 compatibilty)
