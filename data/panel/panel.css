@@ -21,6 +21,7 @@
  * Contributor(s):
  *   Fabrice Bonny <fabrice.bonny@temesis.com>
  *   Olivier Meunier <olivier.meunier@temesis.com>
+ *   Mickael Hoareau <mickael.hoareau@temesis.com>
  *
  * Alternatively, the contents of this file may be used under the terms of
  * either the GNU General Public License Version 2 or later (the "GPL"), or
@@ -69,7 +70,7 @@
     background-color: transparent;
     background-image: linear-gradient(hsl(209, 15%, 27%), hsl(210, 20%, 13%));
     background-repeat: no-repeat;
-    background-position: padding-box;
+    background-origin: padding-box;
     color: #ddd;
 }
 .opquast-desktop-dock-toolbar .button:hover,
@@ -148,8 +149,9 @@
     list-style-image: url("prefs.png");
     -moz-image-region: rect(0, 16px, 16px, 0);
     min-width: 24px;
-    width: 24px;
-    padding: 2px 0 0 14px;
+    width: 30px;
+    padding: 2px 0 0 8px;
+    margin:0;
 }
 .opquast-desktop-dock-toolbar .opquast-desktop-dock-prefbutton:hover,
 .opquast-desktop-dock-toolbar .opquast-desktop-dock-prefbutton:focus {

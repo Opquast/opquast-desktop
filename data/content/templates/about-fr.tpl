@@ -1,6 +1,6 @@
 <div id="header-wrap">
   <div id="header">
-    <h1>Opquast Desktop</h1>
+    <h1>Opquast Desktop <span class="version">({{! it.version }})</span></h1>
   </div>
 </div>
 
@@ -89,7 +89,7 @@
 
     <h3>Conception et développements</h3>
 
-    <p>Olivier Meunier, Elie Sloïm, Fabrice Bonny et Aurélien Levy pour <a href=
+    <p>Olivier Meunier, Elie Sloïm, Fabrice Bonny, Aurélien Levy et Mickaël Hoareau pour <a href=
     "http://www.temesis.com">Temesis SAS</a> - 18, rue Lucien Granet 33150 Cenon - France</p>
 
     <p>Avec l'assistance du pôle Aquitain en logiciels libres <a

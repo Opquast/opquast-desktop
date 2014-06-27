@@ -253,6 +253,11 @@ h1,h2,h3 {
     font-size: 1.2em;
 }
 
+#header-wrap span.version {
+    display: inline;
+    font-size: 0.8em;
+}
+
 #main {
     padding-top: 40px;
 }
