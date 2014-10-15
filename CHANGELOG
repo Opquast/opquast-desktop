@@ -1,3 +1,8 @@
+2014-10-15 - Version 1.0-RC6
+
+- Updated test runner (1.6.5)
+- Fixed slowness/freeze problem since FF32 (some regexp evaluation takes too much time)
+
 2014-06-27 - Version 1.0-RC5
 
 - Fixed minVersion in RDF file (Firefox > 29.0)
