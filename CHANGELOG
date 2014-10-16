@@ -1,3 +1,9 @@
+2014-10-16 - Version 1.0-RC7
+
+- Updated test runner (1.6.7)
+- Optimise regexp from on test rule to fix freeze problem.
+- Temporary fix to manage Cross-Domain request errors with FF>=33
+
 2014-10-16 - Version 1.0-RC6b
 
 - Updated test runner (1.6.6)
