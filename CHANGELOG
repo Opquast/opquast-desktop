@@ -1,3 +1,9 @@
+2014-10-16 - Version 1.0-RC6b
+
+- Updated test runner (1.6.6)
+- Fix some alert() forgotten into the code
+- Optimize regexp from one test rule to fix freeze problem.
+
 2014-10-15 - Version 1.0-RC6
 
 - Updated test runner (1.6.5)
