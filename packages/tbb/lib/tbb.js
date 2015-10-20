@@ -135,7 +135,7 @@ exports.ToolbarButton = function ToolbarButton(options) {
       insertbefore = pos.insertbefore;
 
       // change the current position for open windows
-      for each (var window in winUtils.windowIterator()) {
+      for (var window of winUtils.windowIterator()) {
         if (browserURL != window.location) return;
 
         let doc = window.document;
@@ -180,7 +180,7 @@ exports.ToolbarButton = function ToolbarButton(options) {
 
 function getToolbarButtons(callback, id) {
   let buttons = [];
-  for each (var window in winUtils.windowIterator()) {
+  for (var window of winUtils.windowIterator()) {
     if (browserURL != window.location) continue;
     let tbb = window.document.getElementById(id);
     if (tbb) buttons.push(tbb);
