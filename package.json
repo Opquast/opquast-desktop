@@ -10,7 +10,6 @@
     "dependencies": [
         "net-log",
         "opquast-tests",
-        "tbb",
         "vold-utils"
     ],
     "main" : "lib/main.js",
