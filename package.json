@@ -9,8 +9,7 @@
     "homepage": "https://desktop.opquast.com/",
     "dependencies": [
         "net-log",
-        "opquast-tests",
-        "vold-utils"
+        "opquast-tests"
     ],
     "main" : "lib/main.js",
     "icon": "data/icon48.png",
