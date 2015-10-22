@@ -19,7 +19,7 @@
             "name": "full_preferences",
             "label": "All preferences",
             "type": "control",
-            "title": ""
+            "title": "All preferences title"
         },
         {
             "name": "debug",
