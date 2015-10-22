@@ -11,20 +11,20 @@ extension on [Opquast Desktop Website](https://desktop.opquast.com/).
 ## Hack it ##
 
 If you want to make your own XPI or hack it, install the
-[`jpm` tool](https://developer.mozilla.org/en-US/Add-ons/SDK/Tools/jpm)
-from Mozilla, then run:
+[`cfx` tool](https://ftp.mozilla.org/pub/labs/jetpack/jetpack-sdk-latest.zip)
+from Mozilla, extract files from the archive, then run:
 
 ```
-jpm run
+cd addons-sdk
+source bin/activate
 ```
 
-If you use Firefox 38 and lower, use
-[`cfx`](https://developer.mozilla.org/en-US/Add-ons/SDK/Tools/cfx)
-instead of jpm, and then run :
+Note: you need to install Python 2.6 or 2.7.
 
-```
-    cfx run
-```
+Then go in the opquast-desktop directory. To test the addons, execute `cfx run`.
+To create a package, don't use cfx, but execute the `make_xpi.py` script.
+
+For more information about cfx, [read the manual](https://developer.mozilla.org/en-US/Add-ons/SDK/Tools/cfx).
 
 ## License ##
 
