@@ -1,6 +1,6 @@
 [submodule "packages/jetpack-net-log"]
 	path = packages/jetpack-net-log
-	url = git://github.com/olivier-m/jetpack-net-log.git
+	url = git://github.com/laurentj/jetpack-net-log.git
 [submodule "packages/opquast-test-runner"]
 	path = packages/opquast-test-runner
-	url = git://github.com/Opquast/opquast-test-runner.git
+	url = git://github.com/laurentj/opquast-test-runner.git
