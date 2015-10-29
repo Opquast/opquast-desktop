@@ -286,7 +286,7 @@ function loadSandbox(uri) {
 }
 
 function unloadSandbox(sandbox) {
-  if ("nukeSandbox" in Cu)
+  if ("nukeSandbox" in Cu && sandbox)
     Cu.nukeSandbox(sandbox);
 }
 
