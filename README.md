@@ -10,14 +10,25 @@ extension on [Opquast Desktop Website](https://desktop.opquast.com/).
 
 ## Hack it ##
 
-If you want to make your own XPI or hack it, install the
-[Mozilla Add-on SDK](https://addons.mozilla.org/en-US/developers/builder),
-clone the Opquast Desktop repository, activate the Add-on
-SDK environment and then run:
-
+Do not forget to initialize submodules
     git submodule init
     git submodule update
+
+If you want to make your own XPI or hack it, install the
+[`jpm` tool](https://developer.mozilla.org/en-US/Add-ons/SDK/Tools/jpm)
+from Mozilla, then run:
+
+```
+jpm run
+```
+
+If you use Firefox 38 and lower, use
+[`cfx`](https://developer.mozilla.org/en-US/Add-ons/SDK/Tools/cfx)
+instead of jpm, and then run :
+
+```
     cfx run
+```
 
 ## License ##
 
