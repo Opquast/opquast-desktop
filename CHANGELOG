@@ -1,3 +1,13 @@
+2015-10-30 - Version 1.0-RC10
+
+- Updated opquast-test-runner (1.7.0)
+- Updated opquast-net-log
+- Bug fixes (FF40 and up)
+- Cleanup
+This release is a work of Laurent Jouanneau. 
+
+(1.0RC9 was an intermediate version, not publicly released)
+
 2014-11-17 - Version 1.0-RC8
 
 - Updated opquast-net-log
