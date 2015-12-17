@@ -1,3 +1,14 @@
+
+XXXXX - Version 1.1
+
+- Compatibility with Firefox 45+ (with tabs in separate processes)
+- Updated opquast-test-runner
+- Updated opquast-net-log
+- Api change in api.jsm: first argument of executeTests() must be
+  a browser element, not a window anymore.
+
+This release is a work of Laurent Jouanneau. 
+
 2015-10-30 - Version 1.0-RC10
 
 - Updated opquast-test-runner (1.7.0)
