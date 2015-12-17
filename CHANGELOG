@@ -1,3 +1,9 @@
+2015-12-17 - Version 1.0-RC11
+
+- Updated opquast-test-runner (1.7.1)
+- Cleanup unused checklists/tests
+This release is a work of Fabrice Bonny. 
+
 2015-10-30 - Version 1.0-RC10
 
 - Updated opquast-test-runner (1.7.0)

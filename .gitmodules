@@ -3,4 +3,6 @@
 	url = git://github.com/laurentj/jetpack-net-log.git
 [submodule "packages/opquast-test-runner"]
 	path = packages/opquast-test-runner
+#	url = git://github.com/laurentj/opquast-test-runner.git
+#	url = git@github.com:Opquast/opquast-test-runner.git
 	url = git@git.temesis.com:mozilla/opquast-test-runner.git
