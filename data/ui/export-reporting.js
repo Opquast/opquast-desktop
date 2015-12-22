@@ -143,7 +143,7 @@ self.port.on("showSamples", function(pageUrl, checklists, samples, projectID, pr
         });
     });
 
-    let clNames = Object.keys(checklists).map(function(k) checklists[k]);
+    let clNames = Object.keys(checklists).map((k) => checklists[k]);
     let no_eval_3 = $('<div>' + self.options.locales['oqs.no_eval_3'] + '</div>');
     $('a', no_eval_3).attr('href', '#').addClass('link preferences');
 
