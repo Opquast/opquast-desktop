@@ -4,3 +4,7 @@
 /TODO.md
 /make_xpi.py
 /.*
+/packages
+/*.sh
+/*.xpi
+/INTERNALS.md

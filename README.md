@@ -10,25 +10,46 @@ extension on [Opquast Desktop Website](https://desktop.opquast.com/).
 
 ## Hack it ##
 
-Do not forget to initialize submodules
-    git submodule init
-    git submodule update
 
-If you want to make your own XPI or hack it, install the
-[`cfx` tool](https://ftp.mozilla.org/pub/labs/jetpack/jetpack-sdk-latest.zip)
-from Mozilla, extract files from the archive, then run:
+There are some submodules into packages/. Do not forget to initialize them:
 
 ```
-cd addons-sdk
-source bin/activate
+git submodule init
+git submodule update
 ```
 
-Note: you need to install Python 2.6 or 2.7.
+You have to install jpm, npm and nodejs. To install them, follow
+[this instructions](https://developer.mozilla.org/en-US/Add-ons/SDK/Tools/jpm#Installation)
 
-Then go in the opquast-desktop directory. To test the addons, execute `cfx run`.
-To create a package, don't use cfx, but execute the `make_xpi.py` script.
+## Test it ##
 
-For more information about cfx, [read the manual](https://developer.mozilla.org/en-US/Add-ons/SDK/Tools/cfx).
+To test the addons, go in the opquast-desktop directory then
+execute `npm install` a first time, to create the node_modules directory
+from the packages/ directory content. Each time you make modifications into
+packages/, remove the node_modules directory and re-run `npm install`.
+(`npm update` doesn't update node_modules from packages/ unless you change
+also the version into the packages.json of packages).
+
+To launch Firefox with the extensions, execute `jpm run`.
+
+If you want to run the extension with a specific firefox and and a specific
+profile, you can run for example:
+
+```
+jpm run -b ~/bin/firefoxes/firefox-beta/firefox -p ~/.mozilla/firefox/mbxi7o7z.beta
+```
+
+See `jpm help`.
+
+
+## Package it ##
+
+To create a package,
+
+1. be sure to have an update node_modules directory (remove it and execute
+   `npm install` if this is not the case)
+2. execute `jpm xpi`.
+
 
 ## License ##
 
