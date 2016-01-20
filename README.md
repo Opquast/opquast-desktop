@@ -21,9 +21,9 @@ git submodule update
 You have to install jpm, npm and nodejs. To install them, follow
 [this instructions](https://developer.mozilla.org/en-US/Add-ons/SDK/Tools/jpm#Installation)
 
-## Test it ##
+## Launch it ##
 
-To test the addons, go in the opquast-desktop directory then
+To test the addon in Firefox, go in the opquast-desktop directory then
 execute `npm install` a first time, to create the node_modules directory
 from the packages/ directory content. Each time you make modifications into
 packages/, remove the node_modules directory and re-run `npm install`.
@@ -41,6 +41,14 @@ jpm run -b ~/bin/firefoxes/firefox-beta/firefox -p ~/.mozilla/firefox/mbxi7o7z.b
 
 See `jpm help`.
 
+## Unit tests ##
+
+You must execute `jpm test`.
+
+You can execute only one specific test. For example to launch test/test-netlog.js,
+you must call `jpm test -f netlog`.
+
+You can use also flags to specify a firefox binary and/or a profile.
 
 ## Package it ##
 
@@ -48,7 +56,8 @@ To create a package,
 
 1. be sure to have an update node_modules directory (remove it and execute
    `npm install` if this is not the case)
-2. execute `jpm xpi`.
+2. execute the given script makexpi.sh. Do not use "jpm xpi" as jpm will
+   include all test/ directory in node_modules packages.
 
 
 ## License ##
