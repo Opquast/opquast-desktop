@@ -1,5 +1,5 @@
 
-2016-01-20 - Version 1.1
+2016-01-20 - Version 1.1rc1
 
 - Compatibility with Firefox 45+ (with tabs in separate processes)
 - Not compatible any more with Firefox 38 and less.
@@ -10,6 +10,12 @@
 - Use jpm instead of cfx to build the extension
 
 This release is a work of Laurent Jouanneau. 
+
+2015-12-17 - Version 1.0-RC11
+
+- Updated opquast-test-runner (1.7.1)
+- Cleanup unused checklists/tests
+This release is a work of Fabrice Bonny. 
 
 2015-10-30 - Version 1.0-RC10
 
