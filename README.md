@@ -45,7 +45,7 @@ See `jpm help`.
 
 You must execute `jpm test`.
 
-You can execute only one specific test. For example to launch test/test-netlog.js,
+You can execute a specific test. For example to launch test/test-netlog.js,
 you must call `jpm test -f netlog`.
 
 You can use also flags to specify a firefox binary and/or a profile.
