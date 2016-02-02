@@ -1,3 +1,16 @@
+
+2016-01-20 - Version 1.1rc1
+
+- Compatibility with Firefox 45+ (with tabs in separate processes)
+- Not compatible any more with Firefox 38 and less.
+- Updated opquast-test-runner
+- Updated opquast-net-log
+- Api change in api.jsm: first argument of executeTests() must be
+  a browser element, not a window anymore.
+- Use jpm instead of cfx to build the extension
+
+This release is a work of Laurent Jouanneau. 
+
 2015-12-17 - Version 1.0-RC11
 
 - Updated opquast-test-runner (1.7.1)

@@ -22,6 +22,7 @@
  *   Fabrice Bonny <fabrice.bonny@temesis.com>
  *   Olivier Meunier <olivier.meunier@temesis.com>
  *   Mickael Hoareau <mickael.hoareau@temesis.com>
+ *   Laurent Jouanneau <laurent@innophi.com>
  *
  * Alternatively, the contents of this file may be used under the terms of
  * either the GNU General Public License Version 2 or later (the "GPL"), or
@@ -42,8 +43,9 @@
 "use strict";
 
 (function($) {
-    self.port.on("attached", function(lang) {
-        $('html').attr('lang', lang);
+    self.port.on("attached", function(param) {
+        $('html').attr('lang', param.lang);
+        showCheckList(param.selectedChecklists, param.checklists);
     });
 
     function showSaved() {
@@ -55,34 +57,35 @@
 
     $('head title').text(self.options.locales['oqs.preferences_title']);
 
-    var cl_prefs = self.options.prefs.checklists.split(/\s*,\s*/);
-    var checklists = self.options.checklists;
-    var cl_sorted = {};
-    for (var i in checklists) {
-        checklists[i].selected = cl_prefs.indexOf(i) != -1;
-        checklists[i].langs = checklists[i].langs.map(function(l) {
-            return l.split('-')[0];
-        });
-        if (cl_sorted[checklists[i].category] === undefined) {
-            cl_sorted[checklists[i].category] = [];
+    function showCheckList(selectedChecklists, checklists) {
+        
+        var cl_prefs = selectedChecklists.split(/\s*,\s*/);
+        var cl_sorted = {};
+        for (var i in checklists) {
+            checklists[i].selected = cl_prefs.indexOf(i) != -1;
+            checklists[i].langs = checklists[i].langs.map(function(l) {
+                return l.split('-')[0];
+            });
+            if (cl_sorted[checklists[i].category] === undefined) {
+                cl_sorted[checklists[i].category] = [];
+            }
+            cl_sorted[checklists[i].category].push([i, checklists[i]]);
         }
-        cl_sorted[checklists[i].category].push([i, checklists[i]]);
-    }
 
-    var tpl = doT.compile(self.options.template)({
-        'locales': self.options.locales,
-        'prefs': self.options.prefs,
-        'checklists': cl_sorted
-    });
-
-    $('body').html(tpl);
-
-    $('#prefcl input').change(function() {
-        var values = [];
-        $('#prefcl input:checked').each(function() {
-            values.push(this.value);
+        var tpl = doT.compile(self.options.template)({
+            'locales': self.options.locales,
+            'checklists': cl_sorted
         });
-        self.port.emit("setPref", "checklists", values.join(","));
-        showSaved();
-    });
+
+        $('body').html(tpl);
+
+        $('#prefcl input').change(function() {
+            var values = [];
+            $('#prefcl input:checked').each(function() {
+                values.push(this.value);
+            });
+            self.port.emit("setPref", "checklists", values.join(","));
+            showSaved();
+        });
+    }
 })(jQuery);

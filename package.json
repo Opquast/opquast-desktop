@@ -1,9 +1,9 @@
 {
     "name": "opquast-desktop",
-    "license": "MPL 1.1/GPL 2.0/LGPL 2.1",
+    "license": "(MPL-1.1 OR GPL-2.0 OR LGPL-2.1)",
     "author": "Temesis SAS",
-    "version": "1.0.0rc11",
-    "fullName": "Opquast Desktop",
+    "version": "1.1.0-rc1",
+    "title": "Opquast Desktop",
     "id": "opquast-desktop@temesis.com",
     "description": "Opquast Reporting and testing in your browser",
     "homepage": "https://desktop.opquast.com/",
@@ -14,12 +14,23 @@
     "main" : "lib/main.js",
     "icon": "data/icon48.png",
     "icon64": "data/icon64.png",
+    "engines": {
+      "firefox": ">=40"
+    },
+    "dependencies" : {
+        "net-log" : "file:./packages/jetpack-net-log",
+        "opquast-tests" : "file:./packages/opquast-test-runner"
+    },
+    "repository" : {
+      "type" : "git",
+      "url" : "https://github.com/Opquast/opquast-desktop.git"
+    },
     "preferences": [
         {
             "name": "full_preferences",
             "label": "All preferences",
             "type": "control",
-            "title": ""
+            "title": "All preferences title"
         },
         {
             "name": "debug",
@@ -27,5 +38,6 @@
             "type": "bool",
             "value": false
         }
-    ]
+    ],
+    "multiprocess" : true
 }
