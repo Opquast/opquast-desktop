@@ -1,7 +1,5 @@
 *.xpi
-
 /user
-/test.rdf
 /node_modules
 /bootstrap.js
 /install.rdf
