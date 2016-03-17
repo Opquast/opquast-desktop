@@ -10,12 +10,11 @@
 
     <h3>The Opquast Project</h3>
 
-    <p><a href="http://www.opquast.com">Opquast</a> (Open Quality Standards) is an ecosystem aimed
-    at improvement and rentability of websites.</p>
+    <p><a href="http://www.opquast.com">Opquast</a> (Open Quality Standards) is an ecosystem dedicated to Web quality.</p>
 
     <ul>
       <li>Checklists to understand and produce (<a
-        href="http://checklists.opquast.com/fr/opquast-website">Opquast Website</a>, <a
+        href="http://checklists.opquast.com/fr/opquast-website-v3">Opquast Website</a>, <a
         href="http://checklists.opquast.com/fr/opquastv2">Qualité Web</a>, <a
         href="http://checklists.opquast.com/fr/seo">SEO</a>, <a
         href="http://checklists.opquast.com/fr/opendata">Open data</a> checklists…)</li>
@@ -88,7 +87,7 @@
     <h3>Conception and development</h3>
 
     <p>Olivier Meunier, Elie Sloïm, Fabrice Bonny, Aurélien Levy and Mickaël Hoareau for <a href=
-    "http://www.temesis.com">Temesis SAS</a> - 18, rue Lucien Granet 33150 Cenon - France</p>
+    "http://www.opquast.com">Opquast SAS</a> - 18, rue Lucien Granet 33150 Cenon - France. Thanks to <a href="http://innophi.com/">Laurent Jouanneau</a>.</p>
 
     <p>With the assistance of <em>pôle Aquitain en logiciels libres <a
     href="http://pole-aquinetic.fr/">Aquinetic</a></em> and with support from
@@ -118,15 +117,15 @@
 
       <tbody>
         <tr>
-          <td><a href="http://checklists.opquast.com/en/opquast-website">Opquast Website</a></td>
+          <td><a href="https://checklists.opquast.com/fr/opquast-website-v3/">Opquast Website</a></td>
           <td>Version 1 (2013)</td>
           <td><a href="http://creativecommons.org/licenses/by-sa/2.0/fr/">Creative commons
           BY-SA</a></td>
         </tr>
 
         <tr>
-          <td><a href="http://checklists.opquast.com/en/opquastv2">Opquast UX</a></td>
-          <td>Version 2 (2010)</td>
+          <td><a href="http://checklists.opquast.com/oqs-v3/">Opquast UX</a></td>
+          <td>Version 3 (2015)</td>
           <td><a href="http://creativecommons.org/licenses/by-sa/2.0/fr/">Creative commons
           BY-SA</a></td>
         </tr>
@@ -171,7 +170,7 @@
         <tr>
           <td><a href="http://references.modernisation.gouv.fr/rgaa-accessibilite">RGAA (Référentiel
           Général d'accessibilité pour les administrations)</a></td>
-          <td>Version 2.2.1 (2009)</td>
+          <td>Version 3 (2015)</td>
           <td><a href="http://references.modernisation.gouv.fr/rgaa-accessibilite">To be clarified</a></td>
         </tr>
 
@@ -220,7 +219,7 @@
       <li><a href="http://www.opquast.com/"><img src="img/opquast.png" alt="Opquast" /></a></li>
       <li><a href="http://aquitaine.fr/"><img src="img/aquitaine.png" alt="Région Aquitaine" /></a></li>
     </ul>
-    <p><a href="https://reporting.opquast.com/">Opquast</a> is a project of <a href=
-    "http://temesis.com/">Temesis ©</a></p>
+    <p><a href="https://www.opquast.com/">Opquast</a> is a project of <a href=
+    "http://Opquast.com/">Opquast ©</a></p>
   </div>
 </div>

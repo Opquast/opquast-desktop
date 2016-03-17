@@ -10,25 +10,32 @@
 
     <h3>Le projet Opquast</h3>
 
-    <p><a href="http://www.opquast.com">Opquast</a> (Open Quality Standards) est un écosystème qui
-    vous permet d'améliorer et de rentabiliser vos sites.</p>
+    <p><a href="http://www.opquast.com">Opquast</a> (Open Quality Standards) est un écosystème
+      dédié à la qualité du Web.
+    </p>
     <ul>
       <li>Des bonnes pratiques pour comprendre et mettre en œuvre (check-lists <a
-        href="http://checklists.opquast.com/fr/opquast-website">Opquast Website</a>, <a
+        href="http://checklists.opquast.com/fr/opquast-website-v3">Opquast Website</a>, <a
         href="http://checklists.opquast.com/fr/opquastv2">Qualité Web</a>, <a
         href="http://checklists.opquast.com/fr/seo">SEO</a>, <a
         href="http://checklists.opquast.com/fr/opendata">Open data</a>…)</li>
       <li>Des outils pour tester et piloter la qualité de vos sites
-      (Opquast Desktop, <a href="http://reporting.opquast.com">Opquast reporting</a>)</li>
-      <li>Des professionnels pour vous accompagner dans vos projets Web
-      (<a href="http://partners.opquast.com/">partners.opquast.com</a>)</li>
+        (Opquast Desktop, <a href="http://reporting.opquast.com">Opquast reporting</a>)
+      </li>
+      <li>Des professionnels et des écoles pour vous accompagner dans vos projets Web
+        (<a href="http://partners.opquast.com/">partners.opquast.com</a>)
+      </li>
+      <li>Un certificat de compétences pour prouver votre connaissance des bonnes pratiques,
+        des risques associés et du vocabulaire du Web (<a 
+          href="http://certified.opquast.com/">certified.opquast.com</a>)
+      </li>
     </ul>
 
     <h3>Opquast Desktop</h3>
 
     <p>Opquast Desktop est une application qui vous permet d'analyser votre site au regard de
-    différentes check-lists qualité ou accessibilité.</p>
-
+      différentes check-lists.
+    </p>
     <h2>Analyser une page</h2>
 
     <h3>Analyse rapide</h3>
@@ -90,14 +97,37 @@
     <h3>Conception et développements</h3>
 
     <p>Olivier Meunier, Elie Sloïm, Fabrice Bonny, Aurélien Levy et Mickaël Hoareau pour <a href=
-    "http://www.temesis.com">Temesis SAS</a> - 18, rue Lucien Granet 33150 Cenon - France</p>
+    "http://www.opquast.com">Opquast SAS</a> - 18, rue Lucien Granet 33150 Cenon - France</p>
 
     <p>Avec l'assistance du pôle Aquitain en logiciels libres <a
     href="http://pole-aquinetic.fr/">Aquinetic</a> et avec le soutien de la
     <a href="http://aquitaine.fr/">Région Aquitaine</a>.</p>
 
-    <p>Merci à l'équipe de Temesis, à tous les contributeurs et partenaires du projet Opquast.</p>
+    <p>Merci à l'équipe d'Opquast - Temesis, à tous les contributeurs et partenaires du projet Opquast.
+    Merci à <a href="http://innophi.com/">Laurent Jouanneau</a> qui a permis de faire revenir cette extension d'outre-tombe.</p>
 
+    <h2>Contribuer au projet Opquast</h2>
+
+    <h3>Découvrez les check-lists</h3>
+
+    <p>Opquast desktop ne teste qu'une partie des bonnes pratiques. Des check-lists Opquast beaucoup plus complètes sont disponibles en ligne. Notre objectif est de les faire connaître, et de faire ainsi prendre conscience aux professionnels du Web qu'il est possible de travailler de manière solide sur le Web.</p>
+
+    <h3>Achetez le livre qualité Web</h3>
+
+    <p>Il est disponible en ligne à l'adresse <a href="http://qualite-web-lelivre.com/">qualite-web-lelivre.com/</a>. Plusieurs commentateurs disent que ce livre était devenu leur bible. C'est exact, bien qu'un peu faible ;).</p>
+
+    <h3>Passez votre certification Opquast</h3>
+
+    <p>Vous voulez vraiment voir ce que vous valez sur les bonnes pratiques qualité Web ? Demandez une formation Qualité Web, et faites reconnaître vos compétences. Les plus grandes écoles Web soutiennent cette certification. Lancez vous sur <a href="http://certified.opquast.com/">certified.opquast.com</a>.</p>
+
+    <h3>Soutenez Opquast et faites-nous connaître</h3>
+
+    <p><a href="http://www.opquast.com/">Opquast.com</a>
+      |
+      <a href="https://twitter.com/opquast">Twitter</a>
+      |
+      <a href="https://www.facebook.com/opquast?fref=ts">Facebook</a>
+    </p>
     <h2>Licences</h2>
 
     <h3>Extension Opquast Desktop</h3>
@@ -120,83 +150,55 @@
 
       <tbody>
         <tr>
-          <td><a href="http://checklists.opquast.com/fr/opquast-website">Opquast Website</a></td>
-          <td>Version 1 (2013)</td>
-          <td><a href="http://creativecommons.org/licenses/by-sa/2.0/fr/">Creative commons
-          BY-SA</a></td>
+          <td><a href="http://checklists.opquast.com/fr/opquast-website-v3/">Opquast Website</a></td>
+          <td>Version 3 (2016)</td>
+          <td><a href="http://creativecommons.org/licenses/by-sa/2.0/fr/">Creative commons BY-SA</a></td>
         </tr>
-
         <tr>
-          <td><a href="http://checklists.opquast.com/fr/opquastv2">Opquast Qualité Web</a></td>
-          <td>Version 2 (2010)</td>
-          <td><a href="http://creativecommons.org/licenses/by-sa/2.0/fr/">Creative commons
-          BY-SA</a></td>
+          <td><a href="http://checklists.opquast.com/oqs-v3/">Opquast Qualité Web</a></td>
+          <td>Version 3 (2015)</td>
+          <td><a href="http://creativecommons.org/licenses/by-sa/2.0/fr/">Creative commons BY-SA</a></td>
         </tr>
-
         <tr>
           <td><a href="http://checklists.opquast.com/fr/seo">Opquast SEO</a></td>
           <td>Version 1 (2011)</td>
-          <td><a href="http://creativecommons.org/licenses/by-sa/2.0/fr/">Creative commons
-          BY-SA</a></td>
+          <td><a href="http://creativecommons.org/licenses/by-sa/2.0/fr/">Creative commons BY-SA</a></td>
         </tr>
-
         <tr>
           <td><a href="http://checklists.opquast.com/webperf">Opquast Webperf</a></td>
           <td>Version 1 (2012)</td>
-          <td><a href="http://creativecommons.org/licenses/by-sa/2.0/fr/">Creative commons
-          BY-SA</a></td>
+          <td><a href="http://creativecommons.org/licenses/by-sa/2.0/fr/">Creative commons BY-SA</a></td>
         </tr>
-
         <tr>
           <td><a href="http://checklists.opquast.com/opendata">OpenData Dataset quality</a></td>
           <td>Version 1 (2013)</td>
-          <td><a href="http://creativecommons.org/licenses/by-sa/2.0/fr/">Creative commons
-          BY-SA</a></td>
+          <td><a href="http://creativecommons.org/licenses/by-sa/2.0/fr/">Creative commons BY-SA</a></td>
         </tr>
-
         <tr>
-          <td><a href="http://checklists.opquast.com/fr/accessibilityfirststep">Opquast Accessibility
-          First Step</a></td>
+          <td><a href="http://checklists.opquast.com/fr/accessibilityfirststep">Opquast Accessibility First Step</a></td>
           <td>Version 1 (2012)</td>
-          <td><a href="http://creativecommons.org/licenses/by-sa/2.0/fr/">Creative commons
-          BY-SA</a></td>
+          <td><a href="http://creativecommons.org/licenses/by-sa/2.0/fr/">Creative commons BY-SA</a></td>
         </tr>
-
         <tr>
-          <td><a href="http://checklists.opquast.com/fr/accessibilitysecondstep">Opquast Accessibility
-          Second Step</a></td>
+          <td><a href="http://checklists.opquast.com/fr/accessibilitysecondstep">Opquast Accessibility Second Step</a></td>
           <td>Version 1 (2012)</td>
-          <td><a href="http://creativecommons.org/licenses/by-sa/2.0/fr/">Creative commons
-          BY-SA</a></td>
+          <td><a href="http://creativecommons.org/licenses/by-sa/2.0/fr/">Creative commons BY-SA</a></td>
         </tr>
-
         <tr>
-          <td><a href="http://references.modernisation.gouv.fr/rgaa-accessibilite">RGAA (Référentiel
-          Général d'accessibilité pour les administrations)</a></td>
-          <td>Version 2.2.1 (2009)</td>
+          <td><a href="http://references.modernisation.gouv.fr/rgaa-accessibilite">RGAA (Référentiel Général d'accessibilité pour les administrations)</a></td>
+          <td>Version 3 (2015)</td>
           <td><a href="http://references.modernisation.gouv.fr/rgaa-accessibilite">À préciser</a></td>
         </tr>
-
         <tr>
-          <td><a href=
-          "http://www.accessiweb.org/index.php/accessiweb_2.1_liste_deployee.html">Accessiweb
-          Liste déployée</a></td>
+          <td><a href="http://www.accessiweb.org/index.php/accessiweb_2.1_liste_deployee.html">Accessiweb Liste déployée</a></td>
           <td>Version 2.1 (2009)</td>
-          <td><a href=
-          "http://www.accessiweb.org/fr/Label_Accessibilite/criteres_accessiweb/#conditions">Copyright
-          © 2010 Association BrailleNet. Tous droits Réservés.</a></td>
+          <td><a href="http://www.accessiweb.org/fr/Label_Accessibilite/criteres_accessiweb/#conditions">Copyright © 2010 Association BrailleNet. Tous droits Réservés.</a></td>
         </tr>
-
         <tr>
-          <td><a href=
-          "http://www.accessiweb.org/index.php/accessiweb_2.1_liste_generale.html">Accessiweb
-          Liste générale</a></td>
+          <td><a href="http://www.accessiweb.org/index.php/accessiweb_2.1_liste_generale.html">Accessiweb Liste générale</a></td>
           <td>Version 2.1 (2009)</td>
-          <td><a href=
-          "http://www.accessiweb.org/fr/Label_Accessibilite/criteres_accessiweb/#conditions">Copyright
-          © 2010 Association BrailleNet. Tous droits Réservés.</a></td>
+          <td><a href="http://www.accessiweb.org/fr/Label_Accessibilite/criteres_accessiweb/#conditions">Copyright © 2010 Association BrailleNet. Tous droits Réservés.</a></td>
         </tr>
-
         <tr>
           <td><a href="http://www.tresor.gouv.qc.ca/ressources-informationnelles/standards-sur-laccessibilite-du-web/">SGQRI</a></td>
           <td>Version 1.0 (2012)</td>
@@ -222,7 +224,6 @@
       <li><a href="http://www.opquast.com/"><img src="img/opquast.png" alt="Opquast" /></a></li>
       <li><a href="http://aquitaine.fr/"><img src="img/aquitaine.png" alt="Région Aquitaine" /></a></li>
     </ul>
-    <p><a href="https://reporting.opquast.com/">Opquast</a> est un projet de la société <a href=
-    "http://temesis.com/">Temesis ©</a></p>
+    <p>Un projet de la société <a href="http://Opquast.com/">Opquast ©</a></p>
   </div>
 </div>
