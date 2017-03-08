@@ -2,15 +2,11 @@
     "name": "opquast-desktop-signed",
     "license": "(MPL-1.1 OR GPL-2.0 OR LGPL-2.1)",
     "author": "Temesis SAS",
-    "version": "2.0.4",
+    "version": "2.0.5",
     "title": "Opquast Desktop",
     "id": "opquast-desktop-signed@temesis.com",
     "description": "Opquast Reporting and testing in your browser",
     "homepage": "https://desktop.opquast.com/",
-    "dependencies": [
-        "net-log",
-        "opquast-tests"
-    ],
     "main" : "lib/main.js",
     "icon": "data/icon48.png",
     "icon64": "data/icon64.png",
